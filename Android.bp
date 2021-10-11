@@ -137,6 +137,7 @@ android_library {
         "androidx.datastore_datastore-rxjava2",
         "kotlinx_coroutines_reactive",
         "rxjava",
+        "custom-preference",
     ],
 
     plugins: [
