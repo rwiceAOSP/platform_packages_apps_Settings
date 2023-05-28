@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">သင့်ကိုယ်ရေးအချက်အလက်လုံခြုံမှုကို ကာကွယ်ရန် ‘ဖုန်းဆူညံသံဖျောက်ခြင်း’ သည် အသံ (သို့) စကားဝိုင်းများကို Google သို့မပို့ပါ။\n\n‘ဖုန်းဆူညံသံဖျောက်ခြင်း’ သည် Wi-Fi ခေါ်ဆိုမှုနှင့် ကွန်ရက်အများစုတွင် လုပ်ဆောင်ပြီး ၎င်းကို 3G ကွန်ရက်များအတွက် မရနိုင်ပါ။</string>
+    <string name="clear_calling_title">ဖုန်းဆူညံသံဖျောက်ခြင်း</string>
+    <string name="clear_calling_toggle">ဖုန်းဆူညံသံဖျောက်ခြင်း သုံးရန်</string>
+    <string name="clear_calling_topintro">ဖုန်းပြောနေစဉ် နောက်ခံဆူညံသံများ လျှော့ချပေးသည်</string>
+</resources>

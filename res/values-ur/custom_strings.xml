@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">‏آپ کی رازداری کے تحفظ کے لیے، کلیئر کالنگ آڈیو یا گفتگوئیں Google کو نہیں بھیجتی ہے۔\n\nکلیئر کالنگ Wi-Fi کالنگ اور زیادہ تر نیٹ ورکس پر کام کرتی ہے، 3G نیٹ ورکس کیلئے دستیاب نہیں ہے۔</string>
+    <string name="clear_calling_title">کلیئر کالنگ</string>
+    <string name="clear_calling_toggle">کلیئر کالنگ کا استعمال کریں</string>
+    <string name="clear_calling_topintro">کالز کے دوران پس منظر کے شور کو کم کرتی ہے</string>
+</resources>

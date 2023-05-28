@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Ter bescherming van je privacy stuurt Helder gespreksgeluid geen audio of gesprekken naar Google.\n\nHelder gespreksgeluid werkt met bellen via wifi en de meeste netwerken, maar is niet beschikbaar voor 3G-netwerken.</string>
+    <string name="clear_calling_title">Helder gespreksgeluid</string>
+    <string name="clear_calling_toggle">Helder gespreksgeluid gebruiken</string>
+    <string name="clear_calling_topintro">Vermindert achtergrondruis tijdens gesprekken</string>
+</resources>

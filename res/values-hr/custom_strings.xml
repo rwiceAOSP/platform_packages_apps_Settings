@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Radi zaštite privatnosti, razgovjetni pozivi Googleu ne šalju zvuk ili razgovore.\n\nRazgovjetni pozivi funkcioniraju u Wi-Fi pozivima i na većini mreža, ali nisu dostupni na 3G mrežama.</string>
+    <string name="clear_calling_title">Razgovijetni pozivi</string>
+    <string name="clear_calling_toggle">Koristi razgovijetne pozive</string>
+    <string name="clear_calling_topintro">Smanjuju pozadinsku buku tijekom poziva</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">С цел защита на поверителността ви функцията за обаждане със звук без фонов шум не изпраща до Google аудио, нито разговори.\n\nТази функция работи с обаждания през Wi-Fi и повечето мрежи, но не е налице за 3G мрежи.</string>
+    <string name="clear_calling_title">Обаждане с ясен звук</string>
+    <string name="clear_calling_toggle">Използване на обаждане със звук без фонов шум</string>
+    <string name="clear_calling_topintro">Намалява фоновия шум по време на обаждания</string>
+</resources>

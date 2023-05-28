@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Per proteggere la tua privacy, la funzionalità di Chiamata Nitida non invia l\'audio o le conversazioni a Google.\n\nQuesta funzionalità è disponibile per le chiamate Wi-Fi e sulla maggior parte delle reti, ma non sulle reti 3G.</string>
+    <string name="clear_calling_title">Chiamata Nitida</string>
+    <string name="clear_calling_toggle">Usa Chiamata Nitida</string>
+    <string name="clear_calling_topintro">Riduce i rumori di fondo durante le chiamate</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">તમારી પ્રાઇવસીને સુરક્ષિત રાખવા માટે સ્પષ્ટ કૉલિંગની સુવિધા, Googleને ઑડિયો કે વાતચીતો મોકલતી નથી.\n\nસ્પષ્ટ કૉલિંગની સુવિધા વાઇ-ફાઇ કૉલિંગ અને મોટા ભાગના બધા નેટવર્ક પર કામ કરે છે, તે 3G નેટવર્ક પર ઉપલબ્ધ નથી.</string>
+    <string name="clear_calling_title">સ્પષ્ટ કૉલિંગ</string>
+    <string name="clear_calling_toggle">સ્પષ્ટ કૉલિંગ સુવિધાનો ઉપયોગ કરો</string>
+    <string name="clear_calling_topintro">કૉલ દરમિયાન બૅકગ્રાઉન્ડમાંથી આવતા અવાજો ઘટાડે છે</string>
+</resources>

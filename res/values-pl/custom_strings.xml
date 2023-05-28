@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Ze względu na ochronę prywatności funkcja połączeń z czystym dźwiękiem nie wysyła dźwięku ani rozmów do Google.\n\nPołączenia z czystym dźwiękiem działają w ramach połączeń przez Wi-Fi i w większości sieci. Nie są dostępne w sieciach 3G.</string>
+    <string name="clear_calling_title">Połączenie z czystym dźwiękiem</string>
+    <string name="clear_calling_toggle">Używaj połączenia z czystym dźwiękiem</string>
+    <string name="clear_calling_topintro">Redukuje szum w tle podczas połączeń</string>
+</resources>

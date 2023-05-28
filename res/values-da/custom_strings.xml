@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Af hensyn til beskyttelsen af dit privatliv sender Klar opkaldslyd ikke lyd eller samtaler til Google.\n\nKlar opkaldslyd fungerer via Wi-Fi-opkald og de fleste netværk, men ikke på 3G-netværk.</string>
+    <string name="clear_calling_title">Klar opkaldslyd</string>
+    <string name="clear_calling_toggle">Brug Klar opkaldslyd</string>
+    <string name="clear_calling_topintro">Baggrundsstøj reduceres under opkald</string>
+</resources>

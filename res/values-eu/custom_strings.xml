@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Zure pribatutasuna babesteko, Dei garbiak eginbideak ez ditu bidaltzen audioa edo elkarrizketak Google-ra.\n\nDei garbiak eginbideak wifi-deiekin eta sare gehienekin funtzionatzen du, baina ez 3G sareekin.</string>
+    <string name="clear_calling_title">Dei garbiak</string>
+    <string name="clear_calling_toggle">Erabili Dei garbiak</string>
+    <string name="clear_calling_topintro">Atzeko planoko zarata murrizten du deietan</string>
+</resources>

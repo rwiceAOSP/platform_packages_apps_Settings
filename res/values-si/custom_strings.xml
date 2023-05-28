@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">ඔබේ පෞද්ගලිකත්වය ආරක්ෂා කිරීම සඳහා, පැහැදිලි ඇමතුම් Google වෙත ශ්‍රව්‍ය හෝ සංවාද නොයවයි.\n\nපැහැදිලි ඇමතුම් Wi‑Fi ඇමතුම් සහ බොහෝ ජාලවල ක්‍රියා කරයි, 3G ජාල සඳහා ලබා ගත නොහැක.</string>
+    <string name="clear_calling_title">පැහැදිලි ඇමතීම</string>
+    <string name="clear_calling_toggle">පැහැදිලි ඇමතීම භාවිතා කරන්න</string>
+    <string name="clear_calling_topintro">ඇමතුම් අතරතුර පසුබිම් ඝෝෂාව අඩු කරයි</string>
+</resources>

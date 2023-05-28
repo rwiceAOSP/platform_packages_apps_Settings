@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Klart samtalsljud skickar inte ljud eller konversationer till Google, för att skydda din integritet.\n\nKlart samtalsljud fungerar med wifi-samtal och nästan alla nätverk, men det är inte tillgängligt för 3G-nätverk.</string>
+    <string name="clear_calling_title">Klart samtalsljud</string>
+    <string name="clear_calling_toggle">Använd Klart samtalsljud</string>
+    <string name="clear_calling_topintro">Minskar bakgrundsljud under samtal</string>
+</resources>

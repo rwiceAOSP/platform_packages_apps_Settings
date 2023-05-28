@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">আপনার গোপনীয়তা রক্ষা করার জন্য \'ক্লিয়ার কলিং\', অডিও বা কথোপকথন Google-এ পাঠায় না।\n\n\'ক্লিয়ার কলিং\', \'Wi-Fi কলিং\' ও বেশিরভাগ নেটওয়ার্কে কাজ করে, যদিও 3G নেটওয়ার্কের ক্ষেত্রে এটি উপলভ্য নয়।</string>
+    <string name="clear_calling_title">ক্লিয়ার কলিং</string>
+    <string name="clear_calling_toggle">ক্লিয়ার কলিং ব্যবহার করুন</string>
+    <string name="clear_calling_topintro">কল চলাকালীন ব্যাকগ্রাউন্ডের আওয়াজ কম করে</string>
+</resources>

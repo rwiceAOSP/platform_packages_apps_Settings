@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Para proteger tu privacidad, Llamadas nítidas no envía audios ni conversaciones a Google.\n\nLlamadas nítidas funciona en llamadas por Wi-Fi y la mayoría de las redes, pero no está disponible para redes 3G.</string>
+    <string name="clear_calling_title">Llamadas nítidas</string>
+    <string name="clear_calling_toggle">Usar Llamadas nítidas</string>
+    <string name="clear_calling_topintro">Reduce los ruidos de fondo durante las llamadas</string>
+</resources>

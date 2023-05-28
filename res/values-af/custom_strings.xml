@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Belhelderheid stuur nie oudio of gesprekke na Google toe nie om jou privaatheid te beskerm.\n\nBelhelderheid werk vir wi-fi-oproepe en op die meeste netwerke, maar is nie vir 3G-netwerke beskikbaar nie.</string>
+    <string name="clear_calling_title">Oproepduidelikheid</string>
+    <string name="clear_calling_toggle">Gebruik Duidelike Oproepe</string>
+    <string name="clear_calling_topintro">Verminder agtergrondgeraas tydens oproepe</string>
+</resources>

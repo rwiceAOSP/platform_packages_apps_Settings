@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">‏لحماية خصوصيتك، لا يتم إرسال المحتوى الصوتي أو المحادثات إلى Google من خلال ميزة \"تحسين جودة المكالمات\".\n\nتعمل ميزة \"تحسين جودة المكالمات\" من خلال الاتصال عبر Wi-Fi ومعظم الشبكات، ولا تتوفّر لشبكات الجيل الثالث.</string>
+    <string name="clear_calling_title">تنقية الصوت</string>
+    <string name="clear_calling_toggle">استخدام ميزة \"تحسين جودة المكالمات\"</string>
+    <string name="clear_calling_topintro">يقلل هذا الإعداد التشويش في الخلفية أثناء المكالمات</string>
+</resources>

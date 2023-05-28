@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Para maprotektahan ang iyong privacy, hindi nagpapadala ng audio o mga pag-uusap sa Google ang Malinaw na Tawag.\n\nGumagana ang Malinaw na Tawag sa Pagtawag gamit ang Wi-Fi at karamihan ng mga network. Hindi ito available para sa mga 3G network.</string>
+    <string name="clear_calling_title">Malinaw na Pagtawag</string>
+    <string name="clear_calling_toggle">Gamitin ang Malinaw na Pagtawag</string>
+    <string name="clear_calling_topintro">Binabawasan ang mga ingay sa background kapag may mga tawag</string>
+</resources>
