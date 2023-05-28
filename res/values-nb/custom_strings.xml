@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">For å ivareta personvernet ditt sender Klare samtaler aldri lyd eller samtaler til Google.\n\nKlare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgjengelig for 3G-nettverk.</string>
+    <string name="clear_calling_title">Klare samtaler</string>
+    <string name="clear_calling_toggle">Bruk Klare samtaler</string>
+    <string name="clear_calling_topintro">Reduserer bakgrunnsstøy under anrop</string>
+</resources>

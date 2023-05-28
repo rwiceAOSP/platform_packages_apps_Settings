@@ -6278,5 +6278,18 @@
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
+        <!-- Clear Calling -->
+        <activity
+            android:name="com.google.android.settings.notification.ClearCallingSettingsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.settings.notification.CLEAR_CALLING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.google.android.settings.notification.ClearCallingSettings"/>
+        </activity>
+
     </application>
 </manifest>

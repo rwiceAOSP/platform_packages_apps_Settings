@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">개인 정보 보호를 위해 선명한 통화 음질은 Google로 오디오 또는 대화를 전송하지 않습니다.\n\n선명한 통화 음질은 Wi-Fi 통화 및 대부분의 네트워크에서 작동하며 3G 네트워크에서는 사용할 수 없습니다.</string>
+    <string name="clear_calling_title">선명한 통화 음질</string>
+    <string name="clear_calling_toggle">선명한 통화 음질 사용</string>
+    <string name="clear_calling_topintro">통화 중 배경 소음 감소</string>
+</resources>

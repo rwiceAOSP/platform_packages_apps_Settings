@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Zaradi varovanja vaše zasebnosti funkcija za jasen zvok klica zvoka ali pogovorov ne pošlje Googlu.\n\nJasen zvok klica deluje pri klicanju prek Wi-Fi-ja in v večini omrežij, ni pa na voljo v omrežjih 3G.</string>
+    <string name="clear_calling_title">Jasen zvok klica</string>
+    <string name="clear_calling_toggle">Uporabi jasen zvok klica</string>
+    <string name="clear_calling_topintro">Zmanjšanje hrupa v ozadju med klici</string>
+</resources>

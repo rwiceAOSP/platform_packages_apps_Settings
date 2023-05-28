@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Заради заштита на вашата приватност, „Јасни повици“ не испраќа аудио или разговори до Google.\n\n„Јасни повици“ функционира на „Повици преку Wi‑Fi“ и на повеќето мрежи, но не и на 3G-мрежи.</string>
+    <string name="clear_calling_title">Јасни повици</string>
+    <string name="clear_calling_toggle">Користи „Јасни повици“</string>
+    <string name="clear_calling_topintro">Ги намалува заднинските шумови за време на повиците</string>
+</resources>

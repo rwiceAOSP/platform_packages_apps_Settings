@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">ଆପଣଙ୍କ ଗୋପନୀୟତାକୁ ସୁରକ୍ଷିତ ରଖିବା ପାଇଁ କ୍ଲିଅର କଲିଂ Googleକୁ ଅଡିଓ କିମ୍ବା ବାର୍ତ୍ତାଳାପ ପଠାଏ ନାହିଁ।\n\nକ୍ଲିଅର କଲିଂ ୱାଇ-ଫାଇ କଲିଂ ଏବଂ ଅଧିକାଂଶ ନେଟୱାର୍କରେ କାମ କରେ, କିନ୍ତୁ ଏହା 3G ନେଟୱାର୍କ ପାଇଁ ଉପଲବ୍ଧ ନାହିଁ।</string>
+    <string name="clear_calling_title">କ୍ଲିଅର କଲିଂ</string>
+    <string name="clear_calling_toggle">କ୍ଲିଅର କଲିଂ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="clear_calling_topintro">କଲ ସମୟରେ ବେକଗ୍ରାଉଣ୍ଡ ନଏଜକୁ କମ କରେ</string>
+</resources>

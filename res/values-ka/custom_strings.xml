@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">თქვენი კონფიდენციალურობის დასაცავად, სუფთა აუდიო არ უგზავნის Google-ს აუდიოს ან საუბრებს.\n\nსუფთა აუდიო მუშაობს Wi-Fi დარეკვისას და ქსელების უმეტესობაში, მაგრამ მიუწვდომელია 3G ქსელებისთვის.</string>
+    <string name="clear_calling_title">სუფთა აუდიო</string>
+    <string name="clear_calling_toggle">„სუფთა აუდიოს“ გამოყენება</string>
+    <string name="clear_calling_topintro">ამცირებს ფონურ ხმაურს ზარების დროს</string>
+</resources>

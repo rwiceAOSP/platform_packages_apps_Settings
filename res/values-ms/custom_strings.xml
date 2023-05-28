@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Untuk melindungi privasi anda, Panggilan Jelas tidak menghantar audio atau perbualan kepada Google.\n\nPanggilan Jelas berfungsi pada panggilan Wi‑Fi dan kebanyakan rangkaian, tidak tersedia untuk rangkaian 3G.</string>
+    <string name="clear_calling_title">Panggilan Jelas</string>
+    <string name="clear_calling_toggle">Gunakan Panggilan Jelas</string>
+    <string name="clear_calling_topintro">Mengurangkan hingar latar semasa panggilan</string>
+</resources>

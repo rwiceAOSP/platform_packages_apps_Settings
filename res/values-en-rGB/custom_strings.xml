@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">To protect your privacy, Clear Calling does not send audio or conversations to Google.\n\nClear Calling works on Wi‑Fi calling and most networks (not available for 3G networks).</string>
+    <string name="clear_calling_title">Clear Calling</string>
+    <string name="clear_calling_toggle">Use Clear Calling</string>
+    <string name="clear_calling_topintro">Reduces background noises during calls</string>
+</resources>

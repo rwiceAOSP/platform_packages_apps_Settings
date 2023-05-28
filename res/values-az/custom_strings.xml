@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Məxfiliyi qorumaq üçün Təmiz səsli zəng audio və ya söhbətləri Google-a göndərmir.\n\nTəmiz səsli zəng Wi-Fi zəngi və əksər şəbəkələrdə işləyir. 3G şəbəkələri üçün əlçatan deyil.</string>
+    <string name="clear_calling_title">Zəng Aydınlaşdırma</string>
+    <string name="clear_calling_toggle">Zəng Aydınlaşdırma xidmətindən istifadə edin</string>
+    <string name="clear_calling_topintro">Zəng zamanı arxa fondakı səs-küyü azaldır</string>
+</resources>

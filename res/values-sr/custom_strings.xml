@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Да би вам заштитили приватност, Разговетни позиви не шаљу звук нити разговоре Google-у.\n\nРазговетни позиви раде са Позивањем преко WiFi-ја и већином мрежа, а нису доступни за 3G мреже.</string>
+    <string name="clear_calling_title">Разговетни позиви</string>
+    <string name="clear_calling_toggle">Користи Разговетне позиве</string>
+    <string name="clear_calling_topintro">Умањује буку у позадини током позива</string>
+</resources>

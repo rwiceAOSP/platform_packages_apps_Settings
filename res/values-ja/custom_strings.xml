@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">プライバシーを保護するため、クリア音声通話から Google に音声や会話が送信されることはありません。\n\nクリア音声通話は、Wi-Fi 通話とほとんどのネットワークで機能しますが、3G ネットワークでは利用できません。</string>
+    <string name="clear_calling_title">クリア音声通話</string>
+    <string name="clear_calling_toggle">クリア音声通話を使用</string>
+    <string name="clear_calling_topintro">通話中にバックグラウンドのノイズを低減します</string>
+</resources>

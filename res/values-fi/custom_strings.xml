@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Selkeä-ääniset puhelut ei lähetä audiota tai keskusteluja Googlelle yksityisyytesi suojaamiseksi.\n\nSelkeä-ääniset puhelut toimii Wi-Fi-puheluiden ja useimpien mobiiliverkkojen kautta (ei ole saatavilla 3G-verkoissa).</string>
+    <string name="clear_calling_title">Selkeä-ääniset puhelut</string>
+    <string name="clear_calling_toggle">Käytä selkeä-äänisiä puheluja</string>
+    <string name="clear_calling_topintro">Vähentää taustahälyä puheluiden aikana</string>
+</resources>

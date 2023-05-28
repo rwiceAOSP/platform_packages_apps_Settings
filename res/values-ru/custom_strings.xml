@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Чтобы обеспечить конфиденциальность, функция \"Чистый звук\" не передает аудиозаписи и расшифровки разговоров в Google.\n\nЭта функция недоступна для сетей 3G, но ее можно использовать при звонках по Wi‑Fi и большинству мобильных сетей.</string>
+    <string name="clear_calling_title">Чистый звук</string>
+    <string name="clear_calling_toggle">Чистый звук</string>
+    <string name="clear_calling_topintro">Подавление фонового шума при разговоре</string>
+</resources>

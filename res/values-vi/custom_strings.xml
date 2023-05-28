@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Để bảo vệ quyền riêng tư của bạn, tính năng Khử tiếng ồn không gửi âm thanh hay cuộc trò chuyện cho Google.\n\nTính năng này hoạt động với tính năng Gọi qua Wi-Fi và hầu hết các mạng (không hoạt động với mạng 3G).</string>
+    <string name="clear_calling_title">Khử tiếng ồn</string>
+    <string name="clear_calling_toggle">Sử dụng tính năng khử tiếng ồn</string>
+    <string name="clear_calling_topintro">Giảm tiếng ồn xung quanh trong lúc thực hiện cuộc gọi</string>
+</resources>

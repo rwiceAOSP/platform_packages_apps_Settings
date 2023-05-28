@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">ግላዊነትዎን ለመጠበቅ ግልፅ ጥሪ ለGoogle ኦዲዮ ወይም ውይይቶችን አይልክም።\n\nግልፅ ጥሪ የWi-Fi ጥሪ ማድረጊያ እና በአብዛኛዎቹ አውታረ መረቦች ላይ ይሠራል፣ ለ3ጂ አውታረ መረቦች አይገኝም።</string>
+    <string name="clear_calling_title">ግልፅ ጥሪ</string>
+    <string name="clear_calling_toggle">ግልፅ ጥሪን ተጠቀም</string>
+    <string name="clear_calling_topintro">በጥሪዎች ጊዜ የበስተጀርባ ድምፆችን ይቀንሳል</string>
+</resources>

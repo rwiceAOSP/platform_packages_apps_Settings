@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Για την προστασία του απορρήτου σας, η λειτουργία Κλήσεις με ευκρινή ήχο δεν στέλνει ήχο ή συνομιλίες στην Google.\n\nΗ λειτουργία Κλήσεις με ευκρινή ήχο είναι διαθέσιμη στην Κλήση Wi-Fi και στα περισσότερα δίκτυα, εκτός από τα δίκτυα 3G.</string>
+    <string name="clear_calling_title">Κλήσεις με ευκρινή ήχο</string>
+    <string name="clear_calling_toggle">Χρήση λειτουργίας Κλήσεις με ευκρινή ήχο</string>
+    <string name="clear_calling_topintro">Μειώνει τους θορύβους παρασκηνίου κατά τη διάρκεια των κλήσεων</string>
+</resources>

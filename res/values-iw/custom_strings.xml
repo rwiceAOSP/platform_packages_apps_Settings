@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">‏כדי להגן על הפרטיות שלך, התכונה \"שיחה ללא רעשי רקע\" לא שולחת אודיו או שיחות ל-Google.\n\nהתכונה \"שיחה ללא רעשי רקע\" פועלת בשיחות Wi-Fi וברוב הרשתות. היא לא זמינה ברשתות 3G.</string>
+    <string name="clear_calling_title">שיחה בלי רעשי רקע</string>
+    <string name="clear_calling_toggle">שימוש ב\"שיחה ללא רעשי רקע\"</string>
+    <string name="clear_calling_topintro">הפחתת רעשי רקע במהלך שיחות</string>
+</resources>

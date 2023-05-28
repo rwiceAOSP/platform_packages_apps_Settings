@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Maxfiylikni himoyalash maqsadida Tiniq ovoz funksiyasi audio va suhbatlarni Googlega yubormaydi.\n\nTiniq ovoz Wi‑Fi va aksariyat tarmoqlarda ishlaydi, 3G tarmoqlarida ishlamaydi.</string>
+    <string name="clear_calling_title">Tiniq ovoz</string>
+    <string name="clear_calling_toggle">Tiniq ovoz ishlatish</string>
+    <string name="clear_calling_topintro">Chaqiruv davomida tashqi shovqinni pasaytiradi</string>
+</resources>

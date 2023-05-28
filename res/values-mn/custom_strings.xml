@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Таны нууцлалыг хамгаалахын тулд Тод дуудлага Google рүү аудио эсвэл харилцан яриануудыг илгээдэггүй.\n\nТод дуудлага нь Wi-Fi дуудлага болон ихэнх сүлжээнд ажилладаг бөгөөд 3G сүлжээнүүдэд боломжгүй.</string>
+    <string name="clear_calling_title">Clear Calling</string>
+    <string name="clear_calling_toggle">Clear Calling-г ашиглах</string>
+    <string name="clear_calling_topintro">Дуудлагын үеэр арын дуу чимээг багасгадаг</string>
+</resources>

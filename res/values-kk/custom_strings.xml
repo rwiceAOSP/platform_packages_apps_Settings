@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Құпиялығыңызды қорғау үшін таза дауыс функциясы Google-ға аудиофайлдарды немесе әңгімелерді жібермейді.\n\nФункция Wi‑Fi қоңырауында және тағы басқа желілерде істейді, бірақ 3G желісінде істемейді.</string>
+    <string name="clear_calling_title">Таза дауыс</string>
+    <string name="clear_calling_toggle">\"Таза дауыс\" функциясын пайдалану</string>
+    <string name="clear_calling_topintro">Қоңырау кезінде болатын фондағы шуды азайтады.</string>
+</resources>

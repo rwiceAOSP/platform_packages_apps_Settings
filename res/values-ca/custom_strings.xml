@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Per protegir la teva privadesa, la funció Trucades nítides no envia àudio ni converses a Google.\n\nAquesta funció s\'utilitza en trucades per Wi‑Fi i la majoria de xarxes, però no està disponible per a xarxes 3G.</string>
+    <string name="clear_calling_title">Trucades nítides</string>
+    <string name="clear_calling_toggle">Utilitza Trucades nítides</string>
+    <string name="clear_calling_topintro">Redueix els sorolls de fons durant les trucades</string>
+</resources>

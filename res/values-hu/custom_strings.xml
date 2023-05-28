@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Az adatvédelem biztosítása érdekében a tiszta hívás nem küldi el az audioanyagokat és a beszélgetéseket a Google-nak.\n\nA tiszta hívás használható Wi-Fi-hívással és a legtöbb hálózaton, kivéve a 3G-t.</string>
+    <string name="clear_calling_title">Tiszta hívás</string>
+    <string name="clear_calling_toggle">Tiszta hívás használata</string>
+    <string name="clear_calling_topintro">Mérsékli a háttérzajokat hívás közben</string>
+</resources>

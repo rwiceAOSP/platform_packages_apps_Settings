@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Задля захисту вашої конфіденційності функція \"Чистий звук\" не надсилає аудіофайли чи записи розмов у Google.\n\nФункція \"Чистий звук\" працює під час дзвінків через Wi‑Fi і в більшості мереж. Недоступна в мережах 3G.</string>
+    <string name="clear_calling_title">Чистий звук</string>
+    <string name="clear_calling_toggle">Використовувати Чистий звук</string>
+    <string name="clear_calling_topintro">Зменшує фоновий шум під час дзвінків</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">‏برای محافظت از حریم خصوصی‌تان، «تصفیه صدا» صداها یا مکالمه‌ها را به Google ارسال نمی‌کند.\n\n«تصفیه صدا» در «تماس ازطریق Wi-Fi» و اکثر شبکه‌ها کار می‌کند، اما در شبکه‌های 3G دردسترس نیست.</string>
+    <string name="clear_calling_title">Clear Calling</string>
+    <string name="clear_calling_toggle">‏استفاده از Clear Calling</string>
+    <string name="clear_calling_topintro">نوفه‌های زمینه را درطول تماس کاهش می‌دهد</string>
+</resources>

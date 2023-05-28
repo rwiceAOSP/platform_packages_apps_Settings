@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">为保护您的隐私，“清晰通话”功能不会将音频或对话内容发送给 Google。\n\n“清晰通话”功能适用于 WLAN 通话和大多数网络，不适用于 3G 网络。</string>
+    <string name="clear_calling_title">清晰通话</string>
+    <string name="clear_calling_toggle">启用清晰通话</string>
+    <string name="clear_calling_topintro">在通话期间降低背景噪声</string>
+</resources>

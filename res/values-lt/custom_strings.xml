@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Kad apsaugotų jūsų privatumą, funkcija „Aiškus skambutis“ nesiunčia garso įrašų ar pokalbių „Google“.\n\nFunkcija „Aiškus skambutis“ veikia naudojant „Wi-Fi“ skambinimą ir daugumą tinklų, bet nepasiekiama naudojant 3G tinklus.</string>
+    <string name="clear_calling_title">Aiškus skambutis</string>
+    <string name="clear_calling_toggle">Naudoti funkciją „Aiškus skambutis“</string>
+    <string name="clear_calling_topintro">Sumažinamas foninis triukšmas skambinant</string>
+</resources>

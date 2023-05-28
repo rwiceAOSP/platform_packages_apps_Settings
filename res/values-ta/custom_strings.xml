@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">உங்கள் தனியுரிமையைப் பாதுகாக்க \'தெளிவான அழைப்பு\' அம்சம் ஆடியோ/உரையாடல்களை Googleளுக்கு அனுப்பாது.\n\nபெரும்பாலான நெட்வொர்க்குகளிலும் வைஃபை அழைப்பிலும் ‘தெளிவான அழைப்பு’ அம்சம் இயங்கும், 3ஜி நெட்வொர்க்குகளில் இயங்காது.</string>
+    <string name="clear_calling_title">தெளிவான அழைப்பு</string>
+    <string name="clear_calling_toggle">தெளிவான அழைப்பைப் பயன்படுத்துதல்</string>
+    <string name="clear_calling_topintro">அழைப்புகளின்போது பின்புல இரைச்சல்களைக் குறைக்கும்</string>
+</resources>

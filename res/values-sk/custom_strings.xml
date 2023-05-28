@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Čistý zvuk volania neodosiela zvuk ani konverzácie Googlu, čím chráni vaše súkromie.\n\nČistý zvuk volania funguje pri volaní cez Wi‑Fi a väčšinu sietí, ale nie je k dispozícii v sieťach 3G.</string>
+    <string name="clear_calling_title">Čistý zvuk volania</string>
+    <string name="clear_calling_toggle">Použiť čistý zvuk volania</string>
+    <string name="clear_calling_topintro">Redukuje šum na pozadí počas hovorov</string>
+</resources>
