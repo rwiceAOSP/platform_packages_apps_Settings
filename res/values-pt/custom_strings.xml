@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Para proteger sua privacidade, o recurso Chamadas Nítidas não envia áudios ou conversas ao Google.\n\nEsse recurso funciona em ligações pelo Wi-Fi e na maioria das redes, exceto redes 3G.</string>
+    <string name="clear_calling_title">Chamadas Nítidas</string>
+    <string name="clear_calling_toggle">Usar Chamadas Nítidas</string>
+    <string name="clear_calling_topintro">Reduz ruídos de fundo durante ligações</string>
+</resources>

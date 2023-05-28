@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Купуялыгыңызды коргоо үчүн Таза үн функциясы аудио файлдарды же жазышууларды Google\'га жөнөтпөйт.\n\nТаза үн функциясы Wi-Fi аркылуу чалууда жана көптөгөн мобилдик тармактарда иштейт. 3G тармактарында жеткиликсиз.</string>
+    <string name="clear_calling_title">Таза үн</string>
+    <string name="clear_calling_toggle">Таза үн функциясын колдонуу</string>
+    <string name="clear_calling_topintro">Чалуу учурундагы ызы-чуу азаят</string>
+</resources>

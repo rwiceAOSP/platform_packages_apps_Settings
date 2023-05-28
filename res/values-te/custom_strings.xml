@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">మీ గోప్యతను రక్షించడానికి, క్లియర్ కాలింగ్ ఫీచర్‌, ఆడియోను లేదా సంభాషణలను Googleకు పంపదు.\n\nక్లియర్ కాలింగ్, Wi‑Fi కాలింగ్‌తో పాటు, దాదాపుగా అన్ని నెట్‌వర్క్‌లలో పని చేస్తుంది, 3G నెట్‌వర్క్‌లకు మాత్రం అందుబాటులో లేదు.</string>
+    <string name="clear_calling_title">క్లియర్ కాలింగ్</string>
+    <string name="clear_calling_toggle">క్లియర్ కాలింగ్‌ను ఉపయోగించండి</string>
+    <string name="clear_calling_topintro">కాల్స్ మాట్లాడుతున్నప్పుడు బ్యాక్‌గ్రౌండ్ నాయిస్‌ను తగ్గిస్తుంది</string>
+</resources>

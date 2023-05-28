@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Net Görüşme Sesi, gizliliğinizi korumak için Google\'a ses veya konuşma göndermez.\n\nNet Görüşme Sesi kablosuz çağrıda ve çoğu ağda çalışır, 3G ağlarında ise kullanılamaz.</string>
+    <string name="clear_calling_title">Net Görüşme Sesi</string>
+    <string name="clear_calling_toggle">Net Görüşme Sesi\'ni kullan</string>
+    <string name="clear_calling_topintro">Arama sırasında arka plan gürültülerini azaltır</string>
+</resources>

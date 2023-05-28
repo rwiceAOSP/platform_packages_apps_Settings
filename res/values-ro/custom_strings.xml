@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Pentru a-ți proteja confidențialitatea, Apelarea cu sunet clar nu trimite niciodată conținut audio sau conversații la Google.\n\nApelarea cu sunet clar este disponibilă în Apelarea prin Wi‑Fi și în majoritatea rețelelor, însă nu și în rețelele 3G.</string>
+    <string name="clear_calling_title">Apelare cu sunet clar</string>
+    <string name="clear_calling_toggle">Folosește apelarea cu sunet clar</string>
+    <string name="clear_calling_topintro">Reduce zgomotele de fundal în timpul apelurilor</string>
+</resources>

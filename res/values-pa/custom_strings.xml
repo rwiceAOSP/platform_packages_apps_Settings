@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਦੀ ਸੁਰੱਖਿਆ ਕਰਨ ਲਈ, ਕਲੀਅਰ ਕਾਲਿੰਗ Google ਨੂੰ ਆਡੀਓ ਜਾਂ ਗੱਲਾਂਬਾਤਾਂ ਨਹੀਂ ਭੇਜਦੀ।\n\nਕਲੀਅਰ ਕਾਲਿੰਗ ਵਾਈ-ਫਾਈ ਕਾਲਿੰਗ ਅਤੇ ਜ਼ਿਆਦਾਤਰ ਨੈੱਟਵਰਕਾਂ \'ਤੇ ਕੰਮ ਕਰਦੀ ਹੈ, 3G ਨੈੱਟਵਰਕਾਂ ਲਈ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।</string>
+    <string name="clear_calling_title">ਕਲੀਅਰ ਕਾਲਿੰਗ</string>
+    <string name="clear_calling_toggle">ਕਲੀਅਰ ਕਾਲਿੰਗ ਵਰਤੋ</string>
+    <string name="clear_calling_topintro">ਕਾਲਾਂ ਦੌਰਾਨ ਪਿੱਛੇ ਪੈਣ ਵਾਲੇ ਰੌਲੇ ਨੂੰ ਘਟਾਉਂਦਾ ਹੈ</string>
+</resources>

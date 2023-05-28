@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">तुमच्या गोपनीयतेचे संरक्षण करण्यासाठी, सुस्पष्ट कॉलिंग हे Google ला ऑडिओ किंवा संभाषणे पाठवत नाही.\n\nसुस्पष्ट कॉलिंग हे वाय-फाय कॉलिंग आणि बहुतांश नेटवर्कवर काम करते, 3G नेटवर्कवर उपलब्ध नाही.</string>
+    <string name="clear_calling_title">सुस्पष्ट कॉलिंग</string>
+    <string name="clear_calling_toggle">सुस्पष्ट कॉलिंग वापरा</string>
+    <string name="clear_calling_topintro">कॉलदरम्यान बॅकग्राउंडमधील आवाज कमी करते</string>
+</resources>

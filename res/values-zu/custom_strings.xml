@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Ukuze uvikele ubumfihlo bakho, Ukushaya Okucacile akuthumeli umsindo noma izingxoxo ku-Google. \n\nUkushaya Okucacile kusebenza ekushayeni kwe-Wi-Fi kanye namanethiwekhi amaningi, awatholakali kumanethiwekhi e-3G.</string>
+    <string name="clear_calling_title">Ukufona Okucacile</string>
+    <string name="clear_calling_toggle">Sebenzisa Ukufona Okucacile</string>
+    <string name="clear_calling_topintro">Inciphisa umsindo wangemuva phakathi namakholi</string>
+</resources>

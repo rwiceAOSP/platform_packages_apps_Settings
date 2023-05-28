@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">ನಿಮ್ಮ ಗೌಪ್ಯತೆಯನ್ನು ರಕ್ಷಿಸಲು, ಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್ ಆಡಿಯೊ ಅಥವಾ ಸಂಭಾಷಣೆಗಳನ್ನು Google ಗೆ ಕಳುಹಿಸುವುದಿಲ್ಲ.\n\nಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್ ವೈಫೈ ಕರೆ ಮಾಡುವಿಕೆ ಮತ್ತು ಬಹುತೇಕ ನೆಟ್‌ವರ್ಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ, 3G ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಗೆ ಲಭ್ಯವಿರುವುದಿಲ್ಲ.</string>
+    <string name="clear_calling_title">ಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್</string>
+    <string name="clear_calling_toggle">ಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬಳಸಿ</string>
+    <string name="clear_calling_topintro">ಕರೆಗಳ ಸಮಯದಲ್ಲಿ ಹಿನ್ನೆಲೆ ಗದ್ದಲಗಳನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ</string>
+</resources>

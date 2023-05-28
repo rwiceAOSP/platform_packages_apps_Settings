@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">আপোনাৰ গোপনীয়তা সুৰক্ষিত কৰিবলৈ, স্পষ্ট কলিঙে Googleলৈ অডিঅ’ অথবা বাৰ্তালাপ প্ৰেৰণ নকৰে।\n\nস্পষ্ট কলিঙে ৱাই-ফাই কলিং আৰু বেছিভাগ ম’বাইল নেটৱৰ্কত কাম কৰে, ই 3G নেটৱৰ্কৰ বাবে উপলব্ধ নহয়।</string>
+    <string name="clear_calling_title">স্পষ্ট কলিং</string>
+    <string name="clear_calling_toggle">স্পষ্ট কলিং ব্যৱহাৰ কৰক</string>
+    <string name="clear_calling_topintro">কল চলি থকাৰ সময়ত নেপথ্যৰ কোলাহল হ্ৰাস কৰে</string>
+</resources>

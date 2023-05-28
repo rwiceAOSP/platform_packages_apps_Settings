@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Për të mbrojtur privatësinë tënde, \"Telefonata e qartë\" nuk dërgon audio apo biseda te Google.\n\n\"Telefonata e qartë\" funksionon në telefonatat Wi‑Fi dhe në shumicën e rrjeteve, nuk ofrohet për rrjetet 3G.</string>
+    <string name="clear_calling_title">Telefonata e qartë</string>
+    <string name="clear_calling_toggle">Përdor \"Telefonatën e qartë\"</string>
+    <string name="clear_calling_topintro">Redukton zhurmat në sfond gjatë telefonatave</string>
+</resources>

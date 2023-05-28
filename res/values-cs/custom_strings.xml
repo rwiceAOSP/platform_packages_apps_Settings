@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Z důvodu ochrany vašeho soukromí funkce Čistý zvuk volání neodesílá zvuk ani konverzace do Googlu.\n\nFunkce Čistý zvuk volání funguje při volání přes Wi-Fi a ve většině sítí, pro 3G sítě dostupná není.</string>
+    <string name="clear_calling_title">Čistý zvuk volání</string>
+    <string name="clear_calling_toggle">Používat Čistý zvuk volání</string>
+    <string name="clear_calling_topintro">Během hovorů snižuje hluk v pozadí</string>
+</resources>

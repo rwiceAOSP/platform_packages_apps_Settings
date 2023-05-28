@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">ฟีเจอร์การโทรเสียงคมชัดจะไม่ส่งเสียงหรือการสนทนาไปให้ Google เพื่อปกป้องความเป็นส่วนตัวของคุณ\n\nการโทรเสียงคมชัดใช้งานได้กับการโทรผ่าน Wi-Fi และเครือข่ายส่วนใหญ่ แต่ไม่พร้อมใช้งานกับเครือข่าย 3G</string>
+    <string name="clear_calling_title">การโทรเสียงคมชัด</string>
+    <string name="clear_calling_toggle">ใช้การโทรเสียงคมชัด</string>
+    <string name="clear_calling_topintro">ลดเสียงรบกวนรอบข้างระหว่างการโทร</string>
+</resources>

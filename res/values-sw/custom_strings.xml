@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Ili kulinda faragha yako, Kipengele cha Usikivu Murua hakitumi sauti au mazungumzo yako kwa Google.\n\nKipengele cha Usikivu Murua kinapatikana unapopiga simu kupitia Wi-Fi na mitandao mingi, hakitumiki kwa mitandao ya 3G.</string>
+    <string name="clear_calling_title">Usikivu Murua</string>
+    <string name="clear_calling_toggle">Tumia kipengele cha Usikivu Murua</string>
+    <string name="clear_calling_topintro">Hupunguza kelele za mazingira wakati wa kupiga simu</string>
+</resources>

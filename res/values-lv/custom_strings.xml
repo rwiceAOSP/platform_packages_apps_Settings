@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Lai aizsargātu jūsu konfidencialitāti, funkcija Skaidri zvani nesūta audio vai sarunas uzņēmumam Google.\n\nFunkcija Skaidri zvani darbojas Wi-Fi zvanos un vairumā tīklu, taču nav pieejama 3G tīklos.</string>
+    <string name="clear_calling_title">Skaidri zvani</string>
+    <string name="clear_calling_toggle">Izmantot funkciju “Skaidra skaņa zvana laikā”</string>
+    <string name="clear_calling_topintro">Tiek samazināti fona trokšņi zvanu laikā</string>
+</resources>

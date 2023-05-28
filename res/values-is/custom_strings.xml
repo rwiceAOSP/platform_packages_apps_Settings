@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Til að gæta persónuverndar sendir Skýrt símtal aldrei hljóð eða samtöl til Google.\n\nSkýrt símtal virkar í WiFi-símtölum og á flestum netkerfum en er ekki í boði fyrir 3G-net.</string>
+    <string name="clear_calling_title">Skýrt símtal</string>
+    <string name="clear_calling_toggle">Nota Skýrt símtal</string>
+    <string name="clear_calling_topintro">Dregur úr bakgrunnshljóðum meðan á símtali stendur</string>
+</resources>

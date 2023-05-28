@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">तपाईंको गोपनीयता सुरक्षित राख्नका लागि क्लियर कलिङले Google मा अडियो वा कुराकानीहरू पठाउँदैन।\n\nक्लियर कलिङ सुविधा Wi-Fi कलिङ र अधिकांश नेटवर्कहरूमा प्रयोग गर्न मिल्छ तर 3G नेटवर्कहरूमा भने प्रयोग गर्न मिल्दैन।</string>
+    <string name="clear_calling_title">क्लियर कलिङ</string>
+    <string name="clear_calling_toggle">क्लियर कलिङ प्रयोग गर्नुहोस्</string>
+    <string name="clear_calling_topintro">यसले कल चलिरहेका बेला ब्याकग्राउन्डको आवाज कम गर्छ</string>
+</resources>

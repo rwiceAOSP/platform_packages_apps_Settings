@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">ເພື່ອປົກປ້ອງຄວາມເປັນສ່ວນຕົວຂອງທ່ານ, ການໂທສຽງຈະແຈ້ງແມ່ນຈະບໍ່ສົ່ງສຽງ ຫຼື ການສົນທະນາໄປໃຫ້ Google.\n\nການໂທສຽງຈະແຈ້ງໃຊ້ໄດ້ກັບການໂທ Wi-Fi ແລະ ເຄືອຂ່າຍສ່ວນໃຫຍ່, ແຕ່ບໍ່ສາມາດໃຊ້ໄດ້ກັບເຄືອຂ່າຍ 3G.</string>
+    <string name="clear_calling_title">ການໂທສຽງຈະແຈ້ງ</string>
+    <string name="clear_calling_toggle">ໃຊ້ການໂທສຽງຈະແຈ້ງ</string>
+    <string name="clear_calling_topintro">ຫຼຸດສຽງລົບກວນຈາກພື້ນຫຼັງໃນລະຫວ່າງການໂທ</string>
+</resources>

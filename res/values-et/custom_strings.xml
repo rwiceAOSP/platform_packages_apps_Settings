@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Teie privaatsuse kaitsmiseks ei saada funktsioon Selge heliga helistamine Google\'ile heli ega vestlusi.\n\nSelge heliga helistamine toimib WiFi-kõnede ja enamiku võrkude puhul, kuid pole saadaval 3G-võrkudes.</string>
+    <string name="clear_calling_title">Selge heliga helistamine</string>
+    <string name="clear_calling_toggle">Kasuta selge heliga helistamise funktsiooni</string>
+    <string name="clear_calling_topintro">Vähendab kõnede ajal taustamüra</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">आपकी निजता की सुरक्षा के लिए, बैकग्राउंड के शोर को कम करने वाली सुविधा Google को कभी भी ऑडियो या बातचीत की रिकॉर्डिंग नहीं भेजती.\n\nयह सुविधा, वाई-फ़ाई कॉलिंग के साथ-साथ, ज़्यादातर नेटवर्क पर काम करती है. हालांकि, यह 3G नेटवर्क पर काम नहीं करती.</string>
+    <string name="clear_calling_title">बैकग्राउंड शोर कम करने की सुविधा</string>
+    <string name="clear_calling_toggle">बैकग्राउंड के शोर को कम करने वाली सुविधा इस्तेमाल करें</string>
+    <string name="clear_calling_topintro">यह सुविधा, कॉल के दौरान बैकग्राउंड से आने वाले शोर को कम कर देती है</string>
+</resources>

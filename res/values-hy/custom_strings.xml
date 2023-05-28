@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Ձեր գաղտնիությունն ապահովելու համար «Մաքուր ձայնով զանգեր» գործառույթը չի ուղարկում ձայնագրությունները կամ զրույցները Google-ին։\n\n«Մաքուր ձայնով զանգեր» գործառույթն աշխատում է Wi‑Fi-ով զանգերի դեպքում և ցանցերի մեծամասնությունում, սակայն հասանելի չէ 3G ցանցերի համար։</string>
+    <string name="clear_calling_title">Մաքուր ձայնով զանգեր</string>
+    <string name="clear_calling_toggle">Օգտագործել «Մաքուր ձայնով զանգեր» գործառույթը</string>
+    <string name="clear_calling_topintro">Նվազեցնում է ֆոնային աղմուկը զանգերի ժամանակ</string>
+</resources>

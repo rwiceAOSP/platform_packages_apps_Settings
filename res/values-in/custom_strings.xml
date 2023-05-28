@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Untuk melindungi privasi Anda, Panggilan Jernih tidak akan mengirimkan audio atau percakapan ke Google.\n\nPanggilan Jernih berfungsi pada panggilan Wi-Fi dan sebagian besar jaringan, tidak tersedia untuk jaringan 3G.</string>
+    <string name="clear_calling_title">Panggilan Jernih</string>
+    <string name="clear_calling_toggle">Gunakan Panggilan Jernih</string>
+    <string name="clear_calling_topintro">Mengurangi kebisingan di latar belakang selama panggilan</string>
+</resources>

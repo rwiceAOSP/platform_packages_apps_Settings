@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">നിങ്ങളുടെ സ്വകാര്യത പരിരക്ഷിക്കാൻ, ക്ലിയർ കോളിംഗ് Google-ലേക്ക് ഓഡിയോയോ സംഭാഷണങ്ങളോ അയയ്‌ക്കുന്നില്ല.\n\nവൈഫൈ കോളിംഗിലും മിക്ക നെറ്റ്‌വർക്കുകളിലും ക്ലിയർ കോളിംഗ് പ്രവർത്തിക്കുന്നു, 3G നെറ്റ്‌വർക്കുകളിൽ ലഭ്യമല്ല.</string>
+    <string name="clear_calling_title">ക്ലിയർ കോളിംഗ്</string>
+    <string name="clear_calling_toggle">ക്ലിയർ കോളിംഗ് ഉപയോഗിക്കുക</string>
+    <string name="clear_calling_topintro">കോൾ ചെയ്യുന്നതിനിടെ കേൾക്കുന്ന പശ്ചാത്തല ശബ്ദങ്ങൾ കുറയ്ക്കുന്നു</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Pour protéger votre confidentialité, la Clarté du son de l\'interlocuteur n\'envoie pas de données audio ni de conversations à Google.\n\nCette fonctionnalité est compatible avec les appels Wi-Fi et la plupart des réseaux. Elle n\'est pas disponible pour les réseaux 3G.</string>
+    <string name="clear_calling_title">Clarté son de l\'interlocuteur</string>
+    <string name="clear_calling_toggle">Utiliser la Clarté du son de l\'interlocuteur</string>
+    <string name="clear_calling_topintro">Réduit les bruits de fond lors des appels</string>
+</resources>

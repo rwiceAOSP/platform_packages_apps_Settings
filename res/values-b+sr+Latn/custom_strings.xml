@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Clear Calling -->
+    <string name="clear_calling_footer">Da bi vam zaštitili privatnost, Razgovetni pozivi ne šalju zvuk niti razgovore Google-u.\n\nRazgovetni pozivi rade sa Pozivanjem preko WiFi-ja i većinom mreža, a nisu dostupni za 3G mreže.</string>
+    <string name="clear_calling_title">Razgovetni pozivi</string>
+    <string name="clear_calling_toggle">Koristi Razgovetne pozive</string>
+    <string name="clear_calling_topintro">Umanjuje buku u pozadini tokom poziva</string>
+</resources>
