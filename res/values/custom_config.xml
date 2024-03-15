@@ -16,4 +16,7 @@
     <bool name="config_face_settings_should_manage_preview">true</bool>
     <bool name="config_fingerprint_enroll_calibration">false</bool>
     <string name="config_face_enroll_traffic_light_package" translatable="false"></string>
+
+    <!-- Show battery information -->
+    <bool name="config_show_battery_info">true</bool>
 </resources>
