@@ -2978,7 +2978,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Şarj aksesuarını kontrol edin"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Uyumsuz şarj hakkında daha fazla bilgi"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"Pil Yöneticisi"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"Uygulamaları otomatik olarak yönet"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">Uyarlanabilir Pil</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"Pil Yöneticisi uygulamaların pili çok harcadığını algıladığında, bu uygulamaları kısıtlama seçeneğiniz olacaktır. Kısıtlanmış uygulamalar düzgün bir şekilde çalışmayabilir ve bildirimlerinde gecikme olabilir."</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Kısıtlanmış uygulamalar"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# uygulamanın pil kullanımı sınırlandırılıyor}other{# uygulamanın pil kullanımı sınırlandırılıyor}}"</string>

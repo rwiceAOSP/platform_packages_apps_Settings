@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Праверце зарадную прыладу"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Даведацца больш пра несумяшчальную зарадную прыладу"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"Менеджар акумулятара"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"Аўтаматычнае кіраванне праграмамі"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">Адаптацыя акумулятара</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"Калі менеджар акумулятара выяўляе выкарыстанне зараду праграмамі, ёсць магчымасць абмежаваць іх работу. Работа праграм з абмежаваннямі можа быць неналежнай, і апавяшчэнні могуць прыходзіць з затрымкай."</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Праграмы, якія не працуюць у фонавым рэжыме"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{Абмежаванае выкарыстанне зараду для # праграмы}one{Абмежаванае выкарыстанне зараду для # праграмы}few{Абмежаванае выкарыстанне зараду для # праграм}many{Абмежаванае выкарыстанне зараду для # праграм}other{Абмежаванае выкарыстанне зараду для # праграмы}}"</string>

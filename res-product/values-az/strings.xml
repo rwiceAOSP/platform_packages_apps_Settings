@@ -525,7 +525,7 @@
     <string name="battery_tip_dialog_summary_message" product="tablet" msgid="236339248261391160">"Tətbiqlər enerjini qaydası üzrə sərf edir. Enerji sərfiyyatı artanda sizə təkliflər ediləcək.\n\nEnerji qurtarırsa, enerjiyə qənaət rejiminə keçin."</string>
     <string name="battery_tip_dialog_summary_message" product="device" msgid="7885502661524685786">"Tətbiqlər enerjini qaydası üzrə sərf edir. Enerji sərfiyyatı artanda sizə təkliflər ediləcək.\n\nEnerji qurtarırsa, enerjiyə qənaət rejiminə keçin."</string>
     <string name="battery_tip_dialog_summary_message" product="desktop" msgid="7885502661524685786">"Tətbiqlər enerjini qaydası üzrə sərf edir. Enerji sərfiyyatı artanda sizə təkliflər ediləcək.\n\nEnerji qurtarırsa, enerjiyə qənaət rejiminə keçin."</string>
-    <string name="smart_battery_summary" product="default" msgid="1210637215867635435">"Müntəzəm istifadə etmədiyiniz tətbiqlərin enrji istifadəsini məhdudlaşdırın"</string>
+    <string name="smart_battery_summary" product="default" msgid="1210637215867635435">Adaptiv Batareya tətbiqlərin batareya istifadəsini davamlı optimallaşdırmaq üçün telefon istifadəsinə əsaslanır. Batareya ömrünü uzatmaq üçün performansı azalda və bildirişləri ləngidə bilər.</string>
     <string name="battery_usage_screen_footer" product="default" msgid="8872101342490341865">"Telefon şarj ediləndə batareya istifadəsi və ekran vaxtı ölçülmür"</string>
     <string name="battery_usage_screen_footer" product="tablet" msgid="1876984641036532124">"Planşet şarj ediləndə batareya istifadəsi və ekran vaxtı ölçülmür"</string>
     <string name="battery_usage_screen_footer" product="device" msgid="6488857833906266507">"Cihaz şarj ediləndə batareya istifadəsi və ekran vaxtı ölçülmür"</string>

@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"የኃይል መሙላት መለዋወጫን ይፈትሹ"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"ስለ ተኳዃኝ ያልሆነ ኃይል መሙላት የበለጠ ይወቁ"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"የባትሪ አስተዳዳሪ"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"መተግበሪያዎችን በራስ-ሰር ያቀናብሩ"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">ተለማማጅ ባትሪ</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"ባትሪ አስተዳዳሪ መተግበሪያዎች ባትሪን አንጠፍጥፈው እየጨረሱት እንደሆነ ፈልጎ ሲደርስበት እነዚህን መተግበሪያዎች ለመገደብ አማራጭ ይኖርዎታል። የተገደቡ መተግበሪያዎች በአግባቡ ላይሠሩ ይችላሉ እና ማሳወቂያዎች ሊዘገዩ ይችሉ ይሆናል።"</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"የተገደቡ መተግበሪያዎች"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{ለ# መተግበሪያ የባትሪ አጠቃቀምን በመገደብ ላይ}one{ለ# መተግበሪያ የባትሪ አጠቃቀምን በመገደብ ላይ}other{ለ# መተግበሪያዎች የባትሪ አጠቃቀምን በመገደብ ላይ}}"</string>
