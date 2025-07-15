@@ -11,4 +11,20 @@
     <string name="language_picker_page">Page ng Picker ng wika</string>
     <string name="search_region">Maghanap ng mga rehiyon</string>
     <string name="search_region_page">Page ng Maghanap ng rehiyon</string>
+
+    <!-- Battery Saver -->
+    <string name="adaptive_battery_switch_title">Gamitin ang Adaptive Battery</string>
+    <string name="basic_battery_saver_title">Karaniwang Pantipid ng Baterya</string>
+    <string name="basic_battery_saver_summary">Nililimitahan ang mga visual effect at aktibidad sa background. Ino-on ang dark theme, kung hindi pa ito naka-on.</string>
+    <string name="battery_saver_reminder_category">Mga Paalala</string>
+    <string name="battery_saver_reminder_switch_title">Mga paalala ng Pantipid ng Baterya</string>
+    <string name="battery_saver_reminder_switch_summary">Makakuha ng mga paalala kapag mahina na ang baterya</string>
+    <string name="battery_saver_schedule_category">Iskedyul</string>
+    <string name="battery_saver_schedule_switch_title">I-on batay sa level ng baterya</string>
+    <string name="battery_saver_schedule_switch_summary">Nag-o-on ang Pantipid ng Baterya kapag bumaba ang baterya sa level na itinakda mo</string>
+    <string name="battery_schedule_title">Iskedyul at mga paalala</string>
+    <string name="battery_schedule_summary">Pamahalaan kung kailan mag-o-on ang Pantipid ng Baterya</string>
+    <string name="extreme_battery_saver_title">Max na Pantipid ng Baterya</string>
+    <string name="extreme_battery_saver_summary">Kasama ang lahat ng pagbabagong nakalista sa itaas. Pino-pause din ang hindi mahahalagang app at mga notification ng mga ito.</string>
+    <string name="unified_battery_saver_page_intro">Magtipid ng baterya para tulungan ang baterya ng iyong telepono na mas tumagal sa pagitan ng mga pag-charge</string>
 </resources>

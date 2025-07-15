@@ -525,7 +525,7 @@
     <string name="battery_tip_dialog_summary_message" product="tablet" msgid="236339248261391160">"앱의 배터리 사용량이 평소와 같습니다. 앱에서 배터리를 너무 많이 사용하면 태블릿에서 취하실 수 있는 조치를 알려 드리겠습니다.\n\n배터리가 부족하면 언제든지 절전 모드를 사용 설정하세요."</string>
     <string name="battery_tip_dialog_summary_message" product="device" msgid="7885502661524685786">"앱의 배터리 사용량이 평소와 같습니다. 앱에서 배터리를 너무 많이 사용하면 기기에서 취하실 수 있는 조치를 알려 드리겠습니다.\n\n배터리가 부족하면 언제든지 절전 모드를 사용 설정하세요."</string>
     <string name="battery_tip_dialog_summary_message" product="desktop" msgid="7885502661524685786">"앱의 배터리 사용량이 평소와 같습니다. 앱에서 배터리를 너무 많이 사용하면 기기에서 취하실 수 있는 조치를 알려 드리겠습니다.\n\n배터리가 부족하면 언제든지 절전 모드를 사용 설정하세요."</string>
-    <string name="smart_battery_summary" product="default" msgid="1210637215867635435">"자주 사용하지 않는 앱의 배터리 사용량 제한"</string>
+    <string name="smart_battery_summary" product="default" msgid="1210637215867635435">배터리 자동 조절 기능은 사용자의 휴대전화 사용 방식을 학습하여 지속적으로 앱의 배터리 사용을 최적화합니다. 배터리 수명을 늘리기 위해 성능이 저하되고 알림이 지연될 수 있습니다.</string>
     <string name="battery_usage_screen_footer" product="default" msgid="8872101342490341865">"휴대전화 충전 중에는 배터리 사용량과 기기 사용 시간이 측정되지 않습니다."</string>
     <string name="battery_usage_screen_footer" product="tablet" msgid="1876984641036532124">"태블릿을 충전하는 중에는 배터리 사용량과 기기 사용 시간이 측정되지 않습니다."</string>
     <string name="battery_usage_screen_footer" product="device" msgid="6488857833906266507">"기기를 충전하는 중에는 배터리 사용량과 기기 사용 시간이 측정되지 않습니다."</string>

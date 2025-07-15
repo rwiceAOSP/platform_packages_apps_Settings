@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"ਚਾਰਜਿੰਗ ਐਕਸੈਸਰੀ ਦੀ ਜਾਂਚ ਕਰੋ"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"ਗੈਰ-ਅਨੁਰੂਪ ਚਾਰਜਿੰਗ ਬਾਰੇ ਹੋਰ ਜਾਣੋ"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"ਬੈਟਰੀ ਪ੍ਰਬੰਧਕ"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"ਐਪਾਂ ਦਾ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਪ੍ਰਬੰਧਨ ਕਰੋ"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">ਅਡੈਪਟਿਵ ਬੈਟਰੀ</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"ਜਦੋਂ ਬੈਟਰੀ ਪ੍ਰਬੰਧਕ ਇਹ ਪਤਾ ਲਗਾਉਂਦਾ ਹੈ ਕਿ ਐਪਾਂ ਜ਼ਿਆਦਾ ਬੈਟਰੀ ਵਰਤ ਰਹੀਆਂ ਹਨ, ਤਾਂ ਤੁਹਾਡੇ ਕੋਲ ਇਹਨਾਂ ਐਪਾਂ \'ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣ ਦਾ ਵਿਕਲਪ ਹੋਵੇਗਾ। ਸ਼ਾਇਦ ਪਾਬੰਦੀਸ਼ੁਦਾ ਐਪਾਂ ਸਹੀ ਢੰਗ ਨਾਲ ਕੰਮ ਨਾ ਕਰਨ ਅਤੇ ਸੂਚਨਾਵਾਂ ਵਿੱਚ ਦੇਰੀ ਹੋ ਸਕਦੀ ਹੈ।"</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"ਪਾਬੰਦੀਸ਼ੁਦਾ ਐਪਾਂ"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# ਐਪ ਲਈ ਬੈਟਰੀ ਵਰਤੋਂ ਨੂੰ ਸੀਮਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ}one{# ਐਪ ਲਈ ਬੈਟਰੀ ਵਰਤੋਂ ਨੂੰ ਸੀਮਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ}other{# ਐਪਾਂ ਲਈ ਬੈਟਰੀ ਵਰਤੋਂ ਨੂੰ ਸੀਮਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ}}"</string>

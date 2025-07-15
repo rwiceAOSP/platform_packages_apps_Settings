@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"فحص ملحق الشحن"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"مزيد من المعلومات عن الشحن بمحوِّل طاقة غير متوافق"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"مدير البطارية"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"إدارة التطبيقات تلقائيًا"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">البطارية التكيُّفية</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"عندما ترصد \"إدارة البطارية\" تطبيقات تستنزف شحن البطارية، سيتوفر لديك خيار بتقييد هذه التطبيقات، علمًا بأن التطبيقات المقيدة قد لا تعمل على نحو صحيح وقد تتأخر الإشعارات."</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"التطبيقات المقيّدة"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{فرض قيود على استخدام تطبيق واحد للبطارية}zero{فرض قيود على استخدام # تطبيق للبطارية}two{فرض قيود على استخدام تطبيقََين للبطارية}few{فرض قيود على استخدام # تطبيقات للبطارية}many{فرض قيود على استخدام # تطبيقًا للبطارية}other{فرض قيود على استخدام # تطبيق للبطارية}}"</string>
