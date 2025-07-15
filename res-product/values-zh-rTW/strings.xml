@@ -525,7 +525,7 @@
     <string name="battery_tip_dialog_summary_message" product="tablet" msgid="236339248261391160">"你的應用程式目前耗用的電力正常。如果應用程式耗用過多電力，你的平板電腦會為你提供操作建議。\n\n如果電池電量偏低，你隨時可以開啟省電模式。"</string>
     <string name="battery_tip_dialog_summary_message" product="device" msgid="7885502661524685786">"你的應用程式目前耗用的電力正常。如果應用程式耗用過多電力，裝置會提供相關操作建議。\n\n如果電池電量偏低，你隨時可以開啟省電模式。"</string>
     <string name="battery_tip_dialog_summary_message" product="desktop" msgid="7885502661524685786">"你的應用程式目前耗用的電力正常。如果應用程式耗用過多電力，裝置會提供相關操作建議。\n\n如果電池電量偏低，你隨時可以開啟省電模式。"</string>
-    <string name="smart_battery_summary" product="default" msgid="1210637215867635435">"針對不常使用的應用程式限制電池用量"</string>
+    <string name="smart_battery_summary" product="default" msgid="1210637215867635435">「自動調節電池用量」功能可根據手機使用情形，持續調整各應用程式的用電量。為延長電池續航力，系統可能會降低效能及延遲通知。</string>
     <string name="battery_usage_screen_footer" product="default" msgid="8872101342490341865">"手機充電時，系統不會估算電池用量和螢幕時間"</string>
     <string name="battery_usage_screen_footer" product="tablet" msgid="1876984641036532124">"平板電腦充電時，系統不會估算電池用量和螢幕時間"</string>
     <string name="battery_usage_screen_footer" product="device" msgid="6488857833906266507">"裝置充電時，系統不會估算電池用量和螢幕時間"</string>

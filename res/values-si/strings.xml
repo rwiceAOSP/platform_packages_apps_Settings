@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"ආරෝපණ ආයිත්තම පරීක්‍ෂා කරන්න"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"නොගැළපෙන ආරෝපණය පිළිබඳව තව දැන ගන්න"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"බැටරි කළමනාකරු"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"යෙදුම් ස්වයංක්‍රියව කළමනාකරණය කරන්න"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">අනුවර්තනීය බැටරිය</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"බැටරි කළමනාකරු යෙදුම් බැටරිය අඩු කරන බව හඳුනා ගන්නා විට, මෙම යෙදුම් සීමා කිරීමට ඔබට විකල්පයක් ඇත. සීමා කළ යෙදුම් නිසියාකාරව ක්‍රියා නොකළ හැකි අතර දැනුම්දීම් ප්‍රමාද විය හැකිය."</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"සීමා කළ යෙදුම්"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# යෙදුමක් සඳහා බැටරි භාවිතය සීමා කිරීම}one{යෙදුම් #ක් සඳහා බැටරි භාවිතය සීමා කිරීම}other{යෙදුම් #ක් සඳහා බැටරි භාවිතය සීමා කිරීම}}"</string>

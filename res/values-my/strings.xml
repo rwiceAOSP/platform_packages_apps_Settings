@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"အားသွင်းပစ္စည်းကို စစ်ပါ"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"တွဲမသုံးနိုင်သော ကြားခံကိရိယာဖြင့် အားသွင်းခြင်းအကြောင်း ပိုမိုလေ့လာရန်"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"ဘက်ထရီ စီမံခန့်ခွဲမှုစနစ်"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"အက်ပ်များကို အလိုအလျောက် စီမံခြင်း"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">အလိုက်အထိုက် ဘက်ထရီအားထိန်း</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"အက်ပ်များက ဓာတ်ခဲကို အားကုန်စေကြောင်း \'ဘက်ထရီ မန်နေဂျာ\' က တွေ့ရှိသည့်အခါ ထိုအက်ပ်များကို ကန့်သတ်ရန် သင်က ရွေးချယ်နိုင်ပါမည်။ ကန့်သတ်ထားသော အက်ပ်များသည် ကောင်းစွာမလုပ်ဆောင်တော့ဘဲ အကြောင်းကြားချက်များ နောက်ကျနိုင်ပါသည်။"</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"ကန့်သတ်ထားသည့် အက်ပ်များ"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{အက်ပ် # ခုအတွက် ဘက်ထရီအသုံးပြုမှု ကန့်သတ်ရန်}other{အက်ပ် # ခုအတွက် ဘက်ထရီအသုံးပြုမှု ကန့်သတ်ရန်}}"</string>

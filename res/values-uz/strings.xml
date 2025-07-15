@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Quvvatlash aksessuarini tekshiring"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Mos boʻlmagan quvvatlash haqida batafsil"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"Batareya boshqaruvi"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"Ilovalarni avtomatik boshqarish"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">Moslashuvchan batareya</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"Battery Manager ilovalarning batareyani ortiqcha sarflayotganini aniqlasa, mazkur ilovalarni cheklashingiz mumkin. Cheklangan ilovalar xato ishlashi va bildirishnomalar kechikishi mumkin."</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Cheklangan ilovalar"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# ta ilova uchun batareya sarfi cheklangan}other{# ta ilova uchun batareya sarfi cheklangan}}"</string>

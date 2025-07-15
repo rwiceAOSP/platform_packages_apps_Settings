@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Verifique o acessório de carregamento"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Saiba mais sobre a incompatibilidade de carregamento"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"Gerenciador de bateria"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"Gerenciar apps automaticamente"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">Bateria adaptável</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"Quando o Gerenciador de bateria detectar que apps estão descarregando a bateria, você terá a opção de restringi-los. Apps com restrição podem não funcionar corretamente e é possível que as notificações atrasem."</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Apps restritos"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{Limitando o uso da bateria de # app}one{Limitando o uso da bateria de # app}other{Limitando o uso da bateria de # apps}}"</string>

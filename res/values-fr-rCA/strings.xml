@@ -2977,7 +2977,7 @@
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Vérifier l\'accessoire de recharge"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"En savoir plus sur les chargeurs incompatibles"</string>
     <string name="smart_battery_manager_title" msgid="3677620516657920364">"Gestionnaire de pile"</string>
-    <string name="smart_battery_title" msgid="9095903608520254254">"Gérer les applis automatiquement"</string>
+    <string name="smart_battery_title" msgid="9095903608520254254">Pile adaptative</string>
     <string name="smart_battery_footer" msgid="8407121907452993645">"Lorsque le gestionnaire de pile détecte que des applis drainent la pile, il vous offrira la possibilité de les restreindre. Il se peut que les applis restreintes ne fonctionnent pas correctement et que les notifications soient retardées."</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Applis restreintes"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{L\'utilisation de la pile est limitée pour # appli}one{L\'utilisation de la pile est limitée pour # appli}other{L\'utilisation de la pile est limitée pour # applis}}"</string>
