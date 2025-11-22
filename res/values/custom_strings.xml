@@ -6,4 +6,9 @@
     <string name="color_mode_balance_green">Green strength</string>
     <string name="color_mode_balance_blue">Blue strength</string>
     <string name="keywords_color_balance">color, color balance, color correction, red, green, blue, LiveDisplay</string>
+
+    <!-- Double tap to sleep -->
+    <string name="double_tap_screen_to_sleep_summary">Double tap an empty space on the lock screen to turn off the screen.</string>
+    <string name="double_tap_screen_to_sleep_title">Double tap to turn off screen</string>
+    <string name="keywords_double_tap_screen_to_sleep">double tap to sleep, lock screen</string>
 </resources>
