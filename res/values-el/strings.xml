@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> μετά το χρονικό όριο, εκτός από τις περιπτώσεις όπου διατηρείται ξεκλειδωμένη από την <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"Προσθ. κειμ. σε οθόνη κλειδ."</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"Κανένα"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"Π.χ. Το Android του Μάκη."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">Π.χ. Το Pixel του Λευτέρη.</string>
     <string name="location_settings_title" msgid="8375074508036087178">"Τοποθεσία"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"Χρήση τοποθεσίας"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"Απενεργοποίηση"</string>
@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Δεν έχει οριστεί"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Ταπετσαρία"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Ταπετσαρία και στιλ"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Αρχική οθόνη, οθόνη κλειδώματος"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Χρώματα, εικονίδια θέματος, πλέγμα εφαρμογής</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Αλλαγή ταπετσαρίας"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Εξατομίκευση της οθόνης σας"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Επιλογή ταπετσαρίας από"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Προσαρμογή δείκτη, ενέργειες κλικ, κύλιση"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Μη διαθέσιμο επειδή το NFC είναι απενεργοποιημένο"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Για να το χρησιμοποιήσετε, πρέπει πρώτα να εγκαταστήσετε μια εφαρμογή πληρωμών."</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Πρόσφατες εφαρμογές, προεπιλεγμένες εφαρμογές"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Βοηθός, πρόσφατες εφαρμογές, προεπιλεγμένες εφαρμογές</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Η πρόσβαση ειδοποίησης δεν είναι διαθέσιμη για εφαρμογές στο προφίλ εργασίας."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Λογαριασμοί και κωδικοί πρόσβασης"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Προτάσεις για σύνδεση και αυτόματη συμπλήρωση"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"πληκτρολόγιο, απτική λειτουργία, δόνηση, πληκτρολόγηση"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"εξωτερική οθόνη, συνδεδεμένη οθόνη, διευρυμένη οθόνη, δεύτερη οθόνη, ενσωματωμένη οθόνη, διαρρύθμιση οθονών, κατοπτρισμός, μέγεθος προβολής, περιστροφή, ανάλυση, ρυθμός ανανέωσης"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"σύμβολο προσθήκης, σύμβολο προσθήκης κειμένου, δείκτης κειμένου, δείκτης, αναβόσβημα, διάστημα αναβοσβήματος, ρυθμός αναβοσβήματος, κινούμενη εικόνα, μείωση κινούμενης εικόνας, κατάργηση κινούμενης εικόνας"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Ένταση ήχου και δόνηση"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Ένταση ήχου και απτική λειτουργία</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Ένταση ήχου πολυμέσων"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Ένταση ήχου Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Ένταση ήχου κλήσεων"</string>
@@ -4520,7 +4520,7 @@
     <string name="decline_remote_bugreport_action" msgid="1276509879613158895">"Απόρριψη"</string>
     <string name="usb_use_charging_only" msgid="1743303747327057947">"Χωρίς μεταφορά δεδομένων"</string>
     <string name="usb_use_power_only" msgid="3408055485802114621">"Φόρτιση συνδεδεμένης συσκευής"</string>
-    <string name="usb_use_file_transfers" msgid="483915710802018503">"Μεταφορά αρχείων"</string>
+    <string name="usb_use_file_transfers" msgid="483915710802018503">Μεταφορά αρχείου/Android Auto</string>
     <string name="usb_use_photo_transfers" msgid="4641181628966036093">"PTP"</string>
     <string name="usb_use_uvc_webcam" msgid="6595429508472038732">"Webcam"</string>
     <string name="usb_transcode_files" msgid="2441954752105119109">"Μετατροπή βίντεο σε AVC"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> χρησιμοποιείται - <xliff:g id="FREE_SPACE">%2$s</xliff:g> ελεύθερος"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Σκούρο θέμα, μέγεθος γραμματοσειράς, φωτεινότητα"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Σκούρο θέμα, μέγεθος γραμματοσειράς, αφή</string>
     <string name="memory_summary" msgid="8221954450951651735">"Χρησιμοποιείται κατά μέσο όρο <xliff:g id="USED_MEMORY">%1$s</xliff:g> από <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> μνήμης"</string>
     <string name="users_summary" msgid="8473589474976307510">"Συνδέθηκε ως <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Ενημερώθηκε σε Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>
