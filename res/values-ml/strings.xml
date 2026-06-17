@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"ടൈംഔട്ടിന് ശേഷം <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>, <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> കൊണ്ട് അൺലോക്ക് ചെയ്‌തിരിക്കുമ്പോൾ ഒഴികെ"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"ലോക്ക് സ്‌ക്രീനിൽ ടെക്‌സ്റ്റ് ചേർക്കുക"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"ഒന്നുമില്ല"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"ഉദാ. ജോയുടെ Android."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">ഉദാ, ജോയുടെ Pixel.</string>
     <string name="location_settings_title" msgid="8375074508036087178">"ലൊക്കേഷൻ"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"ലൊക്കേഷൻ ഉപയോഗിക്കുക"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"ഓഫാക്കുക"</string>
@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"സജ്ജീകരിച്ചിട്ടില്ല"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"വാൾപേപ്പർ"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"വാൾപേപ്പറും സ്‌റ്റൈലും"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"ഹോം, ലോക്ക് സ്‌ക്രീൻ"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">നിറങ്ങൾ, തീമുള്ള ഐക്കണുകൾ, ആപ്പ് ഗ്രിഡ്</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"വാൾപേപ്പർ മാറ്റുക"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"നിങ്ങളുടെ സ്ക്രീൻ വ്യക്തിഗതമാക്കുക"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"ഇവിടുന്ന് വാൾപേപ്പർ തിരഞ്ഞെടുക്കൂ"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"കഴ്‌സർ ഇഷ്ടാനുസൃതമാക്കൽ, ക്ലിക്ക് പ്രവർത്തനങ്ങൾ, സ്ക്രോളിംഗ്"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC ഓഫായതിനാൽ ലഭ്യമല്ല"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"ഉപയോഗിക്കാൻ, ആദ്യം പേയ്മെന്റ് ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യുക"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"സമീപകാല ആപ്പുകൾ, ഡിഫോൾട്ട് ആപ്പുകൾ"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistant, സമീപകാലത്തുള്ള ആപ്പുകൾ, ഡിഫോൾട്ട് ആപ്പുകൾ</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"ഔദ്യോഗിക പ്രൊഫൈലിലെ ആപ്പുകൾക്ക് അറിയിപ്പിലേക്കുള്ള ആക്‌സസ് ലഭ്യമല്ല."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"പാസ്‌വേഡുകളും അക്കൗണ്ടുകളും"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"സൈൻ ഇൻ ചെയ്യലിനും സ്വയമേവ പൂരിപ്പിക്കലിനുമുള്ള നിർദ്ദേശങ്ങൾ"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"കീബോർഡ്, ഹാപ്റ്റിക്‌സ്, വൈബ്രേറ്റ് ചെയ്യൽ, ടൈപ്പിംഗ്"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"ബാഹ്യ ഡിസ്പ്ലേ, കണക്റ്റ് ചെയ്‌ത ഡിസ്പ്ലേ, വിപുലീകരിച്ച ഡിസ്പ്ലേ, രണ്ടാമത്തെ ഡിസ്പ്ലേ, ബിൽറ്റ്-ഇൻ ഡിസ്പ്ലേ, ഡിസ്പ്ലേകൾ ക്രമീകരിക്കുക, മിറർ, ഡിസ്പ്ലേ വലുപ്പം, റൊട്ടേഷൻ, റെസല്യൂഷൻ, റീഫ്രഷ് തോത്"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"കാരറ്റ്, ടെക്സ്റ്റ് കാരറ്റ്, ടെക്സ്റ്റ് കഴ്‌സർ, കഴ്‌സർ, ബ്ലിങ്കിംഗ്, ബ്ലിങ്ക് ഇടവേള, ബ്ലിങ്ക് നിരക്ക്, ആനിമേഷൻ, ആനിമേഷൻ കുറയ്‌ക്കുക, ആനിമേഷൻ നീക്കം ചെയ്യുക"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"ശബ്ദവും വൈബ്രേഷനും"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">ശബ്ദവും ഹാപ്‌റ്റിക്‌സും</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"മീഡിയാ വോളിയം"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast വോളിയം"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"കോൾ വോളിയം"</string>
@@ -4520,7 +4520,7 @@
     <string name="decline_remote_bugreport_action" msgid="1276509879613158895">"നിരസിക്കുക"</string>
     <string name="usb_use_charging_only" msgid="1743303747327057947">"ഡാറ്റ കൈമാറരുത്"</string>
     <string name="usb_use_power_only" msgid="3408055485802114621">"കണക്‌റ്റ് ചെയ്‌ത ഉപകരണം ചാർജ് ചെയ്യുക"</string>
-    <string name="usb_use_file_transfers" msgid="483915710802018503">"ഫയൽ കൈമാറൽ"</string>
+    <string name="usb_use_file_transfers" msgid="483915710802018503">ഫയൽ കൈമാറൽ / Android Auto</string>
     <string name="usb_use_photo_transfers" msgid="4641181628966036093">"PTP"</string>
     <string name="usb_use_uvc_webcam" msgid="6595429508472038732">"വെബ്ക്യാം"</string>
     <string name="usb_transcode_files" msgid="2441954752105119109">"വീഡിയോകൾ AVC-യിലേക്ക് മാറ്റുക"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> ഉപയോഗിച്ചു - <xliff:g id="FREE_SPACE">%2$s</xliff:g> ലഭ്യമാണ്"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"ഡാർക്ക് തീം, ഫോണ്ട് വലുപ്പം, തെളിച്ചം"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">ഡാർക്ക് തീം, ഫോണ്ട് വലുപ്പം, ടച്ച്</string>
     <string name="memory_summary" msgid="8221954450951651735">"ശരാശരി <xliff:g id="USED_MEMORY">%1$s</xliff:g> / <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> മെമ്മറി ഉപയോഗിച്ചു"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> ആയി സൈൻ ഇൻ ചെയ്‌തു"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g>-ലേക്ക് അപ്‌ഡേറ്റ് ചെയ്തു"</string>

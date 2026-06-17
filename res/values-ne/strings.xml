@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> ले अनलक अवस्थामा राखेको बेलाबाहेक टाइमआउटपछि <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"लक स्क्रिनमा टेक्स्ट हाल्नुहोस्"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"कुनै पनि होइन"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"उदाहरण, Joe को Android।"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">जस्तै, Joe को Pixel।</string>
     <string name="location_settings_title" msgid="8375074508036087178">"लोकेसन"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"लोकेसन प्रयोग गर्नुहोस्"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"अफ"</string>
@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"सेट गरिएको छैन"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"वालपेपर"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"वालपेपर तथा शैली"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"होम, लक स्क्रिन"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">रङ, थिमयुक्त आइकन, एप ग्रिड</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"वालपेपर बदल्नुहोस्"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"तपाईँको स्क्रिनलाई निजीकृत गर्नुहोस्"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"बाट वालपेपर छान्नुहोस्"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"कर्सर कस्टमाइजेसन, क्लिक गर्दा गरिने कारबाही, स्क्रोलिङ"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC अफ भएकाले उपलब्ध नभएको"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"यो सुवधा प्रयोग गर्न सर्वप्रथम भुक्तानी एप इन्स्टल गर्नुहोस्"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"हालैका एपहरू, डिफल्ट एपहरू"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">एसिस्टेन्ट, हालसालैका एपहरू, डिफल्ट एपहरू</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"वर्क प्रोफाइलका एपहरूको सूचनामाथि पहुँच छैन।"</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"पासवर्ड र खाताहरू"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"साइन इन र अटोफिलसम्बन्धी सुझावहरू"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"किबोर्ड, ह्याप्टिक्स, भाइब्रेट, टाइपिङ"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"बाह्य डिस्प्ले, कनेक्ट गरिएको डिस्प्ले, विस्तारित डिस्प्ले, दोस्रो डिस्प्ले, अन्तर्निर्मित डिस्प्ले, डिस्प्लेहरू मिलाएर राख्नुहोस्, मिरर, डिस्प्लेको आकार, रोटेसन, रिजोल्युसन, रिफ्रेस रेट"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"क्यारेट, टेक्स्ट क्यारेट, टेक्स्ट कर्सर, कर्सर, पिलिक पिलिक गर्ने, पिलिक पिलिक गर्ने अन्तराल, ब्लिङ्क रेट, एनिमेसन, एनिमेसन कम गर्नुहोस्, एनिमेसन हटाउनुहोस्"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"भोल्युम तथा भाइब्रेसन"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">भोल्युम र ह्याप्टिक्स</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"मिडियाको भोल्युम"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast को भोल्युम"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"कलको भोल्युम"</string>
@@ -4520,7 +4520,7 @@
     <string name="decline_remote_bugreport_action" msgid="1276509879613158895">"अस्वीकार गर्नुहोस्"</string>
     <string name="usb_use_charging_only" msgid="1743303747327057947">"डेटा ट्रान्सफर नगर्नुहोस्"</string>
     <string name="usb_use_power_only" msgid="3408055485802114621">"कनेक्ट गरिएको डिभाइस चार्ज गर्नुहोस्‌"</string>
-    <string name="usb_use_file_transfers" msgid="483915710802018503">"फाइल स्थानान्तरण"</string>
+    <string name="usb_use_file_transfers" msgid="483915710802018503">फाइल ट्रान्सफर / Android Auto</string>
     <string name="usb_use_photo_transfers" msgid="4641181628966036093">"PTP"</string>
     <string name="usb_use_uvc_webcam" msgid="6595429508472038732">"वेबक्याम"</string>
     <string name="usb_transcode_files" msgid="2441954752105119109">"भिडियोको फर्म्याट बदलेर AVC बनाउनुहोस्"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> प्रयोग गरिएको छ - <xliff:g id="FREE_SPACE">%2$s</xliff:g> खाली छ"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"अँध्यारो थिम, फन्टको आकार, चमक"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">अँध्यारो थिम, फन्टको आकार, टच</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> मध्ये औसत <xliff:g id="USED_MEMORY">%1$s</xliff:g> प्रयोग भएको छ"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> का रूपमा साइन इन गरिएको छ"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"अपडेट गरी Android <xliff:g id="VERSION">%1$s</xliff:g> बनाइएको छ"</string>
