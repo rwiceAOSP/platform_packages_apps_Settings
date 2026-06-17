@@ -48,8 +48,8 @@
     </string>
 
     <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_package" translatable="false">com.android.settings</string>
-    <string name="config_wallpaper_picker_class" translatable="false">com.android.settings.Settings$WallpaperSettingsActivity</string>
+    <string name="config_wallpaper_picker_package" translatable="false">com.google.android.apps.wallpaper</string>
+    <string name="config_wallpaper_picker_class" translatable="false">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
     <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
     <string name="config_styles_and_wallpaper_picker_class" translatable="false"></string>
     <!-- Action name for the wallpaper picker activity. -->
@@ -70,17 +70,14 @@
     <string name="gesture_double_twist_sensor_vendor" translatable="false"></string>
 
     <!-- If the Storage Manager settings are enabled. -->
-    <bool name="config_storage_manager_settings_enabled">false</bool>
+    <bool name="config_storage_manager_settings_enabled">true</bool>
 
     <!-- If the support features are enabled. -->
     <bool name="config_support_enabled">false</bool>
 
     <!-- List containing the component names of pre-installed screen reader services. -->
     <string-array name="config_preinstalled_screen_reader_services" translatable="false">
-        <!--
-        <item>com.example.package.first/com.example.class.FirstService</item>
-        <item>com.example.package.second/com.example.class.SecondService</item>
-        -->
+        <item>com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService</item>
     </string-array>
 
     <!-- List containing the component names of pre-installed captioning services. -->
@@ -117,10 +114,10 @@
 
     <!-- List containing the component names of pre-installed interaction control services. -->
     <string-array name="config_preinstalled_interaction_control_services" translatable="false">
-        <!--
-        <item>com.example.package.first/com.example.class.FirstService</item>
-        <item>com.example.package.second/com.example.class.SecondService</item>
-        -->
+        <item>com.google.android.marvin.talkback/com.google.android.accessibility.accessibilitymenu.AccessibilityMenuService</item>
+        <item>com.google.android.apps.accessibility.voiceaccess/com.google.android.apps.accessibility.voiceaccess.JustSpeakService</item>
+        <item>com.google.android.marvin.talkback/com.android.switchaccess.SwitchAccessService</item>
+        <item>com.google.android.accessibility.switchaccess/com.android.switchaccess.SwitchAccessService</item>
     </string-array>
 
     <!-- List containing the order of services in screen reader category by {@link ComponentName}.
@@ -270,7 +267,7 @@
 
     <!-- Settings intelligence package name -->
     <string name="config_settingsintelligence_package_name" translatable="false">
-        com.android.settings.intelligence
+        com.google.android.settings.intelligence
     </string>
 
     <!-- Settings intelligence interaction log intent action -->
@@ -281,7 +278,7 @@
 
     <!-- Package Installer package name -->
     <string name="config_package_installer_package_name" translatable="false">
-        com.android.packageinstaller
+        com.google.android.packageinstaller
     </string>
 
     <!-- Device lock controller package name -->
@@ -291,17 +288,17 @@
 
     <!-- Sound picker package name -->
     <string name="config_sound_picker_package_name" translatable="false">
-        com.android.soundpicker
+        com.google.android.soundpicker
     </string>
 
     <!-- Contacts package name -->
     <string name="config_contacts_package_name" translatable="false">
-        com.android.contacts
+        com.google.android.contacts
     </string>
 
     <!-- AOSP Emergency app package name -->
     <string name="config_aosp_emergency_package_name" translatable="false">
-        com.android.emergency
+        com.google.android.emergency
     </string>
 
     <!-- AOSP Emergency app intent action -->
@@ -311,12 +308,12 @@
 
     <!-- Emergency app package name -->
     <string name="config_emergency_package_name" translatable="false">
-        com.android.emergency
+        com.google.android.apps.safetyhub
     </string>
 
     <!-- Emergency app intent action -->
     <string name="config_emergency_intent_action" translatable="false">
-        android.settings.EDIT_EMERGENCY_INFO
+        com.google.android.safetyhub.SAFETY_HUB
     </string>
 
     <!-- Email address for the homepage contextual cards feedback -->
@@ -553,13 +550,13 @@
     <string name="config_nearby_devices_slice_uri" translatable="false">content://com.google.android.gms.nearby.fastpair/device_status_list_item</string>
 
     <!-- BT Slice intent action. To support Settings 2 panel, BT slice can't use PendingIntent.send(). Therefore, here defines the Slice intent action. -->
-    <string name="config_bt_slice_intent_action" translatable="false"></string>
+    <string name="config_bt_slice_intent_action" translatable="false">com.google.android.gms.nearby.discovery.ACTION_LOG_SLICE_AND_LAUNCH_INTENT</string>
     <!-- BT Slice pending intent action. To support Settings 2 panel, BT slice can't use PendingIntent.send(). Therefore, here defines the Slice pending intent action. -->
-    <string name="config_bt_slice_pending_intent_action" translatable="false"></string>
+    <string name="config_bt_slice_pending_intent_action" translatable="false">com.google.android.gms.nearby.discovery.ACTION_LOG_SLICE_AND_SEND_PENDING_INTENT</string>
     <!-- BT Slice EXTRA_INTENT. To support Settings 2 panel, BT slice can't use PendingIntent.send(). Therefore, here defines the Slice EXTRA_INTENT. -->
-    <string name="config_bt_slice_extra_intent" translatable="false"></string>
+    <string name="config_bt_slice_extra_intent" translatable="false">com.google.android.gms.nearby.discovery.EXTRA_INTENT</string>
     <!-- BT Slice EXTRA_PENDING_INTENT. To support Settings 2 panel, BT slice can't use PendingIntent.send(). Therefore, here defines the Slice EXTRA_PENDING_INTENT. -->
-    <string name="config_bt_slice_extra_pending_intent" translatable="false"></string>
+    <string name="config_bt_slice_extra_pending_intent" translatable="false">com.google.android.gms.nearby.discovery.EXTRA_PENDING_INTENT</string>
 
     <!-- Grayscale settings intent -->
     <string name="config_grayscale_settings_intent" translatable="false"></string>
@@ -616,7 +613,7 @@
     <bool name="config_show_adaptive_connectivity">false</bool>
 
     <!-- Authority of advanced device battery prediction -->
-    <string name="config_battery_prediction_authority" translatable="false"></string>
+    <string name="config_battery_prediction_authority" translatable="false">com.google.android.apps.turbo.bluetooth.estimated_time_remaining</string>
 
     <!-- Whether to handle slot change events -->
     <bool name="config_handle_sim_slot_change">false</bool>
@@ -790,7 +787,7 @@
     <bool name="default_allow_sensitive_lockscreen_content">true</bool>
 
     <!-- Whether to enable the app battery usage list page feature. -->
-    <bool name="config_app_battery_usage_list_enabled">false</bool>
+    <bool name="config_app_battery_usage_list_enabled">true</bool>
 
     <!-- Whether telephony related information is visible to the end user. -->
     <bool name="config_show_sim_info">true</bool>
