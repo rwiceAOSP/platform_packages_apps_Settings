@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Oproepduidelikheid</string>
     <string name="clear_calling_toggle">Gebruik Duidelike Oproepe</string>
     <string name="clear_calling_topintro">Verminder agtergrondgeraas tydens oproepe</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Vee navraag uit</string>
+    <string name="language_picker_page">Taalkieserbladsy</string>
+    <string name="search_region">Deursoek streke</string>
+    <string name="search_region_page">Deursoek streekbladsy</string>
 </resources>

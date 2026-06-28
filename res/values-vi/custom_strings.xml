@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Khử tiếng ồn</string>
     <string name="clear_calling_toggle">Sử dụng tính năng khử tiếng ồn</string>
     <string name="clear_calling_topintro">Giảm tiếng ồn xung quanh trong lúc thực hiện cuộc gọi</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Xoá cụm từ tìm kiếm</string>
+    <string name="language_picker_page">Trang bộ chọn ngôn ngữ</string>
+    <string name="search_region">Tìm khu vực</string>
+    <string name="search_region_page">Trang tìm kiếm theo khu vực</string>
 </resources>

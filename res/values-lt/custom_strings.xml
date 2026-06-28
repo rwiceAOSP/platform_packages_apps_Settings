@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Aiškus skambutis</string>
     <string name="clear_calling_toggle">Naudoti funkciją „Aiškus skambutis“</string>
     <string name="clear_calling_topintro">Sumažinamas foninis triukšmas skambinant</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Išvalyti užklausą</string>
+    <string name="language_picker_page">Kalbos rinkiklio puslapis</string>
+    <string name="search_region">Ieškokite regionų</string>
+    <string name="search_region_page">Paieškos regiono puslapis</string>
 </resources>

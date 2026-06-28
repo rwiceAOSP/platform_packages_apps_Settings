@@ -5,4 +5,10 @@
     <string name="clear_calling_title">କ୍ଲିଅର କଲିଂ</string>
     <string name="clear_calling_toggle">କ୍ଲିଅର କଲିଂ ବ୍ୟବହାର କରନ୍ତୁ</string>
     <string name="clear_calling_topintro">କଲ ସମୟରେ ବେକଗ୍ରାଉଣ୍ଡ ନଏଜକୁ କମ କରେ</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">କ୍ୱେରୀ ଖାଲି କରନ୍ତୁ</string>
+    <string name="language_picker_page">ଭାଷା ପିକର ପୃଷ୍ଠା</string>
+    <string name="search_region">ଅଞ୍ଚଳ ସର୍ଚ୍ଚ କରନ୍ତୁ</string>
+    <string name="search_region_page">ଅଞ୍ଚଳ ସର୍ଚ୍ଚ କରିବା ପୃଷ୍ଠା</string>
 </resources>

@@ -2,4 +2,7 @@
 <resources>
     <!-- Whether to show clear calling (P22+) -->
     <bool name="config_clear_calling_enabled">true</bool>
+
+    <!-- Locale Picker -->
+    <bool name="config_show_setuplocalepicker_region_searchbox">true</bool>
 </resources>

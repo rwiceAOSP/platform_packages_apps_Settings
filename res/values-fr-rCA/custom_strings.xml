@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Appels clairs</string>
     <string name="clear_calling_toggle">Utiliser Appels clairs</string>
     <string name="clear_calling_topintro">Réduit les bruits de fond pendant les appels</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Effacer la requête</string>
+    <string name="language_picker_page">Page du sélecteur de langue</string>
+    <string name="search_region">Recherchez des régions</string>
+    <string name="search_region_page">Page de recherche régionale</string>
 </resources>

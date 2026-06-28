@@ -5,4 +5,10 @@
     <string name="clear_calling_title">ക്ലിയർ കോളിംഗ്</string>
     <string name="clear_calling_toggle">ക്ലിയർ കോളിംഗ് ഉപയോഗിക്കുക</string>
     <string name="clear_calling_topintro">കോൾ ചെയ്യുന്നതിനിടെ കേൾക്കുന്ന പശ്ചാത്തല ശബ്ദങ്ങൾ കുറയ്ക്കുന്നു</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">ചോദ്യം മായ്‌ക്കുക</string>
+    <string name="language_picker_page">ഭാഷ പിക്കർ പേജ്</string>
+    <string name="search_region">പ്രദേശങ്ങൾ തിരയുക</string>
+    <string name="search_region_page">പ്രദേശം തിരയൽ പേജ്</string>
 </resources>

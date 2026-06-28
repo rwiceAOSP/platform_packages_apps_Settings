@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Clear Calling</string>
     <string name="clear_calling_toggle">Clear Calling-г ашиглах</string>
     <string name="clear_calling_topintro">Дуудлагын үеэр арын дуу чимээг багасгадаг</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Асуулгыг цэвэрлэх</string>
+    <string name="language_picker_page">Хэл сонгох хуудас</string>
+    <string name="search_region">Бүс нутгуудаас хайх</string>
+    <string name="search_region_page">Хайх бүсийн хуудас</string>
 </resources>

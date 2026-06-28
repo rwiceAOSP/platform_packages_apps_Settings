@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Połączenie z czystym dźwiękiem</string>
     <string name="clear_calling_toggle">Używaj połączenia z czystym dźwiękiem</string>
     <string name="clear_calling_topintro">Redukuje szum w tle podczas połączeń</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Wyczyść zapytanie</string>
+    <string name="language_picker_page">Strona selektora języka</string>
+    <string name="search_region">Wyszukaj regiony</string>
+    <string name="search_region_page">Strona wyszukiwania regionu</string>
 </resources>

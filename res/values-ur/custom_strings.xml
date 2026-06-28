@@ -5,4 +5,10 @@
     <string name="clear_calling_title">کلیئر کالنگ</string>
     <string name="clear_calling_toggle">کلیئر کالنگ کا استعمال کریں</string>
     <string name="clear_calling_topintro">کالز کے دوران پس منظر کے شور کو کم کرتی ہے</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">استفسار صاف کریں</string>
+    <string name="language_picker_page">زبان منتخب کنندہ کا صفحہ</string>
+    <string name="search_region">علاقے تلاش کریں</string>
+    <string name="search_region_page">علاقے کا صفحہ تلاش کریں</string>
 </resources>

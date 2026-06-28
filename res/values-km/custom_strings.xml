@@ -5,4 +5,10 @@
     <string name="clear_calling_title">ការហៅដែលមានសំឡេងច្បាស់</string>
     <string name="clear_calling_toggle">ប្រើ​ការហៅដែលមានសំឡេងច្បាស់</string>
     <string name="clear_calling_topintro">កាត់បន្ថយ​សំឡេងរំខាន​នៅផ្ទៃខាងក្រោយ ក្នុងអំឡុងពេល​ហៅទូរសព្ទ</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">សម្អាត​សំណួរ</string>
+    <string name="language_picker_page">ទំព័រ​កម្មវិធី​ជ្រើសរើស​ភាសា</string>
+    <string name="search_region">ស្វែងរកតំបន់</string>
+    <string name="search_region_page">ទំព័រស្វែងរកតំបន់</string>
 </resources>

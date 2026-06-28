@@ -5,4 +5,10 @@
     <string name="clear_calling_title">સ્પષ્ટ કૉલિંગ</string>
     <string name="clear_calling_toggle">સ્પષ્ટ કૉલિંગ સુવિધાનો ઉપયોગ કરો</string>
     <string name="clear_calling_topintro">કૉલ દરમિયાન બૅકગ્રાઉન્ડમાંથી આવતા અવાજો ઘટાડે છે</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">ક્વેરી સાફ કરો</string>
+    <string name="language_picker_page">ભાષા પિકર પેજ</string>
+    <string name="search_region">પ્રદેશો શોધો</string>
+    <string name="search_region_page">શોધના પ્રદેશનું પેજ</string>
 </resources>

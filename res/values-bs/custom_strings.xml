@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Razgovijetni pozivi</string>
     <string name="clear_calling_toggle">Koristi razgovijetne pozive</string>
     <string name="clear_calling_topintro">Smanjuje buku u pozadini tokom poziva</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Brisanje upita</string>
+    <string name="language_picker_page">Stranica birača jezika</string>
+    <string name="search_region">Pretražite regije</string>
+    <string name="search_region_page">Stranica regije pretraživanja</string>
 </resources>

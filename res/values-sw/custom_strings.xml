@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Usikivu Murua</string>
     <string name="clear_calling_toggle">Tumia kipengele cha Usikivu Murua</string>
     <string name="clear_calling_topintro">Hupunguza kelele za mazingira wakati wa kupiga simu</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Futa hoja</string>
+    <string name="language_picker_page">Ukurasa wa kiteua lugha</string>
+    <string name="search_region">Tafuta maeneo</string>
+    <string name="search_region_page">Ukurasa wa kutafuta eneo</string>
 </resources>

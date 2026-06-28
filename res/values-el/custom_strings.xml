@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Κλήσεις με ευκρινή ήχο</string>
     <string name="clear_calling_toggle">Χρήση λειτουργίας Κλήσεις με ευκρινή ήχο</string>
     <string name="clear_calling_topintro">Μειώνει τους θορύβους παρασκηνίου κατά τη διάρκεια των κλήσεων</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Διαγραφή ερωτήματος</string>
+    <string name="language_picker_page">Σελίδα εργαλείου επιλογής γλώσσας</string>
+    <string name="search_region">Αναζήτηση περιοχών</string>
+    <string name="search_region_page">Αναζήτηση σελίδας περιοχής</string>
 </resources>
