@@ -5,4 +5,10 @@
     <string name="clear_calling_title">ಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್</string>
     <string name="clear_calling_toggle">ಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬಳಸಿ</string>
     <string name="clear_calling_topintro">ಕರೆಗಳ ಸಮಯದಲ್ಲಿ ಹಿನ್ನೆಲೆ ಗದ್ದಲಗಳನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">ಪ್ರಶ್ನೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ</string>
+    <string name="language_picker_page">ಭಾಷಾ ಪಿಕರ್ ಪುಟ</string>
+    <string name="search_region">ಪ್ರದೇಶಗಳನ್ನು ಹುಡುಕಿ</string>
+    <string name="search_region_page">ಹುಡುಕಾಟ ಪ್ರದೇಶದ ಪುಟ</string>
 </resources>

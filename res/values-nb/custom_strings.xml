@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Klare samtaler</string>
     <string name="clear_calling_toggle">Bruk Klare samtaler</string>
     <string name="clear_calling_topintro">Reduserer bakgrunnsstøy under anrop</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Slett søket</string>
+    <string name="language_picker_page">Språkvelgerside</string>
+    <string name="search_region">Søk etter regioner</string>
+    <string name="search_region_page">Søkeregionside</string>
 </resources>

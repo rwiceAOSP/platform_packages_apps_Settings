@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Panggilan Jelas</string>
     <string name="clear_calling_toggle">Gunakan Panggilan Jelas</string>
     <string name="clear_calling_topintro">Mengurangkan hingar latar semasa panggilan</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Kosongkan pertanyaan</string>
+    <string name="language_picker_page">Halaman pemilih bahasa</string>
+    <string name="search_region">Cari rantau</string>
+    <string name="search_region_page">Halaman rantau carian</string>
 </resources>

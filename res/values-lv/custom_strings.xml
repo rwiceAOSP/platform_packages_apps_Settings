@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Skaidri zvani</string>
     <string name="clear_calling_toggle">Izmantot funkciju “Skaidra skaņa zvana laikā”</string>
     <string name="clear_calling_topintro">Tiek samazināti fona trokšņi zvanu laikā</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Notīrīt vaicājumu</string>
+    <string name="language_picker_page">Valodas atlasītāja lapa</string>
+    <string name="search_region">Meklēt reģionus</string>
+    <string name="search_region_page">Meklēšanas reģiona lapa</string>
 </resources>

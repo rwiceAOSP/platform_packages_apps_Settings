@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Glasklare Anrufe</string>
     <string name="clear_calling_toggle">„Glasklare Anrufe“ verwenden</string>
     <string name="clear_calling_topintro">Reduziert Hintergrundgeräusche während deiner Anrufe</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Suchanfrage löschen</string>
+    <string name="language_picker_page">Seite mit Sprachauswahl</string>
+    <string name="search_region">Regionen suchen</string>
+    <string name="search_region_page">Seite für Suchregion</string>
 </resources>

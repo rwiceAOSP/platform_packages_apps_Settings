@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Clear Calling</string>
     <string name="clear_calling_toggle">‏استفاده از Clear Calling</string>
     <string name="clear_calling_topintro">نوفه‌های زمینه را درطول تماس کاهش می‌دهد</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">پاک کردن پُرسمان</string>
+    <string name="language_picker_page">صفحه انتخاب‌گر زبان</string>
+    <string name="search_region">جستجوی منطقه‌ها</string>
+    <string name="search_region_page">صفحه جستجوی منطقه</string>
 </resources>

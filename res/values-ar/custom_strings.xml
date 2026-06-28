@@ -5,4 +5,10 @@
     <string name="clear_calling_title">تنقية الصوت</string>
     <string name="clear_calling_toggle">استخدام ميزة \"تحسين جودة المكالمات\"</string>
     <string name="clear_calling_topintro">يقلل هذا الإعداد التشويش في الخلفية أثناء المكالمات</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">محو طلب البحث</string>
+    <string name="language_picker_page">صفحة أداة اختيار اللغة</string>
+    <string name="search_region">البحث عن المناطق</string>
+    <string name="search_region_page">صفحة البحث عن المنطقة</string>
 </resources>

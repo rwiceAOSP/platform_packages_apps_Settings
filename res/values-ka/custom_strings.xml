@@ -5,4 +5,10 @@
     <string name="clear_calling_title">სუფთა აუდიო</string>
     <string name="clear_calling_toggle">„სუფთა აუდიოს“ გამოყენება</string>
     <string name="clear_calling_topintro">ამცირებს ფონურ ხმაურს ზარების დროს</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">მოთხოვნის გასუფთავება</string>
+    <string name="language_picker_page">ენის ამომრჩევის გვერდი</string>
+    <string name="search_region">რეგიონების ძიება</string>
+    <string name="search_region_page">რეგიონის გვერდის ძიება</string>
 </resources>

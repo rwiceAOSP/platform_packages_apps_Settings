@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Telefonata e qartë</string>
     <string name="clear_calling_toggle">Përdor \"Telefonatën e qartë\"</string>
     <string name="clear_calling_topintro">Redukton zhurmat në sfond gjatë telefonatave</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Pastro pyetjen</string>
+    <string name="language_picker_page">Faqja e zgjedhësit të gjuhës</string>
+    <string name="search_region">Kërko për rajonin</string>
+    <string name="search_region_page">Faqja e kërkimit të rajonit</string>
 </resources>

@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Chamadas Nítidas</string>
     <string name="clear_calling_toggle">Usar Chamadas Nítidas</string>
     <string name="clear_calling_topintro">Reduz ruídos de fundo durante ligações</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Limpar consulta</string>
+    <string name="language_picker_page">Página do seletor de idioma</string>
+    <string name="search_region">Pesquisar regiões</string>
+    <string name="search_region_page">Página da região de pesquisa</string>
 </resources>

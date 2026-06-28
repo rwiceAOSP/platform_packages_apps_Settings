@@ -5,4 +5,10 @@
     <string name="clear_calling_title">선명한 통화 음질</string>
     <string name="clear_calling_toggle">선명한 통화 음질 사용</string>
     <string name="clear_calling_topintro">통화 중 배경 소음 감소</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">검색어 삭제</string>
+    <string name="language_picker_page">언어 선택 도구 페이지</string>
+    <string name="search_region">지역 검색</string>
+    <string name="search_region_page">검색 지역 페이지</string>
 </resources>

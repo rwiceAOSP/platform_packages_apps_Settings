@@ -5,4 +5,10 @@
     <string name="clear_calling_title">ການໂທສຽງຈະແຈ້ງ</string>
     <string name="clear_calling_toggle">ໃຊ້ການໂທສຽງຈະແຈ້ງ</string>
     <string name="clear_calling_topintro">ຫຼຸດສຽງລົບກວນຈາກພື້ນຫຼັງໃນລະຫວ່າງການໂທ</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">ລຶບລ້າງຄຳຊອກຫາ</string>
+    <string name="language_picker_page">ໜ້າຕົວເລືອກພາສາ</string>
+    <string name="search_region">ຊອກຫາພາກພື້ນ</string>
+    <string name="search_region_page">ໜ້າຊອກຫາພາກພື້ນ</string>
 </resources>

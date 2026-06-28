@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Паляпшэнне якасці гуку</string>
     <string name="clear_calling_toggle">Выкарыстоўваць функцыю \"Паляпшэнне якасці гуку\"</string>
     <string name="clear_calling_topintro">Зніжае фонавыя шумы падчас выклікаў</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Ачысціць запыт</string>
+    <string name="language_picker_page">Старонка з інструментам выбару мовы</string>
+    <string name="search_region">Шукаць рэгіёны</string>
+    <string name="search_region_page">Старонка пошуку рэгіёна</string>
 </resources>

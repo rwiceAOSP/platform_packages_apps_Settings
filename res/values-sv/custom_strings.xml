@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Klart samtalsljud</string>
     <string name="clear_calling_toggle">Använd Klart samtalsljud</string>
     <string name="clear_calling_topintro">Minskar bakgrundsljud under samtal</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Ta bort frågan</string>
+    <string name="language_picker_page">Språkväljarsida</string>
+    <string name="search_region">Sök efter regioner</string>
+    <string name="search_region_page">Sökområdessida</string>
 </resources>

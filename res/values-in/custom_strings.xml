@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Panggilan Jernih</string>
     <string name="clear_calling_toggle">Gunakan Panggilan Jernih</string>
     <string name="clear_calling_topintro">Mengurangi kebisingan di latar belakang selama panggilan</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Hapus kueri</string>
+    <string name="language_picker_page">Halaman pemilih bahasa</string>
+    <string name="search_region">Telusuri wilayah</string>
+    <string name="search_region_page">Halaman wilayah penelusuran</string>
 </resources>

@@ -5,4 +5,10 @@
     <string name="clear_calling_title">การโทรเสียงคมชัด</string>
     <string name="clear_calling_toggle">ใช้การโทรเสียงคมชัด</string>
     <string name="clear_calling_topintro">ลดเสียงรบกวนรอบข้างระหว่างการโทร</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">ล้างคำค้นหา</string>
+    <string name="language_picker_page">หน้าเครื่องมือเลือกภาษา</string>
+    <string name="search_region">ค้นหาภูมิภาค</string>
+    <string name="search_region_page">หน้าค้นหาภูมิภาค</string>
 </resources>

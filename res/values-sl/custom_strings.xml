@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Jasen zvok klica</string>
     <string name="clear_calling_toggle">Uporabi jasen zvok klica</string>
     <string name="clear_calling_topintro">Zmanjšanje hrupa v ozadju med klici</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Izbris poizvedbe</string>
+    <string name="language_picker_page">Stran izbirnika jezika</string>
+    <string name="search_region">Iskanje regij</string>
+    <string name="search_region_page">Stran za iskanje regije</string>
 </resources>

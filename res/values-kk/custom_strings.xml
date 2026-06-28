@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Таза дауыс</string>
     <string name="clear_calling_toggle">\"Таза дауыс\" функциясын пайдалану</string>
     <string name="clear_calling_topintro">Қоңырау кезінде болатын фондағы шуды азайтады.</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Сұрақты өшіру</string>
+    <string name="language_picker_page">Тіл таңдағыш беті</string>
+    <string name="search_region">Аймақтарды іздеу</string>
+    <string name="search_region_page">Аймақты іздеу беті</string>
 </resources>

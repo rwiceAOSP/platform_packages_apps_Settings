@@ -5,4 +5,10 @@
     <string name="clear_calling_title">ਕਲੀਅਰ ਕਾਲਿੰਗ</string>
     <string name="clear_calling_toggle">ਕਲੀਅਰ ਕਾਲਿੰਗ ਵਰਤੋ</string>
     <string name="clear_calling_topintro">ਕਾਲਾਂ ਦੌਰਾਨ ਪਿੱਛੇ ਪੈਣ ਵਾਲੇ ਰੌਲੇ ਨੂੰ ਘਟਾਉਂਦਾ ਹੈ</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">ਪੁੱਛਗਿੱਛ ਕਲੀਅਰ ਕਰੋ</string>
+    <string name="language_picker_page">ਭਾਸ਼ਾ ਚੋਣਕਾਰ ਪੰਨਾ</string>
+    <string name="search_region">ਖੇਤਰ ਖੋਜੋ</string>
+    <string name="search_region_page">ਖੇਤਰ ਪੰਨਾ ਖੋਜੋ</string>
 </resources>
