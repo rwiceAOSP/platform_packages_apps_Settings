@@ -5,4 +5,10 @@
     <string name="clear_calling_title">क्लियर कलिङ</string>
     <string name="clear_calling_toggle">क्लियर कलिङ प्रयोग गर्नुहोस्</string>
     <string name="clear_calling_topintro">यसले कल चलिरहेका बेला ब्याकग्राउन्डको आवाज कम गर्छ</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">क्वेरी हटाउनुहोस्</string>
+    <string name="language_picker_page">\"ल्याङ्वेज पिकर\" पेज</string>
+    <string name="search_region">क्षेत्रहरू खोज्नुहोस्</string>
+    <string name="search_region_page">\"क्षेत्र खोज्नुहोस्\" पेज</string>
 </resources>

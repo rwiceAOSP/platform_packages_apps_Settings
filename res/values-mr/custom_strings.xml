@@ -5,4 +5,10 @@
     <string name="clear_calling_title">सुस्पष्ट कॉलिंग</string>
     <string name="clear_calling_toggle">सुस्पष्ट कॉलिंग वापरा</string>
     <string name="clear_calling_topintro">कॉलदरम्यान बॅकग्राउंडमधील आवाज कमी करते</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">क्‍वेरी साफ करा</string>
+    <string name="language_picker_page">भाषा निवडण्यासाठीचे पेज</string>
+    <string name="search_region">प्रदेश शोधा</string>
+    <string name="search_region_page">प्रदेश निवडण्यासाठीचे पेज</string>
 </resources>

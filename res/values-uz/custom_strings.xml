@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Tiniq ovoz</string>
     <string name="clear_calling_toggle">Tiniq ovoz ishlatish</string>
     <string name="clear_calling_topintro">Chaqiruv davomida tashqi shovqinni pasaytiradi</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Soʻrovni oʻchirish</string>
+    <string name="language_picker_page">Tilni tanlash sahifasi</string>
+    <string name="search_region">Hududlarni qidirish</string>
+    <string name="search_region_page">Qidiruv hududi sahifasi</string>
 </resources>

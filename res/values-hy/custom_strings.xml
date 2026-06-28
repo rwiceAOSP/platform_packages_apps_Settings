@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Մաքուր ձայնով զանգեր</string>
     <string name="clear_calling_toggle">Օգտագործել «Մաքուր ձայնով զանգեր» գործառույթը</string>
     <string name="clear_calling_topintro">Նվազեցնում է ֆոնային աղմուկը զանգերի ժամանակ</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Մաքրել հարցումը</string>
+    <string name="language_picker_page">Լեզվի ընտրիչի էջ</string>
+    <string name="search_region">Որոնեք տարածաշրջաններ</string>
+    <string name="search_region_page">Տարածաշրջանի որոնման էջ</string>
 </resources>

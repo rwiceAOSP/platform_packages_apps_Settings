@@ -5,4 +5,10 @@
     <string name="clear_calling_title">クリア音声通話</string>
     <string name="clear_calling_toggle">クリア音声通話を使用</string>
     <string name="clear_calling_topintro">通話中にバックグラウンドのノイズを低減します</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">検索キーワードを削除</string>
+    <string name="language_picker_page">言語選択ツールのページ</string>
+    <string name="search_region">地域を検索できます</string>
+    <string name="search_region_page">地域の検索のページ</string>
 </resources>

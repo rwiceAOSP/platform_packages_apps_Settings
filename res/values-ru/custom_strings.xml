@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Чистый звук</string>
     <string name="clear_calling_toggle">Чистый звук</string>
     <string name="clear_calling_topintro">Подавление фонового шума при разговоре</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Удалить запрос</string>
+    <string name="language_picker_page">Страница выбора языка</string>
+    <string name="search_region">Поиск региона</string>
+    <string name="search_region_page">Страница настройки региона поиска</string>
 </resources>

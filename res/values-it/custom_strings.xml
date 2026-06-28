@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Chiamata Nitida</string>
     <string name="clear_calling_toggle">Usa Chiamata Nitida</string>
     <string name="clear_calling_topintro">Riduce i rumori di fondo durante le chiamate</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Cancella la query</string>
+    <string name="language_picker_page">Pagina del selettore lingua</string>
+    <string name="search_region">Cerca regioni</string>
+    <string name="search_region_page">Pagina della regione di ricerca</string>
 </resources>

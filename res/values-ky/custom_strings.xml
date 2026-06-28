@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Таза үн</string>
     <string name="clear_calling_toggle">Таза үн функциясын колдонуу</string>
     <string name="clear_calling_topintro">Чалуу учурундагы ызы-чуу азаят</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Сурамды өчүрүү</string>
+    <string name="language_picker_page">Тил тандоо барагы</string>
+    <string name="search_region">Аймактарды издөө</string>
+    <string name="search_region_page">Аймакты издөө барагы</string>
 </resources>

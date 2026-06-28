@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Trucades nítides</string>
     <string name="clear_calling_toggle">Utilitza Trucades nítides</string>
     <string name="clear_calling_topintro">Redueix els sorolls de fons durant les trucades</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Esborra la consulta</string>
+    <string name="language_picker_page">Pàgina del selector d\'idioma</string>
+    <string name="search_region">Cerca regions</string>
+    <string name="search_region_page">Pàgina de la regió de cerca</string>
 </resources>

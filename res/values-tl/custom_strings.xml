@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Malinaw na Pagtawag</string>
     <string name="clear_calling_toggle">Gamitin ang Malinaw na Pagtawag</string>
     <string name="clear_calling_topintro">Binabawasan ang mga ingay sa background kapag may mga tawag</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">I-clear ang query</string>
+    <string name="language_picker_page">Page ng Picker ng wika</string>
+    <string name="search_region">Maghanap ng mga rehiyon</string>
+    <string name="search_region_page">Page ng Maghanap ng rehiyon</string>
 </resources>

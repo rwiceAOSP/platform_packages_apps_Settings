@@ -5,4 +5,10 @@
     <string name="clear_calling_title">පැහැදිලි ඇමතීම</string>
     <string name="clear_calling_toggle">පැහැදිලි ඇමතීම භාවිතා කරන්න</string>
     <string name="clear_calling_topintro">ඇමතුම් අතරතුර පසුබිම් ඝෝෂාව අඩු කරයි</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">විමසුම හිස් කරන්න</string>
+    <string name="language_picker_page">භාෂා තෝරක පිටුව</string>
+    <string name="search_region">කලාප සොයන්න</string>
+    <string name="search_region_page">කලාප පිටුව සොයන්න</string>
 </resources>

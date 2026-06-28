@@ -5,4 +5,10 @@
     <string name="clear_calling_title">தெளிவான அழைப்பு</string>
     <string name="clear_calling_toggle">தெளிவான அழைப்பைப் பயன்படுத்துதல்</string>
     <string name="clear_calling_topintro">அழைப்புகளின்போது பின்புல இரைச்சல்களைக் குறைக்கும்</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">வினவலை அழிக்கும்</string>
+    <string name="language_picker_page">மொழித் தேர்வுப் பக்கம்</string>
+    <string name="search_region">பிராந்தியங்களைத் தேடுங்கள்</string>
+    <string name="search_region_page">பிராந்தியத்தைத் தேடுவதற்கான பக்கம்</string>
 </resources>

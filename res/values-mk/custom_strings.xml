@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Јасни повици</string>
     <string name="clear_calling_toggle">Користи „Јасни повици“</string>
     <string name="clear_calling_topintro">Ги намалува заднинските шумови за време на повиците</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Избриши го барањето</string>
+    <string name="language_picker_page">Страница за избирач за јазик</string>
+    <string name="search_region">Пребарувајте региони</string>
+    <string name="search_region_page">Страница за пребарување регион</string>
 </resources>

@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Разговетни позиви</string>
     <string name="clear_calling_toggle">Користи Разговетне позиве</string>
     <string name="clear_calling_topintro">Умањује буку у позадини током позива</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Обриши упит</string>
+    <string name="language_picker_page">Страница бирача језика</string>
+    <string name="search_region">Претражите регионе</string>
+    <string name="search_region_page">Страница претраге региона</string>
 </resources>

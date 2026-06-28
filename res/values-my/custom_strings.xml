@@ -5,4 +5,10 @@
     <string name="clear_calling_title">ဖုန်းဆူညံသံဖျောက်ခြင်း</string>
     <string name="clear_calling_toggle">ဖုန်းဆူညံသံဖျောက်ခြင်း သုံးရန်</string>
     <string name="clear_calling_topintro">ဖုန်းပြောနေစဉ် နောက်ခံဆူညံသံများ လျှော့ချပေးသည်</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">မေးမြန်းချက် ဖယ်ရှားရန်</string>
+    <string name="language_picker_page">ဘာသာစကား ရွေးချယ်စနစ် စာမျက်နှာ</string>
+    <string name="search_region">ဒေသများ ရှာရန်</string>
+    <string name="search_region_page">ဒေသရှာဖွေသည့် စာမျက်နှာ</string>
 </resources>

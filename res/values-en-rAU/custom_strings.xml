@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Clear Calling</string>
     <string name="clear_calling_toggle">Use Clear Calling</string>
     <string name="clear_calling_topintro">Reduces background noises during calls</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Clear query</string>
+    <string name="language_picker_page">Language picker page</string>
+    <string name="search_region">Search regions</string>
+    <string name="search_region_page">Search region page</string>
 </resources>

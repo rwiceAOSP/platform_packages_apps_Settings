@@ -5,4 +5,10 @@
     <string name="clear_calling_title">క్లియర్ కాలింగ్</string>
     <string name="clear_calling_toggle">క్లియర్ కాలింగ్‌ను ఉపయోగించండి</string>
     <string name="clear_calling_topintro">కాల్స్ మాట్లాడుతున్నప్పుడు బ్యాక్‌గ్రౌండ్ నాయిస్‌ను తగ్గిస్తుంది</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">ప్రశ్నను క్లియర్ చేయండి</string>
+    <string name="language_picker_page">భాష సెలెక్టర్ పేజీ</string>
+    <string name="search_region">ప్రాంతాలను సెర్చ్ చేయండి</string>
+    <string name="search_region_page">ప్రాంతం కోసం సెర్చ్ చేసే పేజీ</string>
 </resources>

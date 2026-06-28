@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Net Görüşme Sesi</string>
     <string name="clear_calling_toggle">Net Görüşme Sesi\'ni kullan</string>
     <string name="clear_calling_topintro">Arama sırasında arka plan gürültülerini azaltır</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Sorguyu temizle</string>
+    <string name="language_picker_page">Dil seçici sayfası</string>
+    <string name="search_region">Bölge ara</string>
+    <string name="search_region_page">Arama bölgesi sayfası</string>
 </resources>

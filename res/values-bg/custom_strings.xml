@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Обаждане с ясен звук</string>
     <string name="clear_calling_toggle">Използване на обаждане със звук без фонов шум</string>
     <string name="clear_calling_topintro">Намалява фоновия шум по време на обаждания</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Изчистване на заявката</string>
+    <string name="language_picker_page">Страница за избор на език</string>
+    <string name="search_region">Търсете региони</string>
+    <string name="search_region_page">Страница за региона на търсенето</string>
 </resources>

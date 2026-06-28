@@ -5,4 +5,10 @@
     <string name="clear_calling_title">清晰通話</string>
     <string name="clear_calling_toggle">使用清晰通話</string>
     <string name="clear_calling_topintro">通話時減少背景噪音</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">清除查詢</string>
+    <string name="language_picker_page">語言選擇頁面</string>
+    <string name="search_region">搜尋地區</string>
+    <string name="search_region_page">搜尋區域頁面</string>
 </resources>

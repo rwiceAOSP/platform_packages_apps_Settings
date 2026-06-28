@@ -5,4 +5,10 @@
     <string name="clear_calling_title">बैकग्राउंड शोर कम करने की सुविधा</string>
     <string name="clear_calling_toggle">बैकग्राउंड के शोर को कम करने वाली सुविधा इस्तेमाल करें</string>
     <string name="clear_calling_topintro">यह सुविधा, कॉल के दौरान बैकग्राउंड से आने वाले शोर को कम कर देती है</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">क्वेरी मिटाएं</string>
+    <string name="language_picker_page">\'भाषा चुनने की सुविधा\' पेज</string>
+    <string name="search_region">इलाके खोजें</string>
+    <string name="search_region_page">\'खोज का क्षेत्र\' पेज</string>
 </resources>

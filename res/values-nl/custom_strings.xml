@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Helder gespreksgeluid</string>
     <string name="clear_calling_toggle">Helder gespreksgeluid gebruiken</string>
     <string name="clear_calling_topintro">Vermindert achtergrondruis tijdens gesprekken</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Zoekopdracht wissen</string>
+    <string name="language_picker_page">Pagina met taalkiezer</string>
+    <string name="search_region">Regio\'s zoeken</string>
+    <string name="search_region_page">Pagina voor zoekregio</string>
 </resources>

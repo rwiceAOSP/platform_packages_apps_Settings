@@ -5,4 +5,10 @@
     <string name="clear_calling_title">שיחה בלי רעשי רקע</string>
     <string name="clear_calling_toggle">שימוש ב\"שיחה ללא רעשי רקע\"</string>
     <string name="clear_calling_topintro">הפחתת רעשי רקע במהלך שיחות</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">מחיקת השאילתה</string>
+    <string name="language_picker_page">דף הכלי לבחירת שפה</string>
+    <string name="search_region">חיפוש אזורים</string>
+    <string name="search_region_page">הדף של חיפוש אזורים</string>
 </resources>

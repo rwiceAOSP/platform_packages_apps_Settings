@@ -5,4 +5,10 @@
     <string name="clear_calling_title">ক্লিয়ার কলিং</string>
     <string name="clear_calling_toggle">ক্লিয়ার কলিং ব্যবহার করুন</string>
     <string name="clear_calling_topintro">কল চলাকালীন ব্যাকগ্রাউন্ডের আওয়াজ কম করে</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">কোয়েরি মুছুন</string>
+    <string name="language_picker_page">ভাষা বাছাইকারী পৃষ্ঠা</string>
+    <string name="search_region">অঞ্চল সার্চ করুন</string>
+    <string name="search_region_page">অঞ্চল সার্চ করার পৃষ্ঠা</string>
 </resources>

@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Čistý zvuk volání</string>
     <string name="clear_calling_toggle">Používat Čistý zvuk volání</string>
     <string name="clear_calling_topintro">Během hovorů snižuje hluk v pozadí</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Smazat dotaz</string>
+    <string name="language_picker_page">Stránka pro výběr jazyka</string>
+    <string name="search_region">Vyhledejte oblasti</string>
+    <string name="search_region_page">Stránka vyhledávání oblastí</string>
 </resources>

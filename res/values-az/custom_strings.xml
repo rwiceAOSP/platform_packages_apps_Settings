@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Zəng Aydınlaşdırma</string>
     <string name="clear_calling_toggle">Zəng Aydınlaşdırma xidmətindən istifadə edin</string>
     <string name="clear_calling_topintro">Zəng zamanı arxa fondakı səs-küyü azaldır</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Sorğunu təmizləyin</string>
+    <string name="language_picker_page">Dil seçici səhifə</string>
+    <string name="search_region">Bölgələri axtarın</string>
+    <string name="search_region_page">Region axtarış səhifəsi</string>
 </resources>

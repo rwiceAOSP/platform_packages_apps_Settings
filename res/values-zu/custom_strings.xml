@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Ukufona Okucacile</string>
     <string name="clear_calling_toggle">Sebenzisa Ukufona Okucacile</string>
     <string name="clear_calling_topintro">Inciphisa umsindo wangemuva phakathi namakholi</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Sula inkinga</string>
+    <string name="language_picker_page">Ikhasi lokukhetha ulimi</string>
+    <string name="search_region">Sesha izifunda</string>
+    <string name="search_region_page">Ikhasi lokusesha isifunda</string>
 </resources>

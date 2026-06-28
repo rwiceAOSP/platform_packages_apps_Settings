@@ -5,4 +5,10 @@
     <string name="clear_calling_title">Selge heliga helistamine</string>
     <string name="clear_calling_toggle">Kasuta selge heliga helistamise funktsiooni</string>
     <string name="clear_calling_topintro">Vähendab kõnede ajal taustamüra</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Päringu tühistamine</string>
+    <string name="language_picker_page">Keele valimise leht</string>
+    <string name="search_region">Otsige piirkondi</string>
+    <string name="search_region_page">Otsingu piirkonna leht</string>
 </resources>
