@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- System Updates -->
+    <string name="software_update_settings_v2_purpose" translatable="false">Provides a centralized dashboard for users to monitor and initiate updates across the operating system, Google Play system components, and installed applications to ensure device security and performance.</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- System Updates -->
+    <color name="security_green">#1e8e3e</color>
+    <color name="security_yellow">#f9ab00</color>
+</resources>
