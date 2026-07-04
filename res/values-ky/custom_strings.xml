@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Батареяны кескин үнөмдөө режими</string>
     <string name="extreme_battery_saver_summary">Жогорудагы өзгөрүүлөрдөн тышкары, кереги жок колдонмолорду токтотуп, алардын билдирмелерин тындырат.</string>
     <string name="unified_battery_saver_page_intro">Батареяны үнөмдөп, телефонуңузду узагыраак колдонуңуз</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Жаңыртууларды карап көрүү</string>
+    <string name="play_application_update_entry_title">Колдонмонун жаңыртуулары</string>
+    <string name="software_update_banner_checking">Жаңыртуулар изделүүдө…</string>
+    <string name="software_update_banner_up_to_date">Түзмөгүңүз жаңырды</string>
+    <string name="software_update_banner_update_available">Жаңыртуулар бар</string>
+    <string name="software_update_can_be_updated_header">Pixel түзмөгүңүздү жакшыртыңыз</string>
+    <string name="software_update_entry_title">Программаны жаңыртуу</string>
+    <string name="software_update_pending_update_summary">Жаңыртуу күтүлүүдө</string>
+    <string name="software_update_up_to_date_header">Pixel түзмөгүңүз жаңырды</string>
+    <string name="software_update_up_to_specific_date_summary">%1$s жаңырды</string>
+    <string name="system_update_entry_title">Системаны жаңыртуу</string>
 </resources>

@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Super šetrič batérie</string>
     <string name="extreme_battery_saver_summary">Zahŕňa všetky zmeny uvedené vyššie. Pozastaví aj menej dôležité aplikácie a ich upozornenia.</string>
     <string name="unified_battery_saver_page_intro">Šetrite energiu, aby batéria vášho telefónu vydržala medzi nabitiami dlhšie</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Skontrolovať dostupnosť aktualizácií</string>
+    <string name="play_application_update_entry_title">Aktualizácie aplikácií</string>
+    <string name="software_update_banner_checking">Kontroluje sa dostupnosť aktualizácií…</string>
+    <string name="software_update_banner_up_to_date">Zariadenie je aktuálne</string>
+    <string name="software_update_banner_update_available">K dispozícii sú aktualizácie</string>
+    <string name="software_update_can_be_updated_header">Zlepšite si Pixel</string>
+    <string name="software_update_entry_title">Softvérové aktualizácie</string>
+    <string name="software_update_pending_update_summary">Čakajúca aktualizácia</string>
+    <string name="software_update_up_to_date_header">Pixel je aktuálny</string>
+    <string name="software_update_up_to_specific_date_summary">Aktualizácia %1$s</string>
+    <string name="system_update_entry_title">Aktualizácia systému</string>
 </resources>

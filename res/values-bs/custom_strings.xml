@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Ekstremna ušteda baterije</string>
     <string name="extreme_battery_saver_summary">Obuhvata sve promjene navedene iznad. Također pauzira neprioritetne aplikacije i njihova obavještenja.</string>
     <string name="unified_battery_saver_page_intro">Štedite energiju da omogućite da baterija telefona traje duže između punjenja</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Provjerite ima li ažuriranja</string>
+    <string name="play_application_update_entry_title">Ažuriranja aplikacija</string>
+    <string name="software_update_banner_checking">Provjera ažuriranja…</string>
+    <string name="software_update_banner_up_to_date">Uređaj je ažuriran</string>
+    <string name="software_update_banner_update_available">Dostupna su ažuriranja</string>
+    <string name="software_update_can_be_updated_header">Još više poboljšajte Pixel</string>
+    <string name="software_update_entry_title">Ažuriranja softvera</string>
+    <string name="software_update_pending_update_summary">Ažuriranje na čekanju</string>
+    <string name="software_update_up_to_date_header">Pixel je ažuriran</string>
+    <string name="software_update_up_to_specific_date_summary">Ažurirano je na dan %1$s</string>
+    <string name="system_update_entry_title">Ažuriranje sistema</string>
 </resources>

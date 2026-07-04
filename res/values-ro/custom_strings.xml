@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Economisirea extremă a bateriei</string>
     <string name="extreme_battery_saver_summary">Include toate modificările menționate mai sus. Întrerupe și aplicațiile neesențiale și notificările aferente.</string>
     <string name="unified_battery_saver_page_intro">Economisește energie pentru ca bateria telefonului să dureze mai mult între încărcări</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Caută actualizări</string>
+    <string name="play_application_update_entry_title">Actualizările aplicațiilor</string>
+    <string name="software_update_banner_checking">Se caută actualizări…</string>
+    <string name="software_update_banner_up_to_date">Dispozitivul este actualizat</string>
+    <string name="software_update_banner_update_available">Actualizări disponibile</string>
+    <string name="software_update_can_be_updated_header">Optimizează-ți dispozitivul Pixel</string>
+    <string name="software_update_entry_title">Actualizări de software</string>
+    <string name="software_update_pending_update_summary">Actualizare în așteptare</string>
+    <string name="software_update_up_to_date_header">Dispozitivul Pixel este actualizat</string>
+    <string name="software_update_up_to_specific_date_summary">Actualizat pe %1$s</string>
+    <string name="system_update_entry_title">Actualizare de sistem</string>
 </resources>

@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Isilondolozi Sebhethri Esikhulu</string>
     <string name="extreme_battery_saver_summary">Kufaka phakathi zonke izinguquko ezibalwe ngenhla. Iphinde imise ama-app angabalulekile kanye nezaziso zawo.</string>
     <string name="unified_battery_saver_page_intro">Yonga amandla ukuze usize ibhethri yefoni yakho ihlale isikhathi eside phakathi nokushajwa</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Hlolela izibuyekezo</string>
+    <string name="play_application_update_entry_title">Izibuyekezo ze-app</string>
+    <string name="software_update_banner_checking">Kuhlolwa okubuyekeziwe…</string>
+    <string name="software_update_banner_up_to_date">Idivayisi yakho ikahle</string>
+    <string name="software_update_banner_update_available">Okubuyekeziwe okutholakalayo</string>
+    <string name="software_update_can_be_updated_header">Yenza i-Pixel yakho ibe ngcono</string>
+    <string name="software_update_entry_title">Izibuyekezo zesofthiwe</string>
+    <string name="software_update_pending_update_summary">Ilinde ukubuyekezwa</string>
+    <string name="software_update_up_to_date_header">Hlala ubuyekeza iPixel yakho</string>
+    <string name="software_update_up_to_specific_date_summary">Kubuyekezwe ku-%1$s</string>
+    <string name="system_update_entry_title">Ukubuyeza isistimu</string>
 </resources>

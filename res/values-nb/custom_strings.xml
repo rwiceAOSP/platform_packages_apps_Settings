@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Ekstrem batterisparing</string>
     <string name="extreme_battery_saver_summary">Inkluderer alle endringene ovenfor. Setter også apper som ikke er nødvendige, og tilhørende varsler, på pause.</string>
     <string name="unified_battery_saver_page_intro">Reduser strømforbruket for å få telefonbatteriet til å vare lenger mellom ladinger</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Se etter oppdateringer</string>
+    <string name="play_application_update_entry_title">Appoppdateringer</string>
+    <string name="software_update_banner_checking">Ser etter oppdateringer …</string>
+    <string name="software_update_banner_up_to_date">Enheten er oppdatert</string>
+    <string name="software_update_banner_update_available">Tilgjengelige oppdateringer</string>
+    <string name="software_update_can_be_updated_header">Få enda mer ut av Pixel-telefonen</string>
+    <string name="software_update_entry_title">Programvareoppdateringer</string>
+    <string name="software_update_pending_update_summary">Ventende oppdatering</string>
+    <string name="software_update_up_to_date_header">Pixel-telefonen er oppdatert</string>
+    <string name="software_update_up_to_specific_date_summary">Oppdatert %1$s</string>
+    <string name="system_update_entry_title">Systemoppdatering</string>
 </resources>

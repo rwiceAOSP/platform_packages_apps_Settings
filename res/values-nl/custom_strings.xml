@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Extreme batterijbesparing</string>
     <string name="extreme_battery_saver_summary">Bevat alle hierboven vermelde wijzigingen. Onderbreekt ook niet-essentiële apps en de meldingen daarvan.</string>
     <string name="unified_battery_saver_page_intro">Verbruik minder om de batterij langer te kunnen gebruiken tussen oplaadbeurten</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Zoek naar updates</string>
+    <string name="play_application_update_entry_title">App-updates</string>
+    <string name="software_update_banner_checking">Checken op updates…</string>
+    <string name="software_update_banner_up_to_date">Je apparaat is up-to-date</string>
+    <string name="software_update_banner_update_available">Updates beschikbaar</string>
+    <string name="software_update_can_be_updated_header">Maak je Pixel nog beter</string>
+    <string name="software_update_entry_title">Software-updates</string>
+    <string name="software_update_pending_update_summary">Update in behandeling</string>
+    <string name="software_update_up_to_date_header">Je Pixel is up-to-date</string>
+    <string name="software_update_up_to_specific_date_summary">Geüpdatet op %1$s</string>
+    <string name="system_update_entry_title">Systeemupdate</string>
 </resources>

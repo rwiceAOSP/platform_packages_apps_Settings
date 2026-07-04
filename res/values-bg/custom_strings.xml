@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Екстремен режим за запазване на батерията</string>
     <string name="extreme_battery_saver_summary">Включва всички посочени по-горе промени. Също така поставя на пауза маловажните приложения и съответните известия.</string>
     <string name="unified_battery_saver_page_intro">Пестете енергия, така че батерията на телефона ви да издържа по-дълго между зарежданията</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Проверка за актуализации</string>
+    <string name="play_application_update_entry_title">Актуализации на приложения</string>
+    <string name="software_update_banner_checking">Проверява се за актуализации…</string>
+    <string name="software_update_banner_up_to_date">Устройството ви е актуално</string>
+    <string name="software_update_banner_update_available">Налице са актуализации</string>
+    <string name="software_update_can_be_updated_header">Направете своя Pixel още по-добър</string>
+    <string name="software_update_entry_title">Софтуерни актуализации</string>
+    <string name="software_update_pending_update_summary">Изчакваща актуализация</string>
+    <string name="software_update_up_to_date_header">Вашият Pixel е актуален</string>
+    <string name="software_update_up_to_specific_date_summary">Актуализирано на %1$s</string>
+    <string name="system_update_entry_title">Системна актуализация</string>
 </resources>

@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">نهایت بهینه‌سازی باتری</string>
     <string name="extreme_battery_saver_summary">شامل همه تغییرات فهرست‌شده در بالا می‌شود. همچنین برنامه‌های غیرضروری و اعلان‌هایشان را موقتاً متوقف می‌کند.</string>
     <string name="unified_battery_saver_page_intro">با صرفه‌جویی در انرژی کمک کنید باتری تلفنتان دوام بیشتری بین هر بار شارژ داشته باشد</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">به‌روزرسانی‌ها را بررسی کنید</string>
+    <string name="play_application_update_entry_title">به‌روزرسانی‌های برنامه</string>
+    <string name="software_update_banner_checking">درحال بررسی وجود به‌روزرسانی…</string>
+    <string name="software_update_banner_up_to_date">دستگاهتان به‌روز است</string>
+    <string name="software_update_banner_update_available">به‌روزرسانی موجود است</string>
+    <string name="software_update_can_be_updated_header">‏‫Pixel خود را از آنچه هست بهتر کنید</string>
+    <string name="software_update_entry_title">به‌روزرسانی‌های نرم‌افزار</string>
+    <string name="software_update_pending_update_summary">به‌روزرسانی درانتظار</string>
+    <string name="software_update_up_to_date_header">‏‫Pixel شما به‌روز است</string>
+    <string name="software_update_up_to_specific_date_summary">‫%1$s به‌روز شد</string>
+    <string name="system_update_entry_title">به‌روزرسانی سیستم</string>
 </resources>

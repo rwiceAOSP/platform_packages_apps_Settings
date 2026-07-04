@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">උපරිම බැටරි සුරැකුම</string>
     <string name="extreme_battery_saver_summary">ඉහත ලැයිස්තුගත කර ඇති සියලුම වෙනස්කම් ඇතුළත් වේ. අත්‍යවශ්‍ය නොවන යෙදුම් සහ ඒවායේ දැනුම්දීම් ද විරාම කරයි.</string>
     <string name="unified_battery_saver_page_intro">ඔබේ දුරකථනයේ බැටරිය ආරෝපණ අතර දිගු කාලයක් පැවතීමට උදවු කිරීමට බලය සුරකින්න</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">යාවත්කාලීන සඳහා පරීක්ෂා කරන්න</string>
+    <string name="play_application_update_entry_title">යෙදුම් යාවත්කාලීන</string>
+    <string name="software_update_banner_checking">යාවත්කාලීන සඳහා පරීක්ෂා කරමින්…</string>
+    <string name="software_update_banner_up_to_date">ඔබේ උපාංගය යාවත්කාලීනයි</string>
+    <string name="software_update_banner_update_available">යාවත්කාලීන තිබේ</string>
+    <string name="software_update_can_be_updated_header">ඔබේ Pixel වඩාත් හොඳ කරන්න</string>
+    <string name="software_update_entry_title">මෘදුකාංග යාවත්කාලීන</string>
+    <string name="software_update_pending_update_summary">යාවත්කාලීන කිරීම පොරොත්තු වේ</string>
+    <string name="software_update_up_to_date_header">ඔබේ Pixel යාවත්කාලීනයි</string>
+    <string name="software_update_up_to_specific_date_summary">%1$s වෙත යාවත්කාලීන කර ඇත</string>
+    <string name="system_update_entry_title">පද්ධති යාවත්කාලීනය</string>
 </resources>
