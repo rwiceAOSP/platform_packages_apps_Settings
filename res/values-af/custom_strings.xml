@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Superbatterybespaarder</string>
     <string name="extreme_battery_saver_summary">Sluit alle veranderinge wat hier bo gelys word, in. Onderbreek ook nienoodsaaklike apps en hul kennisgewings.</string>
     <string name="unified_battery_saver_page_intro">Bespaar krag om te help dat jou foon se battery langer tussen laaiprosesse hou</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Kyk vir opdaterings</string>
+    <string name="play_application_update_entry_title">Appopdaterings</string>
+    <string name="software_update_banner_checking">Kyk tans vir opdaterings …</string>
+    <string name="software_update_banner_up_to_date">Jou toestel is op datum</string>
+    <string name="software_update_banner_update_available">Opdaterings beskikbaar</string>
+    <string name="software_update_can_be_updated_header">Maak jou Pixel selfs beter</string>
+    <string name="software_update_entry_title">Sagteware­opdaterings</string>
+    <string name="software_update_pending_update_summary">Wag tans vir opdatering</string>
+    <string name="software_update_up_to_date_header">Jou Pixel is bygewerk</string>
+    <string name="software_update_up_to_specific_date_summary">Opgedateer op %1$s</string>
+    <string name="system_update_entry_title">Stelselopdatering</string>
 </resources>

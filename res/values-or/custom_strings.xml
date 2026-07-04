@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">ଏକ୍ସଟ୍ରିମ ବେଟେରୀ ସେଭର</string>
     <string name="extreme_battery_saver_summary">ଉପରେ ତାଲିକାଭୁକ୍ତ ସମସ୍ତ ପରିବର୍ତ୍ତନକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରେ। ଏହା ସହିତ ଅତ୍ୟାବଶ୍ୟକ-ହୋଇନଥିବା ଆପ୍ସ ଏବଂ ସେଗୁଡ଼ିକର ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକୁ ବିରତ କରେ।</string>
     <string name="unified_battery_saver_page_intro">ଚାର୍ଜଗୁଡ଼ିକ ମଧ୍ୟରେ ଆପଣଙ୍କ ଫୋନର ବେଟେରୀ ଅଧିକ ସମୟ ପର୍ଯ୍ୟନ୍ତ ଚାଲିବାରେ ସାହାଯ୍ୟ କରିବାକୁ ପାୱାର ସେଭ କରନ୍ତୁ</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">ଅପଡେଟଗୁଡ଼ିକ ପାଇଁ ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="play_application_update_entry_title">ଆପ ଅପଡେଟଗୁଡ଼ିକ</string>
+    <string name="software_update_banner_checking">ଅପଡେଟଗୁଡ଼ିକ ପାଇଁ ଯାଞ୍ଚ କରାଯାଉଛି…</string>
+    <string name="software_update_banner_up_to_date">ଆପଣଙ୍କ ଡିଭାଇସ ଅପଟୁଡେଟ ଅଛି</string>
+    <string name="software_update_banner_update_available">ଅପଡେଟଗୁଡ଼ିକ ଉପଲବ୍ଧ ଅଛି</string>
+    <string name="software_update_can_be_updated_header">ଆପଣଙ୍କ Pixelକୁ ଆହୁରି ଉନ୍ନତ କରନ୍ତୁ</string>
+    <string name="software_update_entry_title">ସଫ୍ଟୱେର ଅପଡେଟ</string>
+    <string name="software_update_pending_update_summary">ବିଚାରାଧୀନ ଅପଡେଟ</string>
+    <string name="software_update_up_to_date_header">ଆପଣଙ୍କ Pixel ଅପଟୁଡେଟ ଅଛି</string>
+    <string name="software_update_up_to_specific_date_summary">%1$sରେ ଅପଡେଟ କରାଯାଇଛି</string>
+    <string name="system_update_entry_title">ସିଷ୍ଟମ ଅପଡେଟ</string>
 </resources>

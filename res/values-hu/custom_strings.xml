@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Extrém akkumulátorkímélő mód</string>
     <string name="extreme_battery_saver_summary">Az összes fenti módosítást tartalmazza. Ezek mellett nem alapvető alkalmazásokat és azok értesítéseit is szünetelteti.</string>
     <string name="unified_battery_saver_page_intro">Takarékoskodhat az energiával, hogy a telefon akkumulátora tovább bírja két töltés között.</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Frissítések keresése</string>
+    <string name="play_application_update_entry_title">Alkalmazásfrissítések</string>
+    <string name="software_update_banner_checking">Frissítések keresése…</string>
+    <string name="software_update_banner_up_to_date">Az eszköz naprakész</string>
+    <string name="software_update_banner_update_available">Frissítések jelentek meg</string>
+    <string name="software_update_can_be_updated_header">Tegye még jobbá Pixel eszközét</string>
+    <string name="software_update_entry_title">Szoftverfrissítések</string>
+    <string name="software_update_pending_update_summary">Függőben lévő frissítés</string>
+    <string name="software_update_up_to_date_header">Pixel eszköze naprakész</string>
+    <string name="software_update_up_to_specific_date_summary">Frissítve: %1$s</string>
+    <string name="system_update_entry_title">Rendszerfrissítés</string>
 </resources>

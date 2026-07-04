@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">超级省电模式</string>
     <string name="extreme_battery_saver_summary">包含上方所列的所有更改。还会暂停非必需应用及其通知。</string>
     <string name="unified_battery_saver_page_intro">节省电量，延长手机充电后的电池续航时间</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">检查更新</string>
+    <string name="play_application_update_entry_title">应用更新</string>
+    <string name="software_update_banner_checking">正在检查是否有更新…</string>
+    <string name="software_update_banner_up_to_date">设备已是最新版本</string>
+    <string name="software_update_banner_update_available">有可用更新</string>
+    <string name="software_update_can_be_updated_header">让您的 Pixel 更臻完善</string>
+    <string name="software_update_entry_title">软件更新</string>
+    <string name="software_update_pending_update_summary">待更新</string>
+    <string name="software_update_up_to_date_header">您的 Pixel 已是最新版本</string>
+    <string name="software_update_up_to_specific_date_summary">更新日期：%1$s</string>
+    <string name="system_update_entry_title">系统更新</string>
 </resources>

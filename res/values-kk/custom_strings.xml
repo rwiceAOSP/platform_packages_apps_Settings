@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Батареяны барынша үнемдеу режимі</string>
     <string name="extreme_battery_saver_summary">Жоғарыда берілген барлық өзгерісті қамтиды. Сондай-ақ маңызды емес қолданбалар мен олардың хабарландыруларын кідіртіп қояды.</string>
     <string name="unified_battery_saver_page_intro">Қуат үнемдесеңіз, телефон батареясы қайта зарядтаусыз ұзағырақ қызмет етеді.</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Жаңартулардың бар-жоғын тексеру</string>
+    <string name="play_application_update_entry_title">Қолданбаның жаңа нұсқалары</string>
+    <string name="software_update_banner_checking">Жаңа нұсқалар тексеріліп жатыр…</string>
+    <string name="software_update_banner_up_to_date">Құрылғыңыз жаңартылды.</string>
+    <string name="software_update_banner_update_available">Жаңа нұсқалары бар.</string>
+    <string name="software_update_can_be_updated_header">Pixel-ді одан сайын жақсартыңыз</string>
+    <string name="software_update_entry_title">Бағдарламалық құрал жаңартулары</string>
+    <string name="software_update_pending_update_summary">Жаңарту процесі орындалып жатыр</string>
+    <string name="software_update_up_to_date_header">Pixel смартфоныңыз жаңартылған</string>
+    <string name="software_update_up_to_specific_date_summary">%1$s күніне дейін жаңартылды.</string>
+    <string name="system_update_entry_title">Жүйені жаңарту</string>
 </resources>

@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">চৰম বেটাৰী সঞ্চয়কাৰী</string>
     <string name="extreme_battery_saver_summary">ওপৰত সূচীবদ্ধ কৰা আটাইবোৰ সালসলনি অন্তৰ্ভুক্ত কৰে। অত্যাৱশ্যকীয় নোহোৱা এপ্‌ আৰু সেইবোৰৰ জাননীও পজ কৰে।</string>
     <string name="unified_battery_saver_page_intro">চাৰ্জ দিয়াৰ সময়ৰ মাজৰ সময়খিনিত ফ’নৰ বেটাৰীৰ চাৰ্জ অধিক সময় থকাত সহায় কৰিবলৈ পাৱাৰ ৰাহি কৰক</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">আপডে’ট আছে নেকি চাওক</string>
+    <string name="play_application_update_entry_title">এপৰ আপডে’টসমূহ</string>
+    <string name="software_update_banner_checking">আপডে’ট আছে নেকি পৰীক্ষা কৰি থকা হৈছে…</string>
+    <string name="software_update_banner_up_to_date">আপোনাৰ ডিভাইচটো আপ-টু-ডে’ট হৈ আছে</string>
+    <string name="software_update_banner_update_available">আপডে’ট উপলব্ধ</string>
+    <string name="software_update_can_be_updated_header">আপোনাৰ Pixel আৰু উন্নত কৰক</string>
+    <string name="software_update_entry_title">ছফ্টৱেৰ আপডে’টসমূহ</string>
+    <string name="software_update_pending_update_summary">বাকী থকা আপডে’ট</string>
+    <string name="software_update_up_to_date_header">আপোনাৰ Pixel আপ টু ডে’ট আছে</string>
+    <string name="software_update_up_to_specific_date_summary">%1$sত আপডে’ট কৰা হৈছে</string>
+    <string name="system_update_entry_title">ছিষ্টেম আপডে’ট</string>
 </resources>
