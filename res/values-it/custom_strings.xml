@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Risparmio Energetico Estremo</string>
     <string name="extreme_battery_saver_summary">Include tutte le modifiche elencate sopra. Mette inoltre in pausa le app non essenziali e le relative notifiche.</string>
     <string name="unified_battery_saver_page_intro">Risparmia energia per far durare di più la batteria dello smartphone tra una ricarica e l\'altra</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Verifica la disponibilità di aggiornamenti</string>
+    <string name="play_application_update_entry_title">Aggiornamenti delle app</string>
+    <string name="software_update_banner_checking">Verifica disponibilità aggiornamenti in corso…</string>
+    <string name="software_update_banner_up_to_date">Il dispositivo è aggiornato</string>
+    <string name="software_update_banner_update_available">Aggiornamenti disponibili</string>
+    <string name="software_update_can_be_updated_header">Migliora ancora di più il tuo Pixel</string>
+    <string name="software_update_entry_title">Aggiornamenti software</string>
+    <string name="software_update_pending_update_summary">Aggiornamento in attesa</string>
+    <string name="software_update_up_to_date_header">Il tuo Pixel è aggiornato</string>
+    <string name="software_update_up_to_specific_date_summary">Ultimo aggiornamento: %1$s</string>
+    <string name="system_update_entry_title">Aggiornamento di sistema</string>
 </resources>

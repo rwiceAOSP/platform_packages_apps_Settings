@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Մարտկոցի առավելագույն տնտեսում</string>
     <string name="extreme_battery_saver_summary">Ներառում է վերը թվարկված բոլոր փոփոխությունները։ Ինչպես նաև դադարեցնում է երկրորդական հավելվածների աշխատանքը և անջատում դրանց ծանուցումները։</string>
     <string name="unified_battery_saver_page_intro">Տնտեսեք մարտկոցի լիցքը, որպեսզի ավելի երկար օգտագործեք հեռախոսը լիցքավորումների միջակայքում</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Թարմացումների առկայության ստուգում</string>
+    <string name="play_application_update_entry_title">Հավելվածների թարմացումներ</string>
+    <string name="software_update_banner_checking">Ստուգվում է թարմացումների առկայությունը…</string>
+    <string name="software_update_banner_up_to_date">Ձեր սարքը թարմացված է</string>
+    <string name="software_update_banner_update_available">Առկա են թարմացումներ</string>
+    <string name="software_update_can_be_updated_header">Ավելի լավը դարձրեք ձեր Pixel-ը</string>
+    <string name="software_update_entry_title">Ծրագրային թարմացումներ</string>
+    <string name="software_update_pending_update_summary">Սպասում է թարմացման</string>
+    <string name="software_update_up_to_date_header">Ձեր Pixel-ը թարմացված է</string>
+    <string name="software_update_up_to_specific_date_summary">Վերջին թարմացումը՝ %1$s</string>
+    <string name="system_update_entry_title">Համակարգի թարմացում</string>
 </resources>

@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Penjimat Bateri Ekstrem</string>
     <string name="extreme_battery_saver_summary">Termasuk semua perubahan yang disenaraikan di atas. Juga menjeda apl tidak penting dan pemberitahuan apl tersebut.</string>
     <string name="unified_battery_saver_page_intro">Jimatkan kuasa untuk membantu bateri telefon anda tahan lebih lama antara pengecasan</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Semak kemaskinian</string>
+    <string name="play_application_update_entry_title">Kemaskinian apl</string>
+    <string name="software_update_banner_checking">Menyemak kemaskinian…</string>
+    <string name="software_update_banner_up_to_date">Peranti anda telah dikemaskinikan</string>
+    <string name="software_update_banner_update_available">Kemaskinian tersedia</string>
+    <string name="software_update_can_be_updated_header">Kemas kinikan Pixel anda</string>
+    <string name="software_update_entry_title">Kemaskinian perisian</string>
+    <string name="software_update_pending_update_summary">Kemaskinian belum selesai</string>
+    <string name="software_update_up_to_date_header">Pixel anda telah dikemaskinikan</string>
+    <string name="software_update_up_to_specific_date_summary">Dikemaskinikan pada %1$s</string>
+    <string name="system_update_entry_title">Kemaskinian sistem</string>
 </resources>

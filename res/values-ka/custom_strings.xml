@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">ბატარეის სუპერდამზოგი</string>
     <string name="extreme_battery_saver_summary">მოიცავს ყველა ზემოხსენებულ ცვლილებას ასევე აპაუზებს უმნიშვნელო აპებს და მათ შეტყობინებებს.</string>
     <string name="unified_battery_saver_page_intro">დაზოგეთ ენერგია, რაც ხელს შეუწყობს თქვენი ტელეფონის ბატარეის უფრო ხანგრძლივად მუშაობას დამუხტვებს შორის</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">განახლებების შემოწმება</string>
+    <string name="play_application_update_entry_title">აპის განახლებები</string>
+    <string name="software_update_banner_checking">მოწმდება განახლებები…</string>
+    <string name="software_update_banner_up_to_date">თქვენი მოწყობილობა განახლებულია</string>
+    <string name="software_update_banner_update_available">ხელმისაწვდომი განახლებები</string>
+    <string name="software_update_can_be_updated_header">გააუმჯობესეთ თქვენი Pixel</string>
+    <string name="software_update_entry_title">პროგრამული უზრუნველყოფის განახლებები</string>
+    <string name="software_update_pending_update_summary">ელოდება განახლებას</string>
+    <string name="software_update_up_to_date_header">თქვენი Pixel განახლებულია</string>
+    <string name="software_update_up_to_specific_date_summary">განახლების თარიღია %1$s</string>
+    <string name="system_update_entry_title">სისტემის განახლება</string>
 </resources>

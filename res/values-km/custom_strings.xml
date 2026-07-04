@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">មុខងារសន្សំថ្មខ្លាំង</string>
     <string name="extreme_battery_saver_summary">រួមបញ្ចូលការផ្លាស់ប្ដូរទាំងអស់ដែលបង្ហាញខាងលើ។ ផ្អាក​កម្មវិធីមិនចាំបាច់ និងការជូនដំណឹង​របស់កម្មវិធីទាំងនោះ​ផងដែរ។</string>
     <string name="unified_battery_saver_page_intro">សន្សំសំចៃថាមពល ដើម្បីជួយឱ្យថ្មទូរសព្ទរបស់អ្នកប្រើបានកាន់តែយូរក្រោយពេលសាកថ្មរួចម្ដងៗ</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">រកមើលកំណែថ្មី</string>
+    <string name="play_application_update_entry_title">កំណែថ្មីរបស់កម្មវិធី</string>
+    <string name="software_update_banner_checking">កំពុង​រកមើល​កំណែថ្មី…</string>
+    <string name="software_update_banner_up_to_date">ឧបករណ៍​របស់អ្នក​បានដំឡើងកំណែថ្មី​ហើយ</string>
+    <string name="software_update_banner_update_available">មានកំណែថ្មី</string>
+    <string name="software_update_can_be_updated_header">ធ្វើឱ្យ Pixel របស់អ្នកកាន់តែប្រសើរ</string>
+    <string name="software_update_entry_title">ការដំឡើងកំណែកម្មវិធី</string>
+    <string name="software_update_pending_update_summary">កំណែថ្មី​កំពុងរង់ចាំ</string>
+    <string name="software_update_up_to_date_header">Pixel របស់អ្នក​មានកំណែ​ថ្មីបំផុតហើយ</string>
+    <string name="software_update_up_to_specific_date_summary">បានដំឡើងកំណែនៅថ្ងៃទី %1$s</string>
+    <string name="system_update_entry_title">កំណែថ្មីរបស់​ប្រព័ន្ធ</string>
 </resources>

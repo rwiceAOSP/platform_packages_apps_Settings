@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Muturreko bateria-aurreztailea</string>
     <string name="extreme_battery_saver_summary">Goiko aukeran aipatutakoa aplikatzen zaio. Gainera, ezinbestekoak ez diren aplikazioak eta haien jakinarazpenak pausatzen ditu.</string>
     <string name="unified_battery_saver_page_intro">Aurreztu bateria; hala, ez duzu telefonoa horren maiz kargatu beharko</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Bilatu eguneratzeak</string>
+    <string name="play_application_update_entry_title">Aplikazio-eguneratzeak</string>
+    <string name="software_update_banner_checking">Eguneratzeak bilatzen…</string>
+    <string name="software_update_banner_up_to_date">Gailua eguneratuta dago</string>
+    <string name="software_update_banner_update_available">Eguneratzeak daude</string>
+    <string name="software_update_can_be_updated_header">Hobetu Pixel-a</string>
+    <string name="software_update_entry_title">Software-eguneratzeak</string>
+    <string name="software_update_pending_update_summary">Eguneratzearen zain</string>
+    <string name="software_update_up_to_date_header">Pixel-a eguneratuta dago</string>
+    <string name="software_update_up_to_specific_date_summary">Eguneratze-data: %1$s</string>
+    <string name="system_update_entry_title">Sistemaren eguneratzea</string>
 </resources>

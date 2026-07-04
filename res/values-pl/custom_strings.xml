@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Maksymalne oszczędzanie baterii</string>
     <string name="extreme_battery_saver_summary">Obejmuje wszystkie zmiany wymienione wyżej. Ponadto wstrzymuje aplikacje, które nie są niezbędne, oraz ich powiadomienia.</string>
     <string name="unified_battery_saver_page_intro">Oszczędzaj energię, aby rzadziej ładować telefon</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Sprawdź dostępność aktualizacji</string>
+    <string name="play_application_update_entry_title">Aktualizacje aplikacji</string>
+    <string name="software_update_banner_checking">Sprawdzam dostępność aktualizacji…</string>
+    <string name="software_update_banner_up_to_date">Urządzenie ma aktualną wersję oprogramowania</string>
+    <string name="software_update_banner_update_available">Dostępne są aktualizacje</string>
+    <string name="software_update_can_be_updated_header">Ulepsz Pixela</string>
+    <string name="software_update_entry_title">Aktualizacje oprogramowania</string>
+    <string name="software_update_pending_update_summary">Czeka na aktualizację</string>
+    <string name="software_update_up_to_date_header">Pixel jest aktualny</string>
+    <string name="software_update_up_to_specific_date_summary">Zaktualizowano %1$s</string>
+    <string name="system_update_entry_title">Aktualizacja systemu</string>
 </resources>

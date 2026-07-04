@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">انتہائی بیٹری سیور</string>
     <string name="extreme_battery_saver_summary">اوپر درج کردہ تمام تبدیلیاں شامل ہیں۔ غیر ضروری ایپس اور ان کی اطلاعات کو بھی موقوف کرتا ہے۔</string>
     <string name="unified_battery_saver_page_intro">چارجز کے درمیان اپنے فون کی بیٹری کو زیادہ دیر تک چلنے میں مدد کرنے کے لیے پاور کی بچت کریں</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">اپ ڈیٹس چیک کریں</string>
+    <string name="play_application_update_entry_title">ایپ کی اپ ڈیٹس</string>
+    <string name="software_update_banner_checking">اپ ڈیٹس چیک کی جا رہی ہیں…</string>
+    <string name="software_update_banner_up_to_date">آپ کا آلہ اپ ٹو ڈیٹ ہے</string>
+    <string name="software_update_banner_update_available">اپ ڈیٹس دستیاب ہیں</string>
+    <string name="software_update_can_be_updated_header">‏اپنے Pixel کو مزید بہتر بنائیں</string>
+    <string name="software_update_entry_title">سافٹ ویئر اپ ڈیٹس</string>
+    <string name="software_update_pending_update_summary">زیر التوا اپ ڈیٹ</string>
+    <string name="software_update_up_to_date_header">‏آپ کا Pixel اپ ٹو ڈیٹ ہے</string>
+    <string name="software_update_up_to_specific_date_summary">%1$s کو اپ ڈیٹ کر دیا گیا</string>
+    <string name="system_update_entry_title">سسٹم اپ ڈیٹ</string>
 </resources>

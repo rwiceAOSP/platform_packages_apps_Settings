@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Рэжым экстрэмальнага энергазберажэння</string>
     <string name="extreme_battery_saver_summary">Уключае ўсе змяненні, пералічаныя вышэй, і прыпыняе другарадныя праграмы і іх апавяшчэнні.</string>
     <string name="unified_battery_saver_page_intro">Эканомце зарад акумулятара, каб тэлефон даўжэй працаваў паміж зарадкамі</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Праверце наяўнасць абнаўленняў</string>
+    <string name="play_application_update_entry_title">Абнаўленні праграм</string>
+    <string name="software_update_banner_checking">Правяраецца наяўнасць абнаўленняў…</string>
+    <string name="software_update_banner_up_to_date">Ваша прылада абноўлена</string>
+    <string name="software_update_banner_update_available">З’явіліся абнаўленні</string>
+    <string name="software_update_can_be_updated_header">Зрабіце прыладу Pixel яшчэ лепшай</string>
+    <string name="software_update_entry_title">Абнаўленні ПЗ</string>
+    <string name="software_update_pending_update_summary">Чакаецца абнаўленне</string>
+    <string name="software_update_up_to_date_header">На вашым тэлефоне Pixel усталявана актуальная версія ПЗ</string>
+    <string name="software_update_up_to_specific_date_summary">Абноўлена да стану на %1$s</string>
+    <string name="system_update_entry_title">Абнаўленне сістэмы</string>
 </resources>

@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Penghemat Baterai Super</string>
     <string name="extreme_battery_saver_summary">Mencakup semua perubahan yang tercantum di atas. Juga menjeda aplikasi yang tidak penting dan notifikasinya.</string>
     <string name="unified_battery_saver_page_intro">Menghemat daya untuk membantu baterai ponsel bertahan lebih lama sampai perlu diisi daya kembali</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Periksa update</string>
+    <string name="play_application_update_entry_title">Update aplikasi</string>
+    <string name="software_update_banner_checking">Memeriksa update…</string>
+    <string name="software_update_banner_up_to_date">Perangkat Anda sudah menjalankan versi terbaru</string>
+    <string name="software_update_banner_update_available">Update tersedia</string>
+    <string name="software_update_can_be_updated_header">Buat Pixel jadi lebih baik</string>
+    <string name="software_update_entry_title">Update software</string>
+    <string name="software_update_pending_update_summary">Update tertunda</string>
+    <string name="software_update_up_to_date_header">Software Pixel Anda sudah yang terbaru</string>
+    <string name="software_update_up_to_specific_date_summary">Diupdate %1$s</string>
+    <string name="system_update_entry_title">Update sistem</string>
 </resources>

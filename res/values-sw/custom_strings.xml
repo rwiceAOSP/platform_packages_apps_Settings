@@ -27,4 +27,17 @@
     <string name="extreme_battery_saver_title">Kiokoa Betri kwa Kina</string>
     <string name="extreme_battery_saver_summary">Inajumuisha mabadiliko yote yaliyoorodheshwa hapo juu. Pia husitisha programu zisizo muhimu na arifa zake.</string>
     <string name="unified_battery_saver_page_intro">Okoa nishati ili uongeze muda wa matumizi ya betri kwenye simu yako baada ya kuchaji</string>
+
+    <!-- System Updates -->
+    <string name="play_application_detail_indication_summary">Angalia masasisho</string>
+    <string name="play_application_update_entry_title">Masasisho ya programu</string>
+    <string name="software_update_banner_checking">Inatafuta masasisho…</string>
+    <string name="software_update_banner_up_to_date">Kifaa chako kimesasishwa</string>
+    <string name="software_update_banner_update_available">Masasisho yanapatikana</string>
+    <string name="software_update_can_be_updated_header">Boresha Pixel yako hata zaidi</string>
+    <string name="software_update_entry_title">Masasisho ya programu</string>
+    <string name="software_update_pending_update_summary">Inasubiri sasisho</string>
+    <string name="software_update_up_to_date_header">Pixel yako imesasishwa</string>
+    <string name="software_update_up_to_specific_date_summary">Imesasishwa %1$s</string>
+    <string name="system_update_entry_title">Sasisho la mfumo</string>
 </resources>
