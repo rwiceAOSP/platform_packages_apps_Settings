@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Ձեր Pixel-ը թարմացված է</string>
     <string name="software_update_up_to_specific_date_summary">Վերջին թարմացումը՝ %1$s</string>
     <string name="system_update_entry_title">Համակարգի թարմացում</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Ներկառուցված</string>
+    <string name="vpn_preference_group_title">Այլ</string>
 </resources>

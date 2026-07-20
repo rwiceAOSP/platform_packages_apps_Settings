@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Your Pixel is up to date</string>
     <string name="software_update_up_to_specific_date_summary">Updated to %1$s</string>
     <string name="system_update_entry_title">System update</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Built-in</string>
+    <string name="vpn_preference_group_title">Others</string>
 </resources>

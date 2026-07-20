@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">На вашым тэлефоне Pixel усталявана актуальная версія ПЗ</string>
     <string name="software_update_up_to_specific_date_summary">Абноўлена да стану на %1$s</string>
     <string name="system_update_entry_title">Абнаўленне сістэмы</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Убудаваны</string>
+    <string name="vpn_preference_group_title">Іншае</string>
 </resources>
