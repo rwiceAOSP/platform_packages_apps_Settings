@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Pixel이 최신 상태임</string>
     <string name="software_update_up_to_specific_date_summary">%1$s 업데이트되었습니다</string>
     <string name="system_update_entry_title">시스템 업데이트</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">내장됨</string>
+    <string name="vpn_preference_group_title">기타</string>
 </resources>

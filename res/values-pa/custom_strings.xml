@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">ਤੁਹਾਡਾ Pixel ਅੱਪ-ਟੂ-ਡੇਟ ਹੈ</string>
     <string name="software_update_up_to_specific_date_summary">%1$s ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ</string>
     <string name="system_update_entry_title">ਸਿਸਟਮ ਅੱਪਡੇਟ</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">ਬਿਲਟ-ਇਨ</string>
+    <string name="vpn_preference_group_title">ਹੋਰ</string>
 </resources>

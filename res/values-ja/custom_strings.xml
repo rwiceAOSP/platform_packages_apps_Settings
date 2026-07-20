@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">お使いの Google Pixel は最新の状態です</string>
     <string name="software_update_up_to_specific_date_summary">%1$sに更新しました</string>
     <string name="system_update_entry_title">システム アップデート</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">搭載</string>
+    <string name="vpn_preference_group_title">その他</string>
 </resources>

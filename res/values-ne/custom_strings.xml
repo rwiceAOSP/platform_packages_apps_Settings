@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">तपाईंको Pixel अप टू डेट छ</string>
     <string name="software_update_up_to_specific_date_summary">%1$s मा अपडेट गरिएको</string>
     <string name="system_update_entry_title">सिस्टम अपडेट</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">अन्तर्निर्मित</string>
+    <string name="vpn_preference_group_title">अन्य</string>
 </resources>

@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">உங்கள் Pixel புதுப்பிக்கப்பட்டுள்ளது</string>
     <string name="software_update_up_to_specific_date_summary">%1$s அன்று புதுப்பிக்கப்பட்டது</string>
     <string name="system_update_entry_title">சிஸ்டம் புதுப்பிப்பு</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">உள்ளமைக்கப்பட்டவை</string>
+    <string name="vpn_preference_group_title">மற்றவை</string>
 </resources>

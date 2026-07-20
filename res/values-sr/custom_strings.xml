@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Pixel је ажуран</string>
     <string name="software_update_up_to_specific_date_summary">Aжурирано: %1$s</string>
     <string name="system_update_entry_title">Ажурирање система</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Уграђено</string>
+    <string name="vpn_preference_group_title">Друго</string>
 </resources>

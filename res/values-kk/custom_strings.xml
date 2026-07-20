@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Pixel смартфоныңыз жаңартылған</string>
     <string name="software_update_up_to_specific_date_summary">%1$s күніне дейін жаңартылды.</string>
     <string name="system_update_entry_title">Жүйені жаңарту</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Орнатылған</string>
+    <string name="vpn_preference_group_title">Басқалары</string>
 </resources>

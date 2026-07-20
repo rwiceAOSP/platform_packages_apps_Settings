@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Chiếc Pixel của bạn đang chạy phiên bản mới nhất</string>
     <string name="software_update_up_to_specific_date_summary">Đã cập nhật ngày %1$s</string>
     <string name="system_update_entry_title">Bản cập nhật hệ thống</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Có sẵn</string>
+    <string name="vpn_preference_group_title">Khác</string>
 </resources>
