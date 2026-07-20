@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Teie Pixel on ajakohane</string>
     <string name="software_update_up_to_specific_date_summary">Värskendati: %1$s</string>
     <string name="system_update_entry_title">Süsteemivärskendus</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Sisseehitatud</string>
+    <string name="vpn_preference_group_title">Muud</string>
 </resources>

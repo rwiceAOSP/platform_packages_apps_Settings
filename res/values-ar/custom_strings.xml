@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">‏هاتف Pixel مُحدّث</string>
     <string name="software_update_up_to_specific_date_summary">‏تم تحديثه في ‎%1$s</string>
     <string name="system_update_entry_title">تحديث النظام</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">الإعدادات المدمجة</string>
+    <string name="vpn_preference_group_title">الإعدادات الأخرى</string>
 </resources>

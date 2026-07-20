@@ -5,4 +5,7 @@
 
     <!-- Locale Picker -->
     <bool name="config_show_setuplocalepicker_region_searchbox">true</bool>
+
+    <!-- Advanced VPN -->
+    <bool name="config_advanced_vpn_enabled">true</bool>
 </resources>

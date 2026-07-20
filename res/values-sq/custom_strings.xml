@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Pajisja jote Pixel është e përditësuar</string>
     <string name="software_update_up_to_specific_date_summary">Përditësuar më %1$s</string>
     <string name="system_update_entry_title">Përditësimi i sistemit</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Integruar</string>
+    <string name="vpn_preference_group_title">Të tjera</string>
 </resources>

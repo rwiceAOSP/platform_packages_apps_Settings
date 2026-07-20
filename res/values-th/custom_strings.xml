@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Pixel ของคุณเป็นเวอร์ชันล่าสุด</string>
     <string name="software_update_up_to_specific_date_summary">อัปเดตถึงวันที่ %1$s</string>
     <string name="system_update_entry_title">การอัปเดตระบบ</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">ในตัว</string>
+    <string name="vpn_preference_group_title">อื่นๆ</string>
 </resources>

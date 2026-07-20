@@ -40,4 +40,8 @@
     <string name="software_update_up_to_date_header">Вашиот Pixel е ажуриран</string>
     <string name="software_update_up_to_specific_date_summary">Ажурирано на %1$s</string>
     <string name="system_update_entry_title">Системско ажурирање</string>
+
+    <!-- Advanced VPN -->
+    <string name="advanced_vpn_preference_group_title">Вградена</string>
+    <string name="vpn_preference_group_title">Други</string>
 </resources>
