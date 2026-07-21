@@ -44,4 +44,7 @@
     <!-- Advanced VPN -->
     <string name="advanced_vpn_preference_group_title">ਬਿਲਟ-ਇਨ</string>
     <string name="vpn_preference_group_title">ਹੋਰ</string>
+
+    <!-- Expressive QR -->
+    <string name="wifi_qr_code_animation_control">ਐਨੀਮੇਸ਼ਨ ਨੂੰ ਰੋਕੋ</string>
 </resources>
