@@ -44,4 +44,7 @@
     <!-- Advanced VPN -->
     <string name="advanced_vpn_preference_group_title">Ներկառուցված</string>
     <string name="vpn_preference_group_title">Այլ</string>
+
+    <!-- Expressive QR -->
+    <string name="wifi_qr_code_animation_control">դադարեցնել անիմացիան</string>
 </resources>
