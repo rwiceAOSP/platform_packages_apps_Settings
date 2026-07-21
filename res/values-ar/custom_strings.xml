@@ -44,4 +44,7 @@
     <!-- Advanced VPN -->
     <string name="advanced_vpn_preference_group_title">الإعدادات المدمجة</string>
     <string name="vpn_preference_group_title">الإعدادات الأخرى</string>
+
+    <!-- Expressive QR -->
+    <string name="wifi_qr_code_animation_control">إيقاف الصورة المتحركة مؤقتًا</string>
 </resources>
