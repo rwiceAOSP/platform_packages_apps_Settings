@@ -161,15 +161,6 @@
             android:title="@string/status_up_time"
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>
-
-        <!-- Battery information -->
-        <Preference
-            android:key="battery_info"
-            android:order="45"
-            android:title="@string/battery_info"
-            android:fragment="com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment"
-            settings:keywords="@string/keywords_battery_info"
-            settings:controller="com.android.settings.deviceinfo.batteryinfo.BatteryInfoPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
