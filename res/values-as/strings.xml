@@ -4520,7 +4520,7 @@
     <string name="decline_remote_bugreport_action" msgid="1276509879613158895">"প্ৰত্যাখ্যান কৰক"</string>
     <string name="usb_use_charging_only" msgid="1743303747327057947">"ডেটা স্থানান্তৰ কৰিব নোৱাৰি"</string>
     <string name="usb_use_power_only" msgid="3408055485802114621">"সংযোগ কৰা ডিভাইচ চাৰ্জ কৰক"</string>
-    <string name="usb_use_file_transfers" msgid="483915710802018503">"ফাইল স্থানান্তৰণৰ বাবে"</string>
+    <string name="usb_use_file_transfers" msgid="483915710802018503">ফাইল স্থানান্তৰণ / Android Auto</string>
     <string name="usb_use_photo_transfers" msgid="4641181628966036093">"পিটিপি"</string>
     <string name="usb_use_uvc_webcam" msgid="6595429508472038732">"ৱেবকেম"</string>
     <string name="usb_transcode_files" msgid="2441954752105119109">"ভিডিঅ’ AVCলৈ ৰূপান্তৰ কৰক"</string>

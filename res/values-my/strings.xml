@@ -4520,7 +4520,7 @@
     <string name="decline_remote_bugreport_action" msgid="1276509879613158895">"ငြင်းပယ်ပါ"</string>
     <string name="usb_use_charging_only" msgid="1743303747327057947">"ဒေတာလွှဲပြောင်းခြင်း မပြုရန်"</string>
     <string name="usb_use_power_only" msgid="3408055485802114621">"ချိတ်ဆက်ထားသည့် စက်ပစ္စည်းကို အားသွင်းရန်"</string>
-    <string name="usb_use_file_transfers" msgid="483915710802018503">"ဖိုင်လွှဲပြောင်းခြင်း"</string>
+    <string name="usb_use_file_transfers" msgid="483915710802018503">ဖိုင်ရွှေ့ပြောင်းခြင်း / Android Auto</string>
     <string name="usb_use_photo_transfers" msgid="4641181628966036093">"PTP"</string>
     <string name="usb_use_uvc_webcam" msgid="6595429508472038732">"ဝဘ်ကမ်"</string>
     <string name="usb_transcode_files" msgid="2441954752105119109">"ဗီဒီယိုများကို AVC သို့ ပြောင်းလဲရန်"</string>

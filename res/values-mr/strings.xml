@@ -4520,7 +4520,7 @@
     <string name="decline_remote_bugreport_action" msgid="1276509879613158895">"नकार द्या"</string>
     <string name="usb_use_charging_only" msgid="1743303747327057947">"डेटा ट्रान्सफर नाही"</string>
     <string name="usb_use_power_only" msgid="3408055485802114621">"कनेक्ट केलेले डिव्हाइस चार्ज करा"</string>
-    <string name="usb_use_file_transfers" msgid="483915710802018503">"फाइल ट्रान्सफर"</string>
+    <string name="usb_use_file_transfers" msgid="483915710802018503">फाइल ट्रान्सफर / Android Auto</string>
     <string name="usb_use_photo_transfers" msgid="4641181628966036093">"PTP"</string>
     <string name="usb_use_uvc_webcam" msgid="6595429508472038732">"वेबकॅम"</string>
     <string name="usb_transcode_files" msgid="2441954752105119109">"व्हिडिओचे AVC मध्ये रूपांतर करा"</string>
