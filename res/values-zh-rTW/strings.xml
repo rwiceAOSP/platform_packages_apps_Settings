@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"螢幕自動關閉 <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>後鎖定 (除非因「<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>」而維持解鎖狀態)"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"在螢幕鎖定畫面上顯示特定文字"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"無"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"例如：小明的 Android。"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">例如：小明的 Pixel</string>
     <string name="location_settings_title" msgid="8375074508036087178">"位置"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"使用位置資訊"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"關閉"</string>

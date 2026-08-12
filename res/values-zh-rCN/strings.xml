@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"自动熄屏 <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>后（“<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>”让屏幕保持解锁状态时除外）"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"添加锁屏界面上显示的文字"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"无"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"例如，小明的 Android 设备。"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">例如，小明的 Pixel。</string>
     <string name="location_settings_title" msgid="8375074508036087178">"位置信息"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"启用位置信息"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"已关闭"</string>

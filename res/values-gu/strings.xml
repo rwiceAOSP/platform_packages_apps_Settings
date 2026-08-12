@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"સમયસમાપ્તિ પછી <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>, જ્યારે <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> દ્વારા અનલૉક રાખવામાં આવેલી હોય તે સિવાય"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"લૉક સ્ક્રીન પર ટેક્સ્ટ ઉમેરો"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"કોઈ નહીં"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"દા.ત., જોનું Android."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">દા.ત., Joeનો Pixel.</string>
     <string name="location_settings_title" msgid="8375074508036087178">"લોકેશન"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"લોકેશનનો ઉપયોગ કરો"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"બંધ છે"</string>

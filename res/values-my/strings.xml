@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> ဖြင့် ဆက်ဖွင့်ထားချိန်မှအပ အချိန်ကုန်ပြီးနောက် <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"လော့ခ်စခရင်တွင် စာသားထည့်ရန်"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"မရှိ"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"ဥပမာ၊ Joe ၏ Android"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">ဥပမာ- Joe ၏ Pixel</string>
     <string name="location_settings_title" msgid="8375074508036087178">"တည်နေရာ"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"တည်နေရာကို သုံးရန်"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"ပိတ်"</string>

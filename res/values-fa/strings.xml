@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> بعداز درنگ، به‌جز وقتی‌که <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> قفل صفحه را باز نگه دارد"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"افزودن نوشتار در صفحه قفل"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"خالی"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"‏مثلاً Android امیر."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">‏برای مثال، Ali’s Pixel (پیکسل علی)</string>
     <string name="location_settings_title" msgid="8375074508036087178">"مکان"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"استفاده از مکان"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"خاموش"</string>

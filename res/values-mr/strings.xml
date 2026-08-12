@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"टाइमआउटनंतर <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> झाल्यावर, <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> द्वारे अनलॉक करून ठेवले असल्यास ते वगळून"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"लॉक स्‍क्रीनवर मजकूर जोडा"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"काहीही नाही"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"उदा. Joe चे Android."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">उदा. जो चा Pixel</string>
     <string name="location_settings_title" msgid="8375074508036087178">"स्थान"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"स्थान वापरा"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"बंद"</string>

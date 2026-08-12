@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"ਸਕ੍ਰੀਨ ਬੰਦ ਹੋ ਜਾਣ ਤੋਂ <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> ਬਾਅਦ, ਬਸ਼ਰਤੇ ਇਸਦੇ ਜਦੋਂ <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> ਰਾਹੀਂ ਅਣਲਾਕ ਰੱਖਿਆ ਹੋਵੇ"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"ਲਾਕ ਸਕ੍ਰੀਨ \'ਤੇ ਲਿਖਤ ਸ਼ਾਮਲ ਕਰੋ"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"ਕੋਈ ਨਹੀਂ"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"ਉਦਾਹਰਨ ਵਜੋਂ, ਜੋਏ ਦਾ Android."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">ਜਿਵੇਂ ਕਿ, ਏਕਮ ਦਾ Pixel.</string>
     <string name="location_settings_title" msgid="8375074508036087178">"ਟਿਕਾਣਾ"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"ਟਿਕਾਣਾ ਵਰਤੋ"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"ਬੰਦ"</string>

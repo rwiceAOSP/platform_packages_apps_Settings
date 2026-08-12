@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"在逾時 <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>後上鎖 (由「<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>」保持解鎖狀態時除外)"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"加入顯示在上鎖畫面的文字"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"無"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"例如：Joe 的 Android。"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">例如：Joe 的 Pixel。</string>
     <string name="location_settings_title" msgid="8375074508036087178">"位置"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"使用位置資料"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"關閉"</string>

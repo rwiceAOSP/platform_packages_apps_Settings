@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> ले अनलक अवस्थामा राखेको बेलाबाहेक टाइमआउटपछि <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g>"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"लक स्क्रिनमा टेक्स्ट हाल्नुहोस्"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"कुनै पनि होइन"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"उदाहरण, Joe को Android।"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">जस्तै, Joe को Pixel।</string>
     <string name="location_settings_title" msgid="8375074508036087178">"लोकेसन"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"लोकेसन प्रयोग गर्नुहोस्"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"अफ"</string>

@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"ٹائم آؤٹ کے <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> بعد، سوائے اس وقت جب <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> سے غیر مقفل رکھا ہو"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"مقفل اسکرین پر ٹیکسٹ شامل کریں"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"کوئی نہیں"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"‏مثلاً، Joe کا Android۔"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">‏جیسے، شمائلہ کا Pixel۔</string>
     <string name="location_settings_title" msgid="8375074508036087178">"مقام"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"مقام استعمال کریں"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"آف ہے"</string>

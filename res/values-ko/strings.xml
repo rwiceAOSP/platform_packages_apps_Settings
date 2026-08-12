@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>에 의해 잠금 해제된 경우를 제외하고 자동 잠금 시간 이후 <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> 경과 시"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"잠금 화면에 텍스트 추가"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"없음"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"예: Joe의 Android"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">예: 수지의 Pixel</string>
     <string name="location_settings_title" msgid="8375074508036087178">"위치"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"위치 정보 사용"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"사용 안함"</string>

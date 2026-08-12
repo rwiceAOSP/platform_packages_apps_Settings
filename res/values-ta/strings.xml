@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> மூலம் திறக்கப்பட்டிருக்கும் சூழல்களைத் தவிர மற்ற சூழல்களில் நேரம் முடிந்து <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> ஆன பின்னர் பூட்டிக்கொள்ளும்"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"லாக்ஸ்கிரீன் வார்த்தையைச் சேர்"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"ஏதுமில்லை"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"எ.கா., சந்திராவின் ஆண்ட்ராய்டு."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">எ.கா., வித்யாவின் Pixel.</string>
     <string name="location_settings_title" msgid="8375074508036087178">"இருப்பிடம்"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"இருப்பிடத்தைப் பயன்படுத்து"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"ஆஃப்"</string>

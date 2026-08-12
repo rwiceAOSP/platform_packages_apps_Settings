@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> បន្ទាប់ពីអស់ម៉ោង លើកលែងតែពេលដោះសោដោយ <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"បញ្ចូលអក្សរ​នៅលើ​អេក្រង់ចាក់សោ"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"គ្មាន"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"ឧ. ទូរសព្ទ Android របស់ Joe ។"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">ឧ. ទូរសព្ទ Pixel របស់សុភាព។</string>
     <string name="location_settings_title" msgid="8375074508036087178">"ទី​តាំង​"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"ប្រើទីតាំង"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"បិទ"</string>

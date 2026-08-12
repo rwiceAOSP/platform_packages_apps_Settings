@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>এ আনলক কৰি ৰখা সময়ৰ বাহিৰে সময় ওকলাৰ <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> পাছত"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"লক স্ক্ৰীনত পাঠ যোগ দিয়ক"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"নাই"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"যেনে, জয়েজৰ Android।"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">যেনে, মনোজৰ Pixel ফ’ন</string>
     <string name="location_settings_title" msgid="8375074508036087178">"অৱস্থান"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"অৱস্থান ব্যৱহাৰ কৰক"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"অফ আছে"</string>

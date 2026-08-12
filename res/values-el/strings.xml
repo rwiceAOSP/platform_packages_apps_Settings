@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"<xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> μετά το χρονικό όριο, εκτός από τις περιπτώσεις όπου διατηρείται ξεκλειδωμένη από την <xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g>"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"Προσθ. κειμ. σε οθόνη κλειδ."</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"Κανένα"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"Π.χ. Το Android του Μάκη."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">Π.χ. Το Pixel του Λευτέρη.</string>
     <string name="location_settings_title" msgid="8375074508036087178">"Τοποθεσία"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"Χρήση τοποθεσίας"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"Απενεργοποίηση"</string>

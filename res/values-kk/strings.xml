@@ -368,7 +368,7 @@
     <string name="lock_after_timeout_summary_with_exception" msgid="3441806647509073124">"Экран өшкеннен кейін <xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> өткен соң (<xliff:g id="TRUST_AGENT_NAME">%2$s</xliff:g> ашық күйінде ұстап тұрмаса)"</string>
     <string name="owner_info_settings_title" msgid="3555626140700093017">"Құлыптаулы экрандағы мәтін"</string>
     <string name="owner_info_settings_summary" msgid="347238313388083297">"Жоқ"</string>
-    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">"Мысалы, Джоның Android құрылғысы."</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="841926875876050274">Мысалы, Жандостың Pixel құрылғысы</string>
     <string name="location_settings_title" msgid="8375074508036087178">"Локация"</string>
     <string name="location_settings_primary_switch_title" msgid="8849081766644685127">"Локацияны пайдалану"</string>
     <string name="location_settings_summary_location_off" msgid="4797932754681162262">"Өшірулі"</string>
