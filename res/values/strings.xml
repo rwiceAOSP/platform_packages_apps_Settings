@@ -941,7 +941,7 @@
     <!-- Positive button text for users who were shown the accessibility dialog [CHAR LIMIT=20] -->
     <string name="security_settings_face_enroll_education_accessibility_dialog_positive">Continue setup</string>
     <!-- Button shown which shows accessibility toggles for face enrollment when clicked. [CHAR LIMIT=32] -->
-    <string name="security_settings_face_enroll_introduction_accessibility">Use accessibility setup</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Setup for limited vision or head motion</string>
     <!-- Message shown for a toggle which when enabled, allows the user to enroll using a simpler flow for accessibility [CHAR LIMIT=NONE] -->
     <string name="security_settings_face_enroll_introduction_accessibility_diversity"></string>
     <!-- Message shown for a toggle which when enabled, allows the user to enroll using a simpler flow for accessibility [CHAR LIMIT=NONE] -->
@@ -957,18 +957,18 @@
     <!-- Introduction title shown in face enrollment to introduce the face unlock feature, when face unlock is disabled by device admin [CHAR LIMIT=60] -->
     <string name="security_settings_face_enroll_introduction_title_unlock_disabled">Use your face to authenticate</string>
     <!-- Title of a section on the face enrollment introduction page that provides additional information. [CHAR LIMIT=40] -->
-    <string name="security_settings_face_enroll_introduction_info_title"></string>
+    <string name="security_settings_face_enroll_introduction_info_title">Keep in mind</string>
     <!-- Message on the face enrollment introduction page that provides information about glasses. [CHAR LIMIT=NONE] -->
     <string name="security_settings_face_enroll_introduction_info_glasses"></string>
     <!-- Message on the face enrollment introduction page that provides information about glasses when asking for parental consent. [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_info_consent_glasses"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">If your child normally wears eyeglasses, they can wear them during setup.</string>
 
     <!-- Title of a section on the face enrollment introduction page that explains how face unlock works. [CHAR LIMIT=40] -->
-    <string name="security_settings_face_enroll_introduction_how_title"></string>
+    <string name="security_settings_face_enroll_introduction_how_title">How it works</string>
     <!-- Title of a section on the face enrollment introduction page that explains privacy controls for face unlock. [CHAR LIMIT=NONE] -->
     <string name="security_settings_face_enroll_introduction_control_title"></string>
     <!-- Title of a section on the face enrollment introduction page that explains privacy controls for face unlock when asking for parental consent. [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_control_consent_title"></string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">You and your child are in control</string>
     <!-- Title shown in face enrollment dialog [CHAR LIMIT=40] -->
     <string name="security_settings_face_enroll_repeat_title">Center your face in the circle</string>
     <!-- Button text to skip enrollment of face [CHAR LIMIT=40] -->
@@ -988,7 +988,7 @@
     <!-- Dialog message for dialog which shows when face cannot be enrolled due to an internal error or face can't be read. -->
     <string name="security_settings_face_enroll_error_generic_dialog_message">Face enrollment didn\'t work.</string>
     <!-- Message shown in face enrollment dialog once enrollment is completed -->
-    <string name="security_settings_face_enroll_finish_title">All set. Looking good.</string>
+    <string name="security_settings_face_enroll_finish_title">Looks good!</string>
     <!-- Button text to exit face wizard after everything is done [CHAR LIMIT=15] -->
     <string name="security_settings_face_enroll_done">Done</string>
     <!-- Settings suggestion subtitle text for mandatory re-enrolling of a face. [CHAR LIMIT=40] -->
