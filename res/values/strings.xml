@@ -12273,6 +12273,13 @@
     <!-- Title text for manage data category in system navigation [CHAR LIMIT=60] -->
     <string name="manage_data_category_title">Manage data</string>
 
+    <!-- Title for the repair mode entry [CHAR LIMIT=40] -->
+    <string name="repair_mode_title">Repair mode</string>
+    <!-- Summary for the repair mode entry when not active [CHAR LIMIT=none] -->
+    <string name="repair_mode_summary">Secure environment for device repair</string>
+    <!-- Summary for the repair mode entry when active [CHAR LIMIT=none] -->
+    <string name="repair_mode_active_summary">In repair mode</string>
+
     <!-- Title text for swipe up to switch apps [CHAR LIMIT=60] -->
     <string name="swipe_up_to_switch_apps_title">2-button navigation</string>
     <!-- Summary text for swipe up to switch apps  [CHAR LIMIT=250] -->
