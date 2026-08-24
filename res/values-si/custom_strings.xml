@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">සජීවිකරණය විරාම කරන්න</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">අලුත්වැඩියා කිරීමේ ප්‍රකාරය</string>
+    <string name="repair_mode_summary">උපාංගය අලුත්වැඩියා කිරීම සඳහා සුරක්ෂිත පරිසරයක්</string>
+    <string name="repair_mode_active_summary">අලුත්වැඩියා ප්‍රකාරයේ ඇත</string>
 </resources>

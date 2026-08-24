@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">pozastaviť animáciu</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Režim opravy</string>
+    <string name="repair_mode_summary">Zabezpečené prostredie na opravu zariadenia</string>
+    <string name="repair_mode_active_summary">V režime opravy</string>
 </resources>

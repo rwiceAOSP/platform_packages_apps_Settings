@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">vendos në pauzë animacionin</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Modaliteti i riparimit</string>
+    <string name="repair_mode_summary">Mjedis i sigurt për riparimin e pajisjes</string>
+    <string name="repair_mode_active_summary">Në modalitetin e riparimit</string>
 </resources>

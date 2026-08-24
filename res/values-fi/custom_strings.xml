@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">keskeytä animaatio</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Korjaustila</string>
+    <string name="repair_mode_summary">Turvallinen ympäristö laitteen korjausta varten</string>
+    <string name="repair_mode_active_summary">Korjaustilassa</string>
 </resources>

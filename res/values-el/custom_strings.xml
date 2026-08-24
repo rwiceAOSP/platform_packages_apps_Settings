@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">παύση της κινούμενης εικόνας</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Λειτουργία επιδιόρθωσης</string>
+    <string name="repair_mode_summary">Ασφαλές περιβάλλον για επισκευή συσκευής</string>
+    <string name="repair_mode_active_summary">Σε λειτουργία επισκευής</string>
 </resources>

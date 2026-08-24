@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">এনিমেশ্বন পজ কৰক</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">মেৰামতিৰ ম’ড</string>
+    <string name="repair_mode_summary">ডিভাইচৰ মেৰামতিৰ বাবে সুৰক্ষিত পৰিৱেশ</string>
+    <string name="repair_mode_active_summary">মেৰামতি ম’ডত</string>
 </resources>

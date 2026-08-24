@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">դադարեցնել անիմացիան</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Նորոգման ռեժիմ</string>
+    <string name="repair_mode_summary">Ապահով միջավայր սարքի վերանորոգման համար</string>
+    <string name="repair_mode_active_summary">Նորոգման ռեժիմում</string>
 </resources>

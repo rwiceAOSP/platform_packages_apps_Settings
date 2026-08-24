@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">анимацияны тындыруу</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Оңдоо режими</string>
+    <string name="repair_mode_summary">Түзмөктү оңдоо үчүн коопсуз чөйрө</string>
+    <string name="repair_mode_active_summary">Оңдоо режиминде</string>
 </resources>
