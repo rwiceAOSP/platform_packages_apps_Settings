@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">поставяне на анимацията на пауза</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Режим за ремонт</string>
+    <string name="repair_mode_summary">Сигурна среда за ремонт на устройството</string>
+    <string name="repair_mode_active_summary">В режим за ремонт</string>
 </resources>

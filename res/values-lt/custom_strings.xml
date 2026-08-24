@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">pristabdyti animaciją</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Taisymo režimas</string>
+    <string name="repair_mode_summary">Saugi aplinka taisant įrenginį</string>
+    <string name="repair_mode_active_summary">Taisymo režimas</string>
 </resources>

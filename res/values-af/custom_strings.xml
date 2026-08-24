@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">onderbreek die animasie</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Herstelmodus</string>
+    <string name="repair_mode_summary">Veilige omgewing vir toestelherstel</string>
+    <string name="repair_mode_active_summary">In herstelmodus</string>
 </resources>

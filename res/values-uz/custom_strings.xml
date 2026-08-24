@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">animatsiyani pauza qiling</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Tuzatish rejimi</string>
+    <string name="repair_mode_summary">Qurilmani tuzatish uchun xavfsiz muhit</string>
+    <string name="repair_mode_active_summary">Tuzatish rejimida</string>
 </resources>

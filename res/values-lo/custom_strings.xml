@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">ຢຸດອະນິເມຊັນຊົ່ວຄາວ</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">ໂໝດສ້ອມແປງ</string>
+    <string name="repair_mode_summary">ສະພາບແວດລ້ອມທີ່ປອດໄພສຳລັບການສ້ອມແປງອຸປະກອນ</string>
+    <string name="repair_mode_active_summary">ຢູ່ໃນໂໝດການສ້ອມແປງ</string>
 </resources>

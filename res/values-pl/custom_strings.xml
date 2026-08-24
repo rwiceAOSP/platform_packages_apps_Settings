@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">wstrzymuje odtwarzanie animacji</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Tryb naprawy</string>
+    <string name="repair_mode_summary">Bezpieczne środowisko naprawy urządzenia</string>
+    <string name="repair_mode_active_summary">W trybie naprawy</string>
 </resources>

@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">アニメーションを一時停止します</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">修理モード</string>
+    <string name="repair_mode_summary">デバイス修理のための安全な環境</string>
+    <string name="repair_mode_active_summary">修理モード使用中</string>
 </resources>

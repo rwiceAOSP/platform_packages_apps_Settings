@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">gera hlé á hreyfimyndinni</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Viðgerðarstilling</string>
+    <string name="repair_mode_summary">Öruggt umhverfi fyrir viðgerð á tæki</string>
+    <string name="repair_mode_active_summary">Í viðgerðarstillingu</string>
 </resources>

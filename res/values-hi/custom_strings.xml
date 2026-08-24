@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">ऐनिमेशन को रोकें</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">रिपेयर मोड</string>
+    <string name="repair_mode_summary">डिवाइस रिपेयर करने के लिए सुरक्षित मोड</string>
+    <string name="repair_mode_active_summary">रिपेयर मोड में</string>
 </resources>

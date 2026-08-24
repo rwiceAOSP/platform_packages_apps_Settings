@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">ផ្អាករូបមានចលនា</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">មុខងារជួសជុល</string>
+    <string name="repair_mode_summary">មជ្ឈដ្ឋានដែលមានសុវត្ថិភាពសម្រាប់ការជួលជុលឧបករណ៍</string>
+    <string name="repair_mode_active_summary">ក្នុងមុខងារជួសជុល</string>
 </resources>

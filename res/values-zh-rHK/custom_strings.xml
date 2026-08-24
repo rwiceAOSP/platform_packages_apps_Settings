@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">暫停播放動畫</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">維修模式</string>
+    <string name="repair_mode_summary">適合裝置維修的安全環境</string>
+    <string name="repair_mode_active_summary">處於維修模式</string>
 </resources>
