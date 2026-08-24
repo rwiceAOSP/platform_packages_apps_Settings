@@ -25,4 +25,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">pause the animation</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Repair mode</string>
+    <string name="repair_mode_summary">Secure environment for device repair</string>
+    <string name="repair_mode_active_summary">In repair mode</string>
 </resources>
