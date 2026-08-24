@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">လှုပ်ရှားသက်ဝင်ပုံကို ခဏရပ်ပါ</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">ပြုပြင်မုဒ်</string>
+    <string name="repair_mode_summary">စက်ပြုပြင်ရေးအတွက် လုံခြုံသော ပတ်ဝန်းကျင်</string>
+    <string name="repair_mode_active_summary">ပြုပြင်မုဒ်တွင်</string>
 </resources>

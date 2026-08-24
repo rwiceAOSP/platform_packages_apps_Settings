@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">موقتاً متوقف کردن پویانمایی</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">حالت تعمیر</string>
+    <string name="repair_mode_summary">محیط امن برای تعمیر دستگاه</string>
+    <string name="repair_mode_active_summary">در حالت تعمیر</string>
 </resources>

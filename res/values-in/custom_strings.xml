@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">jeda animasi</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Mode reparasi</string>
+    <string name="repair_mode_summary">Lingkungan aman untuk reparasi perangkat</string>
+    <string name="repair_mode_active_summary">Dalam mode perbaikan</string>
 </resources>

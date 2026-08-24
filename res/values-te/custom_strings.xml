@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">యానిమేషన్‌ను పాజ్ చేయండి</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">రిపేర్ మోడ్</string>
+    <string name="repair_mode_summary">డివైజ్ రిపేర్ కోసం సురక్షితమైన ఎన్విరాన్‌మెంట్‌</string>
+    <string name="repair_mode_active_summary">రిపేర్ మోడ్‌లో</string>
 </resources>

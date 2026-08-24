@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">peata animatsioon</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">Parandamisrežiim</string>
+    <string name="repair_mode_summary">Turvaline keskkond seadme parandamiseks</string>
+    <string name="repair_mode_active_summary">Parandamisrežiimis</string>
 </resources>

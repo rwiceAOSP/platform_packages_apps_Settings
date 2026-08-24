@@ -47,4 +47,9 @@
 
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">ആനിമേഷൻ താൽക്കാലികമായി നിർത്തുക</string>
+
+    <!-- Repair Mode -->
+    <string name="repair_mode_title">റിപ്പയർ മോഡ്</string>
+    <string name="repair_mode_summary">ഉപകരണത്തിന്റെ റിപ്പയറിനുള്ള സുരക്ഷിത അന്തരീക്ഷം</string>
+    <string name="repair_mode_active_summary">റിപ്പയർ മോഡിൽ</string>
 </resources>
