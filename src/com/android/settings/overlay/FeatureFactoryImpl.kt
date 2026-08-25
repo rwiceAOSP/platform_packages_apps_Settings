@@ -67,7 +67,6 @@ import com.android.settings.notification.syncacrossdevices.SyncAcrossDevicesFeat
 import com.android.settings.notification.syncacrossdevices.SyncAcrossDevicesFeatureProviderImpl
 import com.android.settings.panel.PanelFeatureProviderImpl
 import com.android.settings.privatespace.PrivateSpaceLoginFeatureProvider
-import com.android.settings.privatespace.PrivateSpaceLoginFeatureProviderImpl
 import com.android.settings.search.SearchFeatureProvider
 import com.android.settings.search.SearchFeatureProviderImpl
 import com.android.settings.security.SecurityFeatureProviderImpl
@@ -80,6 +79,7 @@ import com.android.settings.wifi.WifiTrackerLibProvider
 import com.android.settings.wifi.WifiTrackerLibProviderImpl
 import com.android.settings.wifi.factory.WifiFeatureProvider
 import com.android.settingslib.spaprivileged.framework.common.devicePolicyManager
+import com.google.android.settings.privatespace.PrivateSpaceLoginFeatureProviderGoogleImpl
 
 /** [FeatureFactory] implementation for AOSP Settings. */
 open class FeatureFactoryImpl : FeatureFactory() {
@@ -210,7 +210,7 @@ open class FeatureFactoryImpl : FeatureFactory() {
     }
 
     override val privateSpaceLoginFeatureProvider: PrivateSpaceLoginFeatureProvider by lazy {
-        PrivateSpaceLoginFeatureProviderImpl()
+        PrivateSpaceLoginFeatureProviderGoogleImpl()
     }
 
     override val displayFeatureProvider: DisplayFeatureProvider by lazy {
