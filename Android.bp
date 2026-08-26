@@ -129,6 +129,7 @@ android_library {
         "dynamiccolors",
         "com.android.text.flags-aconfig-java",
         "custom-preference",
+        "googlebattery",
     ],
 
     plugins: [

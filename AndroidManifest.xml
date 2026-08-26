@@ -6474,5 +6474,10 @@
             android:name="com.google.android.settings.biometrics.combination.ui.view.FrrCommonNotificationActivity"
             android:theme="@style/GlifV4Theme.DayNight"/>
 
+        <provider
+            android:name="com.google.android.settings.fuelgauge.AdaptiveChargingContentProvider"
+            android:authorities="com.android.settings.fuelgauge.provider.adaptive_charging"
+            android:exported="true"/>
+
     </application>
 </manifest>
