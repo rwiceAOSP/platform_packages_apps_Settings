@@ -29,10 +29,7 @@ open class DeviceDiagnosticsPreferenceController(context: Context, preferenceKey
     BasePreferenceController(context, preferenceKey) {
 
     override fun getAvailabilityStatus(): Int {
-        if (getIntent() == null) {
-            return UNSUPPORTED_ON_DEVICE
-        }
-        return AVAILABLE
+        return UNSUPPORTED_ON_DEVICE
     }
 
     override fun handlePreferenceTreeClick(preference: Preference): Boolean {
