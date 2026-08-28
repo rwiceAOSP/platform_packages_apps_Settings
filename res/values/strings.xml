@@ -921,7 +921,7 @@
     <!-- Message shown in summary field when face unlock is set up. [CHAR LIMIT=40] -->
     <string name="security_settings_face_preference_summary">Face added</string>
     <!-- Message shown in summary field when Face Unlock is not set up. [CHAR LIMIT=54] -->
-    <string name="security_settings_face_preference_summary_none">Setup needed</string>
+    <string name="security_settings_face_preference_summary_none">Tap to set up face</string>
     <!-- Message shown in summary field when Face Unlock is not set up. [CHAR LIMIT=54] -->
     <string name="security_settings_face_preference_summary_none_new">Add face</string>
     <!-- Title shown for menu item that launches face settings or enrollment. [CHAR LIMIT=32] -->
@@ -933,7 +933,7 @@
     <!-- Introduction title shown in face enrollment education screen to show the face unlock feature, when face unlock is disabled by device admin [CHAR LIMIT=60] -->
     <string name="security_settings_face_enroll_education_title_unlock_disabled">Use your face to authenticate</string>
     <!-- Introduction detail message shown in face education [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_education_message"></string>
+    <string name="security_settings_face_enroll_education_message">On the next screen, rotate your head to capture all angles of your face</string>
     <!-- Button that takes the user to the enrollment activity [CHAR LIMIT=20] -->
     <string name="security_settings_face_enroll_education_start">Start</string>
     <!-- Negative button text for users who were shown the accessibility dialog [CHAR LIMIT=10] -->
@@ -941,11 +941,11 @@
     <!-- Positive button text for users who were shown the accessibility dialog [CHAR LIMIT=20] -->
     <string name="security_settings_face_enroll_education_accessibility_dialog_positive">Continue setup</string>
     <!-- Button shown which shows accessibility toggles for face enrollment when clicked. [CHAR LIMIT=32] -->
-    <string name="security_settings_face_enroll_introduction_accessibility">Use accessibility setup</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Setup for limited vision or head motion</string>
     <!-- Message shown for a toggle which when enabled, allows the user to enroll using a simpler flow for accessibility [CHAR LIMIT=NONE] -->
     <string name="security_settings_face_enroll_introduction_accessibility_diversity"></string>
     <!-- Message shown for a toggle which when enabled, allows the user to enroll using a simpler flow for accessibility [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_accessibility_vision"></string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Require eyes open</string>
     <!-- Button text to cancel enrollment from the introduction [CHAR LIMIT=22] -->
     <string name="security_settings_face_enroll_introduction_cancel">Cancel</string>
     <!-- Button text to cancel enrollment [CHAR LIMIT=30] -->
@@ -957,18 +957,18 @@
     <!-- Introduction title shown in face enrollment to introduce the face unlock feature, when face unlock is disabled by device admin [CHAR LIMIT=60] -->
     <string name="security_settings_face_enroll_introduction_title_unlock_disabled">Use your face to authenticate</string>
     <!-- Title of a section on the face enrollment introduction page that provides additional information. [CHAR LIMIT=40] -->
-    <string name="security_settings_face_enroll_introduction_info_title"></string>
+    <string name="security_settings_face_enroll_introduction_info_title">Keep in mind</string>
     <!-- Message on the face enrollment introduction page that provides information about glasses. [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_info_glasses"></string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Glasses or lightly tinted sunglasses are OK.</string>
     <!-- Message on the face enrollment introduction page that provides information about glasses when asking for parental consent. [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_info_consent_glasses"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">If your child normally wears eyeglasses, they can wear them during setup.</string>
 
     <!-- Title of a section on the face enrollment introduction page that explains how face unlock works. [CHAR LIMIT=40] -->
-    <string name="security_settings_face_enroll_introduction_how_title"></string>
+    <string name="security_settings_face_enroll_introduction_how_title">How it works</string>
     <!-- Title of a section on the face enrollment introduction page that explains privacy controls for face unlock. [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_control_title"></string>
+    <string name="security_settings_face_enroll_introduction_control_title">You’re in control</string>
     <!-- Title of a section on the face enrollment introduction page that explains privacy controls for face unlock when asking for parental consent. [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_control_consent_title"></string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">You and your child are in control</string>
     <!-- Title shown in face enrollment dialog [CHAR LIMIT=40] -->
     <string name="security_settings_face_enroll_repeat_title">Center your face in the circle</string>
     <!-- Button text to skip enrollment of face [CHAR LIMIT=40] -->
@@ -988,13 +988,13 @@
     <!-- Dialog message for dialog which shows when face cannot be enrolled due to an internal error or face can't be read. -->
     <string name="security_settings_face_enroll_error_generic_dialog_message">Face enrollment didn\'t work.</string>
     <!-- Message shown in face enrollment dialog once enrollment is completed -->
-    <string name="security_settings_face_enroll_finish_title">All set. Looking good.</string>
+    <string name="security_settings_face_enroll_finish_title">Looks good!</string>
     <!-- Button text to exit face wizard after everything is done [CHAR LIMIT=15] -->
     <string name="security_settings_face_enroll_done">Done</string>
     <!-- Settings suggestion subtitle text for mandatory re-enrolling of a face. [CHAR LIMIT=40] -->
     <string name="security_settings_face_enroll_must_re_enroll_subtitle">Improve security and performance</string>
     <!-- Description shown on face settings page. -->
-    <string name="security_settings_face_description"></string>
+    <string name="security_settings_face_description">For extra convenience, set up Fingerprint Unlock as a backup for when you’re wearing a mask or in a dark area.\n\nYour face is only stored on device and never sent to Google.</string>
     <!-- Title for a category shown for the face settings page. [CHAR LIMIT=20] -->
     <string name="security_settings_face_settings_face_category">Face</string>
     <!-- Title for a category shown for the face settings page. [CHAR LIMIT=20] -->
@@ -1024,11 +1024,11 @@
     <!-- Fingerprint category title - fingerprint options for unlocking the device. [CHAR LIMIT=60] -->
     <string name="security_settings_category_use_fingerprint">Use fingerprint to</string>
     <!-- Title shown for menu item that launches fingerprint settings or enrollment [CHAR LIMIT=22] -->
-    <string name="security_settings_fingerprint_preference_title">Fingerprint</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <!-- Title for a category shown for the fingerprint settings page, followed by items that the user can toggle on/off to require/disable. [CHAR LIMIT=50] -->
     <string name="security_settings_fingerprint_settings_preferences_category">When using Fingerprint Unlock</string>
     <!-- Title shown for work menu item that launches fingerprint settings or enrollment [CHAR LIMIT=22] -->
-    <string name="security_settings_work_fingerprint_preference_title">Fingerprint for work</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint for work</string>
     <!-- Title shown for work menu item that launches fingerprint settings or enrollment [CHAR LIMIT=22] -->
     <string name="security_settings_work_fingerprint_preference_title_new">Fingerprint for work</string>
     <!-- Preference to check enrolled fingerprints -->
@@ -1041,7 +1041,7 @@
         other   {# fingerprints added}
         }</string>
     <!-- message shown in summary field when no fingerprints are registered -->
-    <string name="security_settings_fingerprint_preference_summary_none">Setup needed</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Tap to set up fingerprint</string>
     <!-- message shown in summary field when no fingerprints are registered -->
     <string name="security_settings_fingerprint_preference_summary_none_new">Add fingerprint</string>
     <!-- Introduction title shown in fingerprint enrollment to introduce the fingerprint feature [CHAR LIMIT=29] -->
@@ -1049,7 +1049,7 @@
     <!-- Introduction title shown in fingerprint enrollment when asking for parental consent for fingerprint unlock [CHAR LIMIT=29] -->
     <string name="security_settings_fingerprint_enroll_consent_introduction_title">Allow fingerprint unlock</string>
     <!-- Introduction title shown in fingerprint enrollment to introduce the fingerprint feature, when fingerprint unlock is disabled by device admin [CHAR LIMIT=40] -->
-    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Use your fingerprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Unlock with Nexus Imprint</string>
     <!-- Learn more text of footer preference for fingerprint settings [CHAR LIMIT=NONE] -->
     <string name="security_settings_fingerprint_settings_footer_learn_more">Learn more about Fingerprint Unlock</string>
     <!-- Introduction title shown in the bottom of fingerprint enrollment dialog [CHAR LIMIT=NONE]-->
@@ -1081,15 +1081,15 @@
     <!-- Introduction subtitle message shown in fingerprint enrollment introduction screen in setup wizard. [CHAR LIMIT=NONE]-->
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_title_2">How it works</string>
     <!-- Introduction description message shown in fingerprint enrollment introduction screen in setup wizard. [CHAR LIMIT=NONE]-->
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Fingerprint Unlock creates a unique model of your fingerprint to verify it\u2019s you. To create this fingerprint model during setup, you will take images of your fingerprint from different positions.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint creates a unique model of your fingerprint to verify it’s you. To create this fingerprint model during setup, you will take images of your fingerprint from different positions.</string>
     <!-- Introduction description message shown in fingerprint enrollment introduction screen in setup wizard when asking for parental consent. [CHAR LIMIT=NONE]-->
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Fingerprint Unlock creates a unique model of your child\u2019s fingerprint to verify it\u2019s them. To create this fingerprint model during setup, they will take images of their fingerprint from different positions.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint creates a unique model of your child’s fingerprint to verify it’s them. To create this fingerprint model during setup, they will take images of their fingerprint from different positions.</string>
     <!-- Introduction description message shown in fingerprint enrollment introduction screen in setup wizard. [CHAR LIMIT=NONE] -->
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_6">For best results, use a screen protector that\u2019s Made for Google certified. With other screen protectors, your fingerprint may not work.</string>
     <!-- Introduction description message shown in fingerprint enrollment introduction screen in setup wizard when asking for parental consent. [CHAR LIMIT=NONE] -->
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_6">For best results, use a screen protector that\u2019s Made for Google certified. With other screen protectors, your child\u2019s fingerprint may not work.</string>
     <!-- Introduction detail message shown in fingerprint enrollment introduction to learn more about fingerprint [CHAR LIMIT=NONE]-->
-    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more"></string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Learn more about Pixel fingerprint unlock at &lt;a href=\'http://g.co/pixel/fingerprintunlock\'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;.</string>
     <!-- Description shown on the check enrolled fingerprint dialog -->
     <string name="fingerprint_check_enroll_touch_sensor">Touch the fingerprint sensor</string>
     <!-- Description shown on the check enrolled fingerprint dialog -->
@@ -1208,7 +1208,7 @@
     <!-- Biometric settings -->
     <skip />
     <!-- Message shown in summary field of biometric settings. [CHAR LIMIT=66] -->
-    <string name="security_settings_biometric_preference_summary_none_enrolled">Setup needed</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Tap to set up</string>
     <!-- Message shown in summary field of biometric settings when face is enrolled, and multiple fingerprints are enrolled. [CHAR LIMIT=66]-->
     <string name="security_settings_biometric_preference_summary_both_fp_multiple">Face and fingerprints added</string>
     <!-- Message shown in summary field of biometric settings when face is enrolled, and a single fingerprintis enrolled. [CHAR LIMIT=66]-->
@@ -1674,7 +1674,7 @@
     <skip />
 
     <!-- Title for suggested actions for settings up a fingerprint lock [CHAR LIMIT=46] -->
-    <string name="suggested_fingerprint_lock_settings_title">Add fingerprint to unlock</string>
+    <string name="suggested_fingerprint_lock_settings_title">Use Pixel Imprint</string>
 
     <!--  Title for security picker to choose the unlock method: None/Pattern/PIN/Password [CHAR LIMIT=22] -->
     <string name="lock_settings_picker_title">Choose screen lock</string>
@@ -1764,13 +1764,13 @@
     <string name="unlock_accessibility_password">Device password</string>
 
     <!-- Title for preference that guides the user through creating a backup unlock pattern for fingerprint [CHAR LIMIT=45]-->
-    <string name="fingerprint_unlock_set_unlock_pattern">Pattern \u2022 Fingerprint</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + Pattern</string>
     <!-- Title for preference that guides the user through creating a backup unlock PIN for fingerprint [CHAR LIMIT=45]-->
-    <string name="fingerprint_unlock_set_unlock_pin">PIN \u2022 Fingerprint</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
     <!-- Title for preference that guides the user through creating a backup unlock password for fingerprint [CHAR LIMIT=45]-->
-    <string name="fingerprint_unlock_set_unlock_password">Password \u2022 Fingerprint</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + Password</string>
     <!-- Title for preference that guides the user to skip fingerprint setup [CHAR LIMIT=60]-->
-    <string name="fingerprint_unlock_skip_fingerprint">Continue without fingerprint</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continue without Nexus Imprint</string>
 
     <!-- Title for preference that guides the user through creating a backup unlock pattern for Face Unlock [CHAR LIMIT=45]-->
     <string name="face_unlock_set_unlock_pattern">Pattern \u2022 Face</string>
@@ -8448,9 +8448,9 @@
     <!-- Help URL, Remote display [DO NOT TRANSLATE] -->
     <string name="help_url_remote_display" translatable="false"></string>
     <!-- Help URL, Face [DO NOT TRANSLATE] -->
-    <string name="help_url_face" translatable="false"></string>
+    <string name="help_url_face" translatable="false">intent:#Intent;action=com.google.android.gms.googlehelp.LAUNCH;S.EXTRA_CONTEXT=android_face_unlock;end</string>
     <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
-    <string name="help_url_fingerprint" translatable="false"></string>
+    <string name="help_url_fingerprint" translatable="false">https://support.google.com/pixelphone/answer/6285273</string>
     <!-- Help URL, Gesture settings -->
     <string name="help_url_gestures" translatable="false"></string>
     <!-- Help URL, Manage Storage [DO NOT TRANSLATE]-->
