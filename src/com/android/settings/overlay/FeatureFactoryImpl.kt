@@ -30,11 +30,8 @@ import com.android.settings.accounts.AccountFeatureProvider
 import com.android.settings.accounts.AccountFeatureProviderImpl
 import com.android.settings.applications.ApplicationFeatureProviderImpl
 import com.android.settings.biometrics.BiometricsFeatureProvider
-import com.android.settings.biometrics.BiometricsFeatureProviderImpl
 import com.android.settings.biometrics.face.FaceFeatureProvider
-import com.android.settings.biometrics.face.FaceFeatureProviderImpl
 import com.android.settings.biometrics.fingerprint.FingerprintFeatureProvider
-import com.android.settings.biometrics.fingerprint.FingerprintFeatureProviderImpl
 import com.android.settings.bluetooth.BluetoothFeatureProvider
 import com.android.settings.bluetooth.BluetoothFeatureProviderImpl
 import com.android.settings.connecteddevice.audiosharing.AudioSharingFeatureProvider
@@ -79,6 +76,9 @@ import com.android.settings.wifi.WifiTrackerLibProvider
 import com.android.settings.wifi.WifiTrackerLibProviderImpl
 import com.android.settings.wifi.factory.WifiFeatureProvider
 import com.android.settingslib.spaprivileged.framework.common.devicePolicyManager
+import com.google.android.settings.biometrics.BiometricsFeatureProviderGoogleImpl
+import com.google.android.settings.biometrics.face.FaceFeatureProviderGoogleImpl
+import com.google.android.settings.biometrics.fingerprint.FingerprintFeatureProviderGoogleImpl
 import com.google.android.settings.privatespace.PrivateSpaceLoginFeatureProviderGoogleImpl
 
 /** [FeatureFactory] implementation for AOSP Settings. */
@@ -155,15 +155,15 @@ open class FeatureFactoryImpl : FeatureFactory() {
     }
 
     override val biometricsFeatureProvider: BiometricsFeatureProvider by lazy {
-        BiometricsFeatureProviderImpl()
+        BiometricsFeatureProviderGoogleImpl(appContext)
     }
 
     override val faceFeatureProvider: FaceFeatureProvider by lazy {
-        FaceFeatureProviderImpl(appContext)
+        FaceFeatureProviderGoogleImpl()
     }
 
     override val fingerprintFeatureProvider: FingerprintFeatureProvider by lazy {
-        FingerprintFeatureProviderImpl()
+        FingerprintFeatureProviderGoogleImpl()
     }
 
     override val wifiTrackerLibProvider: WifiTrackerLibProvider by lazy {
