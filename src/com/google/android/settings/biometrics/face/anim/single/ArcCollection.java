@@ -6,14 +6,13 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.os.Handler;
-
-import com.android.settings.R;
-
+import com.google.android.settings.R$color;
 import java.util.ArrayList;
 import java.util.List;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class ArcCollection {
-    private final List<RotatingArc> mArcs;
+    private final List mArcs;
     private final Handler mHandler;
     private float mSpeed;
     private ValueAnimator mSpeedAnimator;
@@ -22,135 +21,190 @@ public class ArcCollection {
     private ValueAnimator mSweepAnimator;
 
     public ArcCollection(Context context, Handler handler) {
-        mHandler = handler;
-        int[] iArr = {
-            context.getResources().getColor(R.color.face_enroll_single_capture_rotating_4),
-            context.getResources().getColor(R.color.face_enroll_single_capture_rotating_3),
-            context.getResources().getColor(R.color.face_enroll_single_capture_rotating_2),
-            context.getResources().getColor(R.color.face_enroll_single_capture_rotating_1)
-        };
-        ArrayList<RotatingArc> arrayList = new ArrayList<>();
+        this.mHandler = handler;
+        int[] iArr = {context.getResources().getColor(R$color.face_enroll_single_capture_rotating_4), context.getResources().getColor(R$color.face_enroll_single_capture_rotating_3), context.getResources().getColor(R$color.face_enroll_single_capture_rotating_2), context.getResources().getColor(R$color.face_enroll_single_capture_rotating_1)};
+        ArrayList arrayList = new ArrayList();
         for (int i = 0; i < 4; i++) {
             arrayList.add(new RotatingArc(i, 4, iArr));
         }
-        mArcs = arrayList;
+        this.mArcs = arrayList;
     }
 
     public void update(long j, long j2) {
-        for (int i = 0; i < mArcs.size(); i++) {
-            mArcs.get(i).update(j, j2);
+        for (int i = 0; i < this.mArcs.size(); i++) {
+            ((RotatingArc) this.mArcs.get(i)).update(j, j2);
         }
     }
 
     public void draw(Canvas canvas) {
-        for (int i = 0; i < mArcs.size(); i++) {
-            mArcs.get(i).draw(canvas);
+        for (int i = 0; i < this.mArcs.size(); i++) {
+            ((RotatingArc) this.mArcs.get(i)).draw(canvas);
         }
     }
 
     public void setSweepAngle(float f) {
-        mSweepAngle = f;
-        for (int i = 0; i < mArcs.size(); i++) {
-            mArcs.get(i).setSweepAngle(f);
+        this.mSweepAngle = f;
+        for (int i = 0; i < this.mArcs.size(); i++) {
+            ((RotatingArc) this.mArcs.get(i)).setSweepAngle(f);
         }
     }
 
     public void setSpeed(float f) {
-        mSpeed = f;
-        for (int i = 0; i < mArcs.size(); i++) {
-            mArcs.get(i).setRotateSpeed(f);
+        this.mSpeed = f;
+        for (int i = 0; i < this.mArcs.size(); i++) {
+            ((RotatingArc) this.mArcs.get(i)).setRotateSpeed(f);
         }
     }
 
     public void stopCurrentAnimation() {
-        if (mSweepAnimator != null && mSweepAnimator.isRunning()) {
-            mSweepAnimator.cancel();
+        ValueAnimator valueAnimator = this.mSweepAnimator;
+        if (valueAnimator != null && valueAnimator.isRunning()) {
+            this.mSweepAnimator.cancel();
         }
-        if (mSpeedAnimator != null && mSpeedAnimator.isRunning()) {
-            mSpeedAnimator.cancel();
+        ValueAnimator valueAnimator2 = this.mSpeedAnimator;
+        if (valueAnimator2 != null && valueAnimator2.isRunning()) {
+            this.mSpeedAnimator.cancel();
         }
-        for (int i = 0; i < mArcs.size(); i++) {
-            mArcs.get(i).stopCurrentAnimation();
+        for (int i = 0; i < this.mArcs.size(); i++) {
+            ((RotatingArc) this.mArcs.get(i)).stopCurrentAnimation();
         }
     }
 
     public void stopRotating() {
-        int i = mState;
+        int i = this.mState;
         if (i == 1 || i == 3) {
             return;
         }
         stopCurrentAnimation();
-        mState = 3;
-        mSweepAnimator = ValueAnimator.ofFloat(mSweepAngle, 0.0f);
-        mSweepAnimator.setDuration(1100L);
-        mSweepAnimator.addUpdateListener(
-                valueAnimator -> setSweepAngle((Float) valueAnimator.getAnimatedValue()));
-        mSweepAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        super.onAnimationEnd(animator);
-                        ArcCollection.this.mState = 1;
-                    }
-                });
-        mSpeedAnimator = ValueAnimator.ofFloat(mSpeed, 0.0f);
-        mSpeedAnimator.setDuration(1100L);
-        mSpeedAnimator.addUpdateListener(
-                valueAnimator -> setSpeed((Float) valueAnimator.getAnimatedValue()));
-        mSweepAnimator.start();
-        for (int i2 = 0; i2 < mArcs.size(); i2++) {
-            mArcs.get(i2).stopRotating(1100L);
+        this.mState = 3;
+        ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(this.mSweepAngle, 0.0f);
+        this.mSweepAnimator = valueAnimatorOfFloat;
+        valueAnimatorOfFloat.setDuration(1100L);
+        this.mSweepAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection$$ExternalSyntheticLambda0
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$stopRotating$0(valueAnimator);
+            }
+        });
+        this.mSweepAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection.1
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                super.onAnimationEnd(animator);
+                ArcCollection.this.mState = 1;
+            }
+        });
+        ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(this.mSpeed, 0.0f);
+        this.mSpeedAnimator = valueAnimatorOfFloat2;
+        valueAnimatorOfFloat2.setDuration(1100L);
+        this.mSpeedAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection$$ExternalSyntheticLambda1
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$stopRotating$1(valueAnimator);
+            }
+        });
+        this.mSweepAnimator.start();
+        for (int i2 = 0; i2 < this.mArcs.size(); i2++) {
+            ((RotatingArc) this.mArcs.get(i2)).stopRotating(1100L);
         }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$stopRotating$0(ValueAnimator valueAnimator) {
+        setSweepAngle(((Float) valueAnimator.getAnimatedValue()).floatValue());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$stopRotating$1(ValueAnimator valueAnimator) {
+        setSpeed(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
 
     public void startRotating() {
-        if (mState == 2) {
+        if (this.mState == 2) {
             return;
         }
         stopCurrentAnimation();
-        mState = 2;
-        mSweepAnimator = ValueAnimator.ofFloat(mSweepAngle, 90.0f);
-        mSweepAnimator.setDuration(800L);
-        mSweepAnimator.addUpdateListener(
-                valueAnimator -> setSweepAngle((Float) valueAnimator.getAnimatedValue()));
-        mSpeedAnimator = ValueAnimator.ofFloat(mSpeed, 200.0f);
-        mSpeedAnimator.setDuration(800L);
-        mSpeedAnimator.addUpdateListener(
-                valueAnimator -> setSpeed((Float) valueAnimator.getAnimatedValue()));
-        mSweepAnimator.start();
-        mSpeedAnimator.start();
-        for (int i = 0; i < mArcs.size(); i++) {
-            mArcs.get(i).startRotating(800L);
+        this.mState = 2;
+        ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(this.mSweepAngle, 90.0f);
+        this.mSweepAnimator = valueAnimatorOfFloat;
+        valueAnimatorOfFloat.setDuration(800L);
+        this.mSweepAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection$$ExternalSyntheticLambda2
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$startRotating$2(valueAnimator);
+            }
+        });
+        ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(this.mSpeed, 200.0f);
+        this.mSpeedAnimator = valueAnimatorOfFloat2;
+        valueAnimatorOfFloat2.setDuration(800L);
+        this.mSpeedAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection$$ExternalSyntheticLambda3
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$startRotating$3(valueAnimator);
+            }
+        });
+        this.mSweepAnimator.start();
+        this.mSpeedAnimator.start();
+        for (int i = 0; i < this.mArcs.size(); i++) {
+            ((RotatingArc) this.mArcs.get(i)).startRotating(800L);
         }
     }
 
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$startRotating$2(ValueAnimator valueAnimator) {
+        setSweepAngle(((Float) valueAnimator.getAnimatedValue()).floatValue());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$startRotating$3(ValueAnimator valueAnimator) {
+        setSpeed(((Float) valueAnimator.getAnimatedValue()).floatValue());
+    }
+
     public void startFinishing(final Runnable runnable) {
-        int i = mState;
+        int i = this.mState;
         if (i == 4 || i == 5) {
             return;
         }
         stopCurrentAnimation();
-        mState = 4;
-        mSweepAnimator = ValueAnimator.ofFloat(mSweepAngle, 360.0f);
-        mSweepAnimator.setDuration(800L);
-        mSweepAnimator.addUpdateListener(
-                valueAnimator -> setSweepAngle((Float) valueAnimator.getAnimatedValue()));
-        mSweepAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        super.onAnimationEnd(animator);
-                        ArcCollection.this.mHandler.post(runnable);
-                    }
-                });
-        mSpeedAnimator = ValueAnimator.ofFloat(mSpeed, 200.0f);
-        mSpeedAnimator.setDuration(800L);
-        mSpeedAnimator.addUpdateListener(
-                valueAnimator -> setSpeed((Float) valueAnimator.getAnimatedValue()));
-        mSweepAnimator.start();
-        mSpeedAnimator.start();
-        for (int i2 = 0; i2 < mArcs.size(); i2++) {
-            mArcs.get(i2).startFinishing(800L);
+        this.mState = 4;
+        ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(this.mSweepAngle, 360.0f);
+        this.mSweepAnimator = valueAnimatorOfFloat;
+        valueAnimatorOfFloat.setDuration(800L);
+        this.mSweepAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection$$ExternalSyntheticLambda4
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$startFinishing$4(valueAnimator);
+            }
+        });
+        this.mSweepAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection.2
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                super.onAnimationEnd(animator);
+                ArcCollection.this.mHandler.post(runnable);
+            }
+        });
+        ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(this.mSpeed, 200.0f);
+        this.mSpeedAnimator = valueAnimatorOfFloat2;
+        valueAnimatorOfFloat2.setDuration(800L);
+        this.mSpeedAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.ArcCollection$$ExternalSyntheticLambda5
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$startFinishing$5(valueAnimator);
+            }
+        });
+        this.mSweepAnimator.start();
+        this.mSpeedAnimator.start();
+        for (int i2 = 0; i2 < this.mArcs.size(); i2++) {
+            ((RotatingArc) this.mArcs.get(i2)).startFinishing(800L);
         }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$startFinishing$4(ValueAnimator valueAnimator) {
+        setSweepAngle(((Float) valueAnimator.getAnimatedValue()).floatValue());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$startFinishing$5(ValueAnimator valueAnimator) {
+        setSpeed(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
 }

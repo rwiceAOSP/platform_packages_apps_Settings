@@ -12,20 +12,19 @@ class FaceManagerRepositoryImpl
 private constructor(private val userId: Int, private val faceManager: FaceManager?) :
     FaceManagerRepository {
 
+    override fun isSupport(): Boolean = faceManager != null
+
     override val hasEnrolled: Boolean
         get() = faceManager?.hasEnrolledTemplates(userId) ?: false
 
-    override fun isSupport(): Boolean = faceManager != null
-
     companion object {
-        @Volatile private var instances: MutableMap<Int, FaceManagerRepository>? = null
+        private val instances: MutableMap<Int, FaceManagerRepository> = LinkedHashMap()
 
         @Synchronized
-        @JvmStatic
         fun getInstance(userId: Int, faceManager: FaceManager?): FaceManagerRepository {
-            val map =
-                instances ?: LinkedHashMap<Int, FaceManagerRepository>().also { instances = it }
-            return map.getOrPut(userId) { FaceManagerRepositoryImpl(userId, faceManager) }
+            return instances[userId] ?: FaceManagerRepositoryImpl(userId, faceManager).also {
+                instances[userId] = it
+            }
         }
     }
 }

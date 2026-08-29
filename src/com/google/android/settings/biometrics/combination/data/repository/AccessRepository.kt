@@ -10,10 +10,11 @@ interface AccessRepository {
     fun isMainUser(): Boolean
 }
 
-class AccessRepositoryImpl private constructor(private val userManager: UserManager) :
-    AccessRepository {
+class AccessRepositoryImpl private constructor(
+    private val userManager: UserManager
+) : AccessRepository {
 
-    private val isMainUserValue: Boolean by lazy {
+    private val isMainUser: Boolean by lazy {
         try {
             userManager.isMainUser
         } catch (e: Exception) {
@@ -22,7 +23,9 @@ class AccessRepositoryImpl private constructor(private val userManager: UserMana
         }
     }
 
-    override val systemUserHandle: UserHandle? by lazy {
+    override fun isMainUser(): Boolean = isMainUser
+
+    private val systemUserHandle: UserHandle? by lazy {
         try {
             userManager.userProfiles.firstOrNull { it.isSystem }
         } catch (e: Exception) {
@@ -31,19 +34,16 @@ class AccessRepositoryImpl private constructor(private val userManager: UserMana
         }
     }
 
-    override fun isMainUser(): Boolean {
-        return isMainUserValue
-    }
+    override fun getSystemUserHandle(): UserHandle? = systemUserHandle
 
     companion object {
         private const val TAG = "AccessRepositoryImpl"
 
-        @Volatile private var instance: AccessRepository? = null
+        @Volatile
+        private var instance: AccessRepository? = null
 
-        @JvmStatic
         @Synchronized
         fun getInstance(userManager: UserManager): AccessRepository {
-            checkNotNull(userManager)
             return instance ?: AccessRepositoryImpl(userManager).also { instance = it }
         }
     }

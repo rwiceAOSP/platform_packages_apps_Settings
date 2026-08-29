@@ -4,18 +4,17 @@ import android.content.res.Resources
 import com.android.settings.R
 
 interface ResourcesDataSource {
-    fun getSuwMaxFingerprintsEnrollable(): Int
+    val suwMaxFingerprintsEnrollable: Int
 }
 
 class ResourcesDataSourceImpl private constructor(resources: Resources) : ResourcesDataSource {
 
-    private val suwMaxFingerprintsEnrollable: Int =
+    override val suwMaxFingerprintsEnrollable: Int =
         resources.getInteger(R.integer.suw_max_fingerprints_enrollable)
 
-    override fun getSuwMaxFingerprintsEnrollable(): Int = suwMaxFingerprintsEnrollable
-
     companion object {
-        @Volatile private var instance: ResourcesDataSource? = null
+        @Volatile
+        private lateinit var instance: ResourcesDataSource
 
         @Synchronized
         @JvmStatic

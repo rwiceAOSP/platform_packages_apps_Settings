@@ -51,7 +51,7 @@ class CredentialModelImpl(extras: Bundle?, private val clock: Clock) : Credentia
         get() = token != null
 
     override val isValidUserId: Boolean
-        get() = userId != USER_NULL
+        get() = userId != -10000
 
     override fun clearGkPwHandle() {
         clearGkPwHandleMillis = clock.millis()
@@ -65,9 +65,5 @@ class CredentialModelImpl(extras: Bundle?, private val clock: Clock) : Credentia
             "token:{len:$tokenLength, isValid:$isValidToken, updateMillis:$updateTokenMillis}, " +
             "gkPwHandle:{len:${gkPwHandle.toString().length}, isValid:$isValidGkPwHandle, " +
             "clearMillis:$clearGkPwHandleMillis} }"
-    }
-
-    private companion object {
-        const val USER_NULL = -10000
     }
 }

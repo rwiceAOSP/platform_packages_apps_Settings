@@ -6,7 +6,6 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
-import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
 import android.os.Process;
 import android.os.VibrationAttributes;
@@ -17,25 +16,10 @@ import android.view.accessibility.AccessibilityManager;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.OvershootInterpolator;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.android.settings.R;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class UdfpsEnrollProgressBarDrawable extends Drawable {
-    private static final Interpolator DEACCEL = new DecelerateInterpolator();
-    private static final VibrationEffect VIBRATE_EFFECT_ERROR =
-            VibrationEffect.createWaveform(new long[] {0, 5, 55, 60}, -1);
-    private static final VibrationAttributes FINGERPRINT_ENROLLING_SONIFICATION_ATTRIBUTES =
-            VibrationAttributes.createForUsage(VibrationAttributes.USAGE_ACCESSIBILITY);
-    private static final VibrationAttributes HARDWARE_FEEDBACK_VIBRATION_ATTRIBUTES =
-            new VibrationAttributes.Builder()
-                    .setUsage(VibrationAttributes.USAGE_HARDWARE_FEEDBACK)
-                    .build();
-    private static final VibrationEffect SUCCESS_VIBRATION_EFFECT =
-            VibrationEffect.get(VibrationEffect.EFFECT_CLICK);
-
     private boolean mAfterFirstTouch;
     private ValueAnimator mBackgroundColorAnimator;
     private final ValueAnimator.AnimatorUpdateListener mBackgroundColorUpdateListener;
@@ -62,7 +46,11 @@ public class UdfpsEnrollProgressBarDrawable extends Drawable {
     private final ValueAnimator.AnimatorUpdateListener mProgressUpdateListener;
     private final float mStrokeWidthPx;
     private final Vibrator mVibrator;
-
+    private static final Interpolator DEACCEL = new DecelerateInterpolator();
+    private static final VibrationEffect VIBRATE_EFFECT_ERROR = VibrationEffect.createWaveform(new long[]{0, 5, 55, 60}, -1);
+    private static final VibrationAttributes FINGERPRINT_ENROLLING_SONFICATION_ATTRIBUTES = VibrationAttributes.createForUsage(66);
+    private static final VibrationAttributes HARDWARE_FEEDBACK_VIBRATION_ATTRIBUTES = VibrationAttributes.createForUsage(50);
+    private static final VibrationEffect SUCCESS_VIBRATION_EFFECT = VibrationEffect.get(0);
     private int mRemainingSteps = 0;
     private int mTotalSteps = 0;
     private float mProgress = 0.0f;
@@ -73,301 +61,299 @@ public class UdfpsEnrollProgressBarDrawable extends Drawable {
         void onDrawFinished();
     }
 
-    public UdfpsEnrollProgressBarDrawable(Context context, AttributeSet attrs) {
-        mContext = context;
-        loadResources(context, attrs);
-        mStrokeWidthPx = (context.getResources().getDisplayMetrics().densityDpi / 160.0f) * 12.0f;
-        mProgressColor = mEnrollProgress;
+    @Override // android.graphics.drawable.Drawable
+    public int getOpacity() {
+        return 0;
+    }
 
-        AccessibilityManager am = context.getSystemService(AccessibilityManager.class);
-        mIsAccessibilityEnabled = am != null && am.isTouchExplorationEnabled();
-        mOnFirstBucketFailedColor = mMovingTargetFillError;
-        mHelpColor =
-                !mIsAccessibilityEnabled ? mEnrollProgressHelp : mEnrollProgressHelpWithTalkback;
+    @Override // android.graphics.drawable.Drawable
+    public void setAlpha(int i) {
+    }
 
-        mCheckmarkDrawable = context.getDrawable(R.drawable.udfps_enroll_checkmark);
-        if (mCheckmarkDrawable != null) {
-            mCheckmarkDrawable.mutate();
+    @Override // android.graphics.drawable.Drawable
+    public void setColorFilter(ColorFilter colorFilter) {
+    }
+
+    public UdfpsEnrollProgressBarDrawable(Context context, AttributeSet attributeSet) {
+        this.mContext = context;
+        loadResources(context, attributeSet);
+        float f = (context.getResources().getDisplayMetrics().densityDpi / 160.0f) * 12.0f;
+        this.mStrokeWidthPx = f;
+        int i = this.mEnrollProgress;
+        this.mProgressColor = i;
+        boolean zIsTouchExplorationEnabled = ((AccessibilityManager) context.getSystemService(AccessibilityManager.class)).isTouchExplorationEnabled();
+        this.mIsAccessibilityEnabled = zIsTouchExplorationEnabled;
+        this.mOnFirstBucketFailedColor = this.mMovingTargetFillError;
+        if (!zIsTouchExplorationEnabled) {
+            this.mHelpColor = this.mEnrollProgressHelp;
+        } else {
+            this.mHelpColor = this.mEnrollProgressHelpWithTalkback;
         }
-        mCheckmarkInterpolator = new OvershootInterpolator();
-
-        mBackgroundPaint = new Paint();
-        mBackgroundPaint.setStrokeWidth(mStrokeWidthPx);
-        mBackgroundPaint.setColor(mMovingTargetFill);
-        mBackgroundPaint.setAntiAlias(true);
-        mBackgroundPaint.setStyle(Paint.Style.STROKE);
-        mBackgroundPaint.setStrokeCap(Paint.Cap.ROUND);
-
-        mFillPaint = new Paint();
-        mFillPaint.setStrokeWidth(mStrokeWidthPx);
-        mFillPaint.setColor(mProgressColor);
-        mFillPaint.setAntiAlias(true);
-        mFillPaint.setStyle(Paint.Style.STROKE);
-        mFillPaint.setStrokeCap(Paint.Cap.ROUND);
-
-        mVibrator = context.getSystemService(Vibrator.class);
-
-        mProgressUpdateListener =
-                animation -> {
-                    mProgress = (Float) animation.getAnimatedValue();
-                    invalidateSelf();
-                };
-        mFillColorUpdateListener =
-                animation -> {
-                    mFillPaint.setColor((Integer) animation.getAnimatedValue());
-                    invalidateSelf();
-                };
-        mCheckmarkUpdateListener =
-                animation -> {
-                    mCheckmarkScale = (Float) animation.getAnimatedValue();
-                    invalidateSelf();
-                };
-        mBackgroundColorUpdateListener =
-                animation -> {
-                    mBackgroundPaint.setColor((Integer) animation.getAnimatedValue());
-                    invalidateSelf();
-                };
+        Drawable drawable = context.getDrawable(R.drawable.udfps_enroll_checkmark);
+        this.mCheckmarkDrawable = drawable;
+        drawable.mutate();
+        this.mCheckmarkInterpolator = new OvershootInterpolator();
+        Paint paint = new Paint();
+        this.mBackgroundPaint = paint;
+        paint.setStrokeWidth(f);
+        paint.setColor(this.mMovingTargetFill);
+        paint.setAntiAlias(true);
+        Paint.Style style = Paint.Style.STROKE;
+        paint.setStyle(style);
+        Paint.Cap cap = Paint.Cap.ROUND;
+        paint.setStrokeCap(cap);
+        Paint paint2 = new Paint();
+        this.mFillPaint = paint2;
+        paint2.setStrokeWidth(f);
+        paint2.setColor(i);
+        paint2.setAntiAlias(true);
+        paint2.setStyle(style);
+        paint2.setStrokeCap(cap);
+        this.mVibrator = (Vibrator) context.getSystemService(Vibrator.class);
+        this.mProgressUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollProgressBarDrawable$$ExternalSyntheticLambda0
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$0(valueAnimator);
+            }
+        };
+        this.mFillColorUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollProgressBarDrawable$$ExternalSyntheticLambda1
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$1(valueAnimator);
+            }
+        };
+        this.mCheckmarkUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollProgressBarDrawable$$ExternalSyntheticLambda2
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$2(valueAnimator);
+            }
+        };
+        this.mBackgroundColorUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollProgressBarDrawable$$ExternalSyntheticLambda3
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$3(valueAnimator);
+            }
+        };
     }
 
-    void onEnrollmentProgress(int remaining, int total) {
-        mAfterFirstTouch = true;
-        performHaptic(remaining, total, false);
-        updateState(remaining, total, false);
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$0(ValueAnimator valueAnimator) {
+        this.mProgress = ((Float) valueAnimator.getAnimatedValue()).floatValue();
+        invalidateSelf();
     }
 
-    void onEnrollmentHelp(int remaining, int total) {
-        performHaptic(remaining, total, true);
-        updateState(remaining, total, true);
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$1(ValueAnimator valueAnimator) {
+        this.mFillPaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
+        invalidateSelf();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$2(ValueAnimator valueAnimator) {
+        this.mCheckmarkScale = ((Float) valueAnimator.getAnimatedValue()).floatValue();
+        invalidateSelf();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$3(ValueAnimator valueAnimator) {
+        this.mBackgroundPaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
+        invalidateSelf();
+    }
+
+    void onEnrollmentProgress(int i, int i2) {
+        this.mAfterFirstTouch = true;
+        performHaptic(i, i2, false);
+        updateState(i, i2, false);
+    }
+
+    void onEnrollmentHelp(int i, int i2) {
+        performHaptic(i, i2, true);
+        updateState(i, i2, true);
     }
 
     void onLastStepAcquired() {
-        performHaptic(0, mTotalSteps, false);
-        updateState(0, mTotalSteps, false);
+        performHaptic(0, this.mTotalSteps, false);
+        updateState(0, this.mTotalSteps, false);
     }
 
-    private void updateState(int remaining, int total, boolean isHelp) {
-        updateProgress(remaining, total);
-        updateFillColor(isHelp);
+    private void updateState(int i, int i2, boolean z) {
+        updateProgress(i, i2);
+        updateFillColor(z);
     }
 
-    private void performHaptic(int remaining, int total, boolean isHelp) {
-        if (mRemainingSteps == remaining && mTotalSteps == total) {
+    private void performHaptic(int i, int i2, boolean z) {
+        if (this.mRemainingSteps == i && this.mTotalSteps == i2) {
             return;
         }
-        if (mVibrator == null) {
-            return;
-        }
-        if (isHelp) {
-            if (mIsAccessibilityEnabled) {
-                mVibrator.vibrate(
-                        Process.myUid(),
-                        mContext.getOpPackageName(),
-                        VIBRATE_EFFECT_ERROR,
-                        getClass().getSimpleName() + "::onEnrollmentHelp",
-                        FINGERPRINT_ENROLLING_SONIFICATION_ATTRIBUTES);
+        Vibrator vibrator = this.mVibrator;
+        if (z) {
+            if (vibrator == null || !this.mIsAccessibilityEnabled) {
+                return;
             }
+            vibrator.vibrate(Process.myUid(), this.mContext.getOpPackageName(), VIBRATE_EFFECT_ERROR, getClass().getSimpleName().concat("::onEnrollmentHelp"), FINGERPRINT_ENROLLING_SONFICATION_ATTRIBUTES);
             return;
         }
-        if (remaining == -1 && mIsAccessibilityEnabled) {
-            mVibrator.vibrate(
-                    Process.myUid(),
-                    mContext.getOpPackageName(),
-                    VIBRATE_EFFECT_ERROR,
-                    getClass().getSimpleName() + "::onFirstTouchError",
-                    FINGERPRINT_ENROLLING_SONIFICATION_ATTRIBUTES);
-        } else if (remaining != -1 && !mIsAccessibilityEnabled) {
-            mVibrator.vibrate(
-                    Process.myUid(),
-                    mContext.getOpPackageName(),
-                    SUCCESS_VIBRATION_EFFECT,
-                    getClass().getSimpleName() + "::OnEnrollmentProgress",
-                    HARDWARE_FEEDBACK_VIBRATION_ATTRIBUTES);
+        if (vibrator != null) {
+            if (i == -1 && this.mIsAccessibilityEnabled) {
+                vibrator.vibrate(Process.myUid(), this.mContext.getOpPackageName(), VIBRATE_EFFECT_ERROR, getClass().getSimpleName().concat("::onFirstTouchError"), FINGERPRINT_ENROLLING_SONFICATION_ATTRIBUTES);
+            } else {
+                if (i == -1 || this.mIsAccessibilityEnabled) {
+                    return;
+                }
+                vibrator.vibrate(Process.myUid(), this.mContext.getOpPackageName(), SUCCESS_VIBRATION_EFFECT, getClass().getSimpleName().concat("::OnEnrollmentProgress"), HARDWARE_FEEDBACK_VIBRATION_ATTRIBUTES);
+            }
         }
     }
 
-    private void updateProgress(int remaining, int total) {
-        if (mRemainingSteps == remaining && mTotalSteps == total) {
+    private void updateProgress(int i, int i2) {
+        if (this.mRemainingSteps == i && this.mTotalSteps == i2) {
             return;
         }
-        mRemainingSteps = remaining;
-        mTotalSteps = total;
-        int completed = Math.max(0, total - remaining);
-        if (mAfterFirstTouch) {
-            completed++;
+        this.mRemainingSteps = i;
+        this.mTotalSteps = i2;
+        int iMax = Math.max(0, i2 - i);
+        boolean z = this.mAfterFirstTouch;
+        if (z) {
+            iMax++;
         }
-        int totalWithTouch = total;
-        if (mAfterFirstTouch) {
-            totalWithTouch++;
+        int i3 = this.mTotalSteps;
+        if (z) {
+            i3++;
         }
-        float targetProgress =
-                Math.min(1.0f, totalWithTouch > 0 ? (float) completed / totalWithTouch : 0f);
-        if (mProgressAnimator != null && mProgressAnimator.isRunning()) {
-            mProgressAnimator.cancel();
+        float fMin = Math.min(1.0f, iMax / i3);
+        ValueAnimator valueAnimator = this.mProgressAnimator;
+        if (valueAnimator != null && valueAnimator.isRunning()) {
+            this.mProgressAnimator.cancel();
         }
-        mProgressAnimator = ValueAnimator.ofFloat(mProgress, targetProgress);
-        mProgressAnimator.setDuration(400L);
-        mProgressAnimator.addUpdateListener(mProgressUpdateListener);
-        mProgressAnimator.start();
-        if (remaining == 0) {
+        ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(this.mProgress, fMin);
+        this.mProgressAnimator = valueAnimatorOfFloat;
+        valueAnimatorOfFloat.setDuration(400L);
+        this.mProgressAnimator.addUpdateListener(this.mProgressUpdateListener);
+        this.mProgressAnimator.start();
+        if (i == 0) {
             startCompletionAnimation();
-        } else if (remaining > 0) {
+        } else if (i > 0) {
             rollBackCompletionAnimation();
         }
     }
 
     private void animateBackgroundColor() {
-        if (mBackgroundColorAnimator != null && mBackgroundColorAnimator.isRunning()) {
-            mBackgroundColorAnimator.end();
+        ValueAnimator valueAnimator = this.mBackgroundColorAnimator;
+        if (valueAnimator != null && valueAnimator.isRunning()) {
+            this.mBackgroundColorAnimator.end();
         }
-        mBackgroundColorAnimator =
-                ValueAnimator.ofArgb(mBackgroundPaint.getColor(), mOnFirstBucketFailedColor);
-        mBackgroundColorAnimator.setDuration(350L);
-        mBackgroundColorAnimator.setRepeatCount(1);
-        mBackgroundColorAnimator.setRepeatMode(ValueAnimator.REVERSE);
-        mBackgroundColorAnimator.setInterpolator(DEACCEL);
-        mBackgroundColorAnimator.addUpdateListener(mBackgroundColorUpdateListener);
-        mBackgroundColorAnimator.start();
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mBackgroundPaint.getColor(), this.mOnFirstBucketFailedColor);
+        this.mBackgroundColorAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.setDuration(350L);
+        this.mBackgroundColorAnimator.setRepeatCount(1);
+        this.mBackgroundColorAnimator.setRepeatMode(2);
+        this.mBackgroundColorAnimator.setInterpolator(DEACCEL);
+        this.mBackgroundColorAnimator.addUpdateListener(this.mBackgroundColorUpdateListener);
+        this.mBackgroundColorAnimator.start();
     }
 
-    private void updateFillColor(boolean isHelp) {
-        if (!mAfterFirstTouch && isHelp) {
+    private void updateFillColor(boolean z) {
+        if (!this.mAfterFirstTouch && z) {
             animateBackgroundColor();
             return;
         }
-        if (mFillColorAnimator != null && mFillColorAnimator.isRunning()) {
-            mFillColorAnimator.end();
+        ValueAnimator valueAnimator = this.mFillColorAnimator;
+        if (valueAnimator != null && valueAnimator.isRunning()) {
+            this.mFillColorAnimator.end();
         }
-        mFillColorAnimator =
-                ValueAnimator.ofArgb(mFillPaint.getColor(), isHelp ? mHelpColor : mProgressColor);
-        mFillColorAnimator.setDuration(350L);
-        mFillColorAnimator.setRepeatCount(1);
-        mFillColorAnimator.setRepeatMode(ValueAnimator.REVERSE);
-        mFillColorAnimator.setInterpolator(DEACCEL);
-        mFillColorAnimator.addUpdateListener(mFillColorUpdateListener);
-        mFillColorAnimator.start();
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mFillPaint.getColor(), z ? this.mHelpColor : this.mProgressColor);
+        this.mFillColorAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.setDuration(350L);
+        this.mFillColorAnimator.setRepeatCount(1);
+        this.mFillColorAnimator.setRepeatMode(2);
+        this.mFillColorAnimator.setInterpolator(DEACCEL);
+        this.mFillColorAnimator.addUpdateListener(this.mFillColorUpdateListener);
+        this.mFillColorAnimator.start();
     }
 
     private void startCompletionAnimation() {
-        if (mComplete) {
+        if (this.mComplete) {
             return;
         }
-        mComplete = true;
-        if (mCheckmarkAnimator != null && mCheckmarkAnimator.isRunning()) {
-            mCheckmarkAnimator.cancel();
+        this.mComplete = true;
+        ValueAnimator valueAnimator = this.mCheckmarkAnimator;
+        if (valueAnimator != null && valueAnimator.isRunning()) {
+            this.mCheckmarkAnimator.cancel();
         }
-        mCheckmarkAnimator = ValueAnimator.ofFloat(mCheckmarkScale, 1.0f);
-        mCheckmarkAnimator.setStartDelay(200L);
-        mCheckmarkAnimator.setDuration(300L);
-        mCheckmarkAnimator.setInterpolator(mCheckmarkInterpolator);
-        mCheckmarkAnimator.addUpdateListener(mCheckmarkUpdateListener);
-        mCheckmarkAnimator.start();
+        ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(this.mCheckmarkScale, 1.0f);
+        this.mCheckmarkAnimator = valueAnimatorOfFloat;
+        valueAnimatorOfFloat.setStartDelay(200L);
+        this.mCheckmarkAnimator.setDuration(300L);
+        this.mCheckmarkAnimator.setInterpolator(this.mCheckmarkInterpolator);
+        this.mCheckmarkAnimator.addUpdateListener(this.mCheckmarkUpdateListener);
+        this.mCheckmarkAnimator.start();
     }
 
     private void rollBackCompletionAnimation() {
-        if (!mComplete) {
-            return;
+        if (this.mComplete) {
+            this.mComplete = false;
+            ValueAnimator valueAnimator = this.mCheckmarkAnimator;
+            long jRound = Math.round((valueAnimator != null ? valueAnimator.getAnimatedFraction() : 0.0f) * 200.0f);
+            ValueAnimator valueAnimator2 = this.mCheckmarkAnimator;
+            if (valueAnimator2 != null && valueAnimator2.isRunning()) {
+                this.mCheckmarkAnimator.cancel();
+            }
+            ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(this.mCheckmarkScale, 0.0f);
+            this.mCheckmarkAnimator = valueAnimatorOfFloat;
+            valueAnimatorOfFloat.setDuration(jRound);
+            this.mCheckmarkAnimator.addUpdateListener(this.mCheckmarkUpdateListener);
+            this.mCheckmarkAnimator.start();
         }
-        mComplete = false;
-        long duration =
-                Math.round(
-                        (mCheckmarkAnimator != null
-                                        ? mCheckmarkAnimator.getAnimatedFraction()
-                                        : 0.0f)
-                                * 200.0f);
-        if (mCheckmarkAnimator != null && mCheckmarkAnimator.isRunning()) {
-            mCheckmarkAnimator.cancel();
-        }
-        mCheckmarkAnimator = ValueAnimator.ofFloat(mCheckmarkScale, 0.0f);
-        mCheckmarkAnimator.setDuration(duration);
-        mCheckmarkAnimator.addUpdateListener(mCheckmarkUpdateListener);
-        mCheckmarkAnimator.start();
     }
 
-    private void loadResources(Context context, AttributeSet attrs) {
-        TypedArray a =
-                context.obtainStyledAttributes(
-                        attrs,
-                        R.styleable.BiometricsEnrollView,
-                        R.attr.biometricsEnrollStyle,
-                        R.style.BiometricsEnrollStyle);
-        mMovingTargetFill =
-                a.getColor(R.styleable.BiometricsEnrollView_biometricsMovingTargetFill, 0);
-        mMovingTargetFillError =
-                a.getColor(R.styleable.BiometricsEnrollView_biometricsMovingTargetFillError, 0);
-        mEnrollProgress = a.getColor(R.styleable.BiometricsEnrollView_biometricsEnrollProgress, 0);
-        mEnrollProgressHelp =
-                a.getColor(R.styleable.BiometricsEnrollView_biometricsEnrollProgressHelp, 0);
-        mEnrollProgressHelpWithTalkback =
-                a.getColor(
-                        R.styleable.BiometricsEnrollView_biometricsEnrollProgressHelpWithTalkback,
-                        0);
-        a.recycle();
+    private void loadResources(Context context, AttributeSet attributeSet) {
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, R.styleable.BiometricsEnrollView, R.attr.biometricsEnrollStyle, R.style.BiometricsEnrollStyle);
+        this.mMovingTargetFill = typedArrayObtainStyledAttributes.getColor(R.styleable.BiometricsEnrollView_biometricsMovingTargetFill, 0);
+        this.mMovingTargetFillError = typedArrayObtainStyledAttributes.getColor(R.styleable.BiometricsEnrollView_biometricsMovingTargetFillError, 0);
+        this.mEnrollProgress = typedArrayObtainStyledAttributes.getColor(R.styleable.BiometricsEnrollView_biometricsEnrollProgress, 0);
+        this.mEnrollProgressHelp = typedArrayObtainStyledAttributes.getColor(R.styleable.BiometricsEnrollView_biometricsEnrollProgressHelp, 0);
+        this.mEnrollProgressHelpWithTalkback = typedArrayObtainStyledAttributes.getColor(R.styleable.BiometricsEnrollView_biometricsEnrollProgressHelpWithTalkback, 0);
+        typedArrayObtainStyledAttributes.recycle();
     }
 
-    @Override
-    public void draw(@NonNull Canvas canvas) {
+    @Override // android.graphics.drawable.Drawable
+    public void draw(Canvas canvas) {
+        Canvas canvas2;
         canvas.save();
         canvas.rotate(-90.0f, getBounds().centerX(), getBounds().centerY());
-        float halfStroke = mStrokeWidthPx / 2.0f;
-        if (mProgress < 1.0f) {
-            canvas.drawArc(
-                    halfStroke,
-                    halfStroke,
-                    getBounds().right - halfStroke,
-                    getBounds().bottom - halfStroke,
-                    0.0f,
-                    360.0f,
-                    false,
-                    mBackgroundPaint);
+        float f = this.mStrokeWidthPx / 2.0f;
+        if (this.mProgress < 1.0f) {
+            canvas2 = canvas;
+            canvas2.drawArc(f, f, getBounds().right - f, getBounds().bottom - f, 0.0f, 360.0f, false, this.mBackgroundPaint);
+        } else {
+            canvas2 = canvas;
         }
-        if (mProgress > 0.0f) {
-            canvas.drawArc(
-                    halfStroke,
-                    halfStroke,
-                    getBounds().right - halfStroke,
-                    getBounds().bottom - halfStroke,
-                    0.0f,
-                    mProgress * 360.0f,
-                    false,
-                    mFillPaint);
+        if (this.mProgress > 0.0f) {
+            canvas2.drawArc(f, f, getBounds().right - f, getBounds().bottom - f, 0.0f, this.mProgress * 360.0f, false, this.mFillPaint);
         }
-        canvas.restore();
-        if (mCheckmarkScale > 0.0f && mCheckmarkDrawable != null) {
-            float sqrt = (float) Math.sqrt(2.0d) / 2.0f;
-            float halfW = ((getBounds().width() - mStrokeWidthPx) / 2.0f) * sqrt;
-            float halfH = ((getBounds().height() - mStrokeWidthPx) / 2.0f) * sqrt;
-            float cx = getBounds().centerX() + halfW;
-            float cy = getBounds().centerY() + halfH;
-            float iw = (mCheckmarkDrawable.getIntrinsicWidth() / 2.0f) * mCheckmarkScale;
-            float ih = (mCheckmarkDrawable.getIntrinsicHeight() / 2.0f) * mCheckmarkScale;
-            mCheckmarkDrawable.setBounds(
-                    Math.round(cx - iw),
-                    Math.round(cy - ih),
-                    Math.round(cx + iw),
-                    Math.round(cy + ih));
-            mCheckmarkDrawable.draw(canvas);
+        canvas2.restore();
+        if (this.mCheckmarkScale > 0.0f) {
+            float fSqrt = ((float) Math.sqrt(2.0d)) / 2.0f;
+            float fWidth = ((getBounds().width() - this.mStrokeWidthPx) / 2.0f) * fSqrt;
+            float fHeight = ((getBounds().height() - this.mStrokeWidthPx) / 2.0f) * fSqrt;
+            float fCenterX = getBounds().centerX() + fWidth;
+            float fCenterY = getBounds().centerY() + fHeight;
+            float intrinsicWidth = (this.mCheckmarkDrawable.getIntrinsicWidth() / 2.0f) * this.mCheckmarkScale;
+            float intrinsicHeight = (this.mCheckmarkDrawable.getIntrinsicHeight() / 2.0f) * this.mCheckmarkScale;
+            this.mCheckmarkDrawable.setBounds(Math.round(fCenterX - intrinsicWidth), Math.round(fCenterY - intrinsicHeight), Math.round(fCenterX + intrinsicWidth), Math.round(fCenterY + intrinsicHeight));
+            this.mCheckmarkDrawable.draw(canvas2);
         }
-        if (mOnDrawFinishedListener != null) {
-            mOnDrawFinishedListener.onDrawFinished();
+        OnDrawFinishedListener onDrawFinishedListener = this.mOnDrawFinishedListener;
+        if (onDrawFinishedListener != null) {
+            onDrawFinishedListener.onDrawFinished();
         }
     }
 
-    void addOnDrawFinishedListener(OnDrawFinishedListener listener) {
-        mOnDrawFinishedListener = listener;
+    void addOnDrawFinishedListener(OnDrawFinishedListener onDrawFinishedListener) {
+        this.mOnDrawFinishedListener = onDrawFinishedListener;
     }
 
     void deleteOnDrawFinishedListener() {
-        mOnDrawFinishedListener = null;
-    }
-
-    @Override
-    public void setAlpha(int alpha) {}
-
-    @Override
-    public void setColorFilter(@Nullable ColorFilter colorFilter) {}
-
-    @Override
-    public int getOpacity() {
-        return PixelFormat.TRANSLUCENT;
+        this.mOnDrawFinishedListener = null;
     }
 }

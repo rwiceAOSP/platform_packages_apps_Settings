@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2023 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.google.android.settings.biometrics.face;
 
 import android.content.ComponentName;
@@ -21,40 +5,31 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
-
 import androidx.activity.OnBackPressedCallback;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 import androidx.window.embedding.ActivityFilter;
 import androidx.window.embedding.ActivityRule;
 import androidx.window.embedding.RuleController;
-
 import com.airbnb.lottie.LottieAnimationView;
-import com.android.settings.R;
 import com.android.settings.SetupWizardUtils;
 import com.android.settings.biometrics.BiometricUtils;
 import com.android.settingslib.widget.LottieColorUtils;
 import com.android.systemui.unfold.compat.ScreenSizeFoldProvider;
-import com.android.systemui.unfold.updates.FoldProvider;
+import com.android.systemui.unfold.updates.FoldProvider$FoldCallback;
+import com.google.android.settings.R$id;
+import com.google.android.settings.R$integer;
+import com.google.android.settings.R$layout;
+import com.google.android.settings.R$raw;
+import com.google.android.settings.R$string;
+import com.google.android.settings.R$style;
 import com.google.android.setupcompat.template.FooterBarMixin;
 import com.google.android.setupcompat.template.FooterButton;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.util.ThemeHelper;
-
 import java.util.HashSet;
-import java.util.Set;
 
-/**
- * Activity for posture guidance on foldables during face enrollment.
- */
-public class FaceEnrollFoldPage extends FragmentActivity
-        implements FoldProvider.FoldCallback {
-
-    private static final String KEY_POSTURE_STATE = "posture_state";
-    private static final long TIMEOUT_MS = 60000L;
-
+/* JADX INFO: loaded from: classes4.dex */
+public class FaceEnrollFoldPage extends FragmentActivity implements FoldProvider$FoldCallback {
     private int mDevicePostureState;
     private FooterBarMixin mFooterBarMixin;
     private GlifLayout mGlifLayout;
@@ -62,88 +37,97 @@ public class FaceEnrollFoldPage extends FragmentActivity
     private boolean mKeepScreenOn;
     private int mOrientation;
     private ScreenSizeFoldProvider mScreenSizeFoldProvider;
-
-    private final Runnable mTimeoutRunnable = () -> onSkipButtonClick(null);
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (savedInstanceState != null) {
-            mDevicePostureState = savedInstanceState.getInt(KEY_POSTURE_STATE);
+    private Runnable mTimeoutRunnable = new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollFoldPage$$ExternalSyntheticLambda0
+        @Override // java.lang.Runnable
+        public final void run() {
+            this.f$0.lambda$new$0();
         }
-        Set<ActivityFilter> filters = new HashSet<>();
-        filters.add(new ActivityFilter(new ComponentName(this, FaceEnrollFoldPage.class), null));
-        RuleController.getInstance(this).addRule(
-                new ActivityRule.Builder(filters).setAlwaysExpand(true).build());
+    };
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$0() {
+        onSkipButtonClick(null);
+    }
+
+    @Override // androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
+    public void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        if (bundle != null) {
+            this.mDevicePostureState = bundle.getInt("posture_state");
+        }
+        HashSet hashSet = new HashSet();
+        hashSet.add(new ActivityFilter(new ComponentName(this, (Class<?>) FaceEnrollFoldPage.class), (String) null));
+        RuleController.getInstance(this).addRule(new ActivityRule.Builder(hashSet).setAlwaysExpand(true).build());
         setTheme(SetupWizardUtils.getTheme(this, getIntent()));
         ThemeHelper.trySetDynamicColor(this);
-        BiometricUtils.setDevicePosturesAllowEnroll(
-                getResources().getInteger(R.integer.config_face_enroll_supported_posture));
-        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
-            @Override
+        BiometricUtils.setDevicePosturesAllowEnroll(getResources().getInteger(R$integer.config_face_enroll_supported_posture));
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) { // from class: com.google.android.settings.biometrics.face.FaceEnrollFoldPage.1
+            @Override // androidx.activity.OnBackPressedCallback
             public void handleOnBackPressed() {
-                onBackInvoked();
+                FaceEnrollFoldPage.this.onBackInvoked();
             }
         });
         relayout();
     }
 
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt(KEY_POSTURE_STATE, mDevicePostureState);
+    @Override // androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
+    protected void onSaveInstanceState(Bundle bundle) {
+        super.onSaveInstanceState(bundle);
+        bundle.putInt("posture_state", this.mDevicePostureState);
     }
 
-    @Override
-    public void onConfigurationChanged(@NonNull Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        if (mScreenSizeFoldProvider != null) {
-            mScreenSizeFoldProvider.onConfigurationChange(newConfig);
+    @Override // androidx.activity.ComponentActivity, android.app.Activity, android.content.ComponentCallbacks
+    public void onConfigurationChanged(Configuration configuration) {
+        super.onConfigurationChanged(configuration);
+        ScreenSizeFoldProvider screenSizeFoldProvider = this.mScreenSizeFoldProvider;
+        if (screenSizeFoldProvider != null) {
+            screenSizeFoldProvider.onConfigurationChange(configuration);
         }
-        if (newConfig.orientation != getCurrentOrientation()) {
+        if (configuration.orientation != getCurrentOrientation()) {
             relayout();
         }
     }
 
-    @Override
+    @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     protected void onStart() {
         super.onStart();
-        if (BiometricUtils.isPostureAllowEnrollment(mDevicePostureState)) {
+        if (BiometricUtils.isPostureAllowEnrollment(this.mDevicePostureState)) {
             onFinishPostureGuidance();
         } else {
             setupPostureChangeListener();
         }
     }
 
-    @Override
+    @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     protected void onStop() {
         super.onStop();
-        if (mScreenSizeFoldProvider != null) {
-            mScreenSizeFoldProvider.unregisterCallback(this);
-            mScreenSizeFoldProvider = null;
+        ScreenSizeFoldProvider screenSizeFoldProvider = this.mScreenSizeFoldProvider;
+        if (screenSizeFoldProvider != null) {
+            screenSizeFoldProvider.unregisterCallback(this);
+            this.mScreenSizeFoldProvider = null;
         }
     }
 
-    @Override
-    public void onFoldUpdated(boolean isFolded) {
-        getMainThreadHandler().removeCallbacks(mTimeoutRunnable);
-        int postureState = isFolded ? 1 : 3;
-        mDevicePostureState = postureState;
-        if (BiometricUtils.isPostureAllowEnrollment(postureState)) {
+    @Override // com.android.systemui.unfold.updates.FoldProvider$FoldCallback
+    public void onFoldUpdated(boolean z) {
+        getMainThreadHandler().removeCallbacks(this.mTimeoutRunnable);
+        int i = z ? 1 : 3;
+        this.mDevicePostureState = i;
+        if (BiometricUtils.isPostureAllowEnrollment(i)) {
             onFinishPostureGuidance();
         }
     }
 
-    @Override
-    protected void onApplyThemeResource(Resources.Theme theme, int resid, boolean first) {
-        theme.applyStyle(R.style.SetupWizardPartnerResource, true);
-        super.onApplyThemeResource(theme, resid, first);
+    @Override // android.app.Activity, android.view.ContextThemeWrapper
+    protected void onApplyThemeResource(Resources.Theme theme, int i, boolean z) {
+        theme.applyStyle(R$style.SetupWizardPartnerResource, true);
+        super.onApplyThemeResource(theme, i, z);
     }
 
     private void setupPostureChangeListener() {
-        if (mScreenSizeFoldProvider == null) {
+        if (this.mScreenSizeFoldProvider == null) {
             ScreenSizeFoldProvider screenSizeFoldProvider = new ScreenSizeFoldProvider(getApplicationContext());
-            mScreenSizeFoldProvider = screenSizeFoldProvider;
+            this.mScreenSizeFoldProvider = screenSizeFoldProvider;
             screenSizeFoldProvider.registerCallback(this, getMainExecutor());
         }
     }
@@ -152,78 +136,81 @@ public class FaceEnrollFoldPage extends FragmentActivity
         if (isFinishing()) {
             return;
         }
-        setResult(RESULT_OK);
+        setResult(1);
         onRemoveCallbacksAndFinish();
     }
 
     private void onRemoveCallbacksAndFinish() {
-        getMainThreadHandler().removeCallbacks(mTimeoutRunnable);
+        getMainThreadHandler().removeCallbacks(this.mTimeoutRunnable);
         finish();
         overridePendingTransition(0, 0);
     }
 
-    private void onBackInvoked() {
-        setResult(RESULT_CANCELED);
+    /* JADX INFO: Access modifiers changed from: private */
+    public void onBackInvoked() {
+        setResult(0);
         onRemoveCallbacksAndFinish();
     }
 
-    private void onSkipButtonClick(View view) {
-        setResult(RESULT_FIRST_USER, getIntent());
+    /* JADX INFO: Access modifiers changed from: private */
+    public void onSkipButtonClick(View view) {
+        setResult(2, getIntent());
         onRemoveCallbacksAndFinish();
     }
 
-    @Override
+    @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     public void onResume() {
         super.onResume();
         setKeepScreenOn(true);
-        getMainThreadHandler().postDelayed(mTimeoutRunnable, TIMEOUT_MS);
+        getMainThreadHandler().postDelayed(this.mTimeoutRunnable, 60000L);
     }
 
-    @Override
+    @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     public void onPause() {
         super.onPause();
         setKeepScreenOn(false);
     }
 
-    private void setKeepScreenOn(boolean keepScreenOn) {
-        if (keepScreenOn == mKeepScreenOn) {
+    private void setKeepScreenOn(boolean z) {
+        if (z == this.mKeepScreenOn) {
             return;
         }
-        if (keepScreenOn) {
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-            mKeepScreenOn = true;
+        if (z) {
+            getWindow().addFlags(128);
+            this.mKeepScreenOn = true;
         } else {
-            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-            mKeepScreenOn = false;
+            getWindow().clearFlags(128);
+            this.mKeepScreenOn = false;
         }
     }
 
     void relayout() {
         setCurrentOrientation(getResources().getConfiguration().orientation);
-        setContentView(R.layout.face_enroll_fold_page);
-        mGlifLayout = findViewById(R.id.setup_wizard_layout);
-        mGlifLayout.setHeaderText(R.string.face_enrolling_close_to_continue);
-        mGlifLayout.setDescriptionText(R.string.face_enrolling_close_to_continue_description);
-        mIllustrationLottie = findViewById(R.id.illustration_lottie);
-        LottieColorUtils.applyDynamicColors(getApplicationContext(), mIllustrationLottie);
-        mIllustrationLottie.setAnimation(R.raw.face_posture_guidance_lottie);
-        mIllustrationLottie.setVisibility(View.VISIBLE);
-        mIllustrationLottie.playAnimation();
-        mFooterBarMixin = mGlifLayout.getMixin(FooterBarMixin.class);
-        mFooterBarMixin.setSecondaryButton(
-                new FooterButton.Builder(this)
-                        .setText(R.string.face_enrolling_do_it_later)
-                        .setListener(this::onSkipButtonClick)
-                        .setButtonType(FooterButton.ButtonType.SKIP)
-                        .setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Secondary)
-                        .build());
+        setContentView(R$layout.face_enroll_fold_page);
+        GlifLayout glifLayout = (GlifLayout) findViewById(R$id.setup_wizard_layout);
+        this.mGlifLayout = glifLayout;
+        glifLayout.setHeaderText(R$string.face_enrolling_close_to_continue);
+        this.mGlifLayout.setDescriptionText(R$string.face_enrolling_close_to_continue_description);
+        this.mIllustrationLottie = (LottieAnimationView) findViewById(R$id.illustration_lottie);
+        LottieColorUtils.applyDynamicColors(getApplicationContext(), this.mIllustrationLottie);
+        this.mIllustrationLottie.setAnimation(R$raw.face_posture_guidance_lottie);
+        this.mIllustrationLottie.setVisibility(0);
+        this.mIllustrationLottie.playAnimation();
+        FooterBarMixin footerBarMixin = (FooterBarMixin) this.mGlifLayout.getMixin(FooterBarMixin.class);
+        this.mFooterBarMixin = footerBarMixin;
+        footerBarMixin.setSecondaryButton(new FooterButton.Builder(this).setText(R$string.face_enrolling_do_it_later).setListener(new View.OnClickListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollFoldPage$$ExternalSyntheticLambda1
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                this.f$0.onSkipButtonClick(view);
+            }
+        }).setButtonType(7).setTheme(com.google.android.setupdesign.R$style.SudGlifButton_Secondary).build());
     }
 
-    void setCurrentOrientation(int orientation) {
-        mOrientation = orientation;
+    void setCurrentOrientation(int i) {
+        this.mOrientation = i;
     }
 
     int getCurrentOrientation() {
-        return mOrientation;
+        return this.mOrientation;
     }
 }

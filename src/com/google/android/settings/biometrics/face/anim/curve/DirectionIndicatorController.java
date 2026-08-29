@@ -12,12 +12,12 @@ import android.media.AudioAttributes;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.widget.ImageView;
+import com.google.android.settings.R$color;
+import com.google.android.settings.R$drawable;
 
-import com.android.settings.R;
-
+/* JADX INFO: loaded from: classes4.dex */
 public class DirectionIndicatorController {
-    private static final AudioAttributes SONIFICATION_AUDIO_ATTRIBUTES =
-            new AudioAttributes.Builder().setContentType(4).setUsage(13).build();
+    private static final AudioAttributes SONIFICATION_AUDIO_ATTRIBUTES = new AudioAttributes.Builder().setContentType(4).setUsage(13).build();
     private Rect mBounds;
     private final Context mContext;
     private final ImageView mImageView;
@@ -27,95 +27,93 @@ public class DirectionIndicatorController {
     private final VibrationEffect mVibrationEffect = VibrationEffect.get(1);
     private final Vibrator mVibrator;
 
-    public void draw(Canvas canvas) {}
+    public void draw(Canvas canvas) {
+    }
 
     public DirectionIndicatorController(Context context, ImageView imageView) {
-        mContext = context;
-        mImageView = imageView;
-        mVibrator = (Vibrator) context.getSystemService(Vibrator.class);
-        mLargeAnglePaint = new Paint();
-        mLargeAnglePaint.setAntiAlias(true);
-        mLargeAnglePaint.setColor(context.getColor(R.color.material_blue_500));
-        mLargeAnglePaint.setStrokeWidth(0.0f);
-        mLargeAnglePaint.setStrokeCap(Paint.Cap.ROUND);
-        mLargeAnglePaint.setStyle(Paint.Style.STROKE);
-        mStrokeAnimator = ValueAnimator.ofFloat(0.0f, 20.0f, 0.0f);
-        mStrokeAnimator.setDuration(1233L);
-        mStrokeAnimator.addUpdateListener(
-                valueAnimator ->
-                        mLargeAnglePaint.setStrokeWidth((Float) valueAnimator.getAnimatedValue()));
+        this.mContext = context;
+        this.mImageView = imageView;
+        this.mVibrator = (Vibrator) context.getSystemService(Vibrator.class);
+        Paint paint = new Paint();
+        this.mLargeAnglePaint = paint;
+        paint.setAntiAlias(true);
+        paint.setColor(context.getColor(R$color.blue_500));
+        paint.setStrokeWidth(0.0f);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+        paint.setStyle(Paint.Style.STROKE);
+        ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(0.0f, 20.0f, 0.0f);
+        this.mStrokeAnimator = valueAnimatorOfFloat;
+        valueAnimatorOfFloat.setDuration(1233L);
+        this.mStrokeAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.curve.DirectionIndicatorController$$ExternalSyntheticLambda0
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$0(valueAnimator);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$0(ValueAnimator valueAnimator) {
+        this.mLargeAnglePaint.setStrokeWidth(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
 
     public void stopCurrentIndication() {
-        mShouldRepeat = false;
+        this.mShouldRepeat = false;
     }
 
     public void pulseForNoActivity(int i, int i2) {
         pulseAnimation(i, i2, false);
     }
 
-    private void pulseAnimation(int i, int times, boolean z) {
-        if (mBounds == null) {
+    private void pulseAnimation(int i, int i2, boolean z) {
+        if (this.mBounds == null) {
             return;
         }
-        mShouldRepeat = true;
-        AnimatedVectorDrawable animatedVectorDrawable =
-                (AnimatedVectorDrawable) mImageView.getDrawable();
+        this.mShouldRepeat = true;
+        AnimatedVectorDrawable animatedVectorDrawable = (AnimatedVectorDrawable) this.mImageView.getDrawable();
         if (animatedVectorDrawable == null || !animatedVectorDrawable.isRunning()) {
-            AnimatedVectorDrawable animation =
-                    (AnimatedVectorDrawable)
-                            mContext.getDrawable(R.drawable.face_indicator_triangle);
-            mImageView.setImageDrawable(animation);
+            AnimatedVectorDrawable animatedVectorDrawable2 = (AnimatedVectorDrawable) this.mContext.getDrawable(R$drawable.face_indicator_triangle);
+            this.mImageView.setImageDrawable(animatedVectorDrawable2);
             double radians = Math.toRadians(i);
-            int iCenterX =
-                    (int)
-                            (((double)
-                                            (mBounds.centerX()
-                                                    + ((mImageView.getMeasuredWidth() * 0.15f)
-                                                            / 2.0f)))
-                                    * Math.sin(radians));
-            int iCenterY =
-                    (int)
-                            (((double)
-                                            (mBounds.centerY()
-                                                    + ((mImageView.getMeasuredWidth() * 0.15f)
-                                                            / 2.0f)))
-                                    * Math.cos(radians));
-            mImageView.setScaleX(0.15f);
-            mImageView.setScaleY(0.15f);
-            ImageView imageView = mImageView;
+            int iCenterX = (int) (((double) (this.mBounds.centerX() + ((this.mImageView.getMeasuredWidth() * 0.15f) / 2.0f))) * Math.sin(radians));
+            int iCenterY = (int) (((double) (this.mBounds.centerY() + ((this.mImageView.getMeasuredWidth() * 0.15f) / 2.0f))) * Math.cos(radians));
+            this.mImageView.setScaleX(0.15f);
+            this.mImageView.setScaleY(0.15f);
+            ImageView imageView = this.mImageView;
             if (z) {
                 imageView.setRotation(i - 180);
             } else {
                 imageView.setRotation(i);
             }
-            mImageView.setTranslationX(iCenterX);
-            mImageView.setTranslationY(-iCenterY);
-            animation.registerAnimationCallback(
-                    new Animatable2.AnimationCallback() {
-                        private int curPulses = 1;
-                        private final int numPulses;
+            this.mImageView.setTranslationX(iCenterX);
+            this.mImageView.setTranslationY(-iCenterY);
+            animatedVectorDrawable2.registerAnimationCallback(new Animatable2.AnimationCallback(i2, animatedVectorDrawable2) { // from class: com.google.android.settings.biometrics.face.anim.curve.DirectionIndicatorController.1
+                int curPulses = 1;
+                final int numPulses;
+                final /* synthetic */ AnimatedVectorDrawable val$animation;
+                final /* synthetic */ int val$times;
 
-                        {
-                            numPulses = times;
-                        }
+                {
+                    this.val$times = i2;
+                    this.val$animation = animatedVectorDrawable2;
+                    this.numPulses = i2;
+                }
 
-                        @Override
-                        public void onAnimationEnd(Drawable drawable) {
-                            super.onAnimationEnd(drawable);
-                            if (!DirectionIndicatorController.this.mShouldRepeat
-                                    || curPulses >= numPulses) {
-                                return;
-                            }
-                            animation.start();
-                            curPulses++;
-                        }
-                    });
-            animation.start();
+                @Override // android.graphics.drawable.Animatable2.AnimationCallback
+                public void onAnimationEnd(Drawable drawable) {
+                    super.onAnimationEnd(drawable);
+                    if (!DirectionIndicatorController.this.mShouldRepeat || this.curPulses >= this.numPulses) {
+                        return;
+                    }
+                    this.val$animation.start();
+                    this.curPulses++;
+                }
+            });
+            animatedVectorDrawable2.start();
         }
     }
 
     public void onBoundsChange(Rect rect) {
-        mBounds = rect;
+        this.mBounds = rect;
     }
 }

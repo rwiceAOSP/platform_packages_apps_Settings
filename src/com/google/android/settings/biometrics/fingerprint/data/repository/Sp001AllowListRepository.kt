@@ -19,23 +19,26 @@ class Sp001AllowListRepositoryImpl private constructor(private val res: Resource
     Sp001AllowListRepository {
 
     override val allowList: List<SpData> by lazy {
-        val hals = res.getStringArray(R.array.sp_config_001_first_party_hals)
-        checkNotNull(hals)
-        val modelNames = res.getStringArray(R.array.sp_config_001_ui_model_names)
-        checkNotNull(modelNames)
-        if (hals.isEmpty()) {
+        val firstPartyHals = res.getStringArray(R.array.sp_config_001_first_party_hals)
+        val uiModelNames = res.getStringArray(R.array.sp_config_001_ui_model_names)
+
+        if (firstPartyHals.isEmpty()) {
             Log.d(TAG, "No allow list found in resources!!")
-            emptyList()
-        } else if (hals.size != modelNames.size) {
-            Log.d(TAG, "Allow list resource sizes do not match!!")
-            emptyList()
-        } else {
-            val list = hals.mapIndexed { index, hal ->
-                SpData(SpProductInfo(modelNames[index]), SpHal.getInstance(hal))
-            }
-            Log.d(TAG, "Allow list loaded with ${list.size} items")
-            list
+            return@lazy emptyList()
         }
+        if (firstPartyHals.size != uiModelNames.size) {
+            Log.d(TAG, "Allow list resource sizes do not match!!")
+            return@lazy emptyList()
+        }
+
+        val list = ArrayList<SpData>(firstPartyHals.size)
+        for (i in firstPartyHals.indices) {
+            val hal = firstPartyHals[i]
+            val uiModelName = uiModelNames[i]
+            list.add(SpData(SpProductInfo(uiModelName), SpHal.Companion.getInstance(hal)))
+        }
+        Log.d(TAG, "Allow list loaded with ${list.size} items")
+        list
     }
 
     override val spNone: SpHal by lazy {
@@ -54,7 +57,6 @@ class Sp001AllowListRepositoryImpl private constructor(private val res: Resource
         @JvmStatic
         @Synchronized
         fun getInstance(resources: Resources): Sp001AllowListRepository {
-            checkNotNull(resources)
             return instance ?: Sp001AllowListRepositoryImpl(resources).also { instance = it }
         }
     }

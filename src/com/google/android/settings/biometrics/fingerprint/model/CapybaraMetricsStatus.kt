@@ -1,8 +1,12 @@
-package com.google.android.settings.biometrics.fingerprint.model
+package com.google.android.settings.biometrics.fingerprint.interactor
 
-enum class CapybaraMetricsStatus(val value: Int) {
-    NOT_SUPPORTED(0),
-    UNSET(1),
-    NO_SCREEN_PROTECTOR(2),
-    HAS_SCREEN_PROTECTOR(3),
+import android.os.Handler
+import com.google.android.settings.biometrics.fingerprint.feature.UdfpsEnrollCalibratorImpl
+import java.util.UUID
+
+class UsUdfpsCalibratorInteractor(private val mainHandler: Handler, private val initUuid: UUID?) {
+
+    val calibrator: UdfpsEnrollCalibratorImpl? by lazy {
+        UdfpsEnrollCalibratorImpl.getInstance(mainHandler, initUuid)
+    }
 }

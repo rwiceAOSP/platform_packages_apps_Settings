@@ -1,5 +1,6 @@
 package com.google.android.settings.biometrics.face;
 
+import android.R;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -15,6 +16,7 @@ import android.os.Vibrator;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewPropertyAnimator;
 import android.view.accessibility.AccessibilityManager;
@@ -23,46 +25,26 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.fragment.app.FragmentActivity;
-
-import com.android.settings.R;
 import com.android.settings.biometrics.face.FaceUpdater;
-
+import com.google.android.settings.R$bool;
+import com.google.android.settings.R$dimen;
+import com.google.android.settings.R$id;
+import com.google.android.settings.R$layout;
+import com.google.android.settings.R$string;
 import com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase;
 import com.google.android.setupcompat.template.FooterBarMixin;
 import com.google.android.setupcompat.template.FooterButton;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 import com.google.android.setupdesign.GlifLayout;
+import com.google.android.setupdesign.R$style;
 import com.google.android.setupdesign.util.ThemeResolver;
-
 import java.util.ArrayList;
+import java.util.List;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class FaceEnrollEnrolling extends FragmentActivity implements FaceEnrollSidecar.Listener {
-    private static final String TAG = "FaceEnrollEnrolling";
-
-    private static final int REQUEST_FACE_ERROR_DIALOG = 1;
-    private static final int REQUEST_FACE_CONFIRMATION = 2;
-
-    public static final int RESULT_CANCELLED = 2;
-    public static final int RESULT_TIMEOUT = 3;
-    public static final int RESULT_RETRY = 5;
-
-    private static final long HELP_MESSAGE_TIMEOUT_MS = 3000L;
-    private static final long ATTENUATE_THRESHOLD_MS = 3000L;
-    private static final long NOT_CENTERED_HINT_DELAY_MS = 3000L;
-    private static final long NO_PROGRESS_TIMEOUT_MS = 33000L;
-    private static final int GAZE_DIALOG_FAIL_COUNT_THRESHOLD = 10;
-    private static final long GAZE_DIALOG_MIN_ELAPSED_MS = 5000L;
-    private static final int DEBOUNCE_WINDOW_SIZE = 10;
-    private static final long ENROLL_COMPLETE_DELAY_MS = 500L;
-
-    private static final AudioAttributes SONIFICATION_AUDIO_ATTRIBUTES =
-            new AudioAttributes.Builder()
-                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-                    .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
-                    .build();
-
+    private static final AudioAttributes SONIFICATION_AUDIO_ATTRIBUTES = new AudioAttributes.Builder().setContentType(4).setUsage(13).build();
     private boolean mCenterAcquired;
     private boolean mDebugConsent;
     private boolean mDidCommitPartialEnrollment;
@@ -75,7 +57,7 @@ public class FaceEnrollEnrolling extends FragmentActivity implements FaceEnrollS
     private HelpController mHelpController;
     private Interpolator mLinearOutSlowInInterpolator;
     private FaceEnrollPreviewFragment mPreviewFragment;
-    private java.util.List<Face> mPreviouslyEnrolledFaces;
+    private List mPreviouslyEnrolledFaces;
     private boolean mRequireAttention;
     private boolean mRequireDiversity;
     private boolean mShouldManagePreview;
@@ -88,63 +70,50 @@ public class FaceEnrollEnrolling extends FragmentActivity implements FaceEnrollS
     private UserManager mUserManager;
     private VibrationEffect mVibrationEffect;
     private Vibrator mVibrator;
-
-    private ArrayList<Integer> mDisabledFeatures = new ArrayList<>();
+    private ArrayList mDisabledFeatures = new ArrayList();
     private int mRemaining = -1;
+    private Runnable mMultiAngleNotCenteredBeforeZeroZeroRunnable = new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda0
+        @Override // java.lang.Runnable
+        public final void run() {
+            this.f$0.lambda$new$0();
+        }
+    };
+    private Runnable mNoProgressTimeoutRunnable = new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda1
+        @Override // java.lang.Runnable
+        public final void run() {
+            this.f$0.lambda$new$1();
+        }
+    };
+    private FaceEnrollAnimationBase.AnimationListener mAnimationListener = new FaceEnrollAnimationBase.AnimationListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling.1
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void onEnrollAnimationStarted() {
+            FaceEnrollEnrolling.this.mFooterBarMixin.getSecondaryButton().setVisibility(4);
+        }
 
-    private Runnable mMultiAngleNotCenteredBeforeZeroZeroRunnable =
-            () -> mHelpController.showHelp(getText(R.string.face_enrolling_center_head));
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void onEnrollAnimationFinished() {
+            if (FaceEnrollEnrolling.this.mRequireDiversity) {
+                return;
+            }
+            Intent intent = new Intent(FaceEnrollEnrolling.this, (Class<?>) FaceEnrollConfirmation.class);
+            intent.putExtras(FaceEnrollEnrolling.this.getIntent());
+            FaceEnrollEnrolling.this.startActivityForResult(intent, 2);
+        }
 
-    private Runnable mNoProgressTimeoutRunnable =
-            new Runnable() {
-                @Override
-                public void run() {
-                    if (mRemaining == -1 || mRemaining == 25) {
-                        if (mSidecar != null) {
-                            mSidecar.cancelEnrollment();
-                            mSidecar.logEnrollmentEnded(FaceEnrollSidecar.RESULT_TIMEOUT, false);
-                        }
-                        showErrorDialog(
-                                getText(
-                                        R.string
-                                                .security_settings_face_enroll_error_timeout_dialog_message),
-                                3 /* errMsgId */);
-                    }
-                }
-            };
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void showHelp(CharSequence charSequence) {
+            FaceEnrollEnrolling.this.mShowingAnimationHelp = true;
+            FaceEnrollEnrolling.this.mHelpController.showHelp(charSequence);
+        }
 
-    private FaceEnrollAnimationBase.AnimationListener mAnimationListener =
-            new FaceEnrollAnimationBase.AnimationListener() {
-                @Override
-                public void onEnrollAnimationStarted() {
-                    mFooterBarMixin.getSecondaryButton().setVisibility(View.INVISIBLE);
-                }
-
-                @Override
-                public void onEnrollAnimationFinished() {
-                    if (mRequireDiversity) {
-                        return;
-                    }
-                    Intent intent =
-                            new Intent(FaceEnrollEnrolling.this, FaceEnrollConfirmation.class);
-                    intent.putExtras(getIntent());
-                    startActivityForResult(intent, REQUEST_FACE_CONFIRMATION);
-                }
-
-                @Override
-                public void showHelp(CharSequence help) {
-                    mShowingAnimationHelp = true;
-                    mHelpController.showHelp(help);
-                }
-
-                @Override
-                public void clearHelp() {
-                    if (mShowingAnimationHelp) {
-                        mShowingAnimationHelp = false;
-                        mHelpController.clearHelp();
-                    }
-                }
-            };
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void clearHelp() {
+            if (FaceEnrollEnrolling.this.mShowingAnimationHelp) {
+                FaceEnrollEnrolling.this.mShowingAnimationHelp = false;
+                FaceEnrollEnrolling.this.mHelpController.clearHelp();
+            }
+        }
+    };
 
     class HelpController {
         private Debouncer mDebouncer;
@@ -153,341 +122,333 @@ public class FaceEnrollEnrolling extends FragmentActivity implements FaceEnrollS
         private long mTextShownTime;
 
         private HelpController() {
-            mDebouncer = new Debouncer(DEBOUNCE_WINDOW_SIZE);
-            mHelpFinishedRunnable = () -> clearHelp();
+            this.mDebouncer = new Debouncer(10);
+            this.mHelpFinishedRunnable = new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$HelpController$$ExternalSyntheticLambda0
+                @Override // java.lang.Runnable
+                public final void run() {
+                    this.f$0.clearHelp();
+                }
+            };
         }
 
-        void debounceAndMaybeShowHelp(int msgId, CharSequence help) {
-            if (TextUtils.isEmpty(help)) {
-                mDebouncer.reset();
+        void debounceAndMaybeShowHelp(int i, CharSequence charSequence) {
+            boolean zIsEmpty = TextUtils.isEmpty(charSequence);
+            Debouncer debouncer = this.mDebouncer;
+            if (zIsEmpty) {
+                debouncer.reset();
                 return;
             }
-            mDebouncer.updateBuffer(msgId);
-            if (mDebouncer.passesDebounce(msgId)) {
+            debouncer.updateBuffer(i);
+            if (this.mDebouncer.passesDebounce(i)) {
                 FaceEnrollEnrolling.this.mShowingAnimationHelp = false;
-                showHelp(help);
+                showHelp(charSequence);
             }
         }
 
         void clearHelpIfOverAttenuateThreshold() {
-            if (System.currentTimeMillis() - mTextShownTime >= ATTENUATE_THRESHOLD_MS) {
+            if (System.currentTimeMillis() - this.mTextShownTime >= 3000) {
                 clearHelp();
             }
         }
 
-        void showHelp(CharSequence help) {
-            mHandler.removeCallbacks(mHelpFinishedRunnable);
-            mHandler.postDelayed(mHelpFinishedRunnable, HELP_MESSAGE_TIMEOUT_MS);
-            if ((mErrorText.getVisibility() == View.VISIBLE
-                            && TextUtils.equals(help, mErrorText.getText()))
-                    || TextUtils.isEmpty(help)) {
+        /* JADX INFO: Access modifiers changed from: private */
+        public void showHelp(CharSequence charSequence) {
+            float alpha;
+            FaceEnrollEnrolling.this.mHandler.removeCallbacks(this.mHelpFinishedRunnable);
+            FaceEnrollEnrolling.this.mHandler.postDelayed(this.mHelpFinishedRunnable, 3000L);
+            if ((FaceEnrollEnrolling.this.mErrorText.getVisibility() == 0 && TextUtils.equals(charSequence, FaceEnrollEnrolling.this.mErrorText.getText())) || TextUtils.isEmpty(charSequence)) {
                 return;
             }
-            mTextShownTime = System.currentTimeMillis();
-            mErrorText.setText(help);
-            float translationY =
-                    getResources().getDimensionPixelSize(R.dimen.face_error_text_appear_distance);
-            Animation animation = mErrorText.getAnimation();
+            this.mTextShownTime = System.currentTimeMillis();
+            FaceEnrollEnrolling.this.mErrorText.setText(charSequence);
+            float dimensionPixelSize = FaceEnrollEnrolling.this.getResources().getDimensionPixelSize(R$dimen.face_error_text_appear_distance);
+            Animation animation = FaceEnrollEnrolling.this.mErrorText.getAnimation();
             if (animation != null && !animation.hasEnded()) {
-                mErrorText.getAnimation().cancel();
+                FaceEnrollEnrolling.this.mErrorText.getAnimation().cancel();
             }
-            float alpha;
-            if (mErrorText.getVisibility() == View.VISIBLE) {
-                translationY = mErrorText.getTranslationY();
-                alpha = mErrorText.getAlpha();
+            if (FaceEnrollEnrolling.this.mErrorText.getVisibility() == 0) {
+                dimensionPixelSize = FaceEnrollEnrolling.this.mErrorText.getTranslationY();
+                alpha = FaceEnrollEnrolling.this.mErrorText.getAlpha();
             } else {
                 alpha = 0.0f;
             }
-            mErrorText.setVisibility(View.VISIBLE);
-            mErrorText.setTranslationY(translationY);
-            mErrorText.setAlpha(alpha);
-            mErrorText
-                    .animate()
-                    .alpha(1.0f)
-                    .translationY(0.0f)
-                    .setDuration(200L)
-                    .setInterpolator(mLinearOutSlowInInterpolator)
-                    .start();
+            FaceEnrollEnrolling.this.mErrorText.setVisibility(0);
+            FaceEnrollEnrolling.this.mErrorText.setTranslationY(dimensionPixelSize);
+            FaceEnrollEnrolling.this.mErrorText.setAlpha(alpha);
+            FaceEnrollEnrolling.this.mErrorText.animate().alpha(1.0f).translationY(0.0f).setDuration(200L).setInterpolator(FaceEnrollEnrolling.this.mLinearOutSlowInInterpolator).start();
         }
 
         void clearHelp() {
-            mHandler.removeCallbacks(mHelpFinishedRunnable);
-            if (mTextAnimation != null) {
-                Log.w(TAG, "Already clearing help");
-            } else if (mErrorText.getVisibility() == View.VISIBLE) {
-                mTextAnimation =
-                        mErrorText
-                                .animate()
-                                .alpha(0.0f)
-                                .translationY(
-                                        getResources()
-                                                .getDimensionPixelSize(
-                                                        R.dimen.face_error_text_appear_distance))
-                                .setDuration(200L)
-                                .setInterpolator(mLinearOutSlowInInterpolator)
-                                .withEndAction(
-                                        () -> {
-                                            mErrorText.setVisibility(View.INVISIBLE);
-                                            mTextAnimation = null;
-                                        });
-                mTextAnimation.start();
+            FaceEnrollEnrolling.this.mHandler.removeCallbacks(this.mHelpFinishedRunnable);
+            if (this.mTextAnimation != null) {
+                Log.w("FaceEnrollEnrolling", "Already clearing help");
+            } else if (FaceEnrollEnrolling.this.mErrorText.getVisibility() == 0) {
+                ViewPropertyAnimator viewPropertyAnimatorWithEndAction = FaceEnrollEnrolling.this.mErrorText.animate().alpha(0.0f).translationY(FaceEnrollEnrolling.this.getResources().getDimensionPixelSize(R$dimen.face_error_text_appear_distance)).setDuration(200L).setInterpolator(FaceEnrollEnrolling.this.mLinearOutSlowInInterpolator).withEndAction(new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$HelpController$$ExternalSyntheticLambda1
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        this.f$0.lambda$clearHelp$0();
+                    }
+                });
+                this.mTextAnimation = viewPropertyAnimatorWithEndAction;
+                viewPropertyAnimatorWithEndAction.start();
             }
         }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public /* synthetic */ void lambda$clearHelp$0() {
+            FaceEnrollEnrolling.this.mErrorText.setVisibility(4);
+            this.mTextAnimation = null;
+        }
     }
 
-    @Override
-    protected void onApplyThemeResource(Resources.Theme theme, int resid, boolean first) {
-        theme.applyStyle(R.style.SetupWizardPartnerResource, true);
-        super.onApplyThemeResource(theme, resid, first);
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$0() {
+        this.mHelpController.showHelp(getText(R$string.face_enrolling_center_head));
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$1() {
+        int i = this.mRemaining;
+        if (i == -1 || i == 25) {
+            FaceEnrollSidecar faceEnrollSidecar = this.mSidecar;
+            if (faceEnrollSidecar != null) {
+                faceEnrollSidecar.cancelEnrollment();
+                this.mSidecar.logEnrollmentEnded(0, false);
+            }
+            showErrorDialog(getText(R$string.security_settings_face_enroll_error_timeout_dialog_message), 3);
+        }
+    }
+
+    @Override // androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
+    public void onCreate(Bundle bundle) {
         ThemeResolver.getDefault().applyTheme(this);
-        setContentView(R.layout.face_enrolling);
-        ((SquareFrameLayout) findViewById(R.id.square_frame_layout))
-                .setOuterRegion(R.id.indicator_view, 30);
-        super.onCreate(savedInstanceState);
-        if (savedInstanceState != null) {
-            mToken = savedInstanceState.getByteArray("hw_auth_token");
-            mUserId = savedInstanceState.getInt("user_id", UserHandle.myUserId());
-            mFromSetupWizard = savedInstanceState.getBoolean("is_suw");
-            mRequireDiversity = savedInstanceState.getBoolean("accessibility_diversity", true);
-            mRequireAttention = savedInstanceState.getBoolean("accessibility_vision", true);
-            mSingleFromMulti = savedInstanceState.getBoolean("from_multi_timeout", false);
-            mDebugConsent = savedInstanceState.getBoolean("debug_consent", false);
+        setContentView(R$layout.face_enrolling);
+        ((SquareFrameLayout) findViewById(R$id.square_frame_layout)).setOuterRegion(R$id.indicator_view, 30);
+        super.onCreate(bundle);
+        boolean z = false;
+        if (bundle != null) {
+            this.mToken = bundle.getByteArray("hw_auth_token");
+            this.mUserId = bundle.getInt("user_id", UserHandle.myUserId());
+            this.mFromSetupWizard = bundle.getBoolean("is_suw");
+            this.mRequireDiversity = bundle.getBoolean("accessibility_diversity", true);
+            this.mRequireAttention = bundle.getBoolean("accessibility_vision", true);
+            this.mSingleFromMulti = bundle.getBoolean("from_multi_timeout", false);
+            this.mDebugConsent = bundle.getBoolean("debug_consent", false);
         } else {
-            mToken = getIntent().getByteArrayExtra("hw_auth_token");
-            mUserId = getIntent().getIntExtra(Intent.EXTRA_USER_ID, UserHandle.myUserId());
-            mFromSetupWizard = WizardManagerHelper.isAnySetupWizard(getIntent());
-            mRequireDiversity = getIntent().getBooleanExtra("accessibility_diversity", true);
-            mRequireAttention = getIntent().getBooleanExtra("accessibility_vision", true);
-            mSingleFromMulti = getIntent().getBooleanExtra("from_multi_timeout", false);
-            mDebugConsent = getIntent().getBooleanExtra("debug_consent", false);
+            this.mToken = getIntent().getByteArrayExtra("hw_auth_token");
+            this.mUserId = getIntent().getIntExtra("android.intent.extra.USER_ID", UserHandle.myUserId());
+            this.mFromSetupWizard = WizardManagerHelper.isAnySetupWizard(getIntent());
+            this.mRequireDiversity = getIntent().getBooleanExtra("accessibility_diversity", true);
+            this.mRequireAttention = getIntent().getBooleanExtra("accessibility_vision", true);
+            this.mSingleFromMulti = getIntent().getBooleanExtra("from_multi_timeout", false);
+            this.mDebugConsent = getIntent().getBooleanExtra("debug_consent", false);
         }
-        mShouldManagePreview =
-                getResources().getBoolean(R.bool.config_face_settings_should_manage_preview);
-        mVibrator = getSystemService(Vibrator.class);
-        mVibrationEffect = VibrationEffect.get(VibrationEffect.EFFECT_CLICK);
-        FooterBarMixin footerBarMixin = getLayout().getMixin(FooterBarMixin.class);
-        mFooterBarMixin = footerBarMixin;
+        this.mShouldManagePreview = getResources().getBoolean(R$bool.config_face_settings_should_manage_preview);
+        this.mVibrator = (Vibrator) getSystemService(Vibrator.class);
+        this.mVibrationEffect = VibrationEffect.get(1);
+        FooterBarMixin footerBarMixin = (FooterBarMixin) getLayout().getMixin(FooterBarMixin.class);
+        this.mFooterBarMixin = footerBarMixin;
         footerBarMixin.setRemoveFooterBarWhenEmpty(false);
-        if (mFromSetupWizard) {
-            mFooterBarMixin.setSecondaryButton(
-                    new FooterButton.Builder(this)
-                            .setText(R.string.face_enrolling_do_it_later)
-                            .setListener(this::onButtonNegative)
-                            .setButtonType(7 /* SKIP */)
-                            .setTheme(
-                                    com.google.android.setupdesign.R.style.SudGlifButton_Secondary)
-                            .build());
+        boolean z2 = this.mFromSetupWizard;
+        FooterBarMixin footerBarMixin2 = this.mFooterBarMixin;
+        if (z2) {
+            footerBarMixin2.setSecondaryButton(new FooterButton.Builder(this).setText(R$string.face_enrolling_do_it_later).setListener(new View.OnClickListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda2
+                @Override // android.view.View.OnClickListener
+                public final void onClick(View view) {
+                    this.f$0.onButtonNegative(view);
+                }
+            }).setButtonType(7).setTheme(R$style.SudGlifButton_Secondary).build());
         } else {
-            mFooterBarMixin.setSecondaryButton(
-                    new FooterButton.Builder(this)
-                            .setText(R.string.face_enrolling_gaze_dialog_cancel)
-                            .setListener(this::onButtonNegative)
-                            .setButtonType(2 /* CANCEL */)
-                            .setTheme(
-                                    com.google.android.setupdesign.R.style.SudGlifButton_Secondary)
-                            .build());
+            footerBarMixin2.setSecondaryButton(new FooterButton.Builder(this).setText(R$string.face_enrolling_gaze_dialog_cancel).setListener(new View.OnClickListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda2
+                @Override // android.view.View.OnClickListener
+                public final void onClick(View view) {
+                    this.f$0.onButtonNegative(view);
+                }
+            }).setButtonType(2).setTheme(R$style.SudGlifButton_Secondary).build());
         }
-        mFooterBarMixin.getSecondaryButton().setVisibility(View.VISIBLE);
-        mUserManager = getSystemService(UserManager.class);
-        mHandler = new Handler();
-        mErrorText = findViewById(R.id.error_text);
-        mLinearOutSlowInInterpolator =
-                AnimationUtils.loadInterpolator(this, android.R.interpolator.linear_out_slow_in);
-        mHelpController = new HelpController();
-        mTalkbackEnabled = false;
-        AccessibilityManager accessibilityManager =
-                getApplicationContext().getSystemService(AccessibilityManager.class);
+        this.mFooterBarMixin.getSecondaryButton().setVisibility(0);
+        this.mUserManager = (UserManager) getSystemService(UserManager.class);
+        this.mHandler = new Handler();
+        this.mErrorText = (TextView) findViewById(R$id.error_text);
+        this.mLinearOutSlowInInterpolator = AnimationUtils.loadInterpolator(this, R.interpolator.linear_out_slow_in);
+        this.mHelpController = new HelpController();
+        this.mTalkbackEnabled = false;
+        AccessibilityManager accessibilityManager = (AccessibilityManager) getApplicationContext().getSystemService(AccessibilityManager.class);
         if (accessibilityManager != null) {
-            mTalkbackEnabled =
-                    accessibilityManager.isEnabled()
-                            && accessibilityManager.isTouchExplorationEnabled();
+            if (accessibilityManager.isEnabled() && accessibilityManager.isTouchExplorationEnabled()) {
+                z = true;
+            }
+            this.mTalkbackEnabled = z;
         }
-        if (!mRequireDiversity) {
-            setHeaderText(R.string.face_enrolling_title_accessibility);
-            getLayout().setDescriptionText(R.string.face_enrolling_center_head);
-            addDisabledFeature(2 /* FEATURE_REQUIRE_ATTENTION */);
+        if (!this.mRequireDiversity) {
+            setHeaderText(R$string.face_enrolling_title_accessibility);
+            getLayout().setDescriptionText(R$string.face_enrolling_center_head);
+            this.mDisabledFeatures.add(2);
         } else {
-            setHeaderText(R.string.face_enrolling_title);
+            setHeaderText(R$string.face_enrolling_title);
         }
-        addDisabledFeature(1 /* FEATURE_REQUIRE_DIVERSITY */);
-        if (mRequireDiversity) {
-            mHandler.postDelayed(
-                    mMultiAngleNotCenteredBeforeZeroZeroRunnable, NOT_CENTERED_HINT_DELAY_MS);
-            mHandler.postDelayed(mNoProgressTimeoutRunnable, NO_PROGRESS_TIMEOUT_MS);
+        this.mDisabledFeatures.add(1);
+        if (this.mRequireDiversity) {
+            this.mHandler.postDelayed(this.mMultiAngleNotCenteredBeforeZeroZeroRunnable, 3000L);
+            this.mHandler.postDelayed(this.mNoProgressTimeoutRunnable, 33000L);
         }
-        getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getWindow().addFlags(128);
         startEnrollment();
     }
 
-    private void addDisabledFeature(int feature) {
-        if (!mDisabledFeatures.contains(feature)) {
-            mDisabledFeatures.add(feature);
-        }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode != REQUEST_FACE_ERROR_DIALOG) {
-            if (requestCode == REQUEST_FACE_CONFIRMATION) {
-                setResult(resultCode, data);
+    @Override // androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, android.app.Activity
+    protected void onActivityResult(int i, int i2, Intent intent) {
+        if (i != 1) {
+            if (i == 2) {
+                setResult(i2);
                 finish();
+                return;
             }
             return;
         }
-        if (resultCode == RESULT_TIMEOUT || resultCode == RESULT_CANCELLED) {
-            setResult(resultCode, data);
+        if (i2 == 2 || i2 == 3) {
+            setResult(i2);
             finish();
         }
     }
 
-    @Override
+    @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     protected void onStop() {
         super.onStop();
-        if (mSidecar != null) {
-            mSidecar.setListener(null);
+        FaceEnrollSidecar faceEnrollSidecar = this.mSidecar;
+        if (faceEnrollSidecar != null) {
+            faceEnrollSidecar.setListener(null);
         }
-        if (isChangingConfigurations() || mRemaining == 0) {
+        if (isChangingConfigurations() || this.mRemaining == 0) {
             return;
         }
-        if (mSidecar != null) {
-            mSidecar.cancelEnrollment();
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .remove(mSidecar)
-                    .commitAllowingStateLoss();
-            mSidecar = null;
+        FaceEnrollSidecar faceEnrollSidecar2 = this.mSidecar;
+        if (faceEnrollSidecar2 != null) {
+            faceEnrollSidecar2.cancelEnrollment();
+            getSupportFragmentManager().beginTransaction().remove(this.mSidecar).commitAllowingStateLoss();
+            this.mSidecar = null;
         }
-        if (!mFromSetupWizard) {
-            setResult(RESULT_TIMEOUT);
+        if (!this.mFromSetupWizard) {
+            setResult(3);
         }
         finish();
     }
 
-    @Override
+    @Override // androidx.activity.ComponentActivity, android.app.Activity
     public void onBackPressed() {
-        if (mSidecar != null) {
-            mSidecar.setListener(null);
-            mSidecar.cancelEnrollment();
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .remove(mSidecar)
-                    .commitAllowingStateLoss();
-            mSidecar = null;
+        FaceEnrollSidecar faceEnrollSidecar = this.mSidecar;
+        if (faceEnrollSidecar != null) {
+            faceEnrollSidecar.setListener(null);
+            this.mSidecar.cancelEnrollment();
+            getSupportFragmentManager().beginTransaction().remove(this.mSidecar).commitAllowingStateLoss();
+            this.mSidecar = null;
         }
         super.onBackPressed();
     }
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putByteArray("hw_auth_token", mToken);
-        outState.putInt("user_id", mUserId);
-        outState.putBoolean("is_suw", mFromSetupWizard);
-        outState.putBoolean("accessibility_vision", mRequireAttention);
-        outState.putBoolean("accessibility_diversity", mRequireDiversity);
-        outState.putBoolean("from_multi_timeout", mSingleFromMulti);
-        outState.putBoolean("debug_consent", mDebugConsent);
+    @Override // android.app.Activity, android.view.ContextThemeWrapper
+    protected void onApplyThemeResource(Resources.Theme theme, int i, boolean z) {
+        theme.applyStyle(com.google.android.settings.R$style.SetupWizardPartnerResource, true);
+        super.onApplyThemeResource(theme, i, z);
+    }
+
+    @Override // androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
+    protected void onSaveInstanceState(Bundle bundle) {
+        super.onSaveInstanceState(bundle);
+        bundle.putByteArray("hw_auth_token", this.mToken);
+        bundle.putInt("user_id", this.mUserId);
+        bundle.putBoolean("is_suw", this.mFromSetupWizard);
+        bundle.putBoolean("accessibility_vision", this.mRequireAttention);
+        bundle.putBoolean("accessibility_diversity", this.mRequireDiversity);
+        bundle.putBoolean("from_multi_timeout", this.mSingleFromMulti);
+        bundle.putBoolean("debug_consent", this.mDebugConsent);
     }
 
     private void startEnrollment() {
-        mEnrollmentStartTime = System.currentTimeMillis();
-        mPreviouslyEnrolledFaces = getSystemService(FaceManager.class).getEnrolledFaces(mUserId);
-        FaceEnrollPreviewFragment previewFragment =
-                (FaceEnrollPreviewFragment)
-                        getSupportFragmentManager().findFragmentByTag("tag_preview");
-        mPreviewFragment = previewFragment;
-        if (previewFragment == null) {
-            previewFragment = new FaceEnrollPreviewFragment();
-            mPreviewFragment = previewFragment;
-            previewFragment.setAnimationListener(mAnimationListener);
-            mPreviewFragment.setFromSetupWizard(mFromSetupWizard);
-            mPreviewFragment.setShouldManagePreview(mShouldManagePreview);
-            mPreviewFragment.setAnimationDrawableMode(mRequireDiversity);
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .add(mPreviewFragment, "tag_preview")
-                    .commitAllowingStateLoss();
-        } else {
-            previewFragment.setAnimationListener(mAnimationListener);
-        }
-        FaceEnrollSidecar sidecar =
-                (FaceEnrollSidecar) getSupportFragmentManager().findFragmentByTag("tag_sidecar");
-        mSidecar = sidecar;
-        if (sidecar == null) {
-            int[] disabledFeatures = new int[mDisabledFeatures.size()];
-            for (int i = 0; i < mDisabledFeatures.size(); i++) {
-                disabledFeatures[i] = mDisabledFeatures.get(i);
+        this.mEnrollmentStartTime = System.currentTimeMillis();
+        this.mPreviouslyEnrolledFaces = ((FaceManager) getSystemService(FaceManager.class)).getEnrolledFaces(this.mUserId);
+        FaceEnrollPreviewFragment faceEnrollPreviewFragment = (FaceEnrollPreviewFragment) getSupportFragmentManager().findFragmentByTag("tag_preview");
+        this.mPreviewFragment = faceEnrollPreviewFragment;
+        if (faceEnrollPreviewFragment == null) {
+            FaceEnrollPreviewFragment faceEnrollPreviewFragment2 = new FaceEnrollPreviewFragment();
+            this.mPreviewFragment = faceEnrollPreviewFragment2;
+            faceEnrollPreviewFragment2.setAnimationListener(this.mAnimationListener);
+            this.mPreviewFragment.setFromSetupWizard(this.mFromSetupWizard);
+            this.mPreviewFragment.setShouldManagePreview(this.mShouldManagePreview);
+            boolean z = this.mRequireDiversity;
+            FaceEnrollPreviewFragment faceEnrollPreviewFragment3 = this.mPreviewFragment;
+            if (z) {
+                faceEnrollPreviewFragment3.setAnimationDrawableMode(true);
+            } else {
+                faceEnrollPreviewFragment3.setAnimationDrawableMode(false);
             }
-            sidecar = new FaceEnrollSidecar(getIntent());
-            mSidecar = sidecar;
-            sidecar.init(
-                    disabledFeatures,
-                    mSingleFromMulti,
-                    mTalkbackEnabled,
-                    mShouldManagePreview,
-                    mDebugConsent);
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .add(mSidecar, "tag_sidecar")
-                    .commitAllowingStateLoss();
+            getSupportFragmentManager().beginTransaction().add(this.mPreviewFragment, "tag_preview").commitAllowingStateLoss();
+        } else {
+            faceEnrollPreviewFragment.setAnimationListener(this.mAnimationListener);
         }
-        mSidecar.setListener(this);
-        if (!mShouldManagePreview) {
-            mSidecar.setPreviewSurfaceProvider(mPreviewFragment);
+        FaceEnrollSidecar faceEnrollSidecar = (FaceEnrollSidecar) getSupportFragmentManager().findFragmentByTag("tag_sidecar");
+        this.mSidecar = faceEnrollSidecar;
+        if (faceEnrollSidecar == null) {
+            int[] iArr = new int[this.mDisabledFeatures.size()];
+            for (int i = 0; i < this.mDisabledFeatures.size(); i++) {
+                iArr[i] = ((Integer) this.mDisabledFeatures.get(i)).intValue();
+            }
+            FaceEnrollSidecar faceEnrollSidecar2 = new FaceEnrollSidecar(getIntent());
+            this.mSidecar = faceEnrollSidecar2;
+            faceEnrollSidecar2.init(iArr, this.mSingleFromMulti, this.mTalkbackEnabled, this.mShouldManagePreview, this.mDebugConsent);
+            getSupportFragmentManager().beginTransaction().add(this.mSidecar, "tag_sidecar").commitAllowingStateLoss();
         }
+        this.mSidecar.setListener(this);
+        if (this.mShouldManagePreview) {
+            return;
+        }
+        this.mSidecar.setPreviewSurfaceProvider(this.mPreviewFragment);
     }
 
-    @Override
-    public void onEnrollmentHelp(int msgId, CharSequence help) {
-        if (msgId == 1140) {
-            mDidCommitPartialEnrollment = true;
+    /* JADX WARN: Code duplicated, block: B:17:0x0029  */
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
+    public void onEnrollmentHelp(int i, CharSequence charSequence) {
+        if (i == 1140) {
+            this.mDidCommitPartialEnrollment = true;
         }
-        if (mTalkbackEnabled || !mRequireDiversity) {
-            switch (msgId) {
+        if (this.mTalkbackEnabled || !this.mRequireDiversity) {
+            switch (i) {
                 case 4:
-                    help = getText(R.string.face_enrolling_too_close);
+                    charSequence = getText(R$string.face_enrolling_too_close);
                     break;
                 case 5:
-                    help = getText(R.string.face_enrolling_too_far);
+                    charSequence = getText(R$string.face_enrolling_too_far);
                     break;
                 case 6:
-                    help = getText(R.string.face_enrolling_too_high);
+                    charSequence = getText(R$string.face_enrolling_too_high);
                     break;
                 case 7:
-                    help = getText(R.string.face_enrolling_too_low);
+                    charSequence = getText(R$string.face_enrolling_too_low);
                     break;
                 case 8:
-                    help = getText(R.string.face_enrolling_too_right);
+                    charSequence = getText(R$string.face_enrolling_too_right);
                     break;
                 case 9:
-                    help = getText(R.string.face_enrolling_too_left);
+                    charSequence = getText(R$string.face_enrolling_too_left);
                     break;
                 case 11:
-                    help = getText(R.string.face_enrolling_center_head);
-                    break;
-                default:
+                    charSequence = getText(R$string.face_enrolling_center_head);
                     break;
             }
-        } else if (msgId == 11) {
-            help = getText(R.string.face_enrolling_center_head);
-        } else {
-            switch (msgId) {
+        } else if (i != 11) {
+            switch (i) {
                 case 4:
                 case 6:
                 case 7:
                 case 8:
                 case 9:
-                    help = getText(R.string.face_enrolling_center_head);
+                    charSequence = getText(R$string.face_enrolling_center_head);
                     break;
                 case 5:
-                    help = getText(R.string.face_enrolling_too_far);
+                    charSequence = getText(R$string.face_enrolling_too_far);
                     break;
                 default:
-                    switch (msgId) {
+                    switch (i) {
                         case 1126:
                         case 1127:
                         case 1128:
@@ -496,240 +457,257 @@ public class FaceEnrollEnrolling extends FragmentActivity implements FaceEnrollS
                         case 1131:
                         case 1132:
                         case 1133:
-                            help = getText(R.string.face_enrolling_turned_too_far);
-                            break;
-                        default:
+                            charSequence = getText(R$string.face_enrolling_turned_too_far);
                             break;
                     }
                     break;
             }
+        } else {
+            charSequence = getText(R$string.face_enrolling_center_head);
         }
         if (isFinishing()) {
             return;
         }
-        if (!mCenterAcquired && msgId == 10 && mSidecar.isEnrolling()) {
-            mGazeFailCount++;
-            if (mGazeFailCount >= GAZE_DIALOG_FAIL_COUNT_THRESHOLD
-                    && System.currentTimeMillis() - mEnrollmentStartTime
-                            >= GAZE_DIALOG_MIN_ELAPSED_MS) {
+        if (!this.mCenterAcquired && i == 10 && this.mSidecar.isEnrolling()) {
+            int i2 = this.mGazeFailCount + 1;
+            this.mGazeFailCount = i2;
+            if (i2 >= 10 && System.currentTimeMillis() - this.mEnrollmentStartTime >= 5000) {
                 showGazeDialog();
             }
         }
-        if (!mRequireDiversity) {
-            if (msgId != 0) {
-                mHelpController.debounceAndMaybeShowHelp(msgId, help);
+        if (!this.mRequireDiversity) {
+            HelpController helpController = this.mHelpController;
+            if (i != 0) {
+                helpController.debounceAndMaybeShowHelp(i, charSequence);
             } else {
-                mHelpController.clearHelpIfOverAttenuateThreshold();
+                helpController.clearHelpIfOverAttenuateThreshold();
             }
-        } else if (FaceUtils.isOneOfCenterBuckets(msgId) && !mCenterAcquired) {
-            mHandler.removeCallbacks(mMultiAngleNotCenteredBeforeZeroZeroRunnable);
-            mHelpController.clearHelp();
-            mCenterAcquired = true;
-        } else if (msgId != 0 && !mCenterAcquired) {
-            mHelpController.debounceAndMaybeShowHelp(msgId, help);
-        } else if (msgId == 0) {
-            mHelpController.clearHelpIfOverAttenuateThreshold();
+        } else if (FaceUtils.isOneOfCenterBuckets(i) && !this.mCenterAcquired) {
+            this.mHandler.removeCallbacks(this.mMultiAngleNotCenteredBeforeZeroZeroRunnable);
+            this.mHelpController.clearHelp();
+            this.mCenterAcquired = true;
+        } else if (i != 0 && this.mCenterAcquired) {
+            this.mHelpController.debounceAndMaybeShowHelp(i, charSequence);
+        } else if (i != 0 && !this.mCenterAcquired) {
+            this.mHelpController.debounceAndMaybeShowHelp(i, charSequence);
+        } else if (i == 0) {
+            this.mHelpController.clearHelpIfOverAttenuateThreshold();
         }
-        mPreviewFragment.onEnrollmentHelp(msgId, help);
+        this.mPreviewFragment.onEnrollmentHelp(i, charSequence);
     }
 
     private void showGazeDialog() {
-        mVibrator.vibrate(mVibrationEffect, SONIFICATION_AUDIO_ATTRIBUTES);
-        mSidecar.cancelEnrollment();
-        FaceGazeDialog gazeDialog = FaceGazeDialog.newInstance();
-        gazeDialog.setButtonListener((dialog, which) -> onGazeDialogClick(dialog, which));
-        gazeDialog.show(getSupportFragmentManager(), FaceGazeDialog.class.getName());
+        this.mVibrator.vibrate(this.mVibrationEffect, SONIFICATION_AUDIO_ATTRIBUTES);
+        this.mSidecar.cancelEnrollment();
+        FaceGazeDialog faceGazeDialogNewInstance = FaceGazeDialog.newInstance();
+        faceGazeDialogNewInstance.setButtonListener(new DialogInterface.OnClickListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda4
+            @Override // android.content.DialogInterface.OnClickListener
+            public final void onClick(DialogInterface dialogInterface, int i) {
+                this.f$0.lambda$showGazeDialog$2(dialogInterface, i);
+            }
+        });
+        faceGazeDialogNewInstance.show(getSupportFragmentManager(), FaceGazeDialog.class.getName());
     }
 
-    private void onGazeDialogClick(DialogInterface dialog, int which) {
-        if (which == DialogInterface.BUTTON_POSITIVE) {
-            addDisabledFeature(1 /* FEATURE_REQUIRE_DIVERSITY */);
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$showGazeDialog$2(DialogInterface dialogInterface, int i) {
+        if (i == -1) {
+            int i2 = 0;
+            while (true) {
+                int size = this.mDisabledFeatures.size();
+                ArrayList arrayList = this.mDisabledFeatures;
+                if (i2 < size) {
+                    if (((Integer) arrayList.get(i2)).intValue() == 1) {
+                        break;
+                    } else {
+                        i2++;
+                    }
+                } else {
+                    arrayList.add(1);
+                    break;
+                }
+            }
         }
-        int[] disabledFeatures = new int[mDisabledFeatures.size()];
-        for (int i = 0; i < mDisabledFeatures.size(); i++) {
-            disabledFeatures[i] = mDisabledFeatures.get(i);
+        int[] iArr = new int[this.mDisabledFeatures.size()];
+        for (int i3 = 0; i3 < this.mDisabledFeatures.size(); i3++) {
+            iArr[i3] = ((Integer) this.mDisabledFeatures.get(i3)).intValue();
         }
-        mSidecar.init(
-                disabledFeatures,
-                mSingleFromMulti,
-                mTalkbackEnabled,
-                mShouldManagePreview,
-                mDebugConsent);
-        mEnrollmentStartTime = System.currentTimeMillis();
-        mGazeFailCount = 0;
-        mSidecar.startEnrollment();
+        this.mSidecar.init(iArr, this.mSingleFromMulti, this.mTalkbackEnabled, this.mShouldManagePreview, this.mDebugConsent);
+        this.mEnrollmentStartTime = System.currentTimeMillis();
+        this.mGazeFailCount = 0;
+        this.mSidecar.startEnrollment();
     }
 
-    @Override
-    public void onEnrollmentError(int errMsgId, CharSequence errString) {
-        CharSequence message;
-        mSidecar.logEnrollmentEnded(
-                errMsgId == 3 ? FaceEnrollSidecar.RESULT_TIMEOUT : FaceEnrollSidecar.RESULT_ERROR,
-                false);
-        if (errMsgId == 3) {
-            message = getText(R.string.security_settings_face_enroll_error_timeout_dialog_message);
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
+    public void onEnrollmentError(int i, CharSequence charSequence) {
+        CharSequence text;
+        this.mSidecar.logEnrollmentEnded(i == 3 ? 0 : 2, false);
+        if (i == 3) {
+            text = getText(R$string.security_settings_face_enroll_error_timeout_dialog_message);
         } else {
-            message =
-                    (errMsgId < 1000 && errMsgId != 4)
-                            ? getText(
-                                    R.string
-                                            .security_settings_face_enroll_error_generic_dialog_message)
-                            : errString;
+            text = (i < 1000 && i != 4) ? getText(R$string.security_settings_face_enroll_error_generic_dialog_message) : charSequence;
         }
-        getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        mPreviewFragment.onEnrollmentError(errMsgId, errString);
-        if (errMsgId != 5) {
-            showErrorDialog(message, errMsgId);
+        getWindow().clearFlags(128);
+        this.mPreviewFragment.onEnrollmentError(i, charSequence);
+        if (i != 5) {
+            showErrorDialog(text, i);
         }
     }
 
-    @Override
-    public void onEnrollmentProgressChange(int steps, int remaining) {
-        Log.v(TAG, "Steps: " + steps + " Remaining: " + remaining);
-        mRemaining = remaining;
-        mPreviewFragment.onEnrollmentProgressChange(steps, remaining);
-        if (remaining == 0) {
-            if (mDidCommitPartialEnrollment) {
-                mSidecar.logEnrollmentEnded(FaceEnrollSidecar.RESULT_SUCCESS, false);
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
+    public void onEnrollmentProgressChange(int i, int i2) {
+        Log.v("FaceEnrollEnrolling", "Steps: " + i + " Remaining: " + i2);
+        this.mRemaining = i2;
+        this.mPreviewFragment.onEnrollmentProgressChange(i, i2);
+        if (i2 == 0) {
+            boolean z = this.mDidCommitPartialEnrollment;
+            FaceEnrollSidecar faceEnrollSidecar = this.mSidecar;
+            if (z) {
+                faceEnrollSidecar.logEnrollmentEnded(1, false);
                 showPartialEnrollmentDialog();
             } else {
-                mSidecar.logEnrollmentEnded(FaceEnrollSidecar.RESULT_SUCCESS, true);
-                mHandler.postDelayed(this::onEnrollmentComplete, ENROLL_COMPLETE_DELAY_MS);
+                faceEnrollSidecar.logEnrollmentEnded(1, true);
+                this.mHandler.postDelayed(new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda3
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        this.f$0.onEnrollmentComplete();
+                    }
+                }, 500L);
             }
         }
     }
 
-    private void onEnrollmentComplete() {
-        mHelpController.clearHelp();
-        if (!mUserManager.getUserInfo(mUserId).isManagedProfile()) {
-            Settings.Secure.putIntForUser(
-                    getContentResolver(), "face_unlock_keyguard_enabled", 1, mUserId);
+    /* JADX INFO: Access modifiers changed from: private */
+    public void onEnrollmentComplete() {
+        this.mHelpController.clearHelp();
+        if (!this.mUserManager.getUserInfo(this.mUserId).isManagedProfile()) {
+            Settings.Secure.putIntForUser(getContentResolver(), "face_unlock_keyguard_enabled", 1, this.mUserId);
         }
-        if (mRequireDiversity) {
-            Intent intent = new Intent(this, FaceEnrollConfirmation.class);
+        if (this.mRequireDiversity) {
+            Intent intent = new Intent(this, (Class<?>) FaceEnrollConfirmation.class);
             intent.putExtras(getIntent());
-            startActivityForResult(intent, REQUEST_FACE_CONFIRMATION);
+            startActivityForResult(intent, 2);
         }
     }
 
     private void showPartialEnrollmentDialog() {
-        FaceEnrollDialogFactory.DialogBuilder builder =
-                FaceEnrollDialogFactory.newBuilder(this)
-                        .setTitle(R.string.security_settings_face_enroll_partial_title)
-                        .setMessage(R.string.security_settings_face_enroll_partial_message)
-                        .setPositiveButton(
-                                R.string.security_settings_face_enroll_dialog_ok,
-                                (dialog, which) -> {
-                                    dialog.dismiss();
-                                    onEnrollmentComplete();
-                                })
-                        .setNegativeButton(
-                                R.string.security_settings_face_enroll_partial_start_over,
-                                (dialog, which) -> restartEnrollmentFromDialog(dialog));
-        builder.setOnBackKeyListener((dialog, event) -> onEnrollmentComplete());
-        builder.build().show();
+        FaceEnrollDialogFactory.newBuilder(this).setTitle(R$string.security_settings_face_enroll_partial_title).setMessage(R$string.security_settings_face_enroll_partial_message).setPositiveButton(R$string.security_settings_face_enroll_dialog_ok, new DialogInterface.OnClickListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda5
+            @Override // android.content.DialogInterface.OnClickListener
+            public final void onClick(DialogInterface dialogInterface, int i) {
+                this.f$0.lambda$showPartialEnrollmentDialog$3(dialogInterface, i);
+            }
+        }).setNegativeButton(R$string.security_settings_face_enroll_partial_start_over, new DialogInterface.OnClickListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda6
+            @Override // android.content.DialogInterface.OnClickListener
+            public final void onClick(DialogInterface dialogInterface, int i) {
+                this.f$0.lambda$showPartialEnrollmentDialog$4(dialogInterface, i);
+            }
+        }).setOnBackKeyListener(new FaceEnrollDialogFactory.OnBackKeyListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling$$ExternalSyntheticLambda7
+            @Override // com.google.android.settings.biometrics.face.FaceEnrollDialogFactory.OnBackKeyListener
+            public final void onBackKeyUp(DialogInterface dialogInterface, KeyEvent keyEvent) {
+                this.f$0.lambda$showPartialEnrollmentDialog$5(dialogInterface, keyEvent);
+            }
+        }).build().show();
     }
 
-    private void restartEnrollmentFromDialog(DialogInterface dialog) {
-        FaceManager faceManager = getSystemService(FaceManager.class);
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$showPartialEnrollmentDialog$3(DialogInterface dialogInterface, int i) {
+        dialogInterface.dismiss();
+        onEnrollmentComplete();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$showPartialEnrollmentDialog$4(DialogInterface dialogInterface, int i) {
+        restartEnrollmentFromDialog(dialogInterface);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$showPartialEnrollmentDialog$5(DialogInterface dialogInterface, KeyEvent keyEvent) {
+        onEnrollmentComplete();
+    }
+
+    private void restartEnrollmentFromDialog(final DialogInterface dialogInterface) {
+        FaceManager faceManager = (FaceManager) getSystemService(FaceManager.class);
         if (faceManager == null) {
-            Log.e(TAG, "Unable to remove face. Face manager was null!");
+            Log.e("FaceEnrollEnrolling", "Unable to remove face. Face manager was null!");
             return;
         }
-        Face newlyEnrolledFace = findNewlyEnrolledFace();
-        if (newlyEnrolledFace == null) {
-            Log.e(TAG, "Unable to remove face. No newly enrolled face found.");
-            return;
-        }
-        new FaceUpdater(this, faceManager)
-                .remove(
-                        newlyEnrolledFace,
-                        mUserId,
-                        new FaceManager.RemovalCallback() {
-                            @Override
-                            public void onRemovalError(
-                                    Face face, int errMsgId, CharSequence errString) {
-                                Log.e(
-                                        TAG,
-                                        "Unable to remove face: "
-                                                + face.getBiometricId()
-                                                + " error: "
-                                                + errMsgId
-                                                + " "
-                                                + errString);
-                                Toast.makeText(
-                                                FaceEnrollEnrolling.this,
-                                                errString,
-                                                Toast.LENGTH_SHORT)
-                                        .show();
-                                finishFromDialog(dialog, RESULT_CANCELLED);
-                            }
+        Face faceFindNewlyEnrolledFace = findNewlyEnrolledFace();
+        if (faceFindNewlyEnrolledFace == null) {
+            Log.e("FaceEnrollEnrolling", "Unable to remove face. No newly enrolled face found.");
+        } else {
+            new FaceUpdater(this, faceManager).remove(faceFindNewlyEnrolledFace, this.mUserId, new FaceManager.RemovalCallback() { // from class: com.google.android.settings.biometrics.face.FaceEnrollEnrolling.2
+                public void onRemovalError(Face face, int i, CharSequence charSequence) {
+                    Log.e("FaceEnrollEnrolling", "Unable to remove face: " + face.getBiometricId() + " error: " + i + " " + ((Object) charSequence));
+                    Toast.makeText(FaceEnrollEnrolling.this, charSequence, 0).show();
+                    FaceEnrollEnrolling.this.finishFromDialog(dialogInterface, 2);
+                }
 
-                            @Override
-                            public void onRemovalSucceeded(Face face, int remaining) {
-                                if (remaining == 0) {
-                                    finishFromDialog(dialog, RESULT_RETRY);
-                                }
-                            }
-                        });
+                public void onRemovalSucceeded(Face face, int i) {
+                    if (i == 0) {
+                        FaceEnrollEnrolling.this.finishFromDialog(dialogInterface, 5);
+                    }
+                }
+            });
+        }
     }
 
-    private void finishFromDialog(DialogInterface dialog, int resultCode) {
-        dialog.dismiss();
-        setResult(resultCode);
+    /* JADX INFO: Access modifiers changed from: private */
+    public void finishFromDialog(DialogInterface dialogInterface, int i) {
+        dialogInterface.dismiss();
+        setResult(i);
         finish();
     }
 
     private GlifLayout getLayout() {
-        return (GlifLayout) findViewById(R.id.setup_wizard_layout);
+        return (GlifLayout) findViewById(R$id.setup_wizard_layout);
     }
 
-    private void setHeaderText(int titleResId) {
-        CharSequence headerText = getLayout().getHeaderTextView().getText();
-        CharSequence newText = getText(titleResId);
-        if (headerText != newText) {
-            getLayout().setHeaderText(newText);
-            setTitle(newText);
+    private void setHeaderText(int i) {
+        CharSequence text = getLayout().getHeaderTextView().getText();
+        CharSequence text2 = getText(i);
+        if (text != text2) {
+            getLayout().setHeaderText(text2);
+            setTitle(text2);
         }
     }
 
-    private void onButtonNegative(View view) {
-        setResult(RESULT_CANCELLED);
+    /* JADX INFO: Access modifiers changed from: private */
+    public void onButtonNegative(View view) {
+        setResult(2);
         finish();
     }
 
-    private void showErrorDialog(CharSequence error, int errMsgId) {
+    private void showErrorDialog(CharSequence charSequence, int i) {
         try {
-            FaceErrorDialog.newInstance(error, errMsgId, mRequireDiversity, mFromSetupWizard)
-                    .show(getSupportFragmentManager(), FaceErrorDialog.class.getName());
-        } catch (IllegalStateException e) {
-            Log.w(TAG, "Can't show error after onSaveInstanceState, " + errMsgId);
+            FaceErrorDialog.newInstance(charSequence, i, this.mRequireDiversity, this.mFromSetupWizard).show(getSupportFragmentManager(), FaceErrorDialog.class.getName());
+        } catch (IllegalStateException unused) {
+            Log.w("FaceEnrollEnrolling", "Can't show error after onSaveInstanceState, " + i);
         }
     }
 
     private Face findNewlyEnrolledFace() {
-        if (mPreviouslyEnrolledFaces == null) {
-            Log.w(TAG, "Previously enrolled faces not set!");
+        if (this.mPreviouslyEnrolledFaces == null) {
+            Log.w("FaceEnrollEnrolling", "Previously enrolled faces not set!");
         }
-        java.util.List<Face> enrolledFaces =
-                getSystemService(FaceManager.class).getEnrolledFaces(mUserId);
+        List<Face> enrolledFaces = ((FaceManager) getSystemService(FaceManager.class)).getEnrolledFaces(this.mUserId);
         if (enrolledFaces == null || enrolledFaces.isEmpty()) {
-            Log.e(TAG, "Failed to find newly enrolled face. No faces enrolled.");
+            Log.e("FaceEnrollEnrolling", "Failed to find newly enrolled face. No faces enrolled.");
             return null;
         }
-        Face newlyEnrolledFace = null;
-        for (Face face : enrolledFaces) {
-            if (mPreviouslyEnrolledFaces == null || !mPreviouslyEnrolledFaces.contains(face)) {
-                if (newlyEnrolledFace != null) {
-                    Log.e(TAG, "Found more than one newly enrolled face.");
+        Face face = null;
+        for (Face face2 : enrolledFaces) {
+            List list = this.mPreviouslyEnrolledFaces;
+            if (list == null || !list.contains(face2)) {
+                if (face != null) {
+                    Log.e("FaceEnrollEnrolling", "Found more than one newly enrolled face.");
                     return null;
                 }
-                newlyEnrolledFace = face;
+                face = face2;
             }
         }
-        if (newlyEnrolledFace == null) {
-            Log.e(TAG, "No newly enrolled face found.");
+        if (face == null) {
+            Log.e("FaceEnrollEnrolling", "No newly enrolled face found.");
         }
-        return newlyEnrolledFace;
+        return face;
     }
 }

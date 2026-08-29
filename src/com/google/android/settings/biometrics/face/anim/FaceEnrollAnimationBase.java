@@ -17,18 +17,16 @@ import android.os.Vibrator;
 import android.util.Log;
 import android.util.SparseIntArray;
 import android.widget.ImageView;
-
-import com.android.settings.R;
-
+import com.google.android.settings.R$drawable;
+import com.google.android.settings.R$id;
 import com.google.android.settings.biometrics.face.Debouncer;
 import com.google.android.settings.biometrics.face.FaceEnrollSidecar;
 import com.google.android.settings.biometrics.face.FaceUtils;
 import com.google.android.settings.biometrics.face.Utils;
 
-public abstract class FaceEnrollAnimationBase extends Drawable
-        implements FaceEnrollSidecar.Listener {
-    private static final AudioAttributes SONIFICATION_AUDIO_ATTRIBUTES =
-            new AudioAttributes.Builder().setContentType(4).setUsage(13).build();
+/* JADX INFO: loaded from: classes4.dex */
+public abstract class FaceEnrollAnimationBase extends Drawable implements FaceEnrollSidecar.Listener {
+    private static final AudioAttributes SONIFICATION_AUDIO_ATTRIBUTES = new AudioAttributes.Builder().setContentType(4).setUsage(13).build();
     private boolean mCenterAcquired;
     private final Paint mCircleCutoutPaint;
     private final Context mContext;
@@ -56,124 +54,133 @@ public abstract class FaceEnrollAnimationBase extends Drawable
         void showHelp(CharSequence charSequence);
     }
 
-    protected void bucketAcquiredWhileScrimShowing(int i) {}
+    protected void bucketAcquiredWhileScrimShowing(int i) {
+    }
 
     protected boolean isBucket(int i) {
         return i >= 1101 && i <= 1125;
     }
 
-    public void onSaveInstanceState(Bundle bundle) {}
+    public void onSaveInstanceState(Bundle bundle) {
+    }
 
-    protected void update(long j, long j2) {}
+    protected void update(long j, long j2) {
+    }
 
-    public FaceEnrollAnimationBase(
-            Context context, AnimationListener animationListener, ImageView imageView, boolean z) {
-        mContext = context;
-        mListener = animationListener;
-        mFromSetupWizard = z;
-        mVibrator = (Vibrator) context.getSystemService(Vibrator.class);
-        mSquarePaint = new Paint();
-        mSquarePaint.setColor(-1);
-        mSquarePaint.setAntiAlias(true);
-        mCircleCutoutPaint = new Paint();
-        mCircleCutoutPaint.setColor(0);
-        mCircleCutoutPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-        mCircleCutoutPaint.setAntiAlias(true);
-        mScrimPaint = new Paint();
-        mScrimPaint.setAntiAlias(true);
-        mScrimPaint.setStyle(Paint.Style.FILL);
-        mScrimPaint.setColor(0);
-        mFaceIcon = (ImageView) ((Activity) context).findViewById(R.id.face_smiley);
-        mFaceIcon.setImageDrawable(context.getDrawable(R.drawable.face_smiley));
-        mFaceOutlineIndicatorController = new FaceOutlineIndicatorController(context, imageView);
+    public FaceEnrollAnimationBase(Context context, AnimationListener animationListener, ImageView imageView, boolean z) {
+        this.mContext = context;
+        this.mListener = animationListener;
+        this.mFromSetupWizard = z;
+        this.mVibrator = (Vibrator) context.getSystemService(Vibrator.class);
+        Paint paint = new Paint();
+        this.mSquarePaint = paint;
+        paint.setColor(-1);
+        paint.setAntiAlias(true);
+        Paint paint2 = new Paint();
+        this.mCircleCutoutPaint = paint2;
+        paint2.setColor(0);
+        paint2.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+        paint2.setAntiAlias(true);
+        Paint paint3 = new Paint();
+        this.mScrimPaint = paint3;
+        paint3.setAntiAlias(true);
+        paint3.setStyle(Paint.Style.FILL);
+        paint3.setColor(0);
+        ImageView imageView2 = (ImageView) ((Activity) context).findViewById(R$id.face_smiley);
+        this.mFaceIcon = imageView2;
+        imageView2.setImageDrawable(context.getDrawable(R$drawable.face_smiley));
+        this.mFaceOutlineIndicatorController = new FaceOutlineIndicatorController(context, imageView);
         SparseIntArray sparseIntArray = new SparseIntArray();
         sparseIntArray.append(1, 6);
         sparseIntArray.append(2, 10);
         sparseIntArray.append(3, 10);
-        mDebouncer = new Debouncer(sparseIntArray);
+        this.mDebouncer = new Debouncer(sparseIntArray);
     }
 
     protected void vibrate() {
-        mVibrator.vibrate(mVibrationEffect, SONIFICATION_AUDIO_ATTRIBUTES);
+        this.mVibrator.vibrate(this.mVibrationEffect, SONIFICATION_AUDIO_ATTRIBUTES);
     }
 
     protected AnimationListener getListener() {
-        return mListener;
+        return this.mListener;
     }
 
     protected boolean isCenterAcquired() {
-        return mCenterAcquired;
+        return this.mCenterAcquired;
     }
 
     protected void onUserEnterGood() {
         Log.i("FaceEnroll/AnimationBase", "onUserEnterGood");
         getListener().clearHelp();
-        mFaceOutlineIndicatorController.clear();
+        this.mFaceOutlineIndicatorController.clear();
     }
 
     protected void onUserLeaveGood(CharSequence charSequence) {
         Log.i("FaceEnroll/AnimationBase", "onUserLeaveGood");
         getListener().showHelp(charSequence);
-        mFaceOutlineIndicatorController.show();
+        this.mFaceOutlineIndicatorController.show();
     }
 
     public void onFirstFrameReceived() {
         onUserLeaveGood(null);
-        mFOVState = 2;
+        this.mFOVState = 2;
     }
 
-    @Override
+    @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
-        if (mTimeAnimator == null) {
+        if (this.mTimeAnimator == null) {
             TimeAnimator timeAnimator = new TimeAnimator();
-            mTimeAnimator = timeAnimator;
-            timeAnimator.setTimeListener(
-                    (animation, frameTime, deltaTime) -> {
-                        update(frameTime, deltaTime);
-                        invalidateSelf();
-                    });
-            mTimeAnimator.start();
+            this.mTimeAnimator = timeAnimator;
+            timeAnimator.setTimeListener(new TimeAnimator.TimeListener() { // from class: com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase$$ExternalSyntheticLambda0
+                @Override // android.animation.TimeAnimator.TimeListener
+                public final void onTimeUpdate(TimeAnimator timeAnimator2, long j, long j2) {
+                    this.f$0.lambda$onBoundsChange$0(timeAnimator2, j, j2);
+                }
+            });
+            this.mTimeAnimator.start();
         }
     }
 
-    @Override
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$onBoundsChange$0(TimeAnimator timeAnimator, long j, long j2) {
+        update(j, j2);
+        invalidateSelf();
+    }
+
+    @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         canvas.save();
-        int iDpToPx = (int) Utils.dpToPx(mContext, 30);
-        if (mInverseCutoutBitmap == null) {
-            mInverseCutoutBitmap =
-                    Cutout.createCutoutBitmap(
-                            mContext, getBounds().width() + (iDpToPx * 2), getBounds().width() / 2);
+        int iDpToPx = (int) Utils.dpToPx(this.mContext, 30);
+        if (this.mInverseCutoutBitmap == null) {
+            this.mInverseCutoutBitmap = Cutout.createCutoutBitmap(this.mContext, getBounds().width() + (iDpToPx * 2), getBounds().width() / 2);
         }
         float f = -iDpToPx;
-        canvas.drawBitmap(mInverseCutoutBitmap, f, f, null);
-        canvas.drawCircle(
-                canvas.getWidth() / 2, canvas.getHeight() / 2, canvas.getWidth() / 2, mScrimPaint);
+        canvas.drawBitmap(this.mInverseCutoutBitmap, f, f, (Paint) null);
+        canvas.drawCircle(canvas.getWidth() / 2, canvas.getHeight() / 2, canvas.getWidth() / 2, this.mScrimPaint);
         canvas.restore();
     }
 
     protected boolean outOfFOVScrimShowing() {
-        return mFOVState != 1;
+        return this.mFOVState != 1;
     }
 
-    @Override
+    /* JADX WARN: Code duplicated, block: B:21:0x003d  */
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
     public void onEnrollmentHelp(int i, CharSequence charSequence) {
-        if (mFinishing) {
+        if (this.mFinishing) {
             return;
         }
-        if (isBucket(i) && mFOVState != 1) {
-            mDebouncer.updateBuffer(1);
-            if (!mDebouncer.passesDebounce(1)) {
+        if (isBucket(i) && this.mFOVState != 1) {
+            this.mDebouncer.updateBuffer(1);
+            if (!this.mDebouncer.passesDebounce(1)) {
                 if (!FaceUtils.isOneOfCenterBuckets(i)) {
                     bucketAcquiredWhileScrimShowing(i);
                 }
             } else {
-                mFOVState = 1;
+                this.mFOVState = 1;
                 onUserEnterGood();
             }
-        } else if (i == 11) {
-            handleOutOfFovState(2, charSequence);
-        } else {
+        } else if (i != 11) {
             switch (i) {
                 case 4:
                 case 5:
@@ -198,40 +205,42 @@ public abstract class FaceEnrollAnimationBase extends Drawable
                     }
                     break;
             }
+        } else {
+            handleOutOfFovState(2, charSequence);
         }
-        if (mCenterAcquired || !FaceUtils.isOneOfCenterBuckets(i)) {
+        if (this.mCenterAcquired || !FaceUtils.isOneOfCenterBuckets(i)) {
             return;
         }
-        mCenterAcquired = true;
+        this.mCenterAcquired = true;
     }
 
     private void handleOutOfFovState(int i, CharSequence charSequence) {
-        mDebouncer.updateBuffer(i);
-        if (mFOVState == i || !mDebouncer.passesDebounce(i)) {
+        this.mDebouncer.updateBuffer(i);
+        if (this.mFOVState == i || !this.mDebouncer.passesDebounce(i)) {
             return;
         }
         onUserLeaveGood(charSequence);
-        mFOVState = i;
+        this.mFOVState = i;
     }
 
-    @Override
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
     public void onEnrollmentProgressChange(int i, int i2) {
         if (i2 == 0) {
-            if (mFOVState != 1) {
-                mFOVState = 1;
+            if (this.mFOVState != 1) {
+                this.mFOVState = 1;
                 onUserEnterGood();
             }
-            mListener.onEnrollAnimationStarted();
+            this.mListener.onEnrollAnimationStarted();
             startFinishing();
-            mListener.clearHelp();
+            this.mListener.clearHelp();
         }
     }
 
     protected void startFinishing() {
-        mFinishing = true;
+        this.mFinishing = true;
     }
 
     protected boolean isFinishing() {
-        return mFinishing;
+        return this.mFinishing;
     }
 }

@@ -8,12 +8,12 @@ import android.graphics.RectF;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.ArraySet;
-
 import com.android.internal.graphics.ColorUtils;
-import com.android.settings.R;
-
+import com.google.android.settings.R$array;
+import com.google.android.settings.R$color;
 import com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationMultiAngleDrawable;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class GridController {
     private static final int[] SCRIM_OPACITY_THRESHOLDS = {0, 5, 10, 15, 20};
     private static final float[] SCRIM_OPACITY_VALUES = {0.55f, 0.6f, 0.65f, 0.7f, 0.75f};
@@ -22,122 +22,159 @@ public class GridController {
     private final CellState[] mCellStates;
     private final GridState mGridState;
     private final ScrimState mNoActivityScrimState;
-    private final ArraySet<Integer> mPrimaryCellIndices;
+    private final ArraySet mPrimaryCellIndices;
     private final int mScrimNotEnrolledDefaultColor;
     private final int mScrimNotEnrolledPrimaryColor;
     private final int mScrimNotEnrolledSecondaryColor;
     private final Handler mHandler = new Handler(Looper.getMainLooper());
     private int mEnrolledCount = 0;
 
-    public void onBoundsChange(Rect rect) {}
+    public void onBoundsChange(Rect rect) {
+    }
 
-    public GridController(
-            Context context, FaceEnrollAnimationMultiAngleDrawable.BucketListener bucketListener) {
-        mBucketListener = bucketListener;
-        mScrimNotEnrolledDefaultColor = context.getColor(R.color.face_enroll_cell_not_enrolled);
-        mScrimNotEnrolledPrimaryColor =
-                context.getColor(R.color.face_enroll_cell_not_enrolled_primary);
-        mScrimNotEnrolledSecondaryColor =
-                context.getColor(R.color.face_enroll_cell_not_enrolled_secondary);
-        int[] intArray = context.getResources().getIntArray(R.array.face_enroll_primary_buckets);
-        mPrimaryCellIndices = new ArraySet<>(intArray.length);
+    public GridController(Context context, FaceEnrollAnimationMultiAngleDrawable.BucketListener bucketListener) {
+        this.mBucketListener = bucketListener;
+        this.mScrimNotEnrolledDefaultColor = context.getColor(R$color.face_enroll_cell_not_enrolled);
+        this.mScrimNotEnrolledPrimaryColor = context.getColor(R$color.face_enroll_cell_not_enrolled_primary);
+        this.mScrimNotEnrolledSecondaryColor = context.getColor(R$color.face_enroll_cell_not_enrolled_secondary);
+        int[] intArray = context.getResources().getIntArray(R$array.face_enroll_primary_buckets);
+        this.mPrimaryCellIndices = new ArraySet(intArray.length);
         for (int i : intArray) {
-            mPrimaryCellIndices.add(i);
+            this.mPrimaryCellIndices.add(Integer.valueOf(i));
         }
-        mNoActivityScrimState =
-                new ScrimState(
-                        context.getColor(R.color.face_enroll_no_activity_gone),
-                        context.getColor(R.color.face_enroll_no_activity_showing));
-        mGridState = new GridState(context, mHandler);
-        mCellStates = new CellState[25];
-        for (int i2 = 0; i2 < mCellStates.length; i2++) {
-            mCellStates[i2] =
-                    new CellState(context, i2, mBucketListener, getScrimNotEnrolledColor(0, i2));
+        this.mNoActivityScrimState = new ScrimState(context.getColor(R$color.face_enroll_no_activity_gone), context.getColor(R$color.face_enroll_no_activity_showing));
+        this.mGridState = new GridState(context, this.mHandler);
+        this.mCellStates = new CellState[25];
+        for (int i2 = 0; i2 < this.mCellStates.length; i2++) {
+            this.mCellStates[i2] = new CellState(context, i2, this.mBucketListener, getScrimNotEnrolledColor(0, i2));
         }
     }
 
     public void stopPulseForNoActivity() {
-        for (int i = 0; i < mCellStates.length; i++) {
-            mCellStates[i].stopPulseForNoActivity();
+        int i = 0;
+        while (true) {
+            CellState[] cellStateArr = this.mCellStates;
+            if (i >= cellStateArr.length) {
+                return;
+            }
+            cellStateArr[i].stopPulseForNoActivity();
+            i++;
         }
     }
 
     public void pulseForNoActivity(int i, int i2) {
-        mCellStates[i].pulseForNoActivity(i2);
+        this.mCellStates[i].pulseForNoActivity(i2);
     }
 
     public void onUserLeaveGood() {
-        for (int i = 0; i < mCellStates.length; i++) {
-            mCellStates[i].fadeScrimOut(2);
-            mCellStates[i].fadeCursorNow();
+        int i = 0;
+        while (true) {
+            CellState[] cellStateArr = this.mCellStates;
+            if (i < cellStateArr.length) {
+                cellStateArr[i].fadeScrimOut(2);
+                this.mCellStates[i].fadeCursorNow();
+                i++;
+            } else {
+                this.mGridState.fadeOut(null);
+                return;
+            }
         }
-        mGridState.fadeOut(null);
     }
 
     public void onUserEnterGood() {
-        mGridState.fadeIn();
-        for (int i = 0; i < mCellStates.length; i++) {
-            mCellStates[i].fadeScrimIn();
+        this.mGridState.fadeIn();
+        int i = 0;
+        while (true) {
+            CellState[] cellStateArr = this.mCellStates;
+            if (i >= cellStateArr.length) {
+                return;
+            }
+            cellStateArr[i].fadeScrimIn();
+            i++;
         }
     }
 
     public void onAcquired(int i) {
-        boolean isDone = mCellStates[i].isDone();
-        if (mNoActivityScrimState.isShowing() && !isDone) {
-            mNoActivityScrimState.fadeOut();
+        boolean zIsDone = this.mCellStates[i].isDone();
+        if (this.mNoActivityScrimState.isShowing() && !zIsDone) {
+            this.mNoActivityScrimState.fadeOut();
         }
-        mCellStates[i].onAcquired();
-        if (isDone) {
+        this.mCellStates[i].onAcquired();
+        if (zIsDone) {
             return;
         }
-        mEnrolledCount++;
+        this.mEnrolledCount++;
         updateColor(true);
     }
 
     public void restoreState(int i, boolean z) {
         if (z) {
-            mCellStates[i].setEarlyDone();
-            mEnrolledCount++;
+            this.mCellStates[i].setEarlyDone();
+            this.mEnrolledCount++;
         }
     }
 
     private void updateColor(boolean z) {
-        for (int i = 0; i < mCellStates.length; i++) {
-            CellState cellState = mCellStates[i];
-            if (!cellState.isDone()) {
-                cellState.updateScrimNotEnrolledColor(
-                        getScrimNotEnrolledColor(mEnrolledCount, i), z);
+        int i = 0;
+        while (true) {
+            CellState[] cellStateArr = this.mCellStates;
+            if (i >= cellStateArr.length) {
+                return;
             }
+            CellState cellState = cellStateArr[i];
+            if (!cellState.isDone()) {
+                cellState.updateScrimNotEnrolledColor(getScrimNotEnrolledColor(this.mEnrolledCount, i), z);
+            }
+            i++;
         }
     }
 
     public void setEarlyDone(int i) {
-        if (mCellStates[i].isDone()) {
+        if (this.mCellStates[i].isDone()) {
             return;
         }
-        mCellStates[i].setEarlyDone();
-        mEnrolledCount++;
+        this.mCellStates[i].setEarlyDone();
+        this.mEnrolledCount++;
         updateColor(false);
     }
 
     public void draw(Canvas canvas) {
         canvas.save();
-        if (mCellConfigs == null) {
+        int i = 0;
+        if (this.mCellConfigs == null) {
             initializeCells(canvas.getWidth(), canvas.getHeight());
-            for (int i2 = 0; i2 < mCellStates.length; i2++) {
-                mCellStates[i2].updateConfig(mCellConfigs[i2]);
+            int i2 = 0;
+            while (true) {
+                CellState[] cellStateArr = this.mCellStates;
+                if (i2 >= cellStateArr.length) {
+                    break;
+                }
+                cellStateArr[i2].updateConfig(this.mCellConfigs[i2]);
+                i2++;
             }
         }
         canvas.translate(canvas.getWidth() / 2, canvas.getHeight() / 2);
-        mNoActivityScrimState.draw(canvas);
-        for (int i3 = 0; i3 < mCellStates.length; i3++) {
-            mCellStates[i3].draw(canvas);
+        this.mNoActivityScrimState.draw(canvas);
+        int i3 = 0;
+        while (true) {
+            CellState[] cellStateArr2 = this.mCellStates;
+            if (i3 >= cellStateArr2.length) {
+                break;
+            }
+            cellStateArr2[i3].draw(canvas);
+            i3++;
         }
-        mGridState.draw(canvas);
-        for (int i = 0; i < mCellStates.length; i++) {
-            mCellStates[i].drawCursor(canvas);
+        this.mGridState.draw(canvas);
+        while (true) {
+            CellState[] cellStateArr3 = this.mCellStates;
+            if (i < cellStateArr3.length) {
+                cellStateArr3[i].drawCursor(canvas);
+                i++;
+            } else {
+                canvas.restore();
+                return;
+            }
         }
-        canvas.restore();
     }
 
     private void initializeCells(int i, int i2) {
@@ -156,22 +193,8 @@ public class GridController {
         RectF rectF3 = new RectF(f9, f4, f10, f6);
         RectF rectF4 = new RectF(f7, f9, f8, f10);
         RectF rectF5 = new RectF(f7, f4, f8, f6);
-        float[][] fArr = {
-            {72.26f, 165.41f, 252.3f, 342.3f},
-            {78.0f, 131.2f, 107.5f, 17.8f},
-            {52.0f, 48.8f, 72.0f, 12.0f},
-            {50.0f, 102.05f},
-            {0.0f, 38.0f, 40.0f},
-            {0.0f, 90.0f, 52.0f}
-        };
-        float[][] fArr2 = {
-            {35.45f, 30.07f, 35.0f, 35.4f},
-            {24.0f, 31.0f, -35.0f, 31.6f},
-            {26.0f, -31.0f, -31.0f, 26.0f},
-            {81.0f, -23.85f},
-            {52.0f, -26.0f, -40.0f},
-            {90.0f, -52.0f, -52.0f}
-        };
+        float[][] fArr = {new float[]{72.26f, 165.41f, 252.3f, 342.3f}, new float[]{78.0f, 131.2f, 107.5f, 17.8f}, new float[]{52.0f, 48.8f, 72.0f, 12.0f}, new float[]{50.0f, 102.05f}, new float[]{0.0f, 38.0f, 40.0f}, new float[]{0.0f, 90.0f, 52.0f}};
+        float[][] fArr2 = {new float[]{35.45f, 30.07f, 35.0f, 35.4f}, new float[]{24.0f, 31.0f, -35.0f, 31.6f}, new float[]{26.0f, -31.0f, -31.0f, 26.0f}, new float[]{81.0f, -23.85f}, new float[]{52.0f, -26.0f, -40.0f}, new float[]{90.0f, -52.0f, -52.0f}};
         Path path = new Path();
         path.arcTo(rectF2, fArr[0][0], fArr2[0][0]);
         path.arcTo(rectF, fArr[0][1], fArr2[0][1]);
@@ -198,53 +221,25 @@ public class GridController {
         path6.arcTo(rectF5, fArr[5][0], fArr2[5][0]);
         path6.arcTo(rectF3, fArr[5][1], fArr2[5][1]);
         path6.arcTo(rectF4, fArr[5][2], fArr2[5][2]);
-        mCellConfigs =
-                new CellConfig[] {
-                    new CellConfig(path6, 180),
-                    new CellConfig(path5, 90, true),
-                    new CellConfig(path4, 180),
-                    new CellConfig(path5, 270),
-                    new CellConfig(path6, 270),
-                    new CellConfig(path5, 180),
-                    new CellConfig(path3, 180),
-                    new CellConfig(path2, 180),
-                    new CellConfig(path3, 270),
-                    new CellConfig(path5, 0, true),
-                    new CellConfig(path4, 90),
-                    new CellConfig(path2, 90),
-                    new CellConfig(path, 0),
-                    new CellConfig(path2, 270),
-                    new CellConfig(path4, 270),
-                    new CellConfig(path5, 180, true),
-                    new CellConfig(path3, 90),
-                    new CellConfig(path2, 0),
-                    new CellConfig(path3, 0),
-                    new CellConfig(path5, 0),
-                    new CellConfig(path6, 90),
-                    new CellConfig(path5, 90),
-                    new CellConfig(path4, 0),
-                    new CellConfig(path5, 270, true),
-                    new CellConfig(path6, 0)
-                };
+        this.mCellConfigs = new CellConfig[]{new CellConfig(path6, 180), new CellConfig(path5, 90, true), new CellConfig(path4, 180), new CellConfig(path5, 270), new CellConfig(path6, 270), new CellConfig(path5, 180), new CellConfig(path3, 180), new CellConfig(path2, 180), new CellConfig(path3, 270), new CellConfig(path5, 0, true), new CellConfig(path4, 90), new CellConfig(path2, 90), new CellConfig(path, 0), new CellConfig(path2, 270), new CellConfig(path4, 270), new CellConfig(path5, 180, true), new CellConfig(path3, 90), new CellConfig(path2, 0), new CellConfig(path3, 0), new CellConfig(path5, 0), new CellConfig(path6, 90), new CellConfig(path5, 90), new CellConfig(path4, 0), new CellConfig(path5, 270, true), new CellConfig(path6, 0)};
     }
 
     private int getScrimNotEnrolledColor(int i, int i2) {
-        if (mPrimaryCellIndices.isEmpty()) {
+        if (this.mPrimaryCellIndices.isEmpty()) {
             return getScrimNotEnrolledColorWithoutPrimaryCells(i);
         }
         return getScrimNotEnrolledColorWithPrimaryCells(i2);
     }
 
     private int getScrimNotEnrolledColorWithoutPrimaryCells(int i) {
-        return ColorUtils.setAlphaComponent(
-                mScrimNotEnrolledDefaultColor, Math.round(getScrimNotEnrolledOpacity(i) * 255.0f));
+        return ColorUtils.setAlphaComponent(this.mScrimNotEnrolledDefaultColor, Math.round(getScrimNotEnrolledOpacity(i) * 255.0f));
     }
 
     private int getScrimNotEnrolledColorWithPrimaryCells(int i) {
-        if (mPrimaryCellIndices.contains(i)) {
-            return mScrimNotEnrolledPrimaryColor;
+        if (this.mPrimaryCellIndices.contains(Integer.valueOf(i))) {
+            return this.mScrimNotEnrolledPrimaryColor;
         }
-        return mScrimNotEnrolledSecondaryColor;
+        return this.mScrimNotEnrolledSecondaryColor;
     }
 
     private static float getScrimNotEnrolledOpacity(int i) {

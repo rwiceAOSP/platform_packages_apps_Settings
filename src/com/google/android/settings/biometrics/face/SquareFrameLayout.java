@@ -5,6 +5,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class SquareFrameLayout extends FrameLayout {
     private int mOuterRegionChild;
     private int mPaddingDp;
@@ -17,32 +18,31 @@ public class SquareFrameLayout extends FrameLayout {
         super(context, attributeSet);
     }
 
-    public SquareFrameLayout(Context context, AttributeSet attributeSet, int defStyleAttr) {
-        super(context, attributeSet, defStyleAttr);
+    public SquareFrameLayout(Context context, AttributeSet attributeSet, int i) {
+        super(context, attributeSet, i);
     }
 
-    public SquareFrameLayout(
-            Context context, AttributeSet attributeSet, int defStyleAttr, int defStyleRes) {
-        super(context, attributeSet, defStyleAttr, defStyleRes);
+    public SquareFrameLayout(Context context, AttributeSet attributeSet, int i, int i2) {
+        super(context, attributeSet, i, i2);
     }
 
-    public void setOuterRegion(int outerRegionChild, int paddingDp) {
-        mOuterRegionChild = outerRegionChild;
-        mPaddingDp = paddingDp;
+    public void setOuterRegion(int i, int i2) {
+        this.mOuterRegionChild = i;
+        this.mPaddingDp = i2;
     }
 
-    @Override
-    public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int size = View.MeasureSpec.getSize(widthMeasureSpec);
+    @Override // android.widget.FrameLayout, android.view.View
+    public void onMeasure(int i, int i2) {
+        int size = View.MeasureSpec.getSize(i);
         setMeasuredDimension(size, size);
-        int padding = (int) Utils.dpToPx(getContext(), mPaddingDp);
+        int iDpToPx = (int) Utils.dpToPx(getContext(), this.mPaddingDp);
         int childCount = getChildCount();
-        for (int i = 0; i < childCount; i++) {
-            int measureSpec = View.MeasureSpec.makeMeasureSpec(size, View.MeasureSpec.EXACTLY);
-            View childAt = getChildAt(i);
-            childAt.measure(measureSpec, measureSpec);
-            if (childAt.getId() != mOuterRegionChild) {
-                childAt.setPadding(padding, padding, padding, padding);
+        for (int i3 = 0; i3 < childCount; i3++) {
+            int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(size, 1073741824);
+            View childAt = getChildAt(i3);
+            childAt.measure(iMakeMeasureSpec, iMakeMeasureSpec);
+            if (childAt.getId() != this.mOuterRegionChild) {
+                childAt.setPadding(iDpToPx, iDpToPx, iDpToPx, iDpToPx);
             }
         }
     }

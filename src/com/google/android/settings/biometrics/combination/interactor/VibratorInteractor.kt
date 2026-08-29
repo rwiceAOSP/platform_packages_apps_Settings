@@ -5,11 +5,9 @@ import kotlinx.coroutines.flow.Flow
 
 interface VibratorInteractor {
     operator fun invoke(): Flow<Boolean>
-    fun isVibratorEnabled(): Boolean
 }
 
 class VibratorInteractorImpl(private val vibratorRepository: VibratorRepository) :
     VibratorInteractor {
     override fun invoke(): Flow<Boolean> = vibratorRepository.getVibratorStatus()
-    override fun isVibratorEnabled(): Boolean = vibratorRepository.isVibratorEnabled()
 }

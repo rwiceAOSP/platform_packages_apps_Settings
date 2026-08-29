@@ -8,9 +8,9 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Handler;
+import com.google.android.settings.R$color;
 
-import com.android.settings.R;
-
+/* JADX INFO: loaded from: classes4.dex */
 public class GridState {
     private ValueAnimator mAnimator;
     private ValueAnimator.AnimatorUpdateListener mAnimatorUpdateListener;
@@ -19,76 +19,86 @@ public class GridState {
     private int mState;
 
     public GridState(Context context, Handler handler) {
-        mHandler = handler;
-        mEdgePaint = new Paint();
-        mEdgePaint.setColor(context.getColor(R.color.face_enroll_grid));
-        mEdgePaint.setAntiAlias(true);
-        mEdgePaint.setStyle(Paint.Style.STROKE);
-        mEdgePaint.setStrokeWidth(3.0f);
-        mEdgePaint.setAlpha(0);
-        mState = 0;
-        mAnimatorUpdateListener =
-                valueAnimator -> mEdgePaint.setAlpha((Integer) valueAnimator.getAnimatedValue());
+        this.mHandler = handler;
+        Paint paint = new Paint();
+        this.mEdgePaint = paint;
+        paint.setColor(context.getColor(R$color.face_enroll_grid));
+        paint.setAntiAlias(true);
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(3.0f);
+        paint.setAlpha(0);
+        this.mState = 0;
+        this.mAnimatorUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.curve.GridState$$ExternalSyntheticLambda0
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$0(valueAnimator);
+            }
+        };
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$0(ValueAnimator valueAnimator) {
+        this.mEdgePaint.setAlpha(((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
     public void fadeIn() {
-        if (mState == 1) {
+        if (this.mState == 1) {
             return;
         }
-        mState = 2;
-        mAnimator = ValueAnimator.ofInt(mEdgePaint.getAlpha(), 64);
-        mAnimator.removeAllUpdateListeners();
-        mAnimator.addUpdateListener(mAnimatorUpdateListener);
-        mAnimator.removeAllListeners();
-        mAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        super.onAnimationEnd(animator);
-                        GridState.this.mState = 1;
-                    }
-                });
-        mAnimator.start();
+        this.mState = 2;
+        ValueAnimator valueAnimatorOfInt = ValueAnimator.ofInt(this.mEdgePaint.getAlpha(), 64);
+        this.mAnimator = valueAnimatorOfInt;
+        valueAnimatorOfInt.removeAllUpdateListeners();
+        this.mAnimator.addUpdateListener(this.mAnimatorUpdateListener);
+        this.mAnimator.removeAllListeners();
+        this.mAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.curve.GridState.1
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                super.onAnimationEnd(animator);
+                GridState.this.mState = 1;
+            }
+        });
+        this.mAnimator.start();
     }
 
     public void fadeOut(final Runnable runnable) {
-        if (mState == 0) {
-            mHandler.post(runnable);
+        if (this.mState == 0) {
+            this.mHandler.post(runnable);
             return;
         }
-        mState = 2;
-        mAnimator = ValueAnimator.ofInt(mEdgePaint.getAlpha(), 0);
-        mAnimator.addUpdateListener(mAnimatorUpdateListener);
-        mAnimator.removeAllListeners();
-        mAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        super.onAnimationEnd(animator);
-                        GridState.this.mState = 0;
-                        GridState.this.mHandler.post(runnable);
-                    }
-                });
-        mAnimator.start();
+        this.mState = 2;
+        ValueAnimator valueAnimatorOfInt = ValueAnimator.ofInt(this.mEdgePaint.getAlpha(), 0);
+        this.mAnimator = valueAnimatorOfInt;
+        valueAnimatorOfInt.addUpdateListener(this.mAnimatorUpdateListener);
+        this.mAnimator.removeAllListeners();
+        this.mAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.curve.GridState.2
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                super.onAnimationEnd(animator);
+                GridState.this.mState = 0;
+                GridState.this.mHandler.post(runnable);
+            }
+        });
+        this.mAnimator.start();
     }
 
     public void draw(Canvas canvas) {
         int width = canvas.getWidth() / 2;
         int height = canvas.getHeight() / 2;
         float f = width;
-        canvas.drawCircle(0.0f, 0.0f, f - (mEdgePaint.getStrokeWidth() / 2.0f), mEdgePaint);
+        canvas.drawCircle(0.0f, 0.0f, f - (this.mEdgePaint.getStrokeWidth() / 2.0f), this.mEdgePaint);
         float width2 = canvas.getWidth() * 0.32f;
         float width3 = canvas.getWidth() * 0.78f;
         float f2 = (-width2) / 2.0f;
         float f3 = -height;
         float f4 = width2 / 2.0f;
         float f5 = height;
-        canvas.drawArc(new RectF(f2, f3, f4, f5), 0.0f, 360.0f, false, mEdgePaint);
+        canvas.drawArc(new RectF(f2, f3, f4, f5), 0.0f, 360.0f, false, this.mEdgePaint);
         float f6 = -width;
-        canvas.drawArc(new RectF(f6, f2, f, f4), 0.0f, 360.0f, false, mEdgePaint);
+        canvas.drawArc(new RectF(f6, f2, f, f4), 0.0f, 360.0f, false, this.mEdgePaint);
         float f7 = (-width3) / 2.0f;
         float f8 = width3 / 2.0f;
-        canvas.drawArc(new RectF(f7, f3, f8, f5), 0.0f, 360.0f, false, mEdgePaint);
-        canvas.drawArc(new RectF(f6, f7, f, f8), 0.0f, 360.0f, false, mEdgePaint);
+        canvas.drawArc(new RectF(f7, f3, f8, f5), 0.0f, 360.0f, false, this.mEdgePaint);
+        canvas.drawArc(new RectF(f6, f7, f, f8), 0.0f, 360.0f, false, this.mEdgePaint);
     }
 }

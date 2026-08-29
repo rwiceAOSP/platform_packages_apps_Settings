@@ -6,16 +6,15 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.accessibility.AccessibilityManager;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class UdfpsEnrollHelper {
-    private static final String TAG = "UdfpsEnrollHelper";
     private final boolean mAccessibilityEnabled;
     private final FingerprintManager mFingerprintManager;
-    private final List<PointF> mGuidedEnrollmentPoints;
+    private final List mGuidedEnrollmentPoints;
     Listener mListener;
     private int mTotalSteps = -1;
     private int mRemainingSteps = -1;
@@ -24,160 +23,152 @@ public class UdfpsEnrollHelper {
     private int mPace = 1;
 
     interface Listener {
-        void onAcquired(boolean success);
+        void onAcquired(boolean z);
 
-        void onEnrollmentHelp(int remaining, int total);
+        void onEnrollmentHelp(int i, int i2);
 
-        void onEnrollmentProgress(int remaining, int total);
+        void onEnrollmentProgress(int i, int i2);
 
-        void onPointerDown(int pointerId);
+        void onPointerDown(int i);
 
-        void onPointerUp(int pointerId);
+        void onPointerUp(int i);
     }
 
     public UdfpsEnrollHelper(Context context) {
-        mFingerprintManager =
-                Objects.requireNonNull(
-                        (FingerprintManager) context.getSystemService(FingerprintManager.class));
-        AccessibilityManager accessibilityManager =
-                Objects.requireNonNull(
-                        (AccessibilityManager)
-                                context.getSystemService(AccessibilityManager.class));
-        mAccessibilityEnabled = accessibilityManager.isEnabled();
-        mGuidedEnrollmentPoints = new ArrayList<>();
-        float dim =
-                TypedValue.applyDimension(
-                        TypedValue.COMPLEX_UNIT_DIP,
-                        1.0f,
-                        context.getResources().getDisplayMetrics());
-        Log.v(TAG, "Using old coordinates");
-        mGuidedEnrollmentPoints.add(new PointF(2.0f * dim, 0.0f * dim));
-        mGuidedEnrollmentPoints.add(new PointF(0.87f * dim, (-2.7f) * dim));
-        float x18 = (-1.8f) * dim;
-        mGuidedEnrollmentPoints.add(new PointF(x18, (-1.31f) * dim));
-        mGuidedEnrollmentPoints.add(new PointF(x18, 1.31f * dim));
-        mGuidedEnrollmentPoints.add(new PointF(0.88f * dim, 2.7f * dim));
-        mGuidedEnrollmentPoints.add(new PointF(3.94f * dim, (-1.06f) * dim));
-        mGuidedEnrollmentPoints.add(new PointF(2.9f * dim, (-4.14f) * dim));
-        mGuidedEnrollmentPoints.add(new PointF((-0.52f) * dim, (-5.95f) * dim));
-        float x333 = (-3.33f) * dim;
-        mGuidedEnrollmentPoints.add(new PointF(x333, x333));
-        mGuidedEnrollmentPoints.add(new PointF((-3.99f) * dim, (-0.35f) * dim));
-        mGuidedEnrollmentPoints.add(new PointF((-3.62f) * dim, 2.54f * dim));
-        mGuidedEnrollmentPoints.add(new PointF((-1.49f) * dim, 5.57f * dim));
-        mGuidedEnrollmentPoints.add(new PointF(2.29f * dim, 4.92f * dim));
-        mGuidedEnrollmentPoints.add(new PointF(3.82f * dim, dim * 1.78f));
+        FingerprintManager fingerprintManager = (FingerprintManager) context.getSystemService(FingerprintManager.class);
+        Objects.requireNonNull(fingerprintManager);
+        this.mFingerprintManager = fingerprintManager;
+        AccessibilityManager accessibilityManager = (AccessibilityManager) context.getSystemService(AccessibilityManager.class);
+        Objects.requireNonNull(accessibilityManager);
+        this.mAccessibilityEnabled = accessibilityManager.isEnabled();
+        ArrayList arrayList = new ArrayList();
+        this.mGuidedEnrollmentPoints = arrayList;
+        float fApplyDimension = TypedValue.applyDimension(5, 1.0f, context.getResources().getDisplayMetrics());
+        Log.v("UdfpsEnrollHelper", "Using old coordinates");
+        arrayList.add(new PointF(2.0f * fApplyDimension, 0.0f * fApplyDimension));
+        arrayList.add(new PointF(0.87f * fApplyDimension, (-2.7f) * fApplyDimension));
+        float f = (-1.8f) * fApplyDimension;
+        arrayList.add(new PointF(f, (-1.31f) * fApplyDimension));
+        arrayList.add(new PointF(f, 1.31f * fApplyDimension));
+        arrayList.add(new PointF(0.88f * fApplyDimension, 2.7f * fApplyDimension));
+        arrayList.add(new PointF(3.94f * fApplyDimension, (-1.06f) * fApplyDimension));
+        arrayList.add(new PointF(2.9f * fApplyDimension, (-4.14f) * fApplyDimension));
+        arrayList.add(new PointF((-0.52f) * fApplyDimension, (-5.95f) * fApplyDimension));
+        float f2 = (-3.33f) * fApplyDimension;
+        arrayList.add(new PointF(f2, f2));
+        arrayList.add(new PointF((-3.99f) * fApplyDimension, (-0.35f) * fApplyDimension));
+        arrayList.add(new PointF((-3.62f) * fApplyDimension, 2.54f * fApplyDimension));
+        arrayList.add(new PointF((-1.49f) * fApplyDimension, 5.57f * fApplyDimension));
+        arrayList.add(new PointF(2.29f * fApplyDimension, 4.92f * fApplyDimension));
+        arrayList.add(new PointF(3.82f * fApplyDimension, fApplyDimension * 1.78f));
     }
 
-    public void onEnrollmentProgress(int total, int remaining) {
-        if (mTotalSteps == -1) {
-            mTotalSteps = total;
+    public void onEnrollmentProgress(int i, int i2) {
+        int i3;
+        if (this.mTotalSteps == -1) {
+            this.mTotalSteps = i;
         }
-        if (remaining != mRemainingSteps) {
-            mLocationsEnrolled++;
+        if (i2 != this.mRemainingSteps) {
+            this.mLocationsEnrolled++;
             if (isCenterEnrollmentStage()) {
-                mCenterTouchCount++;
+                this.mCenterTouchCount++;
             }
         }
-        if (mRemainingSteps > remaining) {
-            mPace = mRemainingSteps - remaining;
+        int i4 = this.mRemainingSteps;
+        if (i4 > i2) {
+            this.mPace = i4 - i2;
         }
-        mRemainingSteps = remaining;
-        Listener listener = mListener;
-        if (listener == null || mTotalSteps == -1) {
+        this.mRemainingSteps = i2;
+        Listener listener = this.mListener;
+        if (listener == null || (i3 = this.mTotalSteps) == -1) {
             return;
         }
-        listener.onEnrollmentProgress(remaining, mTotalSteps);
+        listener.onEnrollmentProgress(i2, i3);
     }
 
     public void onEnrollmentHelp() {
-        Listener listener = mListener;
+        Listener listener = this.mListener;
         if (listener != null) {
-            listener.onEnrollmentHelp(mRemainingSteps, mTotalSteps);
+            listener.onEnrollmentHelp(this.mRemainingSteps, this.mTotalSteps);
         }
     }
 
-    public void onAcquired(boolean success) {
-        Listener listener = mListener;
+    public void onAcquired(boolean z) {
+        Listener listener = this.mListener;
         if (listener != null) {
-            listener.onAcquired(success && animateIfLastStep());
+            listener.onAcquired(z && animateIfLastStep());
         }
     }
 
-    public void onPointerDown(int pointerId) {
-        Listener listener = mListener;
+    public void onPointerDown(int i) {
+        Listener listener = this.mListener;
         if (listener != null) {
-            listener.onPointerDown(pointerId);
+            listener.onPointerDown(i);
         }
     }
 
-    public void onPointerUp(int pointerId) {
-        Listener listener = mListener;
+    public void onPointerUp(int i) {
+        Listener listener = this.mListener;
         if (listener != null) {
-            listener.onPointerUp(pointerId);
+            listener.onPointerUp(i);
         }
     }
 
     void setListener(Listener listener) {
-        mListener = listener;
-        if (listener == null || mTotalSteps == -1) {
+        int i;
+        this.mListener = listener;
+        if (listener == null || (i = this.mTotalSteps) == -1) {
             return;
         }
-        listener.onEnrollmentProgress(mRemainingSteps, mTotalSteps);
+        listener.onEnrollmentProgress(this.mRemainingSteps, i);
     }
 
     boolean isCenterEnrollmentStage() {
-        int totalSteps = mTotalSteps;
-        return totalSteps == -1
-                || mRemainingSteps == -1
-                || totalSteps - mRemainingSteps < getStageThresholdSteps(totalSteps, 0);
+        int i;
+        int i2 = this.mTotalSteps;
+        return i2 == -1 || (i = this.mRemainingSteps) == -1 || i2 - i < getStageThresholdSteps(i2, 0);
     }
 
     boolean isTipEnrollmentStage() {
-        int totalSteps = mTotalSteps;
-        if (totalSteps == -1 || mRemainingSteps == -1) {
-            return false;
-        }
-        int stepsCompleted = totalSteps - mRemainingSteps;
-        return stepsCompleted >= getStageThresholdSteps(totalSteps, 1)
-                && stepsCompleted < getStageThresholdSteps(mTotalSteps, 2);
+        int i;
+        int i2;
+        int i3 = this.mTotalSteps;
+        return i3 != -1 && (i = this.mRemainingSteps) != -1 && (i2 = i3 - i) >= getStageThresholdSteps(i3, 1) && i2 < getStageThresholdSteps(this.mTotalSteps, 2);
     }
 
     boolean isEdgeEnrollmentStage() {
-        int totalSteps = mTotalSteps;
-        return totalSteps != -1
-                && mRemainingSteps != -1
-                && totalSteps - mRemainingSteps >= getStageThresholdSteps(totalSteps, 2);
+        int i;
+        int i2 = this.mTotalSteps;
+        return (i2 == -1 || (i = this.mRemainingSteps) == -1 || i2 - i < getStageThresholdSteps(i2, 2)) ? false : true;
     }
 
     PointF getNextGuidedEnrollmentPoint() {
-        if (mAccessibilityEnabled || !isGuidedEnrollmentStage()) {
+        if (this.mAccessibilityEnabled || !isGuidedEnrollmentStage()) {
             return new PointF(0.0f, 0.0f);
         }
-        int index = mLocationsEnrolled - mCenterTouchCount;
-        PointF point = mGuidedEnrollmentPoints.get(index % mGuidedEnrollmentPoints.size());
-        return new PointF(point.x * 0.5f, point.y * 0.5f);
+        int i = this.mLocationsEnrolled - this.mCenterTouchCount;
+        List list = this.mGuidedEnrollmentPoints;
+        PointF pointF = (PointF) list.get(i % list.size());
+        return new PointF(pointF.x * 0.5f, pointF.y * 0.5f);
     }
 
     boolean animateIfLastStep() {
-        if (mListener == null) {
-            Log.e(TAG, "animateIfLastStep, null listener");
+        if (this.mListener == null) {
+            Log.e("UdfpsEnrollHelper", "animateIfLastStep, null listener");
             return false;
         }
-        return mRemainingSteps <= mPace && mRemainingSteps >= 0;
+        int i = this.mRemainingSteps;
+        return i <= this.mPace && i >= 0;
     }
 
-    private int getStageThresholdSteps(int totalSteps, int stage) {
-        return Math.round(totalSteps * mFingerprintManager.getEnrollStageThreshold(stage));
+    private int getStageThresholdSteps(int i, int i2) {
+        return Math.round(i * this.mFingerprintManager.getEnrollStageThreshold(i2));
     }
 
     private boolean isGuidedEnrollmentStage() {
-        int totalSteps = mTotalSteps;
-        if (mAccessibilityEnabled || totalSteps == -1 || mRemainingSteps == -1) {
-            return false;
-        }
-        int stepsCompleted = totalSteps - mRemainingSteps;
-        return stepsCompleted >= getStageThresholdSteps(totalSteps, 0)
-                && stepsCompleted < getStageThresholdSteps(mTotalSteps, 1);
+        int i;
+        int i2;
+        int i3;
+        return (this.mAccessibilityEnabled || (i = this.mTotalSteps) == -1 || (i2 = this.mRemainingSteps) == -1 || (i3 = i - i2) < getStageThresholdSteps(i, 0) || i3 >= getStageThresholdSteps(this.mTotalSteps, 1)) ? false : true;
     }
 }

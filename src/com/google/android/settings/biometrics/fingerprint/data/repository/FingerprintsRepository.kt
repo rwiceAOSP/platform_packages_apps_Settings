@@ -4,7 +4,6 @@ import android.hardware.fingerprint.FingerprintManager
 import android.hardware.fingerprint.FingerprintSensorPropertiesInternal
 import com.google.android.settings.biometrics.fingerprint.data.datasource.FingerprintManagerDataSource
 import com.google.android.settings.biometrics.fingerprint.data.datasource.ResourcesDataSource
-import com.google.android.settings.biometrics.fingerprint.model.FingerprintRemoval
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.flowOf
@@ -26,7 +25,7 @@ interface FingerprintsRepository {
 
     fun getNumOfEnrolledFingerprints(userId: Int): Int
 
-    fun removeAll(userId: Int): Flow<FingerprintRemoval>
+    fun removeAll(userId: Int): Flow<Int>
 
     fun revokeChallenge(userId: Int, challenge: Long)
 }
@@ -62,7 +61,7 @@ private constructor(
     override fun generateChallenge2(userId: Int): Flow<Long> =
         fingerprintManagerDataSource.generateChallenge2(userId)
 
-    override fun removeAll(userId: Int): Flow<FingerprintRemoval> =
+    override fun removeAll(userId: Int): Flow<Int> =
         fingerprintManagerDataSource.removeAll(userId)
 
     override fun revokeChallenge(userId: Int, challenge: Long) {
@@ -75,15 +74,14 @@ private constructor(
     companion object {
         @Volatile private var instance: FingerprintsRepository? = null
 
+        @Synchronized
         @JvmStatic
         fun getInstance(
             fingerprintManagerDataSource: FingerprintManagerDataSource,
             resourcesDataSource: ResourcesDataSource,
         ): FingerprintsRepository {
             return instance
-                ?: synchronized(this) {
-                    instance
-                        ?: FingerprintsRepositoryImpl(
+                ?: FingerprintsRepositoryImpl(
                                 fingerprintManagerDataSource,
                                 resourcesDataSource,
                             )
@@ -91,4 +89,3 @@ private constructor(
                 }
         }
     }
-}

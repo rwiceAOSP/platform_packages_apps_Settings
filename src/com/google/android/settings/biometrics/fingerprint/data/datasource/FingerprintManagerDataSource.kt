@@ -51,7 +51,7 @@ private constructor(
                             sensorProperties: List<FingerprintSensorPropertiesInternal>
                         ) {
                             if (sensorProperties.isEmpty()) {
-                                Log.e(TAG, "onAllAuthenticatorsRegistered, empty list")
+                                Log.e("FpManagerDataSource", "empty sensors from onAllAuthenticatorsRegistered")
                                 return
                             }
                             trySend(sensorProperties[0])
@@ -89,6 +89,10 @@ private constructor(
         awaitClose {}
     }
 
+    override fun revokeChallenge(userId: Int, challenge: Long) {
+        fingerprintManager.revokeChallenge(userId, challenge)
+    }
+
     override fun removeAll(userId: Int): Flow<FingerprintRemoval> = callbackFlow {
         val removalCallback =
             object : FingerprintManager.RemovalCallback() {
@@ -112,16 +116,10 @@ private constructor(
         awaitClose {}
     }
 
-    override fun revokeChallenge(userId: Int, challenge: Long) {
-        fingerprintManager.revokeChallenge(userId, challenge)
-    }
-
     override fun getEnrollStageThreshold(stage: Int): Float =
         fingerprintManager.getEnrollStageThreshold(stage)
 
     companion object {
-        private const val TAG = "FpManagerDataSource"
-
         @Volatile private var instance: FingerprintManagerDataSource? = null
 
         @Synchronized

@@ -12,11 +12,10 @@ import android.os.Message;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.animation.AccelerateDecelerateInterpolator;
-
-import com.android.settings.R;
-
+import com.google.android.settings.R$color;
 import com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationMultiAngleDrawable;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class CellState {
     private final boolean mAlternateCursor;
     private final FaceEnrollAnimationMultiAngleDrawable.BucketListener mBucketListener;
@@ -29,16 +28,15 @@ public class CellState {
     private int mCursorState;
     private final boolean mDisableCursor;
     private boolean mDone;
-    private final Handler mHandler =
-            new Handler(Looper.getMainLooper()) {
-                @Override
-                public void handleMessage(Message message) {
-                    if (message.what != 1) {
-                        return;
-                    }
-                    CellState.this.handleFadeCursor();
-                }
-            };
+    private final Handler mHandler = new Handler(Looper.getMainLooper()) { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState.1
+        @Override // android.os.Handler
+        public void handleMessage(Message message) {
+            if (message.what != 1) {
+                return;
+            }
+            CellState.this.handleFadeCursor();
+        }
+    };
     private final int mIndex;
     private ValueAnimator mNoActivityAnimator;
     private ValueAnimator.AnimatorUpdateListener mNoActivityAnimatorListener;
@@ -53,146 +51,165 @@ public class CellState {
     private int mScrimColorNotEnrolled;
     private Paint mScrimPaint;
 
-    public CellState(
-            Context context,
-            int i,
-            FaceEnrollAnimationMultiAngleDrawable.BucketListener bucketListener,
-            int i2) {
-        mIndex = i;
-        mBucketListener = bucketListener;
-        mScrimColorNotEnrolled = i2;
-        mScrimColorEnrolled = context.getColor(R.color.face_enroll_cell_enrolled);
-        mCursorColorAcquired = context.getColor(R.color.face_enroll_cursor_acquired);
-        mCursorColorGone = context.getColor(R.color.face_enroll_cursor_gone);
-        mScrimColorNoActivityStart = context.getColor(R.color.face_enroll_cell_no_activity_start);
-        mScrimColorNoActivityEnd = context.getColor(R.color.face_enroll_cell_no_activity_end);
-        mScrimAnimationState = 0;
-        mCursorState = 0;
-        mScrimPaint = new Paint();
-        mScrimPaint.setAntiAlias(true);
-        mScrimPaint.setAlpha(0);
-        boolean z =
-                Settings.Secure.getInt(
-                                context.getContentResolver(),
-                                "com.google.android.settings.future.biometrics.face.anim.curve.alternate_cursor",
-                                0)
-                        != 0;
-        mAlternateCursor = z;
-        mDisableCursor =
-                Settings.Secure.getInt(
-                                context.getContentResolver(),
-                                "com.google.android.settings.future.biometrics.face.anim.curve.disable_cursor",
-                                0)
-                        != 0;
-        int shadowColor = z ? -65536 : context.getColor(R.color.face_enroll_cursor_shadow);
-        mCursorEdgePaint = new Paint();
-        mCursorEdgePaint.setColor(mCursorColorGone);
-        mCursorEdgePaint.setAntiAlias(true);
-        mCursorEdgePaint.setShadowLayer(6.0f, 0.0f, 0.0f, shadowColor);
-        mCursorEdgePaint.setStrokeCap(Paint.Cap.ROUND);
-        mCursorEdgePaint.setStyle(Paint.Style.STROKE);
-        mCursorEdgePaint.setStrokeWidth(12.0f);
-        mNoActivityPaint = new Paint();
-        mNoActivityPaint.setAntiAlias(true);
-        mNoActivityPaint.setColor(mScrimColorNoActivityStart);
-        mScrimAnimatorListener =
-                valueAnimator -> mScrimPaint.setColor((Integer) valueAnimator.getAnimatedValue());
-        mCursorAnimatorListener =
-                valueAnimator ->
-                        mCursorEdgePaint.setColor((Integer) valueAnimator.getAnimatedValue());
-        mNoActivityAnimatorListener =
-                valueAnimator ->
-                        mNoActivityPaint.setColor((Integer) valueAnimator.getAnimatedValue());
+    public CellState(Context context, int i, FaceEnrollAnimationMultiAngleDrawable.BucketListener bucketListener, int i2) {
+        this.mIndex = i;
+        this.mBucketListener = bucketListener;
+        this.mScrimColorNotEnrolled = i2;
+        this.mScrimColorEnrolled = context.getColor(R$color.face_enroll_cell_enrolled);
+        this.mCursorColorAcquired = context.getColor(R$color.face_enroll_cursor_acquired);
+        int color = context.getColor(R$color.face_enroll_cursor_gone);
+        this.mCursorColorGone = color;
+        int color2 = context.getColor(R$color.face_enroll_cell_no_activity_start);
+        this.mScrimColorNoActivityStart = color2;
+        this.mScrimColorNoActivityEnd = context.getColor(R$color.face_enroll_cell_no_activity_end);
+        this.mScrimAnimationState = 0;
+        this.mCursorState = 0;
+        Paint paint = new Paint();
+        this.mScrimPaint = paint;
+        paint.setAntiAlias(true);
+        this.mScrimPaint.setAlpha(0);
+        boolean z = Settings.Secure.getInt(context.getContentResolver(), "com.google.android.settings.future.biometrics.face.anim.curve.alternate_cursor", 0) != 0;
+        this.mAlternateCursor = z;
+        this.mDisableCursor = Settings.Secure.getInt(context.getContentResolver(), "com.google.android.settings.future.biometrics.face.anim.curve.disable_cursor", 0) != 0;
+        int color3 = z ? -65536 : context.getColor(R$color.face_enroll_cursor_shadow);
+        Paint paint2 = new Paint();
+        this.mCursorEdgePaint = paint2;
+        paint2.setColor(color);
+        this.mCursorEdgePaint.setAntiAlias(true);
+        this.mCursorEdgePaint.setShadowLayer(6.0f, 0.0f, 0.0f, color3);
+        this.mCursorEdgePaint.setStrokeCap(Paint.Cap.ROUND);
+        this.mCursorEdgePaint.setStyle(Paint.Style.STROKE);
+        this.mCursorEdgePaint.setStrokeWidth(12.0f);
+        Paint paint3 = new Paint();
+        this.mNoActivityPaint = paint3;
+        paint3.setAntiAlias(true);
+        this.mNoActivityPaint.setColor(color2);
+        this.mScrimAnimatorListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState$$ExternalSyntheticLambda0
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$0(valueAnimator);
+            }
+        };
+        this.mCursorAnimatorListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState$$ExternalSyntheticLambda1
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$1(valueAnimator);
+            }
+        };
+        this.mNoActivityAnimatorListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState$$ExternalSyntheticLambda2
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$2(valueAnimator);
+            }
+        };
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$0(ValueAnimator valueAnimator) {
+        this.mScrimPaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$1(ValueAnimator valueAnimator) {
+        this.mCursorEdgePaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$2(ValueAnimator valueAnimator) {
+        this.mNoActivityPaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
     public void updateConfig(CellConfig cellConfig) {
-        mCellConfig = cellConfig;
+        this.mCellConfig = cellConfig;
     }
 
     public void draw(Canvas canvas) {
         canvas.save();
-        CellConfig cellConfig = mCellConfig;
+        CellConfig cellConfig = this.mCellConfig;
         if (cellConfig == null) {
             return;
         }
         if (cellConfig.mFlipVertical) {
             canvas.scale(1.0f, -1.0f, 0.0f, 0.0f);
         }
-        canvas.rotate(mCellConfig.mRotation);
-        canvas.drawPath(mCellConfig.mPath, mScrimPaint);
-        canvas.drawPath(mCellConfig.mPath, mNoActivityPaint);
+        canvas.rotate(this.mCellConfig.mRotation);
+        canvas.drawPath(this.mCellConfig.mPath, this.mScrimPaint);
+        canvas.drawPath(this.mCellConfig.mPath, this.mNoActivityPaint);
         canvas.restore();
     }
 
     public void drawCursor(Canvas canvas) {
         canvas.save();
-        CellConfig cellConfig = mCellConfig;
+        CellConfig cellConfig = this.mCellConfig;
         if (cellConfig == null) {
             return;
         }
         if (cellConfig.mFlipVertical) {
             canvas.scale(1.0f, -1.0f, 0.0f, 0.0f);
         }
-        canvas.rotate(mCellConfig.mRotation);
-        if (!mDisableCursor) {
-            canvas.drawPath(mCellConfig.mPath, mCursorEdgePaint);
+        canvas.rotate(this.mCellConfig.mRotation);
+        if (!this.mDisableCursor) {
+            canvas.drawPath(this.mCellConfig.mPath, this.mCursorEdgePaint);
         }
         canvas.restore();
     }
 
     public boolean isDone() {
-        return mDone;
+        return this.mDone;
     }
 
     public void setEarlyDone() {
-        mDone = true;
+        this.mDone = true;
     }
 
     public void stopPulseForNoActivity() {
-        mNoActivityPulseShouldRepeat = false;
+        this.mNoActivityPulseShouldRepeat = false;
     }
 
-    public void pulseForNoActivity(int times) {
-        mNoActivityPulseShouldRepeat = true;
-        if (isAnimating(mNoActivityAnimator)) {
+    public void pulseForNoActivity(int i) {
+        this.mNoActivityPulseShouldRepeat = true;
+        if (isAnimating(this.mNoActivityAnimator)) {
             return;
         }
-        ValueAnimator valueAnimator =
-                ValueAnimator.ofArgb(
-                        mScrimColorNoActivityStart,
-                        mScrimColorNoActivityEnd,
-                        mScrimColorNoActivityEnd,
-                        mScrimColorNoActivityStart);
-        mNoActivityAnimator = valueAnimator;
-        valueAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
-        mNoActivityAnimator.addUpdateListener(mNoActivityAnimatorListener);
-        mNoActivityAnimator.setDuration(1233L);
-        mNoActivityAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    private int curPulses = 1;
-                    private final int numPulses;
+        int i2 = this.mScrimColorNoActivityStart;
+        int i3 = this.mScrimColorNoActivityEnd;
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(i2, i3, i3, i2);
+        this.mNoActivityAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.setInterpolator(new AccelerateDecelerateInterpolator());
+        this.mNoActivityAnimator.addUpdateListener(this.mNoActivityAnimatorListener);
+        this.mNoActivityAnimator.setDuration(1233L);
+        this.mNoActivityAnimator.addListener(new AnimatorListenerAdapter(i) { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState.2
+            int curPulses = 1;
+            final int numPulses;
+            final /* synthetic */ int val$times;
 
-                    {
-                        numPulses = times;
-                    }
+            {
+                this.val$times = i;
+                this.numPulses = i;
+            }
 
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        super.onAnimationEnd(animator);
-                        if (CellState.this.mNoActivityPulseShouldRepeat && curPulses < numPulses) {
-                            CellState.this.mNoActivityAnimator.start();
-                            curPulses++;
-                        } else {
-                            CellState.this.mBucketListener.onNoActivityAnimationFinished();
-                        }
-                    }
-                });
-        mNoActivityAnimator.start();
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                super.onAnimationEnd(animator);
+                if (CellState.this.mNoActivityPulseShouldRepeat && this.curPulses < this.numPulses) {
+                    CellState.this.mNoActivityAnimator.start();
+                    this.curPulses++;
+                } else {
+                    CellState.this.mBucketListener.onNoActivityAnimationFinished();
+                }
+            }
+        });
+        this.mNoActivityAnimator.start();
     }
 
     public void fadeScrimOut(int i) {
-        animateScrimColor(
-                i == 2 ? 0 : (mDone ? mScrimColorEnrolled : mScrimColorNotEnrolled), 200L, 1);
+        int i2;
+        if (i == 2) {
+            i2 = 0;
+        } else {
+            i2 = this.mDone ? this.mScrimColorEnrolled : this.mScrimColorNotEnrolled;
+        }
+        animateScrimColor(i2, 200L, 1);
     }
 
     public void fadeScrimIn() {
@@ -200,126 +217,118 @@ public class CellState {
     }
 
     private void fadeScrimIn(long j) {
-        animateScrimColor(mDone ? mScrimColorEnrolled : mScrimColorNotEnrolled, j, 2);
+        animateScrimColor(this.mDone ? this.mScrimColorEnrolled : this.mScrimColorNotEnrolled, j, 2);
     }
 
     public void onAcquired() {
-        if (mHandler.hasMessages(1)) {
-            mHandler.removeMessages(1);
-            mHandler.sendEmptyMessageDelayed(1, 300L);
+        if (this.mHandler.hasMessages(1)) {
+            this.mHandler.removeMessages(1);
+            this.mHandler.sendEmptyMessageDelayed(1, 300L);
         }
-        if (mCursorState == 0 || !mDone) {
-            mCursorState = 1;
-            if (!mDone) {
-                mBucketListener.onStartFinishing();
+        if (this.mCursorState == 0 || !this.mDone) {
+            this.mCursorState = 1;
+            if (!this.mDone) {
+                this.mBucketListener.onStartFinishing();
             }
-            mDone = true;
-            ValueAnimator valueAnimator =
-                    ValueAnimator.ofArgb(mCursorEdgePaint.getColor(), mCursorColorAcquired);
-            mCursorAnimator = valueAnimator;
-            valueAnimator.setDuration(300L);
-            mCursorAnimator.addUpdateListener(mCursorAnimatorListener);
-            mCursorAnimator.addListener(
-                    new AnimatorListenerAdapter() {
-                        @Override
-                        public void onAnimationEnd(Animator animator) {
-                            CellState.this.mCursorState = 3;
-                            int i = CellState.this.mScrimAnimationState;
-                            CellState cellState = CellState.this;
-                            if (i != 1) {
-                                cellState.fadeScrimOut(1);
-                            } else {
-                                Log.w(
-                                        "FaceEnroll/CellState",
-                                        "Index "
-                                                + cellState.mIndex
-                                                + " intentionally not going to"
-                                                + " SCRIM_FADE_REASON_DONE");
-                            }
-                            CellState.this.mHandler.sendEmptyMessageDelayed(1, 300L);
-                        }
-                    });
-            mCursorAnimator.start();
+            this.mDone = true;
+            ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mCursorEdgePaint.getColor(), this.mCursorColorAcquired);
+            this.mCursorAnimator = valueAnimatorOfArgb;
+            valueAnimatorOfArgb.setDuration(300L);
+            this.mCursorAnimator.addUpdateListener(this.mCursorAnimatorListener);
+            this.mCursorAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState.3
+                @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+                public void onAnimationEnd(Animator animator) {
+                    CellState.this.mCursorState = 3;
+                    int i = CellState.this.mScrimAnimationState;
+                    CellState cellState = CellState.this;
+                    if (i != 1) {
+                        cellState.fadeScrimOut(1);
+                    } else {
+                        Log.w("FaceEnroll/CellState", "Index " + cellState.mIndex + " intentionally not going to SCRIM_FADE_REASON_DONE");
+                    }
+                    CellState.this.mHandler.sendEmptyMessageDelayed(1, 300L);
+                }
+            });
+            this.mCursorAnimator.start();
         }
     }
 
     public void updateScrimNotEnrolledColor(int i, boolean z) {
-        mScrimColorNotEnrolled = i;
+        this.mScrimColorNotEnrolled = i;
         if (z) {
-            int i2 = mScrimAnimationState;
+            int i2 = this.mScrimAnimationState;
             if (i2 == 0) {
                 animateScrimNotEnrolledColor(200L);
             } else if (i2 == 2) {
-                fadeScrimIn(getRemainingAnimationTime(mScrimAnimator));
+                fadeScrimIn(getRemainingAnimationTime(this.mScrimAnimator));
             } else {
                 if (i2 != 3) {
                     return;
                 }
-                animateScrimNotEnrolledColor(getRemainingAnimationTime(mScrimAnimator));
+                animateScrimNotEnrolledColor(getRemainingAnimationTime(this.mScrimAnimator));
             }
         }
     }
 
     private void animateScrimNotEnrolledColor(long j) {
-        if (mDone) {
+        if (this.mDone) {
             return;
         }
-        int color = mScrimPaint.getColor();
-        if (color == mScrimColorNotEnrolled) {
+        int color = this.mScrimPaint.getColor();
+        int i = this.mScrimColorNotEnrolled;
+        if (color == i) {
             return;
         }
-        animateScrimColor(mScrimColorNotEnrolled, j, 3);
+        animateScrimColor(i, j, 3);
     }
 
     private void animateScrimColor(int i, long j, int i2) {
         if (j <= 0) {
             return;
         }
-        if (isAnimating(mScrimAnimator)) {
-            mScrimAnimator.cancel();
+        if (isAnimating(this.mScrimAnimator)) {
+            this.mScrimAnimator.cancel();
         }
-        mScrimAnimationState = i2;
-        ValueAnimator valueAnimator = ValueAnimator.ofArgb(mScrimPaint.getColor(), i);
-        mScrimAnimator = valueAnimator;
-        valueAnimator.addUpdateListener(mScrimAnimatorListener);
-        mScrimAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationCancel(Animator animator) {
-                        CellState.this.mScrimAnimationState = 0;
-                    }
+        this.mScrimAnimationState = i2;
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mScrimPaint.getColor(), i);
+        this.mScrimAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.addUpdateListener(this.mScrimAnimatorListener);
+        this.mScrimAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState.4
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationCancel(Animator animator) {
+                CellState.this.mScrimAnimationState = 0;
+            }
 
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        CellState.this.mScrimAnimationState = 0;
-                    }
-                });
-        mScrimAnimator.setDuration(j);
-        mScrimAnimator.start();
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                CellState.this.mScrimAnimationState = 0;
+            }
+        });
+        this.mScrimAnimator.setDuration(j);
+        this.mScrimAnimator.start();
     }
 
     public void fadeCursorNow() {
         handleFadeCursor();
     }
 
-    private void handleFadeCursor() {
-        mCursorState = 2;
-        if (isAnimating(mCursorAnimator)) {
-            mCursorAnimator.cancel();
+    /* JADX INFO: Access modifiers changed from: private */
+    public void handleFadeCursor() {
+        this.mCursorState = 2;
+        if (isAnimating(this.mCursorAnimator)) {
+            this.mCursorAnimator.cancel();
         }
-        ValueAnimator valueAnimator =
-                ValueAnimator.ofArgb(mCursorEdgePaint.getColor(), mCursorColorGone);
-        mCursorAnimator = valueAnimator;
-        valueAnimator.setDuration(200L);
-        mCursorAnimator.addUpdateListener(mCursorAnimatorListener);
-        mCursorAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        CellState.this.mCursorState = 0;
-                    }
-                });
-        mCursorAnimator.start();
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mCursorEdgePaint.getColor(), this.mCursorColorGone);
+        this.mCursorAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.setDuration(200L);
+        this.mCursorAnimator.addUpdateListener(this.mCursorAnimatorListener);
+        this.mCursorAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.curve.CellState.5
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                CellState.this.mCursorState = 0;
+            }
+        });
+        this.mCursorAnimator.start();
     }
 
     private static boolean isAnimating(ValueAnimator valueAnimator) {
@@ -327,7 +336,6 @@ public class CellState {
     }
 
     private static long getRemainingAnimationTime(ValueAnimator valueAnimator) {
-        return Math.round(
-                (1.0f - valueAnimator.getAnimatedFraction()) * valueAnimator.getDuration());
+        return Math.round((1.0f - valueAnimator.getAnimatedFraction()) * valueAnimator.getDuration());
     }
 }

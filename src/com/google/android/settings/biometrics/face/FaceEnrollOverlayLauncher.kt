@@ -9,7 +9,7 @@ import android.os.UserHandle
 import android.os.UserManager
 import android.util.Log
 import androidx.core.content.ContextCompat
-import com.android.settings.R.string.config_face_enroll_traffic_light_package
+import com.android.settings.R
 
 private const val TAG = "FaceEnrollTrampoline"
 
@@ -31,7 +31,7 @@ class FaceEnrollOverlayLauncher(private val activity: Activity) {
                 )
                 .putExtra(
                     "face_package",
-                    activity.getString(config_face_enroll_traffic_light_package),
+                    activity.getString(R.string.config_face_enroll_traffic_light_package),
                 )
                 .putExtras(intent)
         val preferredUserHandle = getPreferredUserHandle(activity.packageManager, overlayIntent)
@@ -43,7 +43,7 @@ class FaceEnrollOverlayLauncher(private val activity: Activity) {
         return try {
             activity.startActivityForResultAsUser(
                 overlayIntent,
-                REQUEST_CODE_PARTICIPATION,
+                2,
                 preferredUserHandle,
             )
             Log.i(TAG, "Overlay launched successfully")
@@ -78,10 +78,6 @@ class FaceEnrollOverlayLauncher(private val activity: Activity) {
         }
         Log.w(TAG, "Unable to get UserManager; will just check the current user")
         return listOf(UserHandle.CURRENT)
-    }
-
-    companion object {
-        private const val REQUEST_CODE_PARTICIPATION = 2
     }
 }
 

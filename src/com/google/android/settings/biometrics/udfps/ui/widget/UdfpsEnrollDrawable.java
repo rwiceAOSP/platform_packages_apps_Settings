@@ -1,7 +1,6 @@
 package com.google.android.settings.biometrics.udfps.ui.widget;
 
 import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -9,7 +8,6 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
-import android.graphics.PixelFormat;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.RectF;
@@ -20,12 +18,9 @@ import android.os.SystemProperties;
 import android.util.AttributeSet;
 import android.util.PathParser;
 import android.view.animation.AccelerateDecelerateInterpolator;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.android.settings.R;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class UdfpsEnrollDrawable extends Drawable {
     private int mAlpha;
     private final Paint mBlueFill;
@@ -45,115 +40,125 @@ public class UdfpsEnrollDrawable extends Drawable {
     private boolean mShouldShowTipHint = false;
     private boolean mShouldShowEdgeHint = false;
 
-    @Override
+    @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        return PixelFormat.TRANSLUCENT;
+        return 0;
     }
 
-    @Override
-    public void setColorFilter(@Nullable ColorFilter colorFilter) {}
+    @Override // android.graphics.drawable.Drawable
+    public void setColorFilter(ColorFilter colorFilter) {
+    }
 
-    UdfpsEnrollDrawable(Context context, AttributeSet attrs) {
-        mFingerprintDrawable = defaultFactory(context);
-        loadResources(context, attrs);
-
-        mSensorOutlinePaint = new Paint();
-        mSensorOutlinePaint.setAntiAlias(true);
-        mSensorOutlinePaint.setColor(mMovingTargetFill);
-        mSensorOutlinePaint.setStyle(Paint.Style.FILL);
-
-        mBlueFill = new Paint();
-        mBlueFill.setAntiAlias(true);
-        mBlueFill.setColor(mMovingTargetFill);
-        mBlueFill.setStyle(Paint.Style.FILL);
-
-        mMovingTargetFpIcon = context.getDrawable(R.drawable.ic_enrollment_fingerprint);
-        if (mMovingTargetFpIcon != null) {
-            mMovingTargetFpIcon.setTint(mEnrollIcon);
-            mMovingTargetFpIcon.mutate();
-        }
-        mFingerprintDrawable.setTint(mEnrollIcon);
+    UdfpsEnrollDrawable(Context context, AttributeSet attributeSet) {
+        ShapeDrawable shapeDrawableDefaultFactory = defaultFactory(context);
+        this.mFingerprintDrawable = shapeDrawableDefaultFactory;
+        loadResources(context, attributeSet);
+        Paint paint = new Paint(0);
+        this.mSensorOutlinePaint = paint;
+        paint.setAntiAlias(true);
+        paint.setColor(this.mMovingTargetFill);
+        Paint.Style style = Paint.Style.FILL;
+        paint.setStyle(style);
+        Paint paint2 = new Paint(0);
+        this.mBlueFill = paint2;
+        paint2.setAntiAlias(true);
+        paint2.setColor(this.mMovingTargetFill);
+        paint2.setStyle(style);
+        Drawable drawable = context.getResources().getDrawable(R.drawable.ic_enrollment_fingerprint, null);
+        this.mMovingTargetFpIcon = drawable;
+        drawable.setTint(this.mEnrollIcon);
+        drawable.mutate();
+        shapeDrawableDefaultFactory.setTint(this.mEnrollIcon);
         setAlpha(255);
+        this.mTargetAnimListener = new Animator.AnimatorListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollDrawable.1
+            @Override // android.animation.Animator.AnimatorListener
+            public void onAnimationCancel(Animator animator) {
+            }
 
-        mTargetAnimListener =
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        updateTipHintVisibility();
-                    }
-                };
+            @Override // android.animation.Animator.AnimatorListener
+            public void onAnimationRepeat(Animator animator) {
+            }
+
+            @Override // android.animation.Animator.AnimatorListener
+            public void onAnimationStart(Animator animator) {
+            }
+
+            @Override // android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                UdfpsEnrollDrawable.this.updateTipHintVisibility();
+            }
+        };
     }
 
     void onSensorRectUpdated(RectF rectF) {
-        int inset = ((int) rectF.height()) / 8;
-        updateFingerprintIconBounds(
-                new Rect(
-                        ((int) rectF.left) + inset,
-                        ((int) rectF.top) + inset,
-                        ((int) rectF.right) - inset,
-                        ((int) rectF.bottom) - inset));
-        mSensorRect = rectF;
+        int iHeight = ((int) rectF.height()) / 8;
+        updateFingerprintIconBounds(new Rect(((int) rectF.left) + iHeight, ((int) rectF.top) + iHeight, ((int) rectF.right) - iHeight, ((int) rectF.bottom) - iHeight));
+        this.mSensorRect = rectF;
     }
 
     void setEnrollHelper(UdfpsEnrollHelper udfpsEnrollHelper) {
-        mEnrollHelper = udfpsEnrollHelper;
+        this.mEnrollHelper = udfpsEnrollHelper;
     }
 
-    void setShouldSkipDraw(boolean skip) {
-        if (mSkipDraw == skip) {
+    void setShouldSkipDraw(boolean z) {
+        if (this.mSkipDraw == z) {
             return;
         }
-        mSkipDraw = skip;
+        this.mSkipDraw = z;
         invalidateSelf();
     }
 
     void updateFingerprintIconBounds(Rect rect) {
-        mFingerprintDrawable.setBounds(rect);
-        if (mMovingTargetFpIcon != null) {
-            mMovingTargetFpIcon.setBounds(rect);
-        }
+        this.mFingerprintDrawable.setBounds(rect);
+        invalidateSelf();
+        this.mMovingTargetFpIcon.setBounds(rect);
         invalidateSelf();
     }
 
-    void onEnrollmentProgress(int remaining, int total) {
-        if (mEnrollHelper == null) {
+    void onEnrollmentProgress(int i, int i2) {
+        UdfpsEnrollHelper udfpsEnrollHelper = this.mEnrollHelper;
+        if (udfpsEnrollHelper == null) {
             return;
         }
-        if (!mEnrollHelper.isCenterEnrollmentStage()) {
-            if (mTargetAnimatorSet != null && mTargetAnimatorSet.isRunning()) {
-                mTargetAnimatorSet.end();
+        if (!udfpsEnrollHelper.isCenterEnrollmentStage()) {
+            AnimatorSet animatorSet = this.mTargetAnimatorSet;
+            if (animatorSet != null && animatorSet.isRunning()) {
+                this.mTargetAnimatorSet.end();
             }
-            PointF nextPoint = mEnrollHelper.getNextGuidedEnrollmentPoint();
-            if (mCurrentX != nextPoint.x || mCurrentY != nextPoint.y) {
-                ValueAnimator xAnimator = ValueAnimator.ofFloat(mCurrentX, nextPoint.x);
-                xAnimator.addUpdateListener(
-                        animation -> {
-                            mCurrentX = (Float) animation.getAnimatedValue();
-                            invalidateSelf();
-                        });
-                ValueAnimator yAnimator = ValueAnimator.ofFloat(mCurrentY, nextPoint.y);
-                yAnimator.addUpdateListener(
-                        animation -> {
-                            mCurrentY = (Float) animation.getAnimatedValue();
-                            invalidateSelf();
-                        });
-                long duration = (nextPoint.x == 0.0f && nextPoint.y == 0.0f) ? 600L : 800L;
-                ValueAnimator scaleAnimator = ValueAnimator.ofFloat(0.0f, (float) Math.PI);
-                scaleAnimator.setDuration(duration);
-                scaleAnimator.addUpdateListener(
-                        animation -> {
-                            mCurrentScale =
-                                    ((float) Math.sin((Float) animation.getAnimatedValue()) * 0.25f)
-                                            + 1.0f;
-                            invalidateSelf();
-                        });
-
-                mTargetAnimatorSet = new AnimatorSet();
-                mTargetAnimatorSet.setInterpolator(new AccelerateDecelerateInterpolator());
-                mTargetAnimatorSet.setDuration(duration);
-                mTargetAnimatorSet.addListener(mTargetAnimListener);
-                mTargetAnimatorSet.playTogether(xAnimator, yAnimator, scaleAnimator);
-                mTargetAnimatorSet.start();
+            PointF nextGuidedEnrollmentPoint = this.mEnrollHelper.getNextGuidedEnrollmentPoint();
+            float f = this.mCurrentX;
+            float f2 = nextGuidedEnrollmentPoint.x;
+            if (f != f2 || this.mCurrentY != nextGuidedEnrollmentPoint.y) {
+                ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(f, f2);
+                valueAnimatorOfFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollDrawable$$ExternalSyntheticLambda0
+                    @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+                    public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                        this.f$0.lambda$onEnrollmentProgress$0(valueAnimator);
+                    }
+                });
+                ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(this.mCurrentY, nextGuidedEnrollmentPoint.y);
+                valueAnimatorOfFloat2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollDrawable$$ExternalSyntheticLambda1
+                    @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+                    public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                        this.f$0.lambda$onEnrollmentProgress$1(valueAnimator);
+                    }
+                });
+                long j = (nextGuidedEnrollmentPoint.x == 0.0f && nextGuidedEnrollmentPoint.y == 0.0f) ? 600L : 800L;
+                ValueAnimator valueAnimatorOfFloat3 = ValueAnimator.ofFloat(0.0f, 3.1415927f);
+                valueAnimatorOfFloat3.setDuration(j);
+                valueAnimatorOfFloat3.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollDrawable$$ExternalSyntheticLambda2
+                    @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+                    public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                        this.f$0.lambda$onEnrollmentProgress$2(valueAnimator);
+                    }
+                });
+                AnimatorSet animatorSet2 = new AnimatorSet();
+                this.mTargetAnimatorSet = animatorSet2;
+                animatorSet2.setInterpolator(new AccelerateDecelerateInterpolator());
+                this.mTargetAnimatorSet.setDuration(j);
+                this.mTargetAnimatorSet.addListener(this.mTargetAnimListener);
+                this.mTargetAnimatorSet.playTogether(valueAnimatorOfFloat, valueAnimatorOfFloat2, valueAnimatorOfFloat3);
+                this.mTargetAnimatorSet.start();
             } else {
                 updateTipHintVisibility();
             }
@@ -163,79 +168,92 @@ public class UdfpsEnrollDrawable extends Drawable {
         updateEdgeHintVisibility();
     }
 
-    @Override
-    public void draw(@NonNull Canvas canvas) {
-        if (mSkipDraw) {
-            return;
-        }
-        if (SystemProperties.getBoolean("debug.udfps_show_sensor_bounds_outline", false)
-                && mSensorRect != null) {
-            visualizeFingerprintSensorOutline(canvas, mSensorRect);
-        }
-        if (mEnrollHelper != null && !mEnrollHelper.isCenterEnrollmentStage()) {
-            canvas.save();
-            canvas.translate(mCurrentX, mCurrentY);
-            if (mSensorRect != null) {
-                canvas.scale(
-                        mCurrentScale, mCurrentScale, mSensorRect.centerX(), mSensorRect.centerY());
-                canvas.drawOval(mSensorRect, mBlueFill);
-            }
-            if (mMovingTargetFpIcon != null) {
-                mMovingTargetFpIcon.draw(canvas);
-            }
-            canvas.restore();
-            return;
-        }
-        if (mSensorRect != null) {
-            canvas.drawOval(mSensorRect, mSensorOutlinePaint);
-        }
-        mFingerprintDrawable.draw(canvas);
-        mFingerprintDrawable.setAlpha(getAlpha());
-        mSensorOutlinePaint.setAlpha(getAlpha());
-    }
-
-    @Override
-    public void setAlpha(int alpha) {
-        mAlpha = alpha;
-        mFingerprintDrawable.setAlpha(alpha);
-        mSensorOutlinePaint.setAlpha(alpha);
-        mBlueFill.setAlpha(alpha);
-        if (mMovingTargetFpIcon != null) {
-            mMovingTargetFpIcon.setAlpha(alpha);
-        }
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$onEnrollmentProgress$0(ValueAnimator valueAnimator) {
+        this.mCurrentX = ((Float) valueAnimator.getAnimatedValue()).floatValue();
         invalidateSelf();
     }
 
-    @Override
-    public int getAlpha() {
-        return mAlpha;
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$onEnrollmentProgress$1(ValueAnimator valueAnimator) {
+        this.mCurrentY = ((Float) valueAnimator.getAnimatedValue()).floatValue();
+        invalidateSelf();
     }
 
-    public void updateTipHintVisibility() {
-        boolean isTip = mEnrollHelper != null && mEnrollHelper.isTipEnrollmentStage();
-        if (mShouldShowTipHint == isTip) {
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$onEnrollmentProgress$2(ValueAnimator valueAnimator) {
+        this.mCurrentScale = (((float) Math.sin(((Float) valueAnimator.getAnimatedValue()).floatValue())) * 0.25f) + 1.0f;
+        invalidateSelf();
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void draw(Canvas canvas) {
+        RectF rectF;
+        if (this.mSkipDraw) {
             return;
         }
-        mShouldShowTipHint = isTip;
+        if (SystemProperties.getBoolean("debug.udfps_show_sensor_bounds_outline", false) && (rectF = this.mSensorRect) != null) {
+            visualizeFingerprintSensorOutline(canvas, rectF);
+        }
+        UdfpsEnrollHelper udfpsEnrollHelper = this.mEnrollHelper;
+        if (udfpsEnrollHelper != null && !udfpsEnrollHelper.isCenterEnrollmentStage()) {
+            canvas.save();
+            canvas.translate(this.mCurrentX, this.mCurrentY);
+            RectF rectF2 = this.mSensorRect;
+            if (rectF2 != null) {
+                float f = this.mCurrentScale;
+                canvas.scale(f, f, rectF2.centerX(), this.mSensorRect.centerY());
+                canvas.drawOval(this.mSensorRect, this.mBlueFill);
+            }
+            this.mMovingTargetFpIcon.draw(canvas);
+            canvas.restore();
+            return;
+        }
+        RectF rectF3 = this.mSensorRect;
+        if (rectF3 != null) {
+            canvas.drawOval(rectF3, this.mSensorOutlinePaint);
+        }
+        this.mFingerprintDrawable.draw(canvas);
+        this.mFingerprintDrawable.setAlpha(getAlpha());
+        this.mSensorOutlinePaint.setAlpha(getAlpha());
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void setAlpha(int i) {
+        this.mAlpha = i;
+        this.mFingerprintDrawable.setAlpha(i);
+        this.mSensorOutlinePaint.setAlpha(i);
+        this.mBlueFill.setAlpha(i);
+        this.mMovingTargetFpIcon.setAlpha(i);
+        invalidateSelf();
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getAlpha() {
+        return this.mAlpha;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void updateTipHintVisibility() {
+        UdfpsEnrollHelper udfpsEnrollHelper = this.mEnrollHelper;
+        boolean z = udfpsEnrollHelper != null && udfpsEnrollHelper.isTipEnrollmentStage();
+        if (this.mShouldShowTipHint == z) {
+            return;
+        }
+        this.mShouldShowTipHint = z;
     }
 
     private void updateEdgeHintVisibility() {
-        boolean isEdge = mEnrollHelper != null && mEnrollHelper.isEdgeEnrollmentStage();
-        if (mShouldShowEdgeHint == isEdge) {
+        UdfpsEnrollHelper udfpsEnrollHelper = this.mEnrollHelper;
+        boolean z = udfpsEnrollHelper != null && udfpsEnrollHelper.isEdgeEnrollmentStage();
+        if (this.mShouldShowEdgeHint == z) {
             return;
         }
-        mShouldShowEdgeHint = isEdge;
+        this.mShouldShowEdgeHint = z;
     }
 
     private ShapeDrawable defaultFactory(Context context) {
-        ShapeDrawable shapeDrawable =
-                new ShapeDrawable(
-                        new PathShape(
-                                PathParser.createPathFromPathData(
-                                        context.getResources()
-                                                .getString(R.string.config_udfpsIcon)),
-                                72.0f,
-                                72.0f));
+        ShapeDrawable shapeDrawable = new ShapeDrawable(new PathShape(PathParser.createPathFromPathData(context.getResources().getString(R.string.config_udfpsIcon)), 72.0f, 72.0f));
         shapeDrawable.mutate();
         shapeDrawable.getPaint().setStyle(Paint.Style.STROKE);
         shapeDrawable.getPaint().setStrokeCap(Paint.Cap.ROUND);
@@ -243,28 +261,18 @@ public class UdfpsEnrollDrawable extends Drawable {
         return shapeDrawable;
     }
 
-    private void loadResources(Context context, AttributeSet attrs) {
-        TypedArray a =
-                context.obtainStyledAttributes(
-                        attrs,
-                        R.styleable.BiometricsEnrollView,
-                        R.attr.biometricsEnrollStyle,
-                        R.style.BiometricsEnrollStyle);
-        mEnrollIcon = a.getColor(R.styleable.BiometricsEnrollView_biometricsEnrollIcon, 0);
-        mMovingTargetFill =
-                a.getColor(R.styleable.BiometricsEnrollView_biometricsMovingTargetFill, 0);
-        a.recycle();
+    private void loadResources(Context context, AttributeSet attributeSet) {
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, R.styleable.BiometricsEnrollView, R.attr.biometricsEnrollStyle, R.style.BiometricsEnrollStyle);
+        this.mEnrollIcon = typedArrayObtainStyledAttributes.getColor(R.styleable.BiometricsEnrollView_biometricsEnrollIcon, 0);
+        this.mMovingTargetFill = typedArrayObtainStyledAttributes.getColor(R.styleable.BiometricsEnrollView_biometricsMovingTargetFill, 0);
+        typedArrayObtainStyledAttributes.recycle();
     }
 
     private void visualizeFingerprintSensorOutline(Canvas canvas, RectF rectF) {
         Paint paint = new Paint();
-        paint.setColor(0xFF00FF00);
+        paint.setColor(-16711936);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(2.0f);
-        canvas.drawCircle(
-                rectF.centerX(),
-                rectF.centerY(),
-                Math.min(rectF.width(), rectF.height()) / 2.0f,
-                paint);
+        canvas.drawCircle(rectF.centerX(), rectF.centerY(), Math.min(rectF.width(), rectF.height()) / 2.0f, paint);
     }
 }

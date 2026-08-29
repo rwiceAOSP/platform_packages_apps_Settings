@@ -11,30 +11,29 @@ import com.google.android.setupdesign.util.ThemeHelper
 class UdfpsEnrollCalibrationDialog : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val dialog =
-            if (ThemeHelper.shouldApplyGlifExpressiveStyle(requireContext())) {
-                MaterialAlertDialogBuilder(requireActivity())
-                    .setTitle(titleId)
-                    .setMessage(messageId)
-                    .setPositiveButton(positiveBtnTextId) { dialogInterface, _ ->
-                        dialogInterface?.dismiss()
-                    }
-                    .create()
-            } else {
-                AlertDialog.Builder(requireActivity(), R.style.Theme_AlertDialog)
-                    .setTitle(titleId)
-                    .setMessage(messageId)
-                    .setPositiveButton(positiveBtnTextId) { dialogInterface, _ ->
-                        dialogInterface?.dismiss()
-                    }
-                    .create()
+        if (ThemeHelper.shouldApplyGlifExpressiveStyle(requireContext())) {
+            val alertDialog = MaterialAlertDialogBuilder(requireActivity())
+                .setTitle(titleId)
+                .setMessage(messageId)
+                .setPositiveButton(positiveBtnTextId) { dialogInterface, _ ->
+                    dialogInterface?.dismiss()
+                }
+                .create()
+            isCancelable = false
+            return alertDialog
+        }
+        val alertDialog = AlertDialog.Builder(requireActivity(), R.style.Theme_AlertDialog)
+            .setTitle(titleId)
+            .setMessage(messageId)
+            .setPositiveButton(positiveBtnTextId) { dialogInterface, _ ->
+                dialogInterface?.dismiss()
             }
-        setCancelable(false)
-        checkNotNull(dialog)
-        return dialog
+            .create()
+        isCancelable = false
+        return alertDialog
     }
 
-    private companion object {
+    companion object {
         val titleId: Int = R.string.fingerprint_udfps_pre_enroll_runner_dialog_title
         val messageId: Int = R.string.fingerprint_udfps_pre_enroll_runner_dialog_message
         val positiveBtnTextId: Int = R.string.done

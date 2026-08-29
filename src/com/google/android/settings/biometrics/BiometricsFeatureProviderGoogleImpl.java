@@ -2,10 +2,8 @@ package com.google.android.settings.biometrics;
 
 import android.content.Context;
 import android.safetycenter.SafetySourceIssue;
-
 import com.android.settings.biometrics.BiometricsFeatureProvider;
 import com.android.settings.biometrics.metrics.BiometricsLogger;
-
 import com.google.android.settings.biometrics.metrics.BiometricsLoggerImpl;
 
 public class BiometricsFeatureProviderGoogleImpl implements BiometricsFeatureProvider {
@@ -14,12 +12,12 @@ public class BiometricsFeatureProviderGoogleImpl implements BiometricsFeaturePro
     private BiometricsLogger mBiometricsLogger = null;
 
     public BiometricsFeatureProviderGoogleImpl(Context context) {
-        mContext = context;
+        this.mContext = context;
     }
 
     @Override
-    public SafetySourceIssue getSafetySourceIssue(String sourceId) {
-        return getBiometricsSafetySourceIssueController().getSafetySourceIssue(sourceId);
+    public SafetySourceIssue getSafetySourceIssue(String str) {
+        return getBiometricsSafetySourceIssueController().getSafetySourceIssue(str);
     }
 
     @Override
@@ -28,18 +26,17 @@ public class BiometricsFeatureProviderGoogleImpl implements BiometricsFeaturePro
     }
 
     private BiometricsSafetySourceIssueController getBiometricsSafetySourceIssueController() {
-        if (mBiometricsSafetySourceIssueController == null) {
-            mBiometricsSafetySourceIssueController =
-                    new BiometricsSafetySourceIssueController(mContext);
+        if (this.mBiometricsSafetySourceIssueController == null) {
+            this.mBiometricsSafetySourceIssueController = new BiometricsSafetySourceIssueController(this.mContext);
         }
-        return mBiometricsSafetySourceIssueController;
+        return this.mBiometricsSafetySourceIssueController;
     }
 
     @Override
     public BiometricsLogger getBiometricsLogger() {
-        if (mBiometricsLogger == null) {
-            mBiometricsLogger = new BiometricsLoggerImpl();
+        if (this.mBiometricsLogger == null) {
+            this.mBiometricsLogger = new BiometricsLoggerImpl();
         }
-        return mBiometricsLogger;
+        return this.mBiometricsLogger;
     }
 }

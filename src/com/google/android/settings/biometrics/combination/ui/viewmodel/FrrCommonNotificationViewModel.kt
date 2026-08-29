@@ -16,24 +16,23 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 abstract class FrrCommonNotificationViewModel : ViewModel() {
-    abstract val userId: Int
-    abstract var gkPwHandle: Long
+    abstract fun fetchGkHat(): Flow<GkResult>
+
     abstract var gkOkResult: GkResult.Ok?
-    abstract val hasFingerprints: Boolean
-    abstract val shouldShowFaceUnlockViews: Boolean
-    abstract val shouldShowSpViews: Boolean
-    abstract val shouldShowNonMfgSpText: Boolean
+    abstract var gkPwHandle: Long
     abstract var isLaunchingActivity: Boolean
     abstract var isRemovingAllFingerprints: Boolean
 
-    abstract fun isAllowFrrActivity(): Boolean
+    abstract val hasFingerprints: Boolean
+    abstract val shouldShowFaceUnlockViews: Boolean
+    abstract val shouldShowNonMfgSpText: Boolean
+    abstract val shouldShowSpViews: Boolean
+    abstract val userId: Int
 
-    abstract fun isButtonsClickableWhenActivityForeground(): Boolean
+    abstract val isAllowFrrActivity: Boolean
+    abstract val isButtonsClickableWhenActivityForeground: Boolean
 
-    abstract fun fetchGkHat(): Flow<GkResult>
-
-    abstract fun removeAllFingerprints():
-        Flow<com.google.android.settings.biometrics.fingerprint.model.FingerprintRemoval>
+    abstract fun removeAllFingerprints(): Flow<com.google.android.settings.biometrics.fingerprint.model.FingerprintRemoval>
 
     abstract fun revokeChallenge()
 }

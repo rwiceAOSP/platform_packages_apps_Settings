@@ -16,14 +16,16 @@ class FaceEnrollLockScreenBypassToggle
 constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) :
     LinearLayout(context, attrs, defStyleAttr) {
 
-    private val userHandle: Int by lazy { UserHandle.of(DEFAULT_USER_HANDLE).identifier }
+    private val userHandle: Int by lazy { UserHandle.of(UserHandle.USER_CURRENT).identifier }
 
     private val defaultValue: Int by lazy {
         if (resources.getBoolean(com.android.internal.R.bool.config_faceAuthDismissesKeyguard)) 1
         else 0
     }
 
-    val switch: MaterialSwitch by lazy { requireNotNull(findViewById(R.id.toggle)) }
+    private val switch: MaterialSwitch by lazy {
+        findViewById(R.id.toggle)
+    }
 
     private var _isEnabled = true
 
@@ -81,9 +83,5 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
     override fun onDetachedFromWindow() {
         switch.setOnCheckedChangeListener(null)
         super.onDetachedFromWindow()
-    }
-
-    companion object {
-        private const val DEFAULT_USER_HANDLE = -2 /* UserHandle.USER_CURRENT */
     }
 }

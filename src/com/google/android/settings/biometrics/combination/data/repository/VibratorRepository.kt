@@ -11,32 +11,26 @@ import kotlinx.coroutines.flow.callbackFlow
 
 interface VibratorRepository {
     fun getVibratorStatus(): Flow<Boolean>
-    fun isVibratorEnabled(): Boolean
 }
 
 class VibratorRepositoryImpl(context: Context) : VibratorRepository {
 
-    private val contentResolver = context.contentResolver
-
-    override fun isVibratorEnabled(): Boolean =
-        Settings.System.getInt(contentResolver, "vibrate_on", 1) == 1
+    private val contentResolver: ContentResolver = context.contentResolver
 
     override fun getVibratorStatus(): Flow<Boolean> = callbackFlow {
-        fun sendCurrentValue() {
-            trySend(isVibratorEnabled())
-        }
-
-        val observer =
-            object : ContentObserver(Handler(Looper.getMainLooper())) {
-                override fun onChange(selfChange: Boolean, uri: android.net.Uri?) {
-                    sendCurrentValue()
-                }
+        val handler = Handler(Looper.getMainLooper())
+        val observer = object : ContentObserver(handler) {
+            override fun onChange(selfChange: Boolean, uri: Uri?) {
+                trySend(Settings.System.getInt(contentResolver, "vibrate_on", 1) == 1)
             }
+        }
 
         val uri = Settings.System.getUriFor("vibrate_on")
         contentResolver.registerContentObserver(uri, false, observer)
-        sendCurrentValue()
+        trySend(Settings.System.getInt(contentResolver, "vibrate_on", 1) == 1)
 
-        awaitClose { contentResolver.unregisterContentObserver(observer) }
+        awaitClose {
+            contentResolver.unregisterContentObserver(observer)
+        }
     }
 }

@@ -5,6 +5,7 @@ import android.util.AttributeSet;
 import android.view.TextureView;
 import android.view.View;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class SquareTextureView extends TextureView {
     public SquareTextureView(Context context) {
         this(context, null);
@@ -14,19 +15,19 @@ public class SquareTextureView extends TextureView {
         this(context, attributeSet, 0);
     }
 
-    public SquareTextureView(Context context, AttributeSet attributeSet, int defStyleAttr) {
-        super(context, attributeSet, defStyleAttr);
+    public SquareTextureView(Context context, AttributeSet attributeSet, int i) {
+        super(context, attributeSet, i);
     }
 
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int widthSize = View.MeasureSpec.getSize(widthMeasureSpec);
-        int heightSize = View.MeasureSpec.getSize(heightMeasureSpec);
-        if (widthSize < heightSize) {
-            setMeasuredDimension(widthSize, widthSize);
+    @Override // android.view.View
+    protected void onMeasure(int i, int i2) {
+        super.onMeasure(i, i2);
+        int size = View.MeasureSpec.getSize(i);
+        int size2 = View.MeasureSpec.getSize(i2);
+        if (size < size2) {
+            setMeasuredDimension(size, size);
         } else {
-            setMeasuredDimension(heightSize, heightSize);
+            setMeasuredDimension(size2, size2);
         }
     }
 }

@@ -6,6 +6,7 @@ import android.animation.ObjectAnimator;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.res.Configuration;
+import android.graphics.ColorFilter;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.graphics.Rect;
@@ -15,46 +16,45 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.TouchDelegate;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.animation.Interpolator;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.animation.PathInterpolatorCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
-
-import com.android.settings.R;
-import com.android.settings.biometrics.fingerprint.FingerprintEnrollEnrolling;
-import com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature;
-import com.android.settingslib.widget.LottieColorUtils;
-
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
 import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieFrameInfo;
+import com.airbnb.lottie.value.SimpleLottieValueCallback;
+import com.android.settings.biometrics.fingerprint.FingerprintEnrollEnrolling;
+import com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature;
+import com.android.settingslib.Utils$$ExternalSyntheticBUOutline0;
+import com.android.settingslib.widget.LottieColorUtils;
+import com.google.android.settings.R$array;
+import com.google.android.settings.R$color;
+import com.google.android.settings.R$dimen;
+import com.google.android.settings.R$id;
+import com.google.android.settings.R$layout;
+import com.google.android.settings.R$raw;
+import com.google.android.settings.R$string;
 import com.google.android.settings.biometrics.fingerprint.Utils;
-
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class SfpsEnrollmentFeatureGoogleImpl implements SfpsEnrollmentFeature {
     private static final String TAG = "SfpsEnrollmentFeatureGoogleImpl";
     private float[] mEnrollStageThresholds = null;
     private boolean mIsAcquiredGood = false;
     private boolean mIsAcquiredImmobile = false;
 
-    @Override
-    public CharSequence getFeaturedVendorString(
-            Context context, int helpMsgId, CharSequence helpString) {
-        if (context == null || helpMsgId != 1000 || TextUtils.isEmpty(helpString)) {
-            return helpString;
-        }
-        return getVendorString(context, 0);
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public CharSequence getFeaturedVendorString(Context context, int i, CharSequence charSequence) {
+        return (context == null || i != 1000 || TextUtils.isEmpty(charSequence)) ? charSequence : getVendorString(context, 0);
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
     public void handleOnEnrollmentLottieComposition(LottieAnimationView lottieAnimationView) {
         Context context = lottieAnimationView.getContext();
         lottieAnimationView.setSpeed(1.0f);
@@ -62,154 +62,151 @@ public class SfpsEnrollmentFeatureGoogleImpl implements SfpsEnrollmentFeature {
         if (isDarkMode(context)) {
             return;
         }
-        final int color = context.getColor(R.color.sfps_enroll_grey300_light);
-        lottieAnimationView.addValueCallback(
-                new KeyPath("**", ".grey300", "**"),
-                LottieProperty.COLOR_FILTER,
-                frameInfo -> new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_ATOP));
+        final int color = context.getColor(R$color.sfps_enroll_grey300_light);
+        lottieAnimationView.addValueCallback(new KeyPath("**", ".grey300", "**"), LottieProperty.COLOR_FILTER, new SimpleLottieValueCallback() { // from class: com.google.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeatureGoogleImpl$$ExternalSyntheticLambda0
+            @Override // com.airbnb.lottie.value.SimpleLottieValueCallback
+            public final Object getValue(LottieFrameInfo lottieFrameInfo) {
+                return SfpsEnrollmentFeatureGoogleImpl.$r8$lambda$JSLKtsslh6BtFwxYR0SK2hMzisQ(color, lottieFrameInfo);
+            }
+        });
+    }
+
+    public static /* synthetic */ ColorFilter $r8$lambda$JSLKtsslh6BtFwxYR0SK2hMzisQ(int i, LottieFrameInfo lottieFrameInfo) {
+        return new PorterDuffColorFilter(i, PorterDuff.Mode.SRC_ATOP);
     }
 
     private boolean isDarkMode(Context context) {
-        return (context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
-                == Configuration.UI_MODE_NIGHT_YES;
+        return (context.getResources().getConfiguration().uiMode & 48) == 32;
     }
 
-    @Override
-    public int getCurrentSfpsEnrollStage(int steps, Function<Integer, Integer> stageStepsGetter) {
-        if (steps < stageStepsGetter.apply(0)) {
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public int getCurrentSfpsEnrollStage(int i, Function function) {
+        if (i < ((Integer) function.apply(0)).intValue()) {
             return 0;
         }
-        if (steps < stageStepsGetter.apply(1)) {
+        if (i < ((Integer) function.apply(1)).intValue()) {
             return 1;
         }
-        if (steps < stageStepsGetter.apply(2)) {
+        if (i < ((Integer) function.apply(2)).intValue()) {
             return 2;
         }
-        if (steps < stageStepsGetter.apply(3)) {
-            return 3;
-        }
-        return 4;
+        return i < ((Integer) function.apply(3)).intValue() ? 3 : 4;
     }
 
-    @Override
-    public int getFeaturedStageHeaderResource(int stage) {
-        switch (stage) {
-            case 0:
-                return R.string.security_settings_fingerprint_enroll_repeat_title_immobile_overlay;
-            case 1:
-                return R.string.security_settings_sfps_enroll_finger_center_title_immobile_overlay;
-            case 2:
-                return R.string.security_settings_sfps_enroll_fingertip_title_immobile_overlay;
-            case 3:
-                return R.string.security_settings_sfps_enroll_left_edge_title_immobile_overlay;
-            case 4:
-                return R.string.security_settings_sfps_enroll_right_edge_title_immobile_overlay;
-            default:
-                throw new IllegalArgumentException("Invalid stage: " + stage);
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public int getFeaturedStageHeaderResource(int i) {
+        if (i == 0) {
+            return R$string.security_settings_fingerprint_enroll_repeat_title_immobile_overlay;
         }
+        if (i == 1) {
+            return R$string.security_settings_sfps_enroll_finger_center_title_immobile_overlay;
+        }
+        if (i == 2) {
+            return R$string.security_settings_sfps_enroll_fingertip_title_immobile_overlay;
+        }
+        if (i == 3) {
+            return R$string.security_settings_sfps_enroll_left_edge_title_immobile_overlay;
+        }
+        if (i == 4) {
+            return R$string.security_settings_sfps_enroll_right_edge_title_immobile_overlay;
+        }
+        Utils$$ExternalSyntheticBUOutline0.m("Invalid stage: ", i);
+        return 0;
     }
 
-    @Override
-    public int getSfpsEnrollLottiePerStage(int stage) {
-        switch (stage) {
-            case 0:
-            case 1:
-            case 2:
-            case 3:
-                return R.raw.sfps_lift_then_touch_lottie;
-            case 4:
-                return R.raw.sfps_reposition_finger_right_lottie;
-            default:
-                throw new IllegalArgumentException("Invalid stage: " + stage);
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public int getSfpsEnrollLottiePerStage(int i) {
+        if (i == 0) {
+            return R$raw.sfps_lift_then_touch_lottie;
         }
+        if (i == 1) {
+            return R$raw.sfps_lift_then_touch_lottie;
+        }
+        if (i == 2) {
+            return R$raw.sfps_lift_then_touch_lottie;
+        }
+        if (i == 3) {
+            return R$raw.sfps_lift_then_touch_lottie;
+        }
+        if (i == 4) {
+            return R$raw.sfps_reposition_finger_right_lottie;
+        }
+        Utils$$ExternalSyntheticBUOutline0.m("Invalid stage: ", i);
+        return 0;
     }
 
-    @Override
-    public float getEnrollStageThreshold(Context context, int stage) {
-        if (mEnrollStageThresholds == null) {
-            String[] thresholds =
-                    context.getResources()
-                            .getStringArray(R.array.config_sfps_enroll_stage_thresholds);
-            mEnrollStageThresholds = new float[thresholds.length];
-            for (int i = 0; i < thresholds.length; i++) {
-                mEnrollStageThresholds[i] = Float.parseFloat(thresholds[i]);
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public float getEnrollStageThreshold(Context context, int i) {
+        if (this.mEnrollStageThresholds == null) {
+            String[] stringArray = context.getResources().getStringArray(R$array.config_sfps_enroll_stage_thresholds);
+            this.mEnrollStageThresholds = new float[stringArray.length];
+            int i2 = 0;
+            while (true) {
+                float[] fArr = this.mEnrollStageThresholds;
+                if (i2 >= fArr.length) {
+                    break;
+                }
+                fArr[i2] = Float.parseFloat(stringArray[i2]);
+                i2++;
             }
         }
-        if (stage >= 0 && stage <= mEnrollStageThresholds.length) {
-            if (stage == mEnrollStageThresholds.length) {
-                return 1.0f;
+        if (i >= 0) {
+            float[] fArr2 = this.mEnrollStageThresholds;
+            if (i <= fArr2.length) {
+                if (i == fArr2.length) {
+                    return 1.0f;
+                }
+                return fArr2[i];
             }
-            return mEnrollStageThresholds[stage];
         }
-        Log.w(TAG, "Unsupported enroll stage index: " + stage);
-        return stage < 0 ? 0.0f : 1.0f;
+        Log.w(TAG, "Unsupported enroll stage index: " + i);
+        return i < 0 ? 0.0f : 1.0f;
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
     public boolean shouldUpdateTitleAndDescription() {
-        return mIsAcquiredGood || !mIsAcquiredImmobile;
+        return this.mIsAcquiredGood || !this.mIsAcquiredImmobile;
     }
 
-    @Override
-    public void handleOnAcquired(boolean isGood) {
-        mIsAcquiredGood = isGood;
-        mIsAcquiredImmobile = false;
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public void handleOnAcquired(boolean z) {
+        this.mIsAcquiredGood = z;
+        this.mIsAcquiredImmobile = false;
     }
 
-    @Override
-    public void handleOnEnrollmentProgressChange(int steps, int remaining) {
-        Log.d(
-                TAG,
-                "handleOnEnrollmentProgressChange: good="
-                        + mIsAcquiredGood
-                        + ", immobile="
-                        + mIsAcquiredImmobile
-                        + ", remaining="
-                        + remaining);
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public void handleOnEnrollmentProgressChange(int i, int i2) {
+        Log.d(TAG, "handleOnEnrollmentProgressChange: good=" + this.mIsAcquiredGood + ", immobile=" + this.mIsAcquiredImmobile + ", remaining=" + i2);
     }
 
-    @Override
-    public void handleOnEnrollmentHelp(
-            int helpMsgId,
-            CharSequence helpString,
-            Supplier<FingerprintEnrollEnrolling> activitySupplier) {
-        mIsAcquiredImmobile = (helpMsgId == 9 || helpMsgId == 1000);
-        Log.d(
-                TAG,
-                "handleOnEnrollmentHelp: good="
-                        + mIsAcquiredGood
-                        + ", immobile="
-                        + mIsAcquiredImmobile
-                        + ", helpMsgId="
-                        + helpMsgId);
-        if (activitySupplier == null || TextUtils.isEmpty(helpString)) {
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public void handleOnEnrollmentHelp(int i, CharSequence charSequence, Supplier supplier) {
+        this.mIsAcquiredImmobile = i == 9 || i == 1000;
+        Log.d(TAG, "handleOnEnrollmentHelp: good=" + this.mIsAcquiredGood + ", immobile=" + this.mIsAcquiredImmobile + ", helpMsgId=" + i);
+        if (supplier == null || TextUtils.isEmpty(charSequence)) {
             return;
         }
-        showPauseEnrollmentDialogIfNecessary(helpMsgId, helpString.toString(), activitySupplier);
+        showPauseEnrollmentDialogIfNecessary(i, charSequence.toString(), supplier);
     }
 
-    private void showPauseEnrollmentDialogIfNecessary(
-            int helpMsgId,
-            String helpString,
-            Supplier<FingerprintEnrollEnrolling> activitySupplier) {
-        if (helpMsgId != 1000) {
-            return;
-        }
-        FingerprintEnrollEnrolling activity = activitySupplier.get();
-        if (activity == null) {
-            return;
-        }
-        String vendorString = getVendorString(activity, 0);
-        if (!TextUtils.isEmpty(vendorString) && vendorString.equals(helpString)) {
-            getImmobileDialog().show(activity.getSupportFragmentManager(), "immobile_dialog");
-        } else {
-            Log.d(
-                    TAG,
-                    "ImmobileHelpDialog not showing: has vendor string="
-                            + (!TextUtils.isEmpty(vendorString))
-                            + ", msg matches="
-                            + (!TextUtils.isEmpty(vendorString)
-                                    && vendorString.equals(helpString)));
+    private void showPauseEnrollmentDialogIfNecessary(int i, String str, Supplier supplier) {
+        if (i == 1000) {
+            boolean z = false;
+            String vendorString = getVendorString((Context) supplier.get(), 0);
+            if (!TextUtils.isEmpty(vendorString) && vendorString.equals(str)) {
+                getImmobileDialog().show(((FingerprintEnrollEnrolling) supplier.get()).getSupportFragmentManager(), "immobile_dialog");
+                return;
+            }
+            boolean zIsEmpty = TextUtils.isEmpty(vendorString);
+            String str2 = TAG;
+            StringBuilder sb = new StringBuilder("ImmobileHelpDialog not showing: has vendor string=");
+            sb.append(!zIsEmpty);
+            sb.append(", msg matches=");
+            if (!zIsEmpty && vendorString.equals(str)) {
+                z = true;
+            }
+            sb.append(z);
+            Log.d(str2, sb.toString());
         }
     }
 
@@ -217,141 +214,94 @@ public class SfpsEnrollmentFeatureGoogleImpl implements SfpsEnrollmentFeature {
         return new ImmobileHelpDialog();
     }
 
-    public String getVendorString(Context context, int index) {
-        if (index < 0) {
-            return null;
+    public String getVendorString(Context context, int i) {
+        String[] stringArray;
+        if (i >= 0 && (stringArray = context.getResources().getStringArray(R$array.fingerprint_acquired_vendor)) != null && i < stringArray.length) {
+            return stringArray[i];
         }
-        String[] stringArray =
-                context.getResources().getStringArray(R.array.fingerprint_acquired_vendor);
-        if (stringArray == null || index >= stringArray.length) {
-            return null;
-        }
-        return stringArray[index];
+        return null;
     }
 
-    public static class ImmobileHelpDialog extends DialogFragment {
-        @NonNull
-        @Override
-        public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-            return new AlertDialog.Builder(requireContext())
-                    .setView(R.layout.biometric_enrollment_immobile_dialog)
-                    .create();
+    public class ImmobileHelpDialog extends DialogFragment {
+        @Override // androidx.fragment.app.DialogFragment
+        public Dialog onCreateDialog(Bundle bundle) {
+            return new AlertDialog.Builder(getContext()).setView(R$layout.biometric_enrollment_immobile_dialog).create();
         }
 
-        @Override
+        @Override // androidx.fragment.app.Fragment
         public void onResume() {
-            super.onResume();
             Dialog dialog = getDialog();
-            if (dialog == null) {
+            if (dialog != null) {
+                dialog.setCancelable(false);
+                dialog.setCanceledOnTouchOutside(false);
+                View viewFindViewById = dialog.findViewById(R$id.immobile_continue_btn);
+                viewFindViewById.setOnClickListener(new View.OnClickListener() { // from class: com.google.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeatureGoogleImpl$ImmobileHelpDialog$$ExternalSyntheticLambda0
+                    @Override // android.view.View.OnClickListener
+                    public final void onClick(View view) {
+                        this.f$0.lambda$onResume$0(view);
+                    }
+                });
+                setUpTouchDelegate(dialog.findViewById(R$id.biometric_enrollment_immobile_help), viewFindViewById);
+                adjustDimensionsIfNeeded(dialog);
+            } else {
                 Log.w(SfpsEnrollmentFeatureGoogleImpl.TAG, "No dialog created!");
                 Utils.resumeEnroll();
             }
-            dialog.setCancelable(false);
-            dialog.setCanceledOnTouchOutside(false);
-            View continueButton = dialog.findViewById(R.id.immobile_continue_btn);
-            if (continueButton == null) {
-                adjustDimensionsIfNeeded(dialog);
-                return;
-            }
-            continueButton.setOnClickListener(
-                    v -> {
-                        Utils.resumeEnroll();
-                        dialog.dismiss();
-                    });
-            View helpView = dialog.findViewById(R.id.biometric_enrollment_immobile_help);
-            if (helpView != null) {
-                setUpTouchDelegate(helpView, continueButton);
-            }
-            adjustDimensionsIfNeeded(dialog);
+            super.onResume();
         }
 
-        private void setUpTouchDelegate(final View container, final View target) {
-            container
-                    .getViewTreeObserver()
-                    .addOnGlobalLayoutListener(
-                            new ViewTreeObserver.OnGlobalLayoutListener() {
-                                @Override
-                                public void onGlobalLayout() {
-                                    container.setTouchDelegate(
-                                            new TouchDelegate(
-                                                    new Rect(
-                                                            container.getLeft(),
-                                                            target.getTop(),
-                                                            container.getRight(),
-                                                            target.getBottom()),
-                                                    target));
-                                    container
-                                            .getViewTreeObserver()
-                                            .removeOnGlobalLayoutListener(this);
-                                }
-                            });
+        /* JADX INFO: Access modifiers changed from: private */
+        public /* synthetic */ void lambda$onResume$0(View view) {
+            Utils.resumeEnroll();
+            getDialog().dismiss();
+        }
+
+        private void setUpTouchDelegate(final View view, final View view2) {
+            view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener(this) { // from class: com.google.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeatureGoogleImpl.ImmobileHelpDialog.1
+                @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
+                public void onGlobalLayout() {
+                    view.setTouchDelegate(new TouchDelegate(new Rect(view.getLeft(), view2.getTop(), view.getRight(), view2.getBottom()), view2));
+                    view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                }
+            });
         }
 
         private void adjustDimensionsIfNeeded(Dialog dialog) {
-            int displayWidth = getResources().getDisplayMetrics().widthPixels;
-            int dialogWidth = getResources().getDimensionPixelSize(R.dimen.immobile_dialog_width);
-            if (dialog.getWindow() != null) {
-                dialog.getWindow()
-                        .setLayout(
-                                dialogWidth > displayWidth
-                                        ? ViewGroup.LayoutParams.WRAP_CONTENT
-                                        : dialogWidth,
-                                ViewGroup.LayoutParams.WRAP_CONTENT);
-            }
-            Log.d(
-                    SfpsEnrollmentFeatureGoogleImpl.TAG,
-                    "Immobile dialog: dialogWidth="
-                            + dialogWidth
-                            + ", displayWidth="
-                            + displayWidth);
+            int i = getResources().getDisplayMetrics().widthPixels;
+            int dimensionPixelSize = getResources().getDimensionPixelSize(R$dimen.immobile_dialog_width);
+            dialog.getWindow().setLayout(dimensionPixelSize > i ? -2 : dimensionPixelSize, -2);
+            Log.d(SfpsEnrollmentFeatureGoogleImpl.TAG, "Immobile dialog: dialogWidth=" + dimensionPixelSize + ", displayWidth=" + i);
         }
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
     public Animator getHelpAnimator(View view) {
-        float distance =
-                TypedValue.applyDimension(
-                        TypedValue.COMPLEX_UNIT_DIP,
-                        10.0f,
-                        view.getContext().getResources().getDisplayMetrics());
-        float negativeDistance = -distance;
-        float doubleDistance = 2.0f * distance;
-        ObjectAnimator moveLeftAnimator =
-                ObjectAnimator.ofFloat(view, "translationX", negativeDistance).setDuration(67L);
-        ObjectAnimator moveRightAnimator =
-                ObjectAnimator.ofFloat(view, "translationX", doubleDistance).setDuration(100L);
-        ObjectAnimator moveLeftFarAnimator =
-                ObjectAnimator.ofFloat(view, "translationX", -2.0f * distance).setDuration(100L);
-        ObjectAnimator moveRightAgainAnimator =
-                ObjectAnimator.ofFloat(view, "translationX", doubleDistance).setDuration(100L);
-        ObjectAnimator moveLeftReturnAnimator =
-                ObjectAnimator.ofFloat(view, "translationX", negativeDistance).setDuration(150L);
-
-        Interpolator interpolator = PathInterpolatorCompat.create(0.6f, 0.0f, 0.4f, 1.0f);
-        moveLeftAnimator.setInterpolator(interpolator);
-        moveRightAnimator.setInterpolator(interpolator);
-        moveLeftFarAnimator.setInterpolator(interpolator);
-        moveRightAgainAnimator.setInterpolator(interpolator);
-        moveLeftReturnAnimator.setInterpolator(new FastOutSlowInInterpolator());
-
-        moveLeftAnimator.setAutoCancel(false);
-        moveRightAnimator.setAutoCancel(false);
-        moveLeftFarAnimator.setAutoCancel(false);
-        moveRightAgainAnimator.setAutoCancel(false);
-        moveLeftReturnAnimator.setAutoCancel(false);
-
+        float fApplyDimension = TypedValue.applyDimension(1, 10.0f, view.getContext().getResources().getDisplayMetrics());
+        float f = (-1.0f) * fApplyDimension;
+        ObjectAnimator duration = ObjectAnimator.ofFloat(view, "translationX", f).setDuration(67L);
+        float f2 = 2.0f * fApplyDimension;
+        ObjectAnimator duration2 = ObjectAnimator.ofFloat(view, "translationX", f2).setDuration(100L);
+        ObjectAnimator duration3 = ObjectAnimator.ofFloat(view, "translationX", fApplyDimension * (-2.0f)).setDuration(100L);
+        ObjectAnimator duration4 = ObjectAnimator.ofFloat(view, "translationX", f2).setDuration(100L);
+        ObjectAnimator duration5 = ObjectAnimator.ofFloat(view, "translationX", f).setDuration(150L);
+        Interpolator interpolatorCreate = PathInterpolatorCompat.create(0.6f, 0.0f, 0.4f, 1.0f);
+        duration.setInterpolator(interpolatorCreate);
+        duration2.setInterpolator(interpolatorCreate);
+        duration3.setInterpolator(interpolatorCreate);
+        duration4.setInterpolator(interpolatorCreate);
+        duration5.setInterpolator(new FastOutSlowInInterpolator());
+        duration.setAutoCancel(false);
+        duration2.setAutoCancel(false);
+        duration3.setAutoCancel(false);
+        duration4.setAutoCancel(false);
+        duration5.setAutoCancel(false);
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playSequentially(
-                moveLeftAnimator,
-                moveRightAnimator,
-                moveLeftFarAnimator,
-                moveRightAgainAnimator,
-                moveLeftReturnAnimator);
+        animatorSet.playSequentially(duration, duration2, duration3, duration4, duration5);
         return animatorSet;
     }
 
-    @Override
-    public boolean shouldAdjustHeaderText(Configuration configuration, boolean isFolded) {
-        return !isFolded || configuration.orientation == Configuration.ORIENTATION_LANDSCAPE;
+    @Override // com.android.settings.biometrics.fingerprint.feature.SfpsEnrollmentFeature
+    public boolean shouldAdjustHeaderText(Configuration configuration, boolean z) {
+        return !z || configuration.orientation == 2;
     }
 }

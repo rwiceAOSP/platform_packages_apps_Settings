@@ -4,20 +4,17 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
-import android.hardware.fingerprint.FingerprintSensorProperties;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.AttributeSet;
 import android.util.RotationUtils;
-import android.view.Gravity;
-import android.view.Surface;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-
 import com.android.settings.R;
 import com.android.systemui.biometrics.shared.model.UdfpsOverlayParams;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class UdfpsEnrollView extends FrameLayout implements UdfpsEnrollHelper.Listener {
     private int mDefaultProgressBarRadius;
     private final UdfpsEnrollDrawable mFingerprintDrawable;
@@ -28,164 +25,161 @@ public class UdfpsEnrollView extends FrameLayout implements UdfpsEnrollHelper.Li
     private int mProgressBarRadius;
     private Rect mSensorRect;
 
-    public UdfpsEnrollView(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        mFingerprintDrawable = new UdfpsEnrollDrawable(context, attrs);
-        mFingerprintProgressDrawable = new UdfpsEnrollProgressBarDrawable(context, attrs);
-        mHandler = new Handler(Looper.getMainLooper());
+    public UdfpsEnrollView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.mFingerprintDrawable = new UdfpsEnrollDrawable(((FrameLayout) this).mContext, attributeSet);
+        this.mFingerprintProgressDrawable = new UdfpsEnrollProgressBarDrawable(context, attributeSet);
+        this.mHandler = new Handler(Looper.getMainLooper());
     }
 
-    @Override
+    @Override // android.view.View
     protected void onFinishInflate() {
-        super.onFinishInflate();
-        ImageView fpView = findViewById(R.id.udfps_enroll_animation_fp_view);
-        if (fpView != null) {
-            fpView.setImageDrawable(mFingerprintDrawable);
+        ((ImageView) findViewById(R.id.udfps_enroll_animation_fp_view)).setImageDrawable(this.mFingerprintDrawable);
+        ImageView imageView = (ImageView) findViewById(R.id.udfps_enroll_animation_fp_progress_view);
+        this.mFingerprintProgressView = imageView;
+        imageView.setImageDrawable(this.mFingerprintProgressDrawable);
+    }
+
+    @Override // com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollHelper.Listener
+    public void onEnrollmentProgress(final int i, final int i2) {
+        this.mHandler.post(new Runnable() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollView$$ExternalSyntheticLambda1
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.lambda$onEnrollmentProgress$0(i, i2);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$onEnrollmentProgress$0(int i, int i2) {
+        this.mFingerprintProgressDrawable.onEnrollmentProgress(i, i2);
+        this.mFingerprintDrawable.onEnrollmentProgress(i, i2);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$onEnrollmentHelp$1(int i, int i2) {
+        this.mFingerprintProgressDrawable.onEnrollmentHelp(i, i2);
+    }
+
+    @Override // com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollHelper.Listener
+    public void onEnrollmentHelp(final int i, final int i2) {
+        this.mHandler.post(new Runnable() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollView$$ExternalSyntheticLambda3
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.lambda$onEnrollmentHelp$1(i, i2);
+            }
+        });
+    }
+
+    @Override // com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollHelper.Listener
+    public void onAcquired(final boolean z) {
+        this.mHandler.post(new Runnable() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollView$$ExternalSyntheticLambda2
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.lambda$onAcquired$2(z);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$onAcquired$2(boolean z) {
+        onFingerUp();
+        if (z) {
+            this.mFingerprintProgressDrawable.onLastStepAcquired();
         }
-        mFingerprintProgressView = findViewById(R.id.udfps_enroll_animation_fp_progress_view);
-        if (mFingerprintProgressView != null) {
-            mFingerprintProgressView.setImageDrawable(mFingerprintProgressDrawable);
-        }
     }
 
-    @Override
-    public void onEnrollmentProgress(final int remaining, final int total) {
-        mHandler.post(
-                () -> {
-                    mFingerprintProgressDrawable.onEnrollmentProgress(remaining, total);
-                    mFingerprintDrawable.onEnrollmentProgress(remaining, total);
-                });
-    }
-
-    @Override
-    public void onEnrollmentHelp(final int remaining, final int total) {
-        mHandler.post(() -> mFingerprintProgressDrawable.onEnrollmentHelp(remaining, total));
-    }
-
-    @Override
-    public void onAcquired(final boolean isLastStep) {
-        mHandler.post(
-                () -> {
-                    onFingerUp();
-                    if (isLastStep) {
-                        mFingerprintProgressDrawable.onLastStepAcquired();
-                    }
-                });
-    }
-
-    @Override
-    public void onPointerDown(int sensorId) {
+    @Override // com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollHelper.Listener
+    public void onPointerDown(int i) {
         onFingerDown();
     }
 
-    @Override
-    public void onPointerUp(int sensorId) {
+    @Override // com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollHelper.Listener
+    public void onPointerUp(int i) {
         onFingerUp();
     }
 
     public UdfpsOverlayParams getOverlayParams() {
-        return mOverlayParams;
+        return this.mOverlayParams;
     }
 
-    public void setOverlayParams(UdfpsOverlayParams overlayParams) {
-        mOverlayParams = overlayParams;
-        post(
-                () -> {
-                    if (mOverlayParams == null) {
-                        return;
-                    }
-                    int scaleFactor =
-                            (int)
-                                    (mOverlayParams.getScaleFactor()
-                                            * getContext()
-                                                    .getResources()
-                                                    .getInteger(
-                                                            R.integer
-                                                                    .config_udfpsEnrollProgressBar));
-                    mDefaultProgressBarRadius = scaleFactor;
-                    if (mProgressBarRadius == 0) {
-                        mProgressBarRadius = scaleFactor;
-                    }
-                    mSensorRect = new Rect(mOverlayParams.getSensorBounds());
-                    onSensorRectUpdated();
-                });
+    public void setOverlayParams(UdfpsOverlayParams udfpsOverlayParams) {
+        this.mOverlayParams = udfpsOverlayParams;
+        post(new Runnable() { // from class: com.google.android.settings.biometrics.udfps.ui.widget.UdfpsEnrollView$$ExternalSyntheticLambda0
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.lambda$setOverlayParams$3();
+            }
+        });
     }
 
-    public void setEnrollHelper(UdfpsEnrollHelper helper) {
-        mFingerprintDrawable.setEnrollHelper(helper);
-        if (helper != null) {
-            helper.setListener(this);
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$setOverlayParams$3() {
+        int scaleFactor = (int) (this.mOverlayParams.getScaleFactor() * getContext().getResources().getInteger(R.integer.config_udfpsEnrollProgressBar));
+        this.mDefaultProgressBarRadius = scaleFactor;
+        if (this.mProgressBarRadius == 0) {
+            this.mProgressBarRadius = scaleFactor;
         }
+        this.mSensorRect = new Rect(this.mOverlayParams.getSensorBounds());
+        onSensorRectUpdated();
     }
 
-    void setDecreasePadding(int decrease) {
-        mProgressBarRadius -= decrease;
+    public void setEnrollHelper(UdfpsEnrollHelper udfpsEnrollHelper) {
+        this.mFingerprintDrawable.setEnrollHelper(udfpsEnrollHelper);
+        udfpsEnrollHelper.setListener(this);
+    }
+
+    void setDecreasePadding(int i) {
+        this.mProgressBarRadius -= i;
         onSensorRectUpdated();
     }
 
     Drawable getFingerprintProgressDrawable() {
-        return mFingerprintProgressDrawable;
+        return this.mFingerprintProgressDrawable;
     }
 
     private void onSensorRectUpdated() {
-        if (mOverlayParams == null || mSensorRect == null) {
-            return;
-        }
         updateDimensions();
-        mSensorRect.set(
-                getPaddingX(),
-                getPaddingY(),
-                mOverlayParams.getSensorBounds().width() + getPaddingX(),
-                mOverlayParams.getSensorBounds().height() + getPaddingY());
-        mFingerprintDrawable.onSensorRectUpdated(new RectF(mSensorRect));
+        this.mSensorRect.set(getPaddingX(), getPaddingY(), this.mOverlayParams.getSensorBounds().width() + getPaddingX(), this.mOverlayParams.getSensorBounds().height() + getPaddingY());
+        this.mFingerprintDrawable.onSensorRectUpdated(new RectF(this.mSensorRect));
     }
 
     private void updateDimensions() {
-        if (mOverlayParams == null) {
-            return;
+        Rect rect = new Rect(this.mOverlayParams.getSensorBounds());
+        int rotation = this.mOverlayParams.getRotation();
+        if (rotation == 1 || rotation == 3) {
+            RotationUtils.rotateBounds(rect, this.mOverlayParams.getNaturalDisplayWidth(), this.mOverlayParams.getNaturalDisplayHeight(), rotation);
         }
-        Rect rect = new Rect(mOverlayParams.getSensorBounds());
-        int rotation = mOverlayParams.getRotation();
-        if (rotation == Surface.ROTATION_90 || rotation == Surface.ROTATION_270) {
-            RotationUtils.rotateBounds(
-                    rect,
-                    mOverlayParams.getNaturalDisplayWidth(),
-                    mOverlayParams.getNaturalDisplayHeight(),
-                    rotation);
-        }
-        ViewGroup parent = (ViewGroup) getParent();
-        if (parent == null) {
-            return;
-        }
-        ViewGroup.MarginLayoutParams marginLayoutParams =
-                (ViewGroup.MarginLayoutParams) getLayoutParams();
+        ViewGroup viewGroup = (ViewGroup) getParent();
+        ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) getLayoutParams();
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) getLayoutParams();
-        if (rotation == Surface.ROTATION_0 || rotation == Surface.ROTATION_180) {
-            int[] location = new int[2];
-            parent.getLocationOnScreen(location);
-            int width = location[0] + parent.getWidth();
-            layoutParams.gravity = Gravity.TOP | Gravity.END;
+        if (rotation == 0 || rotation == 2) {
+            int[] locationOnScreen = viewGroup.getLocationOnScreen();
+            int i = locationOnScreen[0];
+            int i2 = locationOnScreen[1];
+            int width = i + viewGroup.getWidth();
+            layoutParams.gravity = 53;
             int paddingX = (width - rect.right) - getPaddingX();
-            int paddingY = (rect.top - location[1]) - getPaddingY();
-            if (marginLayoutParams.rightMargin == paddingX
-                    && marginLayoutParams.topMargin == paddingY) {
+            int paddingY = (rect.top - i2) - getPaddingY();
+            if (marginLayoutParams.rightMargin == paddingX && marginLayoutParams.topMargin == paddingY) {
                 return;
             }
             marginLayoutParams.rightMargin = paddingX;
             marginLayoutParams.topMargin = paddingY;
             setLayoutParams(layoutParams);
         } else {
-            int[] location = new int[2];
-            parent.getLocationOnScreen(location);
-            int width = parent.getWidth() + location[0];
-            int height = location[1] + parent.getHeight();
-            if (rotation == Surface.ROTATION_90) {
-                layoutParams.gravity = Gravity.BOTTOM | Gravity.END;
-                marginLayoutParams.rightMargin = (width - rect.right) - getPaddingX();
+            int[] locationOnScreen2 = viewGroup.getLocationOnScreen();
+            int i3 = locationOnScreen2[0];
+            int i4 = locationOnScreen2[1];
+            int width2 = viewGroup.getWidth() + i3;
+            int height = i4 + viewGroup.getHeight();
+            if (rotation == 1) {
+                layoutParams.gravity = 85;
+                marginLayoutParams.rightMargin = (width2 - rect.right) - getPaddingX();
                 marginLayoutParams.bottomMargin = (height - rect.bottom) - getPaddingY();
-            } else if (rotation == Surface.ROTATION_270) {
-                layoutParams.gravity = Gravity.BOTTOM | Gravity.START;
-                marginLayoutParams.leftMargin = (rect.left - location[0]) - getPaddingX();
+            } else if (rotation == 3) {
+                layoutParams.gravity = 83;
+                marginLayoutParams.leftMargin = (rect.left - i3) - getPaddingX();
                 marginLayoutParams.bottomMargin = (height - rect.bottom) - getPaddingY();
             }
         }
@@ -195,24 +189,22 @@ public class UdfpsEnrollView extends FrameLayout implements UdfpsEnrollHelper.Li
     }
 
     private void onFingerDown() {
-        if (mOverlayParams != null
-                && mOverlayParams.getSensorType()
-                        == FingerprintSensorProperties.TYPE_UDFPS_OPTICAL) {
-            mFingerprintDrawable.setShouldSkipDraw(true);
+        if (this.mOverlayParams.getSensorType() == 3) {
+            this.mFingerprintDrawable.setShouldSkipDraw(true);
         }
-        mFingerprintDrawable.invalidateSelf();
+        this.mFingerprintDrawable.invalidateSelf();
     }
 
     private void onFingerUp() {
-        mFingerprintDrawable.setShouldSkipDraw(false);
-        mFingerprintDrawable.invalidateSelf();
+        this.mFingerprintDrawable.setShouldSkipDraw(false);
+        this.mFingerprintDrawable.invalidateSelf();
     }
 
     private int getPaddingX() {
-        return mProgressBarRadius;
+        return this.mProgressBarRadius;
     }
 
     private int getPaddingY() {
-        return mProgressBarRadius;
+        return this.mProgressBarRadius;
     }
 }

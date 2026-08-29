@@ -4,6 +4,7 @@ import android.animation.ValueAnimator;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class RotatingArc {
     private float mAngle;
     private ValueAnimator mColorAnimator;
@@ -14,66 +15,81 @@ public class RotatingArc {
     private float mSweepAngle;
 
     public RotatingArc(int i, int i2, int[] iArr) {
-        mIndex = i;
-        mColors = iArr;
-        mPaint = new Paint();
-        mPaint.setAntiAlias(true);
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(20.0f);
-        mPaint.setColor(getColorForIndex(i));
-        mAngle = (360 / i2) * i;
+        this.mIndex = i;
+        this.mColors = iArr;
+        Paint paint = new Paint();
+        this.mPaint = paint;
+        paint.setAntiAlias(true);
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+        paint.setStrokeWidth(20.0f);
+        paint.setColor(getColorForIndex(i));
+        this.mAngle = (360 / i2) * i;
     }
 
     public void setSweepAngle(float f) {
-        mSweepAngle = f;
+        this.mSweepAngle = f;
     }
 
     public void setRotateSpeed(float f) {
-        mRotateSpeed = f;
+        this.mRotateSpeed = f;
     }
 
     public int getColorForIndex(int i) {
-        return mColors[i % mColors.length];
+        int[] iArr = this.mColors;
+        return iArr[i % iArr.length];
     }
 
     public void update(long j, long j2) {
-        mAngle += (mRotateSpeed * j2) / 1000.0f;
+        this.mAngle += (this.mRotateSpeed * j2) / 1000.0f;
     }
 
     public void draw(Canvas canvas) {
-        float width = (canvas.getWidth() / 2) - (mPaint.getStrokeWidth() / 2.0f);
-        canvas.drawArc(
-                (canvas.getWidth() / 2) - width,
-                (canvas.getHeight() / 2) - width,
-                (canvas.getWidth() / 2) + width,
-                (canvas.getWidth() / 2) + width,
-                mAngle,
-                mSweepAngle,
-                false,
-                mPaint);
+        float width = (canvas.getWidth() / 2) - (this.mPaint.getStrokeWidth() / 2.0f);
+        canvas.drawArc((canvas.getWidth() / 2) - width, (canvas.getHeight() / 2) - width, (canvas.getWidth() / 2) + width, (canvas.getWidth() / 2) + width, this.mAngle, this.mSweepAngle, false, this.mPaint);
     }
 
     public void stopCurrentAnimation() {
-        if (mColorAnimator != null) {
-            mColorAnimator.cancel();
+        ValueAnimator valueAnimator = this.mColorAnimator;
+        if (valueAnimator != null) {
+            valueAnimator.cancel();
         }
     }
 
     public void stopRotating(long j) {
-        mColorAnimator = ValueAnimator.ofArgb(mPaint.getColor(), 0);
-        mColorAnimator.setDuration(j);
-        mColorAnimator.addUpdateListener(
-                valueAnimator -> mPaint.setColor((Integer) valueAnimator.getAnimatedValue()));
-        mColorAnimator.start();
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mPaint.getColor(), 0);
+        this.mColorAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.setDuration(j);
+        this.mColorAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.RotatingArc$$ExternalSyntheticLambda0
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$stopRotating$0(valueAnimator);
+            }
+        });
+        this.mColorAnimator.start();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$stopRotating$0(ValueAnimator valueAnimator) {
+        this.mPaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
     public void startRotating(long j) {
-        mColorAnimator = ValueAnimator.ofArgb(mPaint.getColor(), getColorForIndex(mIndex));
-        mColorAnimator.setDuration(j);
-        mColorAnimator.addUpdateListener(
-                valueAnimator -> mPaint.setColor((Integer) valueAnimator.getAnimatedValue()));
-        mColorAnimator.start();
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mPaint.getColor(), getColorForIndex(this.mIndex));
+        this.mColorAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.setDuration(j);
+        this.mColorAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.single.RotatingArc$$ExternalSyntheticLambda1
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$startRotating$1(valueAnimator);
+            }
+        });
+        this.mColorAnimator.start();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$startRotating$1(ValueAnimator valueAnimator) {
+        this.mPaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
     public void startFinishing(long j) {

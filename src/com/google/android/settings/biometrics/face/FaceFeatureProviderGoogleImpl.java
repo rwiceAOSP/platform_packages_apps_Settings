@@ -4,64 +4,59 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
-
-import androidx.annotation.NonNull;
-
 import com.android.settings.R;
 import com.android.settings.biometrics.face.FaceEnrollActivityClassProvider;
 import com.android.settings.biometrics.face.FaceFeatureProvider;
 import com.android.settings.biometrics.face.FaceSettingsFeatureProvider;
+import com.google.android.settings.R$bool;
+import com.google.android.settings.R$string;
+import com.google.android.settings.biometrics.R$integer;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class FaceFeatureProviderGoogleImpl implements FaceFeatureProvider {
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public Intent getPostureGuidanceIntent(Context context) {
-        String postureGuidanceActivity =
-                context.getString(R.string.config_face_enroll_guidance_page);
-        ComponentName componentName =
-                TextUtils.isEmpty(postureGuidanceActivity)
-                        ? null
-                        : ComponentName.unflattenFromString(postureGuidanceActivity);
-        if (componentName == null) {
+        ComponentName componentNameUnflattenFromString;
+        String string = context.getString(R$string.config_face_enroll_guidance_page);
+        if (TextUtils.isEmpty(string) || (componentNameUnflattenFromString = ComponentName.unflattenFromString(string)) == null) {
             return null;
         }
         Intent intent = new Intent();
-        intent.setComponent(componentName);
+        intent.setComponent(componentNameUnflattenFromString);
         return intent;
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public boolean isAttentionSupported(Context context) {
-        return context.getResources().getBoolean(R.bool.config_face_settings_attention_supported);
+        return context.getResources().getBoolean(R$bool.config_face_settings_attention_supported);
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public boolean isSetupWizardSupported(Context context) {
         return context.getResources().getBoolean(R.bool.config_suw_support_face_enroll);
     }
 
-    @NonNull
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public FaceEnrollActivityClassProvider getEnrollActivityClassProvider() {
         return FaceEnrollActivityClassProviderGoogle.INSTANCE;
     }
 
-    @NonNull
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public FaceSettingsFeatureProvider getFaceSettingsFeatureProvider() {
         return FaceSettingsFeatureProviderGoogle.INSTANCE;
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public int getMaxEnrollableCount(Context context) {
-        return context.getResources().getInteger(R.integer.settings_max_face_enrollable);
+        return context.getResources().getInteger(R$integer.settings_max_face_enrollable);
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public Class getParentalConsentPage() {
         return FaceEnrollParentalConsentGoogle.class;
     }
 
-    @Override
+    @Override // com.android.settings.biometrics.face.FaceFeatureProvider
     public int[] getParentalConsentStringRes() {
         return FaceEnrollParentalConsentGoogle.CONSENT_STRING_RESOURCES;
     }

@@ -18,16 +18,17 @@ private constructor(private val fingerprintExtSupplier: Supplier<IFingerprintExt
         get() {
             if (fingerprintExtSupplier.get() == null) {
                 Log.d(TAG, "get(), fingerprintExt is null")
-                return null
+            } else {
+                try {
+                    val str = SystemProperties.get(KEY_SP)
+                    if (str.length > 0) {
+                        return SpHal(str.toUInt(16))
+                    }
+                } catch (e: Exception) {
+                    Log.e(TAG, "Got exception during get", e)
+                }
             }
-            return try {
-                val config = SystemProperties.get(KEY_SP)
-                checkNotNull(config)
-                if (config.isNotEmpty()) SpHal.getInstance(config) else null
-            } catch (e: Exception) {
-                Log.e(TAG, "Got exception during get", e)
-                null
-            }
+            return null
         }
 
     companion object {
@@ -39,7 +40,6 @@ private constructor(private val fingerprintExtSupplier: Supplier<IFingerprintExt
         @JvmStatic
         @Synchronized
         fun getInstance(fingerprintExtSupplier: Supplier<IFingerprintExt?>): FrrRepository {
-            checkNotNull(fingerprintExtSupplier)
             return instance ?: FrrRepositoryImpl(fingerprintExtSupplier).also { instance = it }
         }
     }

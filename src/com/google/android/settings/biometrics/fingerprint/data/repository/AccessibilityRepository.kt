@@ -18,17 +18,18 @@ interface AccessibilityRepository {
 
 class AccessibilityRepositoryImpl(private val context: Context) : AccessibilityRepository {
 
-    private val accessibilityEnabledUri: Uri = Settings.Secure.getUriFor("accessibility_enabled")
+    private val ACCESSIBILITY_ENABLED_URI: Uri =
+        Settings.Secure.getUriFor("accessibility_enabled")
 
     override fun observeAnyAccessibilityServiceEnabled(): Flow<Boolean> =
         callbackFlow {
-                fun sendCurrentValue() {
+                fun sendCurrentState() {
                     val enabled =
                         try {
                             Settings.Secure.getInt(context.contentResolver, "accessibility_enabled")
                         } catch (e: Settings.SettingNotFoundException) {
                             Log.e(
-                                TAG,
+                                "AccessibilityRepository",
                                 "Error finding setting, accessibility was not found: ${e.message}",
                             )
                             0
@@ -36,25 +37,27 @@ class AccessibilityRepositoryImpl(private val context: Context) : AccessibilityR
                     trySend(enabled == 1)
                 }
 
-                val observer =
-                    object : ContentObserver(Handler(Looper.getMainLooper())) {
-                        override fun onChange(selfChange: Boolean, uri: Uri?) {
-                            sendCurrentValue()
-                        }
+                val handler = Handler(Looper.getMainLooper())
+                val contentObserver = object : ContentObserver(handler) {
+                    override fun onChange(selfChange: Boolean) {
+                        super.onChange(selfChange)
+                        sendCurrentState()
                     }
 
+                    override fun onChange(selfChange: Boolean, uri: Uri?) {
+                       super.onChange(selfChange, uri)
+                        sendCurrentState()
+                    }
+                }
+
                 context.contentResolver.registerContentObserver(
-                    accessibilityEnabledUri,
+                    ACCESSIBILITY_ENABLED_URI,
                     false,
                     observer,
                 )
-                sendCurrentValue()
+                sendCurrentState()
 
                 awaitClose { context.contentResolver.unregisterContentObserver(observer) }
             }
             .distinctUntilChanged()
-
-    private companion object {
-        const val TAG = "AccessibilityRepository"
-    }
 }

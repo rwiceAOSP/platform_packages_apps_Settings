@@ -10,10 +10,11 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.util.TypedValue;
 
+/* JADX INFO: loaded from: classes4.dex */
 public abstract class Cutout {
     public static Bitmap createCutoutBitmap(Context context, int i, int i2) {
-        Bitmap createBitmap = Bitmap.createBitmap(i, i, Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(createBitmap);
+        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(i, i, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmapCreateBitmap);
         float f = i;
         RectF rectF = new RectF(0.0f, 0.0f, f, f);
         Paint paint = new Paint();
@@ -24,7 +25,7 @@ public abstract class Cutout {
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OUT));
         float f2 = f / 2.0f;
         canvas.drawCircle(f2, f2, i2, paint);
-        return createBitmap;
+        return bitmapCreateBitmap;
     }
 
     private static int getColorAttr(Context context, int i) {

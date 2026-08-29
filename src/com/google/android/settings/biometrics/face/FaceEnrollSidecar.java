@@ -9,17 +9,13 @@ import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Surface;
-
 import androidx.fragment.app.Fragment;
-
 import com.android.settings.biometrics.face.FaceUpdater;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class FaceEnrollSidecar extends Fragment {
-    private static final String TAG = "FaceEnrollSidecar";
-
     private boolean mDebugConsent;
     private int[] mDisabledFeatures;
     private boolean mDone;
@@ -34,415 +30,413 @@ public class FaceEnrollSidecar extends Fragment {
     private boolean mTalkbackEnabled;
     private byte[] mToken;
     private int mUserId;
-
     private int mEnrollmentSteps = -1;
     private int mEnrollmentRemaining = 0;
     private Handler mHandler = new Handler();
     private int mEnrollmentTypeVendorCode = 0;
+    private final Runnable mTimeoutRunnable = new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollSidecar.1
+        @Override // java.lang.Runnable
+        public void run() {
+            FaceEnrollSidecar.this.cancelEnrollment();
+        }
+    };
+    private final Runnable mStartEnrollRunnable = new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollSidecar.2
+        @Override // java.lang.Runnable
+        public void run() {
+            if (FaceEnrollSidecar.this.mEnrolling) {
+                return;
+            }
+            FaceEnrollSidecar.this.startEnrollment();
+        }
+    };
+    private final FaceManager.EnrollmentCallback mEnrollmentCallback = new FaceManager.EnrollmentCallback() { // from class: com.google.android.settings.biometrics.face.FaceEnrollSidecar.3
+        public void onEnrollmentProgress(int i) {
+            FaceEnrollSidecar.this.onEnrollmentProgress(i);
+        }
 
-    private final Runnable mTimeoutRunnable = () -> cancelEnrollment();
+        public void onEnrollmentHelp(int i, CharSequence charSequence) {
+            FaceEnrollSidecar.this.onEnrollmentHelp(i, charSequence);
+        }
 
-    private final Runnable mStartEnrollRunnable =
-            new Runnable() {
-                @Override
-                public void run() {
-                    if (mEnrolling) {
-                        return;
-                    }
-                    startEnrollment();
-                }
-            };
-
-    private final FaceManager.EnrollmentCallback mEnrollmentCallback =
-            new FaceManager.EnrollmentCallback() {
-                @Override
-                public void onEnrollmentProgress(int remaining) {
-                    FaceEnrollSidecar.this.onEnrollmentProgress(remaining);
-                }
-
-                @Override
-                public void onEnrollmentHelp(int helpMsgId, CharSequence helpString) {
-                    FaceEnrollSidecar.this.onEnrollmentHelp(helpMsgId, helpString);
-                }
-
-                @Override
-                public void onEnrollmentError(int errMsgId, CharSequence errString) {
-                    FaceEnrollSidecar.this.onEnrollmentError(errMsgId, errString);
-                }
-            };
-
-    private ArrayList<QueuedEvent> mQueuedEvents = new ArrayList<>();
+        public void onEnrollmentError(int i, CharSequence charSequence) {
+            FaceEnrollSidecar.this.onEnrollmentError(i, charSequence);
+        }
+    };
+    private ArrayList mQueuedEvents = new ArrayList();
 
     public interface Listener {
-        void onEnrollmentError(int errMsgId, CharSequence errString);
+        void onEnrollmentError(int i, CharSequence charSequence);
 
-        void onEnrollmentHelp(int helpMsgId, CharSequence helpString);
+        void onEnrollmentHelp(int i, CharSequence charSequence);
 
-        void onEnrollmentProgressChange(int steps, int remaining);
+        void onEnrollmentProgressChange(int i, int i2);
     }
 
     interface PreviewSurfaceProvider {
         Surface getPreviewSurface();
     }
 
-    private abstract static class QueuedEvent {
+    abstract class QueuedEvent {
         public abstract void send(Listener listener);
+
+        private QueuedEvent(FaceEnrollSidecar faceEnrollSidecar) {
+        }
     }
 
-    private static final class QueuedEnrollmentProgress extends QueuedEvent {
+    class QueuedEnrollmentProgress extends QueuedEvent {
         int enrollmentSteps;
         int remaining;
 
-        QueuedEnrollmentProgress(int steps, int remaining) {
-            this.enrollmentSteps = steps;
-            this.remaining = remaining;
+        public QueuedEnrollmentProgress(FaceEnrollSidecar faceEnrollSidecar, int i, int i2) {
+            super();
+            this.enrollmentSteps = i;
+            this.remaining = i2;
         }
 
-        @Override
+        @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.QueuedEvent
         public void send(Listener listener) {
-            listener.onEnrollmentProgressChange(enrollmentSteps, remaining);
+            listener.onEnrollmentProgressChange(this.enrollmentSteps, this.remaining);
         }
     }
 
-    private static final class QueuedEnrollmentHelp extends QueuedEvent {
+    class QueuedEnrollmentHelp extends QueuedEvent {
         int helpMsgId;
         CharSequence helpString;
 
-        QueuedEnrollmentHelp(int helpMsgId, CharSequence helpString) {
-            this.helpMsgId = helpMsgId;
-            this.helpString = helpString;
+        public QueuedEnrollmentHelp(FaceEnrollSidecar faceEnrollSidecar, int i, CharSequence charSequence) {
+            super();
+            this.helpMsgId = i;
+            this.helpString = charSequence;
         }
 
-        @Override
+        @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.QueuedEvent
         public void send(Listener listener) {
-            listener.onEnrollmentHelp(helpMsgId, helpString);
+            listener.onEnrollmentHelp(this.helpMsgId, this.helpString);
         }
     }
 
-    private static final class QueuedEnrollmentError extends QueuedEvent {
+    class QueuedEnrollmentError extends QueuedEvent {
         int errMsgId;
         CharSequence errString;
 
-        QueuedEnrollmentError(int errMsgId, CharSequence errString) {
-            this.errMsgId = errMsgId;
-            this.errString = errString;
+        public QueuedEnrollmentError(FaceEnrollSidecar faceEnrollSidecar, int i, CharSequence charSequence) {
+            super();
+            this.errMsgId = i;
+            this.errString = charSequence;
         }
 
-        @Override
+        @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.QueuedEvent
         public void send(Listener listener) {
-            listener.onEnrollmentError(errMsgId, errString);
+            listener.onEnrollmentError(this.errMsgId, this.errString);
         }
     }
 
     public FaceEnrollSidecar(Intent intent) {
-        mIntent = intent;
+        this.mIntent = intent;
     }
 
-    void init(
-            int[] disabledFeatures,
-            boolean singleFromMulti,
-            boolean talkbackEnabled,
-            boolean shouldManagePreview,
-            boolean debugConsent) {
-        mDisabledFeatures = Arrays.copyOf(disabledFeatures, disabledFeatures.length);
-        mSingleFromMulti = singleFromMulti;
-        mTalkbackEnabled = talkbackEnabled;
-        mShouldManagePreview = shouldManagePreview;
-        mDebugConsent = debugConsent;
+    void init(int[] iArr, boolean z, boolean z2, boolean z3, boolean z4) {
+        this.mDisabledFeatures = Arrays.copyOf(iArr, iArr.length);
+        this.mSingleFromMulti = z;
+        this.mTalkbackEnabled = z2;
+        this.mShouldManagePreview = z3;
+        this.mDebugConsent = z4;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    @Override // androidx.fragment.app.Fragment
+    public void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
         setRetainInstance(true);
     }
 
-    @Override
+    @Override // androidx.fragment.app.Fragment
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        mToken = activity.getIntent().getByteArrayExtra("hw_auth_token");
-        mUserId = activity.getIntent().getIntExtra(Intent.EXTRA_USER_ID, -10000 /* USER_NULL */);
-        mFaceUpdater = new FaceUpdater(activity);
+        this.mToken = activity.getIntent().getByteArrayExtra("hw_auth_token");
+        this.mUserId = activity.getIntent().getIntExtra("android.intent.extra.USER_ID", -10000);
+        this.mFaceUpdater = new FaceUpdater(activity);
     }
 
-    @Override
+    @Override // androidx.fragment.app.Fragment
     public void onStart() {
         super.onStart();
-        mHandler.postDelayed(mStartEnrollRunnable, 750L);
+        this.mHandler.postDelayed(this.mStartEnrollRunnable, 750L);
     }
 
-    @Override
+    @Override // androidx.fragment.app.Fragment
     public void onStop() {
         super.onStop();
         if (getActivity().isChangingConfigurations()) {
             return;
         }
-        mHandler.removeCallbacks(mStartEnrollRunnable);
+        this.mHandler.removeCallbacks(this.mStartEnrollRunnable);
         cancelEnrollment();
     }
 
     protected void startEnrollment() {
         Surface previewSurface;
-        mHandler.removeCallbacks(mTimeoutRunnable);
-        mEnrollmentSteps = -1;
-        mEnrollmentCancel = new CancellationSignal();
-        mEnrolling = true;
-        boolean requireAttention = true;
-        int[] features = mDisabledFeatures;
-        for (int feature : features) {
-            if (feature == 2 /* FEATURE_REQUIRE_ATTENTION */) {
-                requireAttention = false;
+        this.mHandler.removeCallbacks(this.mTimeoutRunnable);
+        this.mEnrollmentSteps = -1;
+        this.mEnrollmentCancel = new CancellationSignal();
+        this.mEnrolling = true;
+        boolean z = true;
+        int i = 0;
+        while (true) {
+            int[] iArr = this.mDisabledFeatures;
+            if (i >= iArr.length) {
+                break;
             }
+            if (iArr[i] == 2) {
+                z = false;
+            }
+            i++;
         }
-        if (mSingleFromMulti) {
-            mEnrollmentTypeVendorCode = 2;
-        } else if (requireAttention) {
-            mEnrollmentTypeVendorCode = 0;
+        if (this.mSingleFromMulti) {
+            this.mEnrollmentTypeVendorCode = 2;
+        } else if (z) {
+            this.mEnrollmentTypeVendorCode = 0;
         } else {
-            mEnrollmentTypeVendorCode = 1;
+            this.mEnrollmentTypeVendorCode = 1;
         }
         updateSettingsCache();
-        if (mShouldManagePreview) {
-            previewSurface = null;
-        } else if (mPreviewSurfaceProvider == null) {
-            Log.e(TAG, "Preview surface provider is null");
+        if (this.mShouldManagePreview) {
             previewSurface = null;
         } else {
-            previewSurface = mPreviewSurfaceProvider.getPreviewSurface();
-            if (previewSurface == null) {
-                Log.e(TAG, "Preview surface is null");
+            PreviewSurfaceProvider previewSurfaceProvider = this.mPreviewSurfaceProvider;
+            if (previewSurfaceProvider == null) {
+                Log.e("FaceEnrollSidecar", "Preview surface provider is null");
+                previewSurface = null;
+            } else {
+                previewSurface = previewSurfaceProvider.getPreviewSurface();
+                if (previewSurface == null) {
+                    Log.e("FaceEnrollSidecar", "Preview surface is null");
+                }
             }
         }
-        mFaceUpdater.enroll(
-                mUserId,
-                mToken,
-                mEnrollmentCancel,
-                mEnrollmentCallback,
-                mDisabledFeatures,
-                previewSurface,
-                mDebugConsent,
-                mIntent);
+        this.mFaceUpdater.enroll(this.mUserId, this.mToken, this.mEnrollmentCancel, this.mEnrollmentCallback, this.mDisabledFeatures, previewSurface, this.mDebugConsent, this.mIntent);
     }
 
     private void updateSettingsCache() {
-        int attentionRequired = 1;
-        int diversityRequired = 1;
-        for (int feature : mDisabledFeatures) {
-            if (feature == 1 /* FEATURE_REQUIRE_DIVERSITY */) {
-                attentionRequired = 0;
-            } else if (feature == 2 /* FEATURE_REQUIRE_ATTENTION */) {
-                diversityRequired = 0;
+        int i = 1;
+        int i2 = 1;
+        int i3 = 0;
+        while (true) {
+            int[] iArr = this.mDisabledFeatures;
+            if (i3 < iArr.length) {
+                int i4 = iArr[i3];
+                if (i4 == 1) {
+                    i = 0;
+                } else if (i4 == 2) {
+                    i2 = 0;
+                }
+                i3++;
+            } else {
+                Settings.Secure.putIntForUser(getActivity().getContentResolver(), "face_unlock_attention_required", i, this.mUserId);
+                Settings.Secure.putIntForUser(getActivity().getContentResolver(), "face_unlock_diversity_required", i2, this.mUserId);
+                return;
             }
         }
-        Settings.Secure.putIntForUser(
-                getActivity().getContentResolver(),
-                "face_unlock_attention_required",
-                attentionRequired,
-                mUserId);
-        Settings.Secure.putIntForUser(
-                getActivity().getContentResolver(),
-                "face_unlock_diversity_required",
-                diversityRequired,
-                mUserId);
     }
 
     public boolean cancelEnrollment() {
-        mHandler.removeCallbacks(mTimeoutRunnable);
-        if (!mEnrolling) {
+        this.mHandler.removeCallbacks(this.mTimeoutRunnable);
+        if (!this.mEnrolling) {
             return false;
         }
-        mEnrollmentCancel.cancel();
-        mEnrolling = false;
-        mEnrollmentSteps = -1;
+        this.mEnrollmentCancel.cancel();
+        this.mEnrolling = false;
+        this.mEnrollmentSteps = -1;
         return true;
     }
 
-    protected void onEnrollmentProgress(int remaining) {
-        if (mEnrollmentSteps == -1) {
-            mEnrollmentSteps = remaining;
+    protected void onEnrollmentProgress(int i) {
+        if (this.mEnrollmentSteps == -1) {
+            this.mEnrollmentSteps = i;
         }
-        mEnrollmentRemaining = remaining;
-        mDone = remaining == 0;
-        Listener listener = mListener;
+        this.mEnrollmentRemaining = i;
+        this.mDone = i == 0;
+        Listener listener = this.mListener;
         if (listener != null) {
-            listener.onEnrollmentProgressChange(mEnrollmentSteps, remaining);
+            listener.onEnrollmentProgressChange(this.mEnrollmentSteps, i);
         } else {
-            mQueuedEvents.add(new QueuedEnrollmentProgress(mEnrollmentSteps, remaining));
+            this.mQueuedEvents.add(new QueuedEnrollmentProgress(this, this.mEnrollmentSteps, i));
         }
     }
 
-    protected void onEnrollmentHelp(int helpMsgId, CharSequence helpString) {
-        Listener listener = mListener;
+    protected void onEnrollmentHelp(int i, CharSequence charSequence) {
+        Listener listener = this.mListener;
         if (listener != null) {
-            listener.onEnrollmentHelp(helpMsgId, helpString);
+            listener.onEnrollmentHelp(i, charSequence);
         } else {
-            mQueuedEvents.add(new QueuedEnrollmentHelp(helpMsgId, helpString));
+            this.mQueuedEvents.add(new QueuedEnrollmentHelp(this, i, charSequence));
         }
     }
 
-    protected void onEnrollmentError(int errMsgId, CharSequence errString) {
-        Listener listener = mListener;
+    protected void onEnrollmentError(int i, CharSequence charSequence) {
+        Listener listener = this.mListener;
         if (listener != null) {
-            listener.onEnrollmentError(errMsgId, errString);
+            listener.onEnrollmentError(i, charSequence);
         } else {
-            mQueuedEvents.add(new QueuedEnrollmentError(errMsgId, errString));
+            this.mQueuedEvents.add(new QueuedEnrollmentError(this, i, charSequence));
         }
-        mEnrolling = false;
+        this.mEnrolling = false;
     }
 
     public void setListener(Listener listener) {
-        mListener = listener;
+        this.mListener = listener;
         if (listener == null) {
             return;
         }
-        for (int i = 0; i < mQueuedEvents.size(); i++) {
-            mQueuedEvents.get(i).send(mListener);
+        int i = 0;
+        while (true) {
+            int size = this.mQueuedEvents.size();
+            ArrayList arrayList = this.mQueuedEvents;
+            if (i < size) {
+                ((QueuedEvent) arrayList.get(i)).send(this.mListener);
+                i++;
+            } else {
+                arrayList.clear();
+                return;
+            }
         }
-        mQueuedEvents.clear();
     }
 
     void setPreviewSurfaceProvider(PreviewSurfaceProvider previewSurfaceProvider) {
-        mPreviewSurfaceProvider = previewSurfaceProvider;
+        this.mPreviewSurfaceProvider = previewSurfaceProvider;
     }
 
     public boolean isEnrolling() {
-        return mEnrolling;
+        return this.mEnrolling;
     }
 
-    public void logEnrollmentEnded(int result, boolean completedWithoutPartialCommit) {
-        switch (result) {
-            case RESULT_TIMEOUT:
-                logEnrollmentTimeout();
-                break;
-            case RESULT_SUCCESS:
-                logEnrollmentSuccess(completedWithoutPartialCommit);
-                break;
-            case RESULT_ERROR:
-                logEnrollmentError();
-                break;
-            default:
-                break;
+    public void logEnrollmentEnded(int i, boolean z) {
+        if (i == 0) {
+            logEnrollmentTimeout();
+        } else if (i == 1) {
+            logEnrollmentSuccess(z);
+        } else {
+            if (i != 2) {
+                return;
+            }
+            logEnrollmentError();
         }
     }
 
     private void logEnrollmentTimeout() {
-        switch (mEnrollmentTypeVendorCode) {
-            case TYPE_MULTI_ANGLE:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_TIMEOUT_MULTI_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_TIMEOUT_MULTI);
-                }
-                break;
-            case TYPE_SINGLE_ANGLE_ACCESSIBILITY:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_TIMEOUT_SINGLE_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_TIMEOUT_SINGLE);
-                }
-                break;
-            case TYPE_SINGLE_FROM_MULTI:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_TIMEOUT_FROM_MULTI_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_TIMEOUT_FROM_MULTI);
-                }
-                break;
-            default:
-                break;
+        int i = this.mEnrollmentTypeVendorCode;
+        if (i == 0) {
+            boolean z = this.mTalkbackEnabled;
+            int i2 = this.mUserId;
+            if (z) {
+                FaceUtils.writeVendorLog(i2, 1149);
+                return;
+            } else {
+                FaceUtils.writeVendorLog(i2, 1142);
+                return;
+            }
+        }
+        if (i == 1) {
+            boolean z2 = this.mTalkbackEnabled;
+            int i3 = this.mUserId;
+            if (z2) {
+                FaceUtils.writeVendorLog(i3, 1153);
+                return;
+            } else {
+                FaceUtils.writeVendorLog(i3, 1146);
+                return;
+            }
+        }
+        if (i != 2) {
+            return;
+        }
+        boolean z3 = this.mTalkbackEnabled;
+        int i4 = this.mUserId;
+        if (z3) {
+            FaceUtils.writeVendorLog(i4, 1159);
+        } else {
+            FaceUtils.writeVendorLog(i4, 1156);
         }
     }
 
-    private void logEnrollmentSuccess(boolean completedWithoutPartialCommit) {
-        switch (mEnrollmentTypeVendorCode) {
-            case TYPE_MULTI_ANGLE:
-                if (completedWithoutPartialCommit) {
-                    FaceUtils.writeVendorLog(
-                            mUserId,
-                            mTalkbackEnabled
-                                    ? VENDOR_SUCCESS_MULTI_FAST_TALKBACK
-                                    : VENDOR_SUCCESS_MULTI_FAST);
+    private void logEnrollmentSuccess(boolean z) {
+        int i = this.mEnrollmentTypeVendorCode;
+        if (i == 0) {
+            boolean z2 = this.mTalkbackEnabled;
+            if (z) {
+                int i2 = this.mUserId;
+                if (z2) {
+                    FaceUtils.writeVendorLog(i2, 1150);
+                    return;
                 } else {
-                    FaceUtils.writeVendorLog(
-                            mUserId,
-                            mTalkbackEnabled
-                                    ? VENDOR_SUCCESS_MULTI_PARTIAL_TALKBACK
-                                    : VENDOR_SUCCESS_MULTI_PARTIAL);
+                    FaceUtils.writeVendorLog(i2, 1143);
+                    return;
                 }
-                break;
-            case TYPE_SINGLE_ANGLE_ACCESSIBILITY:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_SUCCESS_SINGLE_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_SUCCESS_SINGLE);
-                }
-                break;
-            case TYPE_SINGLE_FROM_MULTI:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_SUCCESS_FROM_MULTI_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_SUCCESS_FROM_MULTI);
-                }
-                break;
-            default:
-                break;
+            }
+            int i3 = this.mUserId;
+            if (z2) {
+                FaceUtils.writeVendorLog(i3, 1151);
+                return;
+            } else {
+                FaceUtils.writeVendorLog(i3, 1144);
+                return;
+            }
+        }
+        if (i == 1) {
+            boolean z3 = this.mTalkbackEnabled;
+            int i4 = this.mUserId;
+            if (z3) {
+                FaceUtils.writeVendorLog(i4, 1154);
+                return;
+            } else {
+                FaceUtils.writeVendorLog(i4, 1147);
+                return;
+            }
+        }
+        if (i != 2) {
+            return;
+        }
+        boolean z4 = this.mTalkbackEnabled;
+        int i5 = this.mUserId;
+        if (z4) {
+            FaceUtils.writeVendorLog(i5, 1160);
+        } else {
+            FaceUtils.writeVendorLog(i5, 1157);
         }
     }
 
     private void logEnrollmentError() {
-        switch (mEnrollmentTypeVendorCode) {
-            case TYPE_MULTI_ANGLE:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_ERROR_MULTI_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_ERROR_MULTI);
-                }
-                break;
-            case TYPE_SINGLE_ANGLE_ACCESSIBILITY:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_ERROR_SINGLE_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_ERROR_SINGLE);
-                }
-                break;
-            case TYPE_SINGLE_FROM_MULTI:
-                if (mTalkbackEnabled) {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_ERROR_FROM_MULTI_TALKBACK);
-                } else {
-                    FaceUtils.writeVendorLog(mUserId, VENDOR_ERROR_FROM_MULTI);
-                }
-                break;
-            default:
-                break;
+        int i = this.mEnrollmentTypeVendorCode;
+        if (i == 0) {
+            boolean z = this.mTalkbackEnabled;
+            int i2 = this.mUserId;
+            if (z) {
+                FaceUtils.writeVendorLog(i2, 1152);
+                return;
+            } else {
+                FaceUtils.writeVendorLog(i2, 1145);
+                return;
+            }
+        }
+        if (i == 1) {
+            boolean z2 = this.mTalkbackEnabled;
+            int i3 = this.mUserId;
+            if (z2) {
+                FaceUtils.writeVendorLog(i3, 1155);
+                return;
+            } else {
+                FaceUtils.writeVendorLog(i3, 1148);
+                return;
+            }
+        }
+        if (i != 2) {
+            return;
+        }
+        boolean z3 = this.mTalkbackEnabled;
+        int i4 = this.mUserId;
+        if (z3) {
+            FaceUtils.writeVendorLog(i4, 1161);
+        } else {
+            FaceUtils.writeVendorLog(i4, 1158);
         }
     }
-
-    static final int RESULT_TIMEOUT = 0;
-    static final int RESULT_SUCCESS = 1;
-    static final int RESULT_ERROR = 2;
-
-    private static final int TYPE_MULTI_ANGLE = 0;
-    private static final int TYPE_SINGLE_ANGLE_ACCESSIBILITY = 1;
-    private static final int TYPE_SINGLE_FROM_MULTI = 2;
-
-    private static final int VENDOR_TIMEOUT_MULTI = 1142;
-    private static final int VENDOR_TIMEOUT_SINGLE = 1146;
-    private static final int VENDOR_TIMEOUT_FROM_MULTI = 1156;
-    private static final int VENDOR_TIMEOUT_MULTI_TALKBACK = 1149;
-    private static final int VENDOR_TIMEOUT_SINGLE_TALKBACK = 1153;
-    private static final int VENDOR_TIMEOUT_FROM_MULTI_TALKBACK = 1159;
-    private static final int VENDOR_SUCCESS_MULTI_FAST = 1143;
-    private static final int VENDOR_SUCCESS_MULTI_PARTIAL = 1144;
-    private static final int VENDOR_SUCCESS_SINGLE = 1147;
-    private static final int VENDOR_SUCCESS_FROM_MULTI = 1157;
-    private static final int VENDOR_SUCCESS_MULTI_FAST_TALKBACK = 1150;
-    private static final int VENDOR_SUCCESS_MULTI_PARTIAL_TALKBACK = 1151;
-    private static final int VENDOR_SUCCESS_SINGLE_TALKBACK = 1154;
-    private static final int VENDOR_SUCCESS_FROM_MULTI_TALKBACK = 1160;
-    private static final int VENDOR_ERROR_MULTI = 1145;
-    private static final int VENDOR_ERROR_SINGLE = 1148;
-    private static final int VENDOR_ERROR_FROM_MULTI = 1158;
-    private static final int VENDOR_ERROR_MULTI_TALKBACK = 1152;
-    private static final int VENDOR_ERROR_SINGLE_TALKBACK = 1155;
-    private static final int VENDOR_ERROR_FROM_MULTI_TALKBACK = 1161;
 }

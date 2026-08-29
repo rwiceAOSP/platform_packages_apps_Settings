@@ -6,6 +6,7 @@ import android.animation.ValueAnimator;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class ScrimState {
     private final int mGoneColor;
     private final Paint mPaint;
@@ -15,41 +16,51 @@ public class ScrimState {
     private int mState = 0;
 
     public ScrimState(int i, int i2) {
-        mGoneColor = i;
-        mShowingColor = i2;
-        mPaint = new Paint();
-        mPaint.setColor(i);
-        mPaint.setAntiAlias(true);
-        mPaint.setStyle(Paint.Style.FILL);
-        mScrimAnimatorListener =
-                valueAnimator -> mPaint.setColor((Integer) valueAnimator.getAnimatedValue());
+        this.mGoneColor = i;
+        this.mShowingColor = i2;
+        Paint paint = new Paint();
+        this.mPaint = paint;
+        paint.setColor(i);
+        paint.setAntiAlias(true);
+        paint.setStyle(Paint.Style.FILL);
+        this.mScrimAnimatorListener = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.settings.biometrics.face.anim.curve.ScrimState$$ExternalSyntheticLambda0
+            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                this.f$0.lambda$new$0(valueAnimator);
+            }
+        };
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void lambda$new$0(ValueAnimator valueAnimator) {
+        this.mPaint.setColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
     public boolean isShowing() {
-        return mState != 0;
+        return this.mState != 0;
     }
 
     public void fadeOut() {
-        int i = mState;
+        int i = this.mState;
         if (i == 0 || i == 2) {
             return;
         }
-        mState = 2;
-        mScrimAnimator = ValueAnimator.ofArgb(mPaint.getColor(), mGoneColor);
-        mScrimAnimator.addUpdateListener(mScrimAnimatorListener);
-        mScrimAnimator.setDuration(200L);
-        mScrimAnimator.addListener(
-                new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        super.onAnimationEnd(animator);
-                        ScrimState.this.mState = 0;
-                    }
-                });
-        mScrimAnimator.start();
+        this.mState = 2;
+        ValueAnimator valueAnimatorOfArgb = ValueAnimator.ofArgb(this.mPaint.getColor(), this.mGoneColor);
+        this.mScrimAnimator = valueAnimatorOfArgb;
+        valueAnimatorOfArgb.addUpdateListener(this.mScrimAnimatorListener);
+        this.mScrimAnimator.setDuration(200L);
+        this.mScrimAnimator.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.settings.biometrics.face.anim.curve.ScrimState.2
+            @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+            public void onAnimationEnd(Animator animator) {
+                super.onAnimationEnd(animator);
+                ScrimState.this.mState = 0;
+            }
+        });
+        this.mScrimAnimator.start();
     }
 
     public void draw(Canvas canvas) {
-        canvas.drawCircle(0.0f, 0.0f, canvas.getWidth() / 2, mPaint);
+        canvas.drawCircle(0.0f, 0.0f, canvas.getWidth() / 2, this.mPaint);
     }
 }

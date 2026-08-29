@@ -41,23 +41,38 @@ class UdfpsEnrollCalibratorImpl(
 
     private val statusLiveData = MutableLiveData(Status.PROCESSING)
 
-    private val lifecycleObserver =
-        object : DefaultLifecycleObserver {
-            override fun onStart(owner: LifecycleOwner) {
-                checkNotNull(owner)
-                Log.d(TAG, "Waiting page onStart")
-                isWaitingPage = true
-                if (statusLiveData.value == Status.GOT_RESULT) {
-                    onCalibrationDone()
-                }
-            }
-
-            override fun onStop(owner: LifecycleOwner) {
-                checkNotNull(owner)
-                Log.d(TAG, "Waiting page onStop")
-                isWaitingPage = false
-            }
+    private val lifecycleObserver: DefaultLifecycleObserver = object : DefaultLifecycleObserver {
+        override fun onCreate(owner: LifecycleOwner) {
+            super.onCreate(owner)
         }
+
+        override fun onDestroy(owner: LifecycleOwner) {
+            super.onDestroy(owner)
+        }
+
+        override fun onPause(owner: LifecycleOwner) {
+            super.onPause(owner)
+        }
+
+        override fun onResume(owner: LifecycleOwner) {
+            super.onResume(owner)
+        }
+
+        override fun onStart(owner: LifecycleOwner) {
+            Log.d(TAG, "Waiting page onStart")
+            isWaitingPage = true
+            if (statusLiveData.value == Status.GOT_RESULT) {
+                onCalibrationDone()
+            }
+            super.onStart(owner)
+        }
+
+        override fun onStop(owner: LifecycleOwner) {
+            Log.d(TAG, "Waiting page onStop")
+            isWaitingPage = false
+            super.onStop(owner)
+        }
+    }
 
     init {
         handler.post { preEnroll() }
@@ -78,20 +93,6 @@ class UdfpsEnrollCalibratorImpl(
         val extras = Bundle()
         extras.putSerializable(KEY_UUID, uuid)
         return extras
-    }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        outState.putSerializable(KEY_UUID, uuid)
-    }
-
-    override fun onWaitingPage(
-        lifecycle: Lifecycle,
-        fragmentManager: FragmentManager,
-        enableEnrollingRunnable: Runnable?,
-    ) {
-        lifecycle.addObserver(lifecycleObserver)
-        this.fragmentManager = fragmentManager
-        this.enableEnrollingRunnable = enableEnrollingRunnable
     }
 
     private fun onCalibrationDone() {
@@ -187,7 +188,6 @@ class UdfpsEnrollCalibratorImpl(
             bundle: Bundle?,
             intent: Intent?,
         ): UdfpsEnrollCalibratorImpl? {
-            checkNotNull(handler)
             return try {
                 val fingerprintExt = getFingerprintExtSupplier().get()
                 if (fingerprintExt != null) {
@@ -209,8 +209,6 @@ class UdfpsEnrollCalibratorImpl(
             bundle: Bundle?,
             intent: Intent?,
         ): UdfpsEnrollCalibratorImpl? {
-            checkNotNull(handler)
-            checkNotNull(fingerprintExt)
             var uuid: UUID? = bundle?.getSerializable(KEY_UUID, UUID::class.java)
             if (uuid == null) {
                 uuid = intent?.getSerializableExtra(KEY_UUID, UUID::class.java)
@@ -220,7 +218,6 @@ class UdfpsEnrollCalibratorImpl(
 
         @JvmStatic
         fun getInstance(handler: Handler, uuid: UUID?): UdfpsEnrollCalibratorImpl? {
-            checkNotNull(handler)
             return try {
                 val fingerprintExt = getFingerprintExtSupplier().get()
                 if (fingerprintExt != null) {
@@ -241,8 +238,6 @@ class UdfpsEnrollCalibratorImpl(
             fingerprintExt: IFingerprintExt,
             uuid: UUID?,
         ): UdfpsEnrollCalibratorImpl? {
-            checkNotNull(handler)
-            checkNotNull(fingerprintExt)
             if (uuid != null) {
                 val existing = calibrators.firstOrNull { it.uuid == uuid }
                 if (existing != null) {
@@ -256,7 +251,7 @@ class UdfpsEnrollCalibratorImpl(
             ) {
                 return calibrators[0]
             }
-            val effectiveUuid = checkNotNull(uuid ?: UUID.randomUUID())
+            val effectiveUuid = uuid ?: UUID.randomUUID()
             return UdfpsEnrollCalibratorImpl(handler, fingerprintExt, effectiveUuid).also {
                 calibrators.add(0, it)
                 if (calibrators.size > 2) {

@@ -13,7 +13,6 @@ import android.os.Process;
 import android.os.UserManager;
 import android.safetycenter.SafetySourceIssue;
 import android.util.Log;
-
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.biometrics.BiometricEnrollActivity;
@@ -24,199 +23,163 @@ import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 
 public class BiometricsSafetySourceIssueController {
-    private static final String TAG = "BiometricsIssueCtr";
-    private static final String ACTION_SAFETY_ISSUE_DISMISS =
-            "biometric_safety_issue_dismiss_action";
-
     private Context mContext;
     private int mCurrentSafetyIssueActionLaunchCount;
+    private BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if ("biometric_safety_issue_dismiss_action".equals(intent.getAction())) {
+                Log.d("BiometricsIssueCtr", "SafetyIssue dismissed");
+                BiometricsSafetySourceIssueController.this.notifySafetyIssueActionLaunched();
+            }
+        }
+    };
     private long mSafetyIssueActionLastLaunchTime;
     private SharedPreferences mSharedPreferences;
-    private BroadcastReceiver mReceiver =
-            new BroadcastReceiver() {
-                @Override
-                public void onReceive(Context context, Intent intent) {
-                    if (ACTION_SAFETY_ISSUE_DISMISS.equals(intent.getAction())) {
-                        Log.d(TAG, "SafetyIssue dismissed");
-                        notifySafetyIssueActionLaunched();
-                    }
-                }
-            };
 
     public BiometricsSafetySourceIssueController(Context context) {
-        mContext = context;
-        mSharedPreferences =
-                context.getSharedPreferences("BiometricSafetyIssue", Context.MODE_PRIVATE);
-        mSafetyIssueActionLastLaunchTime =
-                mSharedPreferences.getLong("safety_issue_last_launch_time", 0L);
-        mCurrentSafetyIssueActionLaunchCount =
-                mSharedPreferences.getInt("safety_issue_launch_count", 0);
-        mContext.registerReceiver(mReceiver, new IntentFilter(ACTION_SAFETY_ISSUE_DISMISS), 2);
+        this.mContext = context;
+        SharedPreferences sharedPreferences = context.getSharedPreferences("BiometricSafetyIssue", 0);
+        this.mSharedPreferences = sharedPreferences;
+        this.mSafetyIssueActionLastLaunchTime = sharedPreferences.getLong("safety_issue_last_launch_time", 0L);
+        this.mCurrentSafetyIssueActionLaunchCount = this.mSharedPreferences.getInt("safety_issue_launch_count", 0);
+        this.mContext.registerReceiver(this.mReceiver, new IntentFilter("biometric_safety_issue_dismiss_action"), 2);
     }
 
-    private boolean shouldShowSafetyIssue(int userId) {
+    private boolean shouldShowSafetyIssue(int i) {
         long timePassedSinceLastLaunch = getTimePassedSinceLastLaunch();
-        if (mCurrentSafetyIssueActionLaunchCount > 2) {
-            Log.d(TAG, "Skip for {" + userId + "}: Exceeded maximum launch count");
+        int i2 = this.mCurrentSafetyIssueActionLaunchCount;
+        if (i2 > 2) {
+            Log.d("BiometricsIssueCtr", "Skip for {" + i + "}: Exceeded maximum launch count");
             return false;
         }
-        if (mCurrentSafetyIssueActionLaunchCount == 1 && timePassedSinceLastLaunch < 7) {
-            Log.d(
-                    TAG,
-                    "Skip for {"
-                            + userId
-                            + "}: The block duration after first launch has not yet passed");
+        if (i2 == 1 && timePassedSinceLastLaunch < 7) {
+            Log.d("BiometricsIssueCtr", "Skip for {" + i + "}: The block duration after first launch has not yet passed");
             return false;
         }
-        if (mCurrentSafetyIssueActionLaunchCount == 2 && timePassedSinceLastLaunch < 14) {
-            Log.d(
-                    TAG,
-                    "Skip for {"
-                            + userId
-                            + "}: The block duration after second launch has not yet passed");
+        if (i2 == 2 && timePassedSinceLastLaunch < 14) {
+            Log.d("BiometricsIssueCtr", "Skip for {" + i + "}: The block duration after second launch has not yet passed");
             return false;
         }
         if (isLockscreenSet()) {
             return true;
         }
-        Log.d(TAG, "Skip for {" + userId + "}: no lockscreen set");
+        Log.d("BiometricsIssueCtr", "Skip for {" + i + "}: no lockscreen set");
         return false;
     }
 
     boolean isLockscreenSet() {
         int identifier = Process.myUserHandle().getIdentifier();
-        RestrictedLockUtils.EnforcedAdmin enforcedAdmin =
-                RestrictedLockUtilsInternal.checkIfPasswordQualityIsSet(mContext, identifier);
-        ScreenLockPreferenceDetailsUtils screenLockPreferenceDetailsUtils =
-                new ScreenLockPreferenceDetailsUtils(mContext);
-        return screenLockPreferenceDetailsUtils.isPasswordQualityManaged(identifier, enforcedAdmin)
-                || screenLockPreferenceDetailsUtils.isLockPatternSecure();
+        RestrictedLockUtils.EnforcedAdmin enforcedAdminCheckIfPasswordQualityIsSet = RestrictedLockUtilsInternal.checkIfPasswordQualityIsSet(this.mContext, identifier);
+        ScreenLockPreferenceDetailsUtils screenLockPreferenceDetailsUtils = new ScreenLockPreferenceDetailsUtils(this.mContext);
+        return screenLockPreferenceDetailsUtils.isPasswordQualityManaged(identifier, enforcedAdminCheckIfPasswordQualityIsSet) || screenLockPreferenceDetailsUtils.isLockPatternSecure();
     }
 
     long getTimePassedSinceLastLaunch() {
-        return (System.currentTimeMillis() - mSafetyIssueActionLastLaunchTime) / 86400000L;
+        return (System.currentTimeMillis() - this.mSafetyIssueActionLastLaunchTime) / 86400000;
     }
 
     public void notifySafetyIssueActionLaunched() {
-        mSafetyIssueActionLastLaunchTime = System.currentTimeMillis();
-        mCurrentSafetyIssueActionLaunchCount++;
-        Log.d(TAG, "Action is launched: count=" + mCurrentSafetyIssueActionLaunchCount);
-        mSharedPreferences
-                .edit()
-                .putLong("safety_issue_last_launch_time", mSafetyIssueActionLastLaunchTime)
-                .putInt("safety_issue_launch_count", mCurrentSafetyIssueActionLaunchCount)
-                .apply();
+        this.mSafetyIssueActionLastLaunchTime = System.currentTimeMillis();
+        this.mCurrentSafetyIssueActionLaunchCount++;
+        Log.d("BiometricsIssueCtr", "Action is launched: count=" + this.mCurrentSafetyIssueActionLaunchCount);
+        this.mSharedPreferences.edit().putLong("safety_issue_last_launch_time", this.mSafetyIssueActionLastLaunchTime).putInt("safety_issue_launch_count", this.mCurrentSafetyIssueActionLaunchCount).apply();
     }
 
-    public SafetySourceIssue getSafetySourceIssue(String sourceId) {
-        int userId = Process.myUserHandle().getIdentifier();
-        if (!shouldShowSafetyIssue(userId)) {
+    public SafetySourceIssue getSafetySourceIssue(String str) {
+        int i;
+        String string;
+        String string2;
+        String string3;
+        PendingIntent pendingIntentCreateActionPendingIntent;
+        int i2;
+        String string4;
+        String string5;
+        String string6;
+        String str2;
+        String str3;
+        int i3;
+        int i4;
+        int identifier = Process.myUserHandle().getIdentifier();
+        if (!shouldShowSafetyIssue(identifier)) {
             return null;
         }
-        UserInfo userInfo =
-                ((UserManager) mContext.getSystemService(UserManager.class)).getUserInfo(userId);
-        boolean isManagedProfile = userInfo != null && userInfo.isManagedProfile();
-        boolean isFingerprintSource = "AndroidFingerprintUnlock".equals(sourceId);
-        boolean isFaceSource = "AndroidFaceUnlock".equals(sourceId);
-        FingerprintManager fingerprintManagerOrNull = Utils.getFingerprintManagerOrNull(mContext);
-        FaceManager faceManagerOrNull = Utils.getFaceManagerOrNull(mContext);
-        boolean hasFingerprintHardware = Utils.hasFingerprintHardware(mContext);
-        boolean hasFaceHardware = Utils.hasFaceHardware(mContext);
-        boolean isFpEnrollNeeded =
-                hasFingerprintHardware && !fingerprintManagerOrNull.hasEnrolledFingerprints(userId);
-        boolean isFaceEnrollNeeded =
-                hasFaceHardware && !faceManagerOrNull.hasEnrolledTemplates(userId);
-        int fpEnrolledCount =
-                hasFingerprintHardware
-                        ? fingerprintManagerOrNull.getEnrolledFingerprints(userId).size()
-                        : 0;
-        Log.d(
-                TAG,
-                "getSafetySourceIssue source="
-                        + sourceId
-                        + ", isFpEnrollNeeded="
-                        + isFpEnrollNeeded
-                        + ", isFaceEnrollNeeded="
-                        + isFaceEnrollNeeded
-                        + ", fpEnrolledCount="
-                        + fpEnrolledCount
-                        + ", userId="
-                        + userId
-                        + ", isWorkProfile="
-                        + isManagedProfile);
-
-        int titleResId;
-        int subtitleResId;
-        int actionTitleResId;
-        Class<?> enrollActivityClass;
-        if (isFpEnrollNeeded && isFaceEnrollNeeded && isFingerprintSource) {
-            titleResId =
-                    isManagedProfile
-                            ? R.string
-                                    .biometric_safety_issue_setup_fingerprint_face_unlock_title_for_work
-                            : R.string.biometric_safety_issue_setup_fingerprint_face_unlock_title;
-            subtitleResId = R.string.biometric_safety_issue_setup_fingerprint_face_unlock_subtitle;
-            actionTitleResId = R.string.biometric_safety_issue_setup_action_title;
-            enrollActivityClass = BiometricEnrollActivity.class;
-        } else if (isFpEnrollNeeded && !isFaceEnrollNeeded && isFingerprintSource) {
-            titleResId =
-                    isManagedProfile
-                            ? R.string
-                                    .biometric_safety_issue_setup_fingerprint_unlock_title_for_work
-                            : R.string.biometric_safety_issue_setup_fingerprint_unlock_title;
-            subtitleResId = R.string.biometric_safety_issue_setup_fingerprint_unlock_subtitle;
-            actionTitleResId = R.string.biometric_safety_issue_setup_action_title;
-            enrollActivityClass = FingerprintEnroll.class;
-        } else if (!isFpEnrollNeeded && isFaceEnrollNeeded && isFaceSource) {
-            titleResId =
-                    isManagedProfile
-                            ? R.string.biometric_safety_issue_setup_face_unlock_title_for_work
-                            : R.string.biometric_safety_issue_setup_face_unlock_title;
-            subtitleResId = R.string.biometric_safety_issue_setup_face_unlock_subtitle;
-            actionTitleResId = R.string.biometric_safety_issue_setup_action_title;
-            enrollActivityClass = FaceEnroll.class;
-        } else if (fpEnrolledCount == 1 && !isFaceEnrollNeeded && isFingerprintSource) {
-            titleResId =
-                    isManagedProfile
-                            ? R.string.biometric_safety_issue_add_more_fingerprints_title_for_work
-                            : R.string.biometric_safety_issue_add_more_fingerprints_title;
-            subtitleResId = R.string.biometric_safety_issue_add_more_fingerprints_subtitle;
-            actionTitleResId = R.string.biometric_safety_issue_add_more_action_title;
-            enrollActivityClass = FingerprintEnroll.class;
+        UserInfo userInfo = ((UserManager) this.mContext.getSystemService(UserManager.class)).getUserInfo(identifier);
+        boolean zIsManagedProfile = userInfo != null ? userInfo.isManagedProfile() : false;
+        boolean zEquals = "AndroidFingerprintUnlock".equals(str);
+        boolean zEquals2 = "AndroidFaceUnlock".equals(str);
+        FingerprintManager fingerprintManagerOrNull = Utils.getFingerprintManagerOrNull(this.mContext);
+        FaceManager faceManagerOrNull = Utils.getFaceManagerOrNull(this.mContext);
+        boolean zHasFingerprintHardware = Utils.hasFingerprintHardware(this.mContext);
+        boolean zHasFaceHardware = Utils.hasFaceHardware(this.mContext);
+        boolean z = zHasFingerprintHardware && !fingerprintManagerOrNull.hasEnrolledFingerprints(identifier);
+        boolean z2 = zHasFaceHardware && !faceManagerOrNull.hasEnrolledTemplates(identifier);
+        int size = zHasFingerprintHardware ? fingerprintManagerOrNull.getEnrolledFingerprints(identifier).size() : 0;
+        Log.d("BiometricsIssueCtr", "getSafetySourceIssue source=" + str + ", isFpEnrollNeeded=" + z + ", isFaceEnrollNeeded=" + z2 + ", fpEnrolledCount=" + size + ", userId=" + identifier + ", isWorkProfile=" + zIsManagedProfile);
+        if (z && z2 && zEquals) {
+            Context context = this.mContext;
+            if (zIsManagedProfile) {
+                i4 = R.string.biometric_safety_issue_setup_fingerprint_face_unlock_title_for_work;
+            } else {
+                i4 = R.string.biometric_safety_issue_setup_fingerprint_face_unlock_title;
+            }
+            string4 = context.getString(i4);
+            string5 = this.mContext.getString(R.string.biometric_safety_issue_setup_fingerprint_face_unlock_subtitle);
+            string6 = this.mContext.getString(R.string.biometric_safety_issue_setup_action_title);
+            pendingIntentCreateActionPendingIntent = createActionPendingIntent(BiometricEnrollActivity.class, 0, identifier);
         } else {
-            return null;
+            if (z && !z2 && zEquals) {
+                Context context2 = this.mContext;
+                if (zIsManagedProfile) {
+                    i3 = R.string.biometric_safety_issue_setup_fingerprint_unlock_title_for_work;
+                } else {
+                    i3 = R.string.biometric_safety_issue_setup_fingerprint_unlock_title;
+                }
+                string = context2.getString(i3);
+                string2 = this.mContext.getString(R.string.biometric_safety_issue_setup_fingerprint_unlock_subtitle);
+                string3 = this.mContext.getString(R.string.biometric_safety_issue_setup_action_title);
+                pendingIntentCreateActionPendingIntent = createActionPendingIntent(FingerprintEnroll.class, 0, identifier);
+            } else if (!z && z2 && zEquals2) {
+                Context context3 = this.mContext;
+                if (zIsManagedProfile) {
+                    i2 = R.string.biometric_safety_issue_setup_face_unlock_title_for_work;
+                } else {
+                    i2 = R.string.biometric_safety_issue_setup_face_unlock_title;
+                }
+                string4 = context3.getString(i2);
+                string5 = this.mContext.getString(R.string.biometric_safety_issue_setup_face_unlock_subtitle);
+                string6 = this.mContext.getString(R.string.biometric_safety_issue_setup_action_title);
+                pendingIntentCreateActionPendingIntent = createActionPendingIntent(FaceEnroll.class, 0, identifier);
+            } else {
+                if (size != 1 || z2 || !zEquals) {
+                    return null;
+                }
+                Context context4 = this.mContext;
+                if (zIsManagedProfile) {
+                    i = R.string.biometric_safety_issue_add_more_fingerprints_title_for_work;
+                } else {
+                    i = R.string.biometric_safety_issue_add_more_fingerprints_title;
+                }
+                string = context4.getString(i);
+                string2 = this.mContext.getString(R.string.biometric_safety_issue_add_more_fingerprints_subtitle);
+                string3 = this.mContext.getString(R.string.biometric_safety_issue_add_more_action_title);
+                pendingIntentCreateActionPendingIntent = createActionPendingIntent(FingerprintEnroll.class, 0, identifier);
+            }
+            str2 = string;
+            str3 = string2;
+            string6 = string3;
+            return new SafetySourceIssue.Builder("BiometricUnlockIssue", str2, str3, 200, "BiometricUnlockIssueType").setIssueCategory(100).addAction(new SafetySourceIssue.Action.Builder("SetBiometricUnlockActionId", string6, pendingIntentCreateActionPendingIntent).build()).setIssueActionability(0).setOnDismissPendingIntent(createOnDismissPendingIntent()).build();
         }
-
-        return new SafetySourceIssue.Builder(
-                        "BiometricUnlockIssue",
-                        mContext.getString(titleResId),
-                        mContext.getString(subtitleResId),
-                        200,
-                        "BiometricUnlockIssueType")
-                .setIssueCategory(100)
-                .addAction(
-                        new SafetySourceIssue.Action.Builder(
-                                        "SetBiometricUnlockActionId",
-                                        mContext.getString(actionTitleResId),
-                                        createActionPendingIntent(enrollActivityClass, 0, userId))
-                                .build())
-                .setIssueActionability(0)
-                .setOnDismissPendingIntent(createOnDismissPendingIntent())
-                .build();
+        str2 = string4;
+        str3 = string5;
+        return new SafetySourceIssue.Builder("BiometricUnlockIssue", str2, str3, 200, "BiometricUnlockIssueType").setIssueCategory(100).addAction(new SafetySourceIssue.Action.Builder("SetBiometricUnlockActionId", string6, pendingIntentCreateActionPendingIntent).build()).setIssueActionability(0).setOnDismissPendingIntent(createOnDismissPendingIntent()).build();
     }
 
-    private PendingIntent createActionPendingIntent(Class<?> cls, int requestCode, int userId) {
-        return PendingIntent.getActivity(
-                mContext,
-                requestCode,
-                new Intent(mContext, cls)
-                        .putExtra("launch_from_safety_source_issue", true)
-                        .putExtra("android.intent.extra.USER_ID", userId),
-                PendingIntent.FLAG_IMMUTABLE);
+    private PendingIntent createActionPendingIntent(Class cls, int i, int i2) {
+        return PendingIntent.getActivity(this.mContext, i, new Intent(this.mContext, (Class<?>) cls).putExtra("launch_from_safety_source_issue", true).putExtra("android.intent.extra.USER_ID", i2), 67108864);
     }
 
     private PendingIntent createOnDismissPendingIntent() {
-        return PendingIntent.getBroadcast(
-                mContext, 0, new Intent(ACTION_SAFETY_ISSUE_DISMISS), PendingIntent.FLAG_IMMUTABLE);
+        return PendingIntent.getBroadcast(this.mContext, 0, new Intent("biometric_safety_issue_dismiss_action"), 67108864);
     }
 }

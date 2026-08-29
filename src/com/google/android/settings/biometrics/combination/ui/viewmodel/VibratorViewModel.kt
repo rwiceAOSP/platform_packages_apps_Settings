@@ -11,14 +11,14 @@ abstract class VibratorViewModel : ViewModel() {
     abstract fun isVibratorEnabled(): StateFlow<Boolean>
 }
 
-class VibratorViewModelImpl(vibratorInteractor: VibratorInteractor) : VibratorViewModel() {
+class VibratorViewModelImpl(
+    vibratorInteractor: VibratorInteractor
+) : VibratorViewModel() {
 
-    private val isVibratorEnabledFlow =
-        vibratorInteractor().stateIn(
-            viewModelScope,
-            SharingStarted.WhileSubscribed(5000L),
-            vibratorInteractor.isVibratorEnabled(),
+    override val isVibratorEnabled: StateFlow<Boolean> = vibratorInteractor()
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5000L),
+            initialValue = false
         )
-
-    override fun isVibratorEnabled(): StateFlow<Boolean> = isVibratorEnabledFlow
 }

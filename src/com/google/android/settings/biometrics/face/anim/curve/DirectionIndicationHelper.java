@@ -1,51 +1,36 @@
 package com.google.android.settings.biometrics.face.anim.curve;
 
+/* JADX INFO: loaded from: classes4.dex */
 public class DirectionIndicationHelper {
-    private static final int[][] BUCKET_PRIORITY = {
-        {12, 0},
-        {2, 0},
-        {7, 0},
-        {3, 23},
-        {4, 45},
-        {8, 45},
-        {9, 68},
-        {14, 90},
-        {13, 90},
-        {19, 113},
-        {24, 135},
-        {18, 135},
-        {23, 158},
-        {22, 180},
-        {17, 180},
-        {21, 203},
-        {20, 225},
-        {16, 225},
-        {15, 248},
-        {10, 270},
-        {11, 270},
-        {5, 293},
-        {0, 315},
-        {6, 315},
-        {1, 338}
-    };
+    private static final int[][] BUCKET_PRIORITY = {new int[]{12, 0}, new int[]{2, 0}, new int[]{7, 0}, new int[]{3, 23}, new int[]{4, 45}, new int[]{8, 45}, new int[]{9, 68}, new int[]{14, 90}, new int[]{13, 90}, new int[]{19, 113}, new int[]{24, 135}, new int[]{18, 135}, new int[]{23, 158}, new int[]{22, 180}, new int[]{17, 180}, new int[]{21, 203}, new int[]{20, 225}, new int[]{16, 225}, new int[]{15, 248}, new int[]{10, 270}, new int[]{11, 270}, new int[]{5, 293}, new int[]{0, 315}, new int[]{6, 315}, new int[]{1, 338}};
 
     public int getNoProgressPulseAngle(boolean[] zArr) {
-        for (int i = 1; i < BUCKET_PRIORITY.length; i++) {
-            int[] iArr2 = BUCKET_PRIORITY[i];
+        int i = 1;
+        while (true) {
+            int[][] iArr = BUCKET_PRIORITY;
+            if (i >= iArr.length) {
+                return 0;
+            }
+            int[] iArr2 = iArr[i];
             if (!zArr[iArr2[0]]) {
                 return iArr2[1];
             }
+            i++;
         }
-        return 0;
     }
 
     public int getNoProgressBucket(boolean[] zArr) {
-        for (int i = 1; i < BUCKET_PRIORITY.length; i++) {
-            int i2 = BUCKET_PRIORITY[i][0];
+        int i = 1;
+        while (true) {
+            int[][] iArr = BUCKET_PRIORITY;
+            if (i >= iArr.length) {
+                return 0;
+            }
+            int i2 = iArr[i][0];
             if (!zArr[i2]) {
                 return i2;
             }
+            i++;
         }
-        return 0;
     }
 }

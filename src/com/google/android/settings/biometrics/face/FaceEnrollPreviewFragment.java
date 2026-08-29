@@ -17,23 +17,19 @@ import android.util.TypedValue;
 import android.view.Surface;
 import android.view.TextureView;
 import android.widget.ImageView;
-
 import androidx.fragment.app.Fragment;
-
 import com.android.settings.R;
-
+import com.google.android.settings.R$dimen;
+import com.google.android.settings.R$id;
 import com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase;
 import com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationMultiAngleDrawable;
 import com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationSingleCaptureDrawable;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class FaceEnrollPreviewFragment extends Fragment
-        implements FaceEnrollSidecar.Listener, FaceEnrollSidecar.PreviewSurfaceProvider {
-    private static final String TAG = "FaceEnroll/PreviewFragment";
-
+/* JADX INFO: loaded from: classes4.dex */
+public class FaceEnrollPreviewFragment extends Fragment implements FaceEnrollSidecar.Listener, FaceEnrollSidecar.PreviewSurfaceProvider {
     private FaceEnrollAnimationBase mAnimationDrawable;
     private CameraDevice mCameraDevice;
     private String mCameraId;
@@ -50,339 +46,315 @@ public class FaceEnrollPreviewFragment extends Fragment
     private SquareTextureView mTextureView;
     private boolean mTextureViewDestroyed;
     private Handler mHandler = new Handler();
-
-    private final FaceEnrollAnimationBase.AnimationListener mLocalAnimationListener =
-            new FaceEnrollAnimationBase.AnimationListener() {
-                @Override
-                public void onEnrollAnimationStarted() {
-                    mClientAnimationListener.onEnrollAnimationStarted();
-                }
-
-                @Override
-                public void onEnrollAnimationFinished() {
-                    mClientAnimationListener.onEnrollAnimationFinished();
-                    if (mShouldManagePreview) {
-                        mHandler.post(FaceEnrollPreviewFragment.this::closeCamera);
-                    }
-                }
-
-                @Override
-                public void showHelp(CharSequence help) {
-                    mClientAnimationListener.showHelp(help);
-                }
-
-                @Override
-                public void clearHelp() {
-                    mClientAnimationListener.clearHelp();
-                }
-            };
-
-    private final TextureView.SurfaceTextureListener mSurfaceTextureListener =
-            new TextureView.SurfaceTextureListener() {
-                @Override
-                public void onSurfaceTextureUpdated(SurfaceTexture surfaceTexture) {}
-
-                @Override
-                public void onSurfaceTextureAvailable(
-                        SurfaceTexture surfaceTexture, int width, int height) {
-                    mTextureViewDestroyed = false;
-                    setUpPreview(width, height);
-                }
-
-                @Override
-                public void onSurfaceTextureSizeChanged(
-                        SurfaceTexture surfaceTexture, int width, int height) {
-                    configureTransform(width, height);
-                }
-
-                @Override
-                public boolean onSurfaceTextureDestroyed(SurfaceTexture surfaceTexture) {
-                    mTextureViewDestroyed = true;
-                    return true;
-                }
-            };
-
-    private final CameraCaptureSession.CaptureCallback mCaptureCallback =
-            new CameraCaptureSession.CaptureCallback() {
-                @Override
-                public void onCaptureStarted(
-                        CameraCaptureSession session,
-                        CaptureRequest request,
-                        long timestamp,
-                        long frameNumber) {
-                    super.onCaptureStarted(session, request, timestamp, frameNumber);
-                    if (frameNumber == 1) {
-                        mAnimationDrawable.onFirstFrameReceived();
-                    }
-                }
-            };
-
-    private final CameraDevice.StateCallback mCameraStateCallback =
-            new CameraDevice.StateCallback() {
-                @Override
-                public void onOpened(CameraDevice cameraDevice) {
-                    mCameraDevice = cameraDevice;
-                    try {
-                        if (mTextureViewDestroyed) {
-                            Log.e(TAG, "Texture view destroyed but camera is open");
-                        }
-                        if (!mTextureView.isAvailable()) {
-                            Log.e(TAG, "Error the surface texture was not attached to the window");
-                        }
-                        SurfaceTexture texture = mTextureView.getSurfaceTexture();
-                        texture.setDefaultBufferSize(
-                                mPreviewSize.getWidth(), mPreviewSize.getHeight());
-                        Surface surface = new Surface(texture);
-                        mPreviewRequestBuilder =
-                                mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
-                        mPreviewRequestBuilder.set(
-                                CaptureRequest.STATISTICS_FACE_DETECT_MODE,
-                                CaptureRequest.STATISTICS_FACE_DETECT_MODE_OFF);
-                        mPreviewRequestBuilder.addTarget(surface);
-                        mCameraDevice.createCaptureSession(
-                                Arrays.asList(surface),
-                                new CameraCaptureSession.StateCallback() {
-                                    @Override
-                                    public void onConfigured(CameraCaptureSession session) {
-                                        if (mCameraDevice == null) {
-                                            return;
-                                        }
-                                        mCaptureSession = session;
-                                        try {
-                                            mPreviewRequestBuilder.set(
-                                                    CaptureRequest.CONTROL_AF_MODE,
-                                                    CaptureRequest
-                                                            .CONTROL_AF_MODE_CONTINUOUS_PICTURE);
-                                            mPreviewRequest = mPreviewRequestBuilder.build();
-                                            mCaptureSession.setRepeatingRequest(
-                                                    mPreviewRequest, mCaptureCallback, mHandler);
-                                        } catch (CameraAccessException e) {
-                                            Log.e(TAG, "Unable to access camera", e);
-                                        }
-                                    }
-
-                                    @Override
-                                    public void onConfigureFailed(CameraCaptureSession session) {
-                                        Log.e(TAG, "Unable to configure camera");
-                                    }
-                                },
-                                null);
-                    } catch (CameraAccessException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-                @Override
-                public void onDisconnected(CameraDevice cameraDevice) {
-                    cameraDevice.close();
-                    mCameraDevice = null;
-                }
-
-                @Override
-                public void onError(CameraDevice cameraDevice, int error) {
-                    cameraDevice.close();
-                    mCameraDevice = null;
-                }
-            };
-
-    public void setFromSetupWizard(boolean fromSetupWizard) {
-        mFromSetupWizard = fromSetupWizard;
-    }
-
-    void setShouldManagePreview(boolean shouldManagePreview) {
-        mShouldManagePreview = shouldManagePreview;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mTextureView = getActivity().findViewById(R.id.texture_view);
-        mCircleView = getActivity().findViewById(R.id.circle_view);
-        if (savedInstanceState != null) {
-            mRequireDiversity = savedInstanceState.getBoolean("accessibility_diversity");
-            mFromSetupWizard = savedInstanceState.getBoolean("is_suw");
-            mShouldManagePreview = savedInstanceState.getBoolean("should_manage_preview");
+    private final FaceEnrollAnimationBase.AnimationListener mLocalAnimationListener = new AnonymousClass1();
+    private final TextureView.SurfaceTextureListener mSurfaceTextureListener = new TextureView.SurfaceTextureListener() { // from class: com.google.android.settings.biometrics.face.FaceEnrollPreviewFragment.2
+        @Override // android.view.TextureView.SurfaceTextureListener
+        public void onSurfaceTextureUpdated(SurfaceTexture surfaceTexture) {
         }
-        if (mRequireDiversity) {
-            mAnimationDrawable =
-                    new FaceEnrollAnimationMultiAngleDrawable(
-                            getContext(),
-                            mLocalAnimationListener,
-                            getActivity().findViewById(R.id.indicator_view),
-                            getActivity().findViewById(R.id.distance_indicator_view),
-                            mFromSetupWizard,
-                            savedInstanceState);
+
+        @Override // android.view.TextureView.SurfaceTextureListener
+        public void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int i, int i2) {
+            FaceEnrollPreviewFragment.this.mTextureViewDestroyed = false;
+            FaceEnrollPreviewFragment.this.setUpPreview(i, i2);
+        }
+
+        @Override // android.view.TextureView.SurfaceTextureListener
+        public void onSurfaceTextureSizeChanged(SurfaceTexture surfaceTexture, int i, int i2) {
+            FaceEnrollPreviewFragment.this.configureTransform(i, i2);
+        }
+
+        @Override // android.view.TextureView.SurfaceTextureListener
+        public boolean onSurfaceTextureDestroyed(SurfaceTexture surfaceTexture) {
+            FaceEnrollPreviewFragment.this.mTextureViewDestroyed = true;
+            return true;
+        }
+    };
+    private final CameraCaptureSession.CaptureCallback mCaptureCallback = new CameraCaptureSession.CaptureCallback() { // from class: com.google.android.settings.biometrics.face.FaceEnrollPreviewFragment.3
+        @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
+        public void onCaptureStarted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, long j, long j2) {
+            super.onCaptureStarted(cameraCaptureSession, captureRequest, j, j2);
+            if (j2 == 1) {
+                FaceEnrollPreviewFragment.this.mAnimationDrawable.onFirstFrameReceived();
+            }
+        }
+    };
+    private final CameraDevice.StateCallback mCameraStateCallback = new CameraDevice.StateCallback() { // from class: com.google.android.settings.biometrics.face.FaceEnrollPreviewFragment.4
+        @Override // android.hardware.camera2.CameraDevice.StateCallback
+        public void onOpened(CameraDevice cameraDevice) {
+            FaceEnrollPreviewFragment.this.mCameraDevice = cameraDevice;
+            try {
+                if (FaceEnrollPreviewFragment.this.mTextureViewDestroyed) {
+                    Log.e("FaceEnroll/PreviewFragment", "Texture view destroyed but camera is open");
+                }
+                if (!FaceEnrollPreviewFragment.this.mTextureView.isAvailable()) {
+                    Log.e("FaceEnroll/PreviewFragment", "Error the surface texture was not attached to the window");
+                }
+                SurfaceTexture surfaceTexture = FaceEnrollPreviewFragment.this.mTextureView.getSurfaceTexture();
+                surfaceTexture.setDefaultBufferSize(FaceEnrollPreviewFragment.this.mPreviewSize.getWidth(), FaceEnrollPreviewFragment.this.mPreviewSize.getHeight());
+                Surface surface = new Surface(surfaceTexture);
+                FaceEnrollPreviewFragment faceEnrollPreviewFragment = FaceEnrollPreviewFragment.this;
+                faceEnrollPreviewFragment.mPreviewRequestBuilder = faceEnrollPreviewFragment.mCameraDevice.createCaptureRequest(1);
+                FaceEnrollPreviewFragment.this.mPreviewRequestBuilder.set(CaptureRequest.STATISTICS_FACE_DETECT_MODE, 0);
+                FaceEnrollPreviewFragment.this.mPreviewRequestBuilder.addTarget(surface);
+                FaceEnrollPreviewFragment.this.mCameraDevice.createCaptureSession(Arrays.asList(surface), new CameraCaptureSession.StateCallback() { // from class: com.google.android.settings.biometrics.face.FaceEnrollPreviewFragment.4.1
+                    @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
+                    public void onConfigured(CameraCaptureSession cameraCaptureSession) {
+                        if (FaceEnrollPreviewFragment.this.mCameraDevice == null) {
+                            return;
+                        }
+                        FaceEnrollPreviewFragment.this.mCaptureSession = cameraCaptureSession;
+                        try {
+                            FaceEnrollPreviewFragment.this.mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AF_MODE, 4);
+                            FaceEnrollPreviewFragment faceEnrollPreviewFragment2 = FaceEnrollPreviewFragment.this;
+                            faceEnrollPreviewFragment2.mPreviewRequest = faceEnrollPreviewFragment2.mPreviewRequestBuilder.build();
+                            FaceEnrollPreviewFragment.this.mCaptureSession.setRepeatingRequest(FaceEnrollPreviewFragment.this.mPreviewRequest, FaceEnrollPreviewFragment.this.mCaptureCallback, FaceEnrollPreviewFragment.this.mHandler);
+                        } catch (CameraAccessException e) {
+                            Log.e("FaceEnroll/PreviewFragment", "Unable to access camera", e);
+                        }
+                    }
+
+                    @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
+                    public void onConfigureFailed(CameraCaptureSession cameraCaptureSession) {
+                        Log.e("FaceEnroll/PreviewFragment", "Unable to configure camera");
+                    }
+                }, null);
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
+        }
+
+        @Override // android.hardware.camera2.CameraDevice.StateCallback
+        public void onDisconnected(CameraDevice cameraDevice) {
+            cameraDevice.close();
+            FaceEnrollPreviewFragment.this.mCameraDevice = null;
+        }
+
+        @Override // android.hardware.camera2.CameraDevice.StateCallback
+        public void onError(CameraDevice cameraDevice, int i) {
+            cameraDevice.close();
+            FaceEnrollPreviewFragment.this.mCameraDevice = null;
+        }
+    };
+
+    /* JADX INFO: renamed from: com.google.android.settings.biometrics.face.FaceEnrollPreviewFragment$1, reason: invalid class name */
+    class AnonymousClass1 implements FaceEnrollAnimationBase.AnimationListener {
+        AnonymousClass1() {
+        }
+
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void onEnrollAnimationStarted() {
+            FaceEnrollPreviewFragment.this.mClientAnimationListener.onEnrollAnimationStarted();
+        }
+
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void onEnrollAnimationFinished() {
+            FaceEnrollPreviewFragment.this.mClientAnimationListener.onEnrollAnimationFinished();
+            if (FaceEnrollPreviewFragment.this.mShouldManagePreview) {
+                FaceEnrollPreviewFragment.this.mHandler.post(new Runnable() { // from class: com.google.android.settings.biometrics.face.FaceEnrollPreviewFragment$1$$ExternalSyntheticLambda0
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        this.f$0.lambda$onEnrollAnimationFinished$0();
+                    }
+                });
+            }
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public /* synthetic */ void lambda$onEnrollAnimationFinished$0() {
+            FaceEnrollPreviewFragment.this.closeCamera();
+        }
+
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void showHelp(CharSequence charSequence) {
+            FaceEnrollPreviewFragment.this.mClientAnimationListener.showHelp(charSequence);
+        }
+
+        @Override // com.google.android.settings.biometrics.face.anim.FaceEnrollAnimationBase.AnimationListener
+        public void clearHelp() {
+            FaceEnrollPreviewFragment.this.mClientAnimationListener.clearHelp();
+        }
+    }
+
+    public void setFromSetupWizard(boolean z) {
+        this.mFromSetupWizard = z;
+    }
+
+    void setShouldManagePreview(boolean z) {
+        this.mShouldManagePreview = z;
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        this.mTextureView = (SquareTextureView) getActivity().findViewById(R$id.texture_view);
+        this.mCircleView = (ImageView) getActivity().findViewById(R$id.circle_view);
+        if (bundle != null) {
+            this.mRequireDiversity = bundle.getBoolean("accessibility_diversity");
+            this.mFromSetupWizard = bundle.getBoolean("is_suw");
+            this.mShouldManagePreview = bundle.getBoolean("should_manage_preview");
+        }
+        if (this.mRequireDiversity) {
+            this.mAnimationDrawable = new FaceEnrollAnimationMultiAngleDrawable(getContext(), this.mLocalAnimationListener, (ImageView) getActivity().findViewById(R$id.indicator_view), (ImageView) getActivity().findViewById(R$id.distance_indicator_view), this.mFromSetupWizard, bundle);
         } else {
-            mAnimationDrawable =
-                    new FaceEnrollAnimationSingleCaptureDrawable(
-                            getContext(),
-                            mLocalAnimationListener,
-                            getActivity().findViewById(R.id.distance_indicator_view),
-                            mFromSetupWizard);
+            this.mAnimationDrawable = new FaceEnrollAnimationSingleCaptureDrawable(getContext(), this.mLocalAnimationListener, (ImageView) getActivity().findViewById(R$id.distance_indicator_view), this.mFromSetupWizard);
         }
-        mCircleView.setImageDrawable(mAnimationDrawable);
-        mCameraManager = (CameraManager) getContext().getSystemService("camera");
+        this.mCircleView.setImageDrawable(this.mAnimationDrawable);
+        this.mCameraManager = (CameraManager) getContext().getSystemService("camera");
     }
 
-    @Override
+    @Override // androidx.fragment.app.Fragment
     public void onResume() {
         super.onResume();
-        if (mTextureView.isAvailable()) {
-            setUpPreview(mTextureView.getWidth(), mTextureView.getHeight());
+        boolean zIsAvailable = this.mTextureView.isAvailable();
+        SquareTextureView squareTextureView = this.mTextureView;
+        if (zIsAvailable) {
+            setUpPreview(squareTextureView.getWidth(), this.mTextureView.getHeight());
         } else {
-            mTextureView.setSurfaceTextureListener(mSurfaceTextureListener);
+            squareTextureView.setSurfaceTextureListener(this.mSurfaceTextureListener);
         }
     }
 
-    @Override
+    @Override // androidx.fragment.app.Fragment
     public void onPause() {
         super.onPause();
-        if (mShouldManagePreview) {
+        if (this.mShouldManagePreview) {
             closeCamera();
         }
     }
 
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putBoolean("accessibility_diversity", mRequireDiversity);
-        mAnimationDrawable.onSaveInstanceState(outState);
-        outState.putBoolean("is_suw", mFromSetupWizard);
-        outState.putBoolean("should_manage_preview", mShouldManagePreview);
+    @Override // androidx.fragment.app.Fragment
+    public void onSaveInstanceState(Bundle bundle) {
+        super.onSaveInstanceState(bundle);
+        bundle.putBoolean("accessibility_diversity", this.mRequireDiversity);
+        this.mAnimationDrawable.onSaveInstanceState(bundle);
+        bundle.putBoolean("is_suw", this.mFromSetupWizard);
+        bundle.putBoolean("should_manage_preview", this.mShouldManagePreview);
     }
 
-    @Override
-    public void onEnrollmentError(int errMsgId, CharSequence errString) {
-        if (mAnimationDrawable != null) {
-            mAnimationDrawable.onEnrollmentError(errMsgId, errString);
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
+    public void onEnrollmentError(int i, CharSequence charSequence) {
+        FaceEnrollAnimationBase faceEnrollAnimationBase = this.mAnimationDrawable;
+        if (faceEnrollAnimationBase != null) {
+            faceEnrollAnimationBase.onEnrollmentError(i, charSequence);
         }
     }
 
-    @Override
-    public void onEnrollmentHelp(int helpMsgId, CharSequence helpString) {
-        if (mAnimationDrawable != null) {
-            mAnimationDrawable.onEnrollmentHelp(helpMsgId, helpString);
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
+    public void onEnrollmentHelp(int i, CharSequence charSequence) {
+        FaceEnrollAnimationBase faceEnrollAnimationBase = this.mAnimationDrawable;
+        if (faceEnrollAnimationBase != null) {
+            faceEnrollAnimationBase.onEnrollmentHelp(i, charSequence);
         }
     }
 
-    @Override
-    public void onEnrollmentProgressChange(int steps, int remaining) {
-        if (mAnimationDrawable != null) {
-            mAnimationDrawable.onEnrollmentProgressChange(steps, remaining);
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.Listener
+    public void onEnrollmentProgressChange(int i, int i2) {
+        FaceEnrollAnimationBase faceEnrollAnimationBase = this.mAnimationDrawable;
+        if (faceEnrollAnimationBase != null) {
+            faceEnrollAnimationBase.onEnrollmentProgressChange(i, i2);
         }
     }
 
-    public void setAnimationListener(FaceEnrollAnimationBase.AnimationListener listener) {
-        mClientAnimationListener = listener;
+    public void setAnimationListener(FaceEnrollAnimationBase.AnimationListener animationListener) {
+        this.mClientAnimationListener = animationListener;
     }
 
-    public void setAnimationDrawableMode(boolean requireDiversity) {
-        mRequireDiversity = requireDiversity;
+    public void setAnimationDrawableMode(boolean z) {
+        this.mRequireDiversity = z;
     }
 
     private void setUpCameraOutputs() {
         try {
-            for (String cameraId : mCameraManager.getCameraIdList()) {
-                CameraCharacteristics characteristics =
-                        mCameraManager.getCameraCharacteristics(cameraId);
-                Integer facing = characteristics.get(CameraCharacteristics.LENS_FACING);
-                if (facing != null && facing == CameraCharacteristics.LENS_FACING_BACK) {
-                    mCameraId = cameraId;
-                    StreamConfigurationMap map =
-                            characteristics.get(
-                                    CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
-                    mPreviewSize = chooseOptimalSize(map.getOutputSizes(SurfaceTexture.class));
+            for (String str : this.mCameraManager.getCameraIdList()) {
+                CameraCharacteristics cameraCharacteristics = this.mCameraManager.getCameraCharacteristics(str);
+                Integer num = (Integer) cameraCharacteristics.get(CameraCharacteristics.LENS_FACING);
+                if (num != null && num.intValue() == 0) {
+                    this.mCameraId = str;
+                    this.mPreviewSize = chooseOptimalSize(((StreamConfigurationMap) cameraCharacteristics.get(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP)).getOutputSizes(SurfaceTexture.class));
                     return;
                 }
             }
         } catch (CameraAccessException e) {
-            Log.e(TAG, "Unable to access camera", e);
+            Log.e("FaceEnroll/PreviewFragment", "Unable to access camera", e);
         }
     }
 
-    private void setUpPreview(int width, int height) {
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setUpPreview(int i, int i2) {
         try {
             setUpCameraOutputs();
-            if (mShouldManagePreview) {
-                mCameraManager.openCamera(mCameraId, mCameraStateCallback, mHandler);
+            if (this.mShouldManagePreview) {
+                this.mCameraManager.openCamera(this.mCameraId, this.mCameraStateCallback, this.mHandler);
             } else {
-                mAnimationDrawable.onFirstFrameReceived();
+                this.mAnimationDrawable.onFirstFrameReceived();
             }
-            configureTransform(width, height);
+            configureTransform(i, i2);
         } catch (CameraAccessException e) {
-            Log.e(TAG, "Unable to open camera", e);
+            Log.e("FaceEnroll/PreviewFragment", "Unable to open camera", e);
         }
     }
 
-    private Size chooseOptimalSize(Size[] choices) {
-        return Collections.min(
-                Arrays.asList(choices),
-                new Comparator<Size>() {
-                    @Override
-                    public int compare(Size size1, Size size2) {
-                        if (size1.getHeight() < 480 && size2.getHeight() >= 480) {
-                            return 1;
-                        }
-                        if (size1.getHeight() >= 480 && size2.getHeight() < 480) {
-                            return -1;
-                        }
-                        int ratioCompare =
-                                Float.compare(
-                                        Math.abs(
-                                                (size1.getWidth() / (float) size1.getHeight())
-                                                        - 1.3f),
-                                        Math.abs(
-                                                (size2.getWidth() / (float) size2.getHeight())
-                                                        - 1.3f));
-                        if (ratioCompare != 0) {
-                            return ratioCompare;
-                        }
-                        return Integer.compare(size1.getHeight(), size2.getHeight());
-                    }
-                });
+    private Size chooseOptimalSize(Size[] sizeArr) {
+        return (Size) Collections.min(Arrays.asList(sizeArr), new Comparator(this) { // from class: com.google.android.settings.biometrics.face.FaceEnrollPreviewFragment.5
+            @Override // java.util.Comparator
+            public int compare(Size size, Size size2) {
+                if (size.getHeight() < 480 && size2.getHeight() >= 480) {
+                    return 1;
+                }
+                if (size.getHeight() >= 480 && size2.getHeight() < 480) {
+                    return -1;
+                }
+                int iCompare = Float.compare(Math.abs((size.getWidth() / size.getHeight()) - 1.3f), Math.abs((size2.getWidth() / size2.getHeight()) - 1.3f));
+                return iCompare != 0 ? iCompare : Integer.compare(size.getHeight(), size2.getHeight());
+            }
+        });
     }
 
-    private void configureTransform(int viewWidth, int viewHeight) {
-        if (mTextureView == null) {
+    /* JADX INFO: Access modifiers changed from: private */
+    public void configureTransform(int i, int i2) {
+        if (this.mTextureView == null) {
             return;
         }
-        float scaleWidth = viewWidth / (float) mPreviewSize.getWidth();
-        float scaleHeight = viewHeight / (float) mPreviewSize.getHeight();
-        float scaleFactor = Math.min(scaleWidth, scaleHeight);
-        float scaledWidth = scaleWidth / scaleFactor;
-        float scaledHeight = scaleHeight / scaleFactor;
-        TypedValue scaleValue = new TypedValue();
-        getResources().getValue(R.dimen.face_preview_scale, scaleValue, true);
+        float width = i / this.mPreviewSize.getWidth();
+        float height = i2 / this.mPreviewSize.getHeight();
+        float fMin = Math.min(width, height);
+        float f = width / fMin;
+        float f2 = height / fMin;
+        TypedValue typedValue = new TypedValue();
+        getResources().getValue(R.dimen.face_preview_scale, typedValue, true);
         Matrix matrix = new Matrix();
-        mTextureView.getTransform(matrix);
-        TypedValue translateXValue = new TypedValue();
-        TypedValue translateYValue = new TypedValue();
-        getResources().getValue(R.dimen.face_preview_translate_x, translateXValue, true);
-        getResources().getValue(R.dimen.face_preview_translate_y, translateYValue, true);
-        matrix.setScale(scaledWidth * scaleValue.getFloat(), scaledHeight * scaleValue.getFloat());
-        matrix.postTranslate(translateXValue.getFloat(), translateYValue.getFloat());
-        mTextureView.setTransform(matrix);
+        this.mTextureView.getTransform(matrix);
+        TypedValue typedValue2 = new TypedValue();
+        TypedValue typedValue3 = new TypedValue();
+        getResources().getValue(R$dimen.face_preview_translate_x, typedValue2, true);
+        getResources().getValue(R$dimen.face_preview_translate_y, typedValue3, true);
+        matrix.setScale(f * typedValue.getFloat(), f2 * typedValue.getFloat());
+        matrix.postTranslate(typedValue2.getFloat(), typedValue3.getFloat());
+        this.mTextureView.setTransform(matrix);
     }
 
-    private void closeCamera() {
-        if (mCaptureSession != null) {
-            mCaptureSession.close();
-            mCaptureSession = null;
+    /* JADX INFO: Access modifiers changed from: private */
+    public void closeCamera() {
+        CameraCaptureSession cameraCaptureSession = this.mCaptureSession;
+        if (cameraCaptureSession != null) {
+            cameraCaptureSession.close();
+            this.mCaptureSession = null;
         }
-        if (mCameraDevice != null) {
-            mCameraDevice.close();
-            mCameraDevice = null;
+        CameraDevice cameraDevice = this.mCameraDevice;
+        if (cameraDevice != null) {
+            cameraDevice.close();
+            this.mCameraDevice = null;
         }
     }
 
-    @Override
+    @Override // com.google.android.settings.biometrics.face.FaceEnrollSidecar.PreviewSurfaceProvider
     public Surface getPreviewSurface() {
-        if (mTextureViewDestroyed) {
-            Log.e(TAG, "Failed to get the preview surface, the surface texture is destroyed.");
+        if (this.mTextureViewDestroyed) {
+            Log.e("FaceEnroll/PreviewFragment", "Failed to get the preview surface, the surface texture is destroyed.");
             return null;
         }
-        SurfaceTexture texture = mTextureView.getSurfaceTexture();
-        texture.setDefaultBufferSize(mPreviewSize.getWidth(), mPreviewSize.getHeight());
-        return new Surface(texture);
+        SurfaceTexture surfaceTexture = this.mTextureView.getSurfaceTexture();
+        surfaceTexture.setDefaultBufferSize(this.mPreviewSize.getWidth(), this.mPreviewSize.getHeight());
+        return new Surface(surfaceTexture);
     }
 }
