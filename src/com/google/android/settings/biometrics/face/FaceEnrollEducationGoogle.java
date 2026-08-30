@@ -14,6 +14,9 @@ import com.android.settings.biometrics.metrics.OnboardingEvent;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
+import com.google.android.material.materialswitch.MaterialSwitch;
+import com.google.android.setupdesign.util.ThemeHelper;
+
 public class FaceEnrollEducationGoogle extends FaceEnrollEducation {
     private boolean mGazeEnabled;
     private MetricsFeatureProvider mMetricsFeatureProvider;
@@ -32,6 +35,12 @@ public class FaceEnrollEducationGoogle extends FaceEnrollEducation {
             mSwitchGaze.setVisibility(isAccessibilityEnabled() ? View.VISIBLE : View.GONE);
             ((TextView) mSwitchGaze.findViewById(R.id.subtitle))
                     .setText(R.string.security_settings_face_settings_gaze_details);
+            if (ThemeHelper.shouldApplyGlifExpressiveStyle(getApplicationContext())) {
+                final MaterialSwitch switchButton = (MaterialSwitch) mSwitchGaze.getSwitch();
+                switchButton.setThumbIconDrawable(switchButton.getContext().getDrawable(
+                        com.android.settingslib.widget.theme.R.drawable
+                                .settingslib_expressive_switch_thumb_icon));
+            }
         }
     }
 
