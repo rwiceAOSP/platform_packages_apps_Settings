@@ -121,8 +121,8 @@
     <color name="contextual_card_background">@*android:color/background_device_default_light</color>
     <!-- End of dashboard/homepage icon background colors -->
 
-    <color name="battery_good_color_light">#43a047</color> <!-- Material Green 600 -->
-    <color name="battery_bad_color_light">#f44336</color> <!-- Material Red 500 -->
+    <color name="battery_good_color_light">#1e8e3e</color>
+    <color name="battery_bad_color_light">#d93025</color>
 
     <!-- TODO: Figure out colors -->
     <color name="face_anim_particle_color_1">#ff00bcd4</color> <!-- Material Cyan 500 -->

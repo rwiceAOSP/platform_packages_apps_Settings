@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Gotovo"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Skrolujte nadole da biste pronašli privatni prostor"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Prijavi me"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Prijavite se na nalog koji ćete koristiti sa privatnim prostorom"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Prijavite se na Google nalog koji ćete koristiti sa privatnim prostorom</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Ne sada"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Nastavi"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Odaberite tip otključavanja za privatni prostor"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Šalji naziv uređaja"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Deli naziv ovog uređaja sa mrežom"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Pretplata"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Pregledajte ili promenite pretplatu"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">Pregledajte ili promenite OpenRoaming pretplatu</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Nasumično izabrani MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Dodajte uređaj"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Centrirajte QR kôd ispod da biste dodali uređaj na mrežu <xliff:g id="SSID">%1$s</xliff:g>"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Isključuje se automatski u <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Isključuje se automatski posle vremena za spavanje"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"Isključiće se kada se završi <xliff:g id="ID_1">%1$s</xliff:g>"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Tamna tema koristi crnu pozadinu da bi baterija trajala duže na nekim ekranima. Rasporedi tamne teme se uključuju tek kada se ekran isključi."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Koristite tamnu pozadinu da bi gledanje ekrana bilo prijatnije i da biste smanjili potrošnju baterije na nekim ekranima. Ako imate raspored, tema će se promeniti kada ekran bude isključen."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Tamna tema koristi crnu pozadinu da bi baterija trajala duže. Rasporedi tamne teme se uključuju tek kada se ekran isključi.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Koristite tamnu pozadinu da biste smanjili potrošnju baterije i da bi gledanje ekrana bilo prijatnije. Ako imate raspored, tema će se promeniti kada je ekran isključen.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Tamna tema trenutno prati raspored režima za spavanje"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Podešavanja režima za spavanje"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{I režimi mogu da uključe tamnu temu.}=1{{mode_1} takođe uključuje tamnu temu.}=2{{mode_1} i {mode_2} takođe uključuju tamnu temu.}=3{{mode_1}, {mode_2} i {mode_3} takođe uključuju tamnu temu.}one{{mode_1}, {mode_2} i još # takođe uključuju tamnu temu.}few{{mode_1}, {mode_2} i još # takođe uključuju tamnu temu.}other{{mode_1}, {mode_2} i još # takođe uključuju tamnu temu.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"Možete da počnete da koristite: <xliff:g id="NAME">^1</xliff:g>"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Status baterije"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Nivo baterije"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Zajedničko"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Zajednička podešavanja"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Režim centra</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Opcije za baznu stanicu i zaključani ekran</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Režim centra"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Vidžeti na zaključanom ekranu"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"Da biste pristupili omiljenim vidžetima, prevucite nalevo na zaključanom ekranu. \n\nKada otvorite aplikaciju pomoću vidžeta, treba da potvrdite da ste to vi. Imajte u vidu da svako može da vidi vidžete."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"dodirna tabla, miš, kursor, skrolovanje, prevlačenje, desni klik, klik, pokazivač"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"desni klik, dodir"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Srednji taster miša"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Pokreni Pomoćnik"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Pokreni Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"Pokreni <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Pomoćnik"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Idi na početni ekran"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Režim navigacije, rotiranje ekrana"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Pošaljite povratne informacije"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Popunite anketu"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Obratite se Google timu za podršku osobama sa invaliditetom</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Anketa o pristupačnosti"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Delite povratne informacije"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Koliko ste zadovoljni tamnom temom?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Prečica za slušni aparat"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Kompatibilnost sa slušnim aparatima"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Poboljšava kompatibilnost sa telekoilovima i smanjuje neželjenu buku"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Može da poveća jačinu zvuka da bi se poboljšala kompatibilnost sa telekalemovima i smanjila neželjena buka</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"O slušnim aparatima"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"Da biste pronašli druge slušne aparate koji nemaju ASHA ni LE Audio, dodirnite &lt;b&gt;Upari novi uređaj&lt;/b&gt; &gt; &lt;b&gt;Prikaži još uređaja&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Da biste pronašli druge slušne aparate koji nemaju ASHA ni LE Audio, dodirnite "<b>"Upari novi uređaj"</b>", pa "<b>"Prikaži još uređaja"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"osetljivost na svetlost, fotofobija, tamna tema, migrena, glavobolja, režim čitanja, noćni režim, smanjivanje osvetljenosti, bela tačka"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"vid, sluh, slepi, gluvi, motorika, spretnost, pomoćno, pomoć, jednostavno korišćenje, jednostavni pristup, ruka, pomoć"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"uveličavanje prozora, zumiranje, uvećanje, slabovidost, uveličavanje, povećati"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">čitač ekrana, naracija, sinhronizacija, glasovna pomoć, slepilo, slabovidost, TTS, pretvaranje teksta u govor, govorne povratne informacije</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"titl, titlovi, CC, transkripcija uživo, oštećenje sluha, gubitak sluha, CART, pretvaranje govora u tekst, titlovanje"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">titl, titlovi, CC, titl uživo, oštećenje sluha, gubitak sluha, CART, pretvaranje govora u tekst, titlovanje</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">obaveštenja, oštećenje sluha, gubitak sluha, obavestiti</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, pojačati, pojačanje zvuka, oštećenje sluha, gubitak sluha, pojačavanje</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"veličina ekrana, veliki ekran"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"visok kontrast, slabovidost, podebljani font, podebljano"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"tekst visokog kontrasta"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Slušanje teksta, čitanje naglas, izgovaranje sa ekrana, čitač ekrana, disleksija, izaberite za govor</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"podešavanje boje"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"zatamniti ekran, osvetliti ekran"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">motorika, brzi meni, pomoćni meni, dodir, spretnost, artritis, učestala traumatska istegnuća zgloba, moždani udar, tremor, multipla skleroza, cerebralna paraliza, dugme, hardver, pritiskanje, povreda izazvana ponavljajućim pokretima, ruka, bol, prilagođeno osobama sa invaliditetom, pomoć</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">motorika, prekidač, šaka, AT, tehnologija za pomoć osobama sa invaliditetom, paraliza, ALS, skeniranje, skeniranje koraka</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"motorika, miš, spoljni miš, miš za glavu, adaptivni miš, invalidska kolica, džojstik"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"slušni aparati, sa oštećenjem sluha, gubitak sluha, kohlearni implanti, uređaji za pojačavanje zvuka, procesori zvuka, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"oštećenje sluha, gubitak sluha, titl, teleprinter, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">glas, kontrola glasom, motorika, šaka, mikrofon, diktiranje, govor, kontrola</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"tri dugmeta"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"spretnost, motorika, starije osobe, artritis, učestala traumatska istegnuća zgloba, moždani udar, tremor, multipla skleroza, cerebralna paraliza, drhtavica, povreda izazvana ponavljajućim pokretima, ruka"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"odlaganje, spretnost, starija osoba"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Nizak nivo napunjenosti baterije"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Uključite uštedu baterije da biste produžili trajanje baterije"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Produžite trajanje baterije"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Uključite menadžer baterije"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Uključite prilagodljivu bateriju</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Uključite uštedu baterije"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Baterija može da se isprazni ranije nego obično"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"Ušteda baterije je uključena"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Ipak napuni"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Proverite dodatnu opremu za punjenje"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Saznajte više o nekompatibilnom punjenju"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Menadžer baterije"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Prilagodljiva podešavanja</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Prilagodljiva baterija</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Kada menadžer baterije otkrije da aplikacije prazne bateriju, imate opciju da ograničite te aplikacije. Ograničene aplikacije možda neće raditi kako treba i obaveštenja mogu da kasne."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">Da bi produžila trajanje baterije, prilagodljiva baterija može da smanji učinak i aktivnosti u pozadini. Neka obaveštenja mogu da kasne.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Ograničene aplikacije"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{Ograničava se potrošnja baterije za # aplikaciju}one{Ograničava se potrošnja baterije za # aplikaciju}few{Ograničava se potrošnja baterije za # aplikacije}other{Ograničava se potrošnja baterije za # aplikacija}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"Ograničena <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Ovim aplikacijama je ograničena potrošnja baterije u pozadini. Možda neće raditi kako treba i obaveštenja mogu da kasne."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Koristite menadžer baterije"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Otkrijte kada aplikacije isprazne bateriju"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Otkriva kada aplikacije troše bateriju"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Otkriva kada aplikacije troše bateriju"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Produžite trajanje baterije i optimizujte punjenje</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Produžite trajanje baterije</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# aplikacija je ograničena}one{# aplikacija je ograničena}few{# aplikacije su ograničene}other{# aplikacija je ograničeno}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Problem sa očitavanjem merača baterije."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Saznajte više</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Dodirnite da biste saznali više o ovoj grešci"</string>
     <string name="power_screen" msgid="4596900105850963806">"Ekran"</string>
     <string name="power_cpu" msgid="1820472721627148746">"Procesor"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"Rezervna kopija i resetovanje"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"Lični podaci"</string>
     <string name="backup_data_title" msgid="507663517227498525">"Pravljenje rezervnih kopija podataka"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Pravi rezervne kopije podataka o aplikacijama, WiFi lozinki i drugih podešavanja na Google serverima"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">Pravljenje rezervnih kopija podataka o aplikacijama, WiFi lozinki i drugih podešavanja na Google serverima</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"Rezervna kopija naloga"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"Upravljajte nalogom za rezervne kopije"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"Uvrštavanje podataka aplikacija"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Trenutno nijedan nalog ne čuva rezervne kopije podataka"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Želite li da zaustavite pravljenje rezervnih kopija WiFi lozinki, obeleživača, ostalih podešavanja i podataka o aplikacijama, kao i da izbrišete sve kopije na Google serverima?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Želite li da zaustavite pravljenje rezervnih kopija podataka uređaja (poput WiFi lozinki i istorije poziva) i podataka aplikacija (poput podešavanja i datoteka sačuvanih u aplikacijama) i izbrišete sve kopije na udaljenim serverima?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Automatski pravite rezervne kopije podataka uređaja (poput WiFi lozinki i istorije poziva) i podataka aplikacija (poput podešavanja i datoteka sačuvanih u aplikacijama) daljinski.\n\nKada uključite automatsko pravljenje rezervnih kopija, podaci uređaja i aplikacija se povremeno čuvaju daljinski. Podaci aplikacija mogu da budu bilo koji podaci koje je aplikacija sačuvala (na osnovu podešavanja programera), uključujući potencijalno osetljive podatke kao što su kontakti, poruke i slike."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Želite li da zaustavite pravljenje rezervnih kopija podataka uređaja (poput WiFi lozinki i istorije poziva) i podataka aplikacija (poput podešavanja i datoteka sačuvanih u aplikacijama) i izbrišete sve kopije na Google disku?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Automatski pravite rezervne kopije podataka uređaja (poput WiFi lozinki i istorije poziva) i podataka aplikacija (poput podešavanja i datoteka sačuvanih u aplikacijama) na Google disku.\n\nKada uključite automatsko pravljenje rezervnih kopija, podaci uređaja i aplikacija se povremeno čuvaju u privatnom folderu na Google disku. Podaci aplikacije mogu da budu bilo koji podaci koje je aplikacija sačuvala (na osnovu podešavanja programera), uključujući potencijalno osetljive podatke kao što su kontakti, poruke i slike.\n\nRezervne kopije podataka neće ulaziti u kvotu memorijskog prostora Diska. Za velike datoteke ili datoteke koje su programeri izostavili iz usluge nećemo praviti rezervne kopije.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Podešavanja administratora uređaja"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Aplikacija za administratora uređaja"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Deaktiviraj ovu aplikaciju za administratora uređaja"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Kalendar za više vrsta profila"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Prikazivanje poslovnih događaja u ličnom kalendaru"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"Kada su poslovne aplikacije isključene, one se pauziraju i ne može da im se pristupi niti mogu da vam šalju obaveštenja"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Upravljaj memorijskim prostorom"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"Da bi oslobodio memorijski prostor, menadžer memorijskog prostora uklanja rezervne kopije slika i videa sa uređaja."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Uklonite slike i video"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Menadžer memorijskog prostora"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Koristite menadžer memorijskog prostora"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Pametna memorija</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Kada memorijski prostor bude skoro pun, uklonite rezervne kopije slika i videa. I dalje ćete moći da ih pronađete u Google slikama.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Ukloni rezervne kopije slika i videa</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Pametna memorija</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Koristite Pametnu memoriju</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Pokreti"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Brzo otvarajte kameru"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"Da biste brzo otvorili kameru, dvaput pritisnite dugme za uključivanje. Ovo funkcioniše na svakom ekranu."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"pokreti, prečica"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"plati, plaćanje"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Trzaj obrće kameru za selfi"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Trznite dvaput dok ste u aplikaciji da biste uključili ili isključili režim za selfi u Pixel kameri.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Režim navigacije"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Ažurirajte uređaj"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Interakcija"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Instant aplikacije"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Podešavanja instant aplikacija"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Instalirane aplikacije"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Memorijskim prostorom sada upravlja Menadžer memorijskog prostora"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Kada ste povezani, možete da pristupate slikama i videima kvaliteta koji ste izabrali pri pravljenju rezervne kopije</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"Nalozi korisnika: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Automatski sinhronizuj podatke aplikacija"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Omogućava aplikacijama da automatski osvežavaju podatke"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Naziv mreže"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Prikazuje naziv mreže na statusnoj traci"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Instant aplikacija"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Želite da isključite menadžer memorijskog prostora?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Želite da isključite Pametnu memoriju? \n\nPametna memorija neće oslobađati prostor kad se memorijski prostor skoro napuni.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Ažurirajte režim Ne uznemiravaj"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Pauzirajte obaveštenja radi bolje koncentracije"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Funkcija nije dostupna"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Podrazumevane onemogućene promene"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Promene kompatibilnosti aplikacija mogu da se izmene samo za aplikacije sa otklonjivim greškama. Instalirajte aplikaciju sa otklonjivim greškama i probajte ponovo."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Zavisi od drugog podešavanja"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Nalog"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google nalog</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d naloga"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Naziv uređaja"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Osnovne informacije"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Lokacija"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Mobilni operater može da prikuplja podatke o lokaciji kada koristite ovu uslugu za hitne pozive.\n\nPotražite detalje u politici privatnosti mobilnog operatera."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Možete da izgubite pristup preostalom vremenu ili podacima. Proverite sa dobavljačem usluge pre uklanjanja."</string>
-    <string name="content_capture" msgid="868372905432812238">"Sadržaj aplikacije"</string>
+    <string name="content_capture" msgid="868372905432812238">Personalizuj pomoću podataka aplikacija</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Dozvolite aplikacijama da šalju sadržaj Android sistemu"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Snimi dinamički deo memorije sistema"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Dodatak za označavanje memorije"</string>
@@ -5616,11 +5616,11 @@
       <item quantity="few"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Tekst u realnom vremenu (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Koristite tekst da biste komunicirali tokom poziva"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Nije vidljivo</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Vidljivo je tokom poziva</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Uvek je vidljivo</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"Želite da isključite VoLTE?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"Time ćete isključiti i 5G vezu.\nTokom glasovnog poziva ne možete da koristite internet i neke aplikacije možda neće raditi."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Suspendovanje izvršenja za keširane aplikacije"</string>
@@ -5899,11 +5899,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Proverite aktivnosti u aplikacijama radi otkrivanja „pecanja“"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Koristi za otkrivanje obmanjujućih aplikacija"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Koristi skeniranje za obmanjujuće aplikacije za posao"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Provera se obavlja privatno i direktno na uređaju, a njome se proveravaju aktivnosti u aplikacijama radi otkrivanja „pecanja“ ili drugog obmanjujućeg ponašanja. Ako se to otkrije, neki podaci o aplikaciji se šalju Google Play zaštiti da bi se potvrdila pretnja i upozorili korisnici.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Ovo je zaštićena bezbednosna funkcija. Sa Google-om se ne dele podaci o uređaju ni lični podaci. \n\n„Pecanje“ je pokušaj krađe akreditiva za prijavljivanje ili drugih ličnih podataka.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Lozinka je podešena"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN je podešen"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Prikaži pokazivač pri prelasku pisaljkom"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Dozvoli aplikacijama da prikazuju pokazivač kad se prelazi kursorom</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Podešavanja Upravljanja digitalnim pravima za medije"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Prinudna softverska bezbedna kriptografija"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"Prinudite Upravljanje digitalnim pravima (DRM) u vezi sa ključevima da koristi softversku kriptografiju sa belim kutijama"</string>
@@ -6127,10 +6127,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Provera identiteta radi sa više aplikacija"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Prikaži detalje"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Provera identiteta radi sa više aplikacija"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Provera identiteta i sat"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Kada je sat povezan, Provera identiteta dodaje još načina za verifikaciju identiteta kako bi sprečila neželjeni pristup aplikacijama"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Provera identiteta i sat"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Ažuriranja:\n"<ul><li>"Kada povežete sat, možete da koristite biometriju ili PIN da biste pristupali aplikacijama kada niste na pouzdanom mestu"</li>\n<li>"Provera identiteta može vremenom da doda još načina za verifikaciju identiteta i zaštitu aplikacija na uređaju. "<a href="https://support.google.com/android?p=identity_check">"Saznajte više o tome kada i gde ste zaštićeni"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Provera identiteta i Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Kada je Pixel Watch povezan, Provera identiteta dodaje još načina za verifikaciju identiteta kako bi sprečila neželjeni pristup aplikacijama</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Provera identiteta i Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Ažuriranja: &lt;ul&gt;&lt;li&gt;Kada povežete Pixel Watch 3 ili noviji, možete da koristite biometrijske podatke ili PIN da biste pristupali aplikacijama kada niste na pouzdanom mestu. &lt;/li&gt;&lt;li&gt;Provera identiteta može vremenom da doda još načina za verifikaciju identiteta i zaštitu aplikacija na uređaju. &lt;a href=https://support.google.com/android?p=identity_check&gt;Saznajte više o tome kada i gde ste zaštićeni&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Ostala podešavanja"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Automatsko popunjavanje, obaveštenja i drugo"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Kontrole privatnosti"</string>
@@ -6143,22 +6143,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Pristup lokaciji"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Pogledajte aplikacije i usluge koje imaju pristup lokaciji"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Provera identiteta radi sa više aplikacija"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Provera identiteta i sat"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Kada je sat povezan, Provera identiteta dodaje još načina za verifikaciju identiteta kako bi sprečila neželjeni pristup aplikacijama"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Provera identiteta i Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Kada je Pixel Watch povezan, Provera identiteta dodaje još načina za verifikaciju identiteta kako bi sprečila neželjeni pristup aplikacijama</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Prikaži detalje"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Provera podešavanja nije uspela"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Još nema informacija"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Skeniranje u Play zaštiti je uključeno</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect redovno proverava aplikacije i uređaj da bi otkrio da li postoji štetno ponašanje. Dobićete obaveštenje za sve pronađene bezbednosne rizike.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">bezbednost aplikacija, Play zaštita, Google Play zaštita</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google nalog je zaštićen</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google provera bezbednosti, Google bezbednost, provera bezbednosti, bezbednost naloga, bezbednost Google naloga, Google nalog</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">centar za pronalaženje, traženje uređaja, pronađi moj uređaj, izgubljeni uređaj</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Ažuriranja"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"ažuriranja, ažuriranje, bezbednosno ažuriranje, bezbednosna ažuriranja"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">ažuriranja, ažuriranje, ažuriranje sistema, ažuriranja sistema, Google Play ažuriranje sistema, Play ažuriranje sistema</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"zaključavanje uređaja, otključavanje ekrana, zaključani ekran, lozinka, PIN, šablon, zaključavanje, otključavanje"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Otisak prsta, prst, dodaj otisak prsta"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Otključavanje licem, lice"</string>

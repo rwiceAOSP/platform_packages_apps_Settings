@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Done"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Scroll down to find private space"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Sign in"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Sign in to an account to use with your private space"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Sign in to a Google Account to use with your private space</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Not now"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Continue"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Choose a lock for your private space"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Send device name"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Share this device\'s name with the network"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Subscription"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"View or change subscription"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">View or change OpenRoaming subscription</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Randomized MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Add a device"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Center the QR code below to add the device to “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Will turn off automatically at <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Will turn off automatically after bedtime"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"Will turn off when <xliff:g id="ID_1">%1$s</xliff:g> ends"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Dark theme uses a black background to help keep battery alive longer on some screens. Dark theme schedules wait to turn on until your screen is off."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Use a dark background to make your screen more comfortable to view and reduce battery usage on some screens. Your theme will change if you have a schedule, when the screen is off."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Dark theme uses a black background to help keep your battery alive longer. Dark theme schedules wait to turn on until your screen is off.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Use a dark background to reduce battery usage and make your screen more comfortable to view. Your theme will change if you have a schedule, when the screen is off.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Dark theme is currently following your Bedtime mode schedule"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Bedtime mode settings"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Modes can also turn on dark theme.}=1{{mode_1} also turns on dark theme.}=2{{mode_1} and {mode_2} also turn on dark theme.}=3{{mode_1}, {mode_2}, and {mode_3} also turn on dark theme.}other{{mode_1}, {mode_2}, and # more also turn on dark theme.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"You can start using your <xliff:g id="NAME">^1</xliff:g>"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Battery status"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Battery level"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Communal"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Communal settings"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Hub mode</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Dock and lock screen options</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Hub mode"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Widgets on lock screen"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"To access your favorite widgets, swipe left from your Lock Screen. \n\nWhen you open an app using a widget, you’ll need to verify it’s you. Also keep in mind that anyone can view them."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"trackpad, track pad, mouse, cursor, scroll, swipe, right click, click, pointer"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"right click, tap"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Middle mouse button"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Launch Assistant"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Launch Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"Launch <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Assistant"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Go home"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Navigation mode, screen rotation"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Send feedback"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Take survey"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Contact Google Disability Support</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Accessibility Survey"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Share your feedback"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"How satisfied are you with dark theme?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Hearing device shortcut"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Hearing aid compatibility"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Improves compatibility with telecoils and reduces unwanted noise"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">May increase audio volume to improve compatibility with telecoils and reduce unwanted noise</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"About hearing devices"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"To find other hearing devices that aren’t supported by ASHA or LE Audio, tap &lt;b&gt;Pair new device&lt;/b&gt; &gt; &lt;b&gt;See more devices&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"To find other hearing devices that aren’t supported by ASHA or LE Audio, tap "<b>"Pair new device"</b>" then "<b>"See more devices"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"light sensitivity, photophobia, dark theme, migraine, headache, reading mode, night mode, reduce brightness, white point"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"vision, hearing, blind, deaf, motor, dexterity, assistive, assistance, ease of use, ease of access, hand, help"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Window Magnifier, Zoom, Magnification, Low vision, Enlarge, make bigger"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Screen reader, Voice Over, VoiceOver, Voice Assistance, Blind, Low Vision, TTS, text to speech, spoken feedback</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Captions, closed captions, CC, Live Transcribe, hard of hearing, hearing loss, CART, speech to text, subtitle"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Captions, closed captions, CC, Live Caption, hard of hearing, hearing loss, CART, speech to text, subtitle</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Notifications, hard of hearing, hearing loss, notify</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, amplify, sound amplification, hard of hearing, hearing loss, amplification</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"screen size, large screen"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"High contrast, low vision, bold font, bold face"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"high contrast text"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Hear text, read aloud, speak screen, screen reader, dyslexia, select to speak</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"adjust color"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"turn screen dark, turn screen light"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">motor, quick menu, assistive menu, touch, dexterity, arthritis, rsi, stroke, tremor, multiple sclerosis, cerebral palsy, button, hardware, press, repetitive strain injury, hand, pain, accessible, help</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">motor, switch, hand, AT, assistive technology, paralysis, ALS, scanning, step scanning</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"motor, mouse, external mouse, head mouse, adaptive mouse, wheelchair, joystick"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"hearing aids, hard of hearing, hearing loss, cochlear implants, amplification devices, sound processors, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"hard of hearing, hearing loss, captions, Teletype, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">voice, voice control, motor, hand, mic, microphone, dictation, talk, control</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"three buttons"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"dexterity, motor, senior, arthritis, rsi, stroke, tremor, multiple sclerosis, cerebral palsy, shaking, repetitive strain injury, hand"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"delay, dexterity, senior"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Battery level low"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Turn on Battery Saver to extend battery life"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Improve battery life"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Turn on Battery Manager"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Turn on Adaptive Battery</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Turn on Battery Saver"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Battery may run out earlier than usual"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"Battery Saver on"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Charge anyway"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Check charging accessory"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Learn more about incompatible charging"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Battery Manager"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Adaptive preferences</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Adaptive Battery</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"When Battery Manager detects that apps are draining battery, you’ll have the option to restrict these apps. Restricted apps may not work properly and notifications may be delayed."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">To extend battery life, Adaptive Battery may reduce performance and background activity. Some notifications may be delayed.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Restricted apps"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{Limiting battery usage for # app}other{Limiting battery usage for # apps}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"Restricted <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"These apps are restricted from background battery usage. They may not work as expected, and notifications may be delayed."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Use Battery Manager"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Detect when apps drain battery"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Detecting when apps drain battery"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Detecting when apps drain battery"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Extend battery life and optimize charging</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Extend battery life</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# app restricted}other{# apps restricted}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Problem reading the battery meter."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Learn more</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Tap to learn more about this error"</string>
     <string name="power_screen" msgid="4596900105850963806">"Screen"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"Backup &amp; restore"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"Personal data"</string>
     <string name="backup_data_title" msgid="507663517227498525">"Back up my data"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Back up app data, Wi‑Fi passwords, and other settings to Google servers"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">Back up app data, Wi-Fi passwords, and other settings to Google servers</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"Backup account"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"Manage backup account"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"Include app data"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"No account is currently storing backed up data"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Stop backing up your Wi‑Fi passwords, bookmarks, other settings, and app data, plus erase all copies on Google servers?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Stop backing up device data (such as Wi-Fi passwords and call history) and app data (such as settings and files stored by apps), plus erase all copies on remote servers?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Automatically back up device data (such as Wi-Fi passwords and call history) and app data (such as settings and files stored by apps) remotely.\n\nWhen you turn on automatic backup, device and app data is periodically saved remotely. App data can be any data an app has saved (based on developer settings), including potentially sensitive data such as contacts, messages and photos."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Stop backing up device data (such as Wi-Fi passwords and call history) and app data (such as settings and files stored by apps), plus erase all copies on Google Drive?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Automatically back up device data (such as Wi-Fi passwords and call history) and app data (such as settings and files stored by apps) to Google Drive.\n\nWhen you turn on automatic backup, device and app data is periodically saved to a private folder in Google Drive. App data can be any data an app has saved (based on developer settings), including potentially sensitive data such as contacts, messages and photos.\n\nBackup data won\'t count towards your Drive storage quota. Large files or files developers have chosen to exclude from the service won\'t be backed up.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Device admin settings"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Device admin app"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Deactivate this device admin app"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"work challenge, work, profile"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"work profile, managed profile, unify, unification, work, profile"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"awake, sleep, do not lock, stay unlocked on fold, folding, closing, fold, close, screen off"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"gestures"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">gesture, moves</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"pay, tap, payments"</string>
     <string name="keywords_backup" msgid="707735920706667685">"backup, back up"</string>
@@ -3795,7 +3795,7 @@
     <string name="notification_sound_default" msgid="8630353701915294299">"Default notification sound"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"Default alarm sound"</string>
     <string name="vibrate_when_ringing_option_ramping_ringer" msgid="2798848945803840348">"Vibrate first then ring gradually"</string>
-    <string name="spatial_audio_title" msgid="1775370104206884711">"Spatial Audio"</string>
+    <string name="spatial_audio_title" msgid="1775370104206884711">Spatial audio</string>
     <string name="dial_pad_tones_title" msgid="3536945335367914892">"Dial pad tones"</string>
     <string name="screen_locking_sounds_title" msgid="5695030983872787321">"Screen locking sound"</string>
     <string name="charging_sounds_title" msgid="5261683808537783668">"Charging sounds and vibration"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Cross-profile calendar"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Show work events on your personal calendar"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"When work apps are off, they’re paused and can’t be accessed or send you notifications"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Manage storage"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"To help free up storage space, storage manager removes backed up photos and videos from your device."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Remove photos and videos"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Storage manager"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Use Storage manager"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Smart Storage</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">When storage is almost full, remove backed up photos and videos. You can still find them in Google Photos.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Remove backed up photos and videos</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Smart Storage</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Use Smart Storage</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Gestures"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Quickly open camera"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"To quickly open camera, press the power button twice. Works from any screen."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"gestures, shortcut"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"pay, payments"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Flip camera for selfie"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">To switch in and out of selfie mode in Pixel Camera, double-twist when you’re in the app.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Navigation mode"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Update device"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Interaction"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Instant apps"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Instant Apps preferences"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Installed apps"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Your storage is now being managed by the storage manager"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">When you\'re connected, you can still access photos and videos at the quality you selected for backup</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"Accounts for <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Automatically sync app data"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Let apps refresh data automatically"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Network name"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Display network name in status bar"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Instant app"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Turn off the storage manager?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Turn off Smart Storage? \n\nSmart Storage won\'t free up space when your storage is almost full.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Update Do Not Disturb"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Pause notifications to stay focused"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Feature not available"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Default disabled changes"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"App compatibility changes can only be modified for debuggable apps. Install a debuggable app and try again."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Depends on another setting"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Account"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google Account</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d accounts"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Device name"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Basic info"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Location"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Your carrier may collect your location when you use this service for emergency calls.\n\nVisit your carrier’s privacy policy for details."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"You may lose access to any remaining time or data. Check with your provider before removing."</string>
-    <string name="content_capture" msgid="868372905432812238">"App content"</string>
+    <string name="content_capture" msgid="868372905432812238">Personalize using app data</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Allow apps to send content to the Android system"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Capture system heap dump"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Real-time text (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Use text to communicate during a call"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Not visible</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Visible during call</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Always visible</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"Turn off VoLTE?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"This also turns off your 5G connection.\nDuring a voice call, you can’t use the internet and some apps may not work."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Suspend execution for cached apps"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Check app activity for phishing"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Use scanning for deceptive apps"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Use scanning for deceptive apps for work"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Scanning runs privately right on your device, checking app activity for phishing or other deceptive behavior. If its detected, some app info is sent to Google Play Protect to confirm the threat and warn app users.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">This is a protected security feature. No device or personal info is shared with Google. \n\nPhishing is an attempt to steal sign-in credentials or other personal info.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Password is now set up"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN is now set up"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Show pointer while hovering"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Allow apps to show pointer while hovering</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Media DRM settings"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Force Software Secure Crypto"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"Force DRM key management to use software-based whitebox crypto"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Identity Check works with more apps"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"View details"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Identity Check works with more apps"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Identity Check and Watch"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"With a connected watch, Identity Check adds more ways to verify it’s you to prevent unwanted access to apps"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Identity Check and Watch"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Updates:\n"<ul><li>"By connecting a watch, you can use either biometrics or your PIN to access apps when you’re not in a trusted place"</li>\n<li>"Over time, Identity Check may add more ways to verify it\'s you and secure apps on your device. "<a href="https://support.google.com/android?p=identity_check">"Learn more about when and where you’e protected"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Identity Check and Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">With a connected Pixel Watch, Identity Check adds more ways to verify it’s you to prevent unwanted access to apps</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Identity Check and Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Updates: &lt;ul&gt;&lt;li&gt;By connecting a Pixel Watch 3 or later, you can use either biometrics or your PIN to access apps when you’re not in a trusted place. &lt;/li&gt;&lt;li&gt;Over time, Identity Check may add more ways to verify it\'s you and secure apps on your device. &lt;a href=https://support.google.com/android?p=identity_check&gt;Learn more about when and where you’e protected&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Other settings"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Autofill, notifications, and more"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Privacy controls"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Location access"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"See apps and services that have access to location"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Identity Check works with more apps"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Identity Check and your watch"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"With a connected watch, Identity Check adds more ways to verify it’s you to prevent unwanted access to apps"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Identity Check and your Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">With a connected Pixel Watch, Identity Check adds more ways to verify it’s you to prevent unwanted access to apps</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"View details"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Couldnt check settings"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"No info yet"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect scanning is on</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect regularly checks your apps and device for harmful behavior. You’ll be notified of any security risks found.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">App security, Play Protect, Google Play Protect, App safety</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google Account is protected</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google security checkup, Google Security , Security checkup, Account security, Google account security, Google account</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find hub, Finding devices, Find my device, Lost device</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Updates"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Updates, Update, Security update, Security updates"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Updates, Update, System update, System updates, Google play system update, Play system update</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Device lock, Screen lock, Lock screen, Lockscreen, Password, Pin, Pattern, Lock, Unlock"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Fingerprint, Finger, Add fingerprint"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Face unlock, Face"</string>

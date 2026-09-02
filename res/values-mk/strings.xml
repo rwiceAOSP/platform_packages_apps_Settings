@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Готово"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Лизгајте надолу за да најдете „Приватен простор“"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Најавете се"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Најавете се на сметка за да ја користите со вашиот „Приватен простор“"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Најавете се на сметката на Google за да ја користите со вашиот „Приватен простор“</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Не сега"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Продолжи"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Изберете начин на заклучување за „Приватен простор“"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Испраќање на името на уредот"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Го споделува името на уредов со мрежата"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Претплата"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Прегледајте ја или изменете ја претплатата"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">Прегледајте ја или изменете ја претплатата за OpenRoaming</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Рандомизирана MAC-адреса"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Додајте уред"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Наместете го QR-кодот во средината на подолниот прозорец за да го додадете уредот во мрежата „<xliff:g id="SSID">%1$s</xliff:g>“"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Ќе се исклучи автоматски во <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Ќе се исклучи автоматски по времето за спиење"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"Ќе се исклучи кога ќе заврши <xliff:g id="ID_1">%1$s</xliff:g>"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Темната тема користи црна заднина за подолго траење на батеријата на некои екрани. Распоредите за темната тема не се вклучуваат додека не се исклучи екранот."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Користете темна заднина за да го направите екранот попријатен за гледање и да го намалите користењето на батеријата на некои екрани. Вашата тема ќе се промени ако имате распоред, кога екранот е исклучен."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Темната тема користи црна заднина за подолго траење на батеријата. Распоредите за темната тема не се вклучуваат додека не се исклучи екранот.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Користете темна заднина за да го намалите користењето на батеријата и да го направите екранот попријатен за гледање. Вашата тема ќе се промени ако имате распоред, кога екранот е исклучен.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"„Темната тема“ во моментов го следи вашиот распоред за режимот „Време за спиење“"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Поставки за режимот „Време за спиење“"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Режимите може да ја вклучат и „Темна тема“.}=1{{mode_1} ја вклучува и „Темна тема“.}=2{{mode_1} и {mode_2} ја вклучуваат и „Темна тема“.}=3{{mode_1}, {mode_2} и {mode_3} ја вклучуваат и „Темна тема“.}one{{mode_1}, {mode_2} и уште # ја вклучуваат и „Темна тема“.}other{{mode_1}, {mode_2} и уште # ја вклучуваат и „Темна тема“.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"Може да почнете со користење на <xliff:g id="NAME">^1</xliff:g>"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Статус на батеријата"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Ниво на батерија"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Заедница"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Заеднички поставки"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Режим Hub</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Опции за приклучување на док и заклучен екран</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Режим Hub"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Виџети на заклучен екран"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"За да пристапите до омилените виџети, повлечете налево од заклучениот екран. \n\nКога ќе отворите апликација со помош на виџет, ќе треба да потврдите дека сте вие. Имајте предвид и дека секој може да ги прегледува виџетите."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"подлога на допир, допирна подлога, глувче, курсор, лизгање, повлекување, кликнување со десното копче, клик, покажувач"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"кликнување со десното копче, допир"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Средно копче на глувчето"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Стартувај го „Помошникот“"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Стартувај го Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"Стартувај го <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Помошник"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Оди на почетната страница"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Режим за навигација, ротација на екранот"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Испратете повратни информации"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Пополнете ја анкетата"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Контактирајте со службата за поддршка за лица со попреченост на Google</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Анкета за пристапност"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Споделете повратни информации"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Колку сте задоволни од темната тема?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Кратенка за слушни апарати"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Компатибилност со слушни помагала"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Ја подобрува компатибилноста со телекалемите и го намалува несаканиот шум"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Може да ја зголемува јачината на звукот за да ја подобри компатибилноста со телекалемите и да го намалува несаканиот шум</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"За слушните помагала"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"За да најдете други слушни апарати што не се поддржани од ASHA или LE Audio, допрете &lt;b&gt;Спарете нов уред&lt;/b&gt; &gt; &lt;b&gt;Видете повеќе уреди&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"За да најдете други слушни апарати што не се поддржани од ASHA или LE Audio, допрете "<b>"Спарете нов уред"</b>", па "<b>"Видете повеќе уреди"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"чувствителност на светлина, фотофобија, темна тема, мигрена, главоболка, режим за читање, ноќен режим, намалување осветленост, бела точка"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"вид, слух, слеп, глув, подвижност, умешност, помошен, помош, едноставно користење, лесен пристап, дланка, помош"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Лупа за прозорци, зумирање, лупа, слаб вид, зголеми, направи поголемо"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Читач на екран, гласовна синхронизација, Гласовна помош, слепи, слаб вид, TTS, од текст во говор, говорни повратни информации</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Титлови, затворени титлови, CC, Транскрипција во живо, нарушување на слух, загуба на слух, CART, од говор во текст"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Титлови, затворени титлови, CC, Автоматски титлови, нарушување на слух, загуба на слух, CART, од говор во текст</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Известувања, нарушување на слух, загуба на слух, извести</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, засили, засилување звук, нарушување на слух, загуба на слух, засилување</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"големина на екран, голем екран"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"Висок контраст, слаб вид, болд фонт, болд текст"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"Текст со висок контраст"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Слушајте текст, читање на глас, изговор на екранот, читач на екран, дислексија, изберете за говор</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"приспособи боја"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"вклучување темен екран, вклучување светол екран"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">подвижност, брзо мени, помошно мени, допир, попреченост, артритис, rsi, мозочен удар, тремор, мултиплекс склероза, церебрална парализа, копче, хардвер, притискање, повторлива повреда од истегнување, рака, болка, пристапно, помош</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">моторна, прекинувач, рака, AT, aпомошна технологија, парализа, ALS, скенирање, скенирање чекор</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"подвижност, глувче, надворешно глувче, специјално глувче, адаптивно глувче, инвалидска количка, џојстик"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"слушни помагала, оштетен слух, губење на слухот, кохлеарни импланти, уреди за засилување, процесори на звук, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"нарушување на слух, загуба на слух, титлови, Teletype, TTY"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">глас, гласовна контрола, моторна, рака, микрофон, диктирање, зборување, контрола</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"три копчиња"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"попреченост, подвижност, пензионер, артритис, rsi, мозочен удар, тремор, мултиплекс склероза, церебрална парализа, тресење, повторлива повреда од истегнување, дланка"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"одложување, умешност, пензионер"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Нивото на батеријата е слабо"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Вклучете „Штедач на батерија“ за да го продолжи траењето на батеријата"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Подобрете го траењето на батеријата"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Вклучете „Управник со батерија“"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Вклучете „Адаптивна батерија“</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Вклучете „Штедач на батерија“"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Батеријата може да се потроши порано од вообичаено"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"„Штедачот на батерија“ е вклучен"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Сепак полни"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Проверете го додатокот за полнење"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Дознајте повеќе за некомпатибилното полнење"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Управник со батерија"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Поставки за адаптивност</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Адаптивна батерија</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Кога „Управникот со батерија“ ќе открие дека апликациите трошат батерија, ќе имате опција да ги ограничите тие апликации. Ограничените апликации може да не работат правилно и известувањата може да бидат одложени."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">За да го продолжи траењето на батеријата, „Адаптивна батерија“ може да ги намали изведбата и активноста во заднина. Можно е некои известувања да бидат одложени.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Ограничени апликации"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{Се ограничува користењето на батеријата за # апликација}one{Се ограничува користењето на батеријата за # апликација}other{Се ограничува користењето на батеријата за # апликации}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"Ограничено <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Апликацииве не можат да користат батерија во заднина. Може да не работат според очекувањата и известувањата може да бидат одложени."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Користење управник со батерија"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Откријте кога апликациите ја трошат батеријата"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Открива кога апликациите ја трошат батеријата"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Открива кога апликациите ја трошат батеријата"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Продолжете го траењето на батеријата и оптимизирајте го полнењето</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Продолжете го траењето на батеријата</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# апликација е ограничена}one{# апликација се ограничени}other{# апликации се ограничени}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Проблем при читањето на мерачот на батеријата."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Дознајте повеќе</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Допрете за да дознаете повеќе за оваа грешка"</string>
     <string name="power_screen" msgid="4596900105850963806">"Екран"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"Бекап и обнова"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"Лични податоци"</string>
     <string name="backup_data_title" msgid="507663517227498525">"Направи резервна копија на моите податоци"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Бекап на податоци за апликација, на лозинки на Wi-Fi и други поставки на сервери на Google"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">Бекап на податоци на апликација, лозинки на Wi-Fi и други поставки на сервери на Google</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"Сметка за бекап"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"Управување со сметката за бекап"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"Опфати податоци за апликација"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Во моментов нема сметка каде што се складираат резервни копии на податоци"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Да престане со резервни копии на вашите лозинки на Wi-Fi, обележувачи, други поставки и податоци за апликацијата и да ги избрише сите копии на серверите на Google?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Дали да се престане со создавање резервна копија на податоците за уредот (како што се лозинки за Wi-Fi и историја на повици) и податоците за апликациите (како што се поставки и датотеки што ги складирале апликациите) и да се избришат сите копии на далечински сервери?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Автоматски создајте резервна копија на податоците на уредот (како што се лозинки за Wi-Fi и историја на повици) и податоците за апликациите (како што се поставки и датотеки кои ги складирале апликациите) од далечина.\n\nОткако ќе вклучите автоматско создавање резервна копија, податоците за уредот и апликациите повремено се зачувуваат на далечина. Податоците за апликацијата може да бидат секакви податоци кои ги зачувала апликацијата (според поставките на програмерот), вклучувајќи потенцијално чувствителни податоци како што се контакти, пораки и фотографии."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Дали да се престане со создавање резервна копија на податоците за уредот (како што се лозинки за Wi-Fi и историја на повици) и податоците за апликациите (како што се поставки и датотеки што ги складирале апликациите) и да се избришат сите копии на Google Drive?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Автоматски создајте бекап на податоците на уредот (како што се лозинки за Wi-Fi и историја на повици) и податоците за апликациите (како што се поставки и датотеки што ги складирале апликациите) на Google Drive.\n\nОткако ќе вклучите автоматско создавање бекап, податоците за уредот и апликациите повремено се зачувуваат во приватна папка во Google Drive. Податоците за апликацијата може да бидат секакви податоци што ги зачувала апликацијата (според поставките на програмерот), вклучувајќи потенцијално чувствителни податоци како што се контакти, пораки и фотографии.\n\nПодатоците од бекапот нема да се сметаат во квотата за складирање на Drive. Нема да се создава бекап на големите датотеки или датотеките што програмерите одлучиле да ги исклучат од услугата.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Поставки за администраторот на уредот"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Апликација за администраторот на уредот"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Деактивирај ја апликацијата за администратор на уредот"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"работен предизвик, работа, профил"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"работен профил, управуван профил, унифицирај, унифицирање, работа, профил"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"будна состојба, спиење, не заклучувај, остани отклучен при преклопување, затворање, преклопување, затворање, исклучен екран"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"движења"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">движење, потези</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"плати, допри, плаќања"</string>
     <string name="keywords_backup" msgid="707735920706667685">"бекап, прави бекап"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Календар со измешани профили"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Прикажувај ги работните настани на личниот календар"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"Кога се исклучени работните апликации, тие се паузирани и не може да им се пристапува или да ви испраќаат известувања"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Управувајте со просторот"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"За помош при ослободувањето простор за меморијата, управникот со меморијата ги отстранува резервните копии од фотографиите и видеата од уредот."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Отстранете фотографии и видеа"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Управник со меморија"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Користи го управувачот со простор"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Паметен капацитет</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Кога капацитетот е речиси полн, отстранете ги фотографиите и видеата што имаат бекап. Сѐ уште ќе може да ги најдете во „Фотографии на Google“.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Избриши слики и видеа со бекап</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Паметен капацитет</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Користи „Паметен капацитет“</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Движења"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Брзо отворање на камерата"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"За брзо отворање на камерата, притиснете го копчето за вклучување двапати. Работи од секој екран."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"движења, кратенка"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"плати, плаќања"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Превртете ја камерата за селфи"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">За да влегувате и да излегувате од режимот на селфи во „Камера Pixel“, завртете двапати кога сте во апликацијата.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Режим за навигација"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Ажурирајте го уредот"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Интеракција"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Инстант апликации"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Поставки за инстант апликации"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Инсталирани апликации"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Управникот со меморија сега управува со вашата меморија"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Кога сте поврзани, сѐ уште ќе може да пристапувате до фотографии и видеа со квалитетот што сте го избрале за бекапот</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"Сметки за: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Автоматско синхронизирање на податоците од апликациите"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Им дозволува на апликациите да ги освежуваат податоците автоматски"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Име на мрежата"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Прикажи го името на мрежата во статусната лента"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Инстант апликација"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Да се исклучи управникот со меморијата?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Да се исклучи „Паметен капацитет“? \n\n„Паметен капацитет“ нема да ослободи простор кога капацитетот е речиси полн.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Ажурирање на режимот „Не вознемирувај“"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Паузирајте ги известувањата за да останете фокусирани"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Функцијата не е достапна"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Стандардно оневозможени промени"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Промени во компатибилноста на апликациите може да се вршат само за апликации во кои може да се отстрануваат грешки. Инсталирајте апликација во која може да се отстрануваат грешки и обидете се повторно."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Зависи од друга поставка"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Сметка"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Сметка на Google</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d сметки"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Име на уредот"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Основни информации"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Локација"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Вашиот оператор може да прибира податоци за вашата локација при користењето на услугава за итни повици.\n\nПогледнете ја „Политиката за приватност“ на операторот за детали."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Може да го изгубите пристапот до сите преостанати времиња или податоци. Проверете кај операторот пред отстранувањето."</string>
-    <string name="content_capture" msgid="868372905432812238">"Содржини на апликација"</string>
+    <string name="content_capture" msgid="868372905432812238">Персонализирај користеjќи податоци од апликациите</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Дозволете апликациите да испраќаат содржини до системот Android"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Сними слика од меморијата на системот"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="one"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Текст во реално време (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Користете текст за да комуницирате при повик"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Не е видливо</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Видливо во повик</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Секогаш видливо</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"Да се исклучи VoLTE?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"Ова ја исклучува и вашата 5G-врска.\nЗа време на гласовен повик, не може да користите интернет и некои апликации можеби нема да работат."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Суспендирање на извршувањето кеширани апликации"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Проверка за фишинг во активноста на апликациите"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Користи скенирање за измамнички апликации"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Користи скенирање за измамнички апликации за работа"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Скенирањето се извршува приватно и директно на вашиот уред, проверувајќи ја активноста во апликациите заради откривање фишинг или друго измамничко однесување. Ако се открие такво однесување, одредени податоци за апликацијата се испраќаат до Google Play Protect за да се потврди заканата и да се предупредат корисниците на апликацијата.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Ова е заштитена безбедносна функција. Со Google не се споделуваат податоци за уредот, ниту лични податоци. \n\nФишингот е обид да се украдат акредитивите за најавување или други лични податоци.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Сега е поставена лозинката"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN-кодот сега е поставен"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Прикажувај го покажувачот при наместување"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Дозволете апликациите да го прикажуваат покажувачот кога ќе се намести над нив</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Поставки за DRM на аудиовизуелни содржини"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Принудување на безбедна софтверска криптографија"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"Го принудува управувањето со клучевите за DRM да користи софтверска криптографија Whitebox"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"„Проверка на идентитетот“ функционира со повеќе апликации"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Прикажи ги деталите"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"„Проверка на идентитетот“ функционира со повеќе апликации"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"„Проверка на идентитетот“ и часовник"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Со поврзан часовник, „Проверка на идентитетот“ додава повеќе начини за проверка на вашиот идентитет, со цел да се спречи несакан пристап до апликациите"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"„Проверка на идентитетот“ и часовник"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Новини:\n"<ul><li>"Поврзувајќи часовник ќе може да користите биометрика или PIN-код за пристап до апликациите кога не сте на доверливо место"</li>\n<li>"Со текот на времето, „Проверка на идентитетот“ може да додаде повеќе начини за проверка на вашиот идентитет и за заштита на апликациите на вашиот уред. "<a href="https://support.google.com/android?p=identity_check">"Дознајте повеќе за тоа кога и каде сте заштитени"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">„Проверка на идентитетот“ и Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Со поврзан Pixel Watch, „Проверка на идентитетот“ додава повеќе начини на проверка на вашиот идентитет, со цел да се спречи несакан пристап до апликациите</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">„Проверка на идентитетот“ и Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Новости: &lt;ul&gt;&lt;li&gt;Со поврзување Pixel Watch 3 или понова верзија, може да го користите или вашиот PIN или биометрика за пристап до апликациите кога не сте на доверливо место. &lt;/li&gt;&lt;li&gt;Со текот на времето, „Проверка на идентитетот“ може да додава повеќе начини на проверка на вашиот идентитет и заштита на апликациите на вашиот уред. &lt;a href=https://support.google.com/android?p=identity_check&gt;Дознајте повеќе за тоа кога и каде сте заштитени&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Други поставки"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Автоматско пополнување, известувања и друго"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Контроли за приватност"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Пристап до локацијата"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Погледнете ги апликациите и услугите што имаат пристап до локацијата"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"„Проверка на идентитетот“ функционира со повеќе апликации"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"„Проверка на идентитетот“ и вашиот часовник"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Со поврзан часовник, „Проверка на идентитетот“ додава повеќе начини на проверка на вашиот идентитет, со цел да се спречи несакан пристап до апликациите"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">„Проверка на идентитетот“ и вашиот Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Со поврзан Pixel Watch, „Проверка на идентитетот“ додава повеќе начини на проверка на вашиот идентитет, со цел да се спречи несакан пристап до апликациите</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Прикажи ги деталите"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Не можеше да се проверат поставките"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Сѐ уште нема податоци"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Скенирањето со Play Protect е вклучено</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect редовно ги проверува апликациите и уредот за штетно однесување. Ќе ве извести за сите најдени безбедносни ризици.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">Безбедност на апликации, Play Protect, Google Play Protect, заштита на апликации</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Сметката на Google е заштитена</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Проверка на безбедноста на Google, безбедност на Google, проверка на безбедноста, безбедност на сметка, безбедност на сметка на Google, сметка на Google</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">„Локатор“, наоѓање уреди, „Најди го мојот уред“, изгубен уред</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Ажурирања"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Ажурирања, ажурирање, безбедносно ажурирање, безбедносни ажурирања"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Ажурирања, ажурирање, системско ажурирање, системски ажурирања, системско ажурирање од Google Play, системско ажурирање од Play</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Заклучување уред, заклучување екран, заклучен екран, лозинка, PIN, шема, заклучи, отклучи"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Отпечаток, прст, додај отпечаток"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Отклучување со лик, лик"</string>

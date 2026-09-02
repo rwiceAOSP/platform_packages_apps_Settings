@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"हो गया"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"प्राइवेट स्पेस को ढूंढने के लिए, नीचे की ओर स्क्रोल करें"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"साइन इन करें"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"प्राइवेट स्पेस का इस्तेमाल करने के लिए, किसी खाते से साइन करें"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">प्राइवेट स्पेस का इस्तेमाल करने के लिए, Google खाते से साइन करें</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"अभी नहीं"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"जारी रखें"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"प्राइवेट स्पेस के लिए लॉक चुनें"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"डिवाइस का नाम भेजें"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"नेटवर्क के साथ डिवाइस का नाम शेयर करें"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"सदस्यता"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"सदस्यता देखें या बदलें"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">OpenRoaming की सदस्यता देखें या बदलें</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"अपने आप चुना गया एमएसी"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"कोई डिवाइस जोड़ें"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"डिवाइस को “<xliff:g id="SSID">%1$s</xliff:g>” से जोड़ने के लिए, क्यूआर कोड को कैमरा विंडो के बीच में लाएं"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"<xliff:g id="ID_1">%1$s</xliff:g> पर अपने-आप बंद हो जाएगा"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"सोने का समय खत्म होने पर, यह मोड अपने-आप बंद हो जाएगा"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"<xliff:g id="ID_1">%1$s</xliff:g> खत्म होने पर यह सुविधा बंद हो जाएगी"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"गहरे रंग वाली थीम चालू हाेने पर, स्क्रीन का बैकग्राउंड काला हो जाता है. इससे कुछ डिवाइस पर बैटरी ज़्यादा देर तक चलती है. यह थीम तब चालू होती है, जब स्क्रीन की लाइट बंद हो जाती है."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"गहरे रंग वाले बैकग्राउंड का इस्तेमाल करें, ताकि अलग-अलग स्क्रीन पर बैटरी कम खर्च हो और स्क्रीन को आसानी से देखा जा सके. स्क्रीन बंद होने पर, शेड्यूल के हिसाब से थीम बदल जाएगी."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">गहरे रंग वाली थीम चालू हाेने पर, स्क्रीन का बैकग्राउंड काला हो जाता है. इससे आपके डिवाइस की बैटरी ज़्यादा देर तक चलती है. स्क्रीन बंद होने के बाद यह थीम चालू होती है.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">गहरे रंग वाले बैकग्राउंड का इस्तेमाल करें, ताकि बैटरी कम खर्च हो और स्क्रीन की तरफ़ देखने पर कोई परेशानी न हो. अगर आपने कोई शेड्यूल सेट किया है, तो स्क्रीन बंद होने पर उसके हिसाब से थीम बदलती रहेगी.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"फ़िलहाल, गहरे रंग वाली थीम आपके बेडटाइम मोड वाले शेड्यूल के हिसाब से लागू है"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"बेडटाइम मोड की सेटिंग"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{गहरे रंग वाली थीम को मोड से भी चालू किया जा सकता है.}=1{गहरे रंग वाली थीम को {mode_1} से भी चालू किया जा सकता है.}=2{गहरे रंग वाली थीम को {mode_1} और {mode_2} से भी चालू किया जा सकता है.}=3{गहरे रंग वाली थीम को {mode_1}, {mode_2}, और {mode_3} से भी चालू किया जा सकता है.}one{गहरे रंग वाली थीम को {mode_1}, {mode_2}, और # अन्य मोड से भी चालू किया जा सकता है.}other{गहरे रंग वाली थीम को {mode_1}, {mode_2}, और # अन्य मोड से भी चालू किया जा सकता है.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"<xliff:g id="NAME">^1</xliff:g> का इस्तेमाल शुरू किया जा सकता है"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"बैटरी स्‍थिति"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"बैटरी स्‍तर"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"कम्यूनिटी"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"कम्यूनिटी सेटिंग"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">हब मोड</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">डॉक करने और लॉक स्क्रीन के विकल्प</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"हब मोड"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"लॉक स्क्रीन पर विजेट"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"अपने पसंदीदा विजेट ऐक्सेस करने के लिए, लॉक स्क्रीन पर बाईं ओर स्वाइप करें. \n\nकिसी विजेट का इस्तेमाल करके कोई ऐप्लिकेशन खोलने के लिए, आपको अपनी पहचान की पुष्टि करनी होगी. साथ ही, इस बात का ध्यान रखें कि कोई भी व्यक्ति विजेट देख सकता है."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"ट्रैकपैड, ट्रैक पैड, माउस, कर्सर, स्क्रोल, स्वाइप, राइट क्लिक, क्लिक, पॉइंटर"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"राइट क्लिक, टैप"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"माउस का बीच वाला बटन"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Assistant को लॉन्च करें"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Gemini को लॉन्च करें</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g> को लॉन्च करें"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"असिस्टेंट"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"होम स्क्रीन पर जाएं"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"नेविगेशन मोड, स्क्रीन घुमाने की सुविधा"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"सुझाव, राय या शिकायत भेजें"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"सर्वे में हिस्सा लें"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">दिव्यांगों के लिए Google सहायता टीम से संपर्क करें</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"सुलभता सुविधाओं से जुड़ा सर्वे"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"सुझाव/राय दें या शिकायत करें"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"आप गहरे रंग वाली थीम से किस हद तक संतुष्ट हैं?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"कान की मशीन ऐक्सेस करने का शॉर्टकट"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"कान की मशीन के साथ काम करने की सुविधा"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"इस सुविधा के चालू रहने पर, टेलिकॉइल के साथ डिवाइस बेहतर तरीके से काम करते हैं और आस-पास का शोर कम होता है"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">टेलीकॉइल के साथ काम करने की सुविधा को बेहतर बनाने और आस-पास के शोर को कम करने के लिए, आवाज़ को बढ़ा सकता है</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"कान की मशीनों के बारे में जानकारी"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA या LE Audio के साथ काम नहीं करने वाली कान की अन्य मशीनें ढूंढने के लिए, &lt;b&gt;नया डिवाइस जोड़ें&lt;/b&gt; और फिर &lt;b&gt;ज़्यादा डिवाइस देखें&lt;/b&gt; पर टैप करें"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA या LE Audio के साथ काम नहीं करने वाली कान की अन्य मशीनें ढूंढने के लिए, "<b>"नया डिवाइस जोड़ें"</b>" पर टैप करके, "<b>"ज़्यादा डिवाइस देखें"</b>" पर टैप करें"</string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"लाइट सेंसिटिविटी, फ़ोटोफ़ोबिया, गहरे रंग वाली थीम, माइग्रेन, सिरदर्द, रीडिंग मोड, नाइट मोड, स्क्रीन की चमक कम करें, व्हाइट पॉइंट"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"देखना, सुनना, अंधा, बहरा, मोटर, डेक्स्टेरिटी, सहायक, असिस्टेंस, इस्तेमाल में आसानी, ऐक्सेस करने में आसानी, हैंड, सहायता"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"विंडो को ज़ूम करके देखने की सुविधा, ज़ूम करना, ज़ूम करने की सुविधा, कम दृष्टि, बड़ा करना, साइज़ बढ़ाना"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">स्क्रीन रीडर, वॉइस ओवर, वॉइसओवर, आवाज़ से डिवाइस का इस्तेमाल, दृष्टिहीन व्यक्ति, कम दृष्टि, टीटीएस, लिखाई को बोली में बदलना, बोलकर दिया गया जवाब</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"कैप्शन, सबटाइटल, सीसी, Live Transcribe, कम सुनने वाला, सुनने में समस्या, रीयल-टाइम कैप्शनिंग (CART), बोली को लिखाई में बदलना, सबटाइटल"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">कैप्शन, सबटाइटल, सीसी, लाइव कैप्शन, कम सुनने वाला, सुनने में समस्या, रीयल-टाइम कैप्शनिंग (CART), बोली को लिखाई में बदलना, सबटाइटल</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">सूचनाएं, कम सुनने वाला, सुनने में समस्या, सूचना देना</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">पीएसएपी, आवाज़ बढ़ाना, साउंड एम्प्लफ़िकेशन, कम सुनने वाला, सुनने में समस्या, एम्प्लफ़िकेशन</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"स्क्रीन का साइज़, बड़ी स्क्रीन"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"ज़्यादा कंट्रास्ट, कम दृष्टि, बोल्ड फ़ॉन्ट, बोल्ड फ़ेस"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"ज़्यादा कंट्रास्ट वाला टेक्स्ट"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">टेक्स्ट सुनना, तेज़ आवाज़ में सुनना, स्क्रीन पर सुनने के लिए टेक्स्ट चुनना, स्क्रीन रीडर, डिस्लेक्सिया, \'चुनें और सुनें\' सुविधा</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"रंग में बदलाव करना"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"स्क्रीन को गहरे रंग का करना, स्क्रीन को हल्के रंग का करना"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">मोटर, फटाफट मेन्यू, सुलभता की सुविधाओं वाला मेन्यू, टच, डेक्स्टेरिटी, अर्थराइटिस, आरएसआई, स्ट्रोक, ट्रेमोर, मल्टिपल स्क्लिरोसिस, सेरब्रल पॉल्ज़ी, बटन, हार्डवेयर, प्रेस, रेपेटिटिव स्ट्रेन इंजरी, हैंड, पेन, ऐक्सेसबल, सहायता</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">मोटर, स्विच, हाथ, एटी, सहायक टेक्नोलॉजी, लकवा, एएलएस, स्कैनिंग, स्टेप स्कैनिंग</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"मोटर, माउस, एक्सटर्नल माउस, हेड माउस, अडैप्टिव माउस, व्हीलचेयर, जॉयस्टिक"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"कान की मशीन, कम सुनने वाला, सुनने में समस्या, कॉकलीयर इंप्लांट, एंप्लिफ़िकेशन डिवाइस, साउंड प्रोसेसर, पीएसएपी"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"कम सुनने वाला, सुनने में समस्या, कैप्शन, टेलीटाइप, टीटीवाई"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">वॉइस, आवाज़ से कंट्रोल करना, मोटर, हाथ, माइक, माइक्रोफ़ोन, लिखवाना, बात करना, कंट्रोल</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"तीन बटन वाला नेविगेशन"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"डेक्स्टेरिटी, मोटर, सीनियर, अर्थराइटिस, आरएसआई, स्ट्रोक, ट्रेमोर, मल्टिपल स्क्लिरोसिस, सेरब्रल पॉल्ज़ी, शेकिंग, रेपेटिटिव स्ट्रेन इंजरी, हैंड"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"डीले, डेक्स्टेरिटी, सीनियर"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"बैटरी कम है"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"बैटरी लाइफ़ बढ़ाने के लिए, बैटरी सेवर को चालू करें"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"बैटरी लाइफ़ बढ़ाएं"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"बैटरी मैनेजर चालू करें"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">ज़रूरत के हिसाब से बैटरी के इस्तेमाल की सुविधा चालू करें</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"बैटरी सेवर चालू करें"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"हो सकता है कि बैटरी सामान्य समय से पहले खत्म हो जाए"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"बैटरी सेवर चालू है"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"चार्ज करना जारी रखें"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"चार्जिंग ऐक्सेसरी की जांच करें"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"डिवाइस के साथ काम न करने वाले चार्जिंग सेटअप के बारे में ज़्यादा जानें"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"बैटरी मैनेजर"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">इस्तेमाल के हिसाब से बैटरी खर्च होने की सेटिंग</string>
     <string name="smart_battery_title" msgid="9095903608520254254">ज़रूरत के हिसाब से बैटरी का इस्तेमाल</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"जब बैटरी मैनेजर यह पता लगाता है कि कुछ ऐप्लिकेशन ज़्यादा बैटरी खर्च कर रहे हैं, तो आपको इन ऐप को बैटरी इस्तेमाल करने से रोकने का विकल्प मिलता है. हो सकता है कि ये ऐप ठीक तरह से काम न करें और उनके बारे में सूचनाएं देर से मिलें."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">बैटरी लाइफ़ बढ़ाने के लिए, ज़रूरत के हिसाब से बैटरी का इस्तेमाल करने की सुविधा, परफ़ॉर्मेंस और बैकग्राउंड में होने वाली गतिविधि को कम कर सकती है. इसलिए, कुछ सूचनाएं देरी से मिल सकती हैं.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"पाबंदी वाले ऐप्लिकेशन"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# ऐप्लिकेशन के लिए, बैटरी खर्च की सीमा लागू की जा रही है}one{# ऐप्लिकेशन के लिए, बैटरी खर्च की सीमा लागू की जा रही है}other{# ऐप्लिकेशन के लिए, बैटरी खर्च की सीमा लागू की जा रही है}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"<xliff:g id="TIME">%1$s</xliff:g> पाबंदी लगी थी"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"ये ऐप्लिकेशन, बैकग्राउंड में बैटरी का इस्तेमाल नहीं कर सकते. हो सकता है कि ये ऐप्लिकेशन ठीक तरह से काम न करें और सूचनाएं देर से मिलें."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"बैटरी मैनेजर का इस्तेमाल करें"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"ऐप्लिकेशन के ज़्यादा बैटरी खर्च करने पर सूचना पाएं"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"अलग-अलग ऐप्लिकेशन, बैटरी की ज़्यादा खपत कब करते हैं, इसका पता लगाया जा रहा है"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"यह पता लगाया जा रहा है कि ऐप्लिकेशन, बैटरी का ज़्यादा इस्तेमाल कब करते हैं"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">इसके चालू होने पर, बैटरी लाइफ़ बढ़ जाती है और डिवाइस जल्दी चार्ज होता है</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">बैटरी लाइफ़ बढ़ाएं</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# ऐप्लिकेशन पर पाबंदी लगाई गई}one{# ऐप्लिकेशन पर पाबंदी लगाई गई}other{# ऐप्लिकेशन पर पाबंदी लगाई गई}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"डिवाइस के बैटरी मीटर की रीडिंग लेने में समस्या आ रही है."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">ज़्यादा जानें</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"इस गड़बड़ी के बारे में ज़्यादा जानने के लिए टैप करें"</string>
     <string name="power_screen" msgid="4596900105850963806">"स्क्रीन"</string>
     <string name="power_cpu" msgid="1820472721627148746">"सीपीयू"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"सुरक्षित करें और पुनर्स्‍थापित करें"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"निजी डेटा"</string>
     <string name="backup_data_title" msgid="507663517227498525">"मेरे डेटा का बैकअप लें"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"ऐप्लिकेशन  डेटा, वाई-फ़ाई पासवर्ड, और अन्य सेटिंग को Google सर्वर पर सुरक्षित रखें"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">ऐप्लिकेशन डेटा, वाई-फ़ाई पासवर्ड और अन्‍य सेटिंग को Google सर्वर पर सुरक्षित रखें</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"सुरक्षित खाता"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"बैकअप खाता प्रबंधित करें"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"ऐप्लिकेशन डेटा शामिल करें"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"वर्तमान में कोई भी खाता बैकअप डेटा संग्रहित नहीं कर रहा है"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"अपने वाई-फ़ाई  पासवर्ड, बुकमार्क, अन्य सेटिंग और ऐप्लिकेशन डेटा को सुरक्षित रखें, साथ ही Google सर्वर से सभी प्रतियां मिटाएं?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"डिवाइस डेटा (जैसे वाई-फ़ाई पासवर्ड और कॉल इतिहास) और ऐप डेटा (जैसे सेटिंग और ऐप्लिकेशन द्वारा संग्रहित फ़ाइलों) का बैक अप लेना बंद करें, साथ ही रिमोट सर्वर से सभी प्रतियां मिटाएं?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"दूरस्थ रूप से अपने आप डिवाइस डेटा (जैसे वाई-फ़ाई पासवर्ड और कॉल इतिहास) और ऐप डेटा (जैसे ऐप्लिकेशन द्वारा संग्रहित सेटिंग और फ़ाइलों) का बैक अप लें.\n\nजब आप स्वचालित बैकअप चालू करते हैं, तो डिवाइस और ऐप डेटा को दूरस्थ रूप से समय-समय पर सहेजा जाता है. ऐप डेटा कोई भी ऐसा डेटा हो सकता है जिसे किसी ऐप द्वारा सहेजा गया है (डेवलपर सेटिंग के आधार पर), जिसमें संभावित रूप से संवेदनशील डेटा जैसे संपर्क, संदेश और फ़ोटो शामिल हैं."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">डिवाइस डेटा (जैसे वाई-फ़ाई पासवर्ड और कॉल इतिहास) और ऐप्लिकेशन डेटा (जैसे सेटिंग और ऐप्लिकेशन द्वारा संग्रहित फ़ाइलों) का बैक अप लेना बंद करें, साथ ही Google डिस्क से सभी प्रतियां मिटाएं?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">डिवाइस डेटा (जैसे वाई-फ़ाई पासवर्ड और कॉल इतिहास) और ऐप्लिकेशन डेटा (जैसे ऐप्लिकेशन द्वारा संग्रहित की गईं सेटिंग और फ़ाइलों) का Google डिस्क में अपने आप बैक अप लें.\n\nजब आप स्वचालित बैकअप चालू करते हैं, तो डिवाइस और ऐप्लिकेशन डेटा को समय-समय पर Google डिस्क में निजी फ़ोल्डर में सहेजा जाता है. ऐप्लिकेशन डेटा कोई भी ऐसा डेटा हो सकता है जिसे किसी ऐप्लिकेशन द्वारा सहेजा गया है (डेवलपर सेटिंग के आधार पर), जिसमें संभावित रूप से संवेदनशील डेटा जैसे संपर्क, संदेश और फ़ोटो शामिल किए जा सकते हैं.\n\nबैकअप डेटा को आपके डिस्क स्टोरेज कोटा के अंतर्गत नहीं माना जाएगा. बड़ी फ़ाइलों या ऐसी फ़ाइलों का बैक अप नहीं किया जाएगा जिन्हें डेवलपर द्वारा बाहर निकालने का निर्णय लिया गया है.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"डिवाइस व्यवस्थापक सेटिंग"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"डिवाइस का एडमिन ऐप्लिकेशन"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"इस डिवाइस का एडमिन ऐप्लिकेशन बंद करें"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"काम की चुनौती, काम, प्रोफ़ाइल"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"वर्क प्रोफ़ाइल, प्रबंधित प्रोफ़ाइल, एक करना, एकीकरण, काम, प्रोफ़ाइल"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"जागना, सोना, लॉक न करना, फ़ोल्ड होने पर अनलॉक रहना, फ़ोल्ड करना, बंद करना, फ़ोल्ड, बंद करें, स्क्रीन बंद करें"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"जेस्चर"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">जेस्चर, मूव (हलचल)</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"भुगतान करें, टैप करें, भुगतान"</string>
     <string name="keywords_backup" msgid="707735920706667685">"बैकअप, बैक अप"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"क्रॉस-प्रोफ़ाइल कैलेंडर"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"निजी कैलेंडर पर काम से जुड़े इवेंट दिखाएं"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"वर्क ऐप्लिकेशन जब बंद होते हैं, तब वे रुक जाते हैं. उन्हें इस्तेमाल नहीं किया जा सकता. साथ ही, वे आपको कोई सूचना नहीं भेज सकते"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"जगह प्रबंधित करें"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"मेमोरी में जगह खाली करने में मदद करने के लिए, मेमोरी मैनेजर आपके डिवाइस से बैकअप ली गई फ़ोटो और वीडियो निकाल देता है."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"फ़ोटो और वीडियो निकालें"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"मेमोरी मैनेजर"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"स्टोरेज मैनेजर टूल का इस्तेमाल करें"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">स्मार्ट स्टोरेज</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">जब मेमोरी करीब-करीब भर जाएगी, तब ऐसे फ़ोटो और वीडियो हटा दें जिनका बैक अप लिया गया है. ये फ़ोटो और वीडियो, आपको अब भी Google Photos में मिल जाएंगे.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">बैक अप ली गई फ़ोटो और वीडियो हटाएं</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">स्मार्ट मेमोरी</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">स्मार्ट स्टोरेज का इस्तेमाल करें</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"हाथ के जेस्चर"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"तुरंत कैमरा खोलने की सुविधा"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"कैमरा तुरंत खोलने के लिए, पावर बटन को दो बार दबाएं. ऐसा किसी भी स्क्रीन से किया जा सकता है."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"हाथ के जेस्चर, शॉर्टकट"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"पेमेंट करें, पेमेंट"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"सेल्फ़ी के लिए कैमरा फ़्लिप करें"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">ऐप्लिकेशन इस्तेमाल करते समय, Pixel कैमरा में सेल्फ़ी मोड को चालू और बंद करने के लिए, डिवाइस को दो बार घुमाएं.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"नेविगेशन मोड"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"डिवाइस को अपडेट करें"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"इंटरैक्शन"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Instant Apps"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Instant Apps से जुड़ी सेटिंग"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"इंस्‍टॉल किए गए ऐप्‍लिकेशन"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"आपकी जगह का प्रबंधन अब जगह मैनेजर द्वारा किया जा रहा है"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">जब आप कनेक्ट हो जाते हैं, तब भी आप बैक अप के लिए चुनी गई क्वालिटी में फ़ोटो और वीडियो देख सकते हैं</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g> के खाते"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"ऐप्लिकेशन का डेटा अपने-आप सिंक हो"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"इससे ऐप्लिकेशन अपने-आप डेटा रीफ़्रेश कर पाएंगे"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"नेटवर्क का नाम"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"स्टेटस बार में नेटवर्क का नाम दिखाएं"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"झटपट ऐप"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"जगह मैनेजर को बंद करना चाहते हैं?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">स्मार्ट जगह सुविधा को बंद करें? \n\nआपकी जगह करीब भरी होने पर स्मार्ट जगह की सुविधा जगह खाली नहीं करेगी.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"\'परेशान न करें सुविधा\' अपडेट करें"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"ध्यान भटकने से रोकने के लिए डिवाइस की सूचनाओं को कुछ समय के लिए रोकें"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"सुविधा उपलब्ध नहीं है"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"डिफ़ॉल्ट रूप से बंद किए गए बदलाव"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"ऐप्लिकेशन के साथ काम करने के लिए किए जाने वाले बदलाव, सिर्फ़ डीबग करने लायक ऐप्लिकेशन में किए जा सकते हैं. डीबग करने लायक किसी ऐप्लिकेशन को इंस्टॉल करें और फिर से कोशिश करें."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"यह किसी दूसरी सेटिंग पर निर्भर है"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"खाता"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google खाता</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d खाते"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"डिवाइस का नाम"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"सामान्य जानकारी"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"जगह"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"जब आप आपातकालीन कॉल के लिए इस सेवा का इस्तेमाल करते हैं, तो मोबाइल और इंटरनेट सेवा देने वाली कंपनी, आपकी जगह की जानकारी इकट्ठा कर सकती है.\n\nज़्यादा जानकारी के लिए, अपनी मोबाइल और इंटरनेट सेवा देने वाली कंपनी की निजता नीति को देखें."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"आप बचे हुए समय या डेटा का ऐक्सेस खो सकते हैं. हटाने से पहले अपनी सेवा देने वाली कंपनी से पुष्टि कर लें."</string>
-    <string name="content_capture" msgid="868372905432812238">"ऐप्लिकेशन की सामग्री"</string>
+    <string name="content_capture" msgid="868372905432812238">ऐप्लिकेशन का डेटा इस्तेमाल करके मनमुताबिक अनुभव पाएं</string>
     <string name="content_capture_summary" msgid="49720773699715531">"ऐप्लिकेशन को Android सिस्टम में कॉन्टेंट भेजने की अनुमति मिल जाती है"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"सिस्टम हीप डंप कैप्चर करें"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"मेमोरी टैगिंग एक्सटेंशन"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="one"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">रीयल टाइम में मैसेज भेजना (आरटीटी)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"कॉल के दौरान, मैसेज के ज़रिए बातचीत करें"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">मैसेज नहीं दिख रहा है</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">कॉल के दौरान बटन दिखाएं</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">मैसेज हमेशा दिखता है</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"VoLTE बंद करें?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"इससे आपका 5G कनेक्शन भी बंद हो जाएगा.\nवॉइस कॉल के दौरान, आप इंटरनेट का इस्तेमाल नहीं कर सकते और कुछ ऐप्लिकेशन शायद काम न करें."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"कैश मेमोरी में सेव ऐप को बैकग्राउंड में न चलने दें"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"फ़िशिंग का पता लगाने के लिए, ऐप्लिकेशन की गतिविधि की जांच करें"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"स्कैन करके धोखाधड़ी वाले ऐप्लिकेशन का पता लगाएं"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"स्कैन करने की सुविधा से, वर्क प्रोफ़ाइल में मौजूद धोखाधड़ी वाले ऐप्लिकेशन का पता लगाएं"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">इस सुविधा के चालू रहने पर, आपके डिवाइस पर बैकग्राउंड में स्कैनिंग चलती है. इसमें फ़िशिंग या धोखाधड़ी से जुड़े अन्य व्यवहार का पता लगाने के लिए, ऐप्लिकेशन की जांच की जाती है. अगर जांच के दौरान कुछ मिलता है, तो उसकी कुछ जानकारी Google Play Protect को भेजी जाती है, ताकि खतरे की पुष्टि की जा सके और उपयोगकर्ताओं को इसकी चेतावनी दी जा सके.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">यह सुरक्षा से जुड़ी सुविधा है. Google के साथ, डिवाइस का डेटा या निजी जानकारी शेयर नहीं की जाती है. \n\nसाइन-इन क्रेडेंशियल या दूसरी निजी जानकारी चुराने की कोशिश को फ़िशिंग कहते हैं.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"अब पासवर्ड सेट अप हो गया"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"पिन सेट अप हो गया है"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"कर्सर घुमाते समय पॉइंटर दिखाएं"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">ऐप्लिकेशन को, स्टाइलस घुमाने पर पॉइंटर दिखाने की अनुमति दें</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"मीडिया के लिए डीआरएम की सेटिंग"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"सॉफ़्टवेयर सिक्योर क्रिप्टो को ज़बरदस्ती चालू करें"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"डीआरएम को क्रिप्टोग्राफ़िक कुंजी मैनेज करने के लिए, सॉफ़्टवेयर आधारित व्हाइटबॉक्स क्रिप्टो का तरीका ज़बरदस्ती चालू करने के लिए कॉन्फ़िगर करें"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"पहचान की पुष्टि करने की सुविधा को अब ज़्यादा ऐप्लिकेशन में इस्तेमाल किया जा सकता है"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"जानकारी देखें"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"पहचान की पुष्टि करने की सुविधा को अब ज़्यादा ऐप्लिकेशन में इस्तेमाल किया जा सकता है"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"पहचान की पुष्टि करने की सुविधा और स्मार्टवॉच"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"स्मार्टवॉच कनेक्ट होने पर पहचान की पुष्टि करने की सुविधा, आपको पहचान की पुष्टि करने के ज़्यादा विकल्प देती है. इससे ऐप्लिकेशन को बिना अनुमति के ऐक्सेस किए जाने से रोका जा सकता है"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"पहचान की पुष्टि करने की सुविधा और स्मार्टवॉच"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"अपडेट:\n"<ul><li>"स्मार्टवॉच कनेक्ट करके, भरोसेमंद जगह पर न होने के दौरान ऐप्लिकेशन ऐक्सेस करने के लिए, बायोमेट्रिक डेटा या पिन का इस्तेमाल किया जा सकता है"</li>\n<li>"समय के साथ, पहचान की पुष्टि करने की सुविधा, डिवाइस पर मौजूद ऐप्लिकेशन सुरक्षित रखने और पहचान की पुष्टि करने के और तरीके जोड़ सकती है. "<a href="https://support.google.com/android?p=identity_check">"जानें कि आपको कब और कहां सुरक्षा मिलती है"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">पहचान की पुष्टि करने की सुविधा और Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Pixel Watch कनेक्ट होने पर, पहचान की पुष्टि करने की सुविधा आपको पुष्टि के ज़्यादा विकल्प उपलब्ध कराती है. इससे अनुमति के बिना आपके ऐप्लिकेशन को ऐक्सेस करने से रोका जा सकता है</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">पहचान की पुष्टि करने की सुविधा और Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">अपडेट: &lt;ul&gt;&lt;li&gt;किसी भरोसेमंद जगह पर नहीं होने के दौरान, Pixel Watch 3 या इसके बाद के वर्शन वाली स्मार्टवॉच पर ऐप्लिकेशन ऐक्सेस करने के लिए, बायोमेट्रिक डेटा या पिन जैसी सुरक्षा सेवाओं का इस्तेमाल किया जा सकता है. &lt;/li&gt;&lt;li&gt;\'पहचान की पुष्टि करें\' सुविधा, आने वाले समय में पहचान की पुष्टि करने और डिवाइस पर मौजूद ऐप्लिकेशन सुरक्षित रखने के लिए और तरीके जोड़ सकती है. &lt;a href=https://support.google.com/android?p=identity_check&gt;इस बारे में ज़्यादा जानें कि आपको कब और कहां सुरक्षा मिलती है&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"अन्य सेटिंग"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"ऑटोमैटिक तरीके से भरने की सुविधा, सूचनाएं वगैरह"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"निजता सेटिंग"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"जगह की जानकारी का ऐक्सेस"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"उन ऐप्लिकेशन और सेवाओं को देखें जिनके पास जगह की जानकारी का ऐक्सेस है"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"पहचान की पुष्टि करने की सुविधा को अब ज़्यादा ऐप्लिकेशन में इस्तेमाल किया जा सकता है"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"पहचान की पुष्टि करने की सुविधा और आपकी स्मार्टवॉच"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"स्मार्टवॉच कनेक्ट होने पर, पहचान की पुष्टि करने की सुविधा आपको पुष्टि के ज़्यादा विकल्प उपलब्ध कराती है. इससे अनुमति के बिना आपके ऐप्लिकेशन को ऐक्सेस करने से रोका जा सकता है"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">पहचान की पुष्टि करने की सुविधा और Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Pixel Watch कनेक्ट होने पर, पहचान की पुष्टि करने की सुविधा आपको पुष्टि के ज़्यादा विकल्प उपलब्ध कराती है. इससे अनुमति के बिना आपके ऐप्लिकेशन को ऐक्सेस करने से रोका जा सकता है</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"जानकारी देखें"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"सेटिंग की जांच नहीं की जा सकी"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"कोई जानकारी मौजूद नहीं है"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect की स्कैन करने की सुविधा चालू है</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect की सेवा, नुकसान पहुंचाने वाली गतिविधि का पता लगाने के लिए, नियमित तौर पर आपके ऐप्लिकेशन और डिवाइस की जांच करती है. सुरक्षा से जुड़े किसी भी खतरे का पता चलने पर, यह आपको सूचना देती है.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">ऐप्लिकेशन की सुरक्षा, Play Protect, Google Play Protect, ऐप्लिकेशन की सुरक्षा</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">आपका Google खाता सुरक्षित है</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google खाते की सुरक्षा जांच, Google खाते की सुरक्षा, सुरक्षा जांच, खाते की सुरक्षा, Google खाते की सुरक्षा, Google खाता</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find Hub, डिवाइसों को ढूंढना, मेरा डिवाइस ढूंढो, खोया हुआ डिवाइस</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"अपडेट"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"अलग-अलग अपडेट, अपडेट, सुरक्षा से जुड़ा अपडेट, सुरक्षा से जुड़े अपडेट"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">कई अपडेट, अपडेट, सिस्टम अपडेट, सिस्टम के अपडेट, Google Play का सिस्टम अपडेट, Play का सिस्टम अपडेट</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"डिवाइस लॉक, स्क्रीन लॉक, लॉक स्क्रीन, लॉकस्क्रीन, पासवर्ड, पिन, पैटर्न, लॉक, अनलॉक"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"फ़िंगरप्रिंट, फ़िंगर, फ़िंगरप्रिंट जोड़ें"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"फ़ेस अनलॉक, फ़ेस"</string>

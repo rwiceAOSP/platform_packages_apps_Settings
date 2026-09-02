@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Valmis"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Privaatse ruumi leidmiseks kerige alla."</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Logi sisse"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Logige sisse oma privaatse ruumiga kasutamiseks mõeldud kontole"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Logige sisse oma privaatse ruumiga kasutamiseks mõeldud Google\'i kontole</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Mitte praegu"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Jätka"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Valige oma privaatse ruumi jaoks lukk"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Saada seadme nimi"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Jaga selle seadme nime võrguga"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Tellimus"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Tellimuse vaatamine või muutmine"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">Tellimuse OpenRoaming vaatamine või muutmine</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Juhuslikustatud MAC-aadress"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Seadme lisamine"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Seadme võrku „<xliff:g id="SSID">%1$s</xliff:g>” lisamiseks paigutage QR-kood allolevas aknas keskele."</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Lülitub automaatselt välja kell <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Lülitub automaatselt välja pärast magamist"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"Lülitub välja, kui <xliff:g id="ID_1">%1$s</xliff:g> lõpeb"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Tume teema kasutab musta tausta, et teie aku kestaks mõne ekraani puhul kauem. Tumeda teema ajakava lülitatakse sisse siis, kui ekraan on väljas."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Kasutage tumedat tausta, et muuta ekraani vaatamine mugavamaks ja vähendada mõnel ekraanil akukasutust. Kui ekraan on välja lülitatud, muutub teie teema ajakava järgi."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Tume teema kasutab musta tausta, et teie aku kestaks kauem. Tumeda teema ajakava lülitatakse sisse siis, kui ekraan on väljas.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Kasutage akukasutuse vähendamiseks ja ekraani vaatamise mugavamaks muutmiseks tumedat tausta. Kui ekraan on välja lülitatud, muutub teie teema ajakava järgi.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Tume teema järgib praegu teie magamamineku režiimi ajakava"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Magamamineku režiimi seaded"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Režiimid võivad sisse lülitada ka tumeda teema.}=1{{mode_1} lülitab sisse ka tumeda teema.}=2{{mode_1}, {mode_2} ja lülitavad sisse ka tumeda teema.}=3{{mode_1}, {mode_2} ja {mode_3} lülitavad sisse ka tumeda teema.}other{{mode_1}, {mode_2} ja veel # lülitavad sisse ka tumeda teema.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"<xliff:g id="NAME">^1</xliff:g> on kasutamiseks valmis"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Aku olek"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Aku tase"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Ühised"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Ühised seaded"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Dokirežiim</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Doki ja lukustuskuva valikud</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Dokirežiim"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Lukustuskuva vidinad"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"Lemmikvidinatele juurdepääsemiseks pühkige lukustuskuvast vasakule. \n\nKui avate rakenduse vidina abil, peate kinnitama, et see olete teie. Samuti pidage meeles, et kõik saavad vidinaid vaadata."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"puuteplaat, hiir, kursor, kerimine, pühkimine, sõrmega tõmbamine, paremklõps, klõpsamine"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"paremklõps, puudutamine"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Keskmine hiirenupp"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Käivita assistent"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Käivita Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"Käivita <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Assistent"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Avakuvale"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Navigeerimisrežiim, ekraanikuva pööramine"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Tagasiside saatmine"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Küsitluses osalemine"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Võtke ühendust Google’i puuetega inimeste tugitiimiga</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Juurdepääsetavuse küsitlus"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Andke tagasisidet"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Kui rahul te tumeda teemaga olete?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Kuuldeseadme otsetee"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Ühilduvus kuuldeaparaatidega"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Parandab ühilduvust induktiivsidestitega (telecoils) ja vähendab soovimatut müra."</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Võib suurendada helitugevust, et parandada ühilduvust induktiivsidestitega (telecoils), ja vähendab soovimatut müra.</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"Teave kuuldeseade kohta"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"Muude kuuldeseadmete leidmiseks, mida ASHA või LE Audio ei toeta, puudutage valikuid &lt;b&gt;Uue seadme sidumine&lt;/b&gt; &gt; &lt;b&gt;Kuva rohkem seadmeid&lt;/b&gt;."</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Muude kuuldeseadmete leidmiseks, mida ASHA või LE Audio ei toeta, puudutage valikuid "<b>"Uue seadme sidumine"</b>" ja seejärel "<b>"Kuva rohkem seadmeid"</b>"."</string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"valgustundlikkus, fotofoobia, tume teema, migreen, peavalu, lugemisrežiim, öörežiim, ereduse vähendamine, valge punkt"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"nägemine, kuulmine, pime, kurt, kurtus, motoorika, peenmotoorika, abi, abistav, kasutusmugavus, lihtne juurdepääs, käsi"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Akna suurendaja, suum, suurendamine, halb nähtavus, suurendus, suuremaks muutmine"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Ekraanilugeja, Voice Over, VoiceOver, häälabi, pime, halb nähtavus, TTS, kõnesüntees, suuline tagasiside</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Subtiitrid, reaalajas transkriptsioon, kuulmislangus, kuulmiskadu, CART, kõnesüntees"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Subtiitrid, reaalajas subtiitrid, kuulmislangus, kuulmiskadu, CART, kõnesüntees</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Märguanded, kuulmislangus, kuulmiskadu, teavitama</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, võimendus, heli võimendamine, kuulmislangus, kuulmiskadu, võimendamine</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"ekraani suurus, suur ekraan"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"Kõrge kontrastsus, halb nähtavus, paks font, paks esiletõst"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"suure kontrastsusega tekst"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Teksti kuulamine, ettelugemine, ekraanikuvalt lugemine, ekraanilugeja, düsleksia, Vali ja kuula</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"värvide korrigeerimine"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"ekraanikuva tumendamine, ekraanikuva helendamine"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">motoorika, kiirmenüü, abimenüü, puudutus, peenmotoorika, artriit, ülekoormusvigastused, ülekoormushaigus, insult, rabandus, treemor, värin, värisemine, multiipelskleroos, hulgiskleroos, hulgikoldekõvastumus, ajuhalvatus, tserebraalparalüüs, nupp, riistvara, vajutamine, käsi, valu, juurdepääsetavus, abi</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">motoorika, lüliti, käsi, AT, abistav tehnoloogia, halvatus, ALS, skannimine, sammu skannimine</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"motoorika, hiir, väline hiir, peahiir, adaptiivne hiir, ratastool, juhtkang"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"kuuldeaparaadid, kuulmislangus, kuulmiskadu, kõrvaimplantaadid, võimendusseadmed, heliprotsessorid, isiklik helivõimendi, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"kuulmislangus, kuulmiskadu, subtiitrid, teletaip, TTY"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">hääl, hääljuhtimine, motoorika, käsi, mikrofon, dikteerimine, kõnelemine, juhtimine</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"kolm nuppu"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"peenmotoorika, motoorika, eakas, artriit, liigesepõletik, ülekoormusvigastused, ülekoormushaigus, treemor, insult, rabandus, multiipelskleroos, hulgiskleroos, hulgikoldekõvastumus, ajuhalvatus, tserebraalparalüüs, värisemine, värin, värinad, käsi"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"viide, peenmotoorika, eakas"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Akutase on madal"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Lülitage aku tööea pikendamiseks sisse akusäästja"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Pikendage aku tööiga"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Lülitage sisse akuhaldur"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Kohanduva akuhalduri sisselülitamine</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Lülitage akusäästja sisse"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Aku võib tavapärasest kiiremini tühjaks saada"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"Akusäästja on sees"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Lae ikka"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Kontrollige laadimistarvikut"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Lisateave ühildumatu laadimise kohta"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Akuhaldur"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Kohanduvad eelistused</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Kohanduv akuhaldur</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Kui akuhaldur tuvastab, et rakendused kurnavad akut, on teil võimalik nende rakenduste tööd piirata. Piiratud rakendused ei pruugi korralikult töötada ja märguanded võivad viibida."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">Aku tööea pikendamiseks võib kohanduv akuhaldur vähendada jõudlust ja taustategevusi. Mõni märguanne võib viibida.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Piiratud rakendused"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{Piiratakse # rakenduse akukasutust}other{Piiratakse # rakenduse akukasutust}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"Piiratud <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Need rakendused ei saa taustal akut kasutada. Need ei pruugi töötada oodatud viisil ja märguanded võivad viibida."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Akuhalduri kasutamine"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Tuvasta, kui rakendused kurnavad akut"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Tuvastatakse, kui rakendused kurnavad akut"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Tuvastatakse, kui rakendused kurnavad akut"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Pikendage aku tööiga ja optimeerige laadimist</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Aku tööea pikendamine</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# rakendus on piiratud}other{# rakendust on piiratud}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Probleem akumõõdiku lugemisel."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Lisateave</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Puudutage, et näha selle vea kohta lisateavet"</string>
     <string name="power_screen" msgid="4596900105850963806">"Ekraan"</string>
     <string name="power_cpu" msgid="1820472721627148746">"Protsessor"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"Varundamine ja taastamine"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"Isikuandmed"</string>
     <string name="backup_data_title" msgid="507663517227498525">"Minu andmete varundamine"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Varundage rakenduse andmed, WiFi-paroolid ja muud seaded Google\'i serverites"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">Varundage rakenduste andmed, WiFi-paroolid ja muud seaded Google\'i serverites</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"Varunduskonto"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"Varundamiskonto haldamine"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"Kaasa rakenduse andmed"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Ühelegi kontole ei ole praegu salvestatud varundatud andmeid"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Kas soovite WiFi-paroolide, järjehoidjate, muude seadete ja rakenduse andmete varundamise lõpetada ja kõik Google\'i serverites olevad koopiad kustutada?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Kas soovite peatada seadme andmete (nt WiFi-paroolid ja kõneajalugu) ning rakenduse andmete (nt seaded ja rakenduste salvestatud failid) varundamise ning kustutada kõik kaugserverites olevad koopiad?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Varundage seadme andmed (nt WiFi-paroolid ja kõneajalugu) ning rakenduse andmed (nt seaded ja rakenduste salvestatud failid) kaugjuhtimisega automaatselt.\n\nKui lülitate automaatse varundamise sisse, salvestatakse seadme ja rakenduse andmed regulaarselt kaugjuhtimisega. Rakenduse andmed võivad olla mis tahes andmed, mille rakendus on salvestanud (arendaja seadete põhjal), sh potentsiaalselt tundlikud andmed, nagu kontaktid, sõnumid ja fotod."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Kas soovite peatada seadme andmete (nt WiFi-paroolid ja kõneajalugu) ning rakenduse andmete (nt seaded ja rakenduste salvestatud failid) varundamise ning kustutada kõik Google Drive\'is olevad koopiad?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Varundage seadme andmed (nt WiFi-paroolid ja kõneajalugu) ning rakenduse andmed (nt seaded ja rakenduste salvestatud failid) automaatselt Google Drive\'i.\n\nKui lülitate automaatse varundamise sisse, salvestatakse seadme ja rakenduse andmed regulaarselt Google Drive\'is privaatsesse kausta. Rakenduse andmed võivad olla mis tahes andmed, mille rakendus on salvestanud (arendaja seadete põhjal), sh potentsiaalselt tundlikud andmed, nagu kontaktid, sõnumid ja fotod.\n\nVarundatud andmeid ei loeta teie Drive\'i salvestuskvoodi hulka. Suuri faile ja faile, mille arendajad on otsustanud teenusest välja jätta, ei varundata.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Seadme administraatori seaded"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Seadme administraatori rakendus"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Inaktiveeri seadme administraatori rakendus"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"töö väljakutse, töö, profiil"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"tööprofiil, hallatud profiil, ühenda, ühendamine, töö, profiil"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"ärata, magama, ära lukusta, ära lukusta voltimisel, voldi, sulgemine, voltimine, sulge, ekraan välja"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"liigutused"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">liigutus, liigutused</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"maksa, puuduta, maksed"</string>
     <string name="keywords_backup" msgid="707735920706667685">"varukoopia, varundamine"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Profiilideülene kalender"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Kuvab tööga seotud sündmused isiklikus kalendris"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"Kui töörakendused on välja lülitatud, on need peatatud, neile ei pääse juurde ja need ei saada teile märguandeid."</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Salvestusruumi haldamine"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"Salvestusruumi vabastamiseks eemaldab salvestusruumi haldur varundatud fotod ja videod teie seadmest."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Fotode ja videote eemaldamine"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Salvestusruumi haldur"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Kasuta salvestusruumi haldurit"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Nutikas salvestusruum</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Kui salvestusruum hakkab täis saama, eemaldage varundatud fotod ja videod. Leiate need edaspidi teenusest Google Photos.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Varundatud fotode ja videote eemaldamine</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Nutikas salvestusruum</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Kasuta nutikat salvestusruumi</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Liigutused"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Kaamera kiire avamine"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"Kaamera kiireks avamiseks vajutage toitenuppu kaks korda. See töötab igast kuvast."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"liigutused, otsetee"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"maksmine, maksed"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Selfi tegemiseks kaamera pööramine"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixeli kaameras selfirežiimi sisse- ja väljalülitamiseks pöörake telefoni rakenduses olles kaks korda edasi-tagasi.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Navigeerimisrežiim"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Seadme värskendamine"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Suhtlus"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Installimata avatavad rakendused"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Installimata avatavate rakenduste eelistused"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Installitud rakendused"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Teie salvestusruumi haldab nüüd salvestusruumi haldur"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Kui olete ühendatud, pääsete fotodele ja videotele juurde siiski kvaliteediga, mille varundamiseks valisite</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"Kasutaja <xliff:g id="USER_NAME">%1$s</xliff:g> kontod"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Sünkrooni rakenduste andmed automaatselt"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Luba rakendustel andmeid automaatselt värskendada"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Võrgu nimi"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Võrgu nimi kuvatakse olekuribal"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Installimata avatav rakendus"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Kas soovite salvestusruumi halduri välja lülitada?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Kas soovite nutika salvestusruumi välja lülitada? \n\nNutikas salvestusruum ei vabasta ruumi, kui salvestusruum hakkab täis saama.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Värskendage režiimi Mitte segada"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Keskendumiseks peatage märguanded"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Funktsioon pole saadaval"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Vaikimisi keelatud rakenduste muudatused"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Rakenduse ühilduvuse muudatusi saab muuta silutavate rakenduste puhul. Installige silutav rakendus ja proovige uuesti."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Oleneb teisest seadest"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Konto"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google\'i konto</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d kontot"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Seadme nimi"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Põhiteave"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Asukoht"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Kui kasutate seda teenust hädaabikõnedeks, võib operaator koguda teavet teie asukoha kohta.\n\nLisateavet leiate oma operaatori privaatsuseeskirjadest."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Järelejäänud aeg või andmemaht võib kaotsi minna. Enne eemaldamist pidage nõu operaatoriga."</string>
-    <string name="content_capture" msgid="868372905432812238">"Rakenduse sisu"</string>
+    <string name="content_capture" msgid="868372905432812238">Isikupärastamine rakenduste andmete abil</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Luba rakendustel Android-süsteemile sisu saata"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Süsteemi mälutõmmise jäädvustamine"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Mälu märgendamise laiend"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Reaalajas teksti saatmine (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Kasutage kõne ajal suhtlemiseks teksti."</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Ei ole nähtav</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Kõne ajal nähtav</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Alati nähtav</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"Kas lülitada VoLTE välja?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"See lülitab välja ka teie 5G-ühenduse.\nTe ei saa häälkõne ajal internetti kasutada ja mõni rakendus ei pruugi töötada."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Vahemälus olevate rakenduste täitmise peatamine"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Rakenduse tegevuste kontrollimine andmepüügi suhtes"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Kasuta petturlike rakenduste tuvastamiseks skannimist"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Kasuta tööl petturlike rakenduste tuvastamiseks skannimist"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Skannimine toimub privaatselt teie seadmes ja see kontrollib rakenduse tegevusi andmepüügi või muu petturliku käitumise suhtes. Kui see tuvastatakse, saadetakse Google Play Protectile teatud teavet, et oht kinnitada ja rakenduse kasutajaid hoiatada.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Seda kaitseb turvafunktsioon. Google\'iga ei jagata seadme ega isiklikku teavet. \n\nAndmepüük on katse varastada sisselogimismandaate või muud isiklikku teavet.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Parool on seadistatud"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN-kood on nüüd seadistatud"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Kursori kuvamine hõljutamise ajal"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Luba rakendustel kursori hõljutamise puhul kursorit näidata</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Meedia DRM-i seaded"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Sunni tarkvara turvaline krüpteerimine"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"DRM-i võtmehaldust sunnitakse tarkvarapõhist hämarat krüptosüsteemi kasutama"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Identiteedikontroll töötab enamate rakendustega"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Kuva üksikasjad"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Identiteedikontroll töötab enamate rakendustega"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Identiteedikontroll ja kell"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Ühendatud kella abil lisab identiteedikontroll rohkem viise teie isiku tuvastamiseks, et vältida soovimatut juurdepääsu rakendustele."</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Identiteedikontroll ja kell"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Värskendused.\n"<ul><li>"Kui te ei ole usaldusväärses kohas, saate kella ühendamisel rakendustele juurdepääsuks kasutada biomeetriat või oma PIN-koodi."</li>\n<li>"Aja jooksul võib identiteedikontroll lisada rohkem viise teie isiku tuvastamiseks ja teie seadmes olevate rakenduste turvalisuse tagamiseks. "<a href="https://support.google.com/android?p=identity_check">"Lisateave selle kohta, millal ja kus olete kaitstud"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Identiteedikontroll ja Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Ühendatud Pixel Watchi abil lisab identiteedikontroll rohkem viise teie isiku tuvastamiseks, et vältida soovimatut juurdepääsu rakendustele.</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Identiteedikontroll ja Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Värskendused. &lt;ul&gt;&lt;li&gt;Kui te ei ole usaldusväärses kohas, saate Pixel Watch 3 või uuema versiooni ühendamisel rakendustele juurdepääsuks kasutada biomeetriat või oma PIN-koodi. &lt;/li&gt;&lt;li&gt;Aja jooksul võib identiteedikontroll lisada rohkem viise teie isiku tuvastamiseks ja teie seadmes olevate rakenduste turvalisuse tagamiseks. &lt;a href=https://support.google.com/android?p=identity_check&gt;Vaadake lisateavet selle kohta, millal ja kus olete kaitstud.&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Muud seaded"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Automaattäide, märguanded jm"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Privaatsuse seaded"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Juurdepääs asukohale"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Vaadake rakendusi ja teenuseid, mis pääsevad asukohale juurde."</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Identiteedikontroll töötab enamate rakendustega"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Identiteedikontroll ja teie kell"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Ühendatud kella abil lisab identiteedikontroll rohkem viise teie isiku tuvastamiseks, et vältida soovimatut juurdepääsu rakendustele."</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Identiteedikontroll ja teie Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Ühendatud Pixel Watchi abil lisab identiteedikontroll rohkem viise teie isiku tuvastamiseks, et vältida soovimatut juurdepääsu rakendustele.</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Kuva üksikasjad"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Seadeid ei õnnestunud kontrollida"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Teavet ei ole veel"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protecti skannimine on sisse lülitatud</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect kontrollib teie rakendusi ja seadet regulaarselt ohtliku käitumise suhtes. Teid teavitatakse kõigist leitud turvariskidest.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">Rakenduste turvalisus, Play Protect, Google Play Protect, rakenduste ohutus</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google’i konto on kaitstud</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google\'i turvalisuse kontroll, Google\'i turvalisus, turvalisuse kontroll, konto turvalisus, Google\'i konto turvalisus, Google\'i konto</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Leidmiskeskus, seadmete leidmine, leia mu seade, kaotsiläinud seade</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Värskendused"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Värskendused, värskendus, turvavärskendus, turvavärskendused"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Värskendused, värskendus süsteemivärskendus, Google Play süsteemivärskendus, Play süsteemivärskendus</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Seadme lukustamine, ekraani lukustamine, ekraanilukk, lukustuskuva, parool, PIN-kood, muster, lukustamine, avamine"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Sõrmejälg, sõrm, sõrmejälje lisamine"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Näoga avamine, nägu"</string>

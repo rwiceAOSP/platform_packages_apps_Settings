@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"නිමයි"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"පෞද්ගලික අවකාශය සොයා ගැනීමට පහළට අනුචලනය කරන්න"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"පුරන්න"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"ඔබේ පුද්ගලික ඉඩ සමග භාවිත කිරීමට ගිණුමකට පුරන්න"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">ඔබේ පුද්ගලික ඉඩ සමග භාවිත කිරීමට Google ගිණුමකට පුරන්න</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"දැන් නොවේ"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"ඉදිරියට යන්න"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"ඔබේ පෞද්ගලික අවකාශය සඳහා අගුලක් තෝරා ගන්න"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"උපාංගයේ නම යවන්න"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"මෙම උපාංගයේ නම ජාලය සමග බෙදා ගන්න"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"දායකත්වය"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"දායකත්වය බලන්න නැතහොත් වෙනස් කරන්න"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">OpenRoaming දායකත්වය බලන්න නැතහොත් වෙනස් කරන්න</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"අහඹු කළ MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"උපාංගයක් එක් කරන්න"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"උපාංගය “<xliff:g id="SSID">%1$s</xliff:g>” වෙත එක් කිරීමට පහත QR කේතය කේන්‍ද්‍රගත කරන්න"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"<xliff:g id="ID_1">%1$s</xliff:g>ට ස්වයංක්‍රියව ක්‍රියාවිරහිත වනු ඇත"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"නින්දට යන වේලාවට පසු ස්වයංක්‍රියව ක්‍රියාවිරහිත වනු ඇත"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"<xliff:g id="ID_1">%1$s</xliff:g> නිමා වන විට ක්‍රියාවිරහිත වනු ඇත"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"අඳුරු තේමාව ඔබේ බැටරිය සමහර තිරවල දිගු කාලයක් පවත්වා ගැනීම සඳහා සහාය වීමට කලු පසුබිමක් භාවිත කරයි. අඳුරු තේමා කාල සටහන් ක්‍රියාත්මක වීමට ඔබගේ තිරය ක්‍රියාවිරහිත වන තෙක් රැඳී සිටී."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"ඔබේ තිරය බැලීමට වඩාත් සුවපහසු කිරීමට සහ සමහර තිරවල බැටරි භාවිතය අඩු කිරීමට අඳුරු පසුබිමක් භාවිතා කරන්න. ඔබට කාලසටහනක් තිබේ නම්, තිරය ක්‍රියා විරහිත වූ විට ඔබේ තේමාව වෙනස් වනු ඇත."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">අඳුරු තේමාව ඔබේ බැටරිය දිගු කාලයක් සජීවිව තබා ගැනීම සඳහා සහාය වීමට කළු පසුබිමක් භාවිත කරයි. අඳුරු තේමා කාල සටහන් ක්‍රියාත්මක වීමට ඔබගේ තිරය ක්‍රියාවිරහිත වන තෙක් රැඳී සිටී.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">බැටරි භාවිතය අඩු කිරීමට සහ ඔබේ තිරය බැලීමට වඩාත් සුවපහසු කිරීමට අඳුරු පසුබිමක් භාවිතා කරන්න. ඔබට කාලසටහනක් තිබේ නම්, තිරය ක්‍රියා විරහිත වූ විට ඔබේ තේමාව වෙනස් වනු ඇත.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"අඳුරු තේමාව දැනට ඔබගේ නින්දට යන වේලා ප්‍රකාරයේ කාල සටහන අනුගමනය කරයි"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"නින්දට යන වේලාවේ ප්‍රකාර සැකසීම්"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{ප්‍රකාරවලට අඳුරු තේමාව ද ක්‍රියාත්මක කළ හැක.}=1{{mode_1} ද අඳුරු තේමාව ක්‍රියාත්මක කරයි.}=2{{mode_1} සහ {mode_2} ද අඳුරු තේමාව ක්‍රියාත්මක කරයි.}=3{{mode_1}, {mode_2}, සහ {mode_3} ද අඳුරු තේමාව ක්‍රියාත්මක කරයි.}one{{mode_1}, {mode_2}, සහ තවත් #ක් ද අඳුරු තේමාව ක්‍රියාත්මක කරයි.}other{{mode_1}, {mode_2}, සහ තවත් #ක් ද අඳුරු තේමාව ක්‍රියාත්මක කරයි.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"ඔබට ඔබේ <xliff:g id="NAME">^1</xliff:g> භාවිතය ආරම්භ කළ හැක"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"බැටරි තත්වය"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"බැටරි මට්ටම"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"වාර්ගික"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"වාර්ගික සැකසීම්"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">මධ්‍යස්ථාන ප්‍රකාරය</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">ඩොක් සහ අගුළු තිර විකල්ප</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"මධ්‍යස්ථාන ප්‍රකාරය"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"අගුළු තිරයෙහි විජට්"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"ඔබේ ප්‍රියතම විජට් වෙත ප්‍රවේශ වීමට, ඔබේ අගුළු තිරයෙන් වමට ස්වයිප් කරන්න. \n\nඔබ විජට් එකක් භාවිතයෙන් යෙදුමක් විවෘත කරන විට, ඒ ඔබ බව සත්‍යාපනය කිරීමට අවශ්‍ය වනු ඇත. එසේම ඕනෑම කෙනෙකුට ඒවා බැලිය හැකි බව මතක තබා ගන්න."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"ට්‍රැක්පෑඩ්, ට්‍රැක් පෑඩ්, මූසිකය, කර්සරය, අනුචලනය, ස්වයිප්, දකුණු ක්ලික්, ක්ලික්, දර්ශකය"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"දකුණු ක්ලික් කරන්න, තට්ටු කරන්න"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"මැද මූසික බොත්තම"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"සහායක දියත් කරන්න"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Gemini දියත් කරන්න</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g> දියත් කරන්න"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"සහායක"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"මුල් පිටුවට යන්න"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"සංචාලන මාදිලිය, තිර කරකැවීම"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"ප්‍රතිපෝෂණය යවන්න"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"සමීක්ෂණය ගන්න"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Google ආබාධිත සහය සම්බන්ධ කර ගන්න</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"ප්‍රවේශ්‍යතා සමීක්ෂණය"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"ඔබේ ප්‍රතිපෝෂණය බෙදා ගන්න"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"අඳුරු තේමාව ගැන ඔබ කෙතරම් තෘප්තිමත් ද?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"ශ්‍රවණ උපාංග කෙටිමඟ"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"ශ්‍රවණාධාරක අනුකූලත්වය"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"ටෙලිකොයිල් සමග ගැළපෙන බව වැඩි දියුණු කරන අතර අනවශ්‍ය ශබ්දය අඩු කරයි"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">ටෙලිකොයිල් සමග ගැළපෙන බව වැඩි දියුණු කිරීමට සහ අනවශ්‍ය ශබ්දය අඩු කිරීමට ශ්‍රව්‍ය පරිමාව වැඩි කළ හැක</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"ශ්‍රවණ උපාංග පිළිබඳව"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA හෝ LE ශ්‍රව්‍ය මගින් සහාය නොදක්වන වෙනත් ශ්‍රවණ උපාංග සොයා ගැනීමට, &lt;b&gt;නව උපාංගය යුගල කරන්න&lt;/b&gt; &gt; &lt;b&gt;තවත් උපාංග බලන්න&lt;/b&gt; තට්ටු කරන්න"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA හෝ LE ශ්‍රව්‍ය මගින් සහාය නොදක්වන වෙනත් ශ්‍රවණ උපාංග සොයා ගැනීමට, "<b>"නව උපාංගය යුගල කරන්න"</b>" ඉන්පසු "<b>"තවත් උපාංග බලන්න"</b>" තට්ටු කරන්න"</string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"ආලෝක සංවේදීතාව, ඡායා භීතිකාව, අඳුරු තේමාව, ඉරුවාරදය, හිසරදය, කියවීමේ ප්‍රකාරය, රාත්‍රී ප්‍රකාරය, දීප්තිය අඩු කිරීම, සුදු ලක්ෂ්‍යය"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"දර්ශනය, ශ්‍රවණය, අන්ධ, බිහිරි, චාලක, හුරුකම, සහායක, සහාය, භාවිතයේ පහසුව, ප්‍රවේශයේ පහසුව, අත, උදවු"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"කවුළු විශාලනය, විශාලනය, විශාලනය කිරීම, අඩු දෘශ්‍යතාව, විශාල කරන්න, වඩා ලොකු කරන්න"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">තිර කියවනය, වොයිස් ඕවර්, වොයිස්ඕවර්, හඬ සහාය, අන්ධ, අඩු දෘශ්‍යතාව, TTS, පෙළ සිට කථනය, කථන ප්‍රතිපෝෂණය</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"සිරස්තල, සංවෘත සිරස්තල, CC, සජීවී පිටපත් කිරීම, ඇසීමට අපහසු, ශ්‍රවණය අහිමි, CART, කථනයෙන් පෙළට, උපසිරැසි"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">සිරස්තල, සංවෘත සිරස්තල, CC, සජීවී සිරස්තල, ඇසීමට අපහසු, ශ්‍රවණය අහිමි, CART, කථනයෙන් පෙළට, උපසිරැසි</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">දැනුම්දීම්, ඇසීමට අපහසු, ශ්‍රවණය අහිමි, දැනුම් දෙන්න</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, විස්තාරක, හඬ වර්ධකය, ඇසීමට අපහසු, ශ්‍රවණය අහිමි, විස්තාරකය</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"තිර ප්‍රමාණය, විශාල තිරය"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"ඉහළ විභේදනය, අඩු දෘශ්‍යතාව, තද අකුරු, තද මුහුණ"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"ඉහළ ප්‍රභේදන පෙළ"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">පෙළ අසන්න, ශබ්ද නඟා කියවන්න, කතා කරන්න තිරය, තිර කියවනය, ඩිස්ලෙක්සියා, කථා කිරීමට තෝරන්න</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"වර්ණය සීරුමාරු කරන්න"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"තිරය අඳුරු කරන්න, තිරය ආලෝකමත් කරන්න"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">චාලක, ඉක්මන් මෙනුව, සහාය මෙනුව, ස්පර්ශය, හුරුකම, ආතරයිටිස්, rsi, ආඝාතය, වෙව්ලීම, බහු දෘඩවීම, මස්තිෂ්ක අංශභාගය, බොත්තම්, දෘඩාංග, ඔබන්න, පුනරාවර්තන වික්‍රියා තුවාල, අත, වේදනාව, ප්‍රවේශ විය හැකි, උදවු</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">මෝටරය, ස්විචය, අත, AT, උපකාරක තාක්ෂණය, අංශභාගය, ALS, ස්කෑන් කිරීම, පියවර ස්කෑන් කිරීම</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"චාලක, මූසිකය, බාහිර මූසිකය, හිස මූසිකය, අනුවර්තන මූසිකය, රෝද පුටුව, ජොයිස්ටික්"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"ශ්‍රවණාධාර, ඇසීමට අපහසු, ශ්‍රවණාබාධය, දර්වාකාර රෝපණ, විස්තාරණ උපාංග, හඬ සකසනයන්, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"ඇසීමට අපහසු, ශ්‍රවණය අහිමි, සිරස්තල, ටෙලිටයිප්, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">හඬ, හඬ පාලනය, මෝටරය, අත, මයික්, මයික්‍රෆෝනය, අනුලේඛනය, කතාව, පාලනය</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"බොත්තම් තුනක්"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"හුරුකම, චාලක, ජ්‍යෙෂ්ඨ, ආතරයිටිස්, rsi, ආඝාතය, වෙව්ලීම, බහු දෘඩවීම, මස්තිෂ්ක අංශභාගය, සෙලවීම, පුනරාවර්තන වික්‍රියා තුවාල, අත"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"පමාව, හුරුකම, වෘද්ධ"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"බැටරි මට්ටම අඩුය"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"බැටරි ආයු කාලය දීර්ඝ කිරීමට බැටරි සුරැකුම ක්‍රියාත්මක කරන්න"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"බැටරි ආයු කාලය වැඩි දියුණු කරන්න"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"බැටරි කළමනාකරු ක්‍රියාත්මක කරන්න"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">අනුවර්තනීය බැටරිය ක්‍රියාත්මක කරන්න</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"බැටරි සුරැකුම ක්‍රියාත්මක කරන්න"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"බැටරිය සාමාන්‍යයට වඩා කලින් අවසන් විය හැකිය"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"බැටරි සුරැකුම ක්‍රියාත්මකයි"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"කෙසේ හෝ ආරෝපණය කරන්න"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"ආරෝපණ ආයිත්තම පරීක්‍ෂා කරන්න"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"නොගැළපෙන ආරෝපණය පිළිබඳව තව දැන ගන්න"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"බැටරි කළමනාකරු"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">අනුවර්තී මනාප</string>
     <string name="smart_battery_title" msgid="9095903608520254254">අනුවර්තනීය බැටරිය</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"බැටරි කළමනාකරු යෙදුම් බැටරිය අඩු කරන බව හඳුනා ගන්නා විට, මෙම යෙදුම් සීමා කිරීමට ඔබට විකල්පයක් ඇත. සීමා කළ යෙදුම් නිසියාකාරව ක්‍රියා නොකළ හැකි අතර දැනුම්දීම් ප්‍රමාද විය හැකිය."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">බැටරි ආයු කාලය දිගු කිරීමට, අනුවර්තනීය බැටරිය කාර්ය සාධනය සහ පසුබිම් ක්‍රියාකාරිත්වය අඩු කළ හැකිය. සමහර දැනුම්දීම් ප්‍රමාද විය හැකිය.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"සීමා කළ යෙදුම්"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# යෙදුමක් සඳහා බැටරි භාවිතය සීමා කිරීම}one{යෙදුම් #ක් සඳහා බැටරි භාවිතය සීමා කිරීම}other{යෙදුම් #ක් සඳහා බැටරි භාවිතය සීමා කිරීම}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"සීමා කළ <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"මෙම යෙදුම් පසුබිම් බැටරි භාවිතයෙන් සීමා කර ඇත. ඒවා අපේක්ෂිත පරිදි ක්‍රියා නොකළ හැකි අතර, දැනුම්දීම් ප්‍රමාද විය හැකිය."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"බැටරි කළමනාකරු භාවිත කරන්න"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"යෙදුම් බැටරිය අඩු කරන විට හඳුනා ගන්න"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"යෙදුම් බැටරි බලය අඩු කරන විට හඳුනා ගැනීම"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"යෙදුම් බැටරි බලය අඩු කරන විට හඳුනා ගැනීම"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">බැටරි ආයු කාලය දිගු කරන්න සහ ආරෝපණය ප්‍රශස්ත කරන්න</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">බැටරි ආයු කාලය දිගු කරන්න</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# යෙදුමක් සීමා කර ඇත}one{යෙදුම් #ක් සීමා කර ඇත}other{යෙදුම් #ක් සීමා කර ඇත}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"බැටරි මීටරය කියවීමේ දෝෂයකි."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">තව දැන ගන්න</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"මෙම දෝෂය ගැන තව දැන ගැනීමට තට්ටු කරන්න"</string>
     <string name="power_screen" msgid="4596900105850963806">"තිරය"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"උපස්ථය සහ පිළිනැගුම"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"පුද්ගලික දත්ත"</string>
     <string name="backup_data_title" msgid="507663517227498525">"මගේ දත්ත උපස්ථ කරන්න"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"යෙදුම් දත්ත, Wi-Fi මුරපද, සහ වෙනත් සැකසුම් Google සේවාදායක වෙත උපස්ථ කරන්න"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">යෙදුම් දත්ත, Wi-Fi මුරපද, සහ අනෙකුත් සැකසීම් Google සේවාදායකයන්ට උපස්ථ කරන්න</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"උපස්ථ ගිණුම"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"උපස්ථ ගිණුම කළමනාකරණය කරන්න"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"යෙදුම් දත්ත ඇතුළත් කරන්න"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"දැනට කිසිම ගිණුමක් උපස්ථ දත්ත ගබඩා නොකරයි."</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"ඔබගේ Wi-Fi මුරපද, පිටුසන්, වෙනත් සැකසීම්, සහ යෙදුම් දත්ත උපස්ථ කිරීම නවත්වා, තවත Google සේවාදායක මත ඇති සියලු පිටපත් මකා දමන්නද?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"උපාංග දත්ත (Wi-Fi මුරපද සහ ඇමතුම් ඉතිහාසය යනාදී) සහ යෙදුම් දත්ත (යෙදුම් මගින් ගබඩා කළ සැකසීම් සහ ගොනු යනාදී) උපස්ථ කිරීම සහ දුරස්ථ සේවාදායකවල සියලු පිටපත් මැකීම නවත්වන්නද?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"දුරස්ථව උපාංග දත්ත (Wi-Fi මුරපද හා ඇමතුම් ඉතිහාසය වැනි) සහ යෙදුම් දත්ත (යෙදුම් මඟින් ගබඩා කරන සැකසීම් සහ ගොනු) ස්වයංක්‍රියව උපස්ථ කරයි.\n\nඔබ ස්වයංක්‍රියව උපස්ථ කිරීම ක්‍රියාත්මක කළ විට, උපාංග සහ යෙදුම් දත්ත කලින් කලට දුරස්ථව සුරකිනු ලැබේ. සම්බන්ධතා, පණිවුඩ, හා ඡායාරූප වැනි සංවේදී දත්ත ඇතුළුව යෙදුම් දත්ත ඕනෑම එකක් විය හැකි වේ (සංවර්ධක සැකසුම් මත පදනම්ව)."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">උපාංග දත්ත (Wi-Fi මුරපද සහ ඇමතුම් ඉතිහාසය යනාදී) සහ යෙදුම් දත්ත (යෙදුම් මගින් ගබඩා කළ සැකසීම් සහ ගොනු යනාදී) උපස්ථ කිරීම සහ Google Drive වල සියලු පිටපත් මැකීම නවත්වන්නද?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Google Drive වෙත උපාංග දත්ත (Wi-Fi මුරපද සහ ඇමතුම් ඉතිහාසය යනාදී) සහ යෙදුම් දත්ත (සැකසීම් සහ යෙදුම් විසින් ගබඩා කළ ගොනු යනාදී) ස්වයංක්‍රියව උපස්ථ කරයි.\n\nඔබ ස්වයංක්‍රිය උපස්ථ කිරීම ක්‍රියාත්මක කළ විට, උපාංග සහ යෙදුම් දත්ත වරින් වර Google Drive හි පුද්ගලික ෆෝල්ඩරයක් වෙත සුරැකෙනු ඇත. යෙදුම් දත්ත යනු විභව්‍ය වශයෙන් සංවේදී සම්බන්ධතා, පණිවිඩ, සහ ඡායාරූප ඇතුළුව, යම් යෙදුමක් විසින් සුරැක ඇති (සංවර්ධක සැකසීම් මත පදනම්ව), කිනම් හෝ දත්ත විය හැකිය.\n\nඋපස්ථ දත්ත ඔබේ Drive ගබඩා පංගුව සඳහා ගණන් නොගැනෙනු ඇත. විශාල ගොනු, හෝ සංවර්ධකයන් විසින් සේවාව වෙතින් බැහැර කිරීමට තෝරා ඇති ගොනු උපස්ථ නොකරනු ඇත.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"උපාංග පරිපාලක සැකසීම්"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"උපාංගය පරිපාලක යෙදුම"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"මෙම උපාංගය පරිපාලක යෙදුම අක්‍රිය කරන්න"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"වැඩ අභියෝගය, වැඩ, පැතිකඩ"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"කාර්යාල පැතිකඩ, කළමනාකරණය කළ පැතිකඩ, ඒකාබද්ධ, ඒකාබද්ධ කිරීම, කාර්යාල, පැතිකඩ"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"අවදි වන්න, නිදන්න, අගුළු නොදමන්න, නැමීම මත අගුළු හැර සිටින්න, නැමීම, වැසීම, නවන්න, වසන්න, තිරය ක්‍රියා විරහිත කරන්න"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"ඉංගිති"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">ඉංගිත, චලන</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"ගෙවීම, තට්ටු කිරීම, ගෙවීම්"</string>
     <string name="keywords_backup" msgid="707735920706667685">"උපස්ථ, උපස්ථ"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"හරස් පැතිකඩ දින දර්ශනය"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"ඔබේ පුද්ගලික දින දර්ශනයෙහි කාර්ය සිදුවිම් පෙන්වන්න"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"කාර්යාල යෙදුම් ක්‍රියාවිරහිත වූ විට, ඒවා විරාම කර ඇති අතර ප්‍රවේශ වීමට හෝ ඔබට දැනුම්දීම් යැවීමට නොහැකිය"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"ගබඩාව කළමනාකරණය කරන්න"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"ගබඩා ඉඩ නිදහස් කර ගැනීමට උදවු වීමට, ගබඩා කළමනාකරු ඔබේ උපාංගය වෙතින් උපස්ථ කළ ඡායාරූප සහ වීඩියෝ ඉවත් කරයි."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"ඡායාරූප සහ වීඩියෝ ඉවත් කරන්න"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"ගබඩා කළමනාකරු"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"ගබඩා කළමනාකරු භාවිත කරන්න"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">ස්මාර්ට් ගබඞාව</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">ගබඩාව පිරුණු විට, උපස්ථ කළ ඡායාරූප සහ වීඩියෝ ඉවත් කරන්න. ඔබට ඒවා තවම Google ඡායාරූප තුළ සොයා ගත හැකිය.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">උපස්ථ කළ ඡායාරූප සහ වීඩියෝ ඉවත් කරන්න</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">ස්මාර්ට් ගබඞාව</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">ස්මාර්ට් ගබඩාව භාවිත කරන්න</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"ඉංගිත"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"ඉක්මනින් කැමරාව විවෘත කරන්න"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"ඉක්මනින් කැමරාව විවෘත කිරීමට, බල බොත්තම දෙවරක් ඔබන්න. ඕනෑම තිරයක සිට ක්‍රියා කරයි."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"ඉංගිත, කෙටිමඟ"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"ගෙවන්න, ගෙවීම්"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"සෙල්ෆි සඳහා කැමරාව ෆ්ලිප් කරන්න"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixel කැමරාව තුළ සෙල්ෆී ප්‍රකාරයට සහ එයින් ඉවතට මාරු වීමට, ඔබ යෙදුම තුළ සිටින විට දෙවරක් කරකවන්න.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"සංචාලනය ප්‍රකාරය"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"උපාංගය යාවත්කාලීන කරන්න"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"අන්තර්ක්‍රියාව"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"ක්ෂණික යෙදුම්"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"ක්ෂණික යෙදුම් මනාප"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"ස්ථාපිත යෙදුම්"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"ඔබේ ගබඩාව දැන් ගබඩා කළමනාකරු විසින් පාලනය කරනු ලැබේ"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">ඔබ සම්බන්ධ වී ඇති විට, ඔබ උපස්ථය සඳහා තෝරා ඇති ගුණත්වයේදී ඔබට තවම ඡායාරූප සහ වීඩියෝ වෙත ප්‍රවේශ විය හැකිය</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g> සඳහා ගිණුම්"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"යෙදුම් දත්ත ස්වයංක්‍රියව සමමුහුර්ත කරන්න"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"යෙදුම් වෙත දත්ත ස්වයංක්‍රියව නැවුම් කිරීමට ඉඩ දෙන්න"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"ජාල නම"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"තත්ත්ව තීරුව තුළ ජාල නම සංදර්ශනය කරන්න"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"ක්ෂණික යෙදුම"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"ආචයන කළමනාකරු අක්‍රිය කරන්නද?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">ස්මාර්ට් ගබඞාව ක්‍රියා විරහිත කරන්නද? \n\nඔබගේ ගබඩාව මුළුමනින්ම පාහේ පිරී තිබෙන විට ස්මාර්ට් ගබඞාව හට ඉඩ නිදහස් කිරීමට නොහැක.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"බාධා නොකරන්න යාවත්කාලීන කරන්න"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"අවධානය යොමු කිරීම සඳහා දැනුම්දීම් විරාම කරන්න"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"විශේෂාංගය නොලැබේ"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"පෙරනිමි අබල කළ වෙනස් කිරීම්"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"යෙදුම් ගැළපෙන බවේ වෙනස් කිරීම් නිදොස් කළ හැකි යෙදුම් සඳහා පමණක් වෙනස් කළ හැකිය. නිදොස් කළ හැකි යෙදුමක් ස්ථාපනය කර නැවත උත්සාහ කරන්න."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"වෙනත් සැකසීමක් මත රඳා පවතී"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"ගිණුම"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google ගිණුම</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"ගිණුම් %dක්"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"උපාංගයේ නම"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"මූලික තතු"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"ස්ථානය"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"හදිසි අවස්ථා ඇමතුම් සඳහා ඔබ මෙම සේවාව භාවිත කරන විට ඔබගේ වාහකය ඔබගේ ස්ථානය රැස් කළ හැකිය.\n\nවිස්තර සඳහා ඔබගේ වාහකයේ පෞද්ගලිකත්ව ප්‍රතිපත්තිය වෙත පිවිසෙන්න."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"ඔබට කිසියම් ඉතිරි කාලය හෝ දත්ත වෙත ප්‍රවේශය අහිමි විය හැක. ඉවත් කිරීමට පෙර ඔබේ සැපයුම්කරු සමඟ පරීක්‍ෂා කර ගන්න."</string>
-    <string name="content_capture" msgid="868372905432812238">"යෙදුම් අන්තර්ගතය"</string>
+    <string name="content_capture" msgid="868372905432812238">යෙදුම් දත්ත භාවිතයෙන් පෞද්ගලීකරණය</string>
     <string name="content_capture_summary" msgid="49720773699715531">"යෙදුම්වලට Android පද්ධතියට අන්තර්ගතය යැවීමට ඉඩ දෙන්න"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"පද්ධති සංච නික්‍ෂේපය ග්‍රහණ කරන්න"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"මතක ටැග් කිරීමේ දිගුව"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="one"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">තථ්‍ය කාල පෙළ (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"ඇමතුමක් අතරතුර සන්නිවේදනය කිරීමට පෙළ භාවිතා කරන්න"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">දෘශ්‍යමාන නොවේ</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">ඇමතුම අතරතුර දෘශ්‍යමාන වේ</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">සැමවිට දෘශ්‍යමානයි</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"VoLTE ක්‍රියා විරහිත කරන්නද?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"මෙය ඔබේ 5G සම්බන්ධතාව ද ක්‍රියාවිරහිත කරයි.\nහඬ ඇමතුමක් අතරතුර, ඔබට අන්තර්ජාලය භාවිත කිරීමට නොහැකි අතර සමහර යෙදුම් ක්‍රියා නොකළ හැකිය."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"කෑෂ් කළ යෙදුම් සඳහා ක්‍රියාත්මක කිරීම අතහිටුවන්න"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"තතුබෑම් සඳහා යෙදුම් ක්‍රියාකාරකම් පරීක්ෂා කරන්න"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"රැවටිලිකාර යෙදුම් සඳහා ස්කෑන් කිරීම භාවිතා කරන්න"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"වැඩ සඳහා රැවටිලිකාර යෙදුම් සඳහා ස්කෑන් කිරීම භාවිතා කරන්න"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">ස්කෑන් කිරීම තතුබෑම් හෝ වෙනත් රැවටිලිකාර හැසිරීම් සඳහා යෙදුම් ක්‍රියාකාරකම් පරීක්ෂා කරමින්, ඔබේ උපාංගයෙහි පෞද්ගලිකව ධාවනය වේ. එය අනාවරණය වුවහොත්, තර්ජනය තහවුරු කිරීමට සහ යෙදුම් පරිශීලකයින්ට අනතුරු ඇඟවීමට සමහර යෙදුම් තතු Google Play Protect වෙත යවනු ලැබේ.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">මෙය ආරක්ෂිත ආරක්ෂක විශේෂාංගයකි. Google සමග උපාංගයක් හෝ පුද්ගලික තතු කිසිවක් බෙදා නොගනී. \n\nතතුබෑම යනු පුරනය වීමේ අක්තපත්‍ර හෝ වෙනත් පුද්ගලික තතු සොරකම් කිරීමේ උත්සාහයකි.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"මුරපදය දැන් පිහිටුවා ඇත"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN අංකය දැන් සකසා ඇත"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"සැරිසරන අතරේ දර්ශකය පෙන්වන්න"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">සැරිසරන අතරේ දර්ශක පෙන්වීමට යෙදුම් වලට ඉඩ දෙන්න</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"මාධ්‍ය DRM සැකසීම්"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"මෘදුකාංග සුරක්ෂිත ක්‍රිප්ටෝ බල කරන්න"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"මෘදුකාංග පදනම් වූ සුදුකොටු ක්‍රිප්ටෝ භාවිතා කිරීමට DRM යතුරු කළමනාකරණයට බල කරන්න"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"අනන්‍යතා පරීක්ෂාව තවත් යෙදුම් සමඟ ක්‍රියා කරයි"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"විස්තර බලන්න"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"අනන්‍යතා පරීක්ෂාව තවත් යෙදුම් සමඟ ක්‍රියා කරයි"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"අනන්‍යතා පරීක්ෂාව සහ ඔරලෝසුව"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"සම්බන්ධිත ඔරලෝසුවක් සමඟ, අනන්‍යතා පරීක්ෂාව යෙදුම් වෙත අනවශ්‍ය ප්‍රවේශය වැළැක්වීම සඳහා ඒ ඔබ බව තහවුරු කර ගැනීමට තවත් ක්‍රම එක් කරයි"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"අනන්‍යතා පරීක්ෂාව සහ ඔරලෝසුව"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"යාවත්කාලීන කිරීම්:\n"<ul><li>"ඔරලෝසුවක් සම්බන්ධ කිරීමෙන්, ඔබ විශ්වාසදායක ස්ථානයක නොමැති විට යෙදුම් වෙත ප්‍රවේශ වීමට ඔබට ජෛවමිතික හෝ ඔබගේ PIN අංකය භාවිතා කළ හැකිය"</li>\n<li>"කාලයත් සමඟ, අනන්‍යතා පරීක්ෂාව ඒ ඔබ බව සත්‍යාපනය කිරීමට සහ ඔබගේ උපාංගයේ යෙදුම් සුරක්ෂිත කිරීමට තවත් ක්‍රම එක් කළ හැකිය. "<a href="https://support.google.com/android?p=identity_check">"ඔබ ආරක්ෂා වන්නේ කවදාද සහ කොතැනද යන්න පිළිබඳව තව දැන ගන්න"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">අනන්‍යතා පරීක්ෂාව සහ Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">සම්බන්ධිත Pixel Watch එකක් සමග, අනන්‍යතා පරීක්ෂාව යෙදුම් වෙත අනවශ්‍ය ප්‍රවේශය වැළැක්වීම සඳහා ඒ ඔබ බව සත්‍යාපනය කර ගැනීමට තවත් ක්‍රම එක් කරයි</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">අනන්‍යතා පරීක්ෂාව සහ Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">යාවත්කාලීන: &lt;ul&gt;&lt;li&gt;Pixel Watch 3 හෝ ඊට පසු එකක් සම්බන්ධ කිරීමෙන්, ඔබ විශ්වාසදායක ස්ථානයක නොමැති විට යෙදුම් වෙත ප්‍රවේශ වීමට ඔබට ජෛවමිතික හෝ ඔබේ PIN අංකය භාවිතා කළ හැක. &lt;/li&gt;&lt;li&gt;කාලයත් සමග, අනන්‍යතා පරීක්ෂාව ඒ ඔබ බව තහවුරු කර ගැනීමට සහ ඔබේ උපාංගයේ යෙදුම් සුරක්ෂිත කිරීමට තවත් ක්‍රම එක් කළ හැක. &lt;a href=https://support.google.com/android?p=identity_check&gt;ඔබ ආරක්ෂා කර ඇති විට සහ ස්ථානය ගැන තව දැන ගන්න&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"වෙනත් සැකසීම්"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"ස්වයං පිරවීම, දැනුම්දීම්, සහ තවත් දේ"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"පෞද්ගලිකත්ව පාලන"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"ස්ථාන ප්‍රවේශය"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"ස්ථානය වෙත ප්‍රවේශය ඇති යෙදුම් සහ සේවා බලන්න"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"අනන්‍යතා පරීක්ෂාව තවත් යෙදුම් සමඟ ක්‍රියා කරයි"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"අනන්‍යතා පරීක්ෂාව සහ ඔබේ ඔරලෝසුව"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"සම්බන්ධිත ඔරලෝසුවක් සමඟ, අනන්‍යතා පරීක්ෂාව යෙදුම් වෙත අනවශ්‍ය ප්‍රවේශය වැළැක්වීම සඳහා ඒ ඔබ බව තහවුරු කර ගැනීමට තවත් ක්‍රම එක් කරයි"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">අනන්‍යතා පරීක්ෂාව සහ ඔබේ Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">සම්බන්ධිත Pixel Watch එකක් සමග, අනන්‍යතා පරීක්ෂාව යෙදුම් වෙත අනවශ්‍ය ප්‍රවේශය වැළැක්වීම සඳහා ඒ ඔබ බව සත්‍යාපනය කර ගැනීමට තවත් ක්‍රම එක් කරයි</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"විස්තර බලන්න"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"සැකසීම් පරීක්ෂා කිරීමට නොහැකි විය"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"තවම තොරතුරු නැත"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play ආරක්‍ෂාව ස්කෑන් කිරීම ක්‍රියාත්මකයි</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play ආරක්ෂාව නිතිපතා ඔබේ යෙදුම් සහ උපාංගය හානිකර හැසිරීම් සඳහා පරීක්ෂා කරයි. හමු වූ යම් ආරක්ෂක අවදානම් පිළිබඳව ඔබට දැනුම් දෙනු ඇත.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">යෙදුම් සුරක්‍ෂිතතාව, Play ආරක්‍ෂාව, Google Play ආරක්‍ෂාව, යෙදුම් ආරක්‍ෂාව</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google ගිණුම ආරක්ෂිතයි</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google ආරක්‍ෂක පරීක්‍ෂාව, Google ආරක්‍ෂාව, ආරක්‍ෂක පරීක්‍ෂාව, ගිණුම් ආරක්‍ෂාව, Google ගිණුම් ආරක්‍ෂාව, Google ගිණුම</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">සෙවීම් මධ්‍යස්ථානය, උපාංග සොයා ගැනීම්, මගේ උපාංගය සෙවීම, නැති වූ උපාංගය</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"යාවත්කාලීන"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"යාවත්කාලීන, යාවත්කාලීනය, ආරක්‍ෂක යාවත්කාලීනය, ආරක්‍ෂක යාවත්කාලීන"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">යාවත්කාලීන, යාවත්කාලීනය, පද්ධති යාවත්කාලීනය, පද්ධති යාවත්කාලීන, Google Play පද්ධති යාවත්කාලීනය, Play පද්ධති යාවත්කාලීනය</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"උපාංග අගුල, තිර අගුල, අගුලු තිරය, තිරයට අගුලු දමන්න, මුරපදය, Pin, රටාව, අගුලු දැමීම, අගුලු හැරීම"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"ඇඟිලි සලකුණ, ඇඟිල්ල, ඇඟිලි සලකුණ එක් කරන්න"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"මුහුණ අගුළු හැරීම, මුහුණ"</string>

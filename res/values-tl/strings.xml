@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Tapos na"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Mag-scroll pababa para mahanap ang pribadong space"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Mag-sign in"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Mag-sign in sa isang account na gagamitin sa iyong pribadong space"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Mag-sign in sa isang Google Account para gamitin sa iyong pribadong space</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Huwag muna"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Magpatuloy"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Pumili ng lock para sa iyong pribadong space"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Ipadala ang pangalan ng device"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Ibahagi ang pangalan ng device na ito sa network"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Subscription"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Tingnan o baguhin ang subscription"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">Tingnan o baguhin ang subscription sa OpenRoaming</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Na-randomize na MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Magdagdag ng device"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Igitna ang QR code sa ibaba para maidagdag ang device sa “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Awtomatikong mag-o-off nang <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Awtomatikong mag-o-off pagkatapos ng oras ng pagtulog"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"Mag-o-off kapag natapos ang <xliff:g id="ID_1">%1$s</xliff:g>"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Gumagamit ng itim na background sa madilim na tema para makatulong na mas tumagal ang baterya sa ilang screen. Naghihintay ang mga iskedyul ng madilim na tema na ma-off ang iyong screen bago ma-on ang mga ito."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Gumamit ng madilim na background para gawing mas kumportableng tingnan ang iyong screen at mabawasan ang paggamit ng baterya sa ilang screen. Magbabago ang iyong tema kung mayroon kang iskedyul, kapag naka-off ang screen."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Gumagamit ng itim na background ang Madilim na tema para mas magtagal ang iyong baterya. Naghihintay ang mga iskedyul ng madilim na tema na ma-off ang iyong screen bago ma-on ang mga ito.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Gumamit ng madilim na background para mabawasan ang paggamit ng baterya at gawing mas kumportableng tingnan ang iyong screen. Magbabago ang iyong tema kung mayroon kang iskedyul, kapag naka-off ang screen.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Kasalukuyang sumusunod ang Madilim na tema sa iskedyul ng iyong Bedtime mode"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Mga setting ng Bedtime mode"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Puwede ring i-on ng mga mode ang dark theme.}=1{Ino-on din ng {mode_1} ang dark theme.}=2{Ino-on din ng {mode_1} at {mode_2} ang dark theme.}=3{Ino-on din ng {mode_1}, {mode_2}, at {mode_3} ang dark theme.}one{Ino-on din ng {mode_1}, {mode_2}, at # pa ang dark theme.}other{Ino-on din ng {mode_1}, {mode_2}, at # pa ang dark theme.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"Magagamit mo na ang iyong <xliff:g id="NAME">^1</xliff:g>"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Status ng baterya"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Antas ng baterya"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Communal"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Mga communal setting"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Hub mode</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Mga opsyon sa dock at lock screen</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Hub mode"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Mga widget sa lock screen"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"Para ma-access ang iyong mga paboritong widget, mag-swipe pakaliwa mula sa Lock Screen mo. \n\nKapag nagbukas ka ng app gamit ang isang widget, kakailanganin mong i-verify na ikaw iyan. Bukod pa rito, tandaang puwedeng tingnan ng kahit na sino ang mga ito."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"trackpad, track pad, mouse, cursor, scroll, swipe, right click, click, pointer"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"right click, tap"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Gitnang button ng mouse"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Ilunsad ang Assistant"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Ilunsad ang Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"Ilunsad ang <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Assistant"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Pumunta sa home"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Navigation mode, pag-rotate ng screen"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Magpadala ng feedback"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Sagutan ang survey"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Makipag-ugnayan sa Support Team ng Google para sa May Kapansanan</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Survey sa Accessibility"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"I-share ang iyong feedback"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Gaano ka nasisiyahan sa dark theme?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Shortcut ng hearing device"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Compatibility ng hearing aid"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Pinapahusay ang compatibility sa mga telecoil at binabawasan ang hindi gustong ingay"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Posibleng pataasin ang volume ng audio para mapahusay ang compatibility sa mga telecoil at mabawasan ang hindi gustong ingay</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"Tungkol sa mga hearing device"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"Para makahanap ng iba pang hearing device na hindi sinusuportahan ng ASHA o LE Audio, i-tap ang &lt;b&gt;Magpares ng bagong device&lt;/b&gt; &gt; &lt;b&gt;Tumingin ng higit pang device&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Para makahanap ng iba pang hearing device na hindi sinusuportahan ng ASHA o LE Audio, i-tap ang "<b>"Magpares ng bagong device"</b>" at pagkatapos ay "<b>"Tumingin ng higit pang device"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"pagkasensitibo sa ilaw, photophobia, madilim na tema, matinding pananakit ng ulo, pananakit ng ulo, reading mode, night mode, bawasan ang liwanag, white point"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"paningin, pandinig, bulag, bingi, paggalaw, kagalingan sa paggalaw, nakakatulong, pagtulong, dali ng paggamit, dali ng pag-access, kamay, tulong"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Magnifier ng Window, Zoom, Pag-magnify, Malabo ang paningin, Palakihin, gawing mas malaki"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Screen reader, Voice Over, VoiceOver, Voice Assistance, Bulag, Malabo ang Paningin, TTS, text to speech, pasalitang feedback</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Mga caption, mga closed caption, CC, Instant Transcribe, may problema sa pandinig, walang pandinig, CART, speech to text, subtitle"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Mga caption, mga closed caption, CC, Instant Caption, may problema sa pandinig, walang pandinig, CART, speech to text, subtitle</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Mga notification, may problema sa pandinig, walang pandinig, mag-abiso</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, i-amplify, pag-amplify ng tunog, may problema sa pandinig, walang pandinig, pag-amplify</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"laki ng screen, malaking screen"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"High contrast, malabo ang paningin, bold na font, bold face"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"text na high contrast"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Pakinggan ang text, basahin nang malakas, bigkasin ang nasa screen, screen reader, dyslexia, select to speak</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"i-adjust ang kulay"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"padilimin ang screen, paliwanagin ang screen"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">paggalaw, mabilisang menu, pantulong na menu, pagpindot, kagalingan sa paggalaw, arthritis, rsi, stroke, tremor, multiple sclerosis, cerebral palsy, button, hardware, pindutin, paulit-ulit na pinsala sa kalamnan, kamay, pananakit, naa-access, tulong</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">motor, switch, kamay, AT, pantulong na teknolohiya, pagkaparalisa, ALS, pag-scan, paisa-isang pag-scan</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"paggalaw, mouse, external na mouse, head mouse, adaptive na mouse, wheelchair, joystick"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"mga hearing aid, may problema sa pandinig, pagkawala ng pandinig, mga cochlear implant, mga device sa pag-amplify, mga sound processor, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"may problema sa pandinig, walang pandinig, mga caption, Teletype, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">boses, pagkontrol gamit ang boses, motor, kamay, mic, mikropono, dictation, pagsasalita, kontrol</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"tatlong button"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"kagalingan sa paggalaw, paggalaw, nakatatanda, arthritis, rsi, stroke, tremor, multiple sclerosis, cerebral palsy, panginginig, paulit-ulit na pinsala sa kalamnan, kamay"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"pagkaantala, kagalingan sa paggalaw, nakatatanda"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Paubos na ang baterya"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"I-on ang Pantipid ng Baterya para patagalin ang baterya"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Patagalin ang baterya"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"I-on ang Battery Manager"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">I-on ang Adaptive Battery</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"I-on ang Pantipid ng Baterya"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Baka mas maagang maubos ang baterya kaysa sa karaniwan"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"I-on ang Pantipid ng Baterya"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"I-charge pa rin"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Suriin ang accessory sa pag-charge"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Matuto pa tungkol sa hindi compatible na pag-charge"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Battery Manager"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Mga kagustuhan sa Adaptive</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Adaptive Battery</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Kapag natutukoy ng Battery Manager na umuubos ng baterya ang mga app, magkakaroon ka ng opsyon na paghigpitan ang mga app na ito. Maaaring hindi gumana nang maayos ang mga pinaghihigpitang app at maaaring maantala ang mga notification."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">Para patagalin ang baterya, posibleng bawasan ng Adaptive Battery ang performance at aktibidad sa background. Baka maantala ang ilang notification.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Mga pinaghihigpitang app"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{Nililimitahan ang paggamit ng baterya para sa # app}one{Nililimitahan ang paggamit ng baterya para sa # app}other{Nililimitahan ang paggamit ng baterya para sa # na app}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"Pinaghigpitan <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Pinaghihigpitan ang mga app na ito mula sa paggamit ng baterya sa background. Posibleng hindi gumana ayon sa inaasahan ang mga ito, at puwedeng maantala ang mga notification."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Gumamit ng Battery Manager"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Tukuyin kapag umuubos ng baterya ang mga app"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Dine-detect kapag umuubos ng baterya ang mga app"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Dine-detect kapag umuubos ng baterya ang mga app"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Patagalin ang baterya at i-optimize ang pag-charge</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Patagalin ang baterya</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# app ang pinaghihigpitan}one{# app ang pinaghihigpitan}other{# na app ang pinaghihigpitan}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Nagkaproblema sa pagbabasa ng battery meter."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Matuto pa</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Mag-tap para matuto pa tungkol sa error na ito"</string>
     <string name="power_screen" msgid="4596900105850963806">"Screen"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Walang account ang kasalukuyang nag-iimbak ng na-back up na data"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Ihinto ang pagba-back up ng iyong mga password ng Wi-Fi, mga bookmark, iba pang mga setting at data ng app, at burahin ang lahat ng kopya sa mga server ng Google?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Gusto mo bang ihinto ang pagba-back up sa data ng device (gaya ng mga password sa Wi-Fi at history ng pagtawag) at data ng app (gaya ng mga setting at file na naimbak ng mga app), at burahin ang lahat ng kopya sa mga remote server?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Awtomatikong i-back up ang data ng device (tulad ng mga password sa Wi-Fi at history ng tawag) at data ng app (tulad ng mga setting at mga file na inimbak ng mga app) nang malayuan.\n\nKapag i-on mo ang awtomatikong pag-backup, pana-panahong sine-save nang malayuan ang data ng device at app. Ang data ng app ay maaaring anumang data na na-save ng app (batay sa mga setting ng developer), kabilang ang potensyal na sensitibong data tulad ng mga contact, mensahe at larawan."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Gusto mo bang ihinto ang pagba-back up ng data ng device (gaya ng mga password ng Wi-Fi at history ng tawag) at data ng app (gaya ng mga setting at file na naimbak ng mga app), at burahin ang lahat ng kopya sa Google Drive?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Awtomatikong mag-back up ng data ng device (gaya ng mga password ng Wi-Fi at history ng tawag) at data ng app (gaya ng mga setting at file na naimbak ng mga app) sa Google Drive.\n\nKapag na-on mo ang awtomatikong pag-backup, pana-panahong ise-save ang data ng device at app sa isang pribadong folder sa Google Drive. Ang data ng app ay maaaring anumang data na na-save ng app (batay sa mga setting ng developer), kasama na ang potensyal na sensitibong data gaya ng mga contact, mensahe at larawan.\n\nAng data sa pag-backup ay hindi ibibilang sa iyong quota sa storage ng Drive. Hindi iba-back up ang malalaking file o mga file na pinili ng mga developer na hindi isama sa serbisyo.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Mga setting ng admin ng device"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"App ng admin ng device"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"I-deactivate ang device na ito sa app ng admin"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"hamon sa trabaho, trabaho, profile"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"profile sa trabaho, pinamamahalaang profile, pagsamahin, pagsasama, trabaho, profile"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"naka-wake, sleep, huwag i-lock, manatiling naka-unlock kapag naka-fold, pag-fold, pagsara, i-fold, isara, i-off ang screen"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"mga galaw"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">galaw, mga paggalaw</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"magbayad, mag-tap, mga pagbabayad"</string>
     <string name="keywords_backup" msgid="707735920706667685">"backup, i-back up"</string>
@@ -3795,7 +3795,7 @@
     <string name="notification_sound_default" msgid="8630353701915294299">"Default na tunog ng notification"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"Default na tunog ng alarm"</string>
     <string name="vibrate_when_ringing_option_ramping_ringer" msgid="2798848945803840348">"Mag-vibrate muna at mag-ring"</string>
-    <string name="spatial_audio_title" msgid="1775370104206884711">"Spatial Audio"</string>
+    <string name="spatial_audio_title" msgid="1775370104206884711">Spatial audio</string>
     <string name="dial_pad_tones_title" msgid="3536945335367914892">"Mga tono ng dial pad"</string>
     <string name="screen_locking_sounds_title" msgid="5695030983872787321">"Tunog ng pag-lock ng screen"</string>
     <string name="charging_sounds_title" msgid="5261683808537783668">"Tunog, vibration kapag charging"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Cross-profile na kalendaryo"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Ipakita sa iyong personal na kalendaryo ang mga event sa trabaho"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"Kapag naka-off ang mga app para sa trabaho, ipo-pause ang mga ito at hindi maa-access ang mga ito o makakapagpadala sa iyo ng mga notification"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Pamahalaan ang storage"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"Upang tumulong na magbakante ng space sa storage, inaalis ng storage manager ang mga naka-back up na larawan at video mula sa iyong device."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Alisin ang mga larawan at video"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Storage manager"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Gumamit ng Storage manager"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Smart Storage</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Kapag halos puno na ang storage, alisin ang mga naka-back up na larawan at video. Makikita mo pa rin ang mga ito sa Google Photos.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Alisin ang mga naka-back up na larawan at video</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Smart Storage</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Gumamit ng Smart Storage</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Mga Galaw"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Mabilis na buksan ang camera"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"Para mabuksan kaagad ang camera, pindutin ang power button nang dalawang beses. Gumagana ito sa anumang screen."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"mga galaw, shortcut"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"magbayad, mga pagbabayad"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"I-flip ang camera para sa selfie"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Para pumunta at lumabas sa selfie mode sa iyong Pixel Camera, mag-double twist kapag nasa app ka.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Navigation mode"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"I-update ang device"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Pakikipag-ugnayan"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Mga instant na app"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Mga preference sa Instant Apps"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Mga naka-install na app"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Pinamamahalaan na ngayon ng storage manager ang iyong storage"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Kapag nakakonekta ka, maa-access mo pa rin ang mga larawan at video sa kalidad na pinili mo para sa pag-backup</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"Mga account para kay <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Awtomatikong i-sync ang data ng app"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Hayaan ang mga app na awtomatikong mag-refresh ng data"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Pangalan ng network"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Ipakita ang pangalan ng network sa status bar"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Instant na app"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"I-off ang storage manager?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">I-off ang Smart Storage? \n\nHindi magbabakante ang Smart Storage ng espasyo kapag malapit nang mapuno ang iyong storage.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"I-update ang Huwag Istorbohin"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"I-pause ang mga notification para manatiling nakatuon ang pansin"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Hindi available ang feature"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Mga default na naka-disable na pagbabago"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Puwede lang baguhin ang mga pagbabago sa compatibility ng app para sa mga nade-debug na app. Mag-install ng nade-debug na app at subukan ulit."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Nakadepende sa isa pang setting"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Account"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google Account</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d (na) account"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Pangalan ng device"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Pangunahing impormasyon"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Lokasyon"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Posibleng kolektahin ng carrier mo ang iyong lokasyon kapag ginamit mo ang serbisyong ito para sa mga emergency na tawag.\n\nBisitahin ang patakaran sa privacy ng iyong carrier para sa mga detalye."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Baka mawalan ka ng access sa anumang natitirang oras o data. Itanong sa iyong provider bago ito alisin."</string>
-    <string name="content_capture" msgid="868372905432812238">"Content ng app"</string>
+    <string name="content_capture" msgid="868372905432812238">Mag-personalize gamit ang data ng app</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Payagan ang mga app na magpadala ng content sa Android system"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Kunin ang heap dump ng system"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="one"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Real-time na text (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Gumamit ng text para makipag-usap habang may tawag"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Hindi nakikita</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Nakikita kapag may tawag</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Palaging nakikita</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"I-off ang VoLTE?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"Io-off din nito ang iyong 5G na koneksyon.\nHabang nasa isang voice call, hindi mo magagamit ang internet at posibleng hindi gumana ang ilang app."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Suspindihin: pag-execute para sa naka-cache na app"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Suriin ang aktibidad sa app para mag-detect ng phishing"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Gumamit ng pag-scan para sa mga mapanlinlang na app"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Gumamit ng pag-scan para sa mga mapanlinlang na app para sa trabaho"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Pribadong tumatakbo ang pag-scan sa iyong device, na sumusuri sa aktibidad sa app para mag-detect ng phishing o iba pang mapanlinlang na gawi. Kung ma-detect ito, ipapadala ang ilang impormasyon ng app sa Google Play Protect para kumpirmahin ang banta at bigyan ng babala ang mga user ng app.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Isa itong protektadong panseguridad na feature. Walang device o personal na impormasyong ibinabahagi sa Google. \n\nAng phishing ay isang pagtatangkang magnakaw ng mga kredensyal sa pag-sign in o iba pang personal na impormasyon.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Naka-set up na ngayon ang password"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"Naka-set up na ang PIN"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Ipakita ang pointer habang nagho-hover"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Payagan ang mga app na magpakita ng pointer habang naka-hover</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Mga setting ng media DRM"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"I-force ang Software Secure na Crypto"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"I-force ang pamamahala ng DRM key para gumamit ng software-based na whitebox crypto"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Gumagana ang Pag-check sa Identity sa mas maraming app"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Tingnan ang mga detalye"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Gumagana ang Pag-check sa Identity sa mas maraming app"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Pag-check sa Identity at Relo"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Gamit ang nakakonektang relo, magdaragdag pa ang Pag-check sa Identity ng mga paraan ng pag-verify na ikaw talaga iyan para maiwasan ang hindi ginustong access sa mga app"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Pag-check sa Identity at Relo"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Mga update:\n"<ul><li>"Sa pagkonekta sa relo, magagamit mo ang biometrics o ang iyong PIN para ma-access ang mga app kapag wala ka sa pinagkakatiwalaang lugar"</li>\n<li>"Sa paglipas ng panahon, puwede pang magdagdag ang Pag-check sa Identity ng mga paraan ng pag-verify na ikaw talaga iyan at pag-secure ng mga app sa iyong device. "<a href="https://support.google.com/android?p=identity_check">"Matuto pa tungkol sa kung kailan at saan ka protektado"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Pag-check sa Identity at Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Gamit ang nakakonektang Pixel Watch, magdaragdag pa ang Pag-check sa Identity ng mga paraan ng pag-verify na ikaw talaga iyan para maiwasan ang hindi ginustong access sa mga app</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Pag-check sa Identity at Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Mga update: &lt;ul&gt;&lt;li&gt;Sa pagkonekta ng Pixel Watch 3 o mas bago, puwede mong gamitin ang biometrics o ang iyong PIN para ma-access ang mga app kapag wala ka sa pinagkakatiwalaang lugar. &lt;/li&gt;&lt;li&gt;Sa paglipas ng panahon, posibleng magdagdag ang Pag-check sa Identity ng higit pang paraan para i-verify na ikaw talaga iyan at i-secure ang mga app sa iyong device. &lt;a href=https://support.google.com/android?p=identity_check&gt;Matuto pa tungkol sa kung kailan at saan ka pinoprotektahan&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Iba pang setting"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Autofill, mga notification, at higit pa"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Mga kontrol sa privacy"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Access sa lokasyon"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Tingnan ang mga app at serbisyong may access sa lokasyon"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Gumagana ang Pag-check sa Identity sa mas maraming app"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Pag-check sa Identity at ang iyong relo"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Gamit ang nakakonektang relo, magdaragdag pa ang Pag-check sa Identity ng mga paraan ng pag-verify na ikaw talaga iyan para maiwasan ang hindi ginustong access sa mga app"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Pag-check sa Identity at ang iyong Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Gamit ang nakakonektang Pixel Watch, magdaragdag pa ang Pag-check sa Identity ng mga paraan ng pag-verify na ikaw talaga iyan para maiwasan ang hindi ginustong access sa mga app</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Tingnan ang mga detalye"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Hindi masuri ang mga setting"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Wala pang impormasyon"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Naka-on ang pag-scan ng Play Protect</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Regular na sinusuri ng Play Protect ang iyong mga app at device para maghanap ng mapaminsalang gawi. Aabisuhan ka kung may makitang anumang panganib sa seguridad.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">Seguridad ng app, Play Protect, Google Play Protect, Kaligtasan ng app</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Pinoprotektahan ang Google Account</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Security checkup ng Google, Seguridad ng Google, Security checkup, Seguridad ng account, Seguridad ng Google account, Google account</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find Hub, Paghahanap ng mga device, Hanapin ang aking device, Nawawalang device</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Mga Update"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Mga Update, Update, Update sa seguridad, Mga update sa seguridad"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Mga Update, Update, Update sa system, Mga update sa system, Update sa system ng Google Play, Update sa system ng Play</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Lock ng device, Lock ng screen, Lock screen, Lockscreen, Password, Pin, Pattern, Lock, Unlock"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Fingerprint, Daliri, Magdagdag ng fingerprint"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Pag-unlock gamit ang mukha, Mukha"</string>

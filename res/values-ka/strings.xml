@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"მზადაა"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"პირადი სივრცის საპოვნელად გადაადგილდით ქვემოთ"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"შესვლა"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"ანგარიშის კერძო სივრძეში გამოყენებისთვის შედით ანგარიშში"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Google ანგარიშით კერძო სივრცით სარგებლობისთვის შედით თქვენს ანგარიშში</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"ახლა არა"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"გაგრძელება"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"აირჩიეთ საკეტი თქვენი კერძო სივრცისთვის"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"მოწყობილობის სახელის გაგზავნა"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"ამ მოწყობილობის სახელის ქსელთან გაზიარება"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"გამოწერა"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"გამოწერის ნახვა ან შეცვლა"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">OpenRoaming გამოწერის ნახვა ან შეცვლა</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"შემთხვევითი MAC-მისამართი"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"მოწყობილობის დამატება"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"„<xliff:g id="SSID">%1$s</xliff:g>“-ში მოწყობილობის დასამატებლად, ქვემოთ მოაქციეთ QR კოდი ცენტრში"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"ავტომატურად გამოირთვება <xliff:g id="ID_1">%1$s</xliff:g>-ზე"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"ძილის დროის შემდეგ ავტომატურად გამოირთვება"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"გამოირთვება, როცა <xliff:g id="ID_1">%1$s</xliff:g> დამთავრდება"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"მუქი თემა ზოგიერთ ეკრანზე იყენებს შავ ფონს იმისთვის, რომ ბატარეამ უფრო დიდხანს გაძლოს. მუქი თემის განრიგი ეკრანის გამორთვის შემდეგ გააქტიურდება."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"გამოიყენეთ მუქი ფონი, რათა თქვენი ეკრანი უფრო კომფორტული სანახავი იყოს და შეამცირეთ ზოგიერთ ეკრანზე ბატარეის მოხმარება. გამორთული ეკრანისას შეიცვლება თქვენი თემა, თუ გაქვთ განრიგი."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">მუქი თემა იყენებს შავ ფონს იმისთვის, რომ თქვენმა ბატარეამ დიდხანს გაძლოს. მუქი თემის განრიგი ეკრანის გამორთვის შემდეგ გააქტიურდება.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">გამოიყენეთ მუქი ფონი, რათა შეამციროთ ბატარეის მოხმარება და გახადეთ თქვენი ეკრანი უფრო კომფორტულად სანახავი. გამორთული ეკრანისას შეიცვლება თქვენი თემა, თუ გაქვთ განრიგი.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"მუქი თემა ამჟამად მიჰყვება თქვენს ძილის დროის რეჟიმის განრიგს"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"ძილის დროის რეჟიმის პარამეტრები"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{რეჟიმებსაც შეუძლია მუქი თემის ჩართვა.}=1{{mode_1} ასევე რთავს მუქ თემას.}=2{{mode_1} და {mode_2} ასევე რთავს მუქ თემას.}=3{{mode_1}, {mode_2} და {mode_3} ასევე რთავს მუქ თემას.}other{{mode_1}, {mode_2} და კიდევ # რეჟიმი ასევე რთავს მუქ თემას.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"შეგიძლიათ, გამოიყენოთ <xliff:g id="NAME">^1</xliff:g>"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"ბატარეის სტატუსი"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"ბატარეის დატენვის დონე"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"საერთო"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"საერთო პარამეტრები"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">ჰაბის რეჟიმი</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">სამაგრისა და ჩაკეტილი ეკრანის პარამეტრები</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"ჰაბის რეჟიმი"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"ვიჯეტები ჩაკეტილ ეკრანზე"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"თქვენს რჩეულ ვიჯეტებზე წვდომისთვის თქვენი ჩაკეტილი ეკრანიდან გადაფურცლეთ მარცხნივ. \n\nვიჯეტის გამოყენებით აპის გახსნისას თქვენი ვინაობა უნდა დაადასტუროთ. ასევე, გაითვალისწინეთ, რომ ნებისმიერს შეუძლია მათი ნახვა."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"ტრეკპედი, ტრეკ პედი, მაუსი, კურსორი, გადაადგილება, გადაფურცვლა, მარჯვენა დაწკაპუნება, დაწკაპუნება, მანიშნებელი"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"მარჯვენა დაწკაპუნება, შეხება"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"მაუსის შუა ღილაკი"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"ასისტენტის გაშვება"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Gemini-ს გაშვება</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g>-ის გაშვება"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"ასისტენტი"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"მთავარზე გადასვლა"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"ნავიგაციის რეჟიმი, ეკრანის როტაცია"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"გამოხმაურება"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"გამოკითხვაში მონაწილეობა"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Google-ის შშმ პირთა მხარდაჭერის გუნდთან დაკავშირება</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"მარტივი წვდომის გამოკითხვა"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"გაგვიზიარეთ გამოხმაურება"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"რამდენად კმაყოფილი ხართ მუქი თემით?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"სმენის აპარატის ხატულა"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"სმენის აპარატებთან თავსებადობა"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"აუმჯობესებს თავსებადობას გადამცემებთან და ამცირებს არასასურველ ხმაურს"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">შესაძლოა გაზარდოს აუდიოს ხმა, რათა გააუმჯობესოს თავსებადობა ინდუქციურ მარყუჟებთან და შეამციროს არასასურველი ხმაური</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"სმენის მოწყობილობების შესახებ"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"სხვა ისეთი სმენის აპარატების საპოვნელად, რომლებიც ASHA-ს ან LE-აუდიოს მიერ არ არის მხარდაჭერილი, შეეხეთ: &lt;b&gt;ახალი მოწყობილობის დაწყვილება&lt;/b&gt; &gt; &lt;b&gt;მეტი მოწყობილობის ნახვა&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"სხვა ისეთი სმენის აპარატების საპოვნელად, რომლებიც ASHA-ს ან LE-აუდიოს მიერ არ არის მხარდაჭერილი, შეეხეთ: "<b>"ახალი მოწყობილობის დაწყვილება"</b>" და "<b>"მეტი მოწყობილობების ნახვა"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"შუქის მიმართ მგრძნობიარობა, ფოტოფობია, მუქი თემა, შაკიკი, თავის ტკივილი, წაკითხვის რეჟიმი, ღამის რეჟიმი, სიკაშკაშის შემცირება, თეთრი წერტილი"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"მხედველობა, სმენა, უსინათლო, ყრუ, მოტორული, უნარი, დამხმარე, დახმარება, გამოყენების სიმარტივე, წვდომის სიმარტივე, ხელი, დახმარება"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"ფანჯრის გამადიდებელი, მასშტაბირება, გადიდება, მხედველობადაქვეითებული, გადიდება, გადიდება"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">ეკრანის წამკითხველი, გახმოვანება, გახმოვანება, ხმოვანი დახმარება, უსინათლო, მხედველობადაქვეითებული, ტექსტის გახმოვანება (TTS), ტექსტის გახმოვანება, გახმოვანებული უკუკავშირი</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"სუბტიტრები, დახურული სუბტიტრები, დახ. სუბტ., მყისიერი ტრანსკრიფცია, სმენადაქვეითებული, სმენის დაკარგვა, კომუნიკაციური წვდომის მომსახურება რეალურ დროში (CART), მეტყველების გარდაქმნა ტექსტად, სუბტიტრი"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">სუბტიტრები, დახურული სუბტიტრები, დახ. სუბტ., ავტოსუბტიტრები, სმენადაქვეითებული, სმენის დაკარგვა, კომუნიკაციური წვდომის მომსახურება რეალურ დროში (CART), მეტყველების გარდაქმნა ტექსტად, სუბტიტრი</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">შეტყობინებები, სმენადაქვეითებული, სმენის დაკარგვა, ცნობება</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">პირადი მოხმარების ხმის გამაძლიერებელი პროდუქტი (PSAP,) გაძლიერება, ხმის გაძლიერება, სმენადაქვეითებული, სმენის დაკარგვა, გაძლიერება</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"ეკრანის ზომა, დიდი ეკრანი"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"მაღალი კონტრასტი, მხედველობადაქვეითებული, მუქი შრიფტი, მსხვილი შრიფტი"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"მაღალკონტრასტიანი ტექსტი"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">ტექსტის მოსმენა, ხმამაღლა წაკითხვა, ეკრანის გახმოვანება, ეკრანის წამკითხველი, დისლექსია, მონიშვნა წარმოსათქმელად</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"ფერის დარეგულირება"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"ეკრანის გამუქება, ეკრანის გაღიავება"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">მოტორული, სწრაფი მენიუ, დამხმარე მენიუ, შეხება, უნარი, ართრიტი, RSI, ინსულტი, ტრემორი, გაფანტული სკლეროზი, ცერებრული დამბლა, ღილაკი, აპარატურა, დაჭერა, განმეორებითი დაძაბვის დაზიანება, ხელი, ტკივილი, ადაპტირებული, დახმარება</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">ძრავა, გადამრთველი, ხელი, დამხმარე ტექნოლოგია (AT), დამხმარე ტექნოლოგია, პარალიზი, ამიოტროფული გვერდითი სკლეროზი (ALS), სკანირება, ნაბიჯების სკანირება</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"მოტორული, მაუსი, გარე მაუსი, თავის მაუსი, ადაპტირებული მაუსი, ეტლი, ჯოისტიკი"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"სმენის მოწყობილობები, სმენის სირთულე, სმენის დაკარგვა, კოხლეარული იმპლანტები, გამაძლიერებელი მოწყობილობები, ხმის დამამუშავებლები, პირადი მოხმარების ხმის გამაძლიერებელი პროდუქტი (PSAP)"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"სმენადაქვეითებული, სმენის დაკარგვა, სუბტიტრები, დისტანციური აკრეფა, დისტანციური ამკრეფი"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">ხმა, ხმოვანი მართვა, ძრავა, ხელი, მიკროფონი, მიკროფონი, კარნახი, საუბარი, მართვა</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"სამი ღილაკი"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"უნარი, მოტორული, ასაკოვანი, ართრიტი, RSI, ინსულტი, ტრემორი, გაფანტული სკლეროზი, ცერებრული დამბლა, მოკანკალე დამბლა, განმეორებითი დაძაბვის დაზიანება, ხელი"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"დაყოვნება, უნარი, ასაკოვანი"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"ბატარეა იცლება"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"ჩართეთ ბატარეის დამზოგი ბატარეის მუშაობის გასახანგრძლივებლად"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"ბატარეის მუშაობის ხანგრძლივობის გაუმჯობესება"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"ჩართეთ Battery Manager"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">ადაპტაციური ბატარეის ჩართვა</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"ბატარეის დამზოგის ჩართვა"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"ბატარეა შესაძლოა მოსალოდნელზე ადრე ამოიწუროს"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"ბატარეის დამზოგი ჩართულია"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"მაინც დატენა"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"შეამოწმეთ დამტენი აქსესუარი"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"შეიტყვეთ მეტი შეუთავსებელი დატენვის შესახებ"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Battery Manager"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">ადაპტაციური პარამეტრები</string>
     <string name="smart_battery_title" msgid="9095903608520254254">ადაპტაციური ბატარეა</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"როცა Battery Manager ამოიცნობს, რომ აპები ბატარეას ცლის, თქვენ შეგეძლებათ ამ აპების შეზღუდვა. შეზღუდულმა აპებმა შესაძლოა გამართულად არ იმუშაოს და, შედეგად, დაგვიანდეს შეტყობინებები."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">ბატარეის მუშაობის გასახანგრძლივებლად ადაპტაციურმა ბატარეამ, შესაძლოა, შეამციროს ეფექტურობა და ფონური აქტივობა. გარკვეული შეტყობინებები, შესაძლოა, დაგვიანდეს.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"შეზღუდული აპები"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{ბატარეის მოხმარების შეზღუდვა # აპისთვის}other{ბატარეის მოხმარების შეზღუდვა # აპისთვის}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"შეიზღუდა <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"ამ აპებს ეკრძალება ბატარეის გამოყენება ფონურ რეჟიმში. ამის გამო, აპმა შეიძლება გამართულად ვერ იმუშაოს და დაგვიანდეს შეტყობინებები."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Battery Manager-ის გამოყენება"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"ამოცნობა, როცა აპები ბატარეას ცლის"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"გამოავლენს, როდის ცლის აპები ბატარეას"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"გამოავლენს, როდის ცლის აპები ბატარეას"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">ახანგრძლივებს ბატარეის მუშაობას და ახდენს დატენვის ოპტიმიზაციას</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">ზრდის ბატარეის მუშაობის ხანგრძლივობას</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# აპს წვდომა შეზღუდული აქვს}other{# აპს წვდომა შეზღუდული აქვს}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"ბატარეის მზომის წაკითხვასთან დაკავშირებით პრობლემა დაფიქსირდა"</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">შეიტყვეთ მეტი</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"შეეხეთ ამ შეცდომის შესახებ მეტის გასაგებად"</string>
     <string name="power_screen" msgid="4596900105850963806">"ეკრანი"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"სარეზერვო კოპირება და აღდგენა"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"პერსონალური მონაცემები"</string>
     <string name="backup_data_title" msgid="507663517227498525">"მონაცემების სარეზერვო კოპირება"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Google სერვერებზე აპების მონაცემების, Wi-Fi პაროლების და სხვა პარამეტრების შენახვა"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">აპების მონაცემების, Wi-Fi-ს პაროლებისა და სხვა პარამეტრების სარეზერვო ასლების შექმნა Google-ის სერვერებზე</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"სარეზერვო ანგარიში"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"სარეზერვო ანგარიშის მართვა"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"აპის მონაცემების ჩათვლით"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"ამჟამად არცერთი ანგარიში არ ინახავს დამარქაფებულ მონაცემებს"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"გსურთ, თქვენი Wi-Fi პაროლების, სანიშნეების, სხვა პარამეტრებისა და აპების მონაცემების სარეზერვო ასლების მომზადების შეწყვეტა და Google-ის სერვერებიდან ყველა ასლის წაშლა?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"გსურთ, შეწყდეს მოწყობილობის მონაცემებისა (მათ შორის, Wi-Fi პაროლებისა და საუბრის ისტორიის) და აპების მონაცემების (მათ შორის, აპების მიერ შენახული პარამეტრებისა და ფაილების) სარეზერვო ასლების შექმნა და, ამასთანავე, წაიშალოს ყველა ასლი დისტანციურ სერვერებზე?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"მოწყობილობის მონაცემებისთვის (როგორიცაა Wi-Fi პაროლები და საუბრის ისტორია) და აპების მონაცემებისთვის (როგორიცაა აპების მიერ შენახული პარამეტრები და ფაილები) სარეზერვო ასლების ავტომატურად შექმნა განცალკევებით.\n\nროდესაც ჩართავთ სარეზერვო ასლების ავტომატურად შექმნას, მოწყობილობისა და აპების მონაცემები პერიოდულად ცალკე შეინახება. აპის მონაცემები შეიძლება იყოს აპის მიერ შენახული ნებისმიერი მონაცემი (დეველოპერის პარამეტრებზე დაყრდნობით), მათ შორის პოტენციურად სენსიტიური მონაცემები, როგორიცაა კონტაქტები, შეტყობინებები და ფოტოები."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">გსურთ, შეწყდეს მოწყობილობის მონაცემებისა (მათ შორის, Wi-Fi-ს პაროლებისა და საუბრის ისტორიის) და აპების მონაცემების (მათ შორის, აპების მიერ შენახული პარამეტრებისა და ფაილების) სარეზერვო ასლების შექმნა და, ამასთანავე, წაიშალოს Google Drive-ში არსებული ყველა ასლი?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Google Drive-ში მოწყობილობის მონაცემებისა (მათ შორის, Wi-Fi-ს პაროლებისა და საუბრის ისტორიის) და აპების მონაცემების (მათ შორის, აპების მიერ შენახული პარამეტრებისა და ფაილების) სარეზერვო ასლების ავტომატურად შექმნა.\n\nსარეზერვო ასლების ავტომატურად შექმნის ჩართვის შემთხვევაში, მოწყობილობისა და აპების მონაცემები პერიოდულად შეინახება Google Drive-ზე არსებულ პირად საქაღალდეში. აპების მონაცემები გულისხმობს ამა თუ იმ აპის მიერ შენახულ ნებისმიერ მონაცემს (დამოკიდებულია დეველოპერის პარამეტრებზე). ეს შეიძლება იყოს ისეთი კონფიდენციალური მონაცემებიც, როგორიცაა კონტაქტები, შეტყობინებები და ფოტოები.\n\nსარეზერვო მონაცემები Drive-ზე თქვენთვის გამოყოფილ მეხსიერების კვოტაზე გავლენას არ იქონიებს. დიდი ზომის ფაილები, ან ფაილები, რომლებიც დეველოპერების მიერ სერვისიდან გამოირიცხა, არ დაკოპირდება.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"მოწყობილობის ადმინისტრატორის პარამეტრები"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"მოწყობილობის ადმინისტრატორის აპი"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"მოწყობილობის ადმინისტრატორის ამ აპის დეაქტივაცია"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"სამსახურის გამოწვევა, სამსახური, პროფილი"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"სამსახურის პროფილი, მართული პროფილი, გაერთიანება, უნიფიკაცია, სამსახური, პროფილი"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"გაღვიძება, ძილი, არ ჩაკეტოთ, დარჩით განბლოკილი, როცა დაკეცილია, დაკეცვა, დახურვა, ნაკეცი, დახურვა, ეკრანი გამორთულია"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"ჟესტები"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">ჟესტები, მოძრაობები</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"საფულე"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"გადახდა, შეხება, გადახდები"</string>
     <string name="keywords_backup" msgid="707735920706667685">"სარეზერვო ასლი, სარეზერვო ასლის შექმნა"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"პროფილებსშორისი კალენდარი"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"პერსონალურ კალენდარში სამსახურის მოვლენების ჩვენება"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"როდესაც სამსახურის აპები გამორთულია, ისინი დაპაუზებულია და მათზე წვდომა ან მათ მიერ თქვენთვის შეტყობინებების გაგზავნა ვერ მოხდება"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"მეხსიერების მართვა"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"მეხსიერების გამოთავისუფლების ხელშეწყობის მიზნით, მეხსიერების მენეჯერი თქვენი მოწყობილობიდან იმ ფოტოებსა და ვიდეოებს ამოშლის, რომელთა სარეზერვო ასლებიც უკვე შექმნილია."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"ფოტოებისა და ვიდეოების ამოშლა"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"მეხსიერების მენეჯერი"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"მეხსიერების მმართველის გამოყენება"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">გონიერი მეხსიერება</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">სარეზერვო ასლების მქონე ფოტოებისა და ვიდეოების ამოშლა. ამ ფაილების პოვნას Google Photos-ში შეძლებთ.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">დარეზ. ფოტო/ვიდეოების ამოშლა</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">გონიერი მეხსიერება</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">ჭკვიანი მეხსიერების გამოყენება</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"ჟესტები"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"კამერის სწრაფად გახსნა"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"კამერის სწრაფად გასახსნელად, დააჭირეთ ელკვების ღილაკს ორჯერ. მუშაობს ნებისმიერი ეკრანიდან."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"ჟესტები, მალსახმობი"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"გადახდა, გადახდები"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"კამერის ამობრუნება სელფისთვის"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixel კამერაში სელფის რეჟიმის ჩასართავად და გამოსართავად აპით სარგებლობისას ორმაგად მოატრიალეთ მოწყობილობა.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"ნავიგაციის რეჟიმი"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"მოწყობილობის განახლება"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"ინტერაქცია"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"მყისიერი აპები"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"მყისიერი აპების პარამეტრები"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"დაინსტალირებული აპები"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"თქვენს მეხსიერებას ახლა მეხსიერების მენეჯერი მართავს"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">როცა ინტერნეტთან დაკავშირებული იქნებით, ფოტოები და ვიდეოები მაინც იქნება ხელმისაწვდომი იმ ხარისხით, რომელიც სარეზერვო ასლებისთვის აირჩიეთ</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g>-ის ანგარიშები"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"აპის მონაცემების ავტომატური სინქრონიზაცია"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"აპებისთვის მონაცემების ავტომატურად განახლების დაშვება"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"ქსელის სახელი"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"ქსელის სახელის სტატუსის ზოლში ჩვენება"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"მყისიერი აპი"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"გსურთ მეხსიერების მენეჯერის გამორთვა?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">გსურთ, გამორთოთ გონიერი მეხსიერება? \n\nგონიერი მეხსიერება ვერ გამოათავისუფლებს ხელმისაწვდომ სივრცეს, როცა ის თითქმის სავსეა.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"„არ შემაწუხოთ“ რეჟიმის განახლება"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"შეტყობინებების დაპაუზება კონცენტრირების შესანარჩუნებლად"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"ფუნქცია მიუწვდომელია"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"ნაგულისხმევი გათიშული ცვლილებები"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"აპის თავსებადობის ცვლილებები მხოლოდ გამართვადი აპლიკაციებისთვის შეიძლება განხორციელდეს დააინსტალირეთ გამართვადი აპი და ხელახლა ცადეთ."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"დამოკიდებულია სხვა პარამეტრზე"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"ანგარიში"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google ანგარიში</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d ანგარიში"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"მოწყობილობის სახელი"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"ძირითადი ინფორმაცია"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"მდებარეობა"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"თქვენმა ოპერატორმა შეიძლება დააფიქსიროს თქვენი მდებარეობა, როდესაც ამ სერვისს გადაუდებელი ზარებისთვის იყენებთ.\n\nდეტალები იხილეთ თქვენი ოპერატორის კონფიდენციალურობის დებულებაში."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"შეიძლება დაკარგოთ წვდომა ნებისმიერ დარჩენილ დროზე ან მონაცემზე. ამოშლამდე გადაამოწმეთ თქვენს პროვაიდერთან."</string>
-    <string name="content_capture" msgid="868372905432812238">"აპის კონტენტი"</string>
+    <string name="content_capture" msgid="868372905432812238">პერსონალიზება აპების მონაცემების გამოყენებით</string>
     <string name="content_capture_summary" msgid="49720773699715531">"დართეთ ნება აპებს, გაგზავნონ კონტენტი Android სისტემაში"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"სისტემის გროვის ამონაწერის აღბეჭდვა"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"მეხსიერების ტეგირების გაფართოება"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">შეტყობინება რეალურ დროში (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"ტექსტის გამოყენება ზარის დროს კომუნიკაციისთვის"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">ხილვადი არ არის</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">ზარის დროს ხილვადი</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">ყოველთვის ხილვადი</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"გამოირთოს VoLTE?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"ეს ასევე გამორთავს თქვენს 5G-კავშირს.\nაუდიოზარის მიმდინარეობისას ინტერნეტის გამოყენებას ვერ შეძლებთ და ზოგიერთმა აპმა შესაძლოა ვერ იმუშაოს."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"აღსრულების შეჩერება ქეშირებული აპებისთვის"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"აპში აქტივობის შემოწმება ფიშინგის კუთხით"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"სკანირების გამოყენება თაღლითური აპებისთვის"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"სკანირების გამოყენება სამსახურის თაღლითური აპებისთვის"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">სკანირება მიმდინარეობს ფარულად თქვენს მოწყობილობაზე, ამოწმებს რა აპში აქტივობას ფიშინგის ან სხვა მავნე ქცევის კუთხით. თუ მსგავსი ქცევა გამოვლინდა, ზოგიერთი აპის ინფორმაცია გაეგზავნება Google Play Protect-ს, რათა გადამოწმდეს საფრთხე და ეცნობოთ აპის მომხმარებლებს.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">ეს არის უსაფრთხოებასთან დაკავშირებული დაცული ფუნქცია. Google-თან არ გაზიარდება მოწყობილობის ან პერსონალური ინფორმაცია. \n\nფიშინგი წარმოადგენს ავტორიზაციის მონაცემების ან სხვა პერსონალური ინფორმაციის მოპარვის მცდელობას.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"პაროლი დაყენებულია"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN-კოდი უკვე დაყენებულია"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"კურსორის ჩვენება სტილუსის გადატარების დროს"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">აპებმა აჩვენოს მანიშენებელი კურსორის გადატარებისას</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"მედიის DRM პარამეტრები"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Software Secure Crypto-ს იძულება"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"DRM გასაღების მმართველის იძულება პროგრამულ უზრუნველყოფაზე დაფუძნებული თეთრი ყუთის კრიპტოგრაფიის გამოსაყენებლად"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"იდენტობის შემოწმების ფუნქცია მეტ აპთან მუშაობს"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"დეტალების ნახვა"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"იდენტობის შემოწმების ფუნქცია მეტ აპთან მუშაობს"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"იდენტობის შემოწმება და საათი"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"დაკავშირებული საათით იდენტობის შემოწმების ფუნქცია თქვენი ვინაობის დასადასტურებლად და აპებზე არასასურველი წვდომის თავიდან ასარიდებლად დამატებით საშუალებებს ამატებს"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"იდენტობის შემოწმება და საათი"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"განახლებები:\n"<ul><li>"თუ საათს დააკავშირებთ, როდესაც სანდო ადგილას არ იქნებით, აპებზე წვდომისთვის შეგიძლიათ გამოიყენოთ ბიომეტრიული მონაცემები ან თქვენი PIN-კოდი"</li>\n<li>"დროთა განმავლობაში იდენტობის შემოწმების ფუნქციამ შეიძლება თქვენი ვინაობის დადასტურებისა და თქვენს მოწყობილობაზე აპების დაცვის დამატებითი საშუალებები დაამატოს. "<a href="https://support.google.com/android?p=identity_check">"შეიტყვეთ მეტი იმის შესახებ, თუ როდის და სად ხართ დაცული"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">იდენტობის შემოწმება და Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">დაკავშირებული Pixel Watch-ით იდენტობის შემოწმების ფუნქცია თქვენს მოწყობილობაზე ამატებს ვინაობის დადასტურებისა და აპებზე არასასურველი წვდომის თავიდან არიდების დამატებით საშუალებებს</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">იდენტობის შემოწმება და Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">განახლებები: &lt;ul&gt;&lt;li&gt;Pixel Watch 3-თან ან უფრო ახალ მოდელთან დაკავშირება საშუალებას გაძლევთ, აპებზე წვდომისთვის გამოიყენოთ ბიომეტრიული მონაცემები ან თქვენი PIN-კოდი, როდესაც არ ხართ სანდო ადგილას. &lt;/li&gt;&lt;li&gt;დროთა განმავლობაში იდენტობის შემოწმების ფუნქციამ შეიძლება თქვენი ვინაობის დადასტურებისა და თქვენს მოწყობილობაზე აპების დაცვის დამატებითი საშუალებები დაამატოს. &lt;a href=https://support.google.com/android?p=identity_check&gt;შეიტყვეთ მეტი იმის შესახებ, თუ როდის და სად ხართ დაცული&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"სხვა პარამეტრები"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"ავტომატური შევსება, შეტყობინებები, და სხვა"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"კონფიდენციალურობის მართვის პარამეტრები"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"მდებარეობაზე წვდომა"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"გაეცანით აპებს და სერვისებს, რომლებსაც აქვს მდებარეობაზე წვდომა"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"იდენტობის შემოწმების ფუნქცია მეტ აპებთან მუშაობს"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"იდენტობის შემოწმება და თქვენი საათი"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"დაკავშირებული საათით იდენტობის შემოწმების ფუნქცია თქვენს მოწყობილობაზე ამატებს ვინაობის დასადასტურებისა და აპებზე არასასურველი წვდომის თავიდან არიდების დამატებით საშუალებებს"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">იდენტობის შემოწმება და თქვენი Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">დაკავშირებული Pixel Watch-ით იდენტობის შემოწმების ფუნქცია თქვენს მოწყობილობაზე ამატებს ვინაობის დადასტურებისა და აპებზე არასასურველი წვდომის თავიდან არიდების დამატებით საშუალებებს</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"დეტალების ნახვა"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"პარამეტრების შემოწმება ვერ მოხერხდა"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"ინფორმაცია ჯერ არ არის"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect სკანირება ჩართულია</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect რეგულარულად ამოწმებს თქვენს აპებსა და მოწყობილობას მავნე ქმედებების გამოსავლენად. უსაფრთხოებასთან დაკავშირებული პრობლემების აღმოჩენის შემთხვევაში თქვენ მიიღებთ შეტყობინებას.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">აპების უსაფრთხოება, Play Protect, Google Play Protect, აპების უსაფრთხოება</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google ანგარიში დაცულია</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google-ის უსაფრთხოების შემოწმება, Google-ის უსაფრთხოება, უსაფრთხოების შემოწმება, ანგარიშის უსაფრთხოება, Google ანგარიშის უსაფრთხოება, Google ანგარიში</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">საძიებო ცენტრი, მოწყობილობების მოძიება, ჩემი მოწყობილობის პოვნა, დაკარგული მოწყობილობა</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"განახლებები"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"განახლებები, განახლება, უსაფრთხოების განახლება, უსაფრთხოების განახლებები"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">განახლებები, განახლება, სისტემის განახლება, სისტემის განახლებები, Google Play სისტემის განახლება, Play სისტემის განახლება</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"მოწყობილობის დაბლოკვა, ეკრანის დაბლოკვა, ჩაკეტილი ეკრანი, ჩაკეტილი ეკრანი, პაროლი, PIN-კოდი, ნიმუში, განბლოკვა"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"თითის ანაბეჭდი, თითი, თითის ანაბეჭდის დამატება"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"სახით განბლოკვა, სახე"</string>

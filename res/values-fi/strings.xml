@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Valmis"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Etsi yksityinen tila vierittämällä alas"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Kirjaudu sisään"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Kirjaudu tilillesi , jotta voit käyttää yksityistä tilaa"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Käytä yksityisen tilan kanssa kirjautumalla Google-tilille</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Ei nyt"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Jatka"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Yksityisen tilan lukitustavan valinta"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Lähetä laitteen nimi"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Jaa laitteen nimi verkolle"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Tilaus"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Katso tai muuta tilausta"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">Katso tai muuta OpenRoaming-tilausta</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Satunnaistettu MAC-osoite"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Lisää laite"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Yhdistä <xliff:g id="SSID">%1$s</xliff:g> keskittämällä QR-koodi alle"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Menee automaattisesti pois päältä kello <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Menee automaattisesti pois päältä nukkuma-ajan päätyttyä"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"Laitetaan pois päältä, kun <xliff:g id="ID_1">%1$s</xliff:g> päättyy"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Tumman teeman musta tausta auttaa pidentämään akunkestoa joillain näytöillä. Tumman teeman aikataulut otetaan käyttöön vasta, kun näyttö on sammutettu."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Tumman taustan käyttö tekee näytön katselusta miellyttävämpää ja vähentää akun käyttöä joillain näytöillä. Jos sinulla on aikataulu, teema vaihtuu, kun näyttö on sammutettu."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Tumman teeman musta tausta auttaa pidentämään akunkestoa. Tumman teeman aikataulut otetaan käyttöön vasta, kun näyttö on sammutettu.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Tumman taustan käyttö vähentää akun käyttöä ja tekee näytön katselusta miellyttävämpää. Jos sinulla on aikataulu, teema vaihtuu, kun näyttö on sammutettu.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Tumma teema toimii nyt nukkuma-aikatilasi aikataulun mukaan"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Nukkuma-aikatilan asetukset"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Tilat voivat myös laittaa tumman teeman päälle.}=1{{mode_1} laittaa myös tumman teeman päälle}=2{{mode_1} ja {mode_2} laittavat myös tumman teeman päälle.}=3{{mode_1}, {mode_2} ja {mode_3} laittavat myös tumman teeman päälle.}other{{mode_1}, {mode_2} ja # muuta laittavat myös tumman teeman päälle.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"<xliff:g id="NAME">^1</xliff:g> on nyt käytettävissä"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Akun tila"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Akun taso"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Yhteiskäyttö"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Yhteiskäytön asetukset"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Hubitila</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Telineen ja lukitusnäytön asetukset</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Hubitila"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Widgetit lukitusnäytöllä"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"Pääset suosikkiwidgeteihin pyyhkäisemällä lukitusnäytöltä vasemmalle. \n\nKun avaat sovelluksen widgetin avulla, sinun täytyy vahvistaa henkilöllisyytesi. Muista myös, että widgetit näkyvät kaikille."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"ohjauslevy, ohjaus levy, hiiri, kohdistin, vieritä, pyyhkäise, klikkaa kakkospainikkeella, klikkaa, osoitin"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"klikkaa kakkospainikkeella, napauta"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Hiiren keskipainike"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Julkaisuavustaja"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Käynnistä Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"Käynnistä <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Assistant"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Siirry etusivulle"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Navigointitila, näytön kierto"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Lähetä palautetta"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Vastaa kyselyyn"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Ota yhteyttä Googlen tukeen toimintarajoitteisille ja vammaisille</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Saavutettavuuskysely"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Anna palautetta"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Kuinka tyytyväinen olet tummaan teemaan?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Kuulolaitepikakomento"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Kuulolaiteyhteensopivuus"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Parantaa yhteensopivuutta induktiosilmukan kanssa ja vähentää ei-toivottuja ääniä"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Voi lisätä audion äänenvoimakkuutta, jotta se sopii paremmin yhteen induktiosilmukan kanssa ja vähentää ei-toivottuja ääniä</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"Tietoa kuulolaitteista"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"Jos haluat löytää muita kuulolaitteita, joita ASHA tai LE Audio ei tue, valitse &lt;/b&gt;Muodosta uusi laitepari&lt;/b&gt; ja &lt;/b&gt;Näytä lisää laitteita&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Jos haluat löytää muita kuulolaitteita, joita ASHA tai LE Audio ei tue, valitse "<b>"Muodosta uusi laitepari"</b>" ja "<b>"Näytä lisää laitteita"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"valonarkuus, fotofobia, tumma teema, migreeni, päänsärky, lukutila, yötila, vähennä kirkkautta, valkoinen piste"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"näkö, kuulo, sokea, kuuro, motoriikka, liikkuvuus, avustava, avustus, helppokäyttöisyys, helppo pääsy, käsi, ohje"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Ikkunan suurennus, heikko näkö, suurenna, muuta suuremmaksi"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Näytönlukuohjelma, ääniselostus, Ääniapuri, sokea, heikko näkö, TTS, tekstistä puheeksi, äänipalaute</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Tekstitykset, videotekstitykset, Live Transcribe, huonokuuloinen, kuulon heikkeneminen, CART, puheesta tekstiksi, tekstitys"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Tekstitykset, videotekstitykset, Livetekstitys, huonokuuloinen, kuulon heikkeneminen, CART, puheesta tekstiksi, tekstitys</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Ilmoitukset, huonokuuloinen, kuulon heikkeneminen, ilmoita</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">hätäkeskus, vahvista, äänenvahvistus, huonokuuloinen, kuulon heikkeneminen, vahvistus</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"näytön koko, suuri näyttö"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"Voimakas kontrasti, heikko näkö, lihavoitu fontti, lihavoitu kirjasin"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"suurikontrastinen teksti"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Kuuntele tekstiä, lue ääneen, puhu näytölle, näytönlukuohjelma, lukihäiriö, teksti puhuttuna</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"säädä väriä"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"tummenna näyttö, vaalenna näyttö"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">motoriikka, pikavalikko, apuvalikko, kosketus, liikkuvuus, niveltulehdus, aivoinfarkti, vapina, MS-tauti, CP-vamma, painike, laitteisto, painallus, rasitusvamma, käsi, kipu, esteetön, ohje</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">motoriikka, vaihda, käsi, AT, avustava teknologia, halvaus, ALS, skannaus, kohtien selaus</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"motoriikka, hiiri, ulkoinen hiiri, päähiiri, mukautuva hiiri, pyörätuoli, ohjainsauva"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"kuulolaitteet, huonokuuloinen, kuulon heikkeneminen, sisäkorvaimplantit, äänenvahvistuslaitteet, puheprosessorit, henkilökohtaiseen äänenvahvistukseen tarkoitetut tuotteet (PSAP)"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"huonokuuloinen, kuulon heikkeneminen, tekstitykset, kaukokirjoitin, TTY"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">ääni, ääniohjaus, motoriikka, käsi, mikki, mikrofoni, sanelu, puhe, ohjaus</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"kolme painiketta"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"liikkuvuus, motoriikka, iäkäs, niveltulehdus, aivoinfarkti, vapina, MS-tauti, CP-vamma, tärinä, rasitusvamma, käsi"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"viive, liikkuvuus, iäkäs"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Akun varaustaso alhainen"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Laita virransäästö päälle akunkeston parantamiseksi"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Paranna akunkestoa"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Ota Virranhallinta käyttöön"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Ota käyttöön mukautuva virta</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Ota Virransäästö käyttöön"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Akku voi loppua odotettua aiemmin"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"Virransäästö päällä"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Lataa silti"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Tarkista latauslisävaruste"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Lue lisää yhteensopimattomasta latauksesta"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Virranhallinta"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Mukautuvat asetukset</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Mukautuva virta</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Voit rajoittaa sovelluksia, joiden virranhallinta havaitsee käyttävän paljon virtaa. Rajoitetut sovellukset eivät ehkä toimi oikein ja ilmoituksia voidaan näyttää viiveellä."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">Mukautuva virta voi pidentää akun kestoa rajoittamalla suorituskykyä ja taustatoimintaa. Osa ilmoituksista voi näkyä viiveellä.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Rajoitetut sovellukset"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# sovelluksen akun käyttöä rajoitetaan}other{# sovelluksen akun käyttöä rajoitetaan}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"Rajoitettu <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Näitä sovelluksia on rajoitettu käyttämästä akkua taustalla. Ne eivät ehkä toimi oikein ja ilmoitukset voivat näkyä viiveellä."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Käytä virranhallintaa"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Tunnista akkua kuluttavat sovellukset"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Tunnistaa, kun sovellukset kuluttavat akkua"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Tunnistaa, kun sovellukset kuluttavat akkua"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Pidennä akunkestoa ja optimoi lataamista</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Pidennä akunkestoa</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# rajoitettu sovellus}other{# rajoitettua sovellusta}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Ongelma akkumittarin lukemisessa"</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Lue lisää</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Katso lisätietoja virheestä napauttamalla"</string>
     <string name="power_screen" msgid="4596900105850963806">"Näyttö"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"Varmuuskopiointi &amp; palautus"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"Henkilökohtaiset tiedot"</string>
     <string name="backup_data_title" msgid="507663517227498525">"Tietojen varmuuskopiointi"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Varmuuskopioi sovelluksen tiedot, Wi-Fi-salasanat ja muut asetukset Googlen palvelimille"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">Varmuuskopioi sovelluksen tiedot, Wi-Fi-salasanat ja muut asetukset Googlen palvelimille.</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"Varmuuskopiointitili"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"Varatilin ylläpito"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"Sisällytä sovellustiedot"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Mikään tili ei tällä hetkellä tallenna varmuuskopioituja tietoja"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Haluatko lopettaa Wi-Fi-salasanojen, kirjanmerkkien, muiden asetuksien ja sovellustietojen varmuuskopioinnin ja poistaa kaikki kopiot Googlen palvelimilta?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Lopetetaanko laitteen tietojen (kuten Wi-Fi-salasanojen ja soittohistorian) ja sovellusten tietojen (kuten asetusten ja sovellusten tallentamien tiedostojen) automaattinen varmuuskopiointi? Myös vanhat varmuuskopiot poistetaan etäpalvelimilta."</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Varmuuskopioi laitteen tiedot (kuten Wi-Fi-salasanat ja soittohistoria) sekä sovellusten tiedot (kuten asetukset ja sovellusten tallentamat tiedostot) automaattisesti etäyhteyden kautta.\n\nKun otat automaattisen varmuuskopioinnin käyttöön, laitteen ja sovellusten tiedot varmuuskopioidaan säännöllisesti etäyhteyden kautta. Sovellusten tietoihin voi sisältyä mitä tahansa tietoja, joita sovellukset ovat tallentaneet (kehittäjien asetuksien perusteella). Ne saattavat sisältää myös arkaluontoisia tietoja, kuten yhteystietoja, viestejä ja kuvia."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Lopetetaanko laitteen tietojen (kuten Wi-Fi-salasanojen ja soittohistorian) ja sovellusten tietojen (kuten asetusten ja sovellusten tallentamien tiedostojen) automaattinen varmuuskopiointi? Myös vanhat varmuuskopiot poistetaan Google Drivesta.</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Varmuuskopioi automaattisesti laitteen tiedot (kuten Wi-Fi-salasanat ja soittohistoria) sekä sovellusten tiedot (kuten asetukset ja sovellusten tallentamat tiedostot) Google Driveen.\n\nKun otat automaattiset varmuuskopiot käyttöön, laitteen ja sovellusten tiedot tallennetaan säännöllisesti yksityiseen kansioon Google Drivessa. Sovelluksen tiedot voivat olla mitä tahansa sovelluksen tallentamia tietoja (kehittäjän asetusten perustella), myös mahdollisesti yksityisiä tietoja, kuten yhteystietoja, viestejä ja kuvia.\n\nVarmuuskopioita ei vähennetä Drive-tallennustilan kiintiöstäsi. Suuria ja kehittäjien estämiä tiedostoja ei varmuuskopioida.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Laitteenhallinnan asetukset"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Laitteenhallintasovellus"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Poista laitteenhallintasovellus käytöstä"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"työhaaste, työ, profiili"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"työprofiili, hallinnoitu profiili, yhdistä, yhdistäminen, työ, profiili"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"aktivoitu, virransäästö, älä lukitse, pidä avattuna taitettaessa, taittaminen, sulkeminen, taita, sulje, näyttö pois päältä"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"eleet"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">ele, liikkeet</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"maksa, napauta, maksut"</string>
     <string name="keywords_backup" msgid="707735920706667685">"varmuuskopiointi, varmuuskopio"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Kahden profiilin kalenteri"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Näytä työtapahtumat omassa kalenterissa"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"Kun työsovellukset ovat pois päältä, ne ovat keskeytettyinä, joten niitä ei voi käyttää eivätkä ne voi lähettää ilmoituksia"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Tallennustilan hallinnointi"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"Tallennustilan hallinta vapauttaa tilaa poistamalla varmuuskopioituja kuvia ja videoita laitteeltasi."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Poista kuvia ja videoita"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Tallennustilan hallinta"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Käytä tallennustilan ylläpitoa"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Smart Storage</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Varmuuskopioidut kuvat ja videot poistetaan, kun tallennustila on lähes täynnä. Tiedostot ovat yhä käytettävissä Google Kuvissa.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Poista varmuuskopioidut kuvat ja videot</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Smart Storage</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Käytä Smart Storagea</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Eleet"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Avaa kamera nopeasti"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"Avaa kamera nopeasti painamalla virtapainiketta kahdesti. Tämä toimii miltä tahansa näytöltä."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"eleet, pikakuvake"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"maksa, maksut"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Ota selfie kääntämällä kameraa"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Siirry Pixel-kameran selfie-tilaan tai poistu siitä kiertämällä laitetta kahdesti, kun sovellus on auki.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Navigointitila"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Laitteen päivittäminen"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Toiminta"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Pikasovellukset"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Pikasovellusvalinnat"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Asennetut sovellukset"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Tallennustilan hallinta hallitsee nyt tallennustilaasi."</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Verkkoyhteyden avulla voit silti käyttää kuvia ja videoita sillä laadulla, millä ne varmuuskopioitiin.</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"Tilit: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Sovellusdatan automaattinen synkronointi"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Salli sovellusten päivittää dataa automaattisesti"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Verkon nimi"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Näytä verkon nimi tilapalkissa"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Pikasovellus"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Poistetaanko tallennustilan hallinta käytöstä?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Poistetaanko Smart Storage käytöstä? \n\nSmart Storage ei enää vapauta tallennustila, kun se on lähes täynnä.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Päivitä Älä häiritse ‑tila"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Keskeytä ilmoitukset, jotta voit keskittyä"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Ominaisuutta ei ole saatavilla"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Oletusarvoisesti käytöstä poistettujen muutokset"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Sovelluksen yhteensopivuusmuutoksia voi tehdä vain virheenkorjausta tukevissa sovelluksissa. Asenna virheenkorjausta tukeva sovellus ja yritä uudelleen."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Toinen asetus vaikuttaa siihen."</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Tili"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google-tili</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d tiliä"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Laitteen nimi"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Perustiedot"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Sijainti"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Operaattori voi selvittää sijaintisi, kun käytät ominaisuutta hätäpuheluihin.\n\nKatso lisätietoja operaattorin tietosuojakäytännöstä."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Voit menettää jäljellä olevan ajan tai datan. Tarkista asia operaattorilta ennen poistamista."</string>
-    <string name="content_capture" msgid="868372905432812238">"Sovelluksen sisältö"</string>
+    <string name="content_capture" msgid="868372905432812238">Personoi sovellusdatan perusteella</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Salli sovellusten lähettää sisältöä Android-järjestelmään"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Tallenna järjestelmän keon vedos"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Reaaliaikainen tekstinsyöttö (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Viesti tekstiviesteillä puhelun aikana"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Ei näkyvissä</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Näkyvissä puhelun aikana</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Aina näkyvissä</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"Laitetaanko VoLTE pois päältä?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"Tämä laittaa myös 5G-yhteytesi pois päältä.\nPuhelun aikana et voi käyttää internetiä ja kaikki sovellukset eivät välttämättä toimi."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Keskeytä välimuistiin tallennetut sovellukset"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Tarkista sovellustoiminta tietojenkalastelun osalta"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Käytä tarkistusta petollisten sovellusten havaitsemiseen"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Käytä tarkistusta petollisten työsovellusten havaitsemiseen"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Tarkistus tapahtuu yksityisesti laitteellasi. Siinä tarkistetaan sovellustoiminta tietojenkalastelun tai muun petollisen toiminnan varalta. Jos sellaista havaitaan, joitakin sovelluksen tietoja lähetetään Google Play Protectille uhkien varmistamiseksi ja käyttäjien varoittamiseksi.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Tämä on suojattu turvaominaisuus. Yhtäkään laitetta tai henkilökohtaisia tietoja ei jaeta Googlelle. \n\nTietojenkalastelu on yritys varastaa kirjautumistietoja tai muita henkilökohtaisia tietoja.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Salasana on nyt otettu käyttöön"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN-koodi on nyt asetettu"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Näytä osoitin kohdistettaessa"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Salli sovellusten näyttää osoitin osoittamisen aikana</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Median DRM-asetukset"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Pakota ohjelmiston suojauksen salaus"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"Pakota DRM-avaimen hallinta käyttämään ohjelmistopohjaista whitebox-salausta"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Tunnistautuminen toimii useammissa sovelluksissa"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Näytä tiedot"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Tunnistautuminen toimii useammissa sovelluksissa"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Tunnistautuminen ja kello"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Kun kello on yhdistetty, tunnistautumiseen lisätään enemmän tapoja todistaa henkilöllisyys ja estää ei-toivottu pääsy sovelluksiin"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Tunnistautuminen ja kello"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Päivitykset:\n"<ul><li>"Kun yhdistät kellon, voit käyttää joko biometriikkaa tai PIN-koodia sovellusten avaamiseen, kun et ole luotetussa paikassa."</li>\n<li>"Tunnistautumiseen voidaan ajan mittaan lisätä enemmän tapoja todistaa henkilöllisyys ja suojata laitteen sovelluksia. "<a href="https://support.google.com/android?p=identity_check">"Lue lisää siitä, milloin ja missä sinua suojataan"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Tunnistautuminen ja Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Kun Pixel Watch on yhdistetty, tunnistautumiseen lisätään enemmän tapoja todentaa henkilöllisyys ja estää ei-toivottu pääsy sovelluksiin</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Tunnistautuminen ja Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Päivitykset: &lt;ul&gt;&lt;li&gt;Kun yhdistät Pixel Watch 3:n tai uudemman, voit käyttää joko biometriikkaa tai PIN-koodia sovellusten avaamiseen, kun et ole luotetussa paikassa. &lt;/li&gt;&lt;li&gt;Tunnistautumiseen voidaan ajan mittaan lisätä enemmän tapoja todistaa henkilöllisyys ja suojata laitteen sovelluksia. &lt;a href=https://support.google.com/android?p=identity_check&gt;Lue lisää siitä, milloin ja missä olet suojattu&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Muut asetukset"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Automaattinen täyttö, ilmoitukset ja muuta"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Yksityisyysasetukset"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Pääsy sijaintiin"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Katso sovellukset ja palvelut, joilla on pääsy sijaintiin"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Tunnistautuminen toimii useammissa sovelluksissa"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Tunnistautuminen ja kello"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Kun kello on yhdistetty, tunnistautumiseen lisätään enemmän tapoja todistaa henkilöllisyys ja estää ei-toivottu pääsy sovelluksiin"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Tunnistautuminen ja Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Kun Pixel Watch on yhdistetty, tunnistautumiseen lisätään enemmän tapoja todentaa henkilöllisyys ja estää ei-toivottu pääsy sovelluksiin</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Näytä tiedot"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Asetusten tarkistaminen ei onnistunut"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Ei vielä tietoja"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect ‑tarkastus on päällä</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect tarkistaa säännöllisesti, esiintyykö sovelluksissa tai laitteella haitallista toimintaa. Saat ilmoituksen, jos tietoturvariskejä löydetään.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">Sovellusten tietoturva, Play Protect, Google Play Protect, sovellusten turvallisuus</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google-tili on suojattu</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Googlen tietoturvatarkistus, Googlen tietoturva, tietoturvatarkistus, tilin tietoturva, Google tilin tietoturva, Google tili</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find Hub, Laitteiden etsiminen, Paikanna laite, Kadonnut laite</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Päivitykset"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Päivitykset, päivitys, tietoturvapäivitys, tietoturvapäivitykset"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Päivitykset, päivitys, järjestelmäpäivitys, järjestelmäpäivitykset, Google Play järjestelmäpäivitys, Play järjestelmäpäivitys</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Laitteen lukitus, näytön lukitus, lukitusnäyttö, salasana, PIN, kuvio, lukitus, avaa lukitus"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Sormenjälki, sormi, lisää sormenjälki"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Kasvojentunnistusavaus, kasvot"</string>

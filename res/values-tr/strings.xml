@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Bitti"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Özel alanı bulmak için aşağı kaydırın"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Oturum aç"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Özel alanınızda kullanılacak hesapta oturum açın"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Özel alanınızda kullanılacak Google Hesabı\'nda oturum açın</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Şimdi değil"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Devam"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Özel alanınız için bir kilit seçin"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Cihaz adını gönder"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Bu cihazın adını ağ ile paylaşın"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Abonelik"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Aboneliği görüntüleyin veya değiştirin"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">OpenRoaming aboneliğini görüntüleyin veya değiştirin</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Rastgele MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Cihaz ekleyin"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Cihazı “<xliff:g id="SSID">%1$s</xliff:g>” ağına eklemek için QR kodunu ortalayın"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Şu saatte otomatik olarak kapatılacak: <xliff:g id="ID_1">%1$s</xliff:g>."</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Uyku vaktinden sonra otomatik olarak kapatılır"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"<xliff:g id="ID_1">%1$s</xliff:g> sona erdiğinde kapanacak"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Koyu tema özelliği, pilinizin daha uzun süre dayanmasını sağlamak için bazı ekranlarda siyah kullanır. Koyu tema, açılmak için ekranınızın kapanmasını beklemeye programlanır."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Ekranınızı daha rahat görüntülemek ve bazı ekranlarda pil kullanımını azaltmak için koyu arka plan kullanın. Program kullanıyorsanız ekran kapandığında temanız değişir."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Koyu tema, pilinizin daha uzun süre dayanmasına yardımcı olmak için siyah arka plan kullanır. Koyu tema, açılmak için ekranınızın kapanmasını beklemeye programlanır.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Pil kullanımını azaltmak ve ekranınızı daha rahat görebilmek için koyu bir arka plan kullanın. Bir zamanlama ayarladıysanız ekran kapandığında temanız değişir.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Koyu tema şu anda Uyku Vakti modu programınıza uyuyor."</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Uyku Vakti modu ayarları"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Modlar, koyu temayı da açabilir.}=1{{mode_1}, koyu temayı da açar.}=2{{mode_1} ve {mode_2} koyu temayı da açar.}=3{{mode_1}, {mode_2} ve {mode_3}, koyu temayı da açar.}other{{mode_1}, {mode_2} ve diğer # mod, koyu temayı da açar.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"<xliff:g id="NAME">^1</xliff:g> biriminizi kullanmaya başlayabilirsiniz"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Pil durumu"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Pil düzeyi"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Ortak"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Ortak ayarlar"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Hub modu</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Yuva ve kilit ekranı seçenekleri</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Hub Modu"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Kilit ekranındaki widget\'lar"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"Favori widget\'larınıza erişmek için kilit ekranınızda sola kaydırın. \n\nBir uygulamayı widget kullanarak açmak için kimliğinizi doğrulamanız gerekir. Ayrıca, widget\'ların herkes tarafından görüntülenebileceğini unutmayın."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"dokunmatik yüzey, dokunma yüzeyi, fare, imleç, kaydırma, sağ tıklama, tıklama, işaretçi"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"sağ tıklama, dokunma"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Orta fare düğmesi"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Asistan\'ı başlat"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Gemini\'ı başlat</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g> uygulamasını başlat"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Asistan"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Ana sayfaya git"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Gezinme modu, ekran döndürme"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Geri bildirim gönder"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Ankete katıl"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Google Engelliler İçin Destek Ekibi\'ne ulaşın</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Erişilebilirlik Anketi"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Görüşlerinizi paylaşın"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Koyu temadan ne kadar memnunsunuz?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"İşitme cihazı kısayolu"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"İşitme cihazı uyumluluğu"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Telecoil\'lerle uyumluluğu artırır ve istenmeyen gürültüyü azaltır"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Telecoil\'lerle uyumluluğu artırmak ve istenmeyen gürültüyü azaltmak için ses seviyesini yükseltebilir</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"İşitme cihazları hakkında"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA veya LE Audio tarafından desteklenmeyen diğer işitme cihazlarını bulmak için &lt;b&gt;Yeni cihaz eşle&lt;/b&gt; &gt; &lt;b&gt;Diğer cihazlara göz atın&lt;/b&gt; seçeneğine dokunun"</string>
     <!-- unknown quoting pattern: original -1, translation 1 -->
@@ -2851,23 +2851,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"ışık hassasiyeti, ışık korkusu, karanlık tema, migren, baş ağrısı, okuma modu, gece modu, parlaklığı azalt, beyaz nokta"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"görme, işitme, kör, sağır, motor, el becerisi, yardımcı, yardım, kullanım kolaylığı, erişim kolaylığı, el, yardım"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Pencere büyütücü, Yakınlaştırma, Büyütme, Az görme, Genişlet, büyüt"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Ekran okuyucu, seslendirme, seslendir, Sesli Yardım, Görme engelli, Az Görme, metin okuma, metin oku, sözlü geri bildirim</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Altyazı, altyazılar, alt yazılar, Canlı Transkript, duyma zorluğu, duyma kaybı, gerçek zamanlı altyazı, sesle yazma, alt yazı"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Altyazı, altyazılar, alt yazılar, Canlı Altyazı, duyma zorluğu, duyma kaybı, gerçek zamanlı altyazı, sesle yazma, alt yazı</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Bildirimler, duyma zorluğu, duyma kaybı, bildirim</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">kişisel ses yükseltme cihazı, ses yükselt, ses yükseltme, duyma zorluğu, duyma kaybı, ses yükseltici</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"ekran boyutu, geniş ekran"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"Yüksek kontrast, az görme, kalın yazı tipi, kalın harfler"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"yüksek kontrastlı metin"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Metin okuma, sesli okuma, ekranı oku, ekran okuyucu, disleksi, seç ve dinle</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"renk ayarlama"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"ekran karartma, ekran rengini açma"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">motor, hızlı menü, yardımcı menü, dokunma, el becerisi, eklem iltihabı, rsi, inme, titreme, multipl skleroz, beyin felci, düğme, donanım, basmak, aşırı kullanım sonucu kas rahatsızlığı, el, acı, erişilebilir, yardım</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">motor, anahtar, el, yardımcı, yardımcı teknoloji, felç, ALS, tarama, adım adım tarama</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"motor, fare, harici fare, kafa faresi, uyarlanan fare, tekerlekli sandalye, kontrol çubuğu"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"işitme cihazları, işitme zorluğu, işitme kaybı, koklear implantlar, ses yükseltme cihazları, ses işlemcileri, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"duyma zorluğu, duyma kaybı, altyazı, işitme engelli iletişim cihazı, işitme engelli iletişim"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">ses, sesli kontrol, motor, el, mikrofon, sesli erişim, dikte, konuşma, kontrol</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"üç düğme"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"el becerisi, motor, yaşlı, eklem iltihabı, rsi, inme, titreme, multipl skleroz, beyin felci, sallanma, aşırı kullanım sonucu kas rahatsızlığı, el"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"gecikme, el becerisi, yaşlı"</string>
@@ -2946,7 +2946,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Düşük pil seviyesi"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Pil ömrünü uzatmak için Pil Tasarrufu özelliğini aç"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Pil ömrünü iyileştirme"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Pil Yöneticisi\'ni aç"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Uyarlanabilir Pil\'i aç</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Pil Tasarrufu\'nu aç"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Pil normalden daha erken bitebilir"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"Pil Tasarrufu açık"</string>
@@ -2977,20 +2977,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Yine de şarj et"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Şarj aksesuarını kontrol edin"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Uyumsuz şarj hakkında daha fazla bilgi"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Pil Yöneticisi"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Uyarlanabilir tercihler</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Uyarlanabilir Pil</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Pil Yöneticisi uygulamaların pili çok harcadığını algıladığında, bu uygulamaları kısıtlama seçeneğiniz olacaktır. Kısıtlanmış uygulamalar düzgün bir şekilde çalışmayabilir ve bildirimlerinde gecikme olabilir."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">Uyarlanabilir Pil özelliği, pil ömrünü uzatmak için performansı düşürebilir ve arka plan etkinliğini azaltabilir. Bazı bildirimler gecikebilir.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Kısıtlanmış uygulamalar"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# uygulamanın pil kullanımı sınırlandırılıyor}other{# uygulamanın pil kullanımı sınırlandırılıyor}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"<xliff:g id="TIME">%1$s</xliff:g> kısıtlandı"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Bu uygulamaların arka planda pil kullanımı kısıtlanmıştır. Bu uygulamalar beklendiği gibi çalışmayabilir ve bildirimlerinde gecikme olabilir."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Pil Yöneticisi\'ni kullan"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Uygulamalar pili çok harcadığında algıla"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Uygulamalar pili çok harcadığında algılama"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Uygulamalar pili çok harcadığında algılama"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Pil ömrünü uzatıp şarj işlemini optimize et</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Pil ömrünü uzatma</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# uygulama kısıtlandı}other{# uygulama kısıtlandı}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Pil ölçer okunurken sorun oluştu."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Daha fazla bilgi</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Bu hata hakkında daha fazla bilgi edinmek için dokunun"</string>
     <string name="power_screen" msgid="4596900105850963806">"Ekran"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3222,8 +3222,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Şu anda, yedeklenmiş verileri depolayan hiçbir hesap yok"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Kablosuz şifrelerinizin, yer işaretlerinizin, diğer ayarlarınızın ve uygulama verilerinizin yedeklenmesi iptal edilip, Google sunucularındaki tüm kopyaları silinsin mi?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Cihaz verilerinin (kablosuz ağ şifreleri ve çağrı geçmişi gibi) ve uygulama verilerinin (uygulamalar tarafından depolanan ayarlar ve dosyalar gibi) yedeklenmesi durdurulsun ve uzak sunuculardaki tüm kopyaları silinsin mi?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Cihaz verilerini (Kablosuz ağ şifreleri ve çağrı geçmişi gibi) ve uygulama verilerini (uygulamalar tarafından depolanan ayarlar ve dosyalar gibi) uzaktan otomatik olarak yedekleyin.\n\nOtomatik yedeklemeyi açtığınızda, cihaz ve uygulama verileri periyodik olarak uzaktan kaydedilir. Uygulama verileri, bir uygulamanın kaydettiği (geliştirici ayarlarına göre), kişiler, iletiler ve fotoğraflar gibi hassas olabilecek verileri de içeren her türlü veri olabilir."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Cihaz verilerinin (kablosuz ağ şifreleri ve çağrı geçmişi gibi) ve uygulama verilerinin (uygulamalar tarafından depolanan ayarlar ve dosyalar gibi) yedeklenmesi durdurulsun ve Google Drive\'daki tüm kopyaları silinsin mi?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Cihaz verilerini (kablosuz ağ şifreleri ve çağrı geçmişi gibi) ve uygulama verilerini (uygulamalar tarafından depolanan ayarlar ve dosyalar gibi) Google Drive\'a otomatik olarak yedekleyin.\n\nOtomatik yedeklemeyi etkinleştirdiğinizde, cihaz ve uygulama verileri belirli aralıklarla Google Drive\'daki özel bir klasöre kaydedilir. Uygulama verileri, bir uygulamanın (geliştirici ayarlarına göre) kaydettiği herhangi bir veri olabilir. Buna kişiler, iletiler ve fotoğraflar gibi potansiyel olarak hassas veriler dahildir.\n\nYedek veriler Drive depolama kotanıza dahil edilmez. Büyük dosyalar veya geliştiricilerin hizmetin dışında tutmak üzere seçtiği dosyalar yedeklenmez.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Cihaz yöneticisi ayarları"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Cihaz yönetimi uygulaması"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Bu cihaz yönetimi uygulamasını devre dışı bırak"</string>
@@ -3715,7 +3715,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"iş güvenlik sorusu, iş, profil"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"iş profili, yönetilen profil, birleştir, birleştirme, iş, profil"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"uyanık, uyku, kilitleme, katlanmışken kilidi açık bırak, katlama, kapatma, katla, kapat, ekran kapalı"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"hareketler"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">hareket, hareketler</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"cüzdan"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"ödeme, dokunma, ödemeler"</string>
     <string name="keywords_backup" msgid="707735920706667685">"yedek, yedekleme"</string>
@@ -3796,7 +3796,7 @@
     <string name="notification_sound_default" msgid="8630353701915294299">"Varsayılan bildirim sesi"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"Varsayılan alarm sesi"</string>
     <string name="vibrate_when_ringing_option_ramping_ringer" msgid="2798848945803840348">"Önce titreştir, sonra sesi yavaşça yükselt"</string>
-    <string name="spatial_audio_title" msgid="1775370104206884711">"Üç Boyutlu Ses"</string>
+    <string name="spatial_audio_title" msgid="1775370104206884711">Üç boyutlu ses</string>
     <string name="dial_pad_tones_title" msgid="3536945335367914892">"Tuş takımı sesleri"</string>
     <string name="screen_locking_sounds_title" msgid="5695030983872787321">"Ekran kilitleme sesi"</string>
     <string name="charging_sounds_title" msgid="5261683808537783668">"Şarj olma sesi ve titreşim"</string>
@@ -4895,11 +4895,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Profiller arası takvim"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"İş etkinliklerini kişisel takvimimde göster"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"İş uygulamaları kapalıyken duraklatıldığı için erişilemez veya size bildirim gönderemez"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Depolama alanını yönet"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"Depolama alanında yer açmaya yardımcı olmak için depolama yöneticisi, yedeklenen fotoğrafları ve videoları cihazınızdan kaldırır."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Fotoğrafları ve videoları kaldır"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Depolama yöneticisi"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Depolama yöneticisini kullan"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Akıllı Depolama</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Depolama alanı dolmak üzere olduğunda yedeklenmiş fotoğraf ve videolar kaldırılır. Kaldırılan fotoğraf ve videoları Google Fotoğraflar\'da bulabilirsiniz.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Yedeklenen fotoğraf ve videoları kaldır</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Akıllı Depolama Alanı</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Akıllı Depolama\'yı kullan</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Hareketler"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Kamerayı hızlı aç"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"Kamerayı çabuk açmak için güç düğmesine iki kez dokunun. Tüm ekranlarda çalışır."</string>
@@ -4917,7 +4917,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"hareketler, kısayol"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"öde, ödemeler"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Selfie için kamerayı değiştir"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixel Kameranızda selfie modunu açıp kapatmak için uygulama içindeyken cihazı iki kez döndürün.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Gezinme modu"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Cihazı güncelleyin"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Etkileşim"</string>
@@ -5007,7 +5007,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Hazır uygulamalar"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Hazır Uygulama tercihleri"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Yüklü uygulamalar"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Depolama alanınız artık depolama yöneticisi tarafından yönetiliyor"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Bağlandığınızda, fotoğraflara ve videolara yedekleme için seçtiğiniz kalitede erişmeye devam edebileceksiniz</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g> kullanıcısının hesapları"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Uygulama verilerini otomatik olarak senkronize et"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Uygulamaların verileri otomatik olarak yenilemesine izin verin"</string>
@@ -5169,7 +5169,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Ağ adı"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Ağ adını durum çubuğunda göster"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Hazır uygulama"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Depolama yöneticisi kapatılsın mı?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Akıllı Depolama kapatılsın mı? \n\nDepolama alanınız neredeyse dolu olduğu zaman Akıllı Depolama yer açamayacaktır.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Rahatsız Etmeyin özelliğini güncelleyin"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Konsantrasyonunuzu bozmamak için bildirimleri duraklatın"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Özellik kullanılamıyor"</string>
@@ -5203,7 +5203,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Varsayılan olarak devre dışı değişiklikler"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Uygulama uyumluluğuyla ilgili değişiklikler sadece hata ayıklaması yapılabilecek uygulamalar için değiştirilebilir. Hata ayıklaması yapılabilecek bir uygulama yükleyip tekrar deneyin"</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Bu ayar başka bir ayara bağlı"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Hesap"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google Hesabı</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d hesap"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Cihaz adı"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Temel bilgiler"</string>
@@ -5522,7 +5522,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Konum"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Bu hizmeti acil durum aramaları için kullandığınızda operatörünüz konum verilerinizi toplayabilir.\n\nAyrıntılı bilgi için operatörünüzün gizlilik politikasına göz atın."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Kalan sürelere veya verilere erişiminizi kaybedebilirsiniz. Kaldırmadan önce sağlayıcınıza başvurun."</string>
-    <string name="content_capture" msgid="868372905432812238">"Uygulama içeriği"</string>
+    <string name="content_capture" msgid="868372905432812238">Uygulama verilerini kullanarak kişiselleştir</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Uygulamaların Android sistemine içerik göndermesine izin verin"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Sistem bellek yığını dökümünü yakala"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Bellek Etiketleme Uzantısı"</string>
@@ -5616,11 +5616,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Gerçek zamanlı mesaj (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Arama sırasında mesajla iletişim kurun"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Görünmez</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Arama sırasına görünür</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Her zaman görünür</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"VoLTE kapatılsın mı?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"Bu işlem ayrıca 5G bağlantınızı kapatır.\nSesli arama sırasında interneti kullanamazsınız ve bazı uygulamalar çalışmayabilir."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Önbelleğe alınan uygulamalarda yürütmeyi askıya al"</string>
@@ -5899,11 +5899,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Uygulama etkinliğini kimlik avı açısından kontrol edin"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Yanıltıcı uygulamaları tespit etmek için taramayı kullan"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"İş profilinde yanıltıcı uygulamaları tespit etmek için taramayı kullan"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Doğrudan cihazınızda gizli olarak yürütülen tarama işlemi, uygulama etkinliğini kimlik avı veya diğer yanıltıcı davranışlar açısından kontrol eder. Böyle bir durum tespit edilirse tehdidi onaylamak ve uygulama kullanıcılarını uyarmak için bazı uygulama bilgileri Google Play Protect\'e gönderilir.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Bu, koruma amaçlı bir güvenlik özelliğidir. Cihaz veya kişisel bilgileriniz Google ile paylaşılmaz. \n\nKimlik avı, oturum açma kimlik bilgilerini veya diğer kişisel bilgileri çalmaya yönelik bir girişimdir.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Şifre ayarlandı"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN ayarlandı"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Üzerine gelince işaretçiyi göster"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Bir öğenin üzerine gelindiğinde uygulamaların imleç göstermesine izin ver</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Medya DRM ayarları"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Yazılımın Güvenli Şifrelemesini Zorunlu Kıl"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"DRM anahtar yönetimini, yazılım tabanlı beyaz kutu şifrelemesi kullanmaya zorlar"</string>
@@ -6127,10 +6127,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Kimlik Kontrolü daha fazla uygulamada kullanılabilir"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Ayrıntıları göster"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Kimlik Kontrolü daha fazla uygulamada kullanılabilir"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Kimlik Kontrolü ve Kol Saati"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Bir kol saati bağlandığında; Kimlik Kontrolü özelliği uygulamalara istenmeyen erişimi önlemek için kimliğinizi doğrulamanın daha başka yollarını sunar"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Kimlik Kontrolü ve Kol Saati"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Güncellemeler:\n"<ul><li>"Kol saati bağlayarak, güvenilir bir yerde olmadığınızda uygulamalara erişmek için biyometri özelliğini veya PIN\'inizi kullanabilirsiniz."</li>\n<li>"Kimlik Kontrolü, kimliğinizi doğrulamak ve cihazınızdaki uygulamaların güvenliğini sağlamak için zaman içinde daha başka yöntemler sunabilir. "<a href="https://support.google.com/android?p=identity_check">"Korunduğunuz zamanlar ve yerler hakkında daha fazla bilgi edinin"</a></li></ul>"."</string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Kimlik Kontrolü ve Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Bir Pixel Watch bağlandığında; Kimlik Kontrolü özelliği uygulamalara istenmeyen erişimi önlemek için kimliğinizi doğrulamanın daha başka yollarını sunar</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Kimlik Kontrolü ve Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Güncellemeler: &lt;ul&gt;&lt;li&gt;Pixel Watch 3 veya sonraki bir modeli bağlayarak güvenilir yerde olmadığınızda uygulamalara erişmek için biyometri verilerini veya PIN\'inizi kullanabilirsiniz. &lt;/li&gt;&lt;li&gt;Kimlik Kontrolü zamanla kimliğinizi doğrulamanın ve cihazınızdaki uygulamaların güvenliğini sağlamanın daha fazla yolunu ekleyebilir. &lt;a href=https://support.google.com/android?p=identity_check&gt;Korunduğunuz zamanlar ve yerler hakkında daha fazla bilgi edinin&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Diğer ayarlar"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Otomatik doldurma, bildirimler ve daha fazlası"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Gizlilik denetimleri"</string>
@@ -6143,22 +6143,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Konum erişimi"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Konum erişimi olan uygulama ve hizmetlere göz atın"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Kimlik Kontrolü daha fazla uygulamada kullanılabilir"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Kimlik Kontrolü ve kol saatiniz"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Bir kol saati bağlandığında; Kimlik Kontrolü özelliği uygulamalara istenmeyen erişimi önlemek için kimliğinizi doğrulamanın daha başka yollarını sunar"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Kimlik Kontrolü ve Pixel Watch\'unuz</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Bir Pixel Watch bağlandığında; Kimlik Kontrolü özelliği uygulamalara istenmeyen erişimi önlemek için kimliğinizi doğrulamanın daha başka yollarını sunar</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Ayrıntıları göster"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Ayarlar kontrol edilemedi"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Henüz bilgi yok"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Google Play Protect taraması açık</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Google Play Protect, uygulamalarınızı ve cihazınızı zararlı davranışlara karşı düzenli olarak kontrol eder. Herhangi bir güvenlik riski bulunursa size bilgi verilir.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">Uygulama güvenliği, Google Play Protect, Uygulama emniyeti</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google Hesabı korunuyor</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google Güvenlik Kontrolü, Google Güvenlik, Güvenlik kontrolü, Hesap güvenliği, Google hesap güvenliği, Google Hesabı</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Cihaz Takip Merkezi, Cihaz bulma, Cihazımı Bul, Kayıp cihaz</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Güncellemeler"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Güncellemeler, Güncelleme, Güvenlik güncellemesi, Güvenlik güncellemeleri"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Güncellemeler, Güncelleme, Sistem güncelleme, Sistem güncellemeleri, Google Play sistem güncellemesi, Google Play sistem güncellemesi</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Cihaz kilidi, Ekran kilidi, Kilit ekranı, Şifre, PIN, Desen, Kilitleme, Kilit açma"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Parmak izi, Parmak, Parmak izi ekle"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Yüz Tanıma Kilidi, Yüz"</string>
