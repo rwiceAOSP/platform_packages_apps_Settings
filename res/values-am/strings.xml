@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"ተከናውኗል"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"የግል ቦታን ለማግኘት ወደ ታች ይሸብልሉ"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"በመለያ ይግቡ"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"በግል ቦታዎ ለመጠቀም ወደ መለያ ይግቡ"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">በግል ቦታዎ ለመጠቀም ወደ Google መለያ ይግቡ</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"አሁን አይደለም"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"ቀጥል"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"ለግል ቦታዎ ቁልፍን ይምረጡ"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"የመሣሪያ ስም ይላኩ"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"የዚህን መሳሪያ ስም ለአውታረ መረቡ ያጋሩ"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"የደንበኝነት ምዝገባ"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"የደንበኝነት ምዝገባን ይመልከቱ ወይም ይቀይሩ"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">የOpenRoaming ደንበኝነት ምዝገባን ይመልከቱ ወይም ይቀይሩ</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"የዘፈቀደ የተደረገ ማክ"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"መሣሪያ ያክሉ"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"ወደ «<xliff:g id="SSID">%1$s</xliff:g>» መሣሪያ ለማከል የQR ኮዱን ከዚህ በታች መሃል ላይ ያስቀምጡት"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"<xliff:g id="ID_1">%1$s</xliff:g> ላይ በራስ-ሰር ይጠፋል"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"ከመኝታ ሰዓት በኋላ በራስ-ሰር ይጠፋል"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"<xliff:g id="ID_1">%1$s</xliff:g> ሲያበቃ ይጠፋል"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"ጨለማ ገጽታ ላይ የባትሪ ዕድሜ እንዲራዘም ለማገዝ በአንዳንድ ማያ ገጾች ጥቁር ጀርባን ይጠቀማል። የጨለማ ገጽታ መርሐግብሮች ለመብራት ማያ ገጽዎ እስኪጠፋ ድረስ ይጠብቃሉ።"</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"ማያ ገፅዎን ለመመልከት የበለጠ ምቹ ለማድረግ እና በአንዳንድ ማያ ገፆች ላይ የባትሪ አጠቃቀምን ለመቀነስ ጠቆር ያለ ዳራ ይጠቀሙ። መርሐግብር ካለዎት ማያ ገፅዎ ሲጠፋ ገጽታዎ ይለወጣል።"</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">ጨለማ ገጽታ የባትሪዎን ዕድሜ ለማራዘም እንዲያግዝ ጥቁር ጀርባን ይጠቀማል። የጨለማ ገጽታ መርሐግብሮች ለመብራት ማያ ገጽዎ እስኪጠፋ ድረስ ይጠብቃሉ።</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">የባትሪ አጠቃቀምን ለመቀነስ እና ማያ ገጽዎን ለመመልከት የበለጠ ምቹ ለማድረግ ጠቆር ያለ ዳራ ይጠቀሙ። መርሐግብር ካለዎት ማያ ገጽዎ ሲጠፋ ገጽታዎ ይለወጣል።</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"ጠቆር ያለ ገጽታ በአሁኑ ጊዜ የእርስዎን የመኝታ ሰዓት ሁነታ መርሐግብር እየተከተለ ነው"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"የመኝታ ሰዓት ሁነታ ቅንብሮች"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{እንዲሁም ሁነታ ጠቆር ያለ ገጽታን ማብራት ይችላል።}=1{እንዲሁም {mode_1} ጠቆር ያለ ገጽታን ያበራል።}=2{እንዲሁም {mode_1} እና {mode_2} ጠቆር ያለ ገጽታን ያበራሉ።}=3{እንዲሁም {mode_1}፣ {mode_2} እና {mode_3} ጠቆር ያለ ገጽታን ያበራሉ።}one{እንዲሁም {mode_1}፣ {mode_2} እና # ሌሎች ጠቆር ያለ ገጽታን ያበራሉ።}other{እንዲሁም {mode_1}፣ {mode_2} እና # ሌሎች ጠቆር ያለ ገጽታን ያበራሉ።}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"የእርስዎን <xliff:g id="NAME">^1</xliff:g> መጠቀም መጀመር ይችላሉ"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"የባትሪሁኔታ"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"የባትሪደረጃ፡"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"የጋራ"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"የጋራ ቅንብሮች"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">የመገናኛ ሁነታ</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">የመተከል እና የማያ ገፅ ቁልፍ አማራጮች</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"የመገናኛ ሁነታ"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"በማያ ገጽ ቁልፍ ላይ ያሉ ምግብሮች"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"ተወዳጅ ምግብሮችዎን ለመድረስ ከማያ ገጽ ቁልፍዎ ላይ ወደ ግራ ያንሸራትቱ። \n\nምግብር በመጠቀም መተግበሪያ ሲከፍቱ እርስዎ መሆንዎን ማረጋገጥ ይኖርብዎታል። እንዲሁም ማንኛውም ሰው ሊመለከታቸው እንድሚችል ያስታውሱ።"</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"የመከታተያ ፓድ፣ የትራክ ፓድ፣ መዳፊት፣ ጠቋሚ፣ ሸብልል፣ ማንሸራተት፣ የቀኝ ጠቅታ፣ ጠቅ ያድርጉ፣ ጠቋሚ"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"የቀኝ ጠቅታ፣ መታ ያድርጉ"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"የመዳፊት የመሃል አዝራር"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"የማስጀመር ረዳት"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Gemini አስጀምር</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g> ያስጀምሩ"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"ረዳት"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"ወደ መነሻ ሂድ"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"የአሰሳ ሁነታ፣ የማያ ገፅ ሽክርክሪት"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"ግብረመልስ ላክ"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"የዳሰሳ ጥናት ላይ ይሳተፉ"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Google የአካል ጉዳተኛ ድጋፍ ሰጪን ያነጋግሩ</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"የየተደራሽነት የዳሰሳ ጥናት"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"ግብረመልስዎን ያጋሩ"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"ጠቆር ባለ ገጽታ ምን ያህል ረክተዋል?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"የመስሚያ መሣሪያ አቋራጭ"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"የመስሚያ ረዳት ተኳዃኝነት"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"ከቴሌኮይሎች ጋር ተኳኋኝነትን ያሻሽላል እና ያልተፈለገ ድምፅ ይቀንሳል"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">ከቴሌኮይሎች ጋር ተኳኋኝነትን ለማሻሻል እና የማይፈለግ ድምፅን ለመቀነስ የኦዲዮ መጠንን ሊጨምር ይችላል።</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"ስለማዳመጫ መሣሪያዎች"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"በASHA ወይም LE ኦዲዮ የማይደገፉ ሌሎች የመስማት ችሎታ መሣሪያዎችን ለማግኘት &lt;b&gt;አዲስ መሣሪያ አጣምር&lt;/b&gt; &gt; &lt;b&gt;ተጨማሪ መሣሪያዎችን ይመልከቱ&lt;/b&gt; ላይ መታ ያድርጉ"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"በASHA ወይም LE ኦዲዮ የማይደገፉ ሌሎች የመስማት ችሎታ መሣሪያዎችን ለማግኘት "<b>"አዲስ መሣሪያ አጣምር"</b>" ከዚያም "<b>"ተጨማሪ መሣሪያዎችን ይመልከቱ"</b>" ላይ መታ ያድርጉ"</string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"የብርሃን ስሜታዊነት፣ የፎቶፊብያ፣ ጠቆር ያለ ገጽታ፣ ማይግሬን፣ ራስ ምታት፣ የንባብ ሁነታ፣ የማታ ሁነታ፣ ብሩህነትን ይቀንሱ፣ ነጭ ነጥብ"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"ዕይታ፣ መስማት፣ ዓይነ ስውር፣ መስማት የተሳነው፣ ሞተር፣ ቅልጥፍና፣ ረዳት፣ ዕርዳታ፣ የአጠቃቀም ቀላልነት፣ የመድረስ ቀላልነት፣ እጅ፣ እገዛ"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"የመስኮት ማጉያ፣ ኣጕላ፣ ማጉላት፣ ዝቅተኛ-ዕይታ፣ ማተለቅ፣ ያተልቁ"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">ማያ ገፅ አንባቢ፣ የድምፅ ተደራቢ፣ የድምፅ ድጋፍ፣ ዓይነ ስውር፣ ዝቅተኛ-ዕይታ፣ TTS፣ ከጽሑፍ ወደ ንግግር፣ የቃል ግብረመልስ</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"የመግለጫ ጽሑፎች፣ ዝግ መግለጫ ጽሑፎች፣ ካርቦን ቅጂ (ካቅ)፣ የቀጥታ ጽሁፍ ግልባጭ፣ የመስማት ችግር፣ መስማት አለመቻል፣ ተሳቢ፣ ከንግግር- ወደ-ጽሁፍ፣ የግርጌ ጽሑፎች"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">የመግለጫ ጽሑፎች፣ ዝግ መግለጫ ጽሑፎች፣ ካርቦን ቅጂ (ካቅ)፣ የቀጥታ ጽሁፍ ግልባጭ፣ የመስማት ችግር፣ መስማት አለመቻል፣ ተሳቢ፣ ከንግግር- ወደ-ጽሁፍ፣ የግርጌ ጽሑፎች</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">ማሳወቂያዎች ፣ ለመስማት ችግር፣ መስማት አለመቻል፣ ማሳወቅ</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP፣ ድምፅ ማጉያ፣ ድምፅ ማጉላት፣ የመስማት ችግር፣ መስማት አለመቻል፣ ማጉላት</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"የማያ ገፅ መጠን፣ ትልቅ ማያ ገፅ"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"ከፍተኛ ንፅፅር፣ ዝቅተኛ-ዕይታ፣ ደፋር ቅርጸ-ቁምፊ፣ ደፋር መልክ"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"ከፍተኛ ንጽጽር ጽሑፍ"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">ጽሑፍን ይስሙ፣ ጮክ ብለህ አንብብ፣ ማያ ገፅ ላይ ያለውን ተናገር፣ ማያ ገፅ አንባቢ፣ ዲስሌክሲያ፣ ለመናገር ምረጥ</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"ቀለም ያስተካክሉ"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"ማያ ገጹን ወደ ጨለማ ይቀይሩ፣ ማያ ገጹን ወደ ብርሃን ይቀይሩ"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">ሞተር፣ ፈጣን ምናሌ፣ አጋዥ ምናሌ፣ ንክኪ፣ ቅልጥፍና፣ አርትራይቲስ፣ አርኤስአይ፣ ስትሮክ፣ መንቀጥቀጥ፣ መልቲፕል ስክለሮሲስ፣ ሰረብራል ፓልሲ፣ አዝራር፣ ሃርድዌር፣ መጫን፣ ተደጋጋሚ የጫና ጉዳት፣ እጅ፣ ሕመም፣ ተደራሽ፣ እገዛ</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">ሞተር፣ ማብሪያ/ማጥፊያ፣ እጅ፣ ኤቲ፣ ቴክኖሎጂ፣ ሽባነት፣ ኤኤልኤስ፣ መቃኘት፣ ደረጃ መቃኘት</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"ሞተር፣ መዳፊት፣ ውጪያዊ መዳፊት፣ ዋና መዳፊት፣ የሚለምድ መዳፊት፣ ተሽከርካሪ ወንበር፣ ጆይስቲክ"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"የመስሚያ አጋዥ መሣሪያዎች፣ የመስማት ችግር፣ የመስማት ችሎታን ማጣት፣ ኮክሌር ተከላዎች፣ የማጉያ መሣሪያዎች፣ የድምፅ ማቀናበሪያዎች፣ ፒኤስኤፒ"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"የመስማት ችግር፣ መስማት አለመቻል፣ መግለጫ ጽሑፎች፣ TTY"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">ድምፅ፣ የድምፅ ቁጥጥር፣ ሞተር፣ እጅ፣ ማይክሮፎን፣ ማይክሮፎን፣ መግለጫ፣ ይናገሩ፣ ቁጥጥር</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"ሦስት አዝራሮች"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"ቅልጥፍና፣ ሞተር፣ አዛውንት፣ አርትራይተስ፣ አርኤስአይ፣ ስትሮክ፣ መንቀጥቀጥ፣ መልቲፕል ስክሌሮሲስ፣ ሰረብራክል ፓልሲ፣ መንቀጥቀጥ፣ ተደጋጋሚ የጫና ጉዳት፣ እጅ"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"መዘግየት፣ ቅልጥፍና፣ የበላይ"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"የባትሪ ደረጃ ዝቅተኛ ነው"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"የባትሪ ዕድሜን ለማራዘም የባትሪ ቆጣቢን ያብሩ"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"የባትሪ ዕድሜን ያሻሽሉ"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"ባትሪ አስተዳዳሪን ያብሩ"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">ተለማማጅ ባትሪን ያብሩ</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"ባትሪ ቆጣቢን አብራ"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"ባትሪ ከተጠበቀው ጊዜ ቀድሞ ሊያልቅ ይችላል"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"የባትሪ ኃይል ቆጣቢ በርቷል"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"ለማንኛውም ኃይል ሙላ"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"የኃይል መሙላት መለዋወጫን ይፈትሹ"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"ስለ ተኳዃኝ ያልሆነ ኃይል መሙላት የበለጠ ይወቁ"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"የባትሪ አስተዳዳሪ"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">ተስማሚ ምርጫዎች</string>
     <string name="smart_battery_title" msgid="9095903608520254254">ተለማማጅ ባትሪ</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"ባትሪ አስተዳዳሪ መተግበሪያዎች ባትሪን አንጠፍጥፈው እየጨረሱት እንደሆነ ፈልጎ ሲደርስበት እነዚህን መተግበሪያዎች ለመገደብ አማራጭ ይኖርዎታል። የተገደቡ መተግበሪያዎች በአግባቡ ላይሠሩ ይችላሉ እና ማሳወቂያዎች ሊዘገዩ ይችሉ ይሆናል።"</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">የባትሪ ዕድሜን ለማራዘም የተስማሚ ባትሪ የአፈፃፀምን እና የጀርባ እንቅስቃሴን ሊቀንስ ይችላል። አንዳንድ ማሳወቂያዎች ሊዘገዩ ይችላሉ</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"የተገደቡ መተግበሪያዎች"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{ለ# መተግበሪያ የባትሪ አጠቃቀምን በመገደብ ላይ}one{ለ# መተግበሪያ የባትሪ አጠቃቀምን በመገደብ ላይ}other{ለ# መተግበሪያዎች የባትሪ አጠቃቀምን በመገደብ ላይ}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"የተገደበው <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"እነዚህ መተግበሪያዎች ከዳራ ባትሪ አጠቃቀም የተከለከሉ ናቸው። እንደተጠበቀው ላይሰሩ ይችላሉ፣ እና ማሳወቂያዎች ሊዘገዩ ይችላሉ።"</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"የባትሪ አስተዳዳሪን ይጠቀሙ"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"መተግበሪያዎች ባትሪን ሲያንጠፈጥሩት ፈልገህ ዕወቅ"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"መተግበሪያዎች ባትሪ ሲያንጠፈጥፉ ማወቅ"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"መተግበሪያዎች ባትሪ ሲያንጠፈጥፉ ማወቅ"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">የባትሪ ዕድሜን ያራዝሙና ኃይል መሙላትን ያመቻቹ</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">የባትሪ ዕድሜን አራዝም</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# መተግበሪያ ተገድቧል}one{# መተግበሪያ ተገድቧል}other{# መተግበሪያዎች ተገድበዋል}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"የባትሪ መለኪያውን የማንበብ ችግር።"</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">የበለጠ ለመረዳት</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"ስለዚህ ስህተት የበለጠ ለመረዳት መታ ያድርጉ"</string>
     <string name="power_screen" msgid="4596900105850963806">"ማያ"</string>
     <string name="power_cpu" msgid="1820472721627148746">"ሲፒዩ"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"ምትኬ &amp; እነበረበት መልስ"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"የግል ውሂብ"</string>
     <string name="backup_data_title" msgid="507663517227498525">"ውሂቤን መጠባበቂያ"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"የመተግበሪያ ውሂብ፣ የWi-Fi ይለፍ ቃላት እና ሌሎች ቅንብሮች በGoogle አገልጋዮች ላይ መጠባበቂያ ያስቀምጡላቸው"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">የመተግበሪያ ውሂብ፣ የWi-Fi ይለፍ ቃላት እና የሌሎች ቅንብሮች ምትኬ ወደ Google አገልጋዮች ያስቀምጡ</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"መለያ መጠባበቂያ"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"የምትኬ መለያን ያቀናብሩ"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"የመተግበሪያ ውሂብ አካትት"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"በአሁኑ ጊዜ ምንም መለያ ተተኪ አኑር ውሂብ እያከማቸ አይደለም።"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"የWi-Fi ይለፍ ቃላትዎን፣ ዕልባቶችዎን፣ ሌሎች ቅንብሮችዎን፣ እና የመተግበሪያ ውሂብዎን መጠባበቂያ መስራት ይቆም፣ እና እንዲሁም በGoogle አገልጋዮች ላይ ያሉ ቅጂዎችም ይሰረዙ?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"የመሣሪያ ውሂብ (እንደ የWi-Fi ይለፍ ቃሎች እና የጥሪ ታሪክ ያሉ) እና የመተግበሪያ ውሂብ (እንደ በመተግበሪያዎች የተከማቹ ቅንብሮች እና ፋይሎች ያሉ) ምትኬ ማስቀመጥ ቆሞ በርቀት አገልጋዮች ላይ ያሉ ሁሉም ቅጂዎች ይደምሰሱ?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"በራስ-ሰር የመሣሪያ ውሂብ (እንደ Wi-Fi የይለፍ ቃሎች እና የጥሪ ታሪክ የመሳሰሉ) እና የመተግበሪያ ውሂብ (እንደ በመተግበሪያዎች የተቀመጡ ቅንብሮች እና ፋይሎች) በርቀት በምትኬ ያስቀምጡ።\n\nራስ-ሰር በምትኬ ማስቀመጥን ሲያበሩ፣ የመሣሪያ እና የመተግበሪያ ውሂብ በተወሰነ ክፍለ ጊዜ በርቀት ይቀመጣሉ። የመተግበሪያ ውሂብ (በገንቢ ቅንብሮች ላይ የሚመረኮዝ ሆኖ)፣ እንደ እውቂያዎች፣ መልዕክቶች፣ እና ፎቶዎች የመሳሰሉ አደጋ ሊያስክትሉ የሚችሉ ውሂብን ጨምሮ ማናቸውም መተግበሪያ ያስቀመጠው ውሂብ ሊሆን ይችላል።"</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">የመሣሪያ ውሂብ (እንደ የWi-Fi ይለፍ ቃላት እና የጥሪ ታሪክ ያለ) እና የመተግበሪያ ውሂብ (እንደ በመተግበሪያዎች የተከማቹ ቅንብሮች እና ፋይሎች ያሉ) ምትኬ ማስቀመጥ ቆሞ በGoogle Drive ላይ ያሉ ሁሉም ቅጂዎች ይደምሰሱ?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">የመሣሪያ ውሂብ (እንደ የWi-Fi ይለፍ ቃላት እና የጥሪ ታሪክ ያሉ) እና የመተግበሪያ ውሂብ (እንደ በመተግበሪያዎች የተከማቹ ቅንብሮች እና ፋይሎች ያለ) ምትኬ በራስ-ሰር Google Drive ላይ ያስቀምጡ።\n\nራስ-ሰር ምትኬን ሲያበሩ የመሣሪያ እና የመተግበሪያ ውሂብ በየጊዜው Google Drive ላይ ወዳለ የግል አቃፊ ይቀመጣል። የመተግበሪያ ውሂብ እንደ እውቂያዎች፣ መልዕክቶች እና ፎቶዎች ያሉ ሚስጥራዊነት ሊኖራቸው የሚችል ውሂብ ጨምሮ አንድ መተግበሪያ የሚያስቀምጠው ማንኛውም ውሂብ (በገንቢ ቅንብሮች ላይ የተመሠረተ) ሊሆን ይችላል።\n\nየምትኬ ውሂብ በDrive ማከማቻ ኮታዎ ላይ አይቆጠርም። የትልቅ ፋይሎች ወይም ገንቢዎች ከአገልግሎቱ ለማግለል የመረጧቸው የፋይሎች ምትኬ አይቀመጥላቸውም።</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"የመሣሪያ አስተዳዳሪ ቅንብሮች"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"የመሣሪያ አስተዳዳሪ መተግበሪያ"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"ይህን የመሣሪያ አስተዳዳር መተግበሪያ አቦዝን"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"የሥራ ፈተና፣ ሥራ፣ መገለጫ"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"የሥራ መገለጫ፣ የሚተዳደር መገለጫ፣ አዋህድ፣ ውህደት፣ ሥራ፣ መገለጫ"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"ንቃ፣ አንቀላፋ፣ አትቆልፍ፣ በማጠፍ ላይ እንደተከፈተ ይቆይ፣ በማጠፍ ላይ፣ በመዝጋት ላይ፣ እጠፍ፣ ዝጋ፣ ማያ ገጽ ይጥፋ"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"የጣት ምልክቶች"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">የጣት ምልክት፣ እንቅስቃሴዎች</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"ይክፈሉ፣ መታ ያድርጉ፣ ክፍያዎች"</string>
     <string name="keywords_backup" msgid="707735920706667685">"ምትኬ"</string>
@@ -3795,7 +3795,7 @@
     <string name="notification_sound_default" msgid="8630353701915294299">"ነባሪ የማሳወቂያ ድምፅ"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"ነባሪ የማንቂያ ድምፅ"</string>
     <string name="vibrate_when_ringing_option_ramping_ringer" msgid="2798848945803840348">"በመጀመሪያ ንዘር በመቀጠል በዝግታ ደውል"</string>
-    <string name="spatial_audio_title" msgid="1775370104206884711">"Spatial ኦዲዮ"</string>
+    <string name="spatial_audio_title" msgid="1775370104206884711">ከባቢያዊ ኦዲዮ</string>
     <string name="dial_pad_tones_title" msgid="3536945335367914892">"የመደወያ ሰሌዳ ድምጾች"</string>
     <string name="screen_locking_sounds_title" msgid="5695030983872787321">"የማያ ገጽ መቆለፊያ ድምፅ"</string>
     <string name="charging_sounds_title" msgid="5261683808537783668">"የኃይል መሙላት ድምፅ እና ንዝረት"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"መገለጫ ተሻጋሪ ቀን መቁጠሪያ"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"በግል ቀን መቁጠሪያ ላይ የሥራ ክስተቶችን አሳይ"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"የሥራ መተግበሪያዎች ሲጠፉ ባሉበት ይቆማሉ እና ሊደረሱ ወይም ማሳወቂያዎችን ሊልኩልዎት አይችሉም"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"ማከማቻን ያስተዳድሩ"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"የማከማቻ ባዶ ቦታን ነፃ ለማድረግ እንዲያግዝ የማከማቻ አስተዳዳሪ ከእርስዎ መሣሪያ ላይ በምትኬት የተቀመጡ ፎቶዎችን እና ቪዲዮዎችን አስወግዷል።"</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"ፎቶዎች እና ቪዲዮዎች አስወግድ"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"የማከማቻ አስተዳዳሪ"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"የማከማቻ አስተዳዳሪን ተጠቀም"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">ዘመናዊ ማከማቻ</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">ማከማቻ ሊሞላ ትንሽ ሲቀረው፣ ምትኬ የተቀመጠላቸውን ፎቶዎች እና ቪዲዮዎች ያስወግዱ። አሁንም በGoogle ፎቶዎች ውስጥ ሊያገኟቸው ይችላሉ።</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">ምትኬ የተቀመጠላቸው ፎቶዎችን እና ቪዲዮዎችን አስወግድ</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">ዘመናዊ ማከማቻ</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">ዘመናዊ ማከማቻን ተጠቀም</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"የእጅ ምልክቶች"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"በፍጥነት ካሜራን ክፈት"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"ካሜራውን በፍጥነት ለመክፈት በቀላሉ የኃይል አዝራሩን ይጫኑት። ከማንኛውም ማያ ገፅ ላይ ይሠራል"</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"ምልክቶች፣ አማራጭ"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"ክፈል፣ ክፍያዎች"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"ለራስ ምስል ካሜራን ገልብጥ"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixel ካሜራ ውስጥ ወደ የራስ ፎቶ ሁነታ ለመግባት እና ለመውጣት በመተግበሪያው ውስጥ ሲሆኑ ሁለቴ ጠምዘዝ ያድርጉ።</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"የአሰሳ ሁነታ"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"መሣሪያን ያዘምኑ"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"መስተጋብር"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"ቅጽበታዊ መተግበሪያዎች"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"የቅጽበት መተግበሪያዎች አማራጮች"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"የተጫኑ መተግበሪያዎች"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"የእርስዎ ማከማቻ አሁን በማከማቻ አስተዳዳሪ እየተዳደረ ነው"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">እርስዎ ሲገናኙ አሁንም ፎቶዎችን እና ቪዲዮዎችን ለምትኬ በመረጡት ጥራት ላይ መድረስ ይችላሉ</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"የ<xliff:g id="USER_NAME">%1$s</xliff:g> መለያዎች"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"የመተግበሪያ ውሂብን በራስ-ሰር አስምር"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"መተግበሪያዎች በራስ-ሰር ያድሱ"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"የአውታረ መረብ ስም"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"የአውታረ መረብ ስም በሁኔታ አሞሌ ውስጥ አሳይ።"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"ቅጽበታዊ መተግበሪያ"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"የማከማቻ አቀናባሪው ይጥፋ?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">ዘመናዊ ማከማቻ ይጥፋ? \n\nማከማቻዎ ሊሞላ ሲል ዘመናዊ ማከማቻ ቦታ አያስለቅቅም።</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"አትረብሽን አዘምን"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"ትኩረት እንደሰጡ ለመቆየት ማሳወቂያዎችን ባሉበት አቁም"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"ባህሪ አይገኝም"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"ነባሪ የተሰናከሉ ለውጦች"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"የመተግበሪያ ተኳኋኝነት ለውጦች ሊታረሙ ለሚችሉ መተግበሪያዎች ብቻ ነው ሊቀየሩ የሚችሉት። ሊታረም የሚችል መተግበሪያን ይጫኑ እና እንደገና ይሞክሩ"</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"በሌላ ቅንብር ላይ ይመረኮዛል"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"መለያ"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">የGoogle መለያ</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d መለያዎች"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"የመሣሪያ ስም"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"መሠረታዊ መረጃ"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"መገኛ አካባቢ"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"ለአደጋ ጥሪዎች ይህንን አገልግሎት ሲጠቀሙ አገልግሎት አቅራቢዎ አካባቢዎን ሊሰበስብ ይችላል።\n\nለዝርዝሮች የአገልግሎት አቅራቢዎን የግላዊነት መመሪያ ይጎብኙ።"</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"ማናቸውንም ቀሪ ጊዜ ወይም ውሂብ መዳረሻ ሊያጡ ይችሉ ይሆናል። ከማስወገድዎ በፊት ከእርስዎ አገልግሎት አቅራቢ ጋር ይፈትሹ።"</string>
-    <string name="content_capture" msgid="868372905432812238">"የመተግበሪያ ይዘት"</string>
+    <string name="content_capture" msgid="868372905432812238">የመተግበሪያ ውሂብን በመጠቀም ግላዊነት ማላበስ</string>
     <string name="content_capture_summary" msgid="49720773699715531">"መተግበሪያዎች ይዘትን ወደ የAndroid ስርዓት እንዲልኩ ይፈቀድላቸው"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"የሥርዓት ቆሻሻ ክምርን ፎቶ አንሳ"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"የማህደረ ትውስታ መለያ መስጫ ቅጥያ"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="one"><xliff:g id="FIRST_1">%1$s</xliff:g>፣ <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>፣ <xliff:g id="SECOND">%2$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">ቅጽበታዊ ጽሁፍ (አርቲቲ)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"በጥሪ ወቅት ለመገናኘት ጽሑፍ ይጠቀሙ"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">አይታይም</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">በጥሪ ጊዜ ይታያል</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">ሁልጊዜ ይታያል</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"VoLTE ይጥፋ?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"ይህ እንዲሁም የእርስዎን 5ጂ ግንኙነትዎን ያጠፋል።\nበድምጽ ጥሪ ጊዜ በይነመረብን መጠቀም አይችሉም እና አንዳንድ መተግበሪያዎች ላይሠሩ ይችላሉ።"</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"ለተሸጎጡ መተግበሪያዎች አፈጻጸምን አግድ"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"ማስገርን በተመለከተ የመተግበሪያ እንቅስቃሴን ይፈትሹ"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"ለአሳሳች መተግበሪያዎች መቃኘትን ይጠቀሙ"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"ለሥራ አሳሳች መተግበሪያዎች መቃኘትን ይጠቀሙ"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">መቃኘት ማስገርን ወይም ሌላ አታላይ ባህሪን በተመለከተ የመተግበሪያ እንቅስቃሴ እየፈተሸ በመሣሪያዎ ላይ በግል ይሄዳል። ከታወቀ ስጋቱን ለማረጋገጥ እና የመተግበሪያ ተጠቃሚዎችን ለማስጠንቀቅ አንዳንድ የመተግበሪያ መረጃ ወደ የGoogle Play ጥቃት መከላከያ ይላካል።</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">ይህ ጥበቃ የተደረገለት የደህንነት ባህሪ ነው። ከGoogle ጋር ምንም መሣሪያ ወይም የግል መረጃ አይጋራም። \n\nማስገር የመግቢያ ማስረጃዎችን ወይም ሌላ የግል መረጃን ለመስረቅ የሚደረግ ሙከራ ነው።</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"የይለፍ ቃል አሁን ተዘጋጅቷል"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"ፒን አሁን ተዋቅሯል"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"በማንዣበብ ጊዜ ጠቋሚን አሳይ"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">እያንዣበቡ ሳለ መተግበሪያዎች ጠቋሚን እንዲያሳዩ ይፍቀዱ</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"የሚዲያ ዲአርኤም ቅንብሮች"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"ደኅንነቱ የተጠበቀ Crypto ሶፍትዌርን አስገድድ"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"በሶፍትዌር ላይ የተመሠረተ whitebox crypto ለመጠቀም የዲአርኤም ቁልፍ አስተዳደርን አስገድድ"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"የማንነት ማረጋገጫ ከተጨማሪ መተግበሪያዎች ጋር ይሠራል"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"ዝርዝሮችን አሳይ"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"የማንነት ማረጋገጫ ከተጨማሪ መተግበሪያዎች ጋር ይሠራል"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"የማንነት ማረጋገጫ እና የእጅ ሰዓት"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"በተገናኘ የእጅ ሰዓት፣ ያልተፈለገ የመተግበሪያዎች መዳረሻን ለመከላከል የማንነት ማረጋገጫ እርስዎ መሆንዎን ለማረጋገጥ ተጨማሪ መንገዶችን ያክላል"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"የማንነት ማረጋገጫ እና የእጅ ሰዓት"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"ዝማኔዎች፦\n"<ul><li>"የእጅ ሰዓትን በማገናኘት የታመነ ቦታ ላይ በማይሆኑበት ጊዜ መተግበሪያዎችን ለመድረስ ባዮሜትሪክስ ወይም ፒንዎን መጠቀም ይችላሉ።"</li>\n<li>"በጊዜ ሂደት፣ የማንነት ማረጋገጫ እርስዎ መሆንዎን ለማረጋገጥ እና መተግበሪያዎችን በመሣሪያዎ ላይ ደኅንነታቸው የተጠበቀ ለማድረግ ተጨማሪ መንገዶችን ሊያክል ይችላል። "<a href="https://support.google.com/android?p=identity_check">"መቼ እና የት ጥበቃ እንደሚደረግልዎ በተመለከተ የበለጠ ይወቁ"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">የማንነት ማረጋገጫ እና Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">በተገናኘ Pixel Watch፣ ያልተፈለገ የመተግበሪያዎች መዳረሻን ለመከላከል የማንነት ማረጋገጫ እርስዎ መሆንዎን ለማረጋገጥ ተጨማሪ መንገዶችን ያክላል</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">የማንነት ማረጋገጫ እና Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">ዝማኔዎች፦ &lt;ul&gt;&lt;li&gt;Pixel Watch 3 ወይም ከዚያ በላይ በማገናኘት የታመነ ቦታ ላይ በማይሆኑበት ጊዜ መተግበሪያዎችን ለመድረስ ባዮሜትሪክስ ወይም ፒንዎን መጠቀም ይችላሉ። &lt;/li&gt;&lt;li&gt;በጊዜ ሂደት፣ የማንነት ማረጋገጫ እርስዎ መሆንዎን ለማረጋገጥ እና መተግበሪያዎችን በመሣሪያዎ ላይ ደኅንነታቸው የተጠበቀ ለማድረግ ተጨማሪ መንገዶችን ሊያክል ይችላል። &lt;a href=https://support.google.com/android?p=identity_check&gt;መቼ እና የት እንደተጠበቁ የበለጠ ይወቁ&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"ሌሎች ቅንብሮች"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"ራስ-ሙላ፣ ማሳወቂያዎች እና ሌሎችም"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"የግላዊነት ቁጥጥሮች"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"የአካባቢ መዳረሻ"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"የአካባቢ መዳረሻ ያላቸውን መተግበሪያዎች እና አገልግሎቶች ይመልከቱ"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"የማንነት ማረጋገጫ ከተጨማሪ መተግበሪያዎች ጋር ይሠራል"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"የማንነት ማረጋገጫ እና የእጅ ሰዓትዎ"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"በተገናኘ የእጅ ሰዓት፣ ያልተፈለገ የመተግበሪያዎች መዳረሻን ለመከላከል የማንነት ማረጋገጫ እርስዎ መሆንዎን ለማረጋገጥ ተጨማሪ መንገዶችን ያክላል"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">የማንነት ማረጋገጫ እና የእርስዎ Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">በተገናኘ Pixel Watch፣ ያልተፈለገ የመተግበሪያዎች መዳረሻን ለመከላከል የማንነት ማረጋገጫ እርስዎ መሆንዎን ለማረጋገጥ ተጨማሪ መንገዶችን ያክላል</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"ዝርዝሮችን ይመልከቱ"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"ቅንብሮችን መፈተሽ አልተቻለም"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"ገና ምንም መረጃ የለም"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">የPlay ጥቃት መከላከያ ቅኝት በርቷል</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play ጥቃት መከላከያ የእርስዎ መተግበሪያዎች እና መሣሪያ ጎጂ ባህሪ ካላቸው በመደበኝነት ይፈትሻቸዋል። ማናቸውም የተገኙ የደህንነት አደጋዎች ካሉ ማሳወቂያ ይደርስዎታል።</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">የመተግበሪያ ደህንነት፣ Play ጥቃት መከላከያ፣ Google Play ጥቃት መከላከያ፣ የመተግበሪያ ደህንነት</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google መለያ ደህንነቱ ተጠብቋል</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">የGoogle የደህንነት ፍተሻ፣ የGoogle ደህንነት፣ የደህንነት ፍተሻ፣ የመለያ ደህንነት፣ የGoogle መለያ ደህንነት፣ የGoogle መለያ</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">ማግኛ ማዕከል፣ መሣሪያዎችን ማግኘት፣ የእኔን መሣሪያ አግኝ፣ የጠፋ መሣሪያ</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"ዝማኔዎች"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"ዝማኔዎች፣ ዝማኔ፣ የደኅንነት ዝማኔ፣ የደኅንነት ዝማኔዎች"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">ዝማኔዎች፣ ዝማኔ፣ የሥርዓት ዝማኔ፣ የሥርዓት ዝማኔዎች፣ የGoogle Play ሥርዓት ዝማኔ፣ የPlay ሥርዓት ዝማኔ</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"የመሣሪያ ቁልፍ፣ ማያ ገጽ መቆለፊያ፣ ማያ ገጽ ቁልፍ፣ ማያ ገጽ ቁልፍ፣ የይለፍ ቃል፣ ፒን፣ ሥርዓተ ጥለት፣ ቆልፍ፣ ክፈት"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"የጣት አሻራ፣ ጣት፣ የጣት አሻራ ያክሉ"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"በመልክ መክፈት፣ መልክ"</string>

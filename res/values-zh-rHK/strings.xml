@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"完成"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"向下捲動以尋找私人空間"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"登入"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"需要登入帳戶，才能使用私人空間"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">需要登入 Google 帳戶，才能使用私人空間</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"暫時不要"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"繼續"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"選擇私人空間的鎖定方式"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"傳送裝置名稱"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"與網絡分享此裝置的名稱"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"訂閱"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"查看或變更訂閱"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">查看或變更 OpenRoaming 訂閱</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"隨機化處理 MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"加入裝置"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"將下面的方框對準 QR 碼，即可將裝置加到「<xliff:g id="SSID">%1$s</xliff:g>」"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"將會在<xliff:g id="ID_1">%1$s</xliff:g>自動關閉"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"將於睡眠時間結束後自動關閉"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"將在<xliff:g id="ID_1">%1$s</xliff:g>結束時關閉"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"「深色主題」使用黑色背景以延長部分螢幕的電池壽命。「深色主題」時間表會等待啟動，直至螢幕關閉。"</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"使用深色背景可讓你更舒適地觀看螢幕，顯示部分畫面時還可減少電池用量。如果已設定時間表，主題會在螢幕關閉時變更。"</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">「深色主題」使用黑色背景，有助延長電池壽命。「深色主題」時間表會等待啟動，直至螢幕關閉。</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">使用深色背景可減少電池用量，你觀看螢幕時也會更舒適。如果已設定時間表，主題會在螢幕關閉時變更。</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"深色主題目前按照睡眠模式時間表自動開啟/關閉"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"睡眠模式設定"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{「模式」也可啟用深色主題}=1{「{mode_1}」也可啟用深色主題}=2{「{mode_1}」和「{mode_2}」也可啟用深色主題}=3{「{mode_1}」、「{mode_2}」和「{mode_3}」也可啟用深色主題}other{「{mode_1}」、「{mode_2}」和另外 # 個模式也可啟用深色主題}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"你可以開始使用 <xliff:g id="NAME">^1</xliff:g>"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"電池狀態"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"電量"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"共用"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"共用設定"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">插座模式</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">插座及上鎖畫面選項</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"插座模式"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"上鎖畫面上的小工具"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"在上鎖畫面向左滑動，即可存取常用小工具。\n\n使用小工具開啟應用程式時，系統會要求你驗證身分。請注意，任何人都可查看小工具。"</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"觸控板, 滑鼠, 鼠標, 捲動, 輕掃, 按一下右鍵, 點擊, 游標"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"按一下右鍵, 輕按"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"滑鼠中鍵"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"啟動「Google 助理」"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">啟動 Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"啟動「<xliff:g id="APP_NAME">%s</xliff:g>」"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Google 助理"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"返回主畫面"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"導覽模式、螢幕旋轉"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"傳送意見"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"填寫問卷"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">聯絡 Google 殘疾支援團隊</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"無障礙功能問卷"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"分享意見"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"你對深色主題有多滿意？"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"助聽器捷徑"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"助聽器兼容性"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"改善磁感線圈的兼容性及降低不必要的噪音"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">可能會調高音量，以改善磁感線圈的兼容性及降低不必要的噪音</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"關於助聽器"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"如要尋找 ASHA 或 LE Audio 不支援的其他助聽器，請輕按 [配對新裝置] &gt; [查看更多裝置]&lt;b&gt;&lt;/b&gt; &lt;b&gt;&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"如果要搵 ASHA 或者 LE Audio 唔支援嘅其他助聽器，請㩒一下配對新裝置，再㩒查看更多裝置"<b></b><b></b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"光敏度, 光敏, 深色主題, 偏頭痛, 頭痛, 朗讀模式, 夜間模式, 調低亮度, 白點"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"視力, 聽力, 失明, 失聰, 動作, 靈活度, 輔助, 容易使用, 容易操作, 手, 協助"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"視窗放大鏡, 縮放, 放大, 低視力"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">螢幕閱讀器, 語音朗讀, 語音助手, 失明, 低視力, TTS, 文字轉語音, 朗讀功能</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"字幕, CC, 即時轉錄, 聽障, 失聰, CART, 語音轉文字"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">字幕, CC, 即時字幕, 聽障, 失聰, CART, 語音轉文字</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">通知, 聽障, 失聰</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, 擴大, 聲音擴大器, 聽障, 失聰, 擴音</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"螢幕大小, 大螢幕"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"高對比, 低視力, 粗體字型, 粗體"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"高對比文字"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">收聽文字, 朗讀, 朗讀畫面內容, 螢幕閱讀器, 讀寫障礙, 揀選朗讀內容</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"調整顏色"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"調暗螢幕, 調亮螢幕"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">行動, 快速選單, 輔助選單, 輕觸, 靈活性, 關節炎, rsi, 中風, 顫抖, 多發性硬化症, 大腦麻痺, 按鈕, 硬件, 按, 重複性勞損, 手, 痛楚, 無障礙, 協助</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">行動, 按鈕裝置, AT, 輔助科技, 癱瘓, ALS, 掃瞄, 步驟掃瞄</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"行動, 滑鼠, 外置滑鼠, 頭部控制滑鼠, 無障礙共融滑鼠, 輪椅, 搖桿"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"助聽器, 聽障, 聽力受損, 人工耳蝸, 擴音裝置, 聲音處理器, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"聽障, 失聰, 字幕, 電傳打字, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">語音, 語音控制, 行動, 手, 麥克風, 語音聽寫, 朗讀, 控制</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"三個按鈕"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"靈活性, 行動, 年長, 關節炎, rsi, 中風, 顫抖, 多發性硬化症, 大腦麻痺, 抖動, 重複性勞損, 手"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"延遲, 靈活度, 年長"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"電量不足"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"開啟慳電模式可延長電池壽命"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"延長電池壽命"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"開啟「電池管理工具」"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">開啟「自動調節電池用量」</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"開啟慳電模式"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"電池電量可能會比平常更快耗盡"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"慳電模式已開啟"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"仍要充電"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"檢查充電配件"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"進一步瞭解不兼容的變壓器充電"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"電池管理工具"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">自動調節偏好設定</string>
     <string name="smart_battery_title" msgid="9095903608520254254">自動調節電池用量</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"當「電池管理工具」偵測到應用程式正在耗電時，你可選擇限制這些應用程式。受限制的應用程式可能會因此無法正常運作，且相關通知可能會延遲。"</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">為延長電池壽命，「自動調節電池用量」功能可能會降低效能及減少背景活動。部分通知可能會延遲。</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"受限制的應用程式"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{限制 # 個應用程式的電池用量}other{限制 # 個應用程式的電池用量}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"受限時間：<xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"這些應用程式的背景電池用量受到限制，因此可能無法正常運作，通知亦可能會延遲。"</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"使用電池管理工具"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"偵測應用程式何時耗電"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"偵測應用程式是否耗用大量電力"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"偵測應用程式是否耗用大量電力"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">延長電池壽命並優化充電</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">延長電池壽命</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# 個應用程式受限制}other{# 個應用程式受限制}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"讀取電池計量器時發生問題。"</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">瞭解詳情</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"輕按即可進一步瞭解此錯誤"</string>
     <string name="power_screen" msgid="4596900105850963806">"螢幕"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"目前沒有任何帳戶儲存備份資料"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"要停止備份你的 Wi-Fi 密碼、書籤、其他設定以及應用程式資料，並清除 Google 伺服器上儲存的所有副本嗎？"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"停止備份裝置資料 (例如 Wi-Fi 密碼和通話記錄) 和應用程式資料 (例如由應用程式儲存的設定和檔案)，並清除遠端伺服器內的所有副本？"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"自動遙距備份裝置資料 (例如 Wi-Fi 密碼和通話記錄) 和應用程式資料 (例如由應用程式儲存的設定和檔案)。\n\n啟用自動備份功能後，裝置和應用程式資料會定時以遙距方式儲存。應用程式資料可以是由應用程式儲存的任何資料 (視乎開發設定而定)，包括可能視為敏感的資料，如通訊錄、訊息及相片。"</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">要停止備份裝置資料 (例如 Wi-Fi 密碼和通話記錄) 和應用程式資料 (例如由應用程式儲存的設定和檔案)，並清除「Google 雲端硬碟」內的所有副本嗎？</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">自動備份裝置資料 (例如 Wi-Fi 密碼和通話記錄) 和應用程式資料 (例如由應用程式儲存的設定和檔案) 至「Google 雲端硬碟」。\n\n啟用自動備份功能後，裝置和應用程式資料會定時儲存至「Google 雲端硬碟」的私人資料夾。應用程式資料可以是由應用程式儲存的任何資料 (視乎開發設定而定)，包括可能視為敏感的資料，如聯絡人、訊息及相片。\n\n備份資料不會佔用你的「雲端硬碟」儲存空間。大型檔案或檔案開發工具並不會進行備份。</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"裝置管理設定"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"裝置管理應用程式"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"停用此裝置管理應用程式"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"工作挑戰, 工作, 設定檔"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"工作設定檔, 受管理的設定檔, 整合, 整合, 工作, 設定檔"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"不鎖定螢幕, 休眠, 不鎖定, 摺疊時保持解鎖, 摺疊狀態, 保持關閉狀態, 摺疊, 關閉, 關閉螢幕"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"手勢"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">手勢、動作</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"錢包"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"支付, 輕按, 付款"</string>
     <string name="keywords_backup" msgid="707735920706667685">"備份內容, 備份"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"跨設定檔日曆"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"在個人日曆中顯示工作活動"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"工作應用程式關閉時，一切功能將會暫停，且無法取用或傳送通知"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"管理儲存空間"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"儲存空間管理員會從你的裝置移除備份相片和影片，以釋放儲存空間。"</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"移除相片和影片"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"存儲空間管理員"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"使用儲存空間管理工具"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">智能儲存空間</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">儲存空間即將用盡時，系統會移除已備份的相片和影片。你仍可以在「Google 相片」中查看這些相片和影片。</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">移除已備份的相片和影片</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">智能儲存空間</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">使用智能儲存空間</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"手勢"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"快速開啟相機"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"在任何畫面上按開關按鈕兩下，即可快速開啟相機。"</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"手勢, 快速鍵"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"付款"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"反轉相機自拍"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">使用「Pixel 相機」時轉動手機兩次，即可開啟或關閉自拍模式。</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"導覽模式"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"更新裝置"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"互動"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"免安裝應用程式"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"免安裝應用程式偏好設定"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"已安裝的應用程式"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"你的儲存空間即將由儲存空間管理員管理"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">連接後，你仍可按所選的備份品質存取相片和影片</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g>的帳戶"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"自動同步處理應用程式資料"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"允許應用程式自動重新整理資料"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"網絡名稱"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"在狀態列中顯示網絡名稱"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"免安裝應用程式"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"要停用儲存空間管理員嗎？"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">要關閉「智能儲存空間」功能嗎？\n\n當你的儲存空間即將用盡時，「智能儲存空間」功能將不會騰出空間。</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"更新請勿騷擾模式"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"暫停通知，助你保持專注"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"功能無法使用"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"預設為已停用的變更"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"你只能修改 debuggable 應用程式的兼容性。請安裝 debuggable 應用程式，然後再試。"</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"必須一併變更其他設定"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"帳戶"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google 帳戶</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d 個帳戶"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"裝置名稱"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"基本資料"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"位置"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"使用此服務撥打緊急電話時，流動網絡供應商可能會收集你的位置資訊。\n\n請瀏覽流動網絡供應商的私隱權政策瞭解詳情。"</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"你可能會失去所有剩餘時間或資料的存取權。移除前，請聯絡你的供應商尋求指示。"</string>
-    <string name="content_capture" msgid="868372905432812238">"應用程式內容"</string>
+    <string name="content_capture" msgid="868372905432812238">使用應用程式資料提供個人化內容</string>
     <string name="content_capture_summary" msgid="49720773699715531">"允許應用程式向 Android 系統傳送內容"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"擷取系統堆轉儲"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"記憶體標籤擴充功能"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>，<xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">即時文字短訊 (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"在通話期間使用短訊通訊"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">不顯示</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">通話時顯示</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">一律顯示</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"要關閉 VoLTE 嗎？"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"這樣做也會關閉你的 5G 連線。\n進行語音通話時，你將無法使用互聯網，部分應用程式也可能無法運作。"</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"暫停執行快取應用程式"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"檢查應用程式活動是否有仿冒詐騙行為"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"使用掃瞄功能找出欺詐應用程式"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"使用掃瞄功能找出欺詐工作應用程式"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">系統會私下在裝置上進行掃瞄，檢查應用程式活動是否有仿冒詐騙或其他欺詐行為。如果偵測到這類行為，系統會將部分應用程式資料傳送給 Google Play Protect，確認威脅並向應用程式使用者發出警告。</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">這是受保護的安全功能。系統不會與 Google 分享任何裝置或個人資料。\n\n仿冒詐騙會試圖竊取登入憑證或其他個人資料。</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"密碼現已設定"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN 現已設定"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"懸停時顯示游標"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">允許應用程式在觸控筆懸停時顯示游標</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"媒體 DRM 設定"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"強制使用軟件保護加密技術"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"強制 DRM 密鑰管理使用軟件為本的白箱加密技術"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"「身分檢查」可配搭更多應用程式使用"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"查看詳情"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"「身分檢查」可配搭更多應用程式使用"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"身分檢查與手錶"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"配搭已連接的手錶使用「身分檢查」為你提供更多驗證身分的方式，以防止他人未經授權存取應用程式"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"身分檢查與手錶"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"更新：\n"<ul><li>"當你並非身處信任的地點時，連接手錶即可使用生物識別資料或 PIN 存取應用程式"</li>\n<li>"「身分檢查」日後可能會新增更多方式驗證你的身分和保護你裝置上的應用程式。"<a href="https://support.google.com/android?p=identity_check">"進一步瞭解獲得安全保障的時間和地點"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">「身分檢查」與 Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">配搭已連接的 Pixel Watch 使用「身分檢查」為你提供更多驗證身分的方式，以防止他人未經授權存取應用程式</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">「身分檢查」與 Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">更新：&lt;ul&gt;&lt;li&gt;當你並非身處信任的地點時，連接 Pixel Watch 3 或較新型號手錶即可使用生物識別資料或 PIN 存取應用程式。&lt;/li&gt;&lt;li&gt;「身分檢查」日後可能會新增更多方式驗證你的身分和保護你裝置上的應用程式。&lt;a href=https://support.google.com/android?p=identity_check&gt;進一步瞭解獲得安全保障的時間和地點&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"其他設定"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"自動填入、通知等"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"私隱設定"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"位置存取權"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"查看擁有位置存取權的應用程式和服務"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"「身分檢查」可配搭更多應用程式使用"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"「身分檢查」與手錶"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"配搭已連接的手錶使用「身分檢查」為你提供更多驗證身分的方式，以防止他人未經授權存取應用程式"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">「身分檢查」與 Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">配搭已連接的 Pixel Watch 使用「身分檢查」為你提供更多驗證身分的方式，以防止他人未經授權存取應用程式</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"查看詳情"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"無法檢查設定"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"暫時沒有資料"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect 掃瞄功能已啟用</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Google Play Protect 會定期檢查你的應用程式和裝置是否出現有害行為。一旦發現有任何安全風險，我們就會通知你。</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">應用程式安全性, Play Protect, Google Play Protect, 應用程式安全</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google 帳戶已受保護</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google 安全檢查, Google 安全, 安全檢查, 帳戶安全, Google 帳戶安全, Google 帳戶</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">尋找中心, 尋找裝置, 尋找我的裝置, 遺失裝置</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"更新"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"更新, 安全更新"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">更新, 系統更新, Google play 系統更新, Play 系統更新</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"裝置鎖定, 螢幕鎖定, 上鎖畫面, 密碼, PIN, 圖案, 上鎖, 解鎖"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"指紋, 手指, 新增指紋"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"面孔解鎖, 面孔"</string>

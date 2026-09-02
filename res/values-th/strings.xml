@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"เสร็จสิ้น"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"เลื่อนลงเพื่อค้นหาพื้นที่ส่วนตัว"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"ลงชื่อเข้าใช้"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"ลงชื่อเข้าใช้บัญชีเพื่อใช้กับพื้นที่ส่วนตัว"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">ลงชื่อเข้าใช้บัญชี Google เพื่อใช้กับพื้นที่ส่วนตัว</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"ไว้ทีหลัง"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"ดำเนินการต่อ"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"เลือกการล็อกสำหรับพื้นที่ส่วนตัว"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"ส่งชื่ออุปกรณ์"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"แชร์ชื่ออุปกรณ์นี้กับเครือข่าย"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"การสมัครใช้บริการ"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"ดูหรือเปลี่ยนการสมัครใช้บริการ"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">ดูหรือเปลี่ยนการสมัครใช้บริการ OpenRoaming</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"MAC แบบสุ่ม"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"เพิ่มอุปกรณ์"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"ให้คิวอาร์โค้ดอยู่กลางช่องด้านล่างเพื่อเพิ่มอุปกรณ์ไปยัง “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"จะปิดโดยอัตโนมัติในเวลา <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"จะปิดโดยอัตโนมัติหลังจากเวลาเข้านอน"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"จะปิดเมื่อ<xliff:g id="ID_1">%1$s</xliff:g>สิ้นสุดลง"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"ธีมมืดใช้พื้นหลังสีดำเพื่อช่วยให้แบตเตอรี่ของคุณใช้งานได้นานขึ้นในหน้าจอบางรุ่น กำหนดการของธีมมืดรอที่จะเปิดใช้จนกระทั่งหน้าจอดับลง"</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"ใช้พื้นหลังสีเข้มเพื่อให้ดูหน้าจอได้สบายตาขึ้นและลดการใช้งานแบตเตอรี่สำหรับหน้าจอบางประเภท ธีมจะเปลี่ยนหากคุณมีกำหนดเวลาและเมื่อหน้าจอปิด"</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">ธีมมืดใช้พื้นหลังสีดำเพื่อช่วยให้แบตเตอรี่ของคุณใช้งานได้นานขึ้น กำหนดการของธีมมืดจะรอจนหน้าจอดับลงจึงจะเปิดใช้งาน</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">ใช้พื้นหลังสีเข้มเพื่อให้ดูหน้าจอได้สบายตาขึ้นและลดการใช้งานแบตเตอรี่ ธีมจะเปลี่ยนหากคุณมีกำหนดเวลาและเมื่อหน้าจอปิด</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"ปัจจุบันธีมมืดจะเป็นไปตามกำหนดเวลาของโหมดเวลาเข้านอน"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"การตั้งค่าโหมดเวลาเข้านอน"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{โหมดยังเปิดธีมมืดได้ด้วย}=1{{mode_1} ยังเปิดธีมมืดด้วย}=2{{mode_1} และ {mode_2} ยังเปิดธีมมืดด้วย}=3{{mode_1}, {mode_2} และ {mode_3} ยังเปิดธีมมืดด้วย}other{{mode_1}, {mode_2} และอีก # โหมดยังเปิดธีมมืดด้วย}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"คุณเริ่มใช้<xliff:g id="NAME">^1</xliff:g> ได้แล้ว"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"สถานะแบตเตอรี่"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"ระดับแบตเตอรี่"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"ส่วนกลาง"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"การตั้งค่าส่วนกลาง"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">โหมด Hub</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">ตัวเลือกแท่นชาร์จและหน้าจอล็อก</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"โหมดฮับ"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"วิดเจ็ตในหน้าจอล็อก"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"หากต้องการเข้าถึงวิดเจ็ตโปรด ให้ปัดไปทางซ้ายจากหน้าจอล็อก \n\nเมื่อเปิดแอปโดยใช้วิดเจ็ต คุณจะต้องยืนยันตัวตนของคุณ นอกจากนี้ โปรดทราบว่าผู้อื่นจะดูวิดเจ็ตเหล่านี้ได้"</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"แทร็กแพด, แทร็ก แพด, เมาส์, เคอร์เซอร์, เลื่อน, ปัด, คลิกขวา, คลิก, Pointer"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"คลิกขวา แตะ"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"ปุ่มกลางของเมาส์"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"เปิดใช้งาน Assistant"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">เปิดใช้งาน Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"เปิด <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Assistant"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"ไปที่หน้าแรก"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"โหมดการไปยังส่วนต่างๆ การหมุนหน้าจอ"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"ส่งความคิดเห็น"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"ตอบแบบสำรวจ"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">ติดต่อทีมสนับสนุนคนพิการของ Google</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"แบบสำรวจเกี่ยวกับการช่วยเหลือพิเศษ"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"แชร์ความคิดเห็น"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"คุณพอใจกับธีมมืดมากน้อยเพียงใด"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"ทางลัดเครื่องช่วยฟัง"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"ความเข้ากันได้กับเครื่องช่วยฟัง"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"ปรับปรุงความเข้ากันได้ด้วยเทเลคอยล์และลดเสียงรบกวนที่ไม่พึงประสงค์"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">อาจเพิ่มระดับเสียงเพื่อปรับปรุงความเข้ากันได้ด้วยเทเลคอยล์และลดเสียงรบกวนที่ไม่พึงประสงค์</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"เกี่ยวกับเครื่องช่วยฟัง"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"หากต้องการค้นหาเครื่องช่วยฟังอื่นๆ ที่ ASHA หรือ LE Audio ไม่รองรับ ให้แตะ&lt;b&gt;จับคู่อุปกรณ์ใหม่&lt;/b&gt; &gt; &lt;b&gt;ดูอุปกรณ์เพิ่มเติม&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"หากต้องการค้นหาเครื่องช่วยฟังอื่นๆ ที่ ASHA หรือ LE Audio ไม่รองรับ ให้แตะ"<b>"จับคู่อุปกรณ์ใหม่"</b>" แล้วแตะ"<b>"ดูอุปกรณ์เพิ่มเติม"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"ความไวต่อแสง อาการกลัวแสง ธีมมืด ไมเกรน ปวดหัว โหมดอ่านหนังสือ โหมดกลางคืน ลดความสว่าง จุดสีขาว"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"การมองเห็น, การได้ยิน, ตาบอด, หูหนวก, การเคลื่อนไหว, ความคล่องแคล่ว, อำนวยความสะดวก, การสนับสนุน, ใช้งานง่าย, เข้าถึงง่าย, มือ, ความช่วยเหลือ"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"แว่นขยายหน้าจอ, ซูม, การขยาย, สายตาเลือนราง, ขยาย, ทำให้ใหญ่ขึ้น"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">โปรแกรมอ่านหน้าจอ, เสียงแจ้งเตือน, เสียงแจ้งเตือน, เสียงผู้ช่วย, ตาบอด, สายตาเลือนราง, TTS, อ่านออกเสียงข้อความ, อธิบายและอ่านออกเสียง</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"คำบรรยายแทนเสียง, คำบรรภาพ, คำบรรยาย, Live Transcribe, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, CART, การแปลงเสียงพูดเป็นข้อความ"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">คำบรรยายแทนเสียง, คำอธิบายภาพ, คำบรรยาย, คำบรรยายสด, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, CART, การแปลงเสียงพูดเป็นข้อความ</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">การแจ้งเตือน, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, แจ้งเตือน</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, ขยายเสียง, การขยายเสียง, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, การขยายเสียง</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"ขนาดหน้าจอ, หน้าจอใหญ่"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"คอนทราสต์สูง, สายตาเลือนราง, แบบอักษรตัวหนา, อักษรตัวหนา"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"ข้อความคอนทราสต์สูง"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">ฟังข้อความ อ่านออกเสียง อ่านหน้าจอ โปรแกรมอ่านหน้าจอ ความบกพร่องในการอ่าน เลือกเพื่อให้อ่าน</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"ปรับสี"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"ปรับหน้าจอให้มืด, ปรับหน้าจอให้สว่าง"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">การเคลื่อนไหว, เมนูด่วน, เมนูช่วยเหลือพิเศษ, สัมผัส, ความคล่องแคล่ว, ภาวะข้ออักเสบ, RSI, โรคหลอดเลือดสมอง, อาการสั่น, โรคปลอกประสาทเสื่อมแข็ง, ภาวะสมองพิการ, ปุ่ม, ฮาร์ดแวร์, กด, การบาดเจ็บจากการทำงานซ้ำๆ, มือ, ความเจ็บปวด, เข้าถึงได้, ความช่วยเหลือ</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">การเคลื่อนไหว, สวิตช์, มือ, AT, เทคโนโลยีความช่วยเหลือพิเศษ, อัมพาต, ALS, การสแกน, การสแกนทีละขั้นตอน</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"การเคลื่อนไหว, เมาส์, เมาส์ภายนอก, เมาส์แบบคาดศีรษะ, เมาส์แบบปรับได้, วีลแชร์, จอยสติ๊ก"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"เครื่องช่วยฟัง, มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, ประสาทหูเทียม, อุปกรณ์ขยายเสียง, เครื่องแปลงสัญญาณเสียง, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"มีปัญหาในการได้ยิน, สูญเสียการได้ยิน, คำบรรยายแทนเสียง, โทรพิมพ์, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">เสียง, การควบคุมด้วยเสียง, การเคลื่อนไหว, มือ, ไมค์, ไมโครโฟน, การพิมพ์ตามคำบอก, พูดคุย, ควบคุม</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"ปุ่ม 3 ปุ่ม"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"ความคล่องแคล่ว, การเคลื่อนไหว, ผู้สูงอายุ, ภาวะข้ออักเสบ, RSI, โรคหลอดเลือดสมอง, อาการสั่น, โรคปลอกประสาทเสื่อมแข็ง, ภาวะสมองพิการ, การสั่น, การบาดเจ็บจากการทำงานซ้ำๆ, มือ"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"ล่าช้า, ความคล่องแคล่ว, ผู้สูงอายุ"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"ระดับแบตเตอรี่อ่อน"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"เปิดโหมดประหยัดแบตเตอรี่เพื่อยืดอายุการใช้งานแบตเตอรี่"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"เพิ่มอายุการใช้งานแบตเตอรี่"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"เปิดตัวจัดการแบตเตอรี่"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">เปิดแบตเตอรี่แบบปรับอัตโนมัติ</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"เปิดโหมดประหยัดแบตเตอรี่"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"แบตเตอรี่อาจหมดเร็วกว่าปกติ"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"โหมดประหยัดแบตเตอรี่เปิดอยู่"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"ชาร์จเลย"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"ตรวจสอบอุปกรณ์เสริมสำหรับการชาร์จ"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"ดูข้อมูลเพิ่มเติมเกี่ยวกับการชาร์จด้วยอะแดปเตอร์ที่ใช้ร่วมกันไม่ได้"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"ตัวจัดการแบตเตอรี่"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">ค่ากำหนดแบบปรับอัตโนมัติ</string>
     <string name="smart_battery_title" msgid="9095903608520254254">แบตเตอรี่แบบปรับอัตโนมัติ</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"เมื่อตัวจัดการแบตเตอรี่ตรวจพบว่าแอปทำให้แบตเตอรี่หมดเร็ว คุณจะมีตัวเลือกในการจำกัดแอปเหล่านี้ แอปที่ถูกจำกัดอาจไม่ทำงานตามปกติและการแจ้งเตือนอาจล่าช้า"</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">แบตเตอรี่แบบปรับอัตโนมัติอาจลดประสิทธิภาพหรือกิจกรรมในเบื้องหลังเพื่อยืดอายุการใช้งานแบตเตอรี่ การแจ้งเตือนบางอย่างอาจล่าช้า</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"แอปที่ถูกจำกัด"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{การจำกัดการใช้งานแบตเตอรี่สำหรับ # แอป}other{การจำกัดการใช้งานแบตเตอรี่สำหรับ # แอป}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"จำกัดเมื่อ <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"แอปเหล่านี้ถูกจำกัดไม่ให้ใช้งานแบตเตอรี่ในเบื้องหลัง ซึ่งอาจทำให้การทำงานไม่เป็นตามที่คาดไว้ และการแจ้งเตือนอาจล่าช้า"</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"ใช้ตัวจัดการแบตเตอรี่"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"ตรวจจับเมื่อแอปทำให้แบตเตอรี่หมดเร็ว"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"ตรวจจับเมื่อแอปทำให้แบตเตอรี่หมดเร็ว"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"ตรวจจับเมื่อแอปทำให้แบตเตอรี่หมดเร็ว"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">ยืดอายุการใช้งานแบตเตอรี่และเพิ่มประสิทธิภาพการชาร์จ</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">ยืดอายุการใช้งานแบตเตอรี่</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{จำกัด # แอป}other{จำกัด # แอป}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"พบปัญหาในการอ่านเครื่องวัดแบตเตอรี่"</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">ดูข้อมูลเพิ่มเติม</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"แตะเพื่อดูข้อมูลเพิ่มเติมเกี่ยวกับข้อผิดพลาดนี้"</string>
     <string name="power_screen" msgid="4596900105850963806">"หน้าจอ"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"การสำรองและคืนค่าข้อมูล"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"ข้อมูลส่วนตัว"</string>
     <string name="backup_data_title" msgid="507663517227498525">"สำรองข้อมูลของฉัน"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"สำรองข้อมูลแอปพลิเคชัน รหัสผ่าน WiFi และการตั้งค่าอื่นๆ ลงในเซิร์ฟเวอร์ของ Google"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">สำรองข้อมูลแอป รหัสผ่าน Wi-Fi และการตั้งค่าอื่นๆ ลงในเซิร์ฟเวอร์ของ Google</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"บัญชีข้อมูลสำรอง"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"จัดการบัญชีสำรอง"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"รวมข้อมูลแอป"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"ไม่มีบัญชีใดในปัจจุบันที่จัดเก็บข้อมูลที่สำรองไว้"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"หยุดการสำรองข้อมูลรหัสผ่าน WiFi, บุ๊กมาร์ก, การตั้งค่าอื่นๆ และข้อมูลแอปพลิเคชัน รวมทั้งลบสำเนาทั้งหมดบนเซิร์ฟเวอร์ของ Google หรือไม่"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"หยุดการสำรองข้อมูลอุปกรณ์ (เช่น รหัสผ่าน Wi-Fi และประวัติการโทร) และข้อมูลแอป (เช่น การตั้งค่าและไฟล์ที่แอปจัดเก็บไว้) พร้อมทั้งลบสำเนาทั้งหมดบนเซิร์ฟเวอร์ระยะไกลไหม"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"สำรองข้อมูลในอุปกรณ์ (เช่น รหัสผ่าน Wi-Fi และประวัติการโทร) และข้อมูลแอป (เช่น การตั้งค่าและไฟล์ที่แอปจัดเก็บไว้) ลงใน Google ไดร์ฟจากระยะไกลโดยอัตโนมัติ\n\nเมื่อคุณเปิดเปิดการสำรองข้อมูลอัตโนมัติ ระบบจะบันทึกข้อมูลอุปกรณ์และข้อมูลแอปไปยังโฟลเดอร์ส่วนตัวใน Google ไดรฟ์เป็นระยะๆ ข้อมูลแอปอาจเป็นข้อมูลใดๆ ก็ตามที่แอปบันทึกไว้ (ตามการตั้งค่าของนักพัฒนาซอฟต์แวร์) ซึ่งรวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น รายชื่อติดต่อ ข้อความ และรูปภาพ"</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">หยุดการสำรองข้อมูลอุปกรณ์ (เช่น รหัสผ่าน Wi-Fi และประวัติการโทร) และข้อมูลแอป (เช่น การตั้งค่าและไฟล์ที่แอปจัดเก็บไว้) พร้อมทั้งลบสำเนาทั้งหมดบน Google ไดรฟ์ไหม</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">สำรองข้อมูลในอุปกรณ์ (เช่น รหัสผ่าน Wi-Fi และประวัติการโทร) และข้อมูลแอป (เช่น การตั้งค่าและไฟล์ที่แอปจัดเก็บไว้) ลงใน Google ไดรฟ์โดยอัตโนมัติ\n\nเมื่อคุณเปิดการสำรองข้อมูลอัตโนมัติ ระบบจะบันทึกข้อมูลอุปกรณ์และข้อมูลแอปไปยังโฟลเดอร์ส่วนตัวใน Google ไดรฟ์เป็นระยะๆ ข้อมูลแอปอาจเป็นข้อมูลใดๆ ก็ตามที่แอปบันทึกไว้ (ตามการตั้งค่าของนักพัฒนาซอฟต์แวร์) ซึ่งรวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น รายชื่อติดต่อ ข้อความ และรูปภาพ\n\nข้อมูลสำรองจะไม่นับรวมในโควต้าพื้นที่เก็บข้อมูลไดรฟ์ ระบบจะไม่สำรองไฟล์ขนาดใหญ่หรือไฟล์ที่นักพัฒนาซอฟต์แวร์เลือกที่จะไม่รวมในบริการ</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"การตั้งค่าผู้ดูแลระบบอุปกรณ์"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"แอปผู้ดูแลอุปกรณ์"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"ปิดใช้งานแอปผู้ดูแลอุปกรณ์นี้"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"ความท้าทายในการทำงาน, งาน, โปรไฟล์"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"โปรไฟล์งาน, โปรไฟล์ที่มีการจัดการ, รวม, การรวม, งาน, โปรไฟล์"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"เปิดหน้าจอค้าง, สลีป, ไม่ต้องล็อก, ปลดล็อกค้างไว้เมื่อพับ, การพับ, การปิด, พับ, ปิด, ปิดหน้าจอ"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"ท่าทางสัมผัส"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">ท่าทางสัมผัส, การเคลื่อนไหว</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"ชำระเงิน แตะ การชำระเงิน"</string>
     <string name="keywords_backup" msgid="707735920706667685">"ข้อมูลสำรอง, สำรองข้อมูล"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"ปฏิทินข้ามโปรไฟล์"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"แสดงกิจกรรมที่เกี่ยวกับงานในปฏิทินส่วนตัว"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"เมื่อปิดแอปงาน แอปจะหยุดชั่วคราวและไม่สามารถเข้าถึงหรือส่งการแจ้งเตือนถึงคุณได้"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"จัดการพื้นที่เก็บข้อมูล"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"ตัวจัดการพื้นที่เก็บข้อมูลจะนำรูปภาพและวิดีโอที่สำรองไว้ออกจากอุปกรณ์ของคุณ เพื่อช่วยเพิ่มพื้นที่เก็บข้อมูล"</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"นำรูปภาพและวิดีโอออก"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"ตัวจัดการพื้นที่เก็บข้อมูล"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"ใช้ตัวจัดการพื้นที่เก็บข้อมูล"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">พื้นที่เก็บข้อมูลอัจฉริยะ</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">เมื่อพื้นที่เก็บข้อมูลใกล้เต็ม ให้นำรูปภาพและวิดีโอที่สำรองข้อมูลไว้ออก ทั้งนี้คุณจะยังดูรูปภาพและวิดีโอดังกล่าวได้ใน Google Photos</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">นำรูปภาพและวิดีโอที่สำรองไว้ออก</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">พื้นที่เก็บข้อมูลอัจฉริยะ</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">ใช้พื้นที่เก็บข้อมูลอัจฉริยะ</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"ท่าทางสัมผัส"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"เปิดกล้องอย่างรวดเร็ว"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"หากต้องการเปิดกล้องอย่างรวดเร็ว ให้กดปุ่มเปิด/ปิด 2 ครั้งจากหน้าจอใดก็ได้"</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"ท่าทางสัมผัส, แป้นพิมพ์ลัด"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"ชำระเงิน, การชำระเงิน"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"พลิกกล้องเพื่อถ่ายเซลฟี"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">หากต้องการเข้าและออกจากโหมดเซลฟีในกล้อง Pixel ให้บิดข้อมือ 2 ครั้งเมื่อคุณอยู่ในแอป</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"โหมดการไปยังส่วนต่างๆ"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"อัปเดตอุปกรณ์"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"การโต้ตอบ"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Instant Apps"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"ค่ากำหนดของ Instant Apps"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"แอปที่ติดตั้ง"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"ตัวจัดการพื้นที่เก็บข้อมูลกำลังจัดการพื้นที่เก็บข้อมูลของคุณ"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">ถ้าเชื่อมต่ออินเทอร์เน็ต ก็จะเข้าถึงรูปภาพและวิดีโอที่มีระดับคุณภาพตามที่เลือกไว้สำหรับการสำรองข้อมูลได้</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"บัญชีสำหรับ \"<xliff:g id="USER_NAME">%1$s</xliff:g>\""</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"ซิงค์ข้อมูลแอปโดยอัตโนมัติ"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"ให้แอปรีเฟรชข้อมูลอัตโนมัติ"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"ชื่อเครือข่าย"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"แสดงชื่อเครือข่ายในแถบสถานะ"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Instant App"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"ปิดตัวจัดการพื้นที่เก็บข้อมูลใช่ไหม"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">คุณแน่ใจหรือว่าต้องการปิดพื้นที่เก็บข้อมูลอัจฉริยะ \n\nพื้นที่เก็บข้อมูลอัจฉริยะจะไม่ทำให้พื้นที่ว่างมากขึ้นเมื่อพื้นที่เก็บข้อมูลใกล้เต็ม</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"อัปเดตโหมดห้ามรบกวน"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"หยุดการแจ้งเตือนชั่วคราวเพื่อไม่ให้มีสิ่งรบกวน"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"ใช้งานฟีเจอร์ไม่ได้"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"การเปลี่ยนแปลงที่ปิดใช้โดยค่าเริ่มต้น"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"จะแก้ไขการเปลี่ยนแปลงความเข้ากันได้ของแอปได้เฉพาะแอปที่แก้ไขข้อบกพร่องได้เท่านั้น ติดตั้งแอปที่แก้ไขข้อบกพร่องได้แล้วลองอีกครั้ง"</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"ขึ้นอยู่กับการตั้งค่าอื่น"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"บัญชี"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">บัญชี Google</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d บัญชี"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"ชื่ออุปกรณ์"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"ข้อมูลพื้นฐาน"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"ตำแหน่ง"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"ผู้ให้บริการอาจรวบรวมข้อมูลตำแหน่งเมื่อใช้บริการนี้สำหรับหมายเลขฉุกเฉิน\n\nไปที่นโยบายความเป็นส่วนตัวของผู้ให้บริการเพื่อดูรายละเอียด"</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"คุณอาจใช้เวลาหรืออินเทอร์เน็ตที่เหลือต่อไม่ได้ โปรดสอบถามผู้ให้บริการก่อนนำออก"</string>
-    <string name="content_capture" msgid="868372905432812238">"เนื้อหาแอป"</string>
+    <string name="content_capture" msgid="868372905432812238">ปรับเปลี่ยนในแบบของคุณโดยใช้ข้อมูลแอป</string>
     <string name="content_capture_summary" msgid="49720773699715531">"อนุญาตให้แอปส่งเนื้อหาไปยังระบบของ Android"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"บันทึกฮีปดัมป์ของระบบ"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">ข้อความแบบเรียลไทม์ (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"ใช้ข้อความเพื่อสื่อสารระหว่างการโทร"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">ไม่แสดง</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">แสดงระหว่างการโทร</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">แสดงเสมอ</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"ปิด VoLTE ใช่ไหม"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"การดำเนินการนี้จะปิดการเชื่อมต่อ 5G ด้วย\nคุณจะใช้อินเทอร์เน็ตไม่ได้และบางแอปอาจใช้งานไม่ได้ระหว่างการโทร"</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"ระงับการดำเนินการสำหรับแอปที่แคชไว้"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"ตรวจสอบกิจกรรมบนแอปเพื่อหาฟิชชิง"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"ใช้การสแกนหาแอปที่หลอกลวง"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"ใช้การสแกนหาแอปที่หลอกลวงสำหรับการทำงาน"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">การสแกนจะเกิดขึ้นในอุปกรณ์ของคุณอย่างเป็นส่วนตัว โดยตรวจสอบกิจกรรมบนแอปเพื่อหาฟิชชิงหรือลักษณะการทำงานที่หลอกลวงอื่นๆ หากตรวจพบ ระบบจะส่งข้อมูลแอปบางส่วนไปยัง Google Play Protect เพื่อยืนยันภัยคุกคามและเตือนผู้ใช้แอป</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">นี่เป็นฟีเจอร์ความปลอดภัยที่มีการป้องกัน ไม่มีการแชร์ข้อมูลอุปกรณ์หรือข้อมูลส่วนบุคคลใดๆ กับ Google \n\nฟิชชิงคือการพยายามขโมยข้อมูลเข้าสู่ระบบหรือข้อมูลส่วนบุคคลอื่นๆ</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"ตั้งค่ารหัสผ่านแล้ว"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"ตั้งค่า PIN แล้ว"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"แสดงตัวชี้เมื่อวางสไตลัสเหนือ"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">อนุญาตให้แอปแสดงตัวชี้เมื่อวางสไตลัสเหนือ</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"การตั้งค่า Media DRM"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"บังคับใช้ Software Secure Crypto"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"บังคับให้การจัดการคีย์ DRM ใช้การเข้ารหัส White Box แบบใช้ซอฟต์แวร์"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"การตรวจสอบตัวตนทำงานร่วมกับแอปอื่นๆ อีก"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"ดูรายละเอียด"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"การตรวจสอบตัวตนทำงานร่วมกับแอปอื่นๆ อีก"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"การตรวจสอบตัวตนและนาฬิกา"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"เมื่อเชื่อมต่อนาฬิกาแล้ว การตรวจสอบตัวตนจะเพิ่มวิธีอื่นๆ ในการยืนยันว่าเป็นคุณเพื่อป้องกันการเข้าถึงแอปโดยไม่พึงประสงค์"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"การตรวจสอบตัวตนและนาฬิกา"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"การอัปเดต:\n"<ul><li>"เมื่อเชื่อมต่อนาฬิกา คุณจะใช้ข้อมูลไบโอเมตริกหรือ PIN เพื่อเข้าถึงแอปได้เมื่อไม่ได้อยู่ในสถานที่ที่เชื่อถือได้"</li>\n<li>"เมื่อเวลาผ่านไป การตรวจสอบตัวตนอาจเพิ่มวิธีอื่นๆ ในการยืนยันว่าเป็นคุณและรักษาความปลอดภัยของแอปในอุปกรณ์ "<a href="https://support.google.com/android?p=identity_check">"ดูข้อมูลเพิ่มเติมเกี่ยวกับเวลาและสถานที่ที่คุณได้รับการปกป้อง"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">การตรวจสอบตัวตนและ Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">เมื่อเชื่อมต่อ Pixel Watch แล้ว การตรวจสอบตัวตนจะเพิ่มวิธีอื่นๆ ในการยืนยันว่าเป็นคุณเพื่อป้องกันการเข้าถึงแอปโดยไม่พึงประสงค์</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">การตรวจสอบตัวตนและ Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">การอัปเดต: &lt;ul&gt;&lt;li&gt;เมื่อเชื่อมต่อ Pixel Watch 3 หรือรุ่นที่ใหม่กว่า คุณจะใช้ข้อมูลไบโอเมตริกหรือ PIN เพื่อเข้าถึงแอปได้เมื่อไม่ได้อยู่ในสถานที่ที่เชื่อถือได้ &lt;/li&gt;&lt;li&gt;เมื่อเวลาผ่านไป การตรวจสอบตัวตนอาจเพิ่มวิธีอื่นๆ ในการยืนยันว่าเป็นคุณและรักษาความปลอดภัยของแอปในอุปกรณ์ &lt;a href=https://support.google.com/android?p=identity_check&gt;ดูข้อมูลเพิ่มเติมเกี่ยวกับเวลาและสถานที่ที่คุณจะได้รับการปกป้อง&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"การตั้งค่าอื่นๆ"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"การป้อนข้อความอัตโนมัติ การแจ้งเตือน และอื่นๆ"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"การควบคุมความเป็นส่วนตัว"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"การเข้าถึงตำแหน่ง"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"ดูแอปและบริการที่มีสิทธิ์เข้าถึงตำแหน่ง"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"การตรวจสอบตัวตนทำงานร่วมกับแอปอื่นๆ อีก"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"การตรวจสอบตัวตนและนาฬิกา"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"เมื่อเชื่อมต่อนาฬิกาแล้ว การตรวจสอบตัวตนจะเพิ่มวิธีอื่นๆ ในการยืนยันว่าเป็นคุณเพื่อป้องกันการเข้าถึงแอปโดยไม่พึงประสงค์"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">การตรวจสอบตัวตนและ Pixel Watch</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">เมื่อเชื่อมต่อ Pixel Watch แล้ว การตรวจสอบตัวตนจะเพิ่มวิธีอื่นๆ ในการยืนยันว่าเป็นคุณเพื่อป้องกันการเข้าถึงแอปโดยไม่พึงประสงค์</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"ดูรายละเอียด"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"ตรวจสอบการตั้งค่าไม่ได้"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"ยังไม่มีข้อมูล"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">การสแกนด้วย Google Play Protect เปิดอยู่</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Google Play Protect จะตรวจหาการทำงานที่เป็นอันตรายในแอปและอุปกรณ์ของคุณเป็นประจำ โดยระบบจะแจ้งเตือนให้ทราบหากพบความเสี่ยงด้านความปลอดภัย</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">การรักษาความปลอดภัยของแอป, Play Protect, Google Play Protect, ความปลอดภัยของแอป</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">บัญชี Google ได้รับการปกป้องแล้ว</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">การตรวจสอบความปลอดภัยของ Google, การรักษาความปลอดภัยของ Google, การตรวจสอบความปลอดภัย, การรักษาความปลอดภัยของบัญชี, การรักษาความปลอดภัยของบัญชี Google, บัญชี Google</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">ศูนย์การค้นหา, การค้นหาอุปกรณ์, หาอุปกรณ์ของฉัน, อุปกรณ์สูญหาย</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"การอัปเดต"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"การอัปเดต, อัปเดต, อัปเดตความปลอดภัย, การอัปเดตความปลอดภัย"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">อัปเดต, การอัปเดต, อัปเดตระบบ, การอัปเดตระบบ, อัปเดตระบบ Google Play, การอัปเดตระบบ Google Play</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"ล็อกอุปกรณ์, ล็อกหน้าจอ, หน้าจอล็อก, หน้าจอล็อก, รหัสผ่าน, PIN, รูปแบบ, ล็อก, ปลดล็อก"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"ลายนิ้วมือ, นิ้ว, เพิ่มลายนิ้วมือ"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"การปลดล็อกด้วยใบหน้า, ใบหน้า"</string>

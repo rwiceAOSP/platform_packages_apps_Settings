@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"រួចរាល់"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"រំកិលចុះ ដើម្បីរកលំហឯកជន"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"ចូល​គណនី"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"ចូលគណនី ដើម្បីប្រើជាមួយលំហឯកជនរបស់អ្នក"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">ចូលគណនី Google ដើម្បីប្រើជាមួយលំហឯកជនរបស់អ្នក</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"កុំទាន់"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"បន្ត"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"ជ្រើសរើសការចាក់សោសម្រាប់លំហឯកជនរបស់អ្នក"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"ផ្ញើឈ្មោះឧបករណ៍"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"ចែករំលែកឈ្មោះរបស់ឧបករណ៍នេះជាមួយបណ្ដាញ"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"ការ​ជាវ"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"មើល ឬប្ដូរការជាវ"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">មើល ឬប្ដូរ​ការជាវ OpenRoaming</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"​MAC ចៃដន្យ"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"បញ្ចូលឧបករណ៍"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"ដាក់កូដ QR ខាងក្រោមឱ្យ​នៅចំកណ្ដាល ដើម្បីបញ្ចូលឧបករណ៍ទៅ “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"នឹងបិទដោយស្វ័យប្រវត្តិនៅម៉ោង <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"នឹងបិទដោយស្វ័យប្រវត្តិ បន្ទាប់ពីម៉ោងគេង"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"នឹងបិទ នៅពេល<xliff:g id="ID_1">%1$s</xliff:g>បញ្ចប់"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"រចនាប័ទ្មងងឹត​ប្រើផ្ទៃខាងក្រោយ​ពណ៌ខ្មៅ ដើម្បីជួយ​រក្សាថាមពលថ្ម​ឱ្យនៅបានយូរ​ជាងមុន​នៅលើអេក្រង់​មួយចំនួន។ កាលវិភាគ​រចនាប័ទ្មងងឹត​រង់ចាំបើក រហូតទាល់តែ​អេក្រង់​របស់អ្នក​ត្រូវបានបិទ។"</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"ប្រើផ្ទៃខាងក្រោយងងឹត ដើម្បីធ្វើឱ្យអេក្រង់របស់អ្នកកាន់តែស្រួលក្នុងការមើល និងកាត់បន្ថយការប្រើប្រាស់ថ្មនៅលើអេក្រង់មួយចំនួន។ ទម្រង់រចនារបស់អ្នកនឹងផ្លាស់ប្ដូរ នៅពេលអេក្រង់បិទ ប្រសិនបើអ្នកមានកាលវិភាគ។"</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">ទម្រង់រចនាងងឹតប្រើផ្ទៃខាងក្រោយ​ពណ៌ខ្មៅ ដើម្បីជួយរក្សា​ថាមពលថ្ម​របស់អ្នក​ឱ្យនៅ​បានកាន់តែយូរ។ កាលវិភាគទម្រង់រចនាងងឹតរង់ចាំបើក រហូតទាល់តែ​អេក្រង់​របស់អ្នក​ត្រូវបានបិទ។</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">ប្រើផ្ទៃខាងក្រោយងងឹត ដើម្បីកាត់បន្ថយការប្រើប្រាស់ថ្ម និងធ្វើឱ្យអេក្រង់របស់អ្នកកាន់តែស្រួលក្នុងការមើល។ ទម្រង់រចនារបស់អ្នកនឹងផ្លាស់ប្ដូរ នៅពេលអេក្រង់បិទ ប្រសិនបើអ្នកមានកាលវិភាគ។</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"បច្ចុប្បន្ន រចនាប័ទ្ម​ងងឹត​កំពុងអនុវត្តតាម​កាលវិភាគមុខងារ​ម៉ោងគេងរបស់អ្នក"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"ការកំណត់​មុខងារ​ម៉ោង​គេង"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{មុខងារក៏អាចបើកទម្រង់រចនាងងឹតបានផងដែរ។}=1{{mode_1} ក៏បើកទម្រង់រចនាងងឹតផងដែរ។}=2{{mode_1} និង {mode_2} ក៏បើកទម្រង់រចនាងងឹតផងដែរ។}=3{{mode_1}, {mode_2} និង {mode_3} ក៏បើកទម្រង់រចនាងងឹតផងដែរ។}other{{mode_1}, {mode_2} និង # ទៀតក៏បើកទម្រង់រចនាងងឹតផងដែរ។}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"អ្នក​អាច​ចាប់ផ្ដើម​ប្រើប្រាស់​<xliff:g id="NAME">^1</xliff:g> របស់​អ្នក​បាន​ហើយ"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"ស្ថានភាព​ថ្ម"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"កម្រិត​ថ្ម"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"ទូទៅ"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"ការកំណត់ទូទៅ"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">មុខងារមណ្ឌល</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">ជម្រើសអេក្រង់ចាក់សោ និងភ្ជាប់</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"មុខងារមណ្ឌល"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"ធាតុ​ក្រាហ្វិកនៅលើអេក្រង់ចាក់សោ"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"ដើម្បីចូលប្រើប្រាស់ធាតុ​ក្រាហ្វិកដែលអ្នកពេញចិត្ត សូមអូសទៅឆ្វេងពីអេក្រង់ចាក់សោរបស់អ្នក។ \n\nនៅពេលអ្នកបើកកម្មវិធីដោយប្រើធាតុ​ក្រាហ្វិក អ្នកនឹងត្រូវផ្ទៀងផ្ទាត់ថាជាអ្នក។ ទន្ទឹមនឹងនេះ សូមចងចាំថា នរណាក៏អាចមើលធាតុក្រាហ្វិកទាំងនោះបានដែរ។"</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"ផ្ទាំងប៉ះ, ផ្ទាំងសម្រាប់ប៉ះ, ម៉ៅស៍, ទស្សន៍ទ្រនិច, រំកិល, អូស, ចុចម៉ៅស៍ខាងស្ដាំ, ចុច, ទ្រនិចរំកិល"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"ចុចម៉ៅស៍ខាងស្ដាំ, ចុច"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"ប៊ូតុងម៉ៅស៍កណ្ដាល"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"បើកដំណើរការ Google Assistant"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">បើកដំណើរការ Gemini</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"ចាប់ផ្ដើម <xliff:g id="APP_NAME">%s</xliff:g>"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"ជំនួយការ"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"ទៅទំព័រដើម"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"មុខងាររុករក ការ​បង្វិលអេក្រង់"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"ផ្ញើមតិកែលម្អ"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"ចូលរួមស្ទង់មតិ"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">ទាក់ទងទៅផ្នែកជំនួយពិការភាព Google</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"ការស្ទង់មតិអំពីភាពងាយស្រួល"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"ចែករំលែកមតិកែលម្អរបស់អ្នក"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"តើអ្នកពេញចិត្តនឹងទម្រង់រចនាងងឹតកម្រិតណា?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"ផ្លូវកាត់ឧបករណ៍ជំនួយការស្ដាប់"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"ភាពត្រូវគ្នាជាមួយនឹង​ឧបករណ៍​ជំនួយការ​ស្ដាប់"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"កែលម្អភាពត្រូវគ្នាជាមួយឧបករណ៍ទទួលសញ្ញា និងកាត់បន្ថយសំឡេងរំខានដែលមិនចង់បាន"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">អាចដំឡើងកម្រិត​សំឡេង ដើម្បីកែលម្អភាពត្រូវគ្នាជាមួយខ្សែទទួលសញ្ញាសំឡេង និងកាត់បន្ថយសំឡេងរំខានដែលមិនចង់បាន</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"អំពីឧបករណ៍ជំនួយការស្ដាប់"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ដើម្បីស្វែងរកឧបករណ៍ជំនួយការស្ដាប់ផ្សេងទៀតដែលមិនអាចប្រើជាមួយ ASHA ឬ LE Audio សូមចុច &lt;b&gt;ផ្គូផ្គងឧបករណ៍ថ្មី&lt;/b&gt; &gt; &lt;b&gt;មើលឧបករណ៍ច្រើនទៀត&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ដើម្បីស្វែងរកឧបករណ៍ជំនួយការស្ដាប់ផ្សេងទៀតដែលមិនអាចប្រើជាមួយ ASHA ឬ LE Audio សូមចុច"<b>"ផ្គូផ្គងឧបករណ៍ថ្មី"</b>" បន្ទាប់មក "<b>"មើលឧបករណ៍ច្រើនទៀត"</b></string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"កម្រិតពន្លឺ ប្រតិកម្មនឹងពន្លឺ ​រចនាប័ទ្ម​ងងឹត ឈឺក្បាលប្រកាំង ឈឺក្បាល មុខងារអាន មុខងារយប់ បន្ថយពន្លឺ ចំណុច​ពណ៌​ស"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"ការមើល, ការស្ដាប់ឮ, ងងឹតភ្នែក, ថ្លង់, ចលនា, ភាពស្ទាត់ជំនាញ, ជំនួយ, ការជួយ, ងាយស្រួល​ប្រើប្រាស់, ងាយស្រួល​ចូលប្រើ, ដៃ"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"កម្មវិធីពង្រីកវិនដូ ពង្រីកបង្រួម ការពង្រីក ខ្សោយភ្នែក ពង្រីក ធ្វើឱ្យកាន់តែធំ"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">កម្មវិធីអានអេក្រង់, ការបញ្ចូលសំឡេង, VoiceOver, ជំនួយសំឡេង, ពិការភ្នែក, ខ្សោយភ្នែក, TTS, ការបំប្លែងអត្ថបទទៅជាការនិយាយ, ការអានអេក្រង់</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"អក្សររត់, CC, ធ្វើប្រតិចារឹកភ្លាមៗ, មានបញ្ហាស្ដាប់, ស្ដាប់មិនឮ, CART, ការបំប្លែងការនិយាយទៅជាអត្ថបទ"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">អក្សររត់, CC, អក្សររត់ក្នុងពេលជាក់ស្ដែង, មានបញ្ហាស្ដាប់, ស្ដាប់មិនឮ, CART, ការបំប្លែងការនិយាយទៅជាអត្ថបទ</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">ការជូនដំណឹង មានបញ្ហាស្ដាប់ ស្ដាប់មិនឮ ជូនដំណឹង</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, បំពង​សំឡង, ការបំពង​សំឡង, មានបញ្ហាស្ដាប់, ស្ដាប់មិនឮ</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"ទំហំអេក្រង់ អេក្រង់ធំ"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"ពន្លឺបញ្ច្រាសខ្ពស់ ខ្សោយភ្នែក ពុម្ពអក្សរដិត អក្សរដិត"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"អក្សរដែលមានកម្រិតរំលេចពណ៌ខ្ពស់"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">ឮការអានអក្សរ, អានឮៗ, អានអេក្រង់, កម្មវិធី​អាន​អេក្រង់, ជំងឺវិកលទស្សន៍, ជ្រើសរើសដើម្បីអាន</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"កែតម្រូវពណ៌"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"ធ្វើឱ្យ​អេក្រង់ងងឹត ធ្វើឱ្យអេក្រង់ភ្លឺ"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">ចលនា, ម៉ឺនុយរហ័ស, ម៉ឺនុយ​ជំនួយ, ចុច, ភាពស្ទាត់ជំនាញ, ជំងឺ​សន្លាក់ឆ្អឹង, rsi, ជំងឺដាច់សរសៃឈាម​ខួរក្បាល, ញ័រ, ជំងឺក្រិន​សរសៃឈាមច្រើន ពិការ​ខួរក្បាល, ប៊ូតុង, ហាតវែរ, សង្កត់, ការចុករោយ, ដៃ, ការឈឺចាប់, អាចចូល​ប្រើបាន, ជំនួយ</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">ម៉ូទ័រ, ឧបករណ៍ចុចសម្រាប់ជនពិការ, ដៃ, AT, បច្ចេកវិទ្យាជំនួយ, ពិការ, ALS, ការស្កេន, ការស្កេនជំហាន</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"ចលនា, កណ្ដុរ, កណ្ដុរ​ខាងក្រៅ, ឧបករណ៍​ពាក់ក្បាល​សម្រាប់បញ្ជា​កណ្ដុរ, កណ្ដុរ​ដែលមាន​ភាពបត់បែន, រទេះ​រុញ, ដងបញ្ជា"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"ឧបករណ៍​ជំនួយការស្តាប់, មានបញ្ហា​ក្នុងការស្ដាប់, ស្ដាប់មិនឮ, ឧបករណ៍​អេឡិចត្រូនិក​ក្នុងខ្លួនមនុស្ស​សម្រាប់ជំនួយការស្ដាប់, ឧបករណ៍​បង្កើនសំឡេង, ឧបករណ៍​កែសម្រួលសំឡេង, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"មានបញ្ហាស្ដាប់, ស្ដាប់មិនឮ, អក្សររត់, អង្គលីលេខ, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">សំឡេង ការគ្រប់គ្រងដោយប្រើសំឡេង ម៉ូទ័រ ដៃ មីក្រូហ្វូន ការសរសេរតាមអាន និយាយ គ្រប់គ្រង</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"ប៊ូតុង​បី"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"ភាពស្ទាត់ជំនាញ, ចលនា, មនុស្សចាស់, ជំងឺ​សន្លាក់ឆ្អឹង, rsi, ជំងឺដាច់សរសៃឈាមខួរក្បាល, ញ័រ, ជំងឺក្រិន​សរសៃឈាមច្រើន, ពិការ​ខួរក្បាល, រង្គើ, ការចុករោយ, ដៃ"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"ពន្យារ​ពេល, ភាពស្ទាត់ជំនាញ, មនុស្សចាស់"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"កម្រិតថ្មជិតអស់ហើយ"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"បើកមុខងារ​សន្សំ​ថ្ម ដើម្បីបង្កើនកម្រិតថាមពលថ្ម"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"បង្កើនកម្រិតថាមពលថ្ម"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"បើក​​កម្មវិធី​គ្រប់គ្រង​ថ្ម"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">បើក​កម្មវិធី​ថ្ម​មានភាពបត់បែន</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"បើក​កម្មវិធី​សន្សំ​ថ្ម​"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"អាចនឹងឆាប់​អស់​ថ្ម​​ជាងធម្មតា"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"មុខងារសន្សំ​ថ្ម​ត្រូវបានបើក"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"មិនអីទេ សាកថ្មចុះ"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"ពិនិត្យមើលគ្រឿងសាកថ្ម"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"ស្វែងយល់បន្ថែមអំពី​ការសាកថ្មមិនត្រូវគ្នា"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"កម្មវិធី​គ្រប់គ្រង​ថ្ម"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">ចំណូលចិត្តដែលមានភាពបត់បែន</string>
     <string name="smart_battery_title" msgid="9095903608520254254">មុខងារ​ថ្ម​មាន​ភាព​បត់បែន</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"នៅ​ពេល​កម្មវិធី​គ្រប់គ្រង​ថ្ម​រកឃើញ​ថាកម្មវិធី​កំពុងធ្វើឱ្យ​ថ្ម​ឆាប់​អស់ អ្នក​នឹង​មាន​ជម្រើស​ដើម្បីដាក់​កំហិត​កម្មវិធី​ទាំងនេះ។ កម្មវិធី​ដែល​បាន​កំហិតអាច​​មិន​ដំណើរការ​ប្រក្រតី ហើយ​ការជូនដំណឹង​អាច​​ត្រូវ​បាន​ពន្យារពេល។"</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">ដើម្បីបង្កើនកម្រិតថាមពលថ្ម កម្មវិធីថ្ម​មាន​ភាព​បត់បែនអាចកាត់បន្ថយប្រតិបត្តិការ និងសកម្មភាពនៅផ្ទៃខាងក្រោយ។ ការជូនដំណឹងមួយចំនួនអាចត្រូវបានពន្យារពេល។</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"កម្មវិធី​ដែល​បាន​រឹតបន្តឹង"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{ការដាក់កំហិត​ការប្រើប្រាស់ថ្ម​សម្រាប់កម្មវិធី #}other{ការដាក់កំហិត​ការប្រើប្រាស់ថ្ម​សម្រាប់កម្មវិធី #}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"បានរឹតបន្តឹង <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"កម្មវិធីទាំងនេះត្រូវបានរឹតបន្តឹងមិនឱ្យប្រើប្រាស់ថ្ម​នៅផ្ទៃខាងក្រោយ​។ កម្មវិធីទាំងនេះអាចនឹងមិនដំណើរការដូចការរំពឹងទុកទេ ហើយការជូនដំណឹងអាចមានការពន្យារពេល។"</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"ប្រើ​កម្មវិធី​គ្រប់គ្រង​ថ្ម"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"រកឃើញនៅពេលកម្មវិធី​ធ្វើឱ្យឆាប់អស់ថ្ម"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"កំពុងរកមើល នៅពេលកម្មវិធី​ធ្វើឱ្យឆាប់អស់ថ្ម"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"កំពុងរកមើល នៅពេលកម្មវិធី​ធ្វើឱ្យឆាប់អស់ថ្ម"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">បង្កើនកម្រិតថាមពលថ្ម និងបង្កើនប្រសិទ្ធភាពនៃការសាកថ្ម</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">បង្កើនកម្រិត​ថាមពល​ថ្ម</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{បានដាក់កំហិត​កម្មវិធី #}other{បានដាក់កំហិត​កម្មវិធី #}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"មានបញ្ហាក្នុង​ការអាន​រង្វាស់កម្រិតថ្ម។"</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">ស្វែងយល់បន្ថែម</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"ចុច ដើម្បីស្វែងយល់បន្ថែម​អំពីបញ្ហានេះ"</string>
     <string name="power_screen" msgid="4596900105850963806">"អេក្រង់"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"បម្រុងទុក &amp; ស្ដារ​ឡើងវិញ"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"ទិន្នន័យ​ផ្ទាល់ខ្លួន"</string>
     <string name="backup_data_title" msgid="507663517227498525">"បម្រុង​ទុក​ទិន្នន័យ​របស់​ខ្ញុំ"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"បម្រុង​ទុក​ទិន្នន័យ​កម្មវិធី, ពាក្យ​សម្ងាត់​វ៉ាយហ្វាយ និង​ការ​កំណត់​ផ្សេងៗ​ទៅ​ម៉ាស៊ីន​មេ Google"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">បម្រុងទុកទិន្នន័យកម្មវិធី, ពាក្យសម្ងាត់ Wi-Fi, និងការកំណត់ផ្សេងទៀតទៅម៉ាស៊ីនមេ Google</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"គណនីបម្រុង​ទុក"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"គ្រប់គ្រង​គណនី​បម្រុងទុក"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"រួម​បញ្ចូល​ទិន្នន័យ​កម្មវិធី"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"បច្ចុប្បន្ន​ គ្មាន​គណនី​រក្សាទុក​ទិន្នន័យ​បម្រុង​ទុក​ទេ"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"បញ្ឈប់​ការ​បម្រុង​ទុក​ពាក្យ​សម្ងាត់​វ៉ាយហ្វាយ, ចំណាំ, ការ​កំណត់​ផ្សេងៗ, និង​ទិន្នន័យ​កម្មវិធី​របស់​អ្នក រួម​ទាំង​លុប​ច្បាប់​ចម្លង​ទាំងអស់​លើ​ម៉ាស៊ីន​មេ Google?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"បញ្ឈប់ការបម្រុងទុកទិន្នន័យឧបករណ៍ (ដូចជាពាក្យសម្ងាត់ Wi-Fi និងប្រវត្តិហៅទូរស័ព្ទ) និងទិន្នន័យកម្មវិធី (ដូចជាការកំណត់ និងឯកសារដែលបានផ្ទុកដោយកម្មវិធី) ព្រមទាំងលុបច្បាប់ចម្លងទាំងអស់នៅលើម៉ាស៊ីនមេដែលគ្រប់គ្រងពីចម្ងាយឬទេ?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"បម្រុងទុកទិន្នន័យឧបករណ៍ដោយស្វ័យប្រវត្តិ (ដូចជាពាក្យសម្ងាត់ Wi-Fi និងប្រវត្តិការហៅទូរស័ព្ទ) និងទិន្នន័យកម្មវិធី (ដូចជាការកំណត់ និងឯកសារដែលបានផ្ទុកដោយកម្មវិធី) ពីចម្ងាយ។\n\nនៅពេលអ្នកបើកការបម្រុងទុកស្វ័យប្រវត្តិ ទិន្នន័យឧបករណ៍ និងកម្មវិធីនឹងត្រូវបានរក្សាទុកពីចម្ងាយជាទៀងទាត់។ ទិន្នន័យកម្មវិធីអាចជាទិន្នន័យណាដែលកម្មវិធីបានរក្សាទុក (ផ្អែកលើការកំណត់ផ្នែកអ្នកអភិវឌ្ឍន៍) រាប់បញ្ចូលទាំងទិន្នន័យដែលសំខាន់ខ្លាំង ដូចជាទំនាក់ទំនង សារ និងរូបថត។"</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">បញ្ឈប់ការបម្រុងទុកទិន្នន័យឧបករណ៍ (ដូចជាពាក្យសម្ងាត់ Wi-Fi និងប្រវត្តិហៅទូរស័ព្ទ) និងទិន្នន័យកម្មវិធី (ដូចជាការកំណត់ និងឯកសារដែលបានផ្ទុកដោយកម្មវិធី) ព្រមទាំងលុបច្បាប់ចម្លងទាំងអស់នៅលើ Google ថាសដែរឬទេ?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">បម្រុងទុកទិន្នន័យដោយស្វ័យប្រវត្តិ (ដូចជាពាក្យសម្ងាត់ Wi-Fi និងប្រវត្តិហៅទូរស័ព្ទ) និងទិន្នន័យកម្មវិធី (ដូចជាការកំណត់ និងឯកសារដែលបានផ្ទុកដោយកម្មវិធី) ទៅក្នុង Google ថាស។\n\nនៅពេលអ្នកបើកការបម្រុងទុកដោយស្វ័យប្រវត្តិ នោះទិន្នន័យឧបករណ៍ និងកម្មវិធីត្រូវបានរក្សាទុកជាទៀងទាត់ទៅក្នុងថតឯកសារឯកជននៅក្នុង Google ថាស។ ទិន្នន័យកម្មវិធីអាចជាទិន្នន័យដែលកម្មវិធីបានរក្សាទុក (ផ្អែកលើការកំណត់អ្នកអភិវឌ្ឍន៍) ដោយរាប់បញ្ចូលទាំងទិន្នន័យរសើប ដូចជាទំនាក់ទំនង សារ និងរូបថត។\n\nទិន្នន័យបម្រុងទុកនឹងមិនរាប់បញ្ចូលទៅក្នុងកម្រិតកំណត់នៃទំហំផ្ទុកក្នុងថាសរបស់អ្នកទេ។ ឯកសារទំហំធំ ឬឯកសារដែលអ្នកអភិវឌ្ឍន៍បានជ្រើសមិនរាប់បញ្ចូលពីសេវាកម្មនេះនឹងមិនត្រូវបានបម្រុងទុកទេ។</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"ការកំណត់​អ្នកគ្រប់គ្រង​ឧបករណ៍"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"កម្មវិធីអ្នកគ្រប់គ្រងឧបករណ៍"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"បិទដំណើរការកម្មវិធីអ្នកគ្រប់គ្រងឧបករណ៍នេះ"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"បញ្ហាប្រឈមក្នុងការងារ ការងារ ប្រវត្តិរូប"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"ប្រវត្តិរូបការងារ ប្រវត្តិរូបដែលត្រូវបានគ្រប់គ្រង រួមបញ្ចូល ការរួមបញ្ចូល ការងារ ប្រវត្តិរូប"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"ភ្ញាក់, ដេក, មិនចាក់សោ, បន្ដដោះសោនៅពេលបត់, កំពុងបត់, កំពុងបិទ, បត់, បិទ, បិទអេក្រង់"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"ចលនា"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">ចលនា ផ្លាស់ទី</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"បង់​ប្រាក់, ចុច, ការ​បង់​ប្រាក់"</string>
     <string name="keywords_backup" msgid="707735920706667685">"ការបម្រុងទុក បម្រុងទុក"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"ប្រតិទិនអន្តរ​កម្រងព័ត៌មាន"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"បង្ហាញ​ព្រឹត្តិការណ៍ការងារផ្សេងៗ​នៅក្នុងប្រតិទិន​ផ្ទាល់ខ្លួនរបស់អ្នក"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"នៅពេលកម្មវិធី​ការងារត្រូវបានបិទ កម្មវិធីទាំងនោះ​ត្រូវបានផ្អាក និងមិនអាចចូលប្រើ ឬផ្ញើការជូនដំណឹង​ដល់អ្នកបានទេ"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"គ្រប់គ្រងទំហំផ្ទុក"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"ដើម្បីបង្កើនទំហំផ្ទុក កម្មវិធីគ្រប់គ្រងទំហំផ្ទុកយករូបថត និងវីដេអូដែលបានបម្រុងទុកចេញពីឧបករណ៍របស់អ្នក។"</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"យករូបថត និងវីដេអូចេញ"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"កម្មវិធីគ្រប់គ្រងទំហំផ្ទុក"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"ប្រើ​កម្មវិធីគ្រប់គ្រង​ទំហំផ្ទុក"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">ទំហំផ្ទុកឆ្លាតវៃ</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">នៅពេលដែលទំហំផ្ទុកជិតពេញ សូមលុបរូបថត និងវីដេអូដែលបានបម្រុងទុក។ អ្នកនៅតែអាចរកពួកវាឃើញនៅក្នុង Google រូបថតបានដដែល។</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">លុបរូបថត និងវីដេអូដែលបានបម្រុងទុក</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">ទំហំផ្ទុកឆ្លាតវៃ</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">ប្រើ​ទំហំផ្ទុក​ឆ្លាតវៃ</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"ចលនា"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"បើក​កាមេរ៉ា​យ៉ាងរហ័ស"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"ដើម្បីបើកកាមេរ៉ាបានរហ័ស សូមចុចប៊ូតុងថាមពលពីរដង។ ដំណើរការនៅលើ​អេក្រង់ទាំងអស់។"</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"ចលនា, ផ្លូវ​កាត់"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"ទូទាត់ប្រាក់, ការទូទាត់ប្រាក់"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"ត្រឡប់​កាមេរ៉ា​ដើម្បីថត​សែលហ្វី"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">ដើម្បីចូលទៅ និងចេញពី​មុខងារ​សែលហ្វី​នៅក្នុងកាមេរ៉ា Pixel សូម​បង្វិល​ពីរដង នៅពេល​ដែលអ្នក​ចូលក្នុង​កម្មវិធី​នោះ។</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"មុខងារ​រុករក"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"ដំឡើងកំណែ​ឧបករណ៍"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"អន្តរកម្ម"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"កម្មវិធី​ប្រើ​ភ្លាមៗ"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"ចំណូលចិត្ត​កម្មវិធី​ប្រើភ្លាមៗ"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"កម្មវិធី​ដែលបាន​ដំឡើង"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"នៅពេលនេះទំហំផ្ទុករបស់អ្នកត្រូវបានគ្រប់គ្រងដោយកម្មវិធីគ្រប់គ្រងទំហំផ្ទុក"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">នៅពេលដែលអ្នកមានការតភ្ជាប់ អ្នកនៅតែអាចចូលមើលរូបថត និងវីដេអូតាមគុណភាពដែលអ្នកបានជ្រើសរើសសម្រាប់ការបម្រុងទុកបានដដែល</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"គណនី​សម្រាប់ <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"ធ្វើ​សមកាលកម្ម​ទិន្នន័យ​កម្មវិធី​ដោយស្វ័យប្រវត្តិ"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"អនុញ្ញាតឲ្យ​កម្មវិធី​ផ្ទុក​ទិន្នន័យ​ឡើងវិញ​ដោយស្វ័យប្រវត្តិ"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"ឈ្មោះ​បណ្តាញ"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"បង្ហាញឈ្មោះបណ្ដាញនៅក្នុងរបារស្ថានភាព"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"កម្មវិធីប្រើភ្លាមៗ"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"បិទកម្មវិធីគ្រប់គ្រងទំហំផ្ទុក?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">បិទទំហំផ្ទុកឆ្លាតវៃ? \n\nទំហំផ្ទុកឆ្លាតវៃនឹងមិនបង្កើនទំហំផ្ទុក នៅពេលដែលទំហំផ្ទុករបស់អ្នកជិតអស់នោះទេ។</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"ធ្វើ​បច្ចុប្បន្នភាព​មុខងារ​កុំរំខាន"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"ផ្អាក​ការជូនដំណឹង​ដើម្បីផ្តោត​អារម្មណ៍"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"មិនអាចប្រើ​មុខងារនេះបានទេ"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"ការផ្លាស់ប្ដូរ​ដែលបានបិទ​តាម​លំនាំដើម"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"ការផ្លាស់ប្ដូរ​ភាពត្រូវគ្នា​នៃ​កម្មវិធី​អាចត្រូវបាន​កែប្រែសម្រាប់​តែកម្មវិធី​ដែលអាចជួសជុល​បានប៉ុណ្ណោះ។ ដំឡើង​កម្មវិធី​ដែលអាចជួសជុលបាន រួចព្យាយាមម្ដងទៀត។"</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"ផ្អែក​លើ​ការកំណត់​ផ្សេង​ទៀត"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"គណនី"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">គណនី Google</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"គណនី %d"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"ឈ្មោះ​ឧបករណ៍"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"ព័ត៌មាន​មូលដ្ឋាន"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"ទីតាំង"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"ក្រុមហ៊ុនសេវាទូរសព្ទ​របស់អ្នកអាចនឹងប្រមូល​ទីតាំងរបស់អ្នក នៅពេលអ្នកប្រើ​សេវាកម្មនេះសម្រាប់​ការហៅទៅលេខសង្គ្រោះបន្ទាន់។\n\nសូមចូលទៅកាន់​គោលការណ៍ឯកជនភាព​របស់ក្រុមហ៊ុនសេវាទូរសព្ទអ្នក ដើម្បីទទួលបាន​ព័ត៌មានលម្អិត។"</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"អ្នក​អាចនឹងបាត់បង់​សិទ្ធិ​ចូលប្រើទិន្នន័យ និងរយៈពេលនៅសល់។ សូម​សាកសួរ​ក្រុមហ៊ុន​ផ្ដល់សេវារបស់អ្នក មុនពេលលុប។"</string>
-    <string name="content_capture" msgid="868372905432812238">"ខ្លឹមសារ​កម្មវិធី"</string>
+    <string name="content_capture" msgid="868372905432812238">កំណត់ផ្ទាល់ខ្លួន​ដោយប្រើ​ទិន្នន័យកម្មវិធី</string>
     <string name="content_capture_summary" msgid="49720773699715531">"អនុញ្ញាត​ឱ្យ​កម្មវិធី​ផ្ញើ​ខ្លឹមសារ​ទៅ​ប្រព័ន្ធ Android"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"ថត​ហ៊ីបដាំប្រព័ន្ធ"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">សារ​ជាអក្សរក្នុង​ពេល​ជាក់ស្តែង (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"ប្រើ​អក្សរ ដើម្បី​ធ្វើទំនាក់ទំនងក្នុងអំឡុងពេលហៅទូរសព្ទ"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">មើល​មិន​ឃើញ</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">មើលឃើញ​អំឡុងពេល​ហៅទូរសព្ទ</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">មើលឃើញ​ជានិច្ច</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"បិទ VoLTE ឬ?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"សកម្មភាពនេះក៏បិទ​ការតភ្ជាប់ 5G របស់អ្នកផងដែរ។\nអំឡុងពេលហៅជាសំឡេង អ្នក​មិនអាចប្រើ​អ៊ីនធឺណិត ហើយកម្មវិធីមួយចំនួនប្រហែលជាមិនដំណើរការទេ។"</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"ផ្អាកប្រតិបត្តិការសម្រាប់កម្មវិធីក្នុងឃ្លាំងបម្រុង"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"ពិនិត្យសកម្មភាព​កម្មវិធីរកមើលការ​ដាក់នុយ"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"ប្រើមុខងារស្កេន ដើម្បីរកកម្មវិធីដែលមានលក្ខណៈបោកប្រាស់"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"ប្រើមុខងារស្កេន ដើម្បីរកកម្មវិធីការងារដែលមានលក្ខណៈបោកប្រាស់"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">ការស្កេនដំណើរការជាឯកជនដោយផ្ទាល់នៅលើឧបករណ៍របស់អ្នក ដោយពិនិត្យសកម្មភាព​កម្មវិធីរកមើលការដាក់នុយ ឬអាកប្បកិរិយាបោកប្រាស់ផ្សេងទៀត។ ប្រសិនបើរកឃើញ ព័ត៌មានកម្មវិធីមួយចំនួនត្រូវបានផ្ញើទៅ Google Play Protect ដើម្បីបញ្ជាក់ការគំរាមកំហែង និងព្រមានអ្នកប្រើប្រាស់កម្មវិធី។</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">នេះជាមុខងារសុវត្ថិភាពដែលទទួលបានការការពារ។ គ្មានព័ត៌មានអំពីឧបករណ៍ ឬព័ត៌មានផ្ទាល់ខ្លួនណាត្រូវបានចែករំលែកជាមួយ Google ទេ។ \n\nការ​ដាក់នុយគឺជាការព្យាយាមលួចព័ត៌មានផ្ទៀងផ្ទាត់ការចូលគណនី ឬព័ត៌មានផ្ទាល់ខ្លួនផ្សេងទៀត។</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"ឥឡូវនេះ ពាក្យ​សម្ងាត់ត្រូវបានរៀបចំហើយ"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"ឥឡូវនេះ កូដ PIN ត្រូវបានរៀបចំហើយ"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"បង្ហាញទស្សន៍ទ្រនិច ពេលដាក់ព្រួញ"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">អនុញ្ញាតឱ្យកម្មវិធីបង្ហាញទស្សន៍ទ្រនិច ពេលកំពុងដាក់ព្រួញ</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"ការកំណត់ DRM មេឌៀ"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"បង្ខំឱ្យមានគ្រីបតូសុវត្ថិភាពកម្មវិធី"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"បង្ខំឱ្យការគ្រប់គ្រងកូដ DRM ប្រើវ៉ាយប៊ក់គ្រីបតូផ្អែកតាមកម្មវិធីសូហ្វវែរ"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"ការពិនិត្យអត្តសញ្ញាណដំណើរការជាមួយកម្មវិធីច្រើនទៀត"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"មើលព័ត៌មានលម្អិត"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"ការពិនិត្យអត្តសញ្ញាណដំណើរការជាមួយកម្មវិធីច្រើនទៀត"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"ការពិនិត្យអត្តសញ្ញាណ និងនាឡិកា"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"តាមរយៈនាឡិកាដែលបានភ្ជាប់ ការពិនិត្យអត្តសញ្ញាណបញ្ចូលវិធីច្រើនទៀតសម្រាប់ផ្ទៀងផ្ទាត់ថាជាអ្នក ដើម្បីទប់ស្កាត់ការចូលប្រើដែលមិនចង់បានទៅកាន់កម្មវិធីនានា"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"ការពិនិត្យអត្តសញ្ញាណ និងនាឡិកា"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"បច្ចុប្បន្នភាព៖\n"<ul><li>"តាមរយៈការភ្ជាប់នាឡិកា អ្នកអាចប្រើជីវមាត្រ ឬកូដ PIN របស់អ្នក ដើម្បីចូលប្រើកម្មវិធី នៅពេលអ្នកមិនស្ថិតនៅកន្លែងដែលទុកចិត្ត"</li>\n<li>"ការពិនិត្យអត្តសញ្ញាណអាចបញ្ចូលវិធីច្រើនទៀតសម្រាប់ផ្ទៀងផ្ទាត់ថាជាអ្នក និងកម្មវិធីដែលមានសុវត្ថិភាពនៅលើឧបករណ៍របស់អ្នកទៅតាមពេលវេលា។ "<a href="https://support.google.com/android?p=identity_check">"ស្វែងយល់បន្ថែមអំពីពេលវេលា និងទីកន្លែងដែលអ្នកទទួលបានការការពារ"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">ការពិនិត្យអត្តសញ្ញាណ និង Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">តាមរយៈ Pixel Watch ដែលបានភ្ជាប់ ការពិនិត្យអត្តសញ្ញាណបញ្ចូលវិធីច្រើនទៀតសម្រាប់ផ្ទៀងផ្ទាត់ថាជាអ្នក ដើម្បីទប់ស្កាត់ការចូលប្រើដែលមិនចង់បានទៅកាន់កម្មវិធីនានា</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">ការពិនិត្យអត្តសញ្ញាណ និង Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">ព័ត៌មានថ្មីៗ៖ &lt;ul&gt;&lt;li&gt;តាមរយៈការភ្ជាប់ Pixel Watch 3 ឬកំណែក្រោយៗ អ្នកអាចប្រើជីវមាត្រ ឬកូដ PIN របស់អ្នក ដើម្បីចូលប្រើកម្មវិធី នៅពេលអ្នកមិនស្ថិតនៅកន្លែងដែលទុកចិត្ត។ &lt;/li&gt;&lt;li&gt;ស្របទៅតាមពេលវេលា ការពិនិត្យអត្តសញ្ញាណអាចបញ្ចូលវិធីច្រើនទៀតសម្រាប់ការផ្ទៀងផ្ទាត់ថាជាអ្នក និងរក្សាកម្មវិធីឱ្យមានសុវត្ថិភាពនៅលើឧបករណ៍របស់អ្នក។ &lt;a href=https://support.google.com/android?p=identity_check&gt;ស្វែងយល់បន្ថែមអំពីពេលវេលា និងទីកន្លែងដែលអ្នកទទួលបានការការពារ&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"ការកំណត់​ផ្សេងទៀត"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"បំពេញស្វ័យប្រវត្តិ ការជូនដំណឹង និងច្រើនទៀត"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"ការគ្រប់គ្រងឯកជនភាព"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"ការចូលប្រើទីតាំង"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"មើល​កម្មវិធី និង​សេវាកម្ម​ដែល​មាន​សិទ្ធិ​ចូល​ប្រើ​ទីតាំង"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"ការពិនិត្យអត្តសញ្ញាណដំណើរការជាមួយកម្មវិធីច្រើនទៀត"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"ការពិនិត្យអត្តសញ្ញាណ និងនាឡិការបស់អ្នក"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"តាមរយៈនាឡិកាដែលបានភ្ជាប់ ការពិនិត្យអត្តសញ្ញាណបញ្ចូលវិធីច្រើនទៀតសម្រាប់ផ្ទៀងផ្ទាត់ថាជាអ្នក ដើម្បីទប់ស្កាត់ការចូលប្រើដែលមិនចង់បានទៅកាន់កម្មវិធីនានា"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">ការពិនិត្យអត្តសញ្ញាណ និង Pixel Watch របស់អ្នក</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">តាមរយៈ Pixel Watch ដែលបានភ្ជាប់ ការពិនិត្យអត្តសញ្ញាណបញ្ចូលវិធីច្រើនទៀតសម្រាប់ផ្ទៀងផ្ទាត់ថាជាអ្នក ដើម្បីទប់ស្កាត់ការចូលប្រើដែលមិនចង់បានទៅកាន់កម្មវិធីនានា</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"មើលព័ត៌មានលម្អិត"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"មិន​អាច​ពិនិត្យ​មើល​ការកំណត់​បាន​ទេ"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"មិន​ទាន់​មាន​ព័ត៌មាន​នៅ​ឡើយ​ទេ"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">ការស្កេន Play Protect ត្រូវបានបើក</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect ត្រួតពិនិត្យ​កម្មវិធី និង​ឧបករណ៍​របស់​អ្នក​ជា​ទៀងទាត់ ដើម្បី​រកមើល​សកម្មភាព​ដែល​បង្ក​គ្រោះថ្នាក់។ អ្នក​នឹងទទួល​បាន​ការជូន​ដំណឹងអំពី​ហានិភ័យ​ផ្នែកសុវត្ថិភាព​ទាំងឡាយ​ដែល​រកឃើញ។</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">សន្តិសុខកម្មវិធី, Play Protect, Google Play Protect, សុវត្ថិភាពកម្មវិធី</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">គណនី Google ត្រូវបានការពារ</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">ការពិនិត្យសុវត្ថិភាព Google, សុវត្ថិភាព Google, ការពិនិត្យសុវត្ថិភាព, សុវត្ថិភាពគណនី, សុវត្ថិភាពគណនី Google, គណនី Google</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find Hub, កំពុងស្វែងរកឧបករណ៍, រកឧបករណ៍របស់ខ្ញុំ, បាត់ឧបករណ៍</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"ព័ត៌មានថ្មីៗ"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"បច្ចុប្បន្នភាព, ការធ្វើបច្ចុប្បន្នភាពផ្នែកសុវត្ថិភាព"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">បច្ចុប្បន្នភាព, បច្ចុប្បន្នភាពប្រព័ន្ធ, បច្ចុប្បន្នភាពប្រព័ន្ធ Google Play, បច្ចុប្បន្នភាពប្រព័ន្ធ Play</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"ការចាក់សោឧបករណ៍, ការចាក់សោអេក្រង់, អេក្រង់ចាក់សោ, ពាក្យសម្ងាត់, កូដ PIN, លំនាំ, ចាក់សោ, ដោះសោ"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"ស្នាមម្រាមដៃ, ម្រាមដៃ, បញ្ចូល​ស្នាមម្រាមដៃ"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"ការដោះសោ​ដោយស្កេន​មុខ, មុខ"</string>

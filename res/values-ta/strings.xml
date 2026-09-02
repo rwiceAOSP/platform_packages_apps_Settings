@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"முடிந்தது"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"தனிப்பட்ட இடத்தைக் கண்டறிய கீழே நகர்த்துங்கள்"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"உள்நுழைக"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"உங்களுக்கான ரகசிய இடத்தைப் பயன்படுத்த ஒரு கணக்கில் உள்நுழையுங்கள்"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">ரகசிய இடத்தைப் பயன்படுத்த Google கணக்கில் உள்நுழையுங்கள்</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"வேண்டாம்"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"தொடர்க"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"உங்கள் இரகசிய இடத்திற்கான பூட்டைத் தேர்வுசெய்க"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"சாதனத்தின் பெயரை அனுப்புதல்"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"நெட்வொர்க்குடன் இந்தச் சாதனத்தின் பெயரைப் பகிரும்"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"சந்தா"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"சந்தாவைப் பார்க்கலாம் அல்லது மாற்றலாம்"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">OpenRoaming சந்தாவைப் பார்க்கலாம் அல்லது மாற்றலாம்</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"ரேண்டம் ஆக்கப்பட்ட MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"சாதனத்தைச் சேர்த்தல்"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"“<xliff:g id="SSID">%1$s</xliff:g>” இல் சாதனத்தைச் சேர்ப்பதற்குக் கீழேயுள்ள QR குறியீட்டை மையப்படுத்திக் காட்டவும்"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"<xliff:g id="ID_1">%1$s</xliff:g>க்குத் தானாக முடக்கப்படும்"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"உறக்கநேரம் முடிந்தவுடன் தானாக முடக்கப்படும்"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"<xliff:g id="ID_1">%1$s</xliff:g> முடியும்போது முடக்கப்படும்"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"உங்கள் பேட்டரி நீண்ட காலம் நீடித்திருக்கும் பொருட்டு சில திரைகளில் கருப்பு நிறப் பின்னணியை டார்க் தீம் பயன்படுத்துகிறது. உங்கள் திரை ஆஃப் ஆகும் வரை டார்க் தீம் ஆனில் இருக்குமாறு அமைக்கப்பட்டிருக்கும்."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"உங்கள் திரையை மேலும் சௌகரியமாகப் பார்க்கவும் சில திரைகளில் பேட்டரி உபயோகத்தைக் குறைக்கவும் டார்க் பின்புலத்தைப் பயன்படுத்துங்கள். நீங்கள் திட்ட அட்டவணையை அமைத்திருந்தால், திரை ஆஃப் ஆகியிருக்கும்போது உங்கள் தீம் மாறும்."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">உங்கள் பேட்டரி நீண்ட நேரம் நீடித்திருக்க, கருப்பு நிறப் பின்னணியை டார்க் தீம் பயன்படுத்துகிறது. உங்கள் திரை ஆஃப் ஆகும் வரை டார்க் தீம் ஆனில் இருக்குமாறு அமைக்கப்பட்டிருக்கும்.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">உங்கள் திரையை மேலும் சௌகரியமாகப் பார்க்கவும் பேட்டரி உபயோகத்தைக் குறைக்கவும் டார்க் பின்புலத்தைப் பயன்படுத்துங்கள். நீங்கள் திட்ட அட்டவணையை அமைத்திருந்தால், திரை ஆஃப் ஆகியிருக்கும்போது உங்கள் தீம் மாறும்.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"தற்போது உங்கள் உறக்கநேரப் பயன்முறையின் அட்டவணையை டார்க் தீம் பின்பற்றுகிறது"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"உறக்கநேரப் பயன்முறை அமைப்புகள்"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{மோட்களும் டார்க் தீமை ஆன் செய்யலாம்.}=1{{mode_1} மோடும் டார்க் தீமை ஆன் செய்யும்.}=2{{mode_1}, {mode_2} ஆகிய மோட்களும் டார்க் தீமை ஆன் செய்யும்.}=3{{mode_1}, {mode_2}, {mode_3} ஆகிய மோட்களும் டார்க் தீமை ஆன் செய்யும்.}other{{mode_1}, {mode_2} மற்றும் # மோட்களும் டார்க் தீமை ஆன் செய்யும்.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"உங்கள் <xliff:g id="NAME">^1</xliff:g> ஐப் பயன்படுத்தத் தொடங்கலாம்"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"பேட்டரி நிலை"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"பேட்டரி நிலை"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"சமூகம்"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"சமூக அமைப்புகள்"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">ஹப் பயன்முறை</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">டாக் மற்றும் பூட்டுத் திரை விருப்பங்கள்</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"ஹப் பயன்முறை"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"லாக் ஸ்கிரீன் விட்ஜெட்கள்"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"உங்களுக்கு விருப்பமான விட்ஜெட்களை அணுக, உங்கள் பூட்டுத் திரையில் இடதுபுறமாக ஸ்வைப் செய்யவும். \n\nவிட்ஜெட்டைப் பயன்படுத்தி ஆப்ஸைத் திறக்கும்போது, அது நீங்கள்தான் என்பதை உறுதிசெய்ய வேண்டும். மேலும், அவற்றை யார் வேண்டுமானாலும் பார்க்கலாம் என்பதை நினைவில்கொள்ளுங்கள்."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"டிராக்பேட், டிராக் பேட், மவுஸ், கர்சர், ஸ்க்ரோல், ஸ்வைப், வலது கிளிக், கிளிக், பாயிண்ட்டர்"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"வலது கிளிக், தட்டு"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"மவுஸின் நடு பட்டன்"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Assistantடைத் தொடங்கு"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Geminiயைத் தொடங்கு</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g> ஆப்ஸைத் தொடங்கு"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"அசிஸ்டண்ட்"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"முகப்பிற்குச் செல்"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"நகர்தல் பயன்முறை, திரைச் சுழற்சி"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"கருத்தை அனுப்பு"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"கருத்துக்கணிப்பைத் தொடங்கு"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">மாற்றுத்திறனாளிகளுக்கான Google உதவிக் குழுவைத் தொடர்புகொள்க</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"மாற்றுத்திறன் வசதி குறித்த கருத்துக்கணிப்பு"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"உங்கள் கருத்தைப் பகிருங்கள்"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"டார்க் தீம் உங்களுக்கு எவ்வளவு திருப்திகரமாக உள்ளது?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"செவித்துணைக் கருவியின் ஷார்ட்கட்"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"செவித்துணை கருவியுடனான இணக்கத்தன்மை"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"டெலிகாயில்களுடனான இணக்கத்தன்மையை மேம்படுத்தி தேவையற்ற இரைச்சலைக் குறைக்கும்"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">டெலிகாயில்களுடனான இணக்கத்தன்மையை மேம்படுத்தி தேவையற்ற இரைச்சலைக் குறைக்க ஆடியோ ஒலியளவை அதிகரிக்கலாம்</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"செவித்துணை கருவிகள் குறித்த அறிமுகம்"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA அல்லது LE ஆடியோவை ஆதரிக்காத பிற செவித்துணைக் கருவிகளைக் கண்டறிய, &lt;b&gt;புதிய சாதனத்தை இணை&lt;/b&gt; &gt; &lt;b&gt;மேலும் சாதனங்களைக் காட்டு&lt;/b&gt; என்பதைத் தட்டவும்"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA அல்லது LE ஆடியோவை ஆதரிக்காத பிற செவித்துணைக் கருவிகளைக் கண்டறிய, "<b>"புதிய சாதனத்தை இணை"</b>" பிறகு "<b>"மேலும் சாதனங்களைக் காட்டு"</b>" என்பதைத் தட்டவும்"</string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"ஒளி உணர்திறன், ஃபோட்டோஃபோபியா, டார்க் தீம், ஒற்றைத் தலைவலி, தலைவலி, வாசிப்புப் பயன்முறை, இரவுப் பயன்முறை, ஒளிர்வைக் குறைத்தல், ஒயிட் பாயிண்ட்"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"பார்வை, கேட்கும் திறன், பார்வையற்றவர்கள், காது கேளாதோர், உடலியக்கம், கைத்திறன், உதவிகரமானது, உதவி, எளிதாகப் பயன்படுத்தக்கூடியது, எளிதாக அணுகக்கூடியது, கை, உதவி"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"சாளரப் பெரிதாக்கி, அளவை மாற்றுதல், பெரிதாக்கல், குறைந்த பார்வைத் திறன், பெரிதாக்கல், பெரிதாக்கு"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">ஸ்கிரீன் ரீடர், பின்னணிக் குரல், பின்னணிக்குரல், குரல் உதவி, பார்வையின்மை, குறைந்த பார்வைத் திறன், TTS, உரையிலிருந்து பேச்சுக்கு மாற்றுதல், பேச்சுவடிவ விளக்கம்</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"வசனங்கள், விவரிப்பு சப்டைட்டில்கள், CC, Live Transcribe, கேட்பதில் சிரமம், கேட்கும் திறன் இன்மை, CART, பேச்சிலிருந்து உரை, சப்டைட்டில்"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">வசனங்கள், விவரிப்பு சப்டைட்டில்கள், CC, கேட்பதில் சிரமம், கேட்கும் திறன் இன்மை, CART, பேச்சிலிருந்து உரை, சப்டைட்டில்</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">அறிவிப்புகள், கேட்பதில் சிரமம், கேட்கும் திறன் இன்மை, தெரிவித்தல்</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, அதிகரி, ஒலியைப் பெருக்குதல், கேட்பதில் சிரமம், கேட்கும் திறன் இன்மை, அதிகரித்தல்</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"திரை அளவு, பெரிய திரை"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"அதிக ஒளி மாறுபாடு, குறைந்த பார்வைத்திறன், தடிமனான எழுத்து, போல்டு ஃபேஸ்"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"அதிக ஒளி மாறுபாடுடைய வார்த்தைகள்"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">வார்த்தைகளைப் படித்தல், உரக்கப் படித்தல், திரையில் இருப்பதைப் படித்தல், ஸ்கிரீன் ரீடர், டிஸ்லெக்சியா, பேசும் திரை</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"வண்ணத்தைச் சரிசெய்தல்"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"திரையை இருட்டாக்குதல், திரையை வெளிச்சமாக்குதல்"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">உடலியக்கம், விரைவு மெனு, அசிஸ்ட்டிவ் மெனு, தொடுதல், கைத்திறன், கீல்வாதம், rsi, பக்கவாதம், நடுக்கம், மல்ட்டிபில் ஸ்க்லரோசிஸ், செரிப்ரல் பால்சி, பட்டன், வன்பொருள், அழுத்துதல், திரும்பத் திரும்ப ஏற்படும் காயம், கை, வலி, அணுகக்கூடியது, உதவி</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">உடல் இயக்கத் திறன், ஸ்விட்ச், கை, AT, உதவிகரமான தொழில்நுட்பம், பக்கவாதம், ALS, ஸ்கேனிங், படிப்படியாக ஸ்கேன் செய்தல்</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"உடலியக்கம், மவுஸ், வெளிப்புற மவுஸ், ஹெட் மவுஸ், அடாப்டிவ் மவுஸ், வீல்சேர், ஜாய்ஸ்டிக்"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"செவித்துணைக் கருவிகள், செவித்திறன் குறைபாடு, செவித்திறன் இழப்பு, செவித்திறன் சாதனங்கள், ஒலிபெருக்கிச் சாதனங்கள், சவுண்டு பிராசஸர்கள், PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"கேட்பதில் சிரமம், கேட்கும் திறன் இன்மை, வசனங்கள், டெலிடைப், TTY"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">குரல், குரல் கட்டுப்பாடு, உடல் இயக்கத் திறன், கை, மைக், மைக்ரோஃபோன், சொல்வதை எழுதும் வசதி, பேசு, கட்டுப்பாடு</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"மூன்று பட்டன்கள்"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"கைத்திறன், உடல் இயக்கத் திறன், முதியோர், கீல்வாதம், rsi, பக்கவாதம், நடுக்கம், மல்ட்டிபில் ஸ்க்லரோசிஸ், செரிப்ரல் பால்சி, ஷேக்கிங், திரும்பத் திரும்ப ஏற்படும் காயம், கை"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"தாமதம், கைத்திறன், முதியோர்"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"குறைவான பேட்டரி அளவு"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"பேட்டரி ஆயுளை நீட்டிக்க பேட்டரி சேமிப்பானை இயக்குக"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"பேட்டரி ஆயுளை மேம்படுத்துதல்"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"பேட்டரி நிர்வாகியை ஆன் செய்யவும்"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">அடாப்டிவ் பேட்டரியை ஆன் செய்க</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"பேட்டரி சேமிப்பானை ஆன் செய்யவும்"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"வழக்கத்தைவிட, பேட்டரி வேகமாகத் தீர்ந்துவிடக்கூடும்"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"பேட்டரி சேமிப்பான்: ஆன்"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"பரவாயில்லை, சார்ஜ் செய்"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"சார்ஜிங் துணைக்கருவியைச் சரிபாருங்கள்"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"இணக்கமற்ற சார்ஜிங் குறித்து மேலும் அறிக"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"பேட்டரி நிர்வாகி"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">சூழலுக்கேற்ற விருப்பத்தேர்வுகள்</string>
     <string name="smart_battery_title" msgid="9095903608520254254">அடாப்டிவ் பேட்டரி</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"பேட்டரியை ஆப்ஸ் வேகமாகத் தீர்த்துவிடும் என்பதைப் பேட்டரி நிர்வாகி கண்டறியும்போது, இந்த ஆப்ஸைக் கட்டுப்படுத்துவதற்கான விருப்பத்தேர்வு உள்ளது. கட்டுப்படுத்தப்பட்ட ஆப்ஸ் சரியாகச் செயல்படாமல் போகலாம், அவற்றுக்கான அறிவிப்புகளும் தாமதமாக வரலாம்."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">பேட்டரி ஆயுளை நீட்டிக்க, செயல்திறனையும் பின்னணிச் செயல்பாட்டையும் சூழலுக்கேற்ற பேட்டரி குறைக்கக்கூடும். சில அறிவிப்புகள் தாமதமாகலாம்.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"கட்டுப்படுத்தப்பட்ட ஆப்ஸ்"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# ஆப்ஸின் பேட்டரி உபயோகம் கட்டுப்படுத்தப்படுகிறது}other{# ஆப்ஸின் பேட்டரி உபயோகம் கட்டுப்படுத்தப்படுகின்றன}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"கட்டுப்படுத்தப்பட்டது: <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"இந்த ஆப்ஸுக்கான பின்னணி பேட்டரி உபயோகம் முடக்கப்படுள்ளது. எதிர்பார்த்த அளவுக்கு ஆப்ஸ் செயல்படாமல் போகக்கூடும், அறிவிப்புகளும் தாமதமாக வரக்கூடும்."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"பேட்டரி நிர்வாகியைப் பயன்படுத்து"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"பேட்டரியை ஆப்ஸ் அதிகமாகப் பயன்படுத்தும்போது கண்டறியும்"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"பேட்டரியை ஆப்ஸ் அதிகமாகப் பயன்படுத்தும்போது கண்டறிகிறது"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"பேட்டரியை ஆப்ஸ் அதிகமாகப் பயன்படுத்தும்போது கண்டறியும்"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">பேட்டரி ஆயுளை நீட்டித்து சார்ஜ் செய்தலை மேம்படுத்தும்</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">பேட்டரி ஆயுளை நீட்டிக்கும்</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# ஆப்ஸ் கட்டுப்படுத்தப்பட்டது}other{# ஆப்ஸ் கட்டுப்படுத்தப்பட்டன}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"பேட்டரி அளவை அறிவதில் சிக்கல் உள்ளது."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">மேலும் அறிக</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"இந்தப் பிழையைப் பற்றி மேலும் அறியத் தட்டவும்"</string>
     <string name="power_screen" msgid="4596900105850963806">"திரை"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"காப்புப் பிரதி &amp; மீட்டெடுத்தல்"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"தனிப்பட்ட தரவு"</string>
     <string name="backup_data_title" msgid="507663517227498525">"தரவை காப்புப்பிரதியெடு"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"ஆப்ஸ் டேட்டா, வைஃபை கடவுச்சொற்கள் மற்றும் Google சேவையகங்களுக்கான பிற அமைப்புகளைக் காப்புப் பிரதியெடு"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">ஆப்ஸ் டேட்டா, வைஃபை கடவுச்சொற்கள் மற்றும் பிற அமைப்புகளை Google சேவையகங்களில் காப்புப் பிரதியெடுக்கும்</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"காப்புப்பிரதி கணக்கு"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"காப்புப் பிரதி சேமிக்கப்பட வேண்டிய கணக்கை நிர்வகி"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"ஆப்ஸ் டேட்டா உட்பட"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"தற்போது எந்தக் கணக்கும் காப்புப் பிரதி எடுக்கப்பட்ட தரவைச் சேமிப்பதில்லை"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"உங்கள் வைஃபை கடவுச்சொற்கள், புத்தகக்குறிகள், பிற அமைப்புகள் மற்றும் ஆப்ஸ் டேட்டாவைக் காப்புப் பிரதியெடுப்பதை நிறுத்துவதுடன், Google சேவையகங்களில் உள்ள எல்லா நகல்களையும் அழித்துவிட வேண்டுமா?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"சாதனத் தரவையும் (வைஃபை கடவுச்சொற்கள் மற்றும் அழைப்பு பதிவு போன்றவை) ஆப்ஸ் டேட்டாவையும் (பயன்பாடுகளில் சேமிக்கப்பட்டிருக்கும் அமைப்புகள் மற்றும் ஃபைல்கள்  போன்றவை) காப்புப் பிரதி எடுப்பதை நிறுத்தி, தொலைநிலை சேவையகங்களில் உள்ள எல்லா நகல்களையும் அழிக்கவா?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"சாதனத் தரவையும் (வைஃபை கடவுச்சொற்கள், அழைப்பு பதிவு போன்றவை) ஆப்ஸ் டேட்டாவையும் (ஆப்ஸ்களில் சேமிக்கப்பட்டிருக்கும் அமைப்புகள், ஃபைல்கள்  போன்றவை) தொலைநிலையில் தானாகக் காப்புப் பிரதி எடுக்கும்.\n\nதானியங்கு காப்புப் பிரதியை இயக்கும் போது, சாதனம் மற்றும் ஆப்ஸ் டேட்டாவானது குறிப்பிட்ட கால இடைவெளியில் தொலைநிலையில் சேமிக்கப்படும். ஆப்ஸ் டேட்டா என்பது, தொடர்புகள், செய்திகள், படங்கள் போன்ற மிகவும் பாதுகாக்கப்பட வேண்டிய தனிப்பட்ட தரவு உட்பட, ஆப்ஸ் சேமித்த (டெவெலப்பர் அமைப்புகளைப் பொறுத்து) எந்தத் தரவாகவும் இருக்கலாம்."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">சாதனத் தரவையும் (வைஃபை கடவுச்சொற்கள், அழைப்புப் பதிவு போன்றவை) ஆப்ஸ் டேட்டாவையும் (பயன்பாடுகளில் சேமிக்கப்பட்டிருக்கும் அமைப்புகள், ஃபைல்கள்  போன்றவை) காப்புப் பிரதி எடுப்பதை நிறுத்தி, Google இயக்ககத்தில் உள்ள எல்லா நகல்களையும் அழிக்கவா?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Google இயக்ககத்தில் சாதனத் தரவையும் (வைஃபை கடவுச்சொற்கள், அழைப்பு விவரங்கள் போன்றவை) ஆப்ஸ் டேட்டாவையும் (ஆப்ஸ்களில் சேமிக்கப்பட்டிருக்கும் அமைப்புகள், ஃபைல்கள்  போன்றவை) சேமிக்கும்.\n\nதானியங்கு காப்புப் பிரதியை இயக்கும் போது, சாதனம் மற்றும் ஆப்ஸ் டேட்டாவானது குறிப்பிட்ட கால இடைவெளியில் Google இயக்ககத்தில் உள்ள தனிப்பட்ட ஃபோல்டரில் சேமிக்கப்படும். ஆப்ஸ் டேட்டா என்பது தொடர்புகள், செய்திகள், படங்கள் போன்ற மிக பாதுகாக்கப்பட வேண்டிய தனிப்பட்ட தரவு உட்பட, ஆப்ஸ் சேமித்த (டெவெலப்பர் அமைப்புகளைப் பொருத்து) எந்தத் தரவாகவும் இருக்கலாம்.\n\nகாப்புப் பிரதித் தரவானது, உங்கள் இயக்ககச் சேமிப்பக அளவில் எந்தப் பாதிப்பையும் ஏற்படுத்தாது. பெரிய ஃபைல்கள்  அல்லது சேவையிலிருந்து டெவெலப்பர்கள் விலக்கிய ஃபைல்கள்  காப்புப் பிரதி எடுக்கப்படாது.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"சாதன நிர்வாகி அமைப்புகள்"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"சாதன நிர்வாகி ஆப்ஸ்"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"இந்தச் சாதன நிர்வாகி ஆப்ஸை முடக்கு"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"பணிச்சுமை, பணி, சுயவிவரம்"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"பணிக் கணக்கு, நிர்வகிக்கப்படும் சுயவிவரம், ஒருங்கிணை, ஒருங்கிணைத்தல், பணி, சுயவிவரம்"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"விழித்திருத்தல், உறக்கம், பூட்டாமல் இருத்தல், மடக்கப்பட்டிருக்கும்போதும் அன்லாக் செய்யப்பட்ட நிலையிலேயே இருத்தல், மடக்குதல், மூடுதல், மடக்கு, மூடு, திரையை முடக்குதல்"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"சைகைகள்"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">சைகை, அசைவுகள்</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"கட்டணம் செலுத்தவும், தட்டவும், கட்டணம் செலுத்துதல்"</string>
     <string name="keywords_backup" msgid="707735920706667685">"காப்புப்பிரதி, காப்புப் பிரதி"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"பல சுயவிவரங்களையும் ஒருங்கிணைக்கும் கேலெண்டர்"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"உங்களின் தனிப்பட்ட கேலெண்டரில் பணி நிகழ்வுகளைக் காட்டும்"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"முடக்கப்பட்டிருக்கும்போது பணி ஆப்ஸ் இடைநிறுத்தப்படும், அவற்றை அணுகவோ அவற்றில் இருந்து அறிவிப்புகளைப் பெறவோ முடியாது."</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"சேமிப்பிடத்தை நிர்வகி"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"சேமிப்பக இடத்தைக் காலியாக்க உதவ, காப்புப் பிரதி எடுக்கப்பட்ட படங்களையும் வீடியோக்களையும் உங்கள் சாதனத்திலிருந்து சேமிப்பக நிர்வாகி அகற்றும்."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"படங்கள் &amp; வீடியோக்களை அகற்று"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"சேமிப்பக நிர்வாகி"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"சேமிப்பக நிர்வாகியைப் பயன்படுத்து"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">ஸ்மார்ட் சேமிப்பகம்</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">சேமிப்பகத்தில் குறைந்த இடம் இருக்கும் போது, காப்புப் பிரதி எடுத்த படங்களையும் வீடியோக்களையும் அகற்றவும். நீங்கள் அவற்றைத் தொடர்ந்து Google Photosஸில் பார்க்கலாம்.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">காப்புப் பிரதி எடுத்தவைகளை அகற்று</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">ஸ்மார்ட் சேமிப்பகம்</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">ஸ்மார்ட் ஸ்டோரேஜைப் பயன்படுத்து</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"சைகைகள்"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"கேமராவை விரைவாகத் திறத்தல்"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"கேமராவை விரைவாகத் திறக்க, பவர் பட்டனை இருமுறை அழுத்தவும். எந்தத் திரையிலும் கேமரா இயங்கும்."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"சைகைகள், ஷார்ட்கட்"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"பணம் செலுத்துதல், பேமெண்ட்டுகள்"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"செல்ஃபி எடுக்க கேமராவை ஃப்ளிப் செய்தல்"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixel கேமராவின் செல்ஃபி மோடை ஆன்/ஆஃப் செய்ய, ஆப்ஸில் இருக்கும்போது மொபைலை இருமுறை திருப்பவும்.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"வழிசெலுத்தல் மோட்"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"சாதனத்தைப் புதுப்பியுங்கள்"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"பங்கேற்றல்"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"இன்ஸ்டண்ட் ஆப்ஸ்"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"இன்ஸ்டண்ட் ஆப்ஸ் விருப்பத்தேர்வுகள்"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"நிறுவிய ஆப்ஸ்"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"உங்கள் சேமிப்பகம் இப்போது சேமிப்பக நிர்வாகியால் நிர்வகிக்கப்படுகிறது"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">இணைய இணைப்பு கிடைத்ததும், காப்புப் பிரதி எடுப்பதற்குத் தேர்ந்தெடுத்த தரத்திலேயே படங்களையும் வீடியோக்களையும் தொடர்ந்து அணுகலாம்</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g> இன் கணக்குகள்"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"ஆப்ஸ் தரவை தானாக ஒத்திசை"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"ஆப்ஸ் தானாகவே தரவைப் புதுப்பிக்க அனுமதிக்கும்"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"நெட்வொர்க் பெயர்"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"நிலைப் பட்டியில் நெட்வொர்க் பெயரைக் காட்டு"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"இன்ஸ்டண்ட் ஆப்ஸ்"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"சேமிப்பக நிர்வாகியை முடக்கவா?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">ஸ்மார்ட் சேமிப்பகத்தை முடக்கவா? \n\nசேமிப்பகம் கிட்டத்தட்ட நிரம்பும் போது, ஸ்மார்ட் சேமிப்பகம் இடத்தைக் காலியாக்காது.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"தொந்தரவு செய்ய வேண்டாம் அமைப்பைப் புதுப்பிக்கவும்"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"கவனம் சிதறாமல் இருக்க, அறிவிப்புகளை இடைநிறுத்தவும்"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"அம்சம் இல்லை"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"இயல்புநிலை முடக்கப்பட்டது தொடர்பான மாற்றங்கள்"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"பிழைதிருத்தி ஆப்ஸில் மட்டுமே ஆப்ஸ் இணக்கத்தன்மை மாற்றங்களை மாற்ற முடியும். பிழைதிருத்தி ஆப்ஸை நிறுவி மீண்டும் முயலவும்."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"மற்றொரு அமைப்பைச் சார்ந்தது"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"கணக்கு"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google கணக்கு</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d கணக்குகள்"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"சாதனத்தின் பெயர்"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"அடிப்படைத் தகவல்கள்"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"இருப்பிடம்"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"அவசர அழைப்புகளுக்கு இந்தச் சேவையை நீங்கள் உபயோகிக்கும்போது மொபைல் நிறுவனம் உங்கள் இருப்பிடத்தைச் சேகரிக்கக்கூடும்.\n\nவிவரங்களுக்கு உங்கள் மொபைல் நிறுவனத்தின் தனியுரிமைக் கொள்கையைப் பார்க்கவும்."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"மீதமிருக்கும் நேரம் அல்லது தரவிற்கான அணுகலை நீங்கள் இழக்கக்கூடும். இதை அகற்றுவதற்கு முன்பாக வழங்குநரைத் தொடர்புகொள்ளவும்."</string>
-    <string name="content_capture" msgid="868372905432812238">"ஆப்ஸ் உள்ளடக்கம்"</string>
+    <string name="content_capture" msgid="868372905432812238">ஆப்ஸ் தரவைப் பயன்படுத்திப் பிரத்தியேகமாக்குதல்</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Android சிஸ்டத்திற்கு உள்ளடக்கத்தை அனுப்ப ஆப்ஸை அனுமதிக்கும்"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"சிஸ்டம் ஹீப் டம்ப்பைத் தொடங்குதல்"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"நினைவகக் குறியிடல் நீட்டிப்பு"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">நிகழ்நேர உரை (Real-time text - RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"அழைப்பின்போது திரையில் வார்த்தைகள் மூலம் உரையாடலாம்"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">மறை</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">அழைப்பின் போது காட்டு</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">எப்போதும் காட்டு</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"VoLTE ஐ முடக்கவா?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"இதனால் உங்கள் 5G இணைப்பும் முடக்கப்படும்.\nகுரல் அழைப்பின்போது உங்களால் இணையத்தைப் பயன்படுத்த முடியாது, அத்துடன் சில ஆப்ஸும் இயங்காமல் போகலாம்."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"தற்காலிக சேமிப்பக ஆப்ஸின் செயல்பாட்டை நிறுத்துதல்"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"ஃபிஷிங்கைக் கண்டறிய ஆப்ஸ் உபயோகத்தைச் சரிபார்க்கும்"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"ஏமாற்றக்கூடிய ஆப்ஸுக்கான ஸ்கேனிங்கை உபயோகித்தல்"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"ஏமாற்றக்கூடிய பணி ஆப்ஸுக்கான ஸ்கேனிங்கை உபயோகித்தல்"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">ஸ்கேனிங் தனிப்பட்ட முறையில் உங்கள் சாதனத்திலேயே மேற்கொள்ளப்படும். ஃபிஷிங் அல்லது பிற ஏமாற்றுச் செயலுக்காக ஆப்ஸ் உபயோகம் சரிபார்க்கப்படும். அப்படிக் கண்டறியப்பட்டால், அபாயத்தை உறுதிசெய்யவும் ஆப்ஸை உபயோகிக்கும் பயனர்களை எச்சரிக்கவும் ஆப்ஸின் சில தகவல்கள் Google Play Protectடிற்கு அனுப்பப்படும்.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">இது ஒரு பாதுகாப்பு அம்சமாகும். எந்தவொரு சாதனமோ தனிப்பட்ட தகவலோ Googleளுடன் பகிரப்படாது. \n\nஃபிஷிங் என்பது உள்நுழைவு அனுமதிச் சான்றுகளையோ பிற தனிப்பட்ட தகவல்களையோ திருடுவதற்கான ஒரு முயற்சியாகும்.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"கடவுச்சொல் இப்போது அமைக்கப்பட்டது"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"பின் (PIN) தற்போது அமைக்கப்பட்டுள்ளது"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"மேலே கொண்டுசெல்லும்போது பாயிண்ட்டரைக் காட்டு"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">மேலே கொண்டுசெல்லும்போது பாயிண்டரைக் காட்ட ஆப்ஸை அனுமதித்தல்</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"மீடியா DRM அமைப்புகள்"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Software Secure Cryptoவைச் செயல்படுத்துதல்"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"மென்பொருள் சார்ந்த ஒயிட் பாக்ஸ் கிரிப்டோவைப் பயன்படுத்த DRM குறியீட்டு நிர்வாகத்தைச் செயல்படுத்தும்"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"அடையாளச் சரிபார்ப்பு மேலும் பல ஆப்ஸுடன் செயல்படுகிறது"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"விவரங்களைக் காட்டு"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"அடையாளச் சரிபார்ப்பு மேலும் பல ஆப்ஸுடன் செயல்படுகிறது"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"அடையாளச் சரிபார்ப்பு மற்றும் வாட்ச்"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"இணைக்கப்பட்ட வாட்ச் மூலம் உங்கள் ஆப்ஸுக்கான தேவையற்ற அணுகலைத் தடுப்பதற்காக, இது நீங்கள்தானா என்பதைச் சரிபார்க்க கூடுதல் வழிகளை அடையாளச் சரிபார்ப்பு சேர்க்கிறது"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"அடையாளச் சரிபார்ப்பு மற்றும் வாட்ச்"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"புதுப்பிப்புகள்:\n"<ul><li>"வாட்ச்சை இணைப்பதன் மூலம், நீங்கள் நம்பகமான இடத்தில் இல்லாதபோது பயோமெட்ரிக்ஸ்/உங்கள் பின்னைப் பயன்படுத்தி ஆப்ஸை அணுகலாம்"</li>\n<li>"இது நீங்கள்தானா என்பதைச் சரிபார்த்து சாதனத்தில் இருக்கும் ஆப்ஸைப் பாதுகாக்க அடையாளச் சரிபார்ப்பு கூடுதல் வழிகளைச் சேர்க்கலாம். "<a href="https://support.google.com/android?p=identity_check">"எங்கே, எப்போது பாதுகாக்கப்படுவீர்கள் என்பது குறித்து மேலும் அறிக"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">அடையாளச் சரிபார்ப்பு மற்றும் Pixel வாட்ச்</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">இணைக்கப்பட்ட Pixel வாட்ச் மூலம், ஆப்ஸுக்கான தேவையற்ற அணுகலைத் தடுப்பதற்காக, இது நீங்கள்தானா என்பதை உறுதிசெய்ய கூடுதல் வழிகளை அடையாளச் சரிபார்ப்பு சேர்க்கிறது</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">அடையாளச் சரிபார்ப்பு மற்றும் Pixel வாட்ச்</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">புதுப்பிப்புகள்: &lt;ul&gt;&lt;li&gt;Pixel Watch 3 அல்லது அதற்குப் பிந்தைய சாதனங்களை இணைப்பதன் மூலம், நீங்கள் நம்பகமான இடத்தில் இல்லாதபோது ஆப்ஸை அணுக பயோமெட்ரிக்ஸையோ உங்கள் பின்னையோ பயன்படுத்தலாம். &lt;/li&gt;&lt;li&gt;இது நீங்கள்தான் என்பதை உறுதிசெய்வதற்கும் உங்கள் சாதனத்திலுள்ள ஆப்ஸைப் பாதுகாப்பதற்குமான கூடுதல் வழிகள் அடையாளச் சரிபார்ப்பு அம்சத்தில் காலப்போக்கில் சேர்க்கப்படலாம். &lt;a href=https://support.google.com/android?p=identity_check&gt;நீங்கள் எப்போது, எங்கே பாதுகாக்கப்படுகிறீர்கள் என்பது பற்றி மேலும் அறிக&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"பிற அமைப்புகள்"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"தன்னிரப்பி, அறிவிப்புகள் மற்றும் பல"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"தனியுரிமைக் கட்டுப்பாடுகள்"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"இருப்பிட அணுகல்"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"இருப்பிடத்திற்கான அணுகலைக் கொண்ட ஆப்ஸையும் சேவைகளையும் பார்க்கலாம்"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"அடையாளச் சரிபார்ப்பு மேலும் பல ஆப்ஸுடன் செயல்படுகிறது"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"அடையாளச் சரிபார்ப்பு மற்றும் உங்கள் வாட்ச்"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"இணைக்கப்பட்ட வாட்ச் மூலம், ஆப்ஸுக்கான தேவையற்ற அணுகலைத் தடுப்பதற்காக, இது நீங்கள்தானா என்பதை உறுதிசெய்ய கூடுதல் வழிகளை அடையாளச் சரிபார்ப்பு சேர்க்கிறது"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">அடையாளச் சரிபார்ப்பு மற்றும் உங்கள் Pixel வாட்ச்</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">இணைக்கப்பட்ட Pixel வாட்ச் மூலம், ஆப்ஸுக்கான தேவையற்ற அணுகலைத் தடுப்பதற்காக, இது நீங்கள்தானா என்பதை உறுதிசெய்ய கூடுதல் வழிகளை அடையாளச் சரிபார்ப்பு சேர்க்கிறது</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"விவரங்களைக் காட்டு"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"அமைப்புகளைச் சரிபார்க்க முடியவில்லை"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"தகவல்கள் எதுவுமில்லை"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect ஸ்கேனிங் ஆன் செய்யப்பட்டுள்ளது</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">தீங்கிழைக்கும் செயல்பாடுகள் உள்ளனவா எனப் பார்க்க உங்கள் ஆப்ஸையும் சாதனத்தையும் Play Protect அடிக்கடி சரிபார்க்கிறது. பாதுகாப்பு அபாயங்கள் ஏதேனும் இருந்தால் உங்களுக்குத் தெரிவிக்கப்படும்.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">ஆப்ஸ் பாதுகாப்பு, Play Protect, Google Play Protect, ஆப்ஸ் பாதுகாப்பு</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google கணக்கு பாதுகாக்கப்பட்டுள்ளது</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google பாதுகாப்புச் சரிபார்ப்பு, Google பாதுகாப்பு, பாதுகாப்புச் சரிபார்ப்பு, கணக்குப் பாதுகாப்பு, Google கணக்குப் பாதுகாப்பு, Google கணக்கு</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find Hub, சாதனங்களைக் கண்டறிதல், Find My Device, தொலைந்த சாதனம்</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"புதுப்பிப்புகள்"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"புதுப்பிப்புகள், புதுப்பிப்பு, பாதுகாப்புப் புதுப்பிப்பு, பாதுகாப்புப் புதுப்பிப்புகள்"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">புதுப்பிப்புகள், புதுப்பிப்பு, சிஸ்டம் புதுப்பிப்பு, சிஸ்டம் புதுப்பிப்புகள், Google Play சிஸ்டம் புதுப்பிப்பு, Play சிஸ்டம் புதுப்பிப்பு</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"சாதனப் பூட்டு, திரைப் பூட்டு, பூட்டுத் திரை, பூட்டுத்திரை, கடவுச்சொல், பின் (PIN), பேட்டர்ன், பூட்டு, அன்லாக்"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"கைரேகை, விரல், கைரேகையைச் சேர்த்தல்"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"முகம் காட்டித் திறத்தல், முகம்"</string>

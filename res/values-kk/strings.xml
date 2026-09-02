@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Дайын"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Құпия кеңістікті табу үшін төмен айналдырыңыз."</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Аккаунтқа кіру"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Құпия кеңістік үшін қолданылатын аккаунтқа кіріңіз."</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Құпия кеңістік үшін қолданылатын Google аккаунтына кіріңіз.</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Қазір емес"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Жалғастыру"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Құпия кеңістікке құлып таңдаңыз"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Құрылғы атауын жіберу"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Осы құрылғы атауын желімен бөлісу"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Жазылым"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Жазылымды көру не өзгерту"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">OpenRoaming жазылымын көру не өзгерту</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Кездейсоқ MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Құрылғыны қосу"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Құрылғыны “<xliff:g id="SSID">%1$s</xliff:g>” желісіне қосу үшін төмендегі QR кодын камераға келтіріңіз."</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"Автоматты түрде өшеді: <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Ұйқы режимі аяқталған соң автоматты түрде қосылады."</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"<xliff:g id="ID_1">%1$s</xliff:g> басталған кезде, өшіріледі."</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Қараңғы батарея кейбір экрандарда батарея зарядын ұзаққа жеткізу үшін қара фонды пайдаланады. Экран өшпейінше, қараңғы режим кестелері қосылмайды."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Кейбір экрандарда батарея шығынын азайту және экранды көруге ыңғайлырақ ету үшін қараңғы фон қойылады. Кесте орнатылса, экран өшкеннен кейін, режим өзгереді."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Қараңғы режимде қара фон тұратындықтан, батарея заряды үнемделеді. Кесте бойынша уақыты келіп тұрса да, экран өшпейінше, қараңғы режим қойылмайды.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Батарея шығынын азайту және экранды көруге ыңғайлырақ ету үшін қараңғы фон қойылады. Кесте орнатылса, экран өшкеннен кейін, режим өзгереді.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Қараңғы режим қазір \"Ұйқы\" режимінің кестесіне қолданылып жатыр."</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Ұйқы режимі параметрлері"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Басқа режимдер қараңғы режимді қоса алады.}=1{Сондай-ақ {mode_1} қараңғы режимді қоса алады.}=2{{mode_1} және {mode_2} қараңғы режимді қоса алады.}=3{Сондай-ақ {mode_1}, {mode_2} және {mode_3} қараңғы режимді қоса алады.}other{{mode_1}, {mode_2} және тағы # режим қараңғы режимді қоса алады.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"<xliff:g id="NAME">^1</xliff:g> пайдалануға дайын"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Батарея күйі"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Батарея деңгейі"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Жалпы"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Жалпы параметрлер"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Хаб режимі</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Қондыру және құлып экраны опциялары</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Хаб режимі"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Құлыптаулы экрандағы виджеттер"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"Таңдаулы виджеттерге кіру үшін құлып экранынан солға сырғытыңыз. \n\nҚолданбаны виджет көмегімен ашу үшін жеке басыңызды растауыңыз керек. Виджеттерді басқалар да көре алатынын ескеріңіз."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"сенсорлық тақта, тінтуір, курсор, айналдыру, сырғыту, тінтуірдің оң жақ түймесін басу, басу, клик, меңзер"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"тінтуірдің оң жақ түймесін басу, түрту"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Тінтуірдің ортаңғы түймесі"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Assistant-ті іске қосу"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Gemini-ды іске қосу</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g> қолданбасын іске қосу"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Assistant"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Негізгі бетке өту"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Навигация режимі, экранды бұру"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Пікір жіберу"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Сауалнамаға қатысу"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Google-дың мүмкіндігі шектеулі адамдарға арналған қолдау көрсету қызметіне хабарласу</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Арнайы мүмкіндіктер сауалнамасы"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Пікіріңізді бөлісіңіз"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Қараңғы режим көңіліңізден шыға ма?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Есту құрылғысының жылдам пәрмені"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Есту аппаратының үйлесімділігі"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Телешарғылармен үйлесімділік деңгейін арттырып, қажетсіз шуды азайтады."</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Телешарғылармен үйлесімділік деңгейін арттыру үшін аудионың дыбыс деңгейін арттыруы және қажетсіз шуды азайтуы мүмкін.</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"Есту аппараттары туралы"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA немесе LE Audio қолдау көрсетпейтін басқа да есту құрылғыларын табу үшін &lt;b&gt;Жаңа құрылғымен жұптау &lt;/b&gt; &gt; &lt;b&gt;Басқа құрылғыларды көру&lt;/b&gt; тармағын түртіңіз."</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA немесе LE Audio қолдау көрсетпейтін басқа да есту құрылғыларын табу үшін "<b>"Жаңа құрылғымен жұптау"</b>", содан соң "<b>"Басқа құрылғыларды көру"</b>" тармағын түртіңіз."</string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"жарықсезгіштік, фотофобия, қараңғы режим, бас сақинасы ауруы, бас ауруы, оқу режимі, түнгі режим, жарықтықты азайту, ақ нүкте"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"көру, есту, соқыр, саңырау, қозғалыс, ептілік, көмекші, көмек, оңай қолдану, оңай кіру, қол, көмек"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Терезені ұлғайтқыш, масштабтау, ұлғайту, нашар көру қабілеті, жақындату, үлкейту"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Экранды оқу құралы, дыбыстау, VoiceOver, дауыстық көмек, зағип, нашар көру қабілеті, мәтінді дыбыстау, дауыстық ақпарат</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Жазулар, субтитрлер, субтитр, Live Transcribe, нашар есту қабілеті, есту қабілетінен айырылу, тікелей транскрипция, дауысты мәтінге айналдыру"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Жазулар, субтитрлер, субтитр, автоматты субтитр, нашар есту қабілеті, есту қабілетінен айырылу, тікелей транскрипция, дауысты мәтінге айналдыру</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Хабарландырулар, нашар есту қабілеті, есту қабілетінен айырылу, хабарлау</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">Жеке дыбысты күшейту құралы, дыбысты күшейту, нашар есту қабілеті, есту қабілетінен айырылу. күшейту</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"экран өлшемі, үлкен экран"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"Жоғары контраст, нашар көру қабілеті, жуан қаріп, жуан мәтін"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"жоғары контрасты мәтін"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Мәтінді тыңдау, дауыстап оқу, сөйлейтін экран, экранды оқу құралы, дислексия, select to speak</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"түсті реттеу"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"қараңғы экранды қосу, жарық экранды қосу"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">моторика, жылдам мәзір, көмекші мәзір, түрту, ептілік, артрит, туннельдік нейропатия, инсульт, діріл, шашыраңқы склероз, орталықтан сал болу, түйме, аппараттық құрал, басу, қайталанбалы қозғалыс зақымы, қол, ауру, қолжетімді, көмек</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">моторика, ауыстырғыш, қол, арнайы мүмкіндіктер, көмекші технология, сал, амиотрофты бүйірлік склероз, сканерлеу, сатылы сканерлеу</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"қозғалыс, тінтуір, кәдімгі тінтуір, баспен басқарылатын тінтуір, адаптивті тінтуір, мүгедектер арбасы, джойстик"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"есту аппараттары, нашар есту, естімеу, кохлеар импланттары, күшейткіш құрылғылар, дыбыс процессорлары, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"нашар есту қабілеті, есту қабілетінен айырылу, жазулар, телетайп"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">дауыс, дауыспен басқару, моторика, қол, микрофон, мәтінді дауыспен енгізу, сөйлеу, басқару</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"үш түйме"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"ептілік, қозғалыс, қарт адам, артрит, туннельдік нейропатия, инсульт, діріл, шашыраңқы склероз, орталықтан сал болу, қалтырау, қайталанбалы қозғалыс зақымы, қол"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"кідіріс, ептілік, қарт адам"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Батарея деңгейі төмен"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Батарея жұмысын ұзарту үшін батареяны үнемдеу режимін қосыңыз."</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Батарея жұмысын ұзартыңыз"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Батарея шығынын қадағалау функциясын қосыңыз"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Батарея шығынын бейімдеу функциясын қосыңыз</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Батареяны үнемдеу режимін қосу"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Батареяның заряды тез азаюы мүмкін"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"Батареяны үнемдеу режимі қосулы"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Бәрібір зарядтау"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Зарядтау құрылғысын тексеріңіз"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Үйлесімсіз зарядтау туралы толық ақпарат"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Батарея шығынын қадағалау"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Бейімделмелі параметрлер</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Батарея шығынын бейімдеу</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Батарея шығынын қадағалау функциясы батарея зарядын жылдам тауысатын қолданбаларды анықтайтын кезде, осы қолданбаларды шектейтін опция болады. Шектелген қолданбалар дұрыс жұмыс істемеуі және хабарландырулар кешігіп келуі мүмкін."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">Батарея жұмысын ұзарту үшін батарея шығынын бейімдеу функциясы жұмыс өнімділігі мен фондық белсенділікті төмендетеді. Кейбір хабарландырулар кешігіп келуі мүмкін.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Шектелген қолданбалар"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# қолданбада батарея шығынын шектеу}other{# қолданбада батарея шығынын шектеу}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"<xliff:g id="TIME">%1$s</xliff:g> шектелген"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Бұл қолданбаларға фондық режимде батарея зарядын қолдануға тыйым салынған. Олар күткендей жұмыс істемеуі және хабарландырулар кешігіп келуі мүмкін."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Батарея шығынын қадағалау функциясын пайдалану"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Батарея зарядын жылдам тауысатын қолданбаларды анықтау"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Батарея зарядын жылдам тауысатын қолданбаларды анықтайды."</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Батарея зарядын жылдам тауысатын қолданбаларды анықтайды."</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Батарея жұмысын ұзарту және зарядтауды оңтайландыру</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Батарея жұмысының ұзақтығын арттырады.</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# қолданбаға тыйым салынды.}other{# қолданбаға тыйым салынды.}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Батарея заряды туралы дерек алынбай жатыр."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Толық ақпарат</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Осы қате туралы толығырақ ақпарат алыңыз."</string>
     <string name="power_screen" msgid="4596900105850963806">"Экран"</string>
     <string name="power_cpu" msgid="1820472721627148746">"Орталық процессор"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"Сақтық көшірме жасау және қалпына келтіру"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"Жеке деректер"</string>
     <string name="backup_data_title" msgid="507663517227498525">"Деректердің сақтық көшірмесін жасау"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Қолданба дерекқоры, Wi‑Fi кілтсөздері және басқа параметрлердің сақтық көшірмесін Google серверлеріне сақтаңыз"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">Google серверлеріне қолданба дерекқорының, Wi-Fi құпия сөздерінің және басқа параметрлердің сақтық көшірмесін жасау.</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"Сақтық аккаунт"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"Сақтық көшірмеге арналған аккаунтты басқару"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"Қолданба деректерін қамту"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Ешқандай аккаунт қазір сақтық көшірмесі жасалған деректерді сақтап жатқан жоқ"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Wi‑Fi құпия сөздері, бетбелгілер, басқа параметрлер мен қолданба деректерінің сақтық көшірмесін жасау процесі тоқтатылып, Google серверлеріндегі көшірмелер жойылсын ба?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Құрылғы деректерінің (мысалы, Wi-Fi құпия сөзі және қоңырау журналы) және қолданба деректерінің (мысалы, қолданбалар сақтаған параметрлер мен файлдар) сақтық көшірмесін жасап, қашықтағы серверлерден барлық көшірмелерді өшіру керек пе?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Құрылғы деректерінің (мысалы, Wi-Fi құпия сөздері және қоңыраулар тарихы) және қолданба деректерінің (мысалы, қолданбалар сақтайтын параметрлер және файлдар) сақтық көшірмесін қашықтан автоматты түрде жасау.\n\nСақтық көшірмені автоматты түрде жасау функциясын қоссаңыз, құрылғы және қолданба деректері қашықтан сақталып отырады. Қолданба деректеріне қолданбаға сақталған кез келген дерек (әзірлеуші параметрлеріне байланысты), соның ішінде контактілер, хабарлар және фотосуреттер сияқты құпия деректер жатады."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Құрылғы деректерінің (мысалы, Wi-Fi құпия сөзі және қоңыраулар журналы) және қолданба деректерінің (мысалы, қолданбалар сақтаған параметрлер мен файлдар) сақтық көшірмесін жасауды тоқтату және Google Drive ішіндегі барлық көшірмелерді өшіру керек пе?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Google Drive дискісіне құрылғы деректерінің (мысалы, Wi-Fi құпия сөздері мен қоңыраулар журналы) және қолданба деректерінің (мысалы, қолданбалар арқылы сақталған параметрлер мен файлдар) сақтық көшірмесін автоматты түрде жасау.\n\nАвтоматты түрде сақтық көшірмесін жасау функциясы қосылған кезде, құрылғы мен қолданба деректері Google Drive дискісіндегі жеке қалтаға сақталып отырады. Қолданба деректеріне контактілер, хабарлар жəне фотосуреттер сияқты ықтимал құпия деректерді қамтитын (әзірлеушінің параметрлеріне байланысты) қолданба сақтаған кез келген деректер жатуы мүмкін.\n\nСақтық көшірме деректері Drive дискісінде орын алмайды. Үлкен файлдар немесе әзірлеушілер қызметтен шығару үшін таңдаған файлдардың сақтық көшірмесі жасалмайды.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Құрылғы әкімшісінің параметрлері"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Құрылғы әкімшісі қолданбасы"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Осы құрылғы әкімшісі қолданбасын өшіру"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"жұмыс профилін қорғау, жұмыс, профиль"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"жұмыс профилі, басқарылатын профиль, бірыңғайлау, жұмыс, профиль"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"ояу, ұйқы, құлыптамау, құрылғының бүктелген күйінде құлпы ашық қалу, бүктеу, жабу, бүктеу мүмкіндігі, жабық, экран өшірулі"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"қимылдар"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">қимыл, қозғалыстар</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"төлеу, түрту, төлемдер"</string>
     <string name="keywords_backup" msgid="707735920706667685">"сақтық көшірме, сақтық көшірме жасау"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Профиль аралық күнтізбе"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Жұмыстағы іс-шаралар жеке күнтізбеде көрсетіледі."</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"Өшіп тұрғанда, жұмыс қолданбалары кідіртіліп, ашылмай қалады және хабарландыру жібере алмайды."</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Жадты басқару"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"Жад кеңістігін босату үшін жад реттегіші құрылғыдағы сақтық көшірмесі жасалған фотосуреттер мен бейнелерді өшіреді."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Фотосуреттер мен бейнелерді жою"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Жад реттегіші"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Жадты басқару құралын пайдалану"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Ақылды жад</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Жад толайын деп қалғанда, фотосуреттер мен бейнелердің сақтық көшірмесі жойылады. Оларды Google Photos қолданбасынан таба аласыз.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Сақтық көшірмесі бар суреттер мен бейнелерді өшіру</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Ақылды жад</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Ақылды жадты пайдалану</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Қимылдар"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Камераны жылдам ашу"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"Камераны жылдам ашу үшін қуат түймесін екі рет басыңыз. Кез келген экраннан жұмыс істейді."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"қимылдар, пернелер тіркесімі"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"төлеу, төлемдер"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Алдыңғы камераға ауысу"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixel камерасында селфи режимін қосу және өшіру үшін қолданба ашық тұрғанда, құрылғыны екі рет айналдырыңыз.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Навигация режимі"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Құрылғыны жаңарту"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Әрекеттестік"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Лезде қосылатын қолданбалар"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Лезде қосылатын қолданбалардың параметрлері"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Орнатылған қолданбалар"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Құрылғы жадын енді жад менеджері басқарады"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Жалғанғаннан кейін, суреттер мен бейнелерді сақтық көшірме үшін таңдалған сапамен пайдалана бересіз.</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g> аккаунттары"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Қолданба деректерін автоматты түрде синхрондау"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Қолданбалардың деректерді автоматты түрде жаңартуына рұқсат беру"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Желі атауы"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Күй жолағында желі атауын көрсету"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Лездік қолданба"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Жад менеджері өшірілсін бе?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Ақылды жад өшірілсін бе? \n\nЖад толып қалғанда, функция орын босатпайды.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Мазаламау режимін жаңарту"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Алаңдататын хабарландыруларды кідірту"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Функция қолжетімді емес."</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Өшірілген әдепкі өзгерістер"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Үйлесімділік параметрлері түзетілетін қолданбаларда ғана реттеледі. Түзетілетін қолданбаларды орнатып, әрекетті қайталап көріңіз."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Басқа параметрге тәуелді"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Аккаунт"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google аккаунты</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d аккаунт"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Құрылғы атауы"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Негізгі ақпарат"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Локация"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Бұл функцияны құтқару қызметіне қоңырау шалу үшін пайдаланған кезде, операторыңыз локация дерегін жинауы мүмкін.\n\nТолық мәлімет үшін операторыңыздың құпиялық саясатын қарап шығыңыз."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Қалған уақыт немесе деректерді пайдалана алмай қалуыңыз мүмкін. Алып тастау алдында провайдермен ақылдасыңыз."</string>
-    <string name="content_capture" msgid="868372905432812238">"Қолданба контенті"</string>
+    <string name="content_capture" msgid="868372905432812238">Қолданба дерегі арқылы жекелендіру</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Қолданбаларға Android жүйесіне контент жіберуге рұқсат беру"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Жүйенің дамп файлын жасау"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Нақты уақытта мәтін жіберу (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Қоңырау кезінде байланысу үшін мәтіндік хабар пайдалану"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Көрсетілмейді</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Қоңырау кезінде көрсетіледі.</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Әрқашан көрсетіледі.</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"VoLTE өшірілсін бе?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"Сондай-ақ 5G байланысы да өшеді.\nДауыстық қоңырау кезінде интернетті пайдалана алмайсыз және кейбір қолданбалар жұмыс істемеуі мүмкін."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Кэштелген қолданбалардың орындалуын уақытша тоқтату"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Қолданбаларды пайдалану тарихында фишинг әрекетінің бар-жоғын тексеру"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Жалған қолданбаларды анықтау функциясын қолдану"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Жұмысқа арналған жалған қолданбаларды анықтау функциясын қолдану"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Құрылғыңыздағы қолданбаларды пайдалану тарихында фишинг әрекетінің не басқа да жалған әрекеттердің бар-жоғы тексеріледі. Тексеру процесі тек құрылғыңызда әрі құпия жүргізіледі. Ондай әрекеттердің бары анықталса, қауіп жағдайын растау және қолданба пайдаланушыларына ескерту үшін қолданба туралы кейбір ақпарат Google Play Protect қызметіне жіберіледі.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Бұл — қорғалған қауіпсіздік функциясы. Құрылғыға қатысты не жеке ақпарат Google-ға жіберілмейді. \n\nФишинг дегеніміз — тіркелу деректерін немесе басқа да жеке ақпаратты ұрлап алу әрекеті.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Құпия сөз орнатылды."</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN коды орнатылды."</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Стилусты апарғанда меңзерді көрсету"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Курсорды апару кезінде қолданбалардың меңзерді көрсетуіне рұқсат беру</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Мультимедианың DRM параметрлері"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Бағдарламалық криптоқорғанысты күштеп қосу"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"Бағдарламалық құралға негізделген White-box криптографиясын пайдалану үшін DRM кілтін басқаруды күштеп қосу"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Жеке басты тексеру функциясы көбірек қолданбада істейді"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Мәліметтерді көру"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Жеке басты тексеру функциясы көбірек қолданбада істейді"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Жеке басты тексеру функциясы және сағат"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Сағат жалғанса, жеке басты тексеру функциясы қолданбаларға рұқсатсыз кірудің алдын алу үшін жеке басты растаудың қосымша әдістерін қосады"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Жеке басты тексеру функциясы және сағат"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Жаңалықтар:\n"<ul><li>"Сағатты жалғасаңыз, сенімді орында болмаған кезде қолданбаларға кіру үшін биометрияны немесе PIN кодын пайдалануға болады."</li>\n<li>"Уақыт өте келе жеке басты тексеру функциясы жеке басты растаудың және құрылғыдағы қолданбаларды қорғаудың қосымша әдістерін қосуы мүмкін. "<a href="https://support.google.com/android?p=identity_check">"Қашан және қай жерде қорғалатыныңыз туралы толық ақпарат алыңыз"</a></li></ul>"."</string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Жеке басты тексеру функциясы және Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Pixel Watch жалғанса, жеке басты тексеру функциясы қолданбаларға рұқсатсыз кірудің алдын алу үшін жеке басты растаудың қосымша әдістерін қосады.</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Жеке басты тексеру функциясы және Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Жаңалықтар: &lt;ul&gt;&lt;li&gt;Pixel Watch 3 немесе одан кейінгі нұсқасын жалғасаңыз, сенімді орында болмаған кезде қолданбаларға кіру үшін биометрияны немесе PIN кодын пайдалануға болады. &lt;/li&gt;&lt;li&gt;Жеке басты тексеру функциясы уақыт өте келе құрылғыңызға жеке басты растаудың көбірек әдісі мен қауіпсіздік қолданбасын қосуы мүмкін. &lt;a href=https://support.google.com/android?p=identity_check&gt;Сізді қашан және қай жерде қорғайтыны туралы толық ақпарат&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Басқа параметрлер"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Автотолтыру, хабарландырулар және тағы басқалар"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Құпиялық параметрлері"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Локацияны пайдалану рұқсаты"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Локацияны пайдалана алатын қолданбалар мен қызметтерді көріңіз."</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Жеке басты тексеру функциясы көбірек қолданбада істейді"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Жеке басты тексеру функциясы және сағатыңыз"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Сағат жалғанса, жеке басты тексеру функциясы қолданбаларға рұқсатсыз кірудің алдын алу үшін жеке басты растаудың қосымша әдістерін қосады"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Жеке басты тексеру функциясы және Pixel Watch сағатыңыз</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Pixel Watch жалғанса, жеке басты тексеру функциясы қолданбаларға рұқсатсыз кірудің алдын алу үшін жеке басты растаудың қосымша әдістерін қосады.</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Мәліметтерді көру"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Параметрлерді тексеру мүмкін болмады."</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Әзірге мәлімет жоқ"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect сканерлеу функциясы қосулы</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect қолданбалар мен құрылғыда зиянды әрекеттердің бар-жоғын тексеріп отырады. Қауіп төнген жағдайда, хабарландыру жіберіледі.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">Қолданбалар қауіпсіздігі, Play Protect, Google Play Protect, қолданба қауіпсіздігі</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google аккаунты қорғалған</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google қауіпсіздік тексерісі, Google қауіпсіздігі, қауіпсіздік тексерісі, аккаунт қауіпсіздігі, Google аккаунтының қауіпсіздігі, Google аккаунты</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find Hub, құрылғы табу, Find My Device, жоғалған құрылғы</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Жаңартулар"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Жаңартулар, жаңарту, қауіпсіздік жаңартуы, қауіпсіздік жаңартулары"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Жаңартулар, жаңарту, жүйені жаңарту, жүйе жаңартулары, Google Play арқылы жүйені жаңарту, Play арқылы жүйені жаңарту</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Құрылғыны құлыптау, құлып экраны, құлыптаулы экран, құлып, құпия сөз, PIN коды, өрнек, құлыпты ашу"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Саусақ ізі, саусақ, саусақ ізін қосу"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Бет тану, бет"</string>

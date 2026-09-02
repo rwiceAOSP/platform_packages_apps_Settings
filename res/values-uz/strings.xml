@@ -719,7 +719,7 @@
     <string name="private_space_done_label" msgid="1020482651595246071">"Tayyor"</string>
     <string name="private_space_scrolldown_to_access" msgid="4820954877349434545">"Maxfiy joyni topish uchun pastga varaqlang"</string>
     <string name="private_space_retry_signin_title" msgid="8090276618867918844">"Kirish"</string>
-    <string name="private_space_retry_summary" msgid="1920444015972648774">"Maxfiy makoningizdan foydalanish uchun hisob bilan kiring"</string>
+    <string name="private_space_retry_summary" msgid="1920444015972648774">Maxfiy makon bilan foydalanish uchun Google hisobingizga kiring</string>
     <string name="private_space_skip_login_label" msgid="7078019409056628192">"Hozir emas"</string>
     <string name="private_space_continue_login_label" msgid="7779965766333065391">"Davom etish"</string>
     <string name="private_space_lock_setup_title" msgid="6541564212199510787">"Maxfiy makon uchun qulfni tanlang"</string>
@@ -1093,7 +1093,7 @@
     <string name="wifi_privacy_send_device_name_toggle_title" msgid="1228107313152880073">"Qurilma nomini yuborish"</string>
     <string name="wifi_privacy_send_device_name_toggle_summary" msgid="5995365836332817655">"Tarmoqqa bu qurilma nomini bildiring"</string>
     <string name="wifi_subscription" msgid="4432423938285430113">"Obuna"</string>
-    <string name="wifi_subscription_summary" msgid="18802471063384598">"Obunani koʻrish yoki oʻzgartirish"</string>
+    <string name="wifi_subscription_summary" msgid="18802471063384598">OpenRoaming obunasini koʻrish yoki oʻzgartirish</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Tasodifiy MAC manzil"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Qurilma kiritish"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"“<xliff:g id="SSID">%1$s</xliff:g>” nomli tarmoqqa ulanish uchun kamerani quyidagi QR kodga qarating"</string>
@@ -1419,8 +1419,8 @@
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"<xliff:g id="ID_1">%1$s</xliff:g> da avtomatik faolsizlantiriladi"</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Uyqu vaqti yakunida avtomatik tugaydi"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"<xliff:g id="ID_1">%1$s</xliff:g> tugaganda faolsizlantiriladi"</string>
-    <string name="dark_ui_text" msgid="4392646155331126666">"Tungi mavzuda ayrim ekranlar asl qora tusga kiradi va batareya sarfi tejaladi. Agar telefonni ishlatayotgan vaqtingizda tungi rejimning yonish vaqti kelib qolsa, u ekran keyingi safar yonganida ishga tushadi."</string>
-    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Ekraningiz yanada qulay koʻrinishi va ayrim ekranlarda batareya sarfini kamaytirish uchun tungi fondan foydalaning. Ekran oʻchiqligida, agar rejalagan boʻlsangiz, mavzu oʻzgaradi."</string>
+    <string name="dark_ui_text" msgid="4392646155331126666">Tungi mavzu batareya quvvatini tejash uchun qora fondan foydalanadi. Bundan tashqari, tungi mavzuning qachon ishga tushishi va faolsizlanishni tanlashingiz mumkin.</string>
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">Batareya sarfini kamaytirish uchun tungi fondan foydalaning va ekraningiz yanada qulay koʻrinishiga erishing. Ekran oʻchiqligida, agar rejalagan boʻlsangiz, mavzu oʻzgaradi.</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Tungi mavzu hozir Uyqu vaqti rejangiz asosida ishga tushadi"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Uyqu vaqti rejimi sozlamalari"</string>
     <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{Rejimlar ham Tungi mavzuni yoqishi mumkin.}=1{{mode_1} rejimi ham Tungi mavzuni yoqishi mumkin.}=2{{mode_1}, {mode_2} va rejimlari ham Tungi mavzuni yoqishi mumkin.}=3{{mode_1}, {mode_2} va {mode_3} rejimlari ham Tungi mavzuni yoqishi mumkin.}other{{mode_1}, {mode_2} va yana # ta rejim ham Tungi mavzuni yoqishi mumkin.}}"</string>
@@ -1658,8 +1658,8 @@
     <string name="storage_wizard_ready_v2_internal_moved_body" msgid="1163588718127651062">"<xliff:g id="NAME">^1</xliff:g> omboringizdan foydalanishni boshlang"</string>
     <string name="battery_status_title" msgid="4661768220545945771">"Batareya holati"</string>
     <string name="battery_level_title" msgid="1371765298786083448">"Batareya quvvati darajasi"</string>
-    <string name="communal_settings_title" msgid="2845678473945902115">"Umumiy"</string>
-    <string name="communal_settings_summary" msgid="4923914136953940317">"Umumiy sozlamalar"</string>
+    <string name="communal_settings_title" msgid="2845678473945902115">Hub rejimi</string>
+    <string name="communal_settings_summary" msgid="4923914136953940317">Dok-stansiyaga ulash va ekran qulfi</string>
     <string name="hub_mode_category_title" msgid="5290081595872103974">"Hub rejimi"</string>
     <string name="widgets_on_lockscreen_title" msgid="6979558402208585885">"Ekran qulfidagi vidjetlar"</string>
     <string name="widgets_on_lockscreen_footer" msgid="4167358720910932731">"Sevimli vidjetlardan foydalanish uchun qulf ekranda chapga suring. \n\nIlovani vidjet orqali ochsangiz, shaxsingizni tasdiqlashingiz kerak boʻladi. Shuningdek, bu axborotlar hammaga koʻrinishini unutmang."</string>
@@ -2260,7 +2260,7 @@
     <string name="keywords_touchpad" msgid="8159846254066666032">"sensorli panel, sichqoncha, kursor, varaqlash, surish, oʻng klik, klik, koʻrsatkich"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"oʻng klik, bosish"</string>
     <string name="three_finger_tap_middle_click" msgid="7898931632908866867">"Sichqonchaning oʻrta tugmasi"</string>
-    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Assistentni ishga tushirish"</string>
+    <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">Geminini ochish</string>
     <string name="three_finger_tap_launch_default_assistant" msgid="7947939159617292478">"<xliff:g id="APP_NAME">%s</xliff:g> ilovasini ishga tushirish"</string>
     <string name="three_finger_tap_launch_generic_assistant_name" msgid="1893057235983949817">"Assistent"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Boshiga"</string>
@@ -2416,7 +2416,7 @@
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"Navigatsiya rejimi, ekranni burish"</string>
     <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Fikr-mulohaza"</string>
     <string name="accessibility_send_survey_title" msgid="7494065908292980253">"Ishtirok etish"</string>
-    <string name="accessibility_disability_support_title" msgid="6485961044665887515"></string>
+    <string name="accessibility_disability_support_title" msgid="6485961044665887515">Google Disability yordam xizmatiga murojaat qiling</string>
     <string name="accessibility_send_survey_notification_channel" msgid="6136555229886306184">"Qulaylik soʻrovnomasi"</string>
     <string name="dark_theme_survey_notification_title" msgid="662387994868661452">"Fikr-mulohaza bildiring"</string>
     <string name="dark_theme_survey_notification_summary" msgid="8706870943336979672">"Tungi mavzudan qanchalik qoniqdingiz?"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Eshitish qurilmasi tezkor tugmasi"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Eshitish apparati bilan moslik"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Induktiv gʻaltaklar bilan moslikni yaxshilaydi va shovqinni kamaytiradi"</string>
-    <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
+    <string name="hac_disclaimer_message" msgid="5279579026956312543">Induktiv gʻaltaklar bilan muvofiqlikni yaxshilash va keraksiz shovqinni kamaytirish uchun audio tovush balandligini oshirishi mumkin</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"Eshitish apparatlari haqida"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA yoki LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun &lt;b&gt;Yangi qurilmani ulash&lt;/b&gt; &gt; &lt;b&gt;Boshqa qurilmalarni koʻrish&lt;/b&gt; ustiga bosing"</string>
     <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA yoki LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun "<b>"Yangi qurilmani ulash"</b>", keyin "<b>"Boshqa qurilmalarni koʻrish"</b>" ustiga bosing"</string>
@@ -2850,23 +2850,23 @@
     <string name="keywords_reduce_bright_colors" msgid="1683190961013139183">"yorugʻlikka taʼsirchanlik, fotofobiya, tungi mavzu, migren, bosh ogʻrigʻi, oʻqish rejimi, tungi rejim, xiralashtirish, oq nuqta"</string>
     <string name="keywords_accessibility" msgid="8593989878379366798">"koʻrish, eshitish, koʻr, kar, motorika, tezkorlik, yordamchi, yordam, foydalanish oson, ochish oson, dastak, yordam"</string>
     <string name="keywords_magnification" msgid="3908145308269840862">"Oyna lupasi, zum, kattalashtirish, zaif koʻrish, kattalashtirish, katta qilish"</string>
-    <string name="keywords_talkback" msgid="2816435437095102527"></string>
+    <string name="keywords_talkback" msgid="2816435437095102527">Ekrandan oʻqish, ovozli, VoiceOver, ovozli assistent, koʻrlik, zaif koʻrish, TTS, nutq sintezatori, oʻqib eshittirish</string>
     <string name="keywords_live_caption" msgid="1667203998080567556">"Taglavhalar, yopiq taglavhalar, CC, Jonli transkripsiya, nuqsonli eshitish, karlik, CART, nutq sintezatori, taglavha"</string>
-    <string name="keywords_live_transcribe" msgid="3226990195174890997"></string>
-    <string name="keywords_sound_notifications" msgid="8183107485754075413"></string>
-    <string name="keywords_sound_amplifier" msgid="939404835256246663"></string>
+    <string name="keywords_live_transcribe" msgid="3226990195174890997">Taglavhalar, yopiq taglavhalar, CC, Jonli izoh, nuqsonli eshitish, karlik, CART, nutq sintezatori, taglavha</string>
+    <string name="keywords_sound_notifications" msgid="8183107485754075413">Bildirishnomalar, nuqsonli eshitish, karlik, bildirish</string>
+    <string name="keywords_sound_amplifier" msgid="939404835256246663">PSAP, kuchaytirish, tovush kuchaytirish, nuqsonli eshitish, karlik, amplifikatsiya</string>
     <string name="keywords_display_size" msgid="5286419615221231518">"ekran hajmi, katta ekran"</string>
     <string name="keywords_bold_text" msgid="6257418169207099589">"Yuqori kontrast, zaif koʻrish, qalin yozuv, qalin yuz"</string>
     <string name="keywords_maximize_text_contrast" msgid="4304270989682862814">"yuqori kontrastli matn"</string>
-    <string name="keywords_select_to_speak" msgid="2872704811610888719"></string>
+    <string name="keywords_select_to_speak" msgid="2872704811610888719">Matnni eshitish, baland ovoz bilan oʻqish, ekranni eshitish, ekrandan oʻqish, disleksiya, teginib tinglash</string>
     <string name="keywords_color_correction" msgid="8540442886990423681">"rangni moslash"</string>
     <string name="keywords_color_inversion" msgid="4291058365873221962">"tungi mavzuni yoqish, kunduzgi mavzuni yoqish"</string>
-    <string name="keywords_accessibility_menu" msgid="4300579436464706608"></string>
-    <string name="keywords_switch_access" msgid="5813094504384313402"></string>
+    <string name="keywords_accessibility_menu" msgid="4300579436464706608">motorika, tezkor menyu, yordamchi menyu, teginish, tezkorlik, artrit, rsi, insult, tremor, surunkali skleroz, bolalar falaji, tugma, apparat, bosish, qayta shikastlanish, dastak, og\'riq, qulay, yordam</string>
+    <string name="keywords_switch_access" msgid="5813094504384313402">motor, kalit, qoʻl, AT, yordamchi texnologya, paralich, ALS, skanerlash, qadam skaneri</string>
     <string name="keywords_auto_click" msgid="6811744211216280998">"motorika, sichqoncha, tashqi sichqoncha, bosh uchun sichqoncha, moslashuvchan sichqoncha, nogironlar aravachasi, joystik"</string>
     <string name="keywords_hearing_aids" msgid="4657889873249157071">"eshitish apparatlari, nuqsonli eshitish, karlik, koxlear implantlar, ovoz kuchaytiruvchi qurilmalar va tovush protsessorlari, PSAP"</string>
     <string name="keywords_rtt" msgid="2429130928152514402">"nuqsonli eshitish, karlik, taglavhalar, teletayp, tty"</string>
-    <string name="keywords_voice_access" msgid="7807335263195876454"></string>
+    <string name="keywords_voice_access" msgid="7807335263195876454">ovoz, ovozli boshqaruv, motor, qoʻl, mik, mikrofon, ovoz bilan yozish, gapirish, boshqarish</string>
     <string name="keywords_3_button_navigation" msgid="436361965016404218">"uchta tugma"</string>
     <string name="keywords_touch_and_hold_delay" msgid="7854640156419599912">"tezkorlik, motorika, keksalar, artrit, rsi, insult, tremor, surunkali skleroz, bolalar falaji, qaltirash, qayta shikastlanish, dastak"</string>
     <string name="keywords_accessibility_timeout" msgid="8903766864902000346">"kechikish, tezkorlik, keksalar"</string>
@@ -2945,7 +2945,7 @@
     <string name="battery_tip_low_battery_title" msgid="4155239078744100997">"Batareya quvvati kam"</string>
     <string name="battery_tip_low_battery_summary" msgid="2629633757244297436">"Batareya quvvatini tejash uchun Quvvat tejash funksiyasini yoqing"</string>
     <string name="battery_tip_smart_battery_title" msgid="8925025450214912325">"Batareya quvvatini uzoqroq vaqtga yetkazing"</string>
-    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">"Batareya boshqaruvini yoqing"</string>
+    <string name="battery_tip_smart_battery_summary" msgid="3592965553502362965">Adaptive Battery funksiyasini yoqing</string>
     <string name="battery_tip_early_heads_up_title" msgid="4411387863476629452">"Quvvat tejash funksiyasini yoqing"</string>
     <string name="battery_tip_early_heads_up_summary" msgid="578523794827443977">"Batareya quvvati odatdagiga nisbatan tezroq tugashi mumkin"</string>
     <string name="battery_tip_early_heads_up_done_title" msgid="7705597228709143337">"Quvvat tejash yoniq"</string>
@@ -2976,20 +2976,20 @@
     <string name="battery_tip_charge_to_full_button" msgid="6599920924910821386">"Baribir quvvatlash"</string>
     <string name="battery_tip_incompatible_charging_title" msgid="1567827436103364999">"Quvvatlash aksessuarini tekshiring"</string>
     <string name="battery_tip_incompatible_charging_content_description" msgid="355668467640367701">"Mos boʻlmagan quvvatlash haqida batafsil"</string>
-    <string name="smart_battery_manager_title" msgid="3677620516657920364">"Batareya boshqaruvi"</string>
+    <string name="smart_battery_manager_title" msgid="3677620516657920364">Moslashuvchan sozlamalar</string>
     <string name="smart_battery_title" msgid="9095903608520254254">Moslashuvchan batareya</string>
-    <string name="smart_battery_footer" msgid="8407121907452993645">"Battery Manager ilovalarning batareyani ortiqcha sarflayotganini aniqlasa, mazkur ilovalarni cheklashingiz mumkin. Cheklangan ilovalar xato ishlashi va bildirishnomalar kechikishi mumkin."</string>
+    <string name="smart_battery_footer" msgid="8407121907452993645">Batareya quvvatini uzaytirish uchun Adaptive Battery rejimida unumdorlik va fondagi amallar cheklanishi mumkin. Ayrim bildirishnomalar kechikishi mumkin.</string>
     <string name="restricted_app_title" msgid="6585080822121007436">"Cheklangan ilovalar"</string>
     <string name="restricted_app_summary" msgid="1022307922754893997">"{count,plural, =1{# ta ilova uchun batareya sarfi cheklangan}other{# ta ilova uchun batareya sarfi cheklangan}}"</string>
     <string name="restricted_app_time_summary" msgid="3097721884155913252">"Cheklangan: <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="restricted_app_detail_footer" msgid="3495725286882138803">"Bu ilovalarning fonda batareya quvvatidan foydalanishi taqiqlangan. Ular kutilganidek ishlamasligi mumkin va bildirishnomalar kechikishi mumkin."</string>
     <string name="battery_auto_restriction_title" msgid="827206218118093357">"Battery Manager ishlatish"</string>
     <string name="battery_auto_restriction_summary" msgid="2140896101984815711">"Ilovalar batareyani ortiqcha sarflayotganini aniqlash"</string>
-    <string name="battery_manager_summary" msgid="255708681438809287">"Ilovalarning batareyani ortiqcha sarflayotgani aniqlanmoqda"</string>
-    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">"Ilovalarning batareyani ortiqcha sarflayotgani aniqlanmoqda"</string>
+    <string name="battery_manager_summary" msgid="255708681438809287">Batareya xizmat muddatini uzaytirish va quvvatlashni optimallash</string>
+    <string name="battery_manager_summary_unsupported" msgid="7334173707292807964">Batareya quvvati sarfini uzaytirish</string>
     <string name="battery_manager_app_restricted" msgid="2583902700677009173">"{count,plural, =1{# ta ilova cheklangan}other{# ta ilova cheklangan}}"</string>
     <string name="battery_missing_message" msgid="400958471814422770">"Batareya quvvati aniqlanmadi."</string>
-    <string name="battery_missing_link_message" msgid="6021565067124898074"></string>
+    <string name="battery_missing_link_message" msgid="6021565067124898074">Batafsil</string>
     <string name="battery_missing_link_a11y_message" msgid="3310971406602316323">"Bu xato haqida batafsil bilish uchun tegining"</string>
     <string name="power_screen" msgid="4596900105850963806">"Ekran"</string>
     <string name="power_cpu" msgid="1820472721627148746">"CPU"</string>
@@ -3211,7 +3211,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"Zaxira nusxa va qayta tiklash"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"Shaxsiy ma‘lumotlar"</string>
     <string name="backup_data_title" msgid="507663517227498525">"Ma’lumotlarni zaxiralash"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"Ilova ma’lumotlari, Wi-Fi parollari va boshqa sozlamalarning zaxira nusxasini Google serveriga saqlang"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">Ilova ma’lumotlari, Wi-Fi parollari va boshqa sozlamalarning zaxira nusxasni Google serveriga saqlang</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"Zaxiralash uchun hisob"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"Zaxiraviy hisobni boshqarish"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"Ilova ma’lumotini ham qo‘shish"</string>
@@ -3221,8 +3221,8 @@
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"Hozir hech qaysi hisobda zahiralangan ma’lumotlar mavjud emas"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
     <string name="backup_erase_dialog_message" msgid="2250872501409574331">"Wi-Fi parollari, xatcho‘plar, boshqa sozlamalar va ilova ma’lumotlarining zaxira nusxasini saqlash to‘xtatilib, ularning barcha nusxalari Google serveridan o‘chirib tashlansinmi?"</string>
-    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilova ma’lumotlarining (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini saqlash to‘xtatililib, ularning olis serverlardagi barcha nusxalari o‘chirib tashlansinmi?"</string>
-    <string name="fullbackup_data_summary" msgid="971587401251601473">"Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilovalarga oid ma’lumotlar (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini Google Drive xizmatiga avtomatik saqlang.\n\nAgar avtomatik zaxiralash funksiyasi yoqilsa, qurilma va ilova ma’lumotlarining zaxira nusxasi vaqti-vaqti bilan Google Drive xizmatidagi shaxsiy jildga saqlab turiladi. Ilova ma’lumotlariga ilova tomonidan saqlangan har qanday ma’lumot (dasturchi sozlamalari asosida), jumladan, kontaktlar, xabar va rasmlar kabi maxfiy ma’lumotlar ham kiradi."</string>
+    <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilova ma’lumotlarining (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini saqlash to‘xtatililib, ularning Google Drive xizmatidagi barcha nusxalari o‘chirib tashlansinmi?</string>
+    <string name="fullbackup_data_summary" msgid="971587401251601473">Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilovalarga oid ma’lumotlar (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini Google Drive xizmatiga avtomatik saqlang.\n\nAgar avtomatik zaxiralash funksiyasi yoqilsa, qurilma va ilova ma’lumotlarining zaxira nusxasi vaqti-vaqti bilan Google Drive xizmatidagi shaxsiy jildga saqlab turiladi. Ilova ma’lumotlariga ilova tomonidan saqlangan har qanday ma’lumot (dasturchi sozlamalari asosida), jumladan, kontaktlar, xabar va rasmlar kabi maxfiy ma’lumotlar ham kiradi.\n\nZaxiralangan ma’lumotlar egallagan joy Google Drive xizmatidagi sizga ajratilgan joyga ta’sir qilmaydi. Yirik fayllar yoki dasturchilar xizmatdan chiqarib tashlagan fayllarning zaxira nusxasi saqlanmaydi.</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"Qurilma administratori sozlamalari"</string>
     <string name="active_device_admin_msg" msgid="7744106305636543184">"Qurilma administratori ilovasi"</string>
     <string name="remove_device_admin" msgid="3143059558744287259">"Bu qurilma administratori ilovasini faolsizlantirish"</string>
@@ -3714,7 +3714,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"ish vazifasi, ish, profil"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"ish profili, boshqariluvchi profil, birlashtirish, birlashuv, ish, profil"</string>
     <string name="keywords_fold_lock_behavior" msgid="6278990772113341581">"uygʻoq, uyqu, qulflanmasin, qulflanmagan holda qolsin, buklangan, buklangan holatda, yopish, buklash, yopiq, ekran oʻchiq"</string>
-    <string name="keywords_gesture" msgid="3456930847450080520">"ishoralar"</string>
+    <string name="keywords_gesture" msgid="3456930847450080520">ishora, surishlar</string>
     <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"to‘lash, bosish, to‘lovlar"</string>
     <string name="keywords_backup" msgid="707735920706667685">"zaxira, zaxira nusxa olish"</string>
@@ -4894,11 +4894,11 @@
     <string name="cross_profile_calendar_title" msgid="7570277841490216947">"Taqvimlarni sinxronlash"</string>
     <string name="cross_profile_calendar_summary" msgid="8856185206722860069">"Shaxsiy taqvimingizda ishchi tadbirlarni chiqarish"</string>
     <string name="managed_profile_settings_footer" msgid="996500759305118103">"Ishga oid ilovalar oʻchiqligida ular pauza qilinadi va ulardan foydalanilmaydi yoki sizga bildirishnomalar yubormaydi"</string>
-    <string name="automatic_storage_manager_settings" msgid="519158151463974656">"Xotirani boshqarish"</string>
-    <string name="automatic_storage_manager_text" msgid="6900593059927987273">"Xotiradan joy bo‘shatishga yordamlashish uchun xotira boshqaruvi qurilmangizdan zaxiralangan rasm va videolarni o‘chirib tashlaydi."</string>
-    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">"Rasm va videolarni o‘chirib tashlash"</string>
-    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">"Xotira boshqaruvi"</string>
-    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">"Xotira boshqaruvidan foydalanish"</string>
+    <string name="automatic_storage_manager_settings" msgid="519158151463974656">Smart xotira</string>
+    <string name="automatic_storage_manager_text" msgid="6900593059927987273">Xotirada joy qolmaganda, zaxiralangan surat va videolarni o‘chirib tashlang. Ularni keyinchalik Google Photos orqali topishingiz mumkin.</string>
+    <string name="automatic_storage_manager_days_title" msgid="5077286114860539367">Zaxiralangan surat va videolarni o‘chirish</string>
+    <string name="automatic_storage_manager_preference_title" msgid="3483357910142595444">Smart xotira</string>
+    <string name="automatic_storage_manager_primary_switch_title" msgid="9131959126462101994">Smart xotiradan foydalanish</string>
     <string name="gesture_preference_title" msgid="8291899281322647187">"Ishoralar"</string>
     <string name="double_tap_power_for_camera_title" msgid="7982364144330923683">"Kamerani tezkor ochish"</string>
     <string name="double_tap_power_for_camera_summary" msgid="1100926048598415509">"Kamerani tezda ochish uchun quvvat tugmasini ikki marta bosing. Har qanday ekranda ishlaydi."</string>
@@ -4916,7 +4916,7 @@
     <string name="keywords_double_tap_power" msgid="1238828843085517844">"ishoralar, tezkor tugma"</string>
     <string name="keywords_double_tap_power_wallet_action" msgid="1118418868964220150">"toʻlash, toʻlovlar"</string>
     <string name="double_twist_for_camera_mode_title" msgid="472455236910935684">"Selfi uchun old kamera"</string>
-    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951"></string>
+    <string name="double_twist_for_camera_mode_summary" msgid="592503740044744951">Pixel Kamera ilovasida selfi rejimga o‘tish uchun ilova ochiqligida qurilmani ikki marta silkiting.</string>
     <string name="system_navigation_title" msgid="4890381153527184636">"Navigatsiya rejimi"</string>
     <string name="update_device_category_title" msgid="6588608879793647296">"Qurilmani yangilash"</string>
     <string name="interaction_category_title" msgid="5712424978503035872">"Munosabat"</string>
@@ -5006,7 +5006,7 @@
     <string name="web_action_section_title" msgid="994717569424234098">"Darhol ochiladigan ilovalar"</string>
     <string name="instant_apps_settings" msgid="4280942494969957858">"Darhol ochiladigan ilovalar sozlamalari"</string>
     <string name="domain_url_section_title" msgid="9028890472923474958">"Oʻrnatilgan ilovalar"</string>
-    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"Xotirangiz hozirda xotira boshqaruvi tomonidan boshqarilmoqda"</string>
+    <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">Internetga ulangan vaqtda surat va videolarni yuklab olish paytida tanlangan sifatda tomosha qilishingiz mumkin.</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g> – hisoblar"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"Ilovalar maʼlumotlarini avtomatik sinxronlash"</string>
     <string name="auto_sync_account_summary" msgid="7580352130028957346">"Ilovalarga tegishli ma’lumotlar avtomatik yangilanadi"</string>
@@ -5168,7 +5168,7 @@
     <string name="show_operator_name_title" msgid="3355910331531144028">"Tarmoq nomi"</string>
     <string name="show_operator_name_summary" msgid="5352696579216501773">"Holat qatorida tarmoq nomini ko‘rsatish"</string>
     <string name="install_type_instant" msgid="7685381859060486009">"Darhol ochiladigan ilova"</string>
-    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">"Xotira boshqaruvi o‘chirib qo‘yilsinmi?"</string>
+    <string name="automatic_storage_manager_deactivation_warning" msgid="4905106133215702099">Smart xotira o‘chirib qo‘yilsinmi? \n\nAgar xotirangiz deyarli to‘lgan bo‘lsa, Smart xotira joy bo‘shatmaydi.</string>
     <string name="zen_suggestion_title" msgid="4555260320474465668">"Bezovta qilinmasin rejimini yoqing"</string>
     <string name="zen_suggestion_summary" msgid="1984990920503217">"Bezovta qiluvchi bildirishnomalarni pauza qiling"</string>
     <string name="disabled_feature" msgid="7151433782819744211">"Bu funksiya ishlamaydi"</string>
@@ -5202,7 +5202,7 @@
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Standart yoqilmagan oʻzgartirishlar"</string>
     <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Ilova mosligini faqat nosozliklari aniqlanadigan ilovalarda oʻzgartirish mumkin. Nosozliklari aniqlanadigan ilovani oʻrnating va qayta urining."</string>
     <string name="disabled_dependent_setting_summary" msgid="4508635725315852504">"Bu sozlama boshqa parametrlarga bog‘liq"</string>
-    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">"Hisob"</string>
+    <string name="my_device_info_account_preference_title" msgid="9197139254007133175">Google hisobi</string>
     <string name="my_device_info_account_preference_summary" msgid="3510582677937510545">"%d ta hisob"</string>
     <string name="my_device_info_device_name_preference_title" msgid="8053298498727237971">"Qurilma nomi"</string>
     <string name="my_device_info_basic_info_category_title" msgid="381963187269356548">"Asosiy axborot"</string>
@@ -5521,7 +5521,7 @@
     <string name="wfc_disclaimer_location_title_text" msgid="7913919887475418423">"Joylashuv"</string>
     <string name="wfc_disclaimer_location_desc_text" msgid="1417004513415772582">"Favqulodda chaqiruvlar uchun bu xizmatdan foydalansangiz, aloqa operatoringiz joylashuviz axborotini yozib olishi mumkin.\n\nBatafsil axborotni operatoringiz maxfiylik siyosatidan olish mumkin."</string>
     <string name="forget_passpoint_dialog_message" msgid="2433875063907365760">"Qolgan vaqt yoki axborotga ruxsatni yoʻqotishingiz mumkin. Olib tashlashdan oldin provayderingiz bilan tekshiring."</string>
-    <string name="content_capture" msgid="868372905432812238">"Ilova kontenti"</string>
+    <string name="content_capture" msgid="868372905432812238">Ilova maʼlumotlari asosida moslashtirish</string>
     <string name="content_capture_summary" msgid="49720773699715531">"Ilovalar Android tizimiga kontent yuborishiga ruxsat berish"</string>
     <string name="capture_system_heap_dump_title" msgid="9210974110606886455">"Tizim hip-dampini yozib olish"</string>
     <string name="development_memtag_page_title" msgid="3546667618748029188">"Memory Tagging Extension"</string>
@@ -5615,11 +5615,11 @@
       <item quantity="other"><xliff:g id="FIRST_1">%1$s</xliff:g>, <xliff:g id="SECOND">%2$s</xliff:g></item>
       <item quantity="one"><xliff:g id="FIRST_0">%1$s</xliff:g></item>
     </plurals>
-    <string name="rtt_settings_title" msgid="7049259598645966354"></string>
+    <string name="rtt_settings_title" msgid="7049259598645966354">Real vaqt rejimida xabar almashinuv (RTT)</string>
     <string name="rtt_settings_summary" msgid="9011338875202712756">"Chaqiruv paytida muloqot qilish uchun matndan foydalanish"</string>
-    <string name="rtt_settings_no_visible" msgid="7440356831140948382"></string>
-    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700"></string>
-    <string name="rtt_settings_always_visible" msgid="2364173070088756238"></string>
+    <string name="rtt_settings_no_visible" msgid="7440356831140948382">Berkitilgan</string>
+    <string name="rtt_settings_visible_during_call" msgid="7866181103286073700">Chaqiruv vaqtida chiqadi</string>
+    <string name="rtt_settings_always_visible" msgid="2364173070088756238">Har doim koʻrsatiladi</string>
     <string name="volte_5G_limited_title" msgid="5908052268836750629">"VoLTE aloqasi oʻchirilsinmi?"</string>
     <string name="volte_5G_limited_text" msgid="7150583768725182345">"Bunda 5G ulanishingiz uziladi.\nOvozli chaqiruvlar vaqtida internet va ayrim ilovalar ishlamasligi mumkin."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Keshdagi ilovalar ishga tushirilishini bloklash"</string>
@@ -5898,11 +5898,11 @@
     <string name="content_protection_preference_summary" msgid="2252393849408445391">"Fishing uchun ilovadagi faoliyatni tekshirish"</string>
     <string name="content_protection_preference_user_consent_switch_title" msgid="1797782616799594426">"Shubhali ilovalarni tekshirish"</string>
     <string name="content_protection_preference_user_consent_work_profile_switch_title" msgid="3004347470520916069">"Ishga oid shubhali ilovalarni tekshirish"</string>
-    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
-    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
+    <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364">Skanerlash bevosita qurilmangizda maxfiy ishlaydi, ilovadagi faoliyatni fishing yoki boshqa aldamchi xatti-harakatlar uchun tekshiradi. Xavf aniqlansa, tasdiqlash va ilova foydalanuvchilarini ogohlantirish uchun ayrim ilova maʼlumotlari Google Play Protect xizmatiga yuboriladi.</string>
+    <string name="content_protection_preference_subpage_info" msgid="6890886357653365489">Bu himoyalangan xavfsizlik funksiyasi. Hech qanday qurilma yoki shaxsiy maʼlumotlar Googlega ulashilmagan. \n\nFishing – kirish maʼlumotlari yoki boshqa shaxsiy maʼlumotlarni oʻgʻirlashga urinish.</string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Parol sozlandi"</string>
     <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"PIN kod oʻrnatildi"</string>
-    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Ustiga olib borganda kursorni koʻrsatish"</string>
+    <string name="show_stylus_pointer_icon" msgid="1010583689203665786">Ustiga olib borilganda ilovalar kursorni koʻrsatishiga ruxsat berish</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Media DRM sozlamalari"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Majburiy dasturiy Secure Crypto"</string>
     <string name="force_swcrypto_fallback_summary" msgid="181969966310309701">"DRM kalitlar boshqaruvida dasturiy whitebox crypto majburan ishlatilsin"</string>
@@ -6126,10 +6126,10 @@
     <string name="identity_check_issue_card_title" msgid="1409291461773228899">"Kimlik tekshiruvi endi koʻproq ilovalarda ishlaydi"</string>
     <string name="identity_check_issue_card_button_text" msgid="9194407367671256494">"Tafsilotlar"</string>
     <string name="identity_check_promo_card_title" msgid="4467736415491327717">"Kimlik tekshiruvi endi koʻproq ilovalarda ishlaydi"</string>
-    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">"Kimlik tekshiruvi va soat"</string>
-    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">"Ulangan soat bilan Kimlik tekshiruvi ilovalarga keraksiz kirishning oldini olish uchun shaxsingizni tasdiqlashning boshqa usullarini qoʻshadi"</string>
-    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">"Kimlik tekshiruvi va soat"</string>
-    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">"Yangilanishlar:\n"<ul><li>"Soatni ulasangiz, ishonchli joyda boʻlmaganingizda ilovalarga kirish uchun biometrik maʼlumotlar yoki PIN kodingizdan foydalanishingiz mumkin"</li>\n<li>"Vaqt oʻtishi bilan Kimlik tekshiruvi funksiyasi shaxsingizni tasdiqlash va qurilmangizdagi ilovalarni himoyalashning boshqa usullarini kiritishi mumkin. "<a href="https://support.google.com/android?p=identity_check">"Qachon va qayerda himoya qilinishingiz haqida batafsil"</a></li></ul></string>
+    <string name="identity_check_watch_issue_card_title" msgid="6381107354718121574">Kimlik tekshiruvi va Pixel Watch</string>
+    <string name="identity_check_watch_issue_card_summary" msgid="3887632285786695570">Ulangan Pixel Watch bilan Kimlik tekshiruvi ilovalarga keraksiz kirishning oldini olish uchun shaxsingizni tasdiqlashning boshqa usullarini qoʻshadi</string>
+    <string name="identity_check_watch_promo_card_title" msgid="8159072228404620911">Kimlik tekshiruvi va Pixel Watch</string>
+    <string name="identity_check_promo_card_watch_summary" msgid="830666785343476988">Yangilanishlar: &lt;ul&gt;&lt;li&gt;Pixel Watch 3 yoki undan keyingi versiyalarini ulash orqali ishonchli joyda boʻlmaganingizda ilovalarga kirish uchun biometrika yoki PIN koddan foydalanishingiz mumkin. &lt;/li&gt;&lt;li&gt;Vaqt oʻtishi bilan Kimlik tekshiruvi funksiyasi shaxsingizni tasdiqlash va qurilmangizdagi ilovalarni himoyalashning boshqa usullarini kiritishi mumkin. &lt;a href=https://support.google.com/android?p=identity_check&gt;Maʼlumotlaringiz qachon va qayerda himoyalanish haqida batafsil&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</string>
     <string name="more_security_privacy_category_title" msgid="6107292123094705732">"Boshqa sozlamalar"</string>
     <string name="more_security_privacy_summary" msgid="8049801531406061219">"Avtomatik kiritish, bildirishnomalar va boshqalar"</string>
     <string name="privacy_sources_title" msgid="7648842637181479352">"Daxlsizlik nazorati"</string>
@@ -6142,22 +6142,22 @@
     <string name="location_settings" msgid="6833222354060094170">"Joylashuv axborotiga ruxsat"</string>
     <string name="location_settings_subtitle" msgid="8471780117911010030">"Joylashuv axborotiga ruxsati bor ilovalar va xizmatlari"</string>
     <string name="identity_check_notification_title" msgid="8004343932775654492">"Shaxsni tasdiqlash endi koʻproq ilovalarda ishlaydi"</string>
-    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">"Kimlik tekshiruvi va soat"</string>
-    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">"Ulangan soat bilan Kimlik tekshiruvi ilovalarga keraksiz kirishning oldini olish uchun shaxsingizni tasdiqlashning boshqa usullarini qoʻshadi"</string>
+    <string name="identity_check_watch_notification_title" msgid="5559702400315647907">Kimlik tekshiruvi va Pixel Watch soatingiz</string>
+    <string name="identity_check_watch_notification_summary" msgid="3200144847521451493">Ulangan Pixel Watch bilan Kimlik tekshiruvi ilovalarga keraksiz kirishning oldini olish uchun shaxsingizni tasdiqlashning boshqa usullarini qoʻshadi</string>
     <string name="identity_check_view_details" msgid="8752343542345818128">"Batafsil"</string>
     <string name="safety_center_refresh_error" msgid="1735955120364376704">"Sozlamalar tekshirilmadi"</string>
     <string name="safety_center_subpage_unknown_summary" msgid="874864620851714312">"Hali axborot olinmadi"</string>
-    <string name="safety_center_app_security_summary" msgid="8400214168449223021"></string>
-    <string name="safety_center_app_security_footer" msgid="6857375118388269085"></string>
-    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980"></string>
+    <string name="safety_center_app_security_summary" msgid="8400214168449223021">Play Protect tekshiruvi yoniq</string>
+    <string name="safety_center_app_security_footer" msgid="6857375118388269085">Play Protect himoyalash uchun ilova va qurilmalarni muntazam tekshirib boradi. Barcha xavf-xatarlar haqida xabardor boʻlasiz.</string>
+    <string name="safety_center_app_security_search_terms" msgid="5309863174391119980">Ilovalar xavfsizligi, Play Protect, Google Play Protect, ilova xavfsizligi</string>
     <string name="safety_center_device_unlock_summary" msgid="102917362915642117"></string>
-    <string name="safety_center_account_security_summary" msgid="684515940132301821"></string>
-    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
+    <string name="safety_center_account_security_summary" msgid="684515940132301821">Google hisobi himoyalangan</string>
+    <string name="safety_center_account_security_search_terms" msgid="3950829613581775913">Google xavfsizlik tekshiruvi, Google xavfsizlik , Xavfsizlik tekshiruvi, hisob xavfsizligi, Google hisob xavfsizligi, Google hisobi</string>
     <string name="safety_center_device_finders_summary" msgid="6261252581729491563"></string>
-    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
+    <string name="safety_center_device_finder_search_terms" msgid="452013643838126923">Find Hub, Qurilmalarni topish, Qurilmam qayerda, Yoʻqolgan qurilma</string>
     <string name="safety_center_system_and_updates_summary" msgid="6301092688146734950">"Yangilanishlar"</string>
     <string name="safety_center_security_update_search_terms" msgid="545517841376162382">"Yangilanishlar, yangilanish, xavfsizlik yangilanishi, xavfsizlik yangilanishlari"</string>
-    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543">Yangilanishlar, yangilanish, tizim yangilanishi, tizim yangilanishlari, Google play tizim yangilanishi, Play tizim yangilanishi</string>
     <string name="safety_center_android_lock_screen_search_terms" msgid="4741569259158180141">"Qurilma qulfi, ekran qulfi, ekranni qulflash, ekranqulfi, parol, pin, grafik kalit, qulflash, qulfdan chiqarish"</string>
     <string name="safety_center_fingerprint_unlock_search_terms" msgid="954519907845160433">"Barmoq izi, barmoq, barmoq izi kiritish"</string>
     <string name="safety_center_face_unlock_search_terms" msgid="2994457346086700870">"Yuz bilan ochish, yuz"</string>
