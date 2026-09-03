@@ -6337,6 +6337,37 @@
 
         <!-- Biometrics -->
         <activity
+            android:theme="@style/GlifV4Theme.DayNight"
+            android:name="com.google.android.settings.biometrics.fingerprint.FingerprintEnrollParentalConsentGoogle"
+            android:exported="false"/>
+
+        <activity
+            android:enableOnBackInvokedCallback="false"
+            android:exported="false"
+            android:name="com.google.android.settings.biometrics.fingerprint.ui.view.FingerprintEnrollmentActivity"
+            android:theme="@style/GlifV4Theme.DayNight"/>
+
+        <activity
+            android:enableOnBackInvokedCallback="false"
+            android:exported="false"
+            android:name="com.google.android.settings.biometrics.fingerprint.ui.view.FingerprintEnrollmentActivity$InternalActivity"
+            android:taskAffinity="com.android.settings.root"
+            android:theme="@style/GlifV4Theme.DayNight"/>
+
+        <activity
+            android:enableOnBackInvokedCallback="false"
+            android:exported="false"
+            android:name="com.google.android.settings.biometrics.fingerprint.ui.view.FingerprintEnrollmentActivity$SetupActivity"
+            android:permission="android.permission.MANAGE_FINGERPRINT"
+            android:theme="@style/GlifV4Theme.DayNight"/>
+
+        <activity
+            android:enableOnBackInvokedCallback="false"
+            android:exported="false"
+            android:name="com.google.android.settings.biometrics.fingerprint.ui.view.FingerprintEnrollmentActivity$AddAnother"
+            android:permission="android.permission.MANAGE_FINGERPRINT"
+            android:theme="@style/GlifV4Theme.DayNight"/>
+        <activity
             android:exported="false"
             android:name="com.google.android.settings.biometrics.face.FaceEnrollIntroductionGoogle"
             android:theme="@style/GlifV4Theme.DayNight"/>

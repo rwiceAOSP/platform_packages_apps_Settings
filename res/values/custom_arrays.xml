@@ -40,4 +40,5 @@
         <item>.onSecondary:@sud_system_on_secondary_light</item>
         <item>.outline:@sud_system_outline_light</item>
     </string-array>
+    <array name="fingerprint_acquired_vendor" />
 </resources>
