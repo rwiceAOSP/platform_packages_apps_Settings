@@ -59,15 +59,15 @@
     <string name="not_encrypted_summary" product="default" msgid="330652312169527734">"휴대전화가 암호화되지 않음"</string>
     <string name="not_encrypted_summary" product="tablet" msgid="452970124282458862">"기기가 암호화되지 않음"</string>
     <string name="not_encrypted_summary" product="desktop" msgid="452970124282458862">"기기가 암호화되지 않음"</string>
-    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967"></string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967">다음 화면에서 눈높이에 맞춰 휴대전화를 들어 주세요.</string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="tablet" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="device" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="desktop" msgid="5795890116575517967"></string>
-    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090"></string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090">얼굴 인식 잠금 해제를 사용할 때는 휴대전화가 더 확실하게 얼굴 정면에 위치하도록 해야 합니다.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="tablet" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="device" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="desktop" msgid="2221590003018953090"></string>
-    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">"얼굴로 휴대전화를 잠금 해제하거나 구매를 승인하거나 앱에 로그인하세요."</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">얼굴 인식을 사용하여 휴대전화를 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인을 인증하세요.</string>
     <string name="security_settings_face_enroll_introduction_message" product="tablet" msgid="3976493376026067375">"태블릿을 잠금 해제하거나 구매를 승인하거나 앱에 로그인할 때 얼굴 인식을 사용합니다."</string>
     <string name="security_settings_face_enroll_introduction_message" product="device" msgid="6432265830098806034">"기기를 잠금 해제하거나 구매를 승인하거나 앱에 로그인할 때 얼굴 인식을 사용합니다."</string>
     <string name="security_settings_face_enroll_introduction_message" product="desktop" msgid="6432265830098806034">"기기를 잠금 해제하거나 구매를 승인하거나 앱에 로그인할 때 얼굴 인식을 사용합니다."</string>
@@ -87,43 +87,43 @@
     <string name="security_settings_face_enroll_introduction_consent_message" product="tablet" msgid="2689983368730833505">"자녀의 얼굴로 태블릿을 잠금 해제하는 것은 강력한 패턴 또는 PIN에 비해 보안 강도가 낮을 수 있습니다."</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="device" msgid="5768077532130409820">"자녀의 얼굴로 기기를 잠금 해제하는 것은 강력한 패턴 또는 PIN에 비해 보안 강도가 낮을 수 있습니다."</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="desktop" msgid="5768077532130409820">"자녀의 얼굴로 기기를 잠금 해제하는 것은 강력한 패턴 또는 PIN에 비해 보안 강도가 낮을 수 있습니다."</string>
-    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716"></string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716">휴대전화를 바라보면 의도치 않게 잠금이 해제될 수 있습니다. 일란성 쌍둥이와 같이 나와 닮은 사람이 휴대전화의 잠금을 해제하거나 다른 사람이 내 얼굴에 휴대전화를 가져다 대어 잠금을 해제할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="tablet" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="device" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="desktop" msgid="6532489273492650716"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758">자녀가 휴대전화를 바라보면 의도치 않게 잠금이 해제될 수 있습니다. 일란성 쌍둥이와 같이 자녀와 닮은 사람이 자녀의 휴대전화 잠금을 해제하거나 다른 사람이 자녀의 얼굴에 휴대전화를 가져다 대어 잠금을 해제할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="tablet" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="device" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="desktop" msgid="5741230674977518758"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526">자녀의 얼굴 인식을 통한 휴대전화 잠금 해제는 강력한 패턴, PIN 또는 비밀번호보다 보안 취약할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="tablet" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="device" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="desktop" msgid="9108545933856688526"></string>
-    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480"></string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480">얼굴 인식을 통한 휴대전화 잠금 해제는 강력한 패턴, PIN 또는 비밀번호보다 보안이 취약할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="tablet" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="device" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="desktop" msgid="8122442762352835480"></string>
-    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948"></string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948">휴대전화를 잠금 해제하거나 본인 인증을 위해 얼굴 인식 잠금 해제를 사용할 때 눈을 뜨도록 요구할 수 있습니다. 언제든지 설정에서 이 옵션을 사용 설정할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="tablet" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="device" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="desktop" msgid="762967108645858948"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205">휴대전화를 잠금 해제하거나 본인 인증을 위해 얼굴 인식 잠금 해제를 사용할 때 자녀에게 눈을 뜨도록 요구할 수 있습니다. 부모와 자녀는 언제든지 설정에서 이 옵션을 사용 설정할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="tablet" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="device" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="desktop" msgid="4344820870381904205"></string>
-    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188"></string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188">얼굴 인식 잠금 해제를 사용하면 본인 인증을 위한 고유한 얼굴 모델이 생성됩니다. 설정 단계에서 얼굴 모델을 만들기 위해 다양한 각도에서 얼굴을 촬영하게 됩니다.\n\n얼굴 인식 잠금 해제를 사용하면 얼굴 모델을 업데이트하는 데 이미지가 활용됩니다. 얼굴 모델을 만드는 데 사용된 이미지는 저장되지 않으나 얼굴 모델은 휴대전화에 안전하게 저장되며 휴대전화 외부로 전송되지 않습니다. 모든 처리는 휴대전화 내에서 안전하게 이뤄집니다.</string>
     <string name="security_settings_face_enroll_introduction_how_message" product="tablet" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="device" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="desktop" msgid="8933211744361765188"></string>
-    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733"></string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733">얼굴 인식 잠금 해제를 사용하면 자녀의 본인 인증을 위한 고유한 얼굴 모델이 생성됩니다. 설정 단계에서 얼굴 모델을 만들기 위해 다양한 각도에서 자녀의 얼굴을 촬영하게 됩니다.\n\n얼굴 인식 잠금 해제를 사용하면 자녀의 얼굴 모델을 업데이트하는 데 이미지가 활용됩니다. 자녀의 얼굴 모델을 만드는 데 사용된 이미지는 저장되지 않으나 얼굴 모델은 휴대전화에 안전하게 저장되며 휴대전화 외부로 전송되지 않습니다. 모든 처리는 휴대전화 내에서 안전하게 이뤄집니다.</string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="tablet" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="device" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="desktop" msgid="5091057232082857733"></string>
-    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026"></string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026">언제든지 설정에서 얼굴 모델을 삭제하거나 얼굴 인식 잠금 해제를 사용 중지할 수 있습니다. 얼굴 모델은 삭제하기 전까지 휴대전화에 저장됩니다.&lt;br&gt;&lt;br&gt;&lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt;에서 자세히 알아보세요.</string>
     <string name="security_settings_face_enroll_introduction_control_message" product="tablet" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="device" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="desktop" msgid="5648868145191337026"></string>
-    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996"></string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996">부모와 자녀 모두 언제든지 설정에서 얼굴 모델을 삭제하거나 얼굴 인식 잠금 해제를 사용 중지할 수 있습니다. 얼굴 모델은 삭제하기 전까지 휴대전화에 저장됩니다.&lt;br&gt;&lt;br&gt;&lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt;에서 자세히 알아보세요.</string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="tablet" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="device" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="desktop" msgid="6983939010814873996"></string>
@@ -163,7 +163,7 @@
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="tablet" msgid="6790505667764631343">"얼굴 인식을 사용하여 태블릿을 잠금 해제하거나 앱 로그인 또는 구매 승인 등을 위해 본인 인증을 진행하세요.\n\n주의사항:\n한 번에 하나의 얼굴만 설정해 둘 수 있습니다. 다른 얼굴을 추가하려면 기존 얼굴을 삭제하세요.\n\n태블릿을 바라보면 의도치 않게 잠금이 해제될 수 있습니다.\n\n다른 사람이 내 얼굴에 태블릿을 가져다 대면 내가 눈을 감고 있어도 잠금이 해제될 수 있습니다.\n\n일란성 쌍둥이와 같이 나와 많이 닮은 사람이 태블릿의 잠금을 해제할 수도 있습니다."</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="device" msgid="7858917821957779752">"얼굴 인식을 사용하여 기기를 잠금 해제하거나 앱 로그인 또는 구매 승인 등을 위해 본인 인증을 진행하세요.\n\n주의사항:\n한 번에 하나의 얼굴만 설정해 둘 수 있습니다. 다른 얼굴을 추가하려면 기존 얼굴을 삭제하세요.\n\n기기를 바라보면 의도치 않게 잠금이 해제될 수 있습니다.\n\n다른 사람이 내 얼굴에 기기를 가져다 대면 내가 눈을 감고 있어도 잠금이 해제될 수 있습니다.\n\n일란성 쌍둥이와 같이 나와 많이 닮은 사람이 기기의 잠금을 해제할 수도 있습니다."</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="desktop" msgid="7858917821957779752">"얼굴 인식을 사용하여 기기를 잠금 해제하거나 앱 로그인 또는 구매 승인 등을 위해 본인 인증을 진행하세요.\n\n주의사항:\n한 번에 하나의 얼굴만 설정해 둘 수 있습니다. 다른 얼굴을 추가하려면 기존 얼굴을 삭제하세요.\n\n기기를 바라보면 의도치 않게 잠금이 해제될 수 있습니다.\n\n다른 사람이 내 얼굴에 기기를 가져다 대면 내가 눈을 감고 있어도 잠금이 해제될 수 있습니다.\n\n일란성 쌍둥이와 같이 나와 많이 닮은 사람이 기기의 잠금을 해제할 수도 있습니다."</string>
-    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759"></string>
+    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759">얼굴 인식을 사용하여 휴대전화를 잠금 해제하거나 앱 로그인 또는 구매 승인 등을 위해 본인 인증을 진행하세요.\n\n주의사항:\n한 번에 하나의 얼굴만 설정해 둘 수 있습니다. 다른 얼굴을 추가하려면 기존 얼굴을 삭제하세요.\n\n휴대전화를 바라보면 의도치 않게 잠금이 해제될 수 있습니다.\n\n일란성 쌍둥이와 같이 나와 많이 닮은 사람이 휴대전화의 잠금을 해제할 수도 있습니다.\n</string>
     <string name="security_settings_fingerprint_enroll_introduction_v3_message" msgid="2145273491174234191">"지문을 사용하여 <xliff:g id="DEVICENAME">%s</xliff:g> 기기를 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인 인증을 진행할 수 있습니다."</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="default" msgid="5101253231118659496">"자녀가 지문을 사용해 휴대전화를 잠금 해제하거나 본인을 인증할 수 있도록 허용합니다. 본인 인증은 앱에 로그인하거나 구매를 승인하는 등의 경우에 이뤄집니다."</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="tablet" msgid="3063978167545799342">"자녀가 지문을 사용해 태블릿을 잠금 해제하거나 본인을 인증할 수 있도록 허용합니다. 본인 인증은 앱에 로그인하거나 구매를 승인하는 등의 경우에 이뤄집니다."</string>
@@ -181,11 +181,11 @@
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="tablet" msgid="1426913673720862863">"자녀가 Pixel Imprint를 사용하면 자녀의 지문 모델을 업데이트하는 데 이미지가 활용됩니다. 자녀의 지문 모델을 만드는 데 사용된 이미지는 저장되지 않으나 지문 모델 자체는 태블릿에 안전하게 저장되며 태블릿 외부로 전송되지 않습니다. 모든 처리는 태블릿 내에서 안전하게 이뤄집니다."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="device" msgid="2631789126811300879">"자녀가 Pixel Imprint를 사용하면 자녀의 지문 모델을 업데이트하는 데 이미지가 활용됩니다. 자녀의 지문 모델을 만드는 데 사용된 이미지는 저장되지 않으나 지문 모델 자체는 기기에 안전하게 저장되며 기기 외부로 전송되지 않습니다. 모든 처리는 기기 내에서 안전하게 이뤄집니다."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="desktop" msgid="2631789126811300879">"자녀가 Pixel Imprint를 사용하면 자녀의 지문 모델을 업데이트하는 데 이미지가 활용됩니다. 자녀의 지문 모델을 만드는 데 사용된 이미지는 저장되지 않으나 지문 모델 자체는 기기에 안전하게 저장되며 기기 외부로 전송되지 않습니다. 모든 처리는 기기 내에서 안전하게 이뤄집니다."</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">"언제든지 설정에서 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 휴대전화에 저장됩니다."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">언제든지 설정에서 지문 모델을 삭제하거나 Pixel Imprint를 사용 중지할 수 있습니다. 지문 모델은 삭제하기 전까지 휴대전화에 저장됩니다.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="tablet" msgid="8207309581266022275">"언제든지 설정에서 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 태블릿에 저장됩니다."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="device" msgid="2498580070051496133">"언제든지 설정에서 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 기기에 저장됩니다."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="desktop" msgid="2498580070051496133">"언제든지 설정에서 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 기기에 저장됩니다."</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">"부모와 자녀가 언제든지 설정에서 자녀의 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 휴대전화에 저장됩니다."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">부모와 자녀는 언제든지 설정에서 자녀의 지문 모델을 삭제하거나 Pixel Imprint를 사용 중지할 수 있습니다. 지문 모델은 삭제하기 전까지 휴대전화에 저장됩니다.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="tablet" msgid="8772005555323461143">"부모와 자녀 모두 언제든지 설정에서 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 태블릿에 저장됩니다."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="device" msgid="7254955922685507093">"부모와 자녀 모두 언제든지 설정에서 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 기기에 저장됩니다."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="desktop" msgid="7254955922685507093">"부모와 자녀 모두 언제든지 설정에서 지문 이미지와 모델을 삭제하거나 지문 잠금 해제를 사용 중지할 수 있습니다. 지문 이미지와 모델은 삭제하기 전까지 기기에 저장됩니다."</string>
@@ -201,7 +201,7 @@
     <string name="security_settings_fingerprint_v2_home_screen_text" product="device" msgid="7398339851724524558">"지문을 사용하여 기기를 잠금 해제하거나 앱 로그인 등을 위해 본인을 인증할 수 있습니다."</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="default" msgid="5376408603508393038">"지문을 사용하여 휴대전화를 잠금 해제하거나 앱 로그인 등을 위해 본인을 인증하세요."</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="desktop" msgid="7398339851724524558">"지문을 사용하여 기기를 잠금 해제하거나 앱 로그인 등을 위해 본인을 인증할 수 있습니다."</string>
-    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">"휴대전화를 잠금 해제하거나 구매를 승인할 때 지문을 사용합니다.\n\n참고: 이 기기는 지문으로 잠금 해제할 수 없습니다. 자세한 내용은 조직의 관리자에게 문의하세요."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">Nexus Imprint를 사용하면 지문으로 구매를 승인하거나 앱에 로그인할 수 있습니다.\n\n지문을 추가할 때 주의하시기 바랍니다. 추가된 지문으로 다음 작업을 수행할 수 있습니다.\n\n참고: 이 기기는 지문으로 잠금 해제할 수 없습니다. 자세한 내용은 조직의 관리자에게 문의하세요.</string>
     <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="desktop" msgid="1449873608291132102">"기기를 잠금 해제하거나 구매를 승인할 때 지문을 사용합니다.\n\n참고: 이 기기는 지문으로 잠금 해제할 수 없습니다. 자세한 내용은 조직의 관리자에게 문의하세요."</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="default" msgid="548895260855476885">"스마트시계 잠금 해제는 손가락에 물이 묻었거나 얼굴이 인식되지 않는 경우에 이 휴대전화를 잠금 해제하는 편리한 방법입니다.\n\n다음의 경우에 워치를 사용하여 이 휴대전화를 잠금 해제할 수 있습니다."</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="desktop" msgid="6975912914017982596">"스마트시계 잠금 해제는 손가락에 물이 묻었거나 얼굴이 인식되지 않는 경우에 이 기기를 잠금 해제하는 편리한 방법입니다.\n\n다음의 경우에 워치를 사용하여 이 기기를 잠금 해제할 수 있습니다."</string>
@@ -716,13 +716,13 @@
     <string name="display_settings" product="default" msgid="3387606354749476666">"디스플레이"</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"소리 및 진동"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"소리"</string>
-    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"얼굴 인식 잠금 해제 허용"</string>
+    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">얼굴 인식 잠금 해제 허용</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="desktop" msgid="7194334858085778245">"얼굴로 잠금 해제 허용"</string>
-    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">"얼굴로 잠금 해제"</string>
+    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">얼굴 인식 잠금 해제 설정</string>
     <string name="security_settings_face_enroll_introduction_title" product="desktop" msgid="193847167859538900">"얼굴로 잠금 해제"</string>
-    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212"></string>
+    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212">얼굴 인식 잠금 해제에 관해 자세히 알아보기</string>
     <string name="security_settings_face_footer_learn_more_description" product="desktop" msgid="2747425608262449212"></string>
-    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006"></string>
+    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006">손가락이 젖었거나 차가울 때를 대비해 얼굴을 보조 잠금 해제 수단으로 설정해 두면 더욱 편리합니다.\n\n지문은 기기에만 저장되며 Google로 전송되지 않습니다.</string>
     <string name="security_settings_fingerprint_description" product="desktop" msgid="1962781280961450006"></string>
     <string name="security_settings_face_preference_title" product="default" msgid="1088234386271687481">"얼굴 인식 잠금 해제"</string>
     <string name="security_settings_face_preference_title" product="desktop" msgid="120316049914434185">"얼굴로 잠금 해제"</string>

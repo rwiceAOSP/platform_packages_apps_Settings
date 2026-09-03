@@ -59,15 +59,15 @@
     <string name="not_encrypted_summary" product="default" msgid="330652312169527734">"手机未加密"</string>
     <string name="not_encrypted_summary" product="tablet" msgid="452970124282458862">"设备未加密"</string>
     <string name="not_encrypted_summary" product="desktop" msgid="452970124282458862">"设备未加密"</string>
-    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967"></string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967">在下一界面，请将手机举至与眼睛齐平</string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="tablet" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="device" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="desktop" msgid="5795890116575517967"></string>
-    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090"></string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090">使用人脸解锁时，请尽量让脸正对手机。</string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="tablet" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="device" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="desktop" msgid="2221590003018953090"></string>
-    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">"通过您的面孔解锁手机、授权购买交易或登录应用。"</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">您可以用脸部解锁手机或在需要时验证自己的身份，例如在登录应用或批准购买交易时。</string>
     <string name="security_settings_face_enroll_introduction_message" product="tablet" msgid="3976493376026067375">"用脸部解锁平板电脑、授权购买交易或登录应用。"</string>
     <string name="security_settings_face_enroll_introduction_message" product="device" msgid="6432265830098806034">"用脸部解锁设备、授权购买交易或登录应用。"</string>
     <string name="security_settings_face_enroll_introduction_message" product="desktop" msgid="6432265830098806034">"用脸部解锁设备、授权购买交易或登录应用。"</string>
@@ -87,43 +87,43 @@
     <string name="security_settings_face_enroll_introduction_consent_message" product="tablet" msgid="2689983368730833505">"使用孩子的面孔解锁平板电脑在安全性上可能不及使用安全系数高的解锁图案或 PIN 码。"</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="device" msgid="5768077532130409820">"使用孩子的面孔解锁设备在安全性上可能不及使用安全系数高的解锁图案或 PIN 码。"</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="desktop" msgid="5768077532130409820">"使用孩子的面孔解锁设备在安全性上可能不及使用安全系数高的解锁图案或 PIN 码。"</string>
-    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716"></string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716">目视手机可能会让手机在您并未要求的情况下解锁。长相与您非常相似的人（例如您的同卵兄弟姐妹）可能也能解锁您的手机。此外，如果有人将手机对准您的脸，手机也可能会解锁。</string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="tablet" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="device" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="desktop" msgid="6532489273492650716"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758">目视手机可能会让手机在孩子并未要求的情况下解锁。长相与孩子非常相似的人（例如孩子的同卵兄弟姐妹）可能也能解锁孩子的手机。此外，如果有人将手机对准孩子的脸，手机也可能会解锁。</string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="tablet" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="device" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="desktop" msgid="5741230674977518758"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526">使用孩子的脸部来解锁手机，在安全性上可能不及安全系数高的解锁图案、数字密码或混合密码</string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="tablet" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="device" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="desktop" msgid="9108545933856688526"></string>
-    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480"></string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480">使用人脸解锁手机，在安全性上可能不及安全系数高的解锁图案、数字密码或混合密码</string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="tablet" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="device" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="desktop" msgid="8122442762352835480"></string>
-    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948"></string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948">如果使用人脸解锁功能，系统可能会要求您睁着眼睛以便解锁手机或验证身份。您可以随时在“设置”中开启此选项。</string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="tablet" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="device" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="desktop" msgid="762967108645858948"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205">如果使用人脸解锁功能，系统可能会要求您的孩子睁着眼睛以便解锁手机或验证身份。您和孩子可以随时在“设置”中开启此选项。</string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="tablet" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="device" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="desktop" msgid="4344820870381904205"></string>
-    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188"></string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188">人脸解锁功能会创建一个独一无二的脸部模型，用于验证您的身份。在设置过程中，为了创建脸部模型，您需要拍摄不同角度的脸部图像。\n\n使用人脸解锁功能时产生的图像会用于更新您的脸部模型。系统绝不会存储创建脸部模型时所用的图像，但会将您的脸部模型安全地存储在您的手机上，绝不会外泄。整个处理过程都在您的手机上完成，安全有保证。</string>
     <string name="security_settings_face_enroll_introduction_how_message" product="tablet" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="device" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="desktop" msgid="8933211744361765188"></string>
-    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733"></string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733">人脸解锁功能会为您的孩子创建一个独一无二的脸部模型，用于验证其身份。在设置过程中，为了创建脸部模型，您的孩子需要拍摄不同角度的脸部图像。\n\n在您的孩子使用人脸解锁功能时，系统会使用图像来更新其脸部模型。系统绝不会存储孩子用来创建脸部模型的图像，只会将脸部模型安全地存储在手机上，并且绝不会外泄。整个处理过程都是在手机上安全进行。</string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="tablet" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="device" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="desktop" msgid="5091057232082857733"></string>
-    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026"></string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026">您可以随时在“设置”部分删除自己的脸部模型或关闭人脸解锁功能。脸部模型会存储在手机上，直到您将其删除为止。&lt;br&gt;&lt;br&gt;如需了解详情，请访问 &lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt;。</string>
     <string name="security_settings_face_enroll_introduction_control_message" product="tablet" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="device" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="desktop" msgid="5648868145191337026"></string>
-    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996"></string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996">您和孩子可以随时在“设置”部分删除自己的脸部模型或关闭人脸解锁功能。脸部模型会存储在手机上，直到被删除为止。&lt;br&gt;&lt;br&gt;如需了解详情，请访问 &lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt;。</string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="tablet" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="device" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="desktop" msgid="6983939010814873996"></string>
@@ -163,7 +163,7 @@
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="tablet" msgid="6790505667764631343">"您可以通过刷脸来解锁平板电脑或验证身份，以便登录应用或批准购买交易等。\n\n注意：\n同一时间只能设置有 1 张面孔。如需添加其他面孔，请先删除当前的面孔。\n\n目视平板电脑可能会让平板电脑在您并未要求的情况下解锁。\n\n如果有人将平板电脑对准您的脸，即使您闭上眼睛，平板电脑也可能会解锁。\n\n长相与您非常相似的人（例如您的同卵兄弟姐妹）可能也能解锁您的平板电脑。"</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="device" msgid="7858917821957779752">"您可以通过刷脸来解锁设备或验证身份，以便登录应用或批准购买交易等。\n\n注意：\n同一时间只能设置有 1 张面孔。如需添加其他面孔，请先删除当前的面孔。\n\n目视设备可能会让设备在您并未要求的情况下解锁。\n\n如果有人将设备对准您的脸，即使您闭上眼睛，设备也可能会解锁。\n\n长相与您非常相似的人（例如您的同卵兄弟姐妹）可能也能解锁您的设备。"</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="desktop" msgid="7858917821957779752">"您可以通过刷脸来解锁设备或验证身份，以便登录应用或批准购买交易等。\n\n注意：\n同一时间只能设置有 1 张面孔。如需添加其他面孔，请先删除当前的面孔。\n\n目视设备可能会让设备在您并未要求的情况下解锁。\n\n如果有人将设备对准您的脸，即使您闭上眼睛，设备也可能会解锁。\n\n长相与您非常相似的人（例如您的同卵兄弟姐妹）可能也能解锁您的设备。"</string>
-    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759"></string>
+    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759">您可以通过刷脸来解锁手机或验证身份，以便登录应用或批准购买交易等。\n\n注意：\n同一时间只能设置有 1 张面孔。如需添加其他面孔，请先删除当前的面孔。\n\n目视手机可能会让手机在您并未要求的情况下解锁。\n\n长相与您非常相似的人（例如您的同卵兄弟姐妹）可能也能解锁您的手机。\n</string>
     <string name="security_settings_fingerprint_enroll_introduction_v3_message" msgid="2145273491174234191">"您可以使用指纹来解锁“<xliff:g id="DEVICENAME">%s</xliff:g>”或验证身份，以便登录应用或批准购买交易等"</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="default" msgid="5101253231118659496">"允许您的孩子使用指纹来解锁手机或验证自己的身份，例如在他们登录应用、批准购买交易以及执行其他操作时。"</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="tablet" msgid="3063978167545799342">"允许您的孩子使用指纹来解锁平板电脑或验证自己的身份，例如在孩子登录应用、批准购买交易以及执行其他操作时。"</string>
@@ -181,11 +181,11 @@
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="tablet" msgid="1426913673720862863">"在您的孩子使用 Pixel Imprint 时，系统会使用图像来更新其指纹模型。系统绝不会存储孩子用来创建指纹模型的图像，只会将指纹模型安全地存储在平板电脑上，并且绝不会外泄。整个处理过程都是在平板电脑上安全进行的。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="device" msgid="2631789126811300879">"在您的孩子使用 Pixel Imprint 时，系统会使用图像来更新其指纹模型。系统绝不会存储孩子用来创建指纹模型的图像，只会将指纹模型安全地存储在设备上，并且绝不会外泄。整个处理过程都是在设备上安全进行的。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="desktop" msgid="2631789126811300879">"在您的孩子使用 Pixel Imprint 时，系统会使用图像来更新其指纹模型。系统绝不会存储孩子用来创建指纹模型的图像，只会将指纹模型安全地存储在设备上，并且绝不会外泄。整个处理过程都是在设备上安全进行的。"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">"您可以随时在“设置”中删除您的指纹图像和模型或关闭指纹解锁功能。指纹图像和模型会存储在手机上，直到您将其删除为止。"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">您可以随时在“设置”部分删除自己的指纹模型或关闭 Pixel Imprint 功能。指纹模型会存储在手机上，直到您将其删除为止。</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="tablet" msgid="8207309581266022275">"您可以随时在“设置”中删除您的指纹图像和模型或关闭指纹解锁功能。指纹图像和模型会存储在平板电脑上，直到您将其删除为止。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="device" msgid="2498580070051496133">"您可以随时在“设置”中删除您的指纹图像和模型或关闭指纹解锁功能。指纹图像和模型会存储在设备上，直到您将其删除为止。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="desktop" msgid="2498580070051496133">"您可以随时在“设置”中删除您的指纹图像和模型或关闭指纹解锁功能。指纹图像和模型会存储在设备上，直到您将其删除为止。"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">"您和您的孩子可以随时在“设置”部分删除其指纹图片和模型或关闭指纹解锁功能。指纹图片和模型会存储在手机上，直到被删除为止。"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">您和您的孩子可以随时在“设置”部分删除自己的指纹模型或关闭 Pixel Imprint 功能。指纹模型会存储在手机上，直到被删除为止为止。</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="tablet" msgid="8772005555323461143">"您和您的孩子可以随时在“设置”中删除其指纹图像和模型或关闭指纹解锁功能。指纹图像和模型会存储在平板电脑上，直到被删除为止。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="device" msgid="7254955922685507093">"您和您的孩子可以随时在“设置”中删除其指纹图像和模型或关闭指纹解锁功能。指纹图像和模型会存储在设备上，直到被删除为止。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="desktop" msgid="7254955922685507093">"您和您的孩子可以随时在“设置”中删除其指纹图像和模型或关闭指纹解锁功能。指纹图像和模型会存储在设备上，直到被删除为止。"</string>
@@ -201,7 +201,7 @@
     <string name="security_settings_fingerprint_v2_home_screen_text" product="device" msgid="7398339851724524558">"您可以使用指纹来解锁设备或验证身份，以便登录应用或执行其他操作"</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="default" msgid="5376408603508393038">"您可以使用指纹来解锁手机或验证身份，以便登录应用或执行其他操作"</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="desktop" msgid="7398339851724524558">"您可以使用指纹来解锁设备或验证身份，以便登录应用或执行其他操作"</string>
-    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">"使用指纹解锁手机或批准购买交易。\n\n注意：您无法使用指纹来解锁此设备。如要了解详情，请与贵组织的管理员联系。"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">借助 Nexus Imprint，您可以使用指纹授权购买交易或登录应用。\n\n请务必谨慎添加指纹，因为添加的任何指纹都能用来执行上述操作。\n\n请注意：您无法使用指纹解锁此设备。如需了解详情，请与组织管理员联系。</string>
     <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="desktop" msgid="1449873608291132102">"使用指纹解锁设备或批准购买交易。\n\n注意：您无法使用指纹来解锁此设备。如要了解详情，请与贵组织的管理员联系。"</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="default" msgid="548895260855476885">"使用“手表解锁”功能解锁此手机也很便捷。例如，当您的手指潮湿或设备未能识别出您的面孔时，此功能就非常有用。\n\n您可以通过以下方式使用手表解锁此手机："</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="desktop" msgid="6975912914017982596">"使用“手表解锁”功能解锁此设备也很便捷。例如，当您的手指潮湿或设备未能识别出您的面孔时，此功能就非常有用。\n\n您可以通过以下方式使用手表解锁此设备："</string>
@@ -716,13 +716,13 @@
     <string name="display_settings" product="default" msgid="3387606354749476666">"显示"</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"提示音和振动"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"声音"</string>
-    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"允许使用人脸解锁功能"</string>
+    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">允许使用人脸解锁功能</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="desktop" msgid="7194334858085778245">"允许通过刷脸解锁"</string>
-    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">"通过刷脸解锁"</string>
+    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">设置人脸解锁</string>
     <string name="security_settings_face_enroll_introduction_title" product="desktop" msgid="193847167859538900">"通过刷脸解锁"</string>
-    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212"></string>
+    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212">详细了解人脸解锁</string>
     <string name="security_settings_face_footer_learn_more_description" product="desktop" msgid="2747425608262449212"></string>
-    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006"></string>
+    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006">建议将人脸解锁设置为备用解锁方式，方便在手指潮湿或冰冷时解锁。\n\n您的指纹信息只会存储在设备上，绝不会发送给 Google。</string>
     <string name="security_settings_fingerprint_description" product="desktop" msgid="1962781280961450006"></string>
     <string name="security_settings_face_preference_title" product="default" msgid="1088234386271687481">"人脸解锁"</string>
     <string name="security_settings_face_preference_title" product="desktop" msgid="120316049914434185">"刷脸解锁"</string>
