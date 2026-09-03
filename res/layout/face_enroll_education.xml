@@ -22,8 +22,6 @@
     android:id="@+id/setup_wizard_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:sudAnimationIcon="@raw/icon_lock"
-    app:sudIsAnimatedIconDelayed="false"
     app:sucHeaderText="@string/security_settings_face_enroll_education_title">
 
     <LinearLayout
@@ -53,7 +51,6 @@
             <!-- Animation res MUST be set in code, gated by config_face_education_use_lottie. -->
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/illustration_lottie"
-                style="@style/SudContentIllustration"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/illustration_lottie_height"
                 android:layout_marginTop="@dimen/lottie_animation_view_margin_top"
@@ -86,9 +83,10 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal|bottom">
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/accessibility_button"
@@ -120,7 +118,15 @@
                     android:visibility="gone"
                     app:messageText="@string/security_settings_face_enroll_introduction_accessibility"/>
 
-            </FrameLayout>
+                <com.android.settings.biometrics.face.FaceEnrollAccessibilityToggle
+                    android:id="@+id/toggle_gaze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/limited_vision_button_toggle_margin_top"
+                    android:visibility="gone"
+                    app:messageText="@string/security_settings_face_settings_gaze"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
