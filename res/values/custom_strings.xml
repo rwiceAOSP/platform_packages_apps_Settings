@@ -79,6 +79,9 @@
     <string name="fingerprint_enroll_finish_subtitle_two_fingerprints_enrolled">The more you use Fingerprint Unlock, the better it gets. And you can add even more fingerprints for extra convenience.</string>
     <string name="fingerprint_enroll_finish_title">Looks good!</string>
     <string name="fingerprint_enroll_finish_title_one_fingerprint_enrolled">1 fingerprint added</string>
+    <string name="fingerprint_udfps_enroll_find_sensor_description">The fingerprint sensor will be on the next screen. For the greatest flexibility, set up at least 1 finger on each hand.</string>
+    <string name="fingerprint_udfps_pre_enroll_runner_dialog_message" />
+    <string name="fingerprint_udfps_pre_enroll_runner_dialog_title" />
     <string name="security_settings_face_enroll_consent_message">Use your child’s face to unlock their phone or verify it’s them in apps</string>
     <string name="security_settings_face_enroll_consent_secure_and_helpful_message_1">Your child’s face is only stored on device and never sent to Google</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">Now when you pick up your phone or tap the screen, you can use your face to unlock.\n\nFace Unlock works best when there’s enough light and you’re not wearing a mask or dark glasses.</string>
@@ -106,7 +109,12 @@
     <string name="security_settings_fingerprint_enroll_consent_secure_and_helpful_message_1">Your child’s fingerprints are only stored on device and never sent to Google</string>
     <string name="security_settings_fingerprint_enroll_introduction_footer_title_3">Secure and helpful</string>
     <string name="security_settings_fingerprint_enroll_introduction_v3_message_2">Use your fingerprints to unlock your phone or verify it’s you in apps</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_6_2">If you have a screen protector, apply it before setting up your fingerprint for the best performance.\n\nFor best results, use a screen protector that’s Made for Google certified. With other screen protectors, your fingerprint may not work.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_7">Your fingerprints are only stored on device and never sent to Google</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_8">For the best experience, add 2 or more fingerprints and set up Face Unlock</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more_2">Learn more at &lt;a href=\'http://g.co/pixel/fingerprintunlock\'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;</string>
+    <string name="security_settings_udfps_enroll_start_message_new">Keep your finger flat on the sensor until you feel a vibration. Only set up 1 finger at a time.</string>
+    <string name="security_settings_udfps_enroll_start_message_without_haptic">Keep your finger flat on the sensor until the progress bar fills up. Only set up 1 finger at a time.</string>
+    <string name="sp_config_001_hal_none">08022000</string>
+    <string name="sp_config_001_hal_third_party">08062100</string>
 </resources>
