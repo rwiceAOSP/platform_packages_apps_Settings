@@ -31,4 +31,9 @@
     <color name="face_enroll_single_capture_rotating_2">#ff669df6</color>
     <color name="face_enroll_single_capture_rotating_3">#ffaecbfa</color>
     <color name="face_enroll_single_capture_rotating_4">#ffe8f0fe</color>
+    <color name="sfps_enroll_grey300_light">#bdc1c6</color>
+    <color name="sfps_enroll_immobile_continue_btn_bg_color">#5a631e</color>
+    <color name="sfps_enroll_immobile_continue_btn_text_color">#ffffff</color>
+    <color name="sfps_enroll_immobile_subtitle_text_color">#47483b</color>
+    <color name="sfps_enroll_immobile_title_text_color">#1b1c14</color>
 </resources>
