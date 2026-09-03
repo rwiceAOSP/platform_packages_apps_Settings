@@ -46,6 +46,10 @@
     <string name="biometric_safety_issue_setup_fingerprint_unlock_subtitle">To make unlocking more convenient, use Fingerprint Unlock along with Face Unlock</string>
     <string name="biometric_safety_issue_setup_fingerprint_unlock_title">Set up Fingerprint Unlock</string>
     <string name="biometric_safety_issue_setup_fingerprint_unlock_title_for_work">Set up Fingerprint Unlock for work</string>
+    <string name="delete_all_fps_dialog_cancel_button">Not now</string>
+    <string name="delete_all_fps_dialog_delete_button">Set up now</string>
+    <string name="delete_all_fps_dialog_msg">This will delete all your current fingerprints and you won’t be able to use your fingerprint to unlock your phone or verify your identity until Fingerprint Unlock is set up again.</string>
+    <string name="delete_all_fps_dialog_title">Set up Fingerprint Unlock?</string>
     <string name="face_confirmation_hide_illustration_description">Now when you pick up your phone or tap the screen, you can use your face to unlock.</string>
     <string name="face_confirmation_info_enough_light">Face Unlock works best when there’s enough light and you’re not wearing a mask or dark glasses.</string>
     <string name="face_confirmation_info_outside_screen">Face Unlock works from the outside screen only</string>
@@ -82,6 +86,19 @@
     <string name="fingerprint_udfps_enroll_find_sensor_description">The fingerprint sensor will be on the next screen. For the greatest flexibility, set up at least 1 finger on each hand.</string>
     <string name="fingerprint_udfps_pre_enroll_runner_dialog_message" />
     <string name="fingerprint_udfps_pre_enroll_runner_dialog_title" />
+    <string name="frr_notification_button_got_it">Got it</string>
+    <string name="frr_notification_description">For best performance, follow these tips:</string>
+    <string name="frr_notification_learn_more">&lt;a href=\'http://g.co/pixel/screenprotector\'&gt;Learn more&lt;/a&gt;</string>
+    <string name="frr_notification_non_mfg_sp_description">Use a screen protector that’s Made for Google certified. Other screen protectors may interfere with the sensor and prevent it from working reliably.</string>
+    <string name="frr_notification_non_mfg_sp_title">Use a certified screen protector</string>
+    <string name="frr_notification_reset_fingerprint_button">Delete and set up Fingerprint Unlock</string>
+    <string name="frr_notification_reset_fingerprint_description">This can sometimes fix issues, especially if you’ve recently added or removed a screen protector</string>
+    <string name="frr_notification_reset_fingerprint_title">Set up Fingerprint Unlock again</string>
+    <string name="frr_notification_screen_protector_description">It can affect fingerprint recognition. Use a screen protector that’s Made for Google certified. Other screen protectors may interfere with the sensor and prevent it from working reliably.</string>
+    <string name="frr_notification_screen_protector_title">If you use a screen protector...</string>
+    <string name="frr_notification_set_face_unlock_description">Use Face Unlock when your fingerprint isn’t recognized, like when your fingers are wet</string>
+    <string name="frr_notification_set_face_unlock_title">Set up Face Unlock</string>
+    <string name="frr_notification_title">Having trouble with Fingerprint Unlock?</string>
     <string name="security_settings_face_enroll_consent_message">Use your child’s face to unlock their phone or verify it’s them in apps</string>
     <string name="security_settings_face_enroll_consent_secure_and_helpful_message_1">Your child’s face is only stored on device and never sent to Google</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">Now when you pick up your phone or tap the screen, you can use your face to unlock.\n\nFace Unlock works best when there’s enough light and you’re not wearing a mask or dark glasses.</string>

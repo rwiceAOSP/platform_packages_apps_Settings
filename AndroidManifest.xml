@@ -6367,6 +6367,7 @@
             android:name="com.google.android.settings.biometrics.fingerprint.ui.view.FingerprintEnrollmentActivity$AddAnother"
             android:permission="android.permission.MANAGE_FINGERPRINT"
             android:theme="@style/GlifV4Theme.DayNight"/>
+
         <activity
             android:exported="false"
             android:name="com.google.android.settings.biometrics.face.FaceEnrollIntroductionGoogle"
@@ -6422,5 +6423,14 @@
             android:name="com.google.android.settings.biometrics.face.FaceEnrollParentalConsentGoogle"
             android:screenOrientation="portrait"
             android:theme="@style/GlifV4Theme.DayNight"/>
+
+        <activity
+            android:enableOnBackInvokedCallback="false"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:name="com.google.android.settings.biometrics.combination.ui.view.FrrCommonNotificationActivity"
+            android:theme="@style/GlifV4Theme.DayNight"/>
+
     </application>
 </manifest>

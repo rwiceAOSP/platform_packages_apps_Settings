@@ -11,4 +11,7 @@
     <dimen name="face_error_text_appear_distance">16dp</dimen>
     <dimen name="immobile_dialog_width">380dp</dimen>
     <dimen name="lock_screen_bypass_lottie_height">236dp</dimen>
+    <dimen name="frr_divider_height_expressive">@dimen/settingslib_expressive_radius_extrasmall1</dimen>
+    <dimen name="frr_entry_bg_corner_radius_large_expressive">@dimen/settingslib_expressive_radius_extralarge1</dimen>
+    <dimen name="frr_entry_bg_corner_radius_small_expressive">@dimen/settingslib_expressive_radius_extrasmall2</dimen>
 </resources>
