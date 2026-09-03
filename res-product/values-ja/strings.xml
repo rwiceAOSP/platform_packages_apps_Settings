@@ -59,15 +59,15 @@
     <string name="not_encrypted_summary" product="default" msgid="330652312169527734">"スマートフォンが暗号化されていません"</string>
     <string name="not_encrypted_summary" product="tablet" msgid="452970124282458862">"デバイスが暗号化されていません"</string>
     <string name="not_encrypted_summary" product="desktop" msgid="452970124282458862">"デバイスが暗号化されていません"</string>
-    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967"></string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967">次の画面で、スマートフォンを目の高さに合わせて持ってください</string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="tablet" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="device" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="desktop" msgid="5795890116575517967"></string>
-    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090"></string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090">顔認証を使用する場合は、顔をスマートフォンの真正面に向けてください。</string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="tablet" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="device" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="desktop" msgid="2221590003018953090"></string>
-    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">"顔認証を使用して、スマートフォンのロック解除、購入の許可、アプリへのログインを行うことができます。"</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">顔認証を使用して、スマートフォンのロック解除や本人確認（アプリへのログインや購入の承認など）を行います。</string>
     <string name="security_settings_face_enroll_introduction_message" product="tablet" msgid="3976493376026067375">"顔認証を使用して、タブレットのロック解除、購入の承認、アプリへのログインを行うことができます。"</string>
     <string name="security_settings_face_enroll_introduction_message" product="device" msgid="6432265830098806034">"顔認証を使用して、デバイスのロック解除、購入の承認、アプリへのログインを行うことができます。"</string>
     <string name="security_settings_face_enroll_introduction_message" product="desktop" msgid="6432265830098806034">"顔認証を使用して、デバイスのロック解除、購入の承認、アプリへのログインを行うことができます。"</string>
@@ -87,43 +87,43 @@
     <string name="security_settings_face_enroll_introduction_consent_message" product="tablet" msgid="2689983368730833505">"お子様の顔認証によるタブレットのロック解除は、複雑なパターンや PIN よりも安全面で劣る可能性があります。"</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="device" msgid="5768077532130409820">"お子様の顔認証によるデバイスのロック解除は、複雑なパターンや PIN よりも安全面で劣る可能性があります。"</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="desktop" msgid="5768077532130409820">"お子様の顔認証によるデバイスのロック解除は、複雑なパターンや PIN よりも安全面で劣る可能性があります。"</string>
-    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716"></string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716">スマートフォンの画面を見た際に、意図していなくてもロックが解除されることがあります。よく似た人（双子など）であったり、あなたの顔にスマートフォンを近づけられたりした場合も、ロックが解除されることがあります。</string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="tablet" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="device" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="desktop" msgid="6532489273492650716"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758">デバイスの画面を見た際に、意図していなくてもロックが解除されることがあります。よく似た人（双子など）であったり、お子様の顔にスマートフォンを近づけられたりした場合も、ロックが解除されることがあります。</string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="tablet" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="device" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="desktop" msgid="5741230674977518758"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526">お子様の顔認証によるスマートフォンのロック解除は、複雑なパターンや PIN、安全なパスワードよりも安全面で劣る可能性があります</string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="tablet" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="device" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="desktop" msgid="9108545933856688526"></string>
-    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480"></string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480">顔認証によるスマートフォンのロック解除は、複雑なパターン、PIN、パスワードよりも安全面で劣る可能性があります</string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="tablet" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="device" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="desktop" msgid="8122442762352835480"></string>
-    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948"></string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948">顔認証でスマートフォンのロック解除または本人確認をする際に、目を開いていただくことを必須にすることもできます。このオプションは [設定] でいつでも ON にできます。</string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="tablet" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="device" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="desktop" msgid="762967108645858948"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205">顔認証でスマートフォンのロック解除または本人確認をする際に、お子様に目を開いていただくことを必須にすることもできます。あなたとお子様はいつでも [設定] でこのオプションを ON にできます。</string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="tablet" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="device" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="desktop" msgid="4344820870381904205"></string>
-    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188"></string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188">さまざまな角度から顔を撮影して、本人確認に使う一意のモデルを作成します。\n\n顔認証を使用すると、画像を基に顔モデルが更新されます。顔モデルはスマートフォンに安全に保存されますが、その基になった画像が保存されることはありません。なお、顔モデルが外部に送信されることは一切なく、処理はすべてスマートフォン上で安全に行われます。</string>
     <string name="security_settings_face_enroll_introduction_how_message" product="tablet" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="device" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="desktop" msgid="8933211744361765188"></string>
-    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733"></string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733">顔認証では、さまざまな角度からお子様の顔の画像を撮影して固有のモデルを作成し、本人確認に使います。\n\n顔認証を使用すると、画像を基に顔モデルが更新されます。顔モデルの作成に使用する画像は保存されませんが、顔モデルはスマートフォンに安全に保存され、外部には決して送信されません。処理はすべてスマートフォン上で安全に行われます。</string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="tablet" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="device" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="desktop" msgid="5091057232082857733"></string>
-    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026"></string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026">いつでも [設定] で顔モデルを削除したり、顔認証を OFF にしたりできます。顔モデルは、削除するまでスマートフォンに保存されたままになります。&lt;br&gt;&lt;br&gt;詳しくは、&lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt; をご覧ください。</string>
     <string name="security_settings_face_enroll_introduction_control_message" product="tablet" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="device" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="desktop" msgid="5648868145191337026"></string>
-    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996"></string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996">あなたとお子様はいつでも [設定] で顔モデルを削除したり、顔認証を OFF にしたりできます。顔モデルは、削除するまでスマートフォンに保存されたままになります。&lt;br&gt;&lt;br&gt;詳しくは、&lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt; をご覧ください。</string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="tablet" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="device" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="desktop" msgid="6983939010814873996"></string>
@@ -163,7 +163,7 @@
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="tablet" msgid="6790505667764631343">"顔認証を使用して、タブレットのロック解除や本人確認（アプリへのログインや購入の承認など）を行います。\n\n注意事項:\n一度に設定できる顔は 1 つのみです。別の顔を追加するには、現在の顔を削除してください。\n\nタブレットに無意識に顔を向けても、ロックが解除されることがあります。\n\n目を閉じているときでもタブレットを顔に近づけられた場合、他のユーザーによってタブレットのロックが解除されることがあります。\n\n双子など、あなたによく似た人でもタブレットのロックを解除されることがあります。"</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="device" msgid="7858917821957779752">"顔認証を使用して、デバイスのロック解除や本人確認（アプリへのログインや購入の承認など）を行います。\n\n注意事項:\n一度に設定できる顔は 1 つのみです。別の顔を追加するには、現在の顔を削除してください。\n\nデバイスに無意識に顔を向けても、ロックが解除されることがあります。\n\n目を閉じているときでもデバイスを顔に近づけられた場合、他のユーザーによってデバイスのロックが解除されることがあります。\n\n双子など、あなたによく似た人でもデバイスのロックを解除されることがあります。"</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="desktop" msgid="7858917821957779752">"顔認証を使用して、デバイスのロック解除や本人確認（アプリへのログインや購入の承認など）を行います。\n\n注意事項:\n一度に設定できる顔は 1 つのみです。別の顔を追加するには、現在の顔を削除してください。\n\nデバイスに無意識に顔を向けても、ロックが解除されることがあります。\n\n目を閉じているときでもデバイスを顔に近づけられた場合、他のユーザーによってデバイスのロックが解除されることがあります。\n\n双子など、あなたによく似た人でもデバイスのロックを解除されることがあります。"</string>
-    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759"></string>
+    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759">顔認証を使用して、スマートフォンのロック解除や本人確認（アプリへのログインや購入の承認など）を行います。\n\n注意事項:\n一度に設定できる顔は 1 つのみです。別の顔を追加するには、現在の顔を削除してください。\n\nスマートフォンの画面を見た際に、意図していなくてもロックが解除されることがあります。\n\nスマートフォンの所有者本人でなくても、よく似た人（双子など）であれば、ロックを解除できる可能性があります。\n</string>
     <string name="security_settings_fingerprint_enroll_introduction_v3_message" msgid="2145273491174234191">"指紋を使って <xliff:g id="DEVICENAME">%s</xliff:g> のロック解除や本人確認（アプリへのログインや購入の承認など）を行えるようにします。"</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="default" msgid="5101253231118659496">"お子様に、指紋を使ってスマートフォンのロック解除や本人確認を行うことを許可します。アプリへのログインや購入の承認などに顔を使用できるようになります。"</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="tablet" msgid="3063978167545799342">"指紋を使ってタブレットのロック解除や本人確認を行うことをお子様に許可します。アプリへのログインや購入の承認などの際に利用できます。"</string>
@@ -181,11 +181,11 @@
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="tablet" msgid="1426913673720862863">"Pixel Imprint を使用すると、画像を基に指紋モデルが更新されます。お子様の指紋モデルの作成に使用された画像が保存されることはありませんが、指紋モデルはタブレットに安全に保存されます。この情報が外部に送信されることは一切なく、処理はすべてタブレット上で安全に行われます。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="device" msgid="2631789126811300879">"Pixel Imprint を使用すると、画像を基に指紋モデルが更新されます。お子様の指紋モデルの作成に使用された画像が保存されることはありませんが、指紋モデルはデバイスに安全に保存されます。この情報が外部に送信されることは一切なく、処理はすべてデバイス上で安全に行われます。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="desktop" msgid="2631789126811300879">"Pixel Imprint を使用すると、画像を基に指紋モデルが更新されます。お子様の指紋モデルの作成に使用された画像が保存されることはありませんが、指紋モデルはデバイスに安全に保存されます。この情報が外部に送信されることは一切なく、処理はすべてデバイス上で安全に行われます。"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">"いつでも [設定] で指紋の画像やモデルを削除したり、指紋認証を OFF にしたりできます。指紋の画像とモデルは、削除するまでデバイスに保存されたままになります。"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">いつでも [設定] で指紋モデルを削除したり、Pixel Imprint を OFF にしたりできます。指紋モデルは、削除するまでスマートフォンに保存されたままになります。</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="tablet" msgid="8207309581266022275">"いつでも [設定] で指紋の画像や指紋モデルを削除したり指紋認証を OFF にしたりできます。指紋の画像と指紋モデルは、削除するまでタブレットに保存されたままになります。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="device" msgid="2498580070051496133">"いつでも [設定] で指紋の画像や指紋モデルを削除したり指紋認証を OFF にしたりできます。指紋の画像と指紋モデルは、削除するまでデバイスに保存されたままになります。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="desktop" msgid="2498580070051496133">"いつでも [設定] で指紋の画像や指紋モデルを削除したり指紋認証を OFF にしたりできます。指紋の画像と指紋モデルは、削除するまでデバイスに保存されたままになります。"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">"あなたとお子様はいつでも [設定] で指紋の画像や指紋モデルを削除したり指紋認証を OFF にしたりできます。指紋の画像と指紋モデルは、削除するまでスマートフォンに保存されたままになります。"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">あなたとお子様はいつでも [設定] で指紋モデルを削除したり、Pixel Imprint を OFF にしたりできます。指紋モデルは、削除するまでスマートフォンに保存されたままになります。</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="tablet" msgid="8772005555323461143">"あなたとお子様はいつでも [設定] で指紋の画像や指紋モデルを削除したり指紋認証を OFF にしたりできます。指紋の画像と指紋モデルは、削除するまでタブレットに保存されたままになります。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="device" msgid="7254955922685507093">"あなたとお子様はいつでも [設定] で指紋の画像や指紋モデルを削除したり指紋認証を OFF にしたりできます。指紋の画像と指紋モデルは、削除するまでデバイスに保存されたままになります。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="desktop" msgid="7254955922685507093">"あなたとお子様はいつでも [設定] で指紋の画像や指紋モデルを削除したり指紋認証を OFF にしたりできます。指紋の画像と指紋モデルは、削除するまでデバイスに保存されたままになります。"</string>
@@ -201,7 +201,7 @@
     <string name="security_settings_fingerprint_v2_home_screen_text" product="device" msgid="7398339851724524558">"指紋を使ってデバイストのロック解除や本人確認（アプリへのログインなど）を行えるようにします。"</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="default" msgid="5376408603508393038">"指紋を使ってスマートフォンのロック解除や本人確認（アプリへのログインなど）を行えるようにします。"</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="desktop" msgid="7398339851724524558">"指紋を使ってデバイストのロック解除や本人確認（アプリへのログインなど）を行えるようにします。"</string>
-    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">"指紋認証を使用して、スマートフォンのロック解除や購入の承認を行うことができます。\n\n注: このデバイスのロック解除に指紋認証を使用することはできません。詳しくは、組織の管理者にお問い合わせください。"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">Nexus Imprint では、指紋認証で購入の承認やアプリへのログインを行えます。\n\nこうした操作は、登録したどの指紋でも行えるため、誰の指紋を登録するかについては十分にご注意ください。\n\n注: このデバイスのロック解除に指紋認証を使用することはできません。詳しくは、組織の管理者にお問い合わせください。</string>
     <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="desktop" msgid="1449873608291132102">"指紋認証を使用して、デバイスのロック解除や購入の承認を行うことができます。\n\n注: このデバイスのロック解除に指紋認証を使用することはできません。詳しくは、組織の管理者にお問い合わせください。"</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="default" msgid="548895260855476885">"ウォッチ認証を使用すると、指が濡れているときや顔が認識されないときなどでも、このスマートフォンをロック解除できます。\n\nスマートウォッチからこのスマートフォンをロック解除する手順は次のとおりです。"</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="desktop" msgid="6975912914017982596">"ウォッチ認証を使用すると、指が濡れているときや顔が認識されないときなどでも、このデバイスをロック解除できます。\n\nスマートウォッチからこのデバイスをロック解除する手順は次のとおりです。"</string>
@@ -716,13 +716,13 @@
     <string name="display_settings" product="default" msgid="3387606354749476666">"ディスプレイ"</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"音とバイブレーション"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"音"</string>
-    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"顔認証の許可"</string>
+    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">顔認証を許可する</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="desktop" msgid="7194334858085778245">"顔認証によるロック解除の許可"</string>
-    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">"顔認証によるロック解除"</string>
+    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">顔認証を設定する</string>
     <string name="security_settings_face_enroll_introduction_title" product="desktop" msgid="193847167859538900">"顔認証によるロック解除"</string>
-    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212"></string>
+    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212">顔認証の詳細をご確認ください</string>
     <string name="security_settings_face_footer_learn_more_description" product="desktop" msgid="2747425608262449212"></string>
-    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006"></string>
+    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006">指が濡れているときや冷たいときの代替手段として、顔認証を設定しておくと便利です。\n\n指紋はデバイスにのみ保存され、Google に送信されることはありません。</string>
     <string name="security_settings_fingerprint_description" product="desktop" msgid="1962781280961450006"></string>
     <string name="security_settings_face_preference_title" product="default" msgid="1088234386271687481">"顔認証"</string>
     <string name="security_settings_face_preference_title" product="desktop" msgid="120316049914434185">"顔認証によるロック解除"</string>

@@ -59,15 +59,15 @@
     <string name="not_encrypted_summary" product="default" msgid="330652312169527734">"ስልክ አልተመሰጠረም"</string>
     <string name="not_encrypted_summary" product="tablet" msgid="452970124282458862">"መሣሪያ አልተመሰጠረም"</string>
     <string name="not_encrypted_summary" product="desktop" msgid="452970124282458862">"መሣሪያ አልተመሰጠረም"</string>
-    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967"></string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default" msgid="5795890116575517967">በሚቀጥለው ማያ ገጽ ላይ ስልክዎን በዓይንዎ ልክ ይያዙት</string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="tablet" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="device" msgid="5795890116575517967"></string>
     <string name="security_settings_face_enroll_education_message_accessibility" product="desktop" msgid="5795890116575517967"></string>
-    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090"></string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default" msgid="2221590003018953090">በመልክ መክፈትን ሲጠቀሙ የእርስዎ ጭንቅላት ይበልጥ ከስልክዎ ፊት ለፊት መሆን ሊያስፈልገው ይችላል።</string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="tablet" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="device" msgid="2221590003018953090"></string>
     <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="desktop" msgid="2221590003018953090"></string>
-    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">"ስልክዎን ለመክፈት፣ ግዢዎችን ለመፍቀድ ወይም በመለያ ወደ መተግበሪያዎች ለመግባት መልክዎን ይጠቀሙ።"</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default" msgid="847716059867943459">ስልክዎን ለመክፈት ወይም እርስዎ መሆንዎን ለማረጋገጥ፣ ለምሳሌ ወደ መተግበሪያዎች ሲገቡ ወይም አንድን ግዢ ሲያጸድቁ፣ መልክዎን ይጠቀሙ።</string>
     <string name="security_settings_face_enroll_introduction_message" product="tablet" msgid="3976493376026067375">"ጡባዊዎን ለመክፈት፣ ግዢዎችን ለመፍቀድ ወይም በመለያ ወደ መተግበሪያዎች ለመግባት መልክዎን ይጠቀሙ።"</string>
     <string name="security_settings_face_enroll_introduction_message" product="device" msgid="6432265830098806034">"መሣሪያዎን ለመክፈት፣ ግዢዎችን ለመፍቀድ ወይም በመለያ ወደ መተግበሪያዎች ለመግባት መልክዎን ይጠቀሙ።"</string>
     <string name="security_settings_face_enroll_introduction_message" product="desktop" msgid="6432265830098806034">"መሣሪያዎን ለመክፈት፣ ግዢዎችን ለመፍቀድ ወይም በመለያ ወደ መተግበሪያዎች ለመግባት መልክዎን ይጠቀሙ።"</string>
@@ -87,43 +87,43 @@
     <string name="security_settings_face_enroll_introduction_consent_message" product="tablet" msgid="2689983368730833505">"የልጅዎን ጡባዊ ለመክፈት መልካቸውን መጠቀሙ ከጠንካራ ስርዓተ ጥለት ወይም ፒን ያነሰ ደህንነት ሊኖረው ይችላል።"</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="device" msgid="5768077532130409820">"የልጅዎን መሣሪያ ለመክፈት መልካቸውን መጠቀሙ ከጠንካራ ስርዓተ ጥለት ወይም ፒን ያነሰ ደህንነት ሊኖረው ይችላል።"</string>
     <string name="security_settings_face_enroll_introduction_consent_message" product="desktop" msgid="5768077532130409820">"የልጅዎን መሣሪያ ለመክፈት መልካቸውን መጠቀሙ ከጠንካራ ስርዓተ ጥለት ወይም ፒን ያነሰ ደህንነት ሊኖረው ይችላል።"</string>
-    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716"></string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default" msgid="6532489273492650716">እርስዎ ሳይፈልጉም እንኳ ስልኩን መመልከት ስልኩን ሊከፍተው ይችላል። ስልክዎ እንዲሁም እንደ ተመሳሳይ ወንድም/እህት ያለ እርስዎን በጣም በሚመስል ሰው ወይም አንድ ሰው ፊትዎ ላይ ከያዘው ሊከፈት ይችላል።</string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="tablet" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="device" msgid="6532489273492650716"></string>
     <string name="security_settings_face_enroll_introduction_info_looking" product="desktop" msgid="6532489273492650716"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default" msgid="5741230674977518758">እነሱ ሳይፈልጉም እንኳ ስልኩን መመልከት ስልኩን ሊከፍተው ይችላል። ስልካቸው እንዲሁም እንደ ተመሳሳይ ወንድም/እህት ያለ እነሱን በጣም በሚመስል ሰው ወይም አንድ ሰው ፊታቸው ላይ ከያዘው ሊከፈት ይችላል።</string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="tablet" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="device" msgid="5741230674977518758"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_looking" product="desktop" msgid="5741230674977518758"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default" msgid="9108545933856688526">የልጅዎን ስልክ ለመክፈት መልካቸውን መጠቀም ከጠንካራ ሥርዓተ ጥለት፣ ፒን ወይም የይለፍ ቃል ያነሰ ደህንነት ሊኖረው ይችላል</string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="tablet" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="device" msgid="9108545933856688526"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="desktop" msgid="9108545933856688526"></string>
-    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480"></string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default" msgid="8122442762352835480">ስልክዎን ለመክፈት መልክዎን መጠቀሙ ከጠንካራ ሥርዓተ ጥለት፣ ፒን ወይም የይለፍ ቃል ያነሰ ደህንነት ሊኖረው ይችላል</string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="tablet" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="device" msgid="8122442762352835480"></string>
     <string name="security_settings_face_enroll_introduction_info_less_secure" product="desktop" msgid="8122442762352835480"></string>
-    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948"></string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default" msgid="762967108645858948">በመልክ መክፈት ስልኩን ለመክፈት ወይም እርስዎ መሆንዎን ለማረጋገጥ የእርስዎ ዓይኖች ክፍት እንዲሆኑ ሊጠይቅ ይችላል። በማንኛውም ጊዜ በቅንብሮች ውስጥ ይህን አማራጭ ማብራት ይችላሉ።</string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="tablet" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="device" msgid="762967108645858948"></string>
     <string name="security_settings_face_enroll_introduction_info_gaze" product="desktop" msgid="762967108645858948"></string>
-    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205"></string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default" msgid="4344820870381904205">በመልክ መክፈት ስልኩን ለመክፈት ወይም እነሱ መሆናቸውን ለማረጋገጥ የልጅዎ ዓይኖች ክፍት እንዲሆኑ ሊጠይቅ ይችላል። እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ ይህን አማራጭ ማብራት ይችላሉ።</string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="tablet" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="device" msgid="4344820870381904205"></string>
     <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="desktop" msgid="4344820870381904205"></string>
-    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188"></string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default" msgid="8933211744361765188">በመልክ መክፈት እርስዎ መሆንዎን ለማረጋገጥ የመልክዎን ልዩ ሞዴል ይፈጥራል። በማዋቀር ወቅት ይህን የመልክ ሞዴል ለመፍጠር እርስዎ የመልክዎን ምስሎች ከተለያዩ ማዕዘናት ያነሳሉ።\n\nበመልክ መክፈትን ሲጠቀሙ ምስሎች የመልክዎን ሞዴል ለማዘመን ጥቅም ላይ ይውላሉ። የእርስዎን የመልክ ሞዴል ለመፍጠር ጥቅም ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም፣ ነገር ግን የመልክ ሞዴሉ በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከማቻል እና በጭራሽ ከስልኩ አይወጣም። ሁሉም ማሰናዳት በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከሰታል።</string>
     <string name="security_settings_face_enroll_introduction_how_message" product="tablet" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="device" msgid="8933211744361765188"></string>
     <string name="security_settings_face_enroll_introduction_how_message" product="desktop" msgid="8933211744361765188"></string>
-    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733"></string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default" msgid="5091057232082857733">በመልክ መክፈት እሳቸው መሆናቸውን ለማረጋገጥ ልዩ የልጅዎን መልክ ሞዴል ይፈጥራል። በማዋቀር ወቅት ይህን የመልክ ሞዴል ለመፍጠር ልጅዎ የመልካቸውን ምስሎች ከተለያዩ ማዕዘናት ያነሳሉ።\n\nበመልክ መክፈትን ሲጠቀሙ ምስሎች የመልክ ሞዴላቸውን ለማዘመን ሥራ ላይ ይውላሉ። የመልክ ሞዴላቸውን ለመፍጠር ሥራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም ነገር ግን የመልክ ሞዴሉ በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ሲሆን በጭራሽ ከስልኩ አይወጣም። ሁሉም ማሰናዳት በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።</string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="tablet" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="device" msgid="5091057232082857733"></string>
     <string name="security_settings_face_enroll_introduction_how_consent_message" product="desktop" msgid="5091057232082857733"></string>
-    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026"></string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default" msgid="5648868145191337026">በማንኛውም ጊዜ በቅንብሮች ውስጥ የእርስዎን የመልክ ሞዴል መሰረዝ ወይም በመልክ መክፈትን ማጥፋት ይችላሉ። የመልክ ሞዴሎች እርስዎ እስኪሰርዟቸው ድረስ በስልኩ ላይ ይከማቻሉ።&lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt; ላይ &lt;br&gt;&lt;br&gt;የበለጠ ይወቁ።</string>
     <string name="security_settings_face_enroll_introduction_control_message" product="tablet" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="device" msgid="5648868145191337026"></string>
     <string name="security_settings_face_enroll_introduction_control_message" product="desktop" msgid="5648868145191337026"></string>
-    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996"></string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default" msgid="6983939010814873996">እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የመልክ ሞዴላቸውን መሰረዝ ወይም በመልክ መክፈትን ማጥፋት ትችላላችሁ። የመልክ ሞዴሎች እስኪሰረዙ ድረስ በስልኩ ላይ ይከማቻሉ።&lt;a href=\'http://g.co/pixel/faceunlock\'&gt;g.co/pixel/faceunlock&lt;/a&gt; ላይ &lt;br&gt;&lt;br&gt;የበለጠ ይወቁ።</string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="tablet" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="device" msgid="6983939010814873996"></string>
     <string name="security_settings_face_enroll_introduction_control_consent_message" product="desktop" msgid="6983939010814873996"></string>
@@ -163,7 +163,7 @@
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="tablet" msgid="6790505667764631343">"ጡባዊዎን ለመክፈት ወይም እንደ በመተግበሪያዎች ሲገቡ ወይም ግዢ ሲያጸድቁ እርስዎ መሆንዎን ለማረጋገጥ መልክዎን ይጠቀሙ።\n\nከግምት ውስጥ ያስገቡ፦\nበአንድ ጊዜ ማዋቀር የሚችሉት አንድ መልክ ብቻ ነው። ሌላ መልክ ለማከል አሁን ያለውን ይሰርዙ።\n\nጡባዊውን መመልከት ሳያስቡት ሊከፍተው ይችላል።\n\nአይኖችዎ ቢዘጉ እንኳ የሆነ ሰው ጡባዊዎን ፊትዎ ላይ ቢይዘው ሊከፈት ይችላል።\n\nጡባዊዎ እንደ መንታ ወንድም/እህት ያለ እርስዎን በጣም በሚመስል ሰው ሊከፈት ይችላል።"</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="device" msgid="7858917821957779752">"መሣሪያዎን ለመክፈት ወይም እንደ በመተግበሪያዎች ሲገቡ ወይም ግዢ ሲያጸድቁ እርስዎ መሆንዎን ለማረጋገጥ መልክዎን ይጠቀሙ።\n\nከግምት ውስጥ ያስገቡ፦\nበአንድ ጊዜ ማዋቀር የሚችሉት አንድ መልክ ብቻ ነው። ሌላ መልክ ለማከል አሁን ያለውን ይሰርዙ።\n\nመሣሪያውን መመልከት ሳያስቡት ሊከፍተው ይችላል።\n\nአይኖችዎ ቢዘጉ እንኳ የሆነ ሰው መሣሪያዎን ፊትዎ ላይ ቢይዘው ሊከፈት ይችላል።\n\nመሣሪያዎ እንደ መንታ ወንድም/እህት ያለ እርስዎን በጣም በሚመስል ሰው ሊከፈት ይችላል።"</string>
     <string name="security_settings_face_settings_footer_class3_attention_not_supported" product="desktop" msgid="7858917821957779752">"መሣሪያዎን ለመክፈት ወይም እንደ በመተግበሪያዎች ሲገቡ ወይም ግዢ ሲያጸድቁ እርስዎ መሆንዎን ለማረጋገጥ መልክዎን ይጠቀሙ።\n\nከግምት ውስጥ ያስገቡ፦\nበአንድ ጊዜ ማዋቀር የሚችሉት አንድ መልክ ብቻ ነው። ሌላ መልክ ለማከል አሁን ያለውን ይሰርዙ።\n\nመሣሪያውን መመልከት ሳያስቡት ሊከፍተው ይችላል።\n\nአይኖችዎ ቢዘጉ እንኳ የሆነ ሰው መሣሪያዎን ፊትዎ ላይ ቢይዘው ሊከፈት ይችላል።\n\nመሣሪያዎ እንደ መንታ ወንድም/እህት ያለ እርስዎን በጣም በሚመስል ሰው ሊከፈት ይችላል።"</string>
-    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759"></string>
+    <string name="security_settings_face_footer_description_class3" product="default" msgid="3460502249540215759">ስልክዎን ለመክፈት ወይም እንደ በመተግበሪያዎች ሲገቡ ወይም ግዢ ሲያጸድቁ እርስዎ መሆንዎን ለማረጋገጥ መልክዎን ይጠቀሙ።\n\nይህን ያስታውሱ፦\nበአንድ ጊዜ ማዋቀር የሚችሉት አንድ መልክ ብቻ ነው። ሌላ መልክ ለማከል የአሁኑን ይሰርዙ።\n\nስልኩን ማየት ሳያስቡት ሊከፍተው ይችላል።\n\nስልክዎ እርስዎን በጣም በሚመስል እንደ ወንድም/እህት ያለ ሰው ሊከፈት ይችላል።\n</string>
     <string name="security_settings_fingerprint_enroll_introduction_v3_message" msgid="2145273491174234191">"እንደ ወደ መተግበሪያዎች ሲገቡ ወይም ግዢን ሲያጸድቁ የእርስዎን <xliff:g id="DEVICENAME">%s</xliff:g> ለመክፈት ወይም እርስዎ እንደሆኑ ለማረጋገጥ አሻራዎን ይጠቀሙ።"</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="default" msgid="5101253231118659496">"ልጅዎ ስልካቸውን ለመክፈት ወይም እነሱ መሆናቸውን እንዲያረጋግጡ የጣት አሻራቸውን እንዲጠቀሙ ይፍቀዱ። ይህ የሚሆነው ወደ መተግበሪያዎች ሲገቡ፣ ግዢን ሲያጸድቁ እና ሌሎችም ሲያደርጉ ነው"</string>
     <string name="security_settings_fingerprint_enroll_introduction_consent_message" product="tablet" msgid="3063978167545799342">"ልጅዎ ጡባዊያቸውን ለመክፈት ወይም እርሳቸው መሆናቸውን ለማረጋገጥ የጣት አሻራቸውን እንዲጠቀሙ ይፍቀዱ። ይህ የሚሆነው ወደ መተግበሪያዎች ሲገቡ፣ ግዢን ሲያጸድቁ እና ሌሎችንም ሲያደርጉ ነው።"</string>
@@ -181,11 +181,11 @@
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="tablet" msgid="1426913673720862863">"Pixel Imprintን ሲጠቀሙ ምስሎች የጣት አሻራቸውን ሞዴል ለማዘመን ሥራ ላይ ይውላሉ። የልጅዎን የጣት አሻራ ሞዴል ለመፍጠር ሥራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም፣ ነገር ግን የጣት አሻራ ሞዴሉ በጡባዊው ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ነው እና በጭራሽ ከጡባዊው አይወጣም። ሁሉም ማሰናዳት በጡባዊው ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="device" msgid="2631789126811300879">"Pixel Imprintን ሲጠቀሙ ምስሎች የጣት አሻራቸውን ሞዴል ለማዘመን ሥራ ላይ ይውላሉ። የልጅዎን የጣት አሻራ ሞዴል ለመፍጠር ሥራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም፣ ነገር ግን የጣት አሻራ ሞዴሉ በመሣሪያው ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ነው እና በጭራሽ ከመሣሪያው አይወጣም። ሁሉም ማሰናዳት በመሣሪያው ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="desktop" msgid="2631789126811300879">"Pixel Imprintን ሲጠቀሙ ምስሎች የጣት አሻራቸውን ሞዴል ለማዘመን ሥራ ላይ ይውላሉ። የልጅዎን የጣት አሻራ ሞዴል ለመፍጠር ሥራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም፣ ነገር ግን የጣት አሻራ ሞዴሉ በመሣሪያው ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ነው እና በጭራሽ ከመሣሪያው አይወጣም። ሁሉም ማሰናዳት በመሣሪያው ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">"የጣት አሻራዎን ምስሎች እና ሞዴል መሰረዝ ወይም በቅንብሮች ውስጥ በማንኛውም ጊዜ በጣት አሻራ መከፈትን ማጥፋት ይችላሉ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰርዟቸው ድረስ በስልኩ ላይ ይቀመጣሉ።"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default" msgid="1354488801088258040">እርስዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራ ሞዴልዎን መሰረዝ ወይም Pixel Imprintን ማጥፋት ይችላሉ። የጣት አሻራ ሞዴሎች እስኪሰርዟቸው ድረስ በስልኩ ላይ ይከማቻሉ።</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="tablet" msgid="8207309581266022275">"እርስዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራዎን ምስሎች እና ሞዴል መሰረዝ ወይም በጣት አሻራ መከፈትን ማጥፋት ይችላሉ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰርዟቸው ድረስ በጡባዊው ላይ ይከማቻሉ።"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="device" msgid="2498580070051496133">"እርስዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራዎን ምስሎች እና ሞዴል መሰረዝ ወይም በጣት አሻራ መከፈትን ማጥፋት ይችላሉ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰርዟቸው ድረስ በመሣሪያው ላይ ይከማቻሉ።"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="desktop" msgid="2498580070051496133">"እርስዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራዎን ምስሎች እና ሞዴል መሰረዝ ወይም በጣት አሻራ መከፈትን ማጥፋት ይችላሉ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰርዟቸው ድረስ በመሣሪያው ላይ ይከማቻሉ።"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">"እርስዎ እና ልጅዎ የጣት አሻራቸውን ምስሎች እና ሞዴል መሰረዝ ወይም በቅንብሮች ውስጥ በማንኛውም ጊዜ በጣት አሻራ መክፈቻን ማጥፋት ትችላላችሁ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰረዙ ድረስ በስልኩ ላይ ይቀመጣሉ።"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default" msgid="5003753461032107715">እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራ ሞዴላቸውን መሰረዝ ወይም Pixel Imprintን ማጥፋት ትችላላችሁ። የጣት አሻራ ሞዴሎች እስኪሰረዙ ድረስ በስልኩ ላይ ይከማቻሉ።</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="tablet" msgid="8772005555323461143">"እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራቸውን ምስሎች እና ሞዴል መሰረዝ ወይም በጣት አሻራ መክፈቻን ማጥፋት ትችላላችሁ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰረዙ ድረስ በጡባዊው ላይ ይቀመጣሉ።"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="device" msgid="7254955922685507093">"እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራቸውን ምስሎች እና ሞዴል መሰረዝ ወይም በጣት አሻራ መክፈቻን ማጥፋት ትችላላችሁ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰረዙ ድረስ በመሣሪያው ላይ ይቀመጣሉ።"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="desktop" msgid="7254955922685507093">"እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራቸውን ምስሎች እና ሞዴል መሰረዝ ወይም በጣት አሻራ መክፈቻን ማጥፋት ትችላላችሁ። የጣት አሻራ ምስሎች እና ሞዴሎች እስኪሰረዙ ድረስ በመሣሪያው ላይ ይቀመጣሉ።"</string>
@@ -201,7 +201,7 @@
     <string name="security_settings_fingerprint_v2_home_screen_text" product="device" msgid="7398339851724524558">"መሣሪያዎን ለመክፈት ወይም እንደ በመለያ ወደ መተግበሪያዎች ሲገቡ ባለ ጊዜ ላይ እርስዎ መሆንዎን ለማረጋገጥ የጣት አሻራዎን ይጠቀሙ።"</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="default" msgid="5376408603508393038">"ስልክዎን ለመክፈት ወይም እንደ በመለያ ወደ መተግበሪያዎች ሲገቡ ባለ ጊዜ ላይ እርስዎ መሆንዎን ለማረጋገጥ የጣት አሻራዎን ይጠቀሙ።"</string>
     <string name="security_settings_fingerprint_v2_home_screen_text" product="desktop" msgid="7398339851724524558">"መሣሪያዎን ለመክፈት ወይም እንደ በመለያ ወደ መተግበሪያዎች ሲገቡ ባለ ጊዜ ላይ እርስዎ መሆንዎን ለማረጋገጥ የጣት አሻራዎን ይጠቀሙ።"</string>
-    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">"የእርስዎን ስልክ ለመክፈት ወይም ግዢዎችን ለማጽደቅ የእርስዎን የጣት አሻራ ይጠቀሙ።\n\nማስታወሻ፦ ይህን መሣሪያ ለመክፈት የጣት አሻራን መጠቀም አይችሉም። ለተጨማሪ መረጃ፣ የእርስዎን ድርጅት አስተዳዳሪ ያነጋግሩ።"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="default" msgid="8536395298073746085">በNexus Imprint አማካኝነት ግዢዎችን ለማጽደቅ ወይም ወደ መተግበሪያዎች ለመግባት የጣት አሻራዎን መጠቀም ይችላሉ።\n\nየማን የጣት አሻራዎች እንደሚያክሉ ላይ ይጠንቀቁ። ማናቸውም የታከሉ የጣት አሻራዎች እነዚህን ማድረግ ይችላሉ።\n\nማስታወሻ፦ ይህን መሣሪያ ለመክፈት የጣት አሻራዎን መጠቀም አይችሉም። ተጨማሪ መረጃ ለማግኘት የድርጅትዎን አስተዳዳሪ ያነጋግሩ።</string>
     <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled" product="desktop" msgid="1449873608291132102">"የእርስዎን መሣሪያ ለመክፈት ወይም ግዢዎችን ለማጽደቅ የእርስዎን የጣት አሻራ ይጠቀሙ።\n\nማስታወሻ፦ ይህን መሣሪያ ለመክፈት የጣት አሻራን መጠቀም አይችሉም። ለተጨማሪ መረጃ፣ የእርስዎን ድርጅት አስተዳዳሪ ያነጋግሩ።"</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="default" msgid="548895260855476885">"በእጅ ሰዓት መክፈቻ ለምሳሌ ጣቶችዎ እርጥብ ሲሆኑ ወይም ፊትዎ ሳይለይ ሲቀር ይህን ስልክ ለመክፈት ሌላኛው አመቺ መንገድ ነው።\n\nየሚከተሉትን ሲያደርጉ ይህን ስልክ ለመክፈት የእጅ ሰዓትዎን መጠቀም ይችላሉ፦"</string>
     <string name="security_settings_remoteauth_enroll_introduction_message" product="desktop" msgid="6975912914017982596">"በእጅ ሰዓት መክፈቻ ለምሳሌ ጣቶችዎ እርጥብ ሲሆኑ ወይም ፊትዎ ሳይለይ ሲቀር ይህን መሣሪያ ለመክፈት ሌላኛው አመቺ መንገድ ነው።\n\nየሚከተሉትን ሲያደርጉ ይህን መሣሪያ ለመክፈት የእጅ ሰዓትዎን መጠቀም ይችላሉ፦"</string>
@@ -716,13 +716,13 @@
     <string name="display_settings" product="default" msgid="3387606354749476666">"ማሳያ"</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"ድምፅ እና ንዝረት"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"ድምፅ"</string>
-    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"በመልክ መክፈትን ይፍቀዱ"</string>
+    <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">በመልክ መክፈትን ይፍቀዱ</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="desktop" msgid="7194334858085778245">"በመልክ መክፈትን ይፍቀዱ"</string>
-    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">"በመልክዎ ይክፈቱ"</string>
+    <string name="security_settings_face_enroll_introduction_title" product="default" msgid="193847167859538900">በመልክ መክፈትን ያዋቅሩ</string>
     <string name="security_settings_face_enroll_introduction_title" product="desktop" msgid="193847167859538900">"በመልክዎ ይክፈቱ"</string>
-    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212"></string>
+    <string name="security_settings_face_footer_learn_more_description" product="default" msgid="2747425608262449212">ስለ በመልክ መክፈት የበለጠ ይወቁ</string>
     <string name="security_settings_face_footer_learn_more_description" product="desktop" msgid="2747425608262449212"></string>
-    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006"></string>
+    <string name="security_settings_fingerprint_description" product="default" msgid="1962781280961450006">ለተጨማሪ ምቾት፣ ጣቶችዎ እርጥብ ወይም ቀዝቃዛ በሚሆኑበት ጊዜ በመልክ መክፈትን እንደ ምትኬ ያዋቅሩ።\n\nየእርስዎ የጣት አሻራዎች በመሣሪያ ላይ ብቻ ተከማችተዋል እና መቼም ወደ Google አይላኩም።</string>
     <string name="security_settings_fingerprint_description" product="desktop" msgid="1962781280961450006"></string>
     <string name="security_settings_face_preference_title" product="default" msgid="1088234386271687481">"በመልክ መክፈት"</string>
     <string name="security_settings_face_preference_title" product="desktop" msgid="120316049914434185">"በመልክ ይክፈቱ"</string>
