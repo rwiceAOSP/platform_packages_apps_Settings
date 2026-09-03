@@ -128,6 +128,10 @@ android_library {
         "device-state-schema",
         "dynamiccolors",
         "com.android.text.flags-aconfig-java",
+
+        // Custom dependencies
+        "com.google.hardware.biometrics.fingerprint.fingerprint-ext-V2-java",
+        "com.google.hardware.biometrics.sidefps.fingerprint-ext-V1-java",
     ],
 
     plugins: [
