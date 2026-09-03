@@ -30,4 +30,20 @@
     <string name="repair_mode_title">Repair mode</string>
     <string name="repair_mode_summary">Secure environment for device repair</string>
     <string name="repair_mode_active_summary">In repair mode</string>
+
+    <!-- Biometrics -->
+    <string name="biometric_safety_issue_add_more_action_title">Add more</string>
+    <string name="biometric_safety_issue_add_more_fingerprints_subtitle">To make unlocking more convenient, add more fingerprints</string>
+    <string name="biometric_safety_issue_add_more_fingerprints_title">Add more fingerprints</string>
+    <string name="biometric_safety_issue_add_more_fingerprints_title_for_work">Add more fingerprints for work</string>
+    <string name="biometric_safety_issue_setup_action_title">Set up</string>
+    <string name="biometric_safety_issue_setup_face_unlock_subtitle">To make unlocking more convenient, use Face Unlock along with Fingerprint Unlock</string>
+    <string name="biometric_safety_issue_setup_face_unlock_title">Set up Face Unlock</string>
+    <string name="biometric_safety_issue_setup_face_unlock_title_for_work">Set up Face Unlock for work</string>
+    <string name="biometric_safety_issue_setup_fingerprint_face_unlock_subtitle">To make unlocking more convenient, set up both Fingerprint and Face Unlock</string>
+    <string name="biometric_safety_issue_setup_fingerprint_face_unlock_title">Set up Fingerprint &amp; Face Unlock</string>
+    <string name="biometric_safety_issue_setup_fingerprint_face_unlock_title_for_work">Set up Fingerprint &amp; Face Unlock for work profile</string>
+    <string name="biometric_safety_issue_setup_fingerprint_unlock_subtitle">To make unlocking more convenient, use Fingerprint Unlock along with Face Unlock</string>
+    <string name="biometric_safety_issue_setup_fingerprint_unlock_title">Set up Fingerprint Unlock</string>
+    <string name="biometric_safety_issue_setup_fingerprint_unlock_title_for_work">Set up Fingerprint Unlock for work</string>
 </resources>

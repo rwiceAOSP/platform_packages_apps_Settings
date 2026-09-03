@@ -148,7 +148,7 @@
     <dimen name="udfps_lottie_translate_y">0dp</dimen>
     <dimen name="udfps_lottie_padding_top">20dp</dimen>
     <dimen name="biometrics_glif_header_height">274dp</dimen>
-    <item name="biometrics_glif_header_height_ratio" format="float" type="dimen">0.27</item>
+    <item name="biometrics_glif_header_height_ratio" format="float" type="dimen">0.28</item>
     <!-- For showing when Display / Font size set to largest -->
     <item name="biometrics_glif_header_height_ratio_large" format="float" type="dimen">0.37</item>
 
