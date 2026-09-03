@@ -6,4 +6,8 @@
 
     <!-- Biometrics -->
     <dimen name="biometric_enroll_introduction_title_padding_vertical">24dp</dimen>
+    <dimen name="face_enroll_participation_checkbox_minimum_size">48dp</dimen>
+    <dimen name="face_enroll_posture_guidance_size">348dp</dimen>
+    <dimen name="face_error_text_appear_distance">16dp</dimen>
+    <dimen name="lock_screen_bypass_lottie_height">236dp</dimen>
 </resources>

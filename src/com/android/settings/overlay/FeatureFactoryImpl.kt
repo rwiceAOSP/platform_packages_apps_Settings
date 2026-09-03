@@ -81,6 +81,7 @@ import com.android.settings.wifi.WifiTrackerLibProviderImpl
 import com.android.settings.wifi.factory.WifiFeatureProvider
 import com.android.settingslib.spaprivileged.framework.common.devicePolicyManager
 import com.google.android.settings.biometrics.BiometricsFeatureProviderGoogleImpl
+import com.google.android.settings.biometrics.face.FaceFeatureProviderGoogleImpl
 
 /** [FeatureFactory] implementation for AOSP Settings. */
 open class FeatureFactoryImpl : FeatureFactory() {
@@ -160,7 +161,7 @@ open class FeatureFactoryImpl : FeatureFactory() {
     }
 
     override val faceFeatureProvider: FaceFeatureProvider by lazy {
-        FaceFeatureProviderImpl(appContext)
+        FaceFeatureProviderGoogleImpl()
     }
 
     override val fingerprintFeatureProvider: FingerprintFeatureProvider by lazy {

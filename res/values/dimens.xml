@@ -153,8 +153,8 @@
     <item name="biometrics_glif_header_height_ratio_large" format="float" type="dimen">0.37</item>
 
     <!-- Face -->
-    <item name="face_preview_translate_y" format="float" type="dimen">0</item>
-    <item name="face_preview_translate_x" format="float" type="dimen">0</item>
+    <item name="face_preview_translate_y" format="float" type="dimen">-460</item>
+    <item name="face_preview_translate_x" format="float" type="dimen">-130</item>
     <item name="face_preview_scale" format="float" type="dimen">1.0</item>
     <dimen name="face_enroll_intro_illustration_margin_bottom">0dp</dimen>
 

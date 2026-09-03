@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Biometrics -->
+    <string-array name="face_unlock_bypass">
+        <item>.surfaceContainer:@sud_system_surface_container_dark</item>
+        <item>.primary:@sud_system_primary_dark</item>
+        <item>.onSecondary:@sud_system_on_secondary_dark</item>
+        <item>.outline:@sud_system_outline_dark</item>
+    </string-array>
+</resources>

@@ -31,4 +31,13 @@
         <item>en-US</item>
         <item>es-US</item>
     </string-array>
+    <!-- Biometrics -->
+    <array name="face_enroll_primary_buckets" />
+
+    <string-array name="face_unlock_bypass">
+        <item>.surfaceContainer:@sud_system_surface_container_light</item>
+        <item>.primary:@sud_system_primary_light</item>
+        <item>.onSecondary:@sud_system_on_secondary_light</item>
+        <item>.outline:@sud_system_outline_light</item>
+    </string-array>
 </resources>

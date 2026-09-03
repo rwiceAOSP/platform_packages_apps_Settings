@@ -16,6 +16,11 @@
         android:name="com.android.settings.USE_BIOMETRIC_PROVIDER"
         android:protectionLevel="signature|privileged"/>
 
+    <!-- Guards the face enrollment confirmation page against launches by
+         anything other than the platform-signed enrollment UI. -->
+    <permission android:name="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
+                android:protectionLevel="signature|privileged" />
+
     <uses-permission android:name="android.permission.REQUEST_NETWORK_SCORES" />
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
@@ -6330,5 +6335,61 @@
                 android:value="@string/menu_key_system"/>
         </activity>
 
+        <!-- Biometrics -->
+        <activity
+            android:exported="false"
+            android:name="com.google.android.settings.biometrics.face.FaceEnrollIntroductionGoogle"
+            android:theme="@style/GlifV4Theme.DayNight"/>
+
+        <activity
+            android:exported="false"
+            android:name="com.google.android.settings.biometrics.face.FaceEnrollEducationGoogle"
+            android:screenOrientation="nosensor"
+            android:theme="@style/GlifV4Theme.DayNight"/>
+
+        <activity
+            android:exported="true"
+            android:name="com.google.android.settings.biometrics.face.FaceEnrollTrampoline"
+            android:screenOrientation="portrait"
+            android:theme="@style/SudThemeGlif.Light"/>
+
+        <activity
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|density"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:name="com.google.android.settings.biometrics.face.FaceEnrollFoldPage"
+            android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SudThemeGlif.Light"/>
+
+        <activity
+           android:exported="false"
+           android:name="com.google.android.settings.biometrics.face.FaceEnrollEnrolling"
+           android:screenOrientation="portrait"
+           android:theme="@style/SudThemeGlif.Light"/>
+
+        <activity
+           android:exported="false"
+           android:name="com.google.android.settings.biometrics.face.FaceEnrollParticipation"
+           android:screenOrientation="portrait"
+           android:theme="@style/SudThemeGlif.Light"/>
+
+        <activity
+            android:exported="true"
+            android:name="com.google.android.settings.biometrics.face.FaceEnrollConfirmation"
+            android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
+            android:screenOrientation="nosensor"
+            android:theme="@style/GlifV4Theme.DayNight">
+            <intent-filter>
+                <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="false"
+            android:name="com.google.android.settings.biometrics.face.FaceEnrollParentalConsentGoogle"
+            android:screenOrientation="portrait"
+            android:theme="@style/GlifV4Theme.DayNight"/>
     </application>
 </manifest>
